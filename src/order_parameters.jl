@@ -1,0 +1,104 @@
+"""
+五聚体链的序参量：弦序参量和自旋能隙。
+
+弦序参量沿用 Li 等文献的约定，其中 sigma_z = 2Sz。
+"""
+
+"""
+    string_order_parameter(psi, sites, N_units; margin=3)
+
+计算五聚体链的 z 方向弦序参量。
+两端各丢弃 margin 个单元以减小边界效应。
+"""
+function string_order_parameter(psi, sites, N_units::Int; margin::Int=3)
+    L = length(sites)
+    @assert L == 5 * N_units
+
+    # 自动缩减 margin 以适应短链
+    while margin > 0 && (N_units - 2 * margin) < 2
+        margin -= 1
+    end
+    if margin == 0 && N_units < 2
+        error("Chain too short: need at least N_units=2 for string order parameter")
+    end
+
+    n_start = margin + 1
+    n_end = N_units - margin
+
+    # 优先取体区内最大距离
+    max_sep = n_end - n_start
+    values = Float64[]
+
+    for n in n_start:(n_end - max_sep)
+        np = n + max_sep
+        site_i = 5 * n              # 第 n 个单元末端
+        site_j = 5 * (np - 1) + 1   # 第 np 个单元起点
+
+        val = _string_correlator(psi, sites, site_i, site_j)
+        push!(values, val)
+    end
+
+    if isempty(values)
+        # 若最大距离无可用点，则退到较短距离
+        for sep in (max_sep-1):-1:1
+            for n in n_start:(n_end - sep)
+                np = n + sep
+                site_i = 5 * n
+                site_j = 5 * (np - 1) + 1
+                val = _string_correlator(psi, sites, site_i, site_j)
+                push!(values, val)
+            end
+            isempty(values) || break
+        end
+    end
+
+    return sum(values) / length(values)
+end
+
+"""
+用 ITensors OpSum 计算多点 Sz 乘积。
+"""
+function _string_correlator(psi, sites, i::Int, j::Int)
+    N_mid = j - i - 1
+    coeff = -(2.0)^N_mid
+
+    os = OpSum()
+    args = Any[coeff]
+    for k in i:j
+        push!(args, "Sz")
+        push!(args, k)
+    end
+    os += Tuple(args)
+
+    O = MPO(os, sites)
+    return real(inner(psi', O, psi))
+end
+
+"""
+    spin_gap(; N_units=12, alpha=1.0, beta=0.5, kwargs...)
+
+计算自旋能隙：E(Sz=1) - E(Sz=0)。
+要求总格点数为偶数。
+"""
+function spin_gap(; N_units::Int=12, alpha::Real=1.0, beta::Real=0.5,
+                  maxdim::Int=400, cutoff::Real=1e-8, nsweeps::Int=8)
+    L = 5 * N_units
+    @assert iseven(L) "spin_gap requires even L (even N_units for pentamer)"
+
+    # Sz=0 扇区基态
+    sites = siteinds("S=1/2", L; conserve_qns=true)
+    H = pentamer_chain_hamiltonian(sites, N_units; alpha, beta)
+
+    state_0 = [isodd(n) ? "Up" : "Dn" for n in 1:L]
+    psi0 = random_mps(sites, state_0; linkdims=10)
+    schedule = _sweep_schedule(maxdim, nsweeps)
+    E0, _ = dmrg(H, psi0; nsweeps, maxdim=schedule, cutoff, outputlevel=0)
+
+    # Sz=1 扇区最低态
+    state_1 = copy(state_0)
+    state_1[2] = "Up"  # 增加一个向上自旋
+    psi1 = random_mps(sites, state_1; linkdims=10)
+    E1, _ = dmrg(H, psi1; nsweeps, maxdim=schedule, cutoff, outputlevel=0)
+
+    return E1 - E0
+end
