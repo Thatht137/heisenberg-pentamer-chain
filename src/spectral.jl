@@ -37,18 +37,14 @@ function linkdim_max(psi)
 end
 
 """
-    correction_vector_dsf(psi_gs, H, sites, E0; q, omega, eta, maxdim, cutoff)
+    correction_vector_dsf(b, H, E0; omega, eta, maxdim, cutoff)
 
-用修正向量法计算单个 (q, omega) 点。
+用修正向量法计算单个 (q, omega) 点。b = S^z_q |psi> 由外部预先计算。
 """
-function correction_vector_dsf(psi_gs, H, sites, E0::Real;
-    q::Real, omega::Real, eta::Real=0.1,
+function correction_vector_dsf(b, H, E0::Real;
+    omega::Real, eta::Real=0.1,
     maxdim::Int=200, cutoff::Real=1e-6, nsweeps::Int=4)
 
-    # 右端向量
-    b = apply_Sq_operator(psi_gs, sites, q)
-
-    # 求解 (a - H)|x> = |b>
     a = (omega + E0) + im * eta
 
     x = linsolve(H, b, b, a, -1;
@@ -59,10 +55,10 @@ function correction_vector_dsf(psi_gs, H, sites, E0::Real;
 end
 
 """
-    compute_dsf_spectrum(psi_gs, H, sites, E0; q_points, omega_range, eta, maxdim, cutoff, chunk_size)
+    compute_dsf_spectrum(psi_gs, H, sites, E0; q_points, omega_range, eta, maxdim, cutoff, chunk_size, checkpoint_file)
 
 计算完整的 S(q, omega) 谱。
-按 q 点分块并行以控制内存占用。
+按 q 点分块并行以控制内存占用。支持 checkpoint 断点续算。
 """
 function compute_dsf_spectrum(psi_gs, H, sites, E0::Real;
     q_points=range(0, 2π, length=33),
@@ -70,27 +66,53 @@ function compute_dsf_spectrum(psi_gs, H, sites, E0::Real;
     eta::Real=0.1,
     maxdim::Int=200,
     cutoff::Real=1e-6,
-    chunk_size::Int=4)
+    chunk_size::Int=4,
+    checkpoint_file::String="")
 
     nq = length(q_points)
     nw = length(omega_range)
     S_qw = zeros(Float64, nq, nw)
+    completed = falses(nq)
 
-    q_chunks = Iterators.partition(1:nq, chunk_size)
+    # 从 checkpoint 恢复
+    if !isempty(checkpoint_file) && isfile(checkpoint_file)
+        @info "从 checkpoint 恢复: $checkpoint_file"
+        ckpt = load(checkpoint_file)
+        S_qw .= ckpt["S_qw"]
+        completed .= ckpt["completed"]
+        n_done = count(completed)
+        @info "已完成 $n_done/$nq 个 q 点，继续计算剩余部分..."
+    end
+
+    remaining = findall(.!completed)
+    if isempty(remaining)
+        @info "所有 q 点已完成，无需继续计算。"
+        return S_qw
+    end
+
+    q_chunks = Iterators.partition(remaining, chunk_size)
 
     for chunk in q_chunks
         tasks = map(chunk) do iq
             Threads.@spawn begin
                 local_psi = deepcopy(psi_gs)
                 local_H = deepcopy(H)
-                local_sites = sites  # 格点指标可共享
+                local_sites = sites
 
                 q = q_points[iq]
+                b = apply_Sq_operator(local_psi, local_sites, q)
+                @info "q[$iq/$nq] = $(round(q, digits=3)): S^z_q|ψ> 已构造"
+                flush(stdout); flush(stderr)
+
                 row = zeros(Float64, nw)
                 for (iw, omega) in enumerate(omega_range)
                     row[iw] = correction_vector_dsf(
-                        local_psi, local_H, local_sites, E0;
-                        q, omega, eta, maxdim, cutoff)
+                        b, local_H, E0;
+                        omega, eta, maxdim, cutoff)
+                    if iw % 5 == 0 || iw == nw
+                        @info "  q[$iq] omega 进度: $iw/$nw"
+                        flush(stdout); flush(stderr)
+                    end
                 end
                 (iq, row)
             end
@@ -99,6 +121,16 @@ function compute_dsf_spectrum(psi_gs, H, sites, E0::Real;
         for t in tasks
             iq, row = fetch(t)
             S_qw[iq, :] = row
+            completed[iq] = true
+        end
+
+        # 每完成一个 chunk 就保存 checkpoint
+        if !isempty(checkpoint_file)
+            n_done = count(completed)
+            @info "进度: $n_done/$nq q 点完成，保存 checkpoint..."
+            jldsave(checkpoint_file; S_qw, completed,
+                q_points=collect(q_points), omega_range=collect(omega_range),
+                eta, maxdim, E0)
         end
     end
 
