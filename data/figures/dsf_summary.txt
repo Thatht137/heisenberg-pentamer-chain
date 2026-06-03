@@ -1,0 +1,12 @@
+size(S_qw) = (17, 31)
+alpha = 1.0
+beta = 0.5
+N_units = 12
+eta = 0.05
+max = 2.5666636480267897
+max index = CartesianIndex(9, 1)
+q at max = 3.141592653589793
+omega at max = 0.0
+min = -0.0
+has NaN = false
+has Inf = false

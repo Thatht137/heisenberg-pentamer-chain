@@ -19,10 +19,10 @@ const ALPHA = 1.0
 const BETA = 0.5
 const TSTEP = 0.01
 const N_STEPS = 4000
-const DMRG_MAXDIM = 800
-const TEBD_MAXDIM = 600
+const DMRG_MAXDIM = 500
+const TEBD_MAXDIM = 500
 const DMRG_CUTOFF = 1e-10
-const TEBD_CUTOFF = 1e-9
+const TEBD_CUTOFF = 1e-10
 const NSWEEPS = 30
 
 function pentamer_bonds(n_units::Int; alpha::Real, beta::Real)
@@ -99,6 +99,8 @@ function calculate_dynamics_pentamer(;
     println("Total sites L = ", total_sites)
     println("alpha = J2/J1 = ", alpha)
     println("beta  = J3/J1 = ", beta)
+    println("DMRG maxdim = ", dmrg_maxdim, ", cutoff = ", dmrg_cutoff, ", sweeps = ", nsweeps)
+    println("TEBD maxdim = ", tebd_maxdim, ", cutoff = ", tebd_cutoff)
 
     energy, psi_gs, sites, _ = compute_ground_state(;
         N_units=n_units,
@@ -118,33 +120,81 @@ function calculate_dynamics_pentamer(;
     sz_center = local_sz_mpo(sites, center)
     sp_psi = noprime(apply(sz_center, psi0))
 
-    data = Matrix{Float64}(undef, 4, n_steps * total_sites)
+    sz_ops = [local_sz_mpo(sites, site) for site in 1:total_sites]
+    data = Matrix{Float64}(undef, 5, n_steps * total_sites)
     col = 1
 
+    data_dir = joinpath(dirname(@__DIR__), "data")
+    mkpath(data_dir)
+    checkpoint_file = joinpath(
+        data_dir,
+        "CKPT_pentamer_alpha=$(alpha)_beta=$(beta)_L=$(total_sites).jld2",
+    )
+
+    start_step = 1
+    if isfile(checkpoint_file)
+        println("\n检测到 checkpoint，尝试恢复...")
+        ckpt = load(checkpoint_file)
+        if ckpt["alpha"] == alpha && ckpt["beta"] == beta && ckpt["n_steps"] == n_steps
+            saved_step = ckpt["last_step"]
+            saved_data = ckpt["data"]
+            # sp_psi 无法从 checkpoint 恢复，重新演化到断点
+            println("Checkpoint at step $(saved_step)/$(n_steps)，重新演化到断点...")
+            for step in 1:saved_step
+                sp_psi = apply(gates, sp_psi; cutoff=tebd_cutoff, maxdim=tebd_maxdim)
+                if step % 100 == 0
+                    @printf("  快进 step %d/%d\n", step, saved_step)
+                end
+            end
+            data[:, 1:saved_step*total_sites] .= saved_data[:, 1:saved_step*total_sites]
+            col = saved_step * total_sites + 1
+            start_step = saved_step + 1
+            println("恢复完成，从 step $(start_step) 继续。")
+        else
+            println("Checkpoint 参数不匹配，从头开始。")
+        end
+    end
+
+    t_start = time_ns()
     println("\nComputing C(n,t) = <GS|Sz_n exp[-i(H-E0)t] Sz_center|GS>")
-    for step in 1:n_steps
-        time = step * tstep
+    for step in start_step:n_steps
+        t = step * tstep
         sp_psi = apply(gates, sp_psi; cutoff=tebd_cutoff, maxdim=tebd_maxdim)
-        @printf("t = %.4f, max linkdim = %d\n", time, maximum(linkdims(sp_psi)))
+
+        pct = step / n_steps * 100
+        elapsed = (time_ns() - t_start) / 1e9
+        eta = elapsed / (step - start_step + 1) * (n_steps - step)
+        @printf("step %4d/%d (%.1f%%)  t=%.4f  linkdim=%d  elapsed=%.0fs  ETA=%.0fs\n",
+            step, n_steps, pct, t, maximum(linkdims(sp_psi)), elapsed, eta)
 
         for site in 1:total_sites
-            sz_site = local_sz_mpo(sites, site)
-            corr = inner(psi0', sz_site, sp_psi) * exp(im * energy * time)
+            distance = site - center
+            corr = inner(psi0', sz_ops[site], sp_psi) * exp(im * energy * t)
 
-            data[1, col] = time
+            data[1, col] = t
             data[2, col] = site
-            data[3, col] = real(corr)
-            data[4, col] = imag(corr)
+            data[3, col] = distance
+            data[4, col] = real(corr)
+            data[5, col] = imag(corr)
             col += 1
         end
 
         if step % 10 == 0
             GC.gc()
         end
+
+        if step % 100 == 0
+            jldsave(checkpoint_file;
+                data,
+                last_step=step,
+                alpha,
+                beta,
+                n_steps,
+            )
+            @printf("  [checkpoint saved at step %d]\n", step)
+        end
     end
 
-    data_dir = joinpath(dirname(@__DIR__), "data")
-    mkpath(data_dir)
     filename = joinpath(
         data_dir,
         "NDSF_pentamer_alpha=$(alpha)_beta=$(beta)_L=$(total_sites).jld2",
@@ -158,12 +208,16 @@ function calculate_dynamics_pentamer(;
         n_units,
         total_sites,
         center_site=center,
+        columns=["time", "site", "distance", "real_corr", "imag_corr"],
         tstep,
         n_steps,
     )
 
     println("\nData saved to ", filename)
+    isfile(checkpoint_file) && rm(checkpoint_file)
     return filename
 end
 
-calculate_dynamics_pentamer()
+if abspath(PROGRAM_FILE) == @__FILE__
+    calculate_dynamics_pentamer()
+end

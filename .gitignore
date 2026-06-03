@@ -1,5 +1,8 @@
 .venv/
 references/
+temp/
+logs/
+gcm-diagnose.log
 
 *.jl.cov
 *.jl.*.cov
@@ -7,4 +10,3 @@ references/
 
 .DS_Store
 Thumbs.db
-

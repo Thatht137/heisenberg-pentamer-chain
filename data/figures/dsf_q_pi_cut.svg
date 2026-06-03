@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="450.0" y="30" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">S(π, omega)</text>
+<rect x="82" y="54" width="782" height="430" fill="#f8f8f8" stroke="#222"/>
+<line x1="82.0" y1="54" x2="82.0" y2="484" stroke="#dddddd"/>
+<text x="82.0" y="512" text-anchor="middle" font-family="Arial" font-size="13">0.00</text>
+<line x1="238.39999999999998" y1="54" x2="238.39999999999998" y2="484" stroke="#dddddd"/>
+<text x="238.39999999999998" y="512" text-anchor="middle" font-family="Arial" font-size="13">0.60</text>
+<line x1="394.79999999999995" y1="54" x2="394.79999999999995" y2="484" stroke="#dddddd"/>
+<text x="394.79999999999995" y="512" text-anchor="middle" font-family="Arial" font-size="13">1.20</text>
+<line x1="551.2" y1="54" x2="551.2" y2="484" stroke="#dddddd"/>
+<text x="551.2" y="512" text-anchor="middle" font-family="Arial" font-size="13">1.80</text>
+<line x1="707.5999999999999" y1="54" x2="707.5999999999999" y2="484" stroke="#dddddd"/>
+<text x="707.5999999999999" y="512" text-anchor="middle" font-family="Arial" font-size="13">2.40</text>
+<line x1="864.0" y1="54" x2="864.0" y2="484" stroke="#dddddd"/>
+<text x="864.0" y="512" text-anchor="middle" font-family="Arial" font-size="13">3.00</text>
+<line x1="82" y1="484.0" x2="864" y2="484.0" stroke="#dddddd"/>
+<text x="72" y="488.0" text-anchor="end" font-family="Arial" font-size="13">0.00</text>
+<line x1="82" y1="398.0" x2="864" y2="398.0" stroke="#dddddd"/>
+<text x="72" y="402.0" text-anchor="end" font-family="Arial" font-size="13">0.51</text>
+<line x1="82" y1="312.0" x2="864" y2="312.0" stroke="#dddddd"/>
+<text x="72" y="316.0" text-anchor="end" font-family="Arial" font-size="13">1.03</text>
+<line x1="82" y1="226.0" x2="864" y2="226.0" stroke="#dddddd"/>
+<text x="72" y="230.0" text-anchor="end" font-family="Arial" font-size="13">1.54</text>
+<line x1="82" y1="140.00000000000006" x2="864" y2="140.00000000000006" stroke="#dddddd"/>
+<text x="72" y="144.00000000000006" text-anchor="end" font-family="Arial" font-size="13">2.05</text>
+<line x1="82" y1="54.0" x2="864" y2="54.0" stroke="#dddddd"/>
+<text x="72" y="58.0" text-anchor="end" font-family="Arial" font-size="13">2.57</text>
+<polyline points="82.0,54.0 108.06666666666666,63.11356872100441 134.13333333333333,262.9455068596251 160.2,348.9419486141821 186.26666666666665,408.5399573368674 212.33333333333331,454.9153919097265 238.39999999999998,467.5423652708971 264.46666666666664,470.37089275897364 290.5333333333333,467.78628179116146 316.6,454.93201978356194 342.66666666666663,375.9368292863594 368.73333333333335,335.62589480100485 394.79999999999995,450.35953453476594 420.8666666666667,464.5801290710884 446.9333333333333,463.6271028096439 473.0,464.25266774580115 499.06666666666666,465.18473938755466 525.1333333333333,470.45243618532174 551.2,473.0245162722895 577.2666666666667,475.46378554421824 603.3333333333333,477.66675639338666 629.4000000000001,477.6109007910925 655.4666666666667,475.153396714576 681.5333333333333,459.23768924910746 707.5999999999999,464.9142755211665 733.6666666666667,477.13465298759473 759.7333333333333,479.54156145240324 785.8000000000001,479.4862243096728 811.8666666666666,481.08182779422737 837.9333333333334,482.30168474135087 864.0,482.847970994818" fill="none" stroke="#1b6ca8" stroke-width="2.4"/>
+<line x1="714" y1="76" x2="738" y2="76" stroke="#1b6ca8" stroke-width="2.4"/>
+<text x="746" y="81" font-family="Arial" font-size="13">q = π</text>
+<text x="473.0" y="536" text-anchor="middle" font-family="Arial" font-size="16">omega</text>
+<text transform="translate(24,269.0) rotate(-90)" text-anchor="middle" font-family="Arial" font-size="16">S</text>
+</svg>

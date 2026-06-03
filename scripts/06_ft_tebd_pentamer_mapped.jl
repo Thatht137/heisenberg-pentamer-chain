@@ -23,6 +23,7 @@ const OMEGA_MIN = 0.0
 const OMEGA_MAX = 3.0
 const SPACE_WINDOW = 30
 const MAP_U0 = 5.0
+const SAVE_PLOT = false
 
 function default_input_file()
     total_sites = 5 * N_UNITS
@@ -85,9 +86,10 @@ function fourier_transform_tebd(;
     omega_max::Real=OMEGA_MAX,
     space_window::Int=SPACE_WINDOW,
     map_u0::Real=MAP_U0,
+    save_plot::Bool=SAVE_PLOT,
 )
     if !isfile(input_file)
-        error("找不到输入文件：$input_file。请先运行 scripts/05_tebd_pentamer.jl。")
+        error("找不到输入文件：$(input_file)。请先运行 scripts/05_tebd_pentamer.jl。")
     end
 
     loaded = load(input_file)
@@ -95,10 +97,15 @@ function fourier_transform_tebd(;
 
     tlist = data[1, :]
     nlist = Int.(data[2, :])
-    corr = data[3, :] .+ im .* data[4, :]
-
     total_sites = maximum(nlist)
     center = haskey(loaded, "center_site") ? loaded["center_site"] : div(total_sites, 2)
+    if size(data, 1) >= 5
+        rlist = data[3, :]
+        corr = data[4, :] .+ im .* data[5, :]
+    else
+        rlist = nlist .- center
+        corr = data[3, :] .+ im .* data[4, :]
+    end
     tuniq = sort(unique(tlist))
     dt = tuniq[2] - tuniq[1]
     tmax = maximum(tuniq)
@@ -132,7 +139,8 @@ function fourier_transform_tebd(;
                 end
 
                 time = tlist[idx]
-                phase = exp(im * (omega * time - q * (site - center)))
+                distance = rlist[idx]
+                phase = exp(im * (omega * time - q * distance))
                 acc += phase * corr[idx] * time_window(time, tmax) * dt
             end
 
@@ -157,6 +165,7 @@ function fourier_transform_tebd(;
         mapped,
         qvals,
         omegavals,
+        distances=collect(first_site - center:last_site - center),
         input_file,
         space_window,
         map_u0,
@@ -166,9 +175,15 @@ function fourier_transform_tebd(;
     println("Fourier transform finished.")
     println("Spectrum saved to ", output_file)
     println("Mapped CSV saved to ", csv_file)
-    save_heatmap_if_available(qvals, omegavals, mapped, fig_file)
+    if save_plot
+        save_heatmap_if_available(qvals, omegavals, mapped, fig_file)
+    else
+        println("SAVE_PLOT=false，跳过图片保存。")
+    end
 
     return output_file
 end
 
-fourier_transform_tebd()
+if abspath(PROGRAM_FILE) == @__FILE__
+    fourier_transform_tebd()
+end

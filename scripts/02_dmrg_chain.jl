@@ -22,7 +22,7 @@ function main()
     alpha = 1.0
     N_units = 4
 
-    # 单个五聚体 ED 参考值
+    # 单个五聚体 ED 
     vals_ed, _, _ = diagonalize_pentamer(alpha)
     E_ed_per_unit = vals_ed[1]
     E_ed_total = N_units * E_ed_per_unit

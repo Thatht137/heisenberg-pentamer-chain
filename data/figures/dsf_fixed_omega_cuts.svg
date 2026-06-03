@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="560" viewBox="0 0 900 560">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="450.0" y="30" text-anchor="middle" font-family="Arial" font-size="20" font-weight="700">Fixed omega cuts</text>
+<rect x="82" y="54" width="782" height="430" fill="#f8f8f8" stroke="#222"/>
+<line x1="82.0" y1="54" x2="82.0" y2="484" stroke="#dddddd"/>
+<text x="82.0" y="512" text-anchor="middle" font-family="Arial" font-size="13">0.00</text>
+<line x1="238.4" y1="54" x2="238.4" y2="484" stroke="#dddddd"/>
+<text x="238.4" y="512" text-anchor="middle" font-family="Arial" font-size="13">1.26</text>
+<line x1="394.8" y1="54" x2="394.8" y2="484" stroke="#dddddd"/>
+<text x="394.8" y="512" text-anchor="middle" font-family="Arial" font-size="13">2.51</text>
+<line x1="551.2" y1="54" x2="551.2" y2="484" stroke="#dddddd"/>
+<text x="551.2" y="512" text-anchor="middle" font-family="Arial" font-size="13">3.77</text>
+<line x1="707.6" y1="54" x2="707.6" y2="484" stroke="#dddddd"/>
+<text x="707.6" y="512" text-anchor="middle" font-family="Arial" font-size="13">5.03</text>
+<line x1="864.0" y1="54" x2="864.0" y2="484" stroke="#dddddd"/>
+<text x="864.0" y="512" text-anchor="middle" font-family="Arial" font-size="13">6.28</text>
+<line x1="82" y1="484.0" x2="864" y2="484.0" stroke="#dddddd"/>
+<text x="72" y="488.0" text-anchor="end" font-family="Arial" font-size="13">0.00</text>
+<line x1="82" y1="398.0" x2="864" y2="398.0" stroke="#dddddd"/>
+<text x="72" y="402.0" text-anchor="end" font-family="Arial" font-size="13">0.51</text>
+<line x1="82" y1="312.0" x2="864" y2="312.0" stroke="#dddddd"/>
+<text x="72" y="316.0" text-anchor="end" font-family="Arial" font-size="13">1.03</text>
+<line x1="82" y1="226.0" x2="864" y2="226.0" stroke="#dddddd"/>
+<text x="72" y="230.0" text-anchor="end" font-family="Arial" font-size="13">1.54</text>
+<line x1="82" y1="140.00000000000006" x2="864" y2="140.00000000000006" stroke="#dddddd"/>
+<text x="72" y="144.00000000000006" text-anchor="end" font-family="Arial" font-size="13">2.05</text>
+<line x1="82" y1="54.0" x2="864" y2="54.0" stroke="#dddddd"/>
+<text x="72" y="58.0" text-anchor="end" font-family="Arial" font-size="13">2.57</text>
+<polyline points="82.0,484.0 130.875,482.7575944269447 179.75,483.7204065142274 228.625,483.65124021437913 277.5,483.58109415585733 326.375,483.646178736012 375.25,482.45043736338164 424.125,477.57626558132523 473.0,54.0 521.875,477.5763874895377 570.75,482.4504152838915 619.6249999999999,483.6461783272704 668.5,483.5810940223601 717.3750000000001,483.6512318448757 766.25,483.7204040719643 815.1249999999999,482.7575926313752 864.0,484.0" fill="none" stroke="#1b6ca8" stroke-width="2.4"/>
+<line x1="714" y1="76" x2="738" y2="76" stroke="#1b6ca8" stroke-width="2.4"/>
+<text x="746" y="81" font-family="Arial" font-size="13">omega = 0.00</text>
+<polyline points="82.0,484.0 130.875,470.8033859952586 179.75,477.7150607890343 228.625,482.6159337385771 277.5,483.08621633536023 326.375,477.50395346664106 375.25,475.6693894657442 424.125,380.7079202472247 473.0,470.37089275897364 521.875,380.5695733051989 570.75,475.6740795057542 619.6249999999999,477.4975350591975 668.5,483.0858476138005 717.3750000000001,482.6173435499857 766.25,477.71418073637824 815.1249999999999,470.79753442842303 864.0,484.0" fill="none" stroke="#d1495b" stroke-width="2.4"/>
+<line x1="714" y1="98" x2="738" y2="98" stroke="#d1495b" stroke-width="2.4"/>
+<text x="746" y="103" font-family="Arial" font-size="13">omega = 0.70</text>
+<polyline points="82.0,484.0 130.875,483.6727441197276 179.75,481.17501005757003 228.625,462.88477407897506 277.5,436.4496219547684 326.375,442.0490441632051 375.25,461.73835430964573 424.125,467.77188826436713 473.0,464.25266774580115 521.875,467.77604638830684 570.75,461.7330325653659 619.6249999999999,441.9900331649229 668.5,436.4577842283494 717.3750000000001,462.885941297141 766.25,481.1769599521842 815.1249999999999,483.6727221060544 864.0,484.0" fill="none" stroke="#2a9d8f" stroke-width="2.4"/>
+<line x1="714" y1="120" x2="738" y2="120" stroke="#2a9d8f" stroke-width="2.4"/>
+<text x="746" y="125" font-family="Arial" font-size="13">omega = 1.50</text>
+<polyline points="82.0,484.0 130.875,483.93041481332415 179.75,483.6999406583638 228.625,483.1296576972665 277.5,481.65116000514007 326.375,475.68701273487017 375.25,472.6040638212295 424.125,469.12214342107006 473.0,459.23768924910746 521.875,469.1194559625084 570.75,472.60803775698747 619.6249999999999,475.67881057679114 668.5,481.6554835966823 717.3750000000001,483.1307088619669 766.25,483.69930510015297 815.1249999999999,483.93031983809175 864.0,484.0" fill="none" stroke="#f4a261" stroke-width="2.4"/>
+<line x1="714" y1="142" x2="738" y2="142" stroke="#f4a261" stroke-width="2.4"/>
+<text x="746" y="147" font-family="Arial" font-size="13">omega = 2.30</text>
+<polyline points="82.0,484.0 130.875,483.97242445989696 179.75,483.9131722899676 228.625,483.8179239244418 277.5,483.68818628695857 326.375,483.5160277118452 375.25,483.33497348654834 424.125,483.15946381850495 473.0,482.847970994818 521.875,483.1582862796313 570.75,483.333731316962 619.6249999999999,483.51453925472185 668.5,483.6873152460177 717.3750000000001,483.8181263154896 766.25,483.9134365291109 815.1249999999999,483.97243785041513 864.0,484.0" fill="none" stroke="#6d597a" stroke-width="2.4"/>
+<line x1="714" y1="164" x2="738" y2="164" stroke="#6d597a" stroke-width="2.4"/>
+<text x="746" y="169" font-family="Arial" font-size="13">omega = 3.00</text>
+<text x="473.0" y="536" text-anchor="middle" font-family="Arial" font-size="16">q</text>
+<text transform="translate(24,269.0) rotate(-90)" text-anchor="middle" font-family="Arial" font-size="16">S</text>
+</svg>
