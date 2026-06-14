@@ -11,15 +11,20 @@ import csv
 import os
 
 # ─── 读取数据 ───
-dense_file = "data/phase_diagram_dense.csv"
-fallback_file = "data/phase_diagram.csv"
-
-if os.path.exists(dense_file):
-    src_file = dense_file
-    col_alpha, col_beta, col_ostr = "alpha", "beta", "O_str"
-else:
-    src_file = fallback_file
-    col_alpha, col_beta, col_ostr = "alpha (J2/J1)", "beta (J3/J1)", "O_string"
+candidates = [
+    ("data/phase_diagram_80x60_hires.csv", "alpha", "beta", "O_str"),
+    ("data/phase_diagram_80x60.csv", "alpha", "beta", "O_str"),
+    ("data/phase_diagram_dense.csv", "alpha", "beta", "O_str"),
+    ("data/phase_diagram.csv", "alpha (J2/J1)", "beta (J3/J1)", "O_string"),
+]
+src_file = None
+for path, ca, cb, co in candidates:
+    if os.path.exists(path):
+        src_file = path
+        col_alpha, col_beta, col_ostr = ca, cb, co
+        break
+if src_file is None:
+    raise FileNotFoundError(f"找不到相图数据：{[c[0] for c in candidates]}")
 
 print(f"读取: {src_file}")
 
@@ -132,11 +137,19 @@ for b_target in beta_select:
     alphas = np.array(alphas)
     ostrs = np.array(ostrs)
 
-    # Savitzky-Golay 平滑后求导（窗口取奇数，不超过数据长度）
-    win = min(7, len(ostrs) - 1)
+    # 屏蔽 α≈0 退化带
+    keep = np.abs(alphas) > 0.1
+    alphas = alphas[keep]
+    ostrs = ostrs[keep]
+
+    # Savitzky-Golay 平滑后求导（窗口随数据点数自适应）
+    win = min(11 if len(ostrs) >= 60 else 7, len(ostrs) - 1)
     if win % 2 == 0:
         win -= 1
-    if win >= 3:
+    if win >= 5:
+        ostrs_smooth = savgol_filter(ostrs, win, 3)
+        deriv = np.gradient(ostrs_smooth, alphas)
+    elif win >= 3:
         ostrs_smooth = savgol_filter(ostrs, win, 2)
         deriv = np.gradient(ostrs_smooth, alphas)
     else:

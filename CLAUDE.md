@@ -123,3 +123,33 @@ julia --project=. scripts/merge_phase_dense.jl
 .venv/Scripts/python scripts/plot_phase_diagram_dense.py
 .venv/Scripts/python scripts/plot_phase_slices.py
 ```
+
+## 服务器长跑作业的注意事项
+
+服务器是共享账户、无网络，启动 Julia 前必须 `export JULIA_DEPOT_PATH=~/julia_depot`。多个 Julia 并发跑必须限制 BLAS 线程，否则会互相抢 CPU 导致全部 hang（无报错、状态变 sleeping、CPU 0%）：
+
+```bash
+export OPENBLAS_NUM_THREADS=4
+export MKL_NUM_THREADS=4
+```
+
+后台跑用 `nohup ... > log 2>&1 &` 加 `disown -a`，SSH 断开不影响。命令一条一条贴，不要 for 循环串联（终端换行会截断）。
+
+### Julia stdout 缓冲坑
+
+`println`/`@printf` 重定向到文件时是 4-8 KB 块缓冲，不是行缓冲。`tail -f` 看似"卡住不动"其实是缓冲憋住了。`05_tebd_pentamer_server.jl` 和 `06_ft_tebd_pentamer_mapped_server.jl` 已在主循环加 `flush(stdout)`；写新长跑脚本时要默认加上。
+
+诊断"卡死还是缓冲"用 ps + /proc/io 三件套（不要急着 kill）：
+
+```bash
+ps aux | grep julia | grep -v grep            # STAT=R/Rl 在跑，S/Sl 才是真睡
+cat /proc/<pid>/io                            # rchar/wchar 在涨说明在干活
+ls -lh data/CKPT_pentamer_*.jld2              # 脚本写文件不走 stdout 缓冲
+```
+
+`/proc/<pid>/environ` 可以查到挂在后台的进程当时的 `PENTAMER_*` 环境变量（区分多个并发任务对应哪组参数）：
+
+```bash
+tr '\0' '\n' < /proc/<pid>/environ | grep PENTAMER
+```
+
