@@ -65,7 +65,7 @@ os.makedirs("figures", exist_ok=True)
 # ─── 图1: O_str vs beta（固定 alpha）─── Fig. 3b
 fig1, ax1 = plt.subplots(figsize=(7, 5))
 
-alpha_select = [-1.0, -0.5, 0.1, 0.5, 1.0]
+alpha_select = [-1.0, -0.5, 0.2, 0.5, 1.0]
 for a_target in alpha_select:
     a = min(alpha_vals, key=lambda x: abs(x - a_target))
     betas = []

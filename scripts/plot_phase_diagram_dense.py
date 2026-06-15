@@ -10,7 +10,7 @@
 
 import numpy as np
 import matplotlib.pyplot as plt
-from matplotlib.colors import TwoSlopeNorm
+from matplotlib.colors import TwoSlopeNorm, LogNorm
 from scipy.ndimage import gaussian_filter
 import csv
 import os
@@ -54,20 +54,30 @@ for i, a in enumerate(alpha_vals):
 n_alpha, n_beta = len(alpha_vals), len(beta_vals)
 print(f"网格: {n_alpha} × {n_beta} = {n_alpha * n_beta} 点")
 
-# ─── 高斯平滑去噪（不做插值放大）───
-# sigma 用网格点单位。signed 用更大的 sigma 抑制 α≈0 退化点的符号翻转噪声；
-# absolute 用较小 sigma 保留细节。
-O_smooth_signed = gaussian_filter(np.nan_to_num(O_str), sigma=1.5, mode="nearest")
-O_smooth_abs = gaussian_filter(np.abs(np.nan_to_num(O_str)), sigma=0.8, mode="nearest")
-
-# ─── 屏蔽 α≈0 退化带 ───
+# ─── 屏蔽 α≈0 退化带（先屏蔽再平滑）───
 # 五聚体在 α=0 时局部 8 重简并（trimer S=1/2 × 2 free spins），
 # DMRG 随机收敛导致 O_str 符号和大小都不稳定。物理上是真实的退化，绘图中屏蔽掉。
 ALPHA_MASK_HALF_WIDTH = 0.1
 mask_alpha = np.abs(alpha_vals) <= ALPHA_MASK_HALF_WIDTH
-O_smooth_signed[mask_alpha, :] = np.nan
-O_smooth_abs[mask_alpha, :] = np.nan
 print(f"屏蔽 α∈[-{ALPHA_MASK_HALF_WIDTH}, {ALPHA_MASK_HALF_WIDTH}] 的退化带（{mask_alpha.sum()} 个 α 点）")
+
+
+def mask_aware_smooth(arr, mask_rows, sigma):
+    """对屏蔽行做 mask-aware 高斯平滑：屏蔽行不参与平滑、不被邻域拉低。"""
+    valid = np.ones_like(arr, dtype=float)
+    valid[mask_rows, :] = 0.0
+    data = np.where(valid > 0, arr, 0.0)
+    num = gaussian_filter(data, sigma=sigma, mode="nearest")
+    den = gaussian_filter(valid, sigma=sigma, mode="nearest")
+    out = np.divide(num, den, out=np.zeros_like(num), where=den > 1e-6)
+    out[mask_rows, :] = np.nan
+    return out
+
+
+# sigma 用网格点单位。signed 用更大 sigma 抑制 α≈0 退化点的符号翻转噪声；
+# absolute 用较小 sigma 保留细节。
+O_smooth_signed = mask_aware_smooth(np.nan_to_num(O_str), mask_alpha, sigma=1.5)
+O_smooth_abs = mask_aware_smooth(np.abs(np.nan_to_num(O_str)), mask_alpha, sigma=0.8)
 
 # ─── 绘图样式 ───
 plt.rcParams.update({
@@ -87,7 +97,7 @@ os.makedirs("figures", exist_ok=True)
 # ─── 图1：带符号 ───
 fig, ax = plt.subplots(figsize=(7, 5))
 
-vmax = np.percentile(np.abs(O_smooth_signed), 95)  # 95 分位避免极端噪声拉爆色标
+vmax = np.nanmax(np.abs(O_smooth_signed))  # 用真实最大值，signed 图重点是两相对比
 norm = TwoSlopeNorm(vmin=-vmax, vcenter=0, vmax=vmax)
 
 im = ax.pcolormesh(
@@ -107,15 +117,19 @@ plt.savefig("figures/phase_diagram_dense_signed.pdf")
 plt.savefig("figures/phase_diagram_dense_signed.png")
 print("图1: figures/phase_diagram_dense_signed.pdf")
 
-# ─── 图2：绝对值 ───
+# ─── 图2：绝对值（log 色标展开 ~1 个数量级的动态范围）───
 fig2, ax2 = plt.subplots(figsize=(7, 5))
 
-vmax_abs = np.percentile(O_smooth_abs, 95)
+# 数据范围约 0.01–0.15，约一个数量级；用 log 色标让上下两区的内部结构都可见
+finite = O_smooth_abs[np.isfinite(O_smooth_abs) & (O_smooth_abs > 0)]
+vmin_abs = max(np.nanpercentile(finite, 2), 1e-3)
+vmax_abs = np.nanpercentile(finite, 99.5)
+print(f"|O_str| log 色标范围: [{vmin_abs:.4f}, {vmax_abs:.4f}]")
 
 im2 = ax2.pcolormesh(
     beta_vals, alpha_vals, O_smooth_abs,
     cmap="inferno", shading="auto", rasterized=True,
-    vmin=0, vmax=vmax_abs,
+    norm=LogNorm(vmin=vmin_abs, vmax=vmax_abs),
 )
 
 cbar2 = fig2.colorbar(im2, ax=ax2, pad=0.02)
@@ -129,3 +143,49 @@ plt.tight_layout()
 plt.savefig("figures/phase_diagram_dense.pdf")
 plt.savefig("figures/phase_diagram_dense.png")
 print("图2: figures/phase_diagram_dense.pdf")
+
+# ─── 图3：|dO_str/dα| 导数热力图（凸显 α≈±0.2 的过渡特征）───
+# LSM 约束下五聚体没有 Haldane 相，O_str 本身相图无锐利结构。
+# 但 dO_str/dα 在 α≈±0.2 处有尖峰（见 dOstr_dalpha.png 切片），
+# 把它整张相图都画出来才能看到"边界"。
+fig3, ax3 = plt.subplots(figsize=(7, 5))
+
+# 用屏蔽感知平滑后的 signed 数据（带符号才能正确求导）
+# 沿 α 方向求数值导数；屏蔽行附近的导数会因 NaN 边界不可靠，单独标记
+dOda = np.full_like(O_smooth_signed, np.nan)
+for j in range(n_beta):
+    col = O_smooth_signed[:, j]
+    valid = np.isfinite(col)
+    if valid.sum() >= 3:
+        # 在每个连续有效段内独立求梯度
+        idx = np.where(valid)[0]
+        # 找连续段
+        splits = np.where(np.diff(idx) > 1)[0] + 1
+        for seg in np.split(idx, splits):
+            if len(seg) >= 3:
+                dOda[seg, j] = np.gradient(col[seg], alpha_vals[seg])
+
+dOda_abs = np.abs(dOda)
+
+finite_d = dOda_abs[np.isfinite(dOda_abs) & (dOda_abs > 0)]
+vmin_d = max(np.nanpercentile(finite_d, 5), 1e-3)
+vmax_d = np.nanpercentile(finite_d, 99)
+print(f"|dO/dα| 色标范围: [{vmin_d:.4f}, {vmax_d:.4f}]")
+
+im3 = ax3.pcolormesh(
+    beta_vals, alpha_vals, dOda_abs,
+    cmap="inferno", shading="auto", rasterized=True,
+    norm=LogNorm(vmin=vmin_d, vmax=vmax_d),
+)
+
+cbar3 = fig3.colorbar(im3, ax=ax3, pad=0.02)
+cbar3.set_label(r"$|dO_{\mathrm{str}}^z / d\alpha|$", fontsize=13)
+
+ax3.set_xlabel(r"$\beta = J_3 / J_1$")
+ax3.set_ylabel(r"$\alpha = J_2 / J_1$")
+ax3.set_title(rf"$|dO_{{\mathrm{{str}}}}^z / d\alpha|$ — Pentamer Chain ({n_alpha}×{n_beta})")
+
+plt.tight_layout()
+plt.savefig("figures/phase_diagram_derivative.pdf")
+plt.savefig("figures/phase_diagram_derivative.png")
+print("图3: figures/phase_diagram_derivative.pdf")

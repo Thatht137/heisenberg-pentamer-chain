@@ -43,9 +43,9 @@ o--J2--o--J1--o--J1--o--J2--o  --J3--  o--J2--o--J1--o--J1--o--J2--o
 
 - 精确对角化：单五聚体能谱、总自旋分类和能级导出。
 - DMRG：有限长度五聚体链基态、激发态、弦序参量和自旋能隙。
-- 相图扫描：粗网格与加密网格的 `(alpha, beta)` 参数扫描。
-- 动力学结构因子：修正向量法计算 `S(q, omega)`。
-- TEBD：五聚体链和映射模型的有限温动力学谱函数试算。
+- 相图扫描：粗网格、加密网格和 80×60 高精度网格的 `(alpha, beta)` 参数扫描。
+- 动力学结构因子：修正向量法计算 `S(q, omega)`，TEBD 时域路线作为交叉验证。
+- TEBD：五聚体链和映射模型的有限温动力学谱函数计算。
 - 绘图：相图、能级、切片曲线和 DSF 可视化脚本。
 
 ## 安装
@@ -81,17 +81,23 @@ julia --project=. scripts\01_single_pentamer.jl
 
 ```text
 scripts/
-  01_single_pentamer.jl          单五聚体能谱扫描
-  01b_export_energy_levels.jl    导出单五聚体能级表
-  02_dmrg_chain.jl               DMRG 基态与极限验证
-  03_phase_diagram.jl            弦序参量粗网格相图
-  03b_phase_diagram_dense.jl     弦序参量加密相图
-  04_dsf.jl                      修正向量法 DSF
-  05_tebd_pentamer.jl            五聚体链 TEBD 谱函数
-  06_ft_tebd_pentamer_mapped.jl  映射模型有限温 TEBD
-  merge_phase_dense.jl           合并加密相图结果
-  read_dsf_summary.jl            读取 DSF 结果摘要
-  plot_*.py / plot_*.jl          绘图脚本
+  01_single_pentamer.jl              单五聚体能谱扫描
+  01b_export_energy_levels.jl        导出单五聚体能级表
+  02_dmrg_chain.jl                   DMRG 基态与极限验证
+  03_phase_diagram.jl                弦序参量粗网格相图
+  03b_phase_diagram_dense.jl         弦序参量加密相图
+  03c_phase_diagram_80x60.jl         80×60 弦序相图（标准精度）
+  03d_phase_diagram_80x60_hires.jl   80×60 弦序相图（高精度，maxdim=1000）
+  04_dsf.jl                          修正向量法 DSF
+  05_tebd_pentamer.jl                五聚体链 TEBD 谱函数
+  05_tebd_pentamer_server.jl         05 的服务器版（环境变量驱动）
+  06_ft_tebd_pentamer_mapped.jl      TEBD 关联函数到 S(q,omega) 的傅里叶变换
+  06_ft_tebd_pentamer_mapped_server.jl 06 的服务器版（环境变量驱动）
+  merge_phase_dense.jl               合并加密相图结果
+  merge_phase_80x60.jl               合并 80×60 标准相图
+  merge_phase_80x60_hires.jl         合并 80×60 高精度相图
+  read_dsf_summary.jl                读取 DSF 结果摘要
+  plot_*.py / plot_*.jl              绘图脚本
 ```
 
 常用命令：
@@ -125,6 +131,13 @@ test/
 - `data/`：JLD2、CSV、DAT 等数值结果。
 - `figures/`：相图、能级图和切片图。
 - `data/figures/`：DSF 热图和切片 SVG。
+
+当前已就位的代表性结果：
+
+- `data/phase_diagram_80x60_hires.csv`：80×60 高精度弦序相图（N_units=12, maxdim=1000）。
+- `data/Sqw_tebd_pentamer_alpha=*_beta=*.csv`：10 组 TEBD DSF 谱（α=±1.0 各配 5 个 β）。
+- `figures/phase_diagram_derivative.{pdf,png}`：|dO_str/dα| 导数热力图，凸显 α≈±0.2 过渡区。
+- `figures/Sqw_tebd_grid.{pdf,png}`：10 组 DSF 拼接 grid，对照文献 Fig. 6。
 
 当前数据适合检查代码流程和物理趋势，不建议直接作为发表级结果使用。正式计算前建议备份旧结果，避免脚本覆盖。
 
