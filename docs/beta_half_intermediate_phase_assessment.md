@@ -85,6 +85,26 @@ data/spin_correlations/power_law_fits_b0.5.csv
 figures/spin_correlation_scaling_b0.5.pdf
 ```
 
+### 初步纠缠谱
+
+在 `L=80` 下计算 `alpha=-0.50,-0.05,0.14,0.33` 的中心五种
+切口纠缠谱。结果具有明显切口依赖：
+
+- 负 `alpha` 的单元边界切口 `cut=0` 出现近似成对低能级；
+- 正 `alpha` 的无隙态同样出现 SU(2) 多重态简并；
+- 因此无量子数标签的“双重简并”不能单独作为 SPT 证据；
+- `alpha=-0.50` 的低能劈裂仍较明显，需要尺寸和收敛检查。
+
+对应结果：
+
+```text
+data/entanglement_spectrum/splitting_summary_b0.5_L80.csv
+figures/entanglement_spectrum_b0.5_L80.pdf
+```
+
+下一步必须提取 Schmidt 态的 `Sz` 量子数，并与边缘磁化共同判断
+负 `alpha` 区域是否为 Haldane/SPT 相。
+
 ## 当前结论
 
 现有证据不支持把 `0.17≲alpha≲0.30` 命名为独立第四相。
