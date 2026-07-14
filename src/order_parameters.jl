@@ -75,6 +75,31 @@ function _string_correlator(psi, sites, i::Int, j::Int)
 end
 
 """
+    bipartite_entropy(psi::MPS, bond::Int)
+
+计算 MPS 在给定 bond 处的双分区 von Neumann 纠缠熵（单位：nats）。
+bond=L÷2 对应链中央切分。
+bond=b 表示在格点 b 和 b+1 之间切分。
+"""
+function bipartite_entropy(psi::MPS, bond::Int)
+    L = length(psi)
+    @assert 1 <= bond < L "bond must be in 1:(L-1), got $bond for L=$L"
+
+    orthogonalize!(psi, bond)
+
+    # 构造左侧指标（bond=1 时没有左 link）
+    if bond == 1
+        left_inds = (siteind(psi, bond),)
+    else
+        left_inds = (linkind(psi, bond-1), siteind(psi, bond))
+    end
+
+    U, S, V, spec = svd(psi[bond], left_inds)
+
+    return ITensors.entropy(spec)  # nats
+end
+
+"""
     spin_gap(; N_units=12, alpha=1.0, beta=0.5, kwargs...)
 
 计算自旋能隙：E(Sz=1) - E(Sz=0)。

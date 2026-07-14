@@ -39,6 +39,8 @@ for i, alpha in enumerate(ALPHAS):
             continue
 
         q_points, omega_points = spectrum.shape
+        # 强制 inversion symmetry: S(q) = S(2π-q)，消除 TEBD 数值噪声，保持全范围
+        spectrum = 0.5 * (spectrum + spectrum[::-1, :])
         qvals = np.linspace(0, 2 * np.pi, q_points)
         omegavals = np.linspace(0, 3.0, omega_points)
 
@@ -51,8 +53,8 @@ for i, alpha in enumerate(ALPHAS):
 
         if i == len(ALPHAS) - 1:
             ax.set_xlabel(r"$q$")
-            ax.set_xticks([0, np.pi, 2 * np.pi])
-            ax.set_xticklabels([r"$0$", r"$\pi$", r"$2\pi$"])
+            ax.set_xticks([0, np.pi / 2, np.pi, 3 * np.pi / 2, 2 * np.pi])
+            ax.set_xticklabels([r"$0$", r"$\pi/2$", r"$\pi$", r"$3\pi/2$", r"$2\pi$"])
         if j == 0:
             ax.set_ylabel(rf"$\alpha={alpha}$" + "\n" + r"$\omega / J_1$")
         if i == 0:
@@ -72,6 +74,6 @@ if last_im is not None:
     cbar = fig.colorbar(last_im, cax=cax)
     cbar.set_label(r"$S^{zz}(q,\omega)$ (mapped)")
 
-fig.savefig("figures/Sqw_tebd_grid_inferno.pdf")
-fig.savefig("figures/Sqw_tebd_grid_inferno.png", dpi=300)
-print("Saved figures/Sqw_tebd_grid_inferno.{pdf,png}")
+fig.savefig("figures/Sqw_tebd_grid_inferno_sym.pdf")
+fig.savefig("figures/Sqw_tebd_grid_inferno_sym.png", dpi=300)
+print("Saved figures/Sqw_tebd_grid_inferno_sym.{pdf,png}")

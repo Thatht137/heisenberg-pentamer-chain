@@ -20,38 +20,6 @@ using ITensors
 using ITensorMPS
 using Printf
 
-function compute_ground_state_hires(; N_units, alpha, beta, maxdim, cutoff, nsweeps)
-    L = 5 * N_units
-    sites = siteinds("S=1/2", L; conserve_qns=true)
-    H = pentamer_chain_hamiltonian(sites, N_units; alpha, beta)
-
-    # 确定性 Néel 初态（奇数长度尾部修正使总 Sz=1/2）
-    state = [isodd(n) ? "Up" : "Dn" for n in 1:L]
-    if isodd(L)
-        state[end] = "Up"
-    end
-    psi0 = MPS(sites, state)  # 确定性产品态，无随机扰动
-
-    # bond dim schedule：前几个 sweep 慢热，后续保持满值
-    schedule = Int[]
-    for i in 1:nsweeps
-        if i <= 6
-            push!(schedule, min(maxdim, 50 * 2^(i-1)))
-        else
-            push!(schedule, maxdim)
-        end
-    end
-
-    energy, psi = dmrg(H, psi0;
-        nsweeps,
-        maxdim=schedule,
-        cutoff,
-        noise=[1e-6, 1e-7, 1e-8, 0.0, 0.0, 0.0, 0.0],  # 早期加噪声逃局部极小
-        outputlevel=1,
-    )
-    return energy, psi, sites
-end
-
 function main()
     task_id = if length(ARGS) >= 1
         parse(Int, ARGS[1])

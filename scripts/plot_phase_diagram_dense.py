@@ -54,30 +54,38 @@ for i, a in enumerate(alpha_vals):
 n_alpha, n_beta = len(alpha_vals), len(beta_vals)
 print(f"网格: {n_alpha} × {n_beta} = {n_alpha * n_beta} 点")
 
-# ─── 屏蔽 α≈0 退化带（先屏蔽再平滑）───
-# 五聚体在 α=0 时局部 8 重简并（trimer S=1/2 × 2 free spins），
-# DMRG 随机收敛导致 O_str 符号和大小都不稳定。物理上是真实的退化，绘图中屏蔽掉。
-ALPHA_MASK_HALF_WIDTH = 0.1
-mask_alpha = np.abs(alpha_vals) <= ALPHA_MASK_HALF_WIDTH
-print(f"屏蔽 α∈[-{ALPHA_MASK_HALF_WIDTH}, {ALPHA_MASK_HALF_WIDTH}] 的退化带（{mask_alpha.sum()} 个 α 点）")
+# 默认显示全部数据，可选标记 α≈0 数值敏感区
+SHOW_ALPHA_ZERO_BAND = os.getenv("SHOW_ALPHA_ZERO_BAND", "0") == "1"
+ALPHA_ZERO_HALF_WIDTH = 0.1
 
 
-def mask_aware_smooth(arr, mask_rows, sigma):
-    """对屏蔽行做 mask-aware 高斯平滑：屏蔽行不参与平滑、不被邻域拉低。"""
-    valid = np.ones_like(arr, dtype=float)
-    valid[mask_rows, :] = 0.0
-    data = np.where(valid > 0, arr, 0.0)
+def nan_aware_smooth(arr, sigma):
+    """忽略缺失点进行高斯平滑。"""
+    valid = np.isfinite(arr).astype(float)
+    data = np.nan_to_num(arr)
     num = gaussian_filter(data, sigma=sigma, mode="nearest")
     den = gaussian_filter(valid, sigma=sigma, mode="nearest")
-    out = np.divide(num, den, out=np.zeros_like(num), where=den > 1e-6)
-    out[mask_rows, :] = np.nan
-    return out
+    return np.divide(num, den, out=np.full_like(num, np.nan), where=den > 1e-6)
 
 
-# sigma 用网格点单位。signed 用更大 sigma 抑制 α≈0 退化点的符号翻转噪声；
-# absolute 用较小 sigma 保留细节。
-O_smooth_signed = mask_aware_smooth(np.nan_to_num(O_str), mask_alpha, sigma=1.5)
-O_smooth_abs = mask_aware_smooth(np.abs(np.nan_to_num(O_str)), mask_alpha, sigma=0.8)
+# signed 图侧重整体趋势，absolute 图保留更多细节
+O_smooth_signed = nan_aware_smooth(O_str, sigma=1.5)
+O_smooth_abs = nan_aware_smooth(np.abs(O_str), sigma=0.8)
+
+
+def mark_alpha_zero_band(ax):
+    """用斜线标记数值敏感区。"""
+    if SHOW_ALPHA_ZERO_BAND:
+        ax.axhspan(
+            -ALPHA_ZERO_HALF_WIDTH,
+            ALPHA_ZERO_HALF_WIDTH,
+            facecolor="white",
+            edgecolor="white",
+            alpha=0.18,
+            hatch="///",
+            linewidth=0,
+            zorder=3,
+        )
 
 # ─── 绘图样式 ───
 plt.rcParams.update({
@@ -104,6 +112,7 @@ im = ax.pcolormesh(
     beta_vals, alpha_vals, O_smooth_signed,
     cmap="RdBu_r", norm=norm, shading="auto", rasterized=True,
 )
+mark_alpha_zero_band(ax)
 
 cbar = fig.colorbar(im, ax=ax, pad=0.02)
 cbar.set_label(r"$O_{\mathrm{str}}^z$", fontsize=13)
@@ -131,6 +140,7 @@ im2 = ax2.pcolormesh(
     cmap="inferno", shading="auto", rasterized=True,
     norm=LogNorm(vmin=vmin_abs, vmax=vmax_abs),
 )
+mark_alpha_zero_band(ax2)
 
 cbar2 = fig2.colorbar(im2, ax=ax2, pad=0.02)
 cbar2.set_label(r"$|O_{\mathrm{str}}^z|$", fontsize=13)
@@ -177,6 +187,7 @@ im3 = ax3.pcolormesh(
     cmap="inferno", shading="auto", rasterized=True,
     norm=LogNorm(vmin=vmin_d, vmax=vmax_d),
 )
+mark_alpha_zero_band(ax3)
 
 cbar3 = fig3.colorbar(im3, ax=ax3, pad=0.02)
 cbar3.set_label(r"$|dO_{\mathrm{str}}^z / d\alpha|$", fontsize=13)

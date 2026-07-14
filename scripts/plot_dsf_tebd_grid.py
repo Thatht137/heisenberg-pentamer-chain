@@ -43,6 +43,11 @@ for i, alpha in enumerate(ALPHAS):
         qvals = np.linspace(0, 2 * np.pi, q_points)
         omegavals = np.linspace(0, 3.0, omega_points)
 
+        # 强制 inversion symmetry: S(q) = S(2π-q)。
+        # 五聚体单胞基态是 S=1/2 doublet，开边界留边缘自由度 + TEBD 截断误差累积，
+        # 使 [π,2π] 半区有数值噪声。镜像平均消除不对称，保持全 [0,2π] 范围。
+        spectrum = 0.5 * (spectrum + spectrum[::-1, :])
+
         # 频域高斯平滑（各向异性）：spectrum.shape = (q, ω)，sigma 同维度
         if SMOOTH_SIGMA and (np.asarray(SMOOTH_SIGMA) > 0).any():
             spectrum = gaussian_filter(spectrum, sigma=SMOOTH_SIGMA)
@@ -56,8 +61,8 @@ for i, alpha in enumerate(ALPHAS):
 
         if i == len(ALPHAS) - 1:
             ax.set_xlabel(r"$q$")
-            ax.set_xticks([0, np.pi, 2 * np.pi])
-            ax.set_xticklabels([r"$0$", r"$\pi$", r"$2\pi$"])
+            ax.set_xticks([0, np.pi / 2, np.pi, 3 * np.pi / 2, 2 * np.pi])
+            ax.set_xticklabels([r"$0$", r"$\pi/2$", r"$\pi$", r"$3\pi/2$", r"$2\pi$"])
         if j == 0:
             ax.set_ylabel(rf"$\alpha={alpha}$" + "\n" + r"$\omega / J_1$")
         if i == 0:
@@ -77,6 +82,6 @@ if last_im is not None:
     cbar = fig.colorbar(last_im, cax=cax)
     cbar.set_label(r"$S^{zz}(q,\omega)$ (mapped)")
 
-fig.savefig("figures/Sqw_tebd_grid.pdf")
-fig.savefig("figures/Sqw_tebd_grid.png", dpi=300)
-print("Saved figures/Sqw_tebd_grid.{pdf,png}")
+fig.savefig("figures/Sqw_tebd_grid_sym.pdf")
+fig.savefig("figures/Sqw_tebd_grid_sym.png", dpi=300)
+print("Saved figures/Sqw_tebd_grid_sym.{pdf,png}")
