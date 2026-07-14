@@ -71,6 +71,52 @@ function string_correlator_units(psi, sites, unit_i::Int, unit_j::Int)
 end
 
 """
+    string_order_distance_samples(psi, sites, N_units; margin=3, max_distance=nothing)
+
+逐个保存体区内所有端点对的弦关联。
+"""
+function string_order_distance_samples(
+    psi,
+    sites,
+    N_units::Int;
+    margin::Int=3,
+    max_distance::Union{Nothing, Int}=nothing,
+)
+    @assert length(sites) == 5 * N_units
+    @assert N_units >= 2
+    @assert margin >= 0
+
+    while margin > 0 && N_units - 2 * margin < 2
+        margin -= 1
+    end
+
+    unit_start = margin + 1
+    unit_end = N_units - margin
+    available_distance = unit_end - unit_start
+    available_distance >= 1 || error("No unit-cell pair available")
+
+    distance_limit = isnothing(max_distance) ?
+        available_distance : min(max_distance, available_distance)
+    distance_limit >= 1 || error("max_distance must be positive")
+
+    samples = NamedTuple[]
+    for distance in 1:distance_limit
+        for unit_i in unit_start:(unit_end - distance)
+            unit_j = unit_i + distance
+            push!(samples, (
+                distance_units=distance,
+                unit_i=unit_i,
+                unit_j=unit_j,
+                O_str=string_correlator_units(
+                    psi, sites, unit_i, unit_j),
+            ))
+        end
+    end
+
+    return samples
+end
+
+"""
     string_order_distance_profile(psi, sites, N_units; margin=2, max_distance=nothing)
 
 计算体区内弦序随位胞距离的变化。

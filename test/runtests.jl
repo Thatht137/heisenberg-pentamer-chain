@@ -89,5 +89,10 @@ using Test
         @test length(profile) == 3
         @test all(isapprox(row.O_mean, -0.25; atol=1e-12) for row in profile)
         @test [row.n_pairs for row in profile] == [3, 2, 1]
+
+        samples = string_order_distance_samples(
+            psi, sites, 4; margin=0)
+        @test length(samples) == 6
+        @test all(isapprox(row.O_str, -0.25; atol=1e-12) for row in samples)
     end
 end
