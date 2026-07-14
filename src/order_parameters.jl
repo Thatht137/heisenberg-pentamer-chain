@@ -191,6 +191,24 @@ function _string_correlator(psi, sites, i::Int, j::Int)
 end
 
 """
+    bond_spin_correlations(psi, sites)
+
+计算所有最近邻键的自旋关联。
+"""
+function bond_spin_correlations(psi, sites)
+    correlations = Float64[]
+    for site in 1:(length(sites) - 1)
+        os = OpSum()
+        os += 1.0, "Sz", site, "Sz", site + 1
+        os += 0.5, "S+", site, "S-", site + 1
+        os += 0.5, "S-", site, "S+", site + 1
+        operator = MPO(os, sites)
+        push!(correlations, real(inner(psi', operator, psi)))
+    end
+    return correlations
+end
+
+"""
     bipartite_entropy(psi::MPS, bond::Int)
 
 计算 MPS 在给定 bond 处的双分区 von Neumann 纠缠熵（单位：nats）。

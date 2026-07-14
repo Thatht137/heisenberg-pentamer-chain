@@ -16,10 +16,11 @@ include("spectral.jl")
 
 export pentamer_hamiltonian_matrix, pentamer_chain_hamiltonian
 export diagonalize_pentamer, classify_states, total_spin_squared_matrix
-export compute_ground_state, compute_ground_state_hires, compute_excited_state
+export compute_ground_state, compute_ground_state_hires
+export compute_sector_ground_state_hires, compute_excited_state
 export string_order_parameter, string_correlator_units
 export string_order_distance_samples, string_order_distance_profile
-export bipartite_entropy, spin_gap
+export bond_spin_correlations, bipartite_entropy, spin_gap
 export apply_Sq_operator, correction_vector_dsf, compute_dsf_spectrum
 
 end

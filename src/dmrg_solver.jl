@@ -139,6 +139,65 @@ function compute_ground_state_hires(;
     return energy, psi, sites
 end
 
+"""
+    compute_sector_ground_state_hires(; N_units, alpha, beta, target_sz, ...)
+
+在指定总 Sz 扇区中计算高精度基态。
+"""
+function compute_sector_ground_state_hires(;
+    N_units::Int,
+    alpha::Real,
+    beta::Real,
+    target_sz::Int,
+    maxdim::Int,
+    cutoff::Real,
+    nsweeps::Int,
+)
+    L = 5 * N_units
+    @assert iseven(L)
+    @assert abs(target_sz) <= div(L, 2)
+
+    sites = siteinds("S=1/2", L; conserve_qns=true)
+    H = pentamer_chain_hamiltonian(sites, N_units; alpha, beta)
+    state = [isodd(site) ? "Up" : "Dn" for site in 1:L]
+
+    if target_sz > 0
+        candidates = sort(
+            collect(2:2:L);
+            by=site -> abs(site - (L + 1) / 2),
+        )
+        for site in candidates[1:target_sz]
+            state[site] = "Up"
+        end
+    elseif target_sz < 0
+        candidates = sort(
+            collect(1:2:L);
+            by=site -> abs(site - (L + 1) / 2),
+        )
+        for site in candidates[1:(-target_sz)]
+            state[site] = "Dn"
+        end
+    end
+
+    psi0 = MPS(sites, state)
+    schedule = _sweep_schedule(maxdim, nsweeps)
+    noise_schedule = zeros(nsweeps)
+    noise_schedule[1:min(3, nsweeps)] .=
+        [1e-6, 1e-7, 1e-8][1:min(3, nsweeps)]
+
+    energy, psi = dmrg(
+        H,
+        psi0;
+        nsweeps,
+        maxdim=schedule,
+        cutoff,
+        noise=noise_schedule,
+        outputlevel=1,
+    )
+
+    return energy, psi, sites
+end
+
 function _sweep_schedule(maxdim::Int, nsweeps::Int)
     schedule = Int[]
     ramp_steps = min(5, nsweeps)

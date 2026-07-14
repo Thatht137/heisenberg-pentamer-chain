@@ -26,6 +26,7 @@ function main()
     alpha = parse(Float64, ARGS[1])
     beta = parse(Float64, ARGS[2])
     L = parse(Int, ARGS[3])
+    nsweeps = length(ARGS) >= 4 ? parse(Int, ARGS[4]) : 40
 
     @assert L % 5 == 0 "L must be multiple of 5"
     N_units = L ÷ 5
@@ -34,7 +35,19 @@ function main()
     maxdim_map = Dict(40 => 800, 60 => 1000, 80 => 1500, 100 => 2000)
     maxdim = get(maxdim_map, L, 1000)
     cutoff = 1e-10
-    nsweeps = 20
+
+    data_dir = joinpath(dirname(@__DIR__), "data", "entanglement_profiles")
+    mkpath(data_dir)
+    outfile = joinpath(
+        data_dir,
+        @sprintf("profile_a%.4f_b%.4f_L%03d.csv", alpha, beta, L),
+    )
+    force_recompute = get(ENV, "FORCE_RECOMPUTE", "0") == "1"
+
+    if isfile(outfile) && !force_recompute
+        println("已存在，跳过：$outfile")
+        return
+    end
 
     @printf("计算沿链纠缠熵分布\n")
     @printf("参数: α=%.4f, β=%.4f, L=%d, maxdim=%d\n", alpha, beta, L, maxdim)
@@ -62,11 +75,6 @@ function main()
     elapsed = time() - t0
 
     # 输出文件
-    data_dir = joinpath(dirname(@__DIR__), "data", "entanglement_profiles")
-    mkpath(data_dir)
-
-    outfile = joinpath(data_dir, @sprintf("profile_a%.4f_b%.4f_L%03d.csv", alpha, beta, L))
-
     open(outfile, "w") do f
         println(f, "bond,S")
         for (bond, S) in enumerate(S_profile)
