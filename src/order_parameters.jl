@@ -56,6 +56,76 @@ function string_order_parameter(psi, sites, N_units::Int; margin::Int=3)
 end
 
 """
+    string_correlator_units(psi, sites, unit_i, unit_j)
+
+计算两个五聚体单元边界之间的弦关联。
+"""
+function string_correlator_units(psi, sites, unit_i::Int, unit_j::Int)
+    N_units = div(length(sites), 5)
+    @assert length(sites) == 5 * N_units
+    @assert 1 <= unit_i < unit_j <= N_units
+
+    site_i = 5 * unit_i
+    site_j = 5 * (unit_j - 1) + 1
+    return _string_correlator(psi, sites, site_i, site_j)
+end
+
+"""
+    string_order_distance_profile(psi, sites, N_units; margin=2, max_distance=nothing)
+
+计算体区内弦序随位胞距离的变化。
+"""
+function string_order_distance_profile(
+    psi,
+    sites,
+    N_units::Int;
+    margin::Int=2,
+    max_distance::Union{Nothing, Int}=nothing,
+)
+    @assert length(sites) == 5 * N_units
+    @assert N_units >= 2
+    @assert margin >= 0
+
+    while margin > 0 && N_units - 2 * margin < 2
+        margin -= 1
+    end
+
+    unit_start = margin + 1
+    unit_end = N_units - margin
+    available_distance = unit_end - unit_start
+    available_distance >= 1 || error("No unit-cell pair available")
+
+    distance_limit = isnothing(max_distance) ?
+        available_distance : min(max_distance, available_distance)
+    distance_limit >= 1 || error("max_distance must be positive")
+
+    profile = NamedTuple[]
+    for distance in 1:distance_limit
+        values = Float64[]
+        for unit_i in unit_start:(unit_end - distance)
+            unit_j = unit_i + distance
+            push!(values, string_correlator_units(
+                psi, sites, unit_i, unit_j))
+        end
+
+        count = length(values)
+        mean_value = sum(values) / count
+        variance = sum((value - mean_value)^2 for value in values) / count
+        std_value = sqrt(max(variance, 0.0))
+
+        push!(profile, (
+            distance_units=distance,
+            O_mean=mean_value,
+            O_std=std_value,
+            O_sem=std_value / sqrt(count),
+            n_pairs=count,
+        ))
+    end
+
+    return profile
+end
+
+"""
 用 ITensors OpSum 计算多点 Sz 乘积。
 """
 function _string_correlator(psi, sites, i::Int, j::Int)

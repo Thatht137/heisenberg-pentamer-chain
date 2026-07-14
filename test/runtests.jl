@@ -7,6 +7,8 @@ Pkg.activate(dirname(@__DIR__))
 
 include(joinpath(dirname(@__DIR__), "src", "PentamerChain.jl"))
 using .PentamerChain
+using ITensors
+using ITensorMPS
 using LinearAlgebra
 using Test
 
@@ -70,5 +72,22 @@ using Test
         vals = eigvals(Matrix(H))
         # 均匀三聚体基态能量为 -1.0
         @test isapprox(vals[1], -1.0; atol=0.001)
+    end
+
+    @testset "String order distance profile" begin
+        sites = siteinds("S=1/2", 20; conserve_qns=false)
+        psi = MPS(sites, fill("Up", 20))
+
+        @test isapprox(
+            string_correlator_units(psi, sites, 1, 4),
+            -0.25;
+            atol=1e-12,
+        )
+
+        profile = string_order_distance_profile(
+            psi, sites, 4; margin=0)
+        @test length(profile) == 3
+        @test all(isapprox(row.O_mean, -0.25; atol=1e-12) for row in profile)
+        @test [row.n_pairs for row in profile] == [3, 2, 1]
     end
 end
