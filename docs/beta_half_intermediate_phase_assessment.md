@@ -102,8 +102,60 @@ data/entanglement_spectrum/splitting_summary_b0.5_L80.csv
 figures/entanglement_spectrum_b0.5_L80.pdf
 ```
 
-下一步必须提取 Schmidt 态的 `Sz` 量子数，并与边缘磁化共同判断
+仍需提取 Schmidt 态的 `Sz` 量子数，并与下述边缘磁化共同判断
 负 `alpha` 区域是否为 Haldane/SPT 相。
+
+对 `alpha=-0.50` 和 `alpha=0.14` 进一步提取 Schmidt 态的
+`Sz` 标签。结果表明：
+
+- 偶数格点切口出现整数 `Sz` 扇区，奇数格点切口出现半整数扇区；
+- 正 `alpha` 的精确简并组成标准 SU(2) 多重态，不能视为拓扑简并；
+- `alpha=-0.50` 的单元边界切口最低四级由
+  `Sz=0,+1,0,-1` 组成近简并 singlet–triplet 簇；
+- 该低能簇与下述两端局域自旋一致，但仍不是完整的投影表示计算。
+
+带量子数的对照图为：
+
+```text
+figures/entanglement_spectrum_qn_b0.5_L80.pdf
+```
+
+### 边缘磁化
+
+在总 `Sz=1` 扇区，对
+`alpha=-0.50,-0.05,0.14,0.33` 计算 `L=40,60,80`
+的局域磁化。
+
+`alpha=-0.50` 显示清晰的两端局域磁化：
+
+- 左右累积磁化快速振荡收敛到约 `1/2`；
+- 前后各十个格点的总边缘权重为
+  `0.879,0.858,0.849`；
+- 边缘权重的幂律尺寸指数仅为 `gamma≈0.05`，接近尺寸无关。
+
+正 `alpha` 的磁化分布在整个链中：
+
+- `alpha=0.14` 的十格点边缘权重为
+  `0.636,0.473,0.382`，`gamma≈0.73`；
+- `alpha=0.33` 的对应结果为
+  `0.518,0.362,0.285`，`gamma≈0.86`。
+
+因此深负 `alpha` 区域具有稳定边缘自旋，而正 `alpha` 无隙区域的
+固定宽度边缘权重随尺寸衰减。
+
+`alpha=-0.05` 的结果不单调，并出现明显左右不对称和体区磁化。
+这可能来自靠近 `alpha=0` 时很大的关联长度、低能态近简并或 DMRG
+落入不同低能组合。该点不能用于定位拓扑边界，需要增加尺寸、
+初态和扫描连续性检查。
+
+对应结果：
+
+```text
+data/edge_magnetization/edge_summary_b0.5.csv
+data/edge_magnetization/edge_extrapolation_b0.5.csv
+figures/edge_magnetization_b0.5.pdf
+figures/edge_weight_scaling_b0.5.pdf
+```
 
 ## 当前结论
 
@@ -118,11 +170,15 @@ figures/entanglement_spectrum_b0.5_L80.pdf
 不同无隙相，必须找到量子数、对称性、拓扑指标或普适量的改变，
 而不能只依赖两个响应峰。
 
+对负 `alpha` 区域，长程弦序、深负 `alpha` 的稳定边缘磁化以及
+切口纠缠谱低能簇共同支持 Haldane/SPT-like 解释。当前最强证据
+位于 `alpha=-0.50`；靠近 `alpha=0` 的边界位置仍未可靠确定。
+
 ## 下一步
 
 优先级如下：
 
-1. 用周期边界或更稳健的有限纠缠标度提取中心荷；
-2. 检查纠缠谱量子数和简并结构；
-3. 对负 `alpha` 区域计算边缘磁化，确认 Haldane/SPT 判据；
+1. 提取纠缠谱的 `Sz` 量子数标签；
+2. 对 `alpha=-0.05` 增加尺寸、初态和扫描连续性检查；
+3. 用周期边界或有限纠缠标度提取中心荷；
 4. 完成上述判据前，相图中不要绘制第四相边界。

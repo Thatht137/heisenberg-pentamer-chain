@@ -22,13 +22,24 @@ function schmidt_probabilities(psi, bond::Int)
         (linkind(psi, bond - 1), siteind(psi, bond))
     end
     _, singular, _, _ = svd(psi[bond], left_indices)
-    spectrum_dimension = dim(first(inds(singular)))
-    values = [
-        singular[index, index]
-        for index in 1:spectrum_dimension
-    ]
-    probabilities = sort(abs2.(values); rev=true)
-    return probabilities ./ sum(probabilities)
+    spectrum_index = first(inds(singular))
+    values = Float64[]
+    quantum_numbers = Float64[]
+    global_index = 1
+    for sector in space(spectrum_index)
+        sector_qn = first(sector)
+        sector_dimension = last(sector)
+        for _ in 1:sector_dimension
+            push!(values, singular[global_index, global_index])
+            push!(quantum_numbers, val(sector_qn, "Sz") / 2)
+            global_index += 1
+        end
+    end
+    probabilities = abs2.(values)
+    order = sortperm(probabilities; rev=true)
+    probabilities = probabilities[order]
+    quantum_numbers = quantum_numbers[order]
+    return probabilities ./ sum(probabilities), quantum_numbers
 end
 
 function main()
@@ -50,7 +61,8 @@ function main()
         data_dir,
         @sprintf("spectrum_a%.2f_b%.2f_L%03d.csv", alpha, beta, L),
     )
-    if isfile(outfile)
+    force_recompute = get(ENV, "FORCE_RECOMPUTE", "0") == "1"
+    if isfile(outfile) && !force_recompute
         println("已存在，跳过：$outfile")
         return
     end
@@ -63,21 +75,25 @@ function main()
     open(outfile, "w") do file
         println(
             file,
-            "alpha,beta,L,bond,bond_class,level,probability,entanglement_energy,energy",
+            "alpha,beta,L,bond,bond_class,level,schmidt_sz,probability,entanglement_energy,energy",
         )
         for bond in bonds
-            probabilities = schmidt_probabilities(psi, bond)
+            probabilities, quantum_numbers = schmidt_probabilities(
+                psi,
+                bond,
+            )
             for level in 1:min(16, length(probabilities))
                 probability = probabilities[level]
                 @printf(
                     file,
-                    "%.6f,%.6f,%d,%d,%d,%d,%.12e,%.12f,%.12f\n",
+                    "%.6f,%.6f,%d,%d,%d,%d,%.1f,%.12e,%.12f,%.12f\n",
                     alpha,
                     beta,
                     L,
                     bond,
                     mod(bond, 5),
                     level,
+                    quantum_numbers[level],
                     probability,
                     -log(probability),
                     energy,
