@@ -22,13 +22,18 @@ const OMEGA_MIN = 0.0
 const OMEGA_MAX = parse(Float64, get(ENV, "PENTAMER_OMEGA_MAX", "3.0"))
 const SPACE_WINDOW = parse(Int, get(ENV, "PENTAMER_SPACE_WINDOW", "30"))
 const MAP_U0 = 5.0
+const OUTPUT_TAG = replace(
+    strip(get(ENV, "PENTAMER_OUTPUT_TAG", "")),
+    r"[^A-Za-z0-9_.-]" => "_",
+)
+const OUTPUT_SUFFIX = isempty(OUTPUT_TAG) ? "" : "_$(OUTPUT_TAG)"
 
 function default_input_file()
     total_sites = 5 * N_UNITS
     return joinpath(
         dirname(@__DIR__),
         "data",
-        "NDSF_pentamer_alpha=$(ALPHA)_beta=$(BETA)_L=$(total_sites).jld2",
+        "NDSF_pentamer_alpha=$(ALPHA)_beta=$(BETA)_L=$(total_sites)$(OUTPUT_SUFFIX).jld2",
     )
 end
 
@@ -129,8 +134,14 @@ function fourier_transform_tebd(;
     data_dir = joinpath(dirname(@__DIR__), "data")
     mkpath(data_dir)
 
-    output_file = joinpath(data_dir, "Sqw_tebd_pentamer_alpha=$(ALPHA)_beta=$(BETA).jld2")
-    csv_file = joinpath(data_dir, "Sqw_tebd_pentamer_alpha=$(ALPHA)_beta=$(BETA).csv")
+    output_file = joinpath(
+        data_dir,
+        "Sqw_tebd_pentamer_alpha=$(ALPHA)_beta=$(BETA)$(OUTPUT_SUFFIX).jld2",
+    )
+    csv_file = joinpath(
+        data_dir,
+        "Sqw_tebd_pentamer_alpha=$(ALPHA)_beta=$(BETA)$(OUTPUT_SUFFIX).csv",
+    )
 
     jldsave(output_file;
         spectrum,
@@ -140,6 +151,7 @@ function fourier_transform_tebd(;
         input_file,
         space_window,
         map_u0,
+        output_tag=OUTPUT_TAG,
     )
     writedlm(csv_file, mapped, ',')
 

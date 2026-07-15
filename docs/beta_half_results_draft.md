@@ -1,5 +1,12 @@
 # Results draft for the `beta=0.5` cut
 
+> **Revision hold (2026-07-15):** A pilot `L=40`, `tmax=15` DSF scan
+> finds low-frequency spectral weight near `q=3pi/5` at
+> `alpha=-0.50`. The negative-`alpha` bulk gap has not yet been
+> extrapolated. Do not finalize the separation into an SPT-like
+> negative side and a uniquely gapless positive side until negative-side
+> spin-gap, correlation and DSF size scaling are completed.
+
 ## Scope
 
 This draft describes only the one-dimensional parameter cut

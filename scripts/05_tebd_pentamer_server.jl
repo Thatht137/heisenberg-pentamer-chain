@@ -23,6 +23,11 @@ const TEBD_MAXDIM = parse(Int, get(ENV, "PENTAMER_TEBD_MAXDIM", "500"))
 const DMRG_CUTOFF = parse(Float64, get(ENV, "PENTAMER_DMRG_CUTOFF", "1e-10"))
 const TEBD_CUTOFF = parse(Float64, get(ENV, "PENTAMER_TEBD_CUTOFF", "1e-10"))
 const NSWEEPS = parse(Int, get(ENV, "PENTAMER_NSWEEPS", "30"))
+const OUTPUT_TAG = replace(
+    strip(get(ENV, "PENTAMER_OUTPUT_TAG", "")),
+    r"[^A-Za-z0-9_.-]" => "_",
+)
+const OUTPUT_SUFFIX = isempty(OUTPUT_TAG) ? "" : "_$(OUTPUT_TAG)"
 
 function pentamer_bonds(n_units::Int; alpha::Real, beta::Real)
     j1 = 1.0
@@ -128,14 +133,21 @@ function calculate_dynamics_pentamer(;
     mkpath(data_dir)
     checkpoint_file = joinpath(
         data_dir,
-        "CKPT_pentamer_alpha=$(alpha)_beta=$(beta)_L=$(total_sites).jld2",
+        "CKPT_pentamer_alpha=$(alpha)_beta=$(beta)_L=$(total_sites)$(OUTPUT_SUFFIX).jld2",
     )
 
     start_step = 1
     if isfile(checkpoint_file)
         println("\n检测到 checkpoint，尝试恢复...")
         ckpt = load(checkpoint_file)
-        if ckpt["alpha"] == alpha && ckpt["beta"] == beta && ckpt["n_steps"] == n_steps
+        parameters_match =
+            ckpt["alpha"] == alpha &&
+            ckpt["beta"] == beta &&
+            ckpt["n_steps"] == n_steps &&
+            get(ckpt, "tstep", NaN) == tstep &&
+            get(ckpt, "tebd_maxdim", -1) == tebd_maxdim &&
+            get(ckpt, "tebd_cutoff", NaN) == tebd_cutoff
+        if parameters_match
             saved_step = ckpt["last_step"]
             saved_data = ckpt["data"]
             println("Checkpoint at step $(saved_step)/$(n_steps)，重新演化到断点...")
@@ -191,6 +203,9 @@ function calculate_dynamics_pentamer(;
                 alpha,
                 beta,
                 n_steps,
+                tstep,
+                tebd_maxdim,
+                tebd_cutoff,
             )
             @printf("  [checkpoint saved at step %d]\n", step)
             flush(stdout)
@@ -199,7 +214,7 @@ function calculate_dynamics_pentamer(;
 
     filename = joinpath(
         data_dir,
-        "NDSF_pentamer_alpha=$(alpha)_beta=$(beta)_L=$(total_sites).jld2",
+        "NDSF_pentamer_alpha=$(alpha)_beta=$(beta)_L=$(total_sites)$(OUTPUT_SUFFIX).jld2",
     )
 
     jldsave(filename;
@@ -213,6 +228,12 @@ function calculate_dynamics_pentamer(;
         columns=["time", "site", "distance", "real_corr", "imag_corr"],
         tstep,
         n_steps,
+        dmrg_maxdim,
+        tebd_maxdim,
+        dmrg_cutoff,
+        tebd_cutoff,
+        nsweeps,
+        output_tag=OUTPUT_TAG,
     )
 
     println("\nData saved to ", filename)
