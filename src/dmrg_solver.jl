@@ -152,6 +152,7 @@ function compute_sector_ground_state_hires(;
     maxdim::Int,
     cutoff::Real,
     nsweeps::Int,
+    initial_mode::Symbol=:center,
 )
     L = 5 * N_units
     @assert iseven(L)
@@ -160,20 +161,26 @@ function compute_sector_ground_state_hires(;
     sites = siteinds("S=1/2", L; conserve_qns=true)
     H = pentamer_chain_hamiltonian(sites, N_units; alpha, beta)
     state = [isodd(site) ? "Up" : "Dn" for site in 1:L]
+    initial_mode in (:center, :left, :right) ||
+        error("initial_mode 必须为 :center、:left 或 :right")
 
     if target_sz > 0
-        candidates = sort(
-            collect(2:2:L);
-            by=site -> abs(site - (L + 1) / 2),
-        )
+        candidates = collect(2:2:L)
+        if initial_mode == :center
+            sort!(candidates; by=site -> abs(site - (L + 1) / 2))
+        elseif initial_mode == :right
+            reverse!(candidates)
+        end
         for site in candidates[1:target_sz]
             state[site] = "Up"
         end
     elseif target_sz < 0
-        candidates = sort(
-            collect(1:2:L);
-            by=site -> abs(site - (L + 1) / 2),
-        )
+        candidates = collect(1:2:L)
+        if initial_mode == :center
+            sort!(candidates; by=site -> abs(site - (L + 1) / 2))
+        elseif initial_mode == :right
+            reverse!(candidates)
+        end
         for site in candidates[1:(-target_sz)]
             state[site] = "Dn"
         end
