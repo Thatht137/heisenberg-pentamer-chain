@@ -64,6 +64,17 @@ using Test
         # 总简并度应覆盖完整 32 维空间
         total_deg = sum(l[3] for l in levels)
         @test total_deg == 32
+
+        # 简并点内也必须得到半整数总自旋
+        vals0, _, spins0 = diagonalize_pentamer(0.0)
+        @test all(spin -> spin in (0.5, 1.5, 2.5), spins0)
+
+        ground_inds = findall(
+            energy -> isapprox(energy, vals0[1]; atol=1e-10),
+            vals0,
+        )
+        @test count(==(0.5), spins0[ground_inds]) == 4
+        @test count(==(1.5), spins0[ground_inds]) == 4
     end
 
     @testset "Decoupled limit (J2=0)" begin

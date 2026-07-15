@@ -57,13 +57,29 @@ function diagonalize_pentamer(alpha::Real; J1::Real=1.0)
     H = pentamer_hamiltonian_matrix(J1, J2)
     vals, vecs = eigen(Matrix(H))
 
-    S2 = total_spin_squared_matrix(5)
-    spin_labels = Float64[]
-    for i in 1:size(vecs, 2)
-        v = vecs[:, i]
-        s2_expect = dot(v, S2 * v)
-        S = (-1 + sqrt(1 + 4 * s2_expect)) / 2
-        push!(spin_labels, round(S * 2) / 2)
+    S2 = Matrix(total_spin_squared_matrix(5))
+    spin_labels = zeros(Float64, length(vals))
+    energy_tol = 1e-9
+
+    group_start = 1
+    while group_start <= length(vals)
+        group_end = group_start
+        while group_end < length(vals) &&
+              abs(vals[group_end + 1] - vals[group_start]) < energy_tol
+            group_end += 1
+        end
+
+        inds = group_start:group_end
+        subspace = vecs[:, inds]
+        s2_vals, rotation = eigen(Hermitian(subspace' * S2 * subspace))
+        vecs[:, inds] = subspace * rotation
+
+        for (offset, s2_value) in enumerate(s2_vals)
+            S = (-1 + sqrt(1 + 4 * max(s2_value, 0.0))) / 2
+            spin_labels[group_start + offset - 1] = round(S * 2) / 2
+        end
+
+        group_start = group_end + 1
     end
 
     return vals, vecs, spin_labels
