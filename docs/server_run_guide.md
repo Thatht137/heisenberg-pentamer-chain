@@ -7,7 +7,7 @@
 这个项目可以在服务器上计算。理由：
 
 - 项目是标准 Julia 工程，根目录有 `Project.toml` 和 `Manifest.toml`。
-- 本地单元测试已通过：`45/45`。
+- 本地单元测试已通过：`54/54`。
 - 小规模脚本 `scripts/01_single_pentamer.jl` 已成功运行并写出数据。
 - 主要依赖是 `ITensors`、`ITensorMPS`、`JLD2`、`KrylovKit`，适合在 CPU 服务器上跑 DMRG 和谱函数计算。
 
@@ -93,7 +93,7 @@ julia --project=. test/runtests.jl
 
 ```text
 Test Summary: | Pass  Total
-PentamerChain |   45     45
+PentamerChain |   54     54
 ```
 
 再跑一个小脚本：

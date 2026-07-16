@@ -1,0 +1,102 @@
+\section{结果}
+
+\subsection{孤立五聚体的低能多重态}
+
+孤立五聚体的低能结构随 $\alpha$ 发生重排。如\cref{fig:multiplets}所示，
+负 $\alpha$ 区域的最低多重态为 $S=\frac{3}{2}$，正 $\alpha$ 区域的最低
+多重态为 $S=\frac{1}{2}$。在 $\alpha=0$，两个 $S=\frac{1}{2}$ 多重态与
+一个 $S=\frac{3}{2}$ 多重态简并，共形成八个低能态。该特殊简并点为理解
+链模型两侧低能自由度的重组提供了单胞尺度依据。
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=0.78\textwidth]
+  {single_pentamer_low_energy_multiplets.pdf}
+  \caption{
+    孤立五聚体低能多重态随 $\alpha$ 的变化。
+    颜色或线型区分总自旋量子数。正式投稿前需统一字体、线宽和图例格式。
+  }
+  \label{fig:multiplets}
+\end{figure}
+
+\subsection{负侧普通关联与弦关联均为代数衰减}
+
+独立产品态 DMRG 在靠近 $\alpha=0$ 时可能得到快速衰减的高能假收敛态。
+双向参数延拓表明，从深负侧连续推进得到的分支具有更低能量。
+在该低能分支上，普通自旋关联的五聚体包络符合幂律衰减，
+$L=60,80$ 的指数约为 $\eta=0.89$--$0.94$。这排除了将负侧解释为普通
+有限关联长度有隙体态的简单图像。
+
+负侧弦关联同样需要在低能延拓态上重新评估。
+如\cref{fig:negative_scaling}所示，我们选取四个参数点
+$\alpha=-0.50$、$-0.25$、$-0.10$ 和 $-0.05$。
+在 $L=60,80$ 的体区数据中，幂律模型均优于常数和指数模型。弦关联指数约为
+$\eta_{\mathrm{str}}=0.23$--$0.28$，明显小于普通自旋关联指数。
+因此，负侧在临界体关联背景上仍保持显著更慢的弦关联衰减。
+
+\begin{figure}[p]
+  \centering
+  \begin{subfigure}{0.88\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]
+    {negative_correlation_continuation_b0.5.pdf}
+    \caption{负侧低能延拓分支的普通自旋关联与动量结构。}
+  \end{subfigure}
+
+  \vspace{0.8em}
+
+  \begin{subfigure}{0.88\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]
+    {negative_string_continuation_b0.5.pdf}
+    \caption{负侧低能延拓分支的奇数距离交错弦包络。}
+  \end{subfigure}
+  \caption{
+    负 $\alpha$ 区域的普通关联和弦关联标度。
+    普通自旋关联指数约为 $0.89$--$0.94$，弦关联指数约为
+    $0.23$--$0.28$。最长距离处的 OBC 回升不纳入体区拟合。
+  }
+  \label{fig:negative_scaling}
+\end{figure}
+
+\subsection{负侧具有边缘与纠缠特征}
+
+在总 $S^z=1$ 扇区中，负侧额外磁化主要集中在开放链两端。
+固定取左右各十个格点时，边缘权重从 $L=40$ 的 $0.879$ 缓慢变化到
+$L=80$ 的 $0.849$，而正侧代表点的相同固定宽度权重随尺寸明显下降。
+切割分辨纠缠谱在负侧还出现与边缘多重态相容的低能 Schmidt 簇。
+
+这些结果与慢代数弦关联共同支持负侧具有非平庸边缘和纠缠结构。
+但是，代数体关联意味着它不能被直接称为普通有隙 Haldane 相。
+是否可以进一步分类为 gapless SPT，需要计算虚空间上的投影对称表示。
+
+\subsection{正侧为常规无隙反铁磁区域}
+
+正 $\alpha$ 侧的自旋隙在 $L=40,60,80$ 的有限尺寸外推中接近零。
+在 $\alpha=0.14,0.23,0.33$，普通关联指数约为
+$0.95$--$0.98$，静态结构因子的主峰始终位于 $q=\pi$。
+这些结果支持将已采样正侧参数区间视为同一个常规无隙反铁磁临界区域。
+
+\subsection{正侧响应峰不支持额外相}
+
+能量曲率和纠缠响应分别在约 $\alpha=0.17$ 与 $0.30$ 出现峰值。
+然而，两者之间的键关联、能隙、普通关联指数和主波矢均连续变化，
+没有观察到稳定的二聚化、键序重排或有限能隙。
+因此，这两个峰目前应称为观测量依赖的响应尺度，而不是额外相的两条边界。
+
+\subsection{负侧动量重分配不是已建立的相界}
+
+负侧普通关联的主波矢在深负区域接近 $3\pi/5$，并在
+$\alpha\gtrsim-0.25$ 转向 $\pi$。普通关联指数在该位置没有突变，双向
+延拓能量也没有形成稳定滞后。因此，$\alpha\approx-0.3$ 当前更适合描述为
+候选 Lifshitz 尺度或动量重分配，而不是独立相界。
+
+\begin{figure}[tb]
+  \centering
+  \includegraphics[width=0.88\textwidth]{Sqw_beta_half_pilot_L40_t15.pdf}
+  \caption{
+    $\beta=0.5$ 代表参数点的试验性动力学结构因子。
+    本地结果用于识别低能权重位置，不用于最终提取连续谱边界。
+  }
+  \label{fig:pilot_dsf}
+\end{figure}
