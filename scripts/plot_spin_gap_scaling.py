@@ -2,6 +2,7 @@
 
 import csv
 import glob
+import math
 import os
 from collections import defaultdict
 
@@ -9,12 +10,26 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
+DEFAULT_ALPHAS = (0.10, 0.20, 0.25, 0.30, 0.40, 0.50)
+
+
+def selected_alphas():
+    text = os.environ.get("PENTAMER_GAP_PLOT_ALPHAS")
+    if not text:
+        return set(DEFAULT_ALPHAS)
+    return {float(value.strip()) for value in text.split(",")}
+
+
 def load_data():
     grouped = defaultdict(list)
+    allowed = selected_alphas()
     for path in glob.glob("data/spin_gap/tasks/*.csv"):
         with open(path, newline="", encoding="utf-8") as file:
             row = next(csv.DictReader(file))
-        grouped[float(row["alpha"])].append(
+        alpha = float(row["alpha"])
+        if alpha not in allowed:
+            continue
+        grouped[alpha].append(
             (int(row["L"]), float(row["spin_gap"]))
         )
 
@@ -47,7 +62,14 @@ def write_results(grouped):
 
 def plot_data(grouped):
     alphas = sorted(grouped)
-    fig, axes = plt.subplots(2, 3, figsize=(12, 7), squeeze=False)
+    ncols = min(4, len(alphas))
+    nrows = math.ceil(len(alphas) / ncols)
+    fig, axes = plt.subplots(
+        nrows,
+        ncols,
+        figsize=(3.8 * ncols, 3.3 * nrows),
+        squeeze=False,
+    )
 
     for axis, alpha in zip(axes.flat, alphas):
         values = grouped[alpha]

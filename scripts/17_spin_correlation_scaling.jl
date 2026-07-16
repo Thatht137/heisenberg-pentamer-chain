@@ -15,7 +15,12 @@ using Printf
 using Statistics
 
 function task_grid()
-    alphas = [0.14, 0.23, 0.33]
+    alpha_text = get(
+        ENV,
+        "PENTAMER_CORRELATION_ALPHAS",
+        "0.14,0.23,0.33",
+    )
+    alphas = parse.(Float64, strip.(split(alpha_text, ",")))
     N_units_list = [8, 12, 16]
     return [
         (alpha, N_units)
@@ -47,7 +52,8 @@ function main()
         data_dir,
         @sprintf("corr_a%.2f_b%.2f_L%03d.csv", alpha, beta, L),
     )
-    if isfile(outfile)
+    force_recompute = get(ENV, "FORCE_RECOMPUTE", "0") == "1"
+    if isfile(outfile) && !force_recompute
         println("已存在，跳过：$outfile")
         return
     end

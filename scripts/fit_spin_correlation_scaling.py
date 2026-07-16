@@ -2,6 +2,7 @@
 
 import csv
 import glob
+import math
 import os
 import re
 
@@ -9,16 +10,29 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 
-FILE_PATTERN = re.compile(r"corr_a([0-9.]+)_b([0-9.]+)_L([0-9]+)")
+FILE_PATTERN = re.compile(
+    r"corr_a([-+]?[0-9.]+)_b([-+]?[0-9.]+)_L([0-9]+)"
+)
+DEFAULT_ALPHAS = (0.14, 0.23, 0.33)
+
+
+def selected_alphas():
+    text = os.environ.get("PENTAMER_FIT_ALPHAS")
+    if not text:
+        return set(DEFAULT_ALPHAS)
+    return {float(value.strip()) for value in text.split(",")}
 
 
 def load_profiles():
     profiles = {}
+    allowed = selected_alphas()
     for path in glob.glob("data/spin_correlations/tasks/corr_*.csv"):
         match = FILE_PATTERN.search(os.path.basename(path))
         if not match:
             continue
         alpha = float(match.group(1))
+        if alpha not in allowed:
+            continue
         length = int(match.group(3))
         rows = list(csv.DictReader(open(path, encoding="utf-8")))
         distance = np.asarray([int(row["distance"]) for row in rows])
@@ -83,10 +97,18 @@ def main():
     alphas = sorted({key[0] for key in profiles})
     lengths = sorted({key[1] for key in profiles})
     colors = plt.cm.viridis(np.linspace(0.1, 0.9, len(lengths)))
-    fig, axes = plt.subplots(1, len(alphas), figsize=(15, 4.6))
+    ncols = min(3, len(alphas))
+    nrows = math.ceil(len(alphas) / ncols)
+    fig, axes = plt.subplots(
+        nrows,
+        ncols,
+        figsize=(5.0 * ncols, 4.4 * nrows),
+        squeeze=False,
+    )
+    flat_axes = axes.flat
     summary = []
 
-    for axis, alpha in zip(axes, alphas):
+    for axis, alpha in zip(flat_axes, alphas):
         for color, length in zip(colors, lengths):
             distance, staggered = profiles[(alpha, length)]
             (
@@ -126,7 +148,10 @@ def main():
         axis.set_xlabel(r"$r$")
         axis.grid(alpha=0.25)
         axis.legend(fontsize=8)
-    axes[0].set_ylabel(r"$(-1)^r C(r)$")
+    for axis in axes[:, 0]:
+        axis.set_ylabel(r"$(-1)^r C(r)$")
+    for axis in list(axes.flat)[len(alphas):]:
+        axis.set_visible(False)
     fig.tight_layout()
 
     os.makedirs("figures", exist_ok=True)

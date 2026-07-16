@@ -13,7 +13,12 @@ using .PentamerChain
 using Printf
 
 function task_grid()
-    alphas = [0.10, 0.20, 0.25, 0.30, 0.40, 0.50]
+    alpha_text = get(
+        ENV,
+        "PENTAMER_SPIN_GAP_ALPHAS",
+        "0.10,0.20,0.25,0.30,0.40,0.50",
+    )
+    alphas = parse.(Float64, strip.(split(alpha_text, ",")))
     N_units_list = [8, 12, 16]
     return [(alpha, N_units) for N_units in N_units_list for alpha in alphas]
 end
