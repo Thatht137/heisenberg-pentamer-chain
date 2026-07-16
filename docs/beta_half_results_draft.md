@@ -54,20 +54,19 @@ We first examined the string correlator as a function of both
 unit-cell separation and system size at fixed `beta=0.5`. Spin
 inversion forces the correlator to vanish at even unit-cell
 separations, whereas the odd-distance values form a staggered
-envelope. For `alpha=-0.50`, the longest-distance central values
-decreased from `0.137` at `L=60` to `0.122` at `L=100`, and a linear
-extrapolation in inverse distance gave a finite intercept of
-approximately `0.113`. A finite envelope was also obtained close to
-the decoupled point at `alpha=-0.05`, where the corresponding
-intercept was approximately `0.079`. By contrast, the envelope at
-`alpha=0.05` and `0.50` decreased rapidly with increasing distance
-and system size. The negative-side signal therefore distinguishes the
-two sides of `alpha=0` over the accessible sizes. Because the
-negative-side bulk is algebraically correlated, however, a linear
-inverse-distance intercept is not sufficient to establish true
-long-range string order. The negative-side string correlator must be
-refitted to a critical scaling form before its thermodynamic limit is
-claimed.
+envelope. For `alpha=-0.50`, `-0.25`, `-0.10` and `-0.05`, we
+recomputed this envelope directly on the lower-energy MPS branch
+obtained by continuation from deep negative `alpha`. Fits were
+restricted to the bulk window `3<=d<=2N/3` to exclude the
+open-boundary upturn at the longest separations. At both `L=60` and
+`80`, a power law was favored over constant and exponential models at
+all four couplings. The resulting string exponents increased only
+weakly from `eta_str≈0.23-0.25` at `L=60` to `0.27-0.28` at `L=80`.
+The negative-side string signal therefore decays much more slowly than
+the ordinary spin correlator and is inconsistent with a short-range
+exponential envelope. The accessible sizes do not yet distinguish a
+true asymptotic power law from a crossover toward a finite constant,
+so we do not claim strict long-range string order.
 
 ### The negative-`alpha` regime supports localized edge degrees of freedom
 
@@ -94,9 +93,10 @@ topological criterion. Taken together, the enhanced string signal,
 localized boundary magnetization and low-lying entanglement cluster
 establish a nontrivial boundary and entanglement structure on the
 negative side. They do not establish a conventional gapped SPT phase
-because the bulk correlations are algebraic. A symmetry-protected
-critical classification will require critical string scaling and an
-explicit projective-symmetry invariant.
+because the bulk correlations are algebraic. Together with the slow
+algebraic string envelope, these observations motivate a
+symmetry-protected critical interpretation, but an explicit
+projective-symmetry invariant is still required.
 
 ### The negative-`alpha` bulk is also algebraically correlated
 
@@ -233,7 +233,7 @@ gapped and a gapless regime.
 - 本稿只写 `beta=0.5` 截面，没有把全局“三相”结论提前写死。
 - Results 中先写直接观测，再写有限尺寸验证，最后才给出受限制的
   相解释。
-- 负 `alpha` 暂写成具有弦和边缘特征的临界区域；在完成临界弦标度和
-  投影对称表示前，不直接使用 Haldane 相或 gapless SPT 作为确定相名。
+- 负 `alpha` 暂写成具有慢代数弦关联和边缘特征的临界区域；在完成更大尺寸
+  复核和投影对称表示前，不直接使用 Haldane 相或 gapless SPT 作为确定相名。
 - `alpha≈0.17` 和 `0.30` 被称为 response scales，而不是相界。
 - 后续新增其他 `beta` 截面后，可以把本稿扩展成完整相图 Results。
