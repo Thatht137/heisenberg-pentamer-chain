@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.4)  21 SEP 2026 10:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.4)  21 SEP 2026 10:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -660,13 +660,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 68.
+(Font)              <12> on input line 66.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 68.
+(Font)              <8> on input line 66.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 68.
+(Font)              <10> on input line 66.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 68.
+(Font)              <7> on input line 66.
 
 (sections/introduction.tex) (sections/model_methods.tex [1{C:/Users/hh250/AppDa
 ta/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/hh250/AppData/Local/Progr
@@ -674,7 +674,7 @@ ams/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/hh250/AppData/Local/Programs/
 MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/hh250/AppData/Local/Programs/MiKT
 eX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/hh250/AppData/Local/Programs/MiKT
 eX/fonts/enc/dvips/lm/lm-mathsy.enc}]
-<figures/fig1_model_projection.png, id=145, 508.7808pt x 192.0776pt>
+<figures/fig1_model_projection.png, id=143, 508.7808pt x 192.0776pt>
 File: figures/fig1_model_projection.png Graphic file (type png)
 <use figures/fig1_model_projection.png>
 Package pdftex.def Info: figures/fig1_model_projection.png  used on input line 
@@ -693,72 +693,72 @@ Package microtype Info: Loading generic protrusion settings for font family
  [2{C:/Users/hh250/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.e
 nc}])
 (sections/results.tex
-<figures/fig2_multiplet_parity.png, id=175, 514.4018pt x 205.0862pt>
+<figures/fig2_multiplet_parity.png, id=173, 514.4018pt x 205.0862pt>
 File: figures/fig2_multiplet_parity.png Graphic file (type png)
 <use figures/fig2_multiplet_parity.png>
 Package pdftex.def Info: figures/fig2_multiplet_parity.png  used on input line 
 16.
 (pdftex.def)             Requested size: 510.0pt x 203.3395pt.
  [3 <./figures/fig1_model_projection.png>]
-<figures/fig3_positive_static.png, id=184, 513.117pt x 359.78415pt>
+<figures/fig3_positive_static.png, id=183, 513.117pt x 359.78415pt>
 File: figures/fig3_positive_static.png Graphic file (type png)
 <use figures/fig3_positive_static.png>
 Package pdftex.def Info: figures/fig3_positive_static.png  used on input line 3
 6.
 (pdftex.def)             Requested size: 499.79782pt x 350.45598pt.
-<figures/fig4_entanglement.png, id=185, 520.344pt x 338.5448pt>
+<figures/fig4_entanglement.png, id=184, 520.344pt x 338.5448pt>
 File: figures/fig4_entanglement.png Graphic file (type png)
 <use figures/fig4_entanglement.png>
 Package pdftex.def Info: figures/fig4_entanglement.png  used on input line 44.
 (pdftex.def)             Requested size: 479.40125pt x 311.92473pt.
-<figures/fig5_selection_rules.png, id=186, 525.965pt x 429.7656pt>
+<figures/fig5_selection_rules.png, id=185, 525.965pt x 429.7656pt>
 File: figures/fig5_selection_rules.png Graphic file (type png)
 <use figures/fig5_selection_rules.png>
 Package pdftex.def Info: figures/fig5_selection_rules.png  used on input line 5
 9.
 (pdftex.def)             Requested size: 469.19907pt x 383.39513pt.
-<figures/fig6_fullq_dynamics.png, id=187, 494.3268pt x 351.0716pt>
+<figures/fig6_fullq_dynamics.png, id=186, 494.3268pt x 351.0716pt>
 File: figures/fig6_fullq_dynamics.png Graphic file (type png)
 <use figures/fig6_fullq_dynamics.png>
 Package pdftex.def Info: figures/fig6_fullq_dynamics.png  used on input line 79
 .
 (pdftex.def)             Requested size: 494.70062pt x 351.34392pt.
-<figures/fig7_cv_tebd.png, id=188, 261.2962pt x 264.8294pt>
+<figures/fig7_cv_tebd.png, id=187, 261.2962pt x 264.8294pt>
 File: figures/fig7_cv_tebd.png Graphic file (type png)
 <use figures/fig7_cv_tebd.png>
 Package pdftex.def Info: figures/fig7_cv_tebd.png  used on input line 87.
 (pdftex.def)             Requested size: 246.0pt x 249.33972pt.
-<figures/fig8_negative_reconstruction.png, id=189, 528.5346pt x 443.9787pt>
+ [4 <./figures/fig2_multiplet_parity.png>]
+<figures/fig8_negative_reconstruction.png, id=194, 528.5346pt x 443.9787pt>
 File: figures/fig8_negative_reconstruction.png Graphic file (type png)
 <use figures/fig8_negative_reconstruction.png>
 Package pdftex.def Info: figures/fig8_negative_reconstruction.png  used on inpu
-t line 111.
+t line 117.
 (pdftex.def)             Requested size: 246.0pt x 206.64442pt.
- [4 <./figures/fig2_multiplet_parity.png>]
-<figures/fig9_negative_size_evidence.png, id=196, 520.344pt x 389.5353pt>
+ [5 <./figures/fig3_positive_static.png>]
+<figures/fig9_negative_size_evidence.png, id=201, 520.344pt x 389.5353pt>
 File: figures/fig9_negative_size_evidence.png Graphic file (type png)
 <use figures/fig9_negative_size_evidence.png>
 Package pdftex.def Info: figures/fig9_negative_size_evidence.png  used on input
- line 136.
+ line 142.
 (pdftex.def)             Requested size: 246.0pt x 184.16338pt.
-) (sections/discussion.tex [5 <./figures/fig3_positive_static.png>] [6 <./figur
-es/fig4_entanglement.png>]) (sections/conclusion.tex
-[7 <./figures/fig5_selection_rules.png>]) [8 <./figures/fig6_fullq_dynamics.png
->]
+)
+(sections/discussion.tex [6 <./figures/fig4_entanglement.png>] [7 <./figures/fi
+g5_selection_rules.png>]) (sections/conclusion.tex [8 <./figures/fig6_fullq_dyn
+amics.png>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 84.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 9.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 84.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 9.
 
 
 Class revtex4-2 Warning: Deferred float stuck during \clearpage processing.
 
-
+) [9 <./figures/fig7_cv_tebd.png> <./figures/fig8_negative_reconstruction.png> 
+<./figures/fig9_negative_size_evidence.png>]
 (D:\Project\1x5_Heisenberg_Pentamer\results\autoresearch_v5_20260920\manuscript
-_draft_v1\latex_prb\build\manuscript.bbl [9 <./figures/fig7_cv_tebd.png> <./fig
-ures/fig8_negative_reconstruction.png> <./figures/fig9_negative_size_evidence.p
-ng>]) [10]
+_draft_v1\latex_prb\build\manuscript.bbl [10]) [11]
 (D:\Project\1x5_Heisenberg_Pentamer\results\autoresearch_v5_20260920\manuscript
 _draft_v1\latex_prb\build\manuscript.aux)
  ***********
@@ -769,11 +769,11 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 00AD8F13443083A0B8D2471AA707C08F;6600.
  ) 
 Here is how much of TeX's memory you used:
- 19199 strings out of 467872
- 361856 string characters out of 5418392
+ 19210 strings out of 467872
+ 361961 string characters out of 5418392
  797562 words of memory out of 5000000
- 47481 multiletter control sequences out of 15000+600000
- 722743 words of font info for 251 fonts, out of 8000000 for 9000
+ 47483 multiletter control sequences out of 15000+600000
+ 723078 words of font info for 255 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,9n,80p,1003b,1109s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/hh250/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
@@ -798,10 +798,10 @@ h250/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/hh
 0/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/hh250
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
 Output written on D:\Project\1x5_Heisenberg_Pentamer\results\autoresearch_v5_20
-260920\manuscript_draft_v1\latex_prb\build\manuscript.pdf (10 pages, 2565201 by
+260920\manuscript_draft_v1\latex_prb\build\manuscript.pdf (11 pages, 2568193 by
 tes).
 PDF statistics:
- 388 PDF objects out of 1000 (max. 8388607)
- 65 named destinations out of 1000 (max. 500000)
+ 392 PDF objects out of 1000 (max. 8388607)
+ 66 named destinations out of 1000 (max. 500000)
  47878 words of extra memory for PDF output out of 51595 (max. 10000000)
 
