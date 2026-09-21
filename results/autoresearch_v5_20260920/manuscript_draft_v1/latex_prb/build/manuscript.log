@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.4)  20 SEP 2026 21:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.4)  21 SEP 2026 10:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -693,68 +693,72 @@ Package microtype Info: Loading generic protrusion settings for font family
  [2{C:/Users/hh250/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.e
 nc}])
 (sections/results.tex
-<figures/fig2_multiplet_parity.png, id=174, 514.4018pt x 205.0862pt>
+<figures/fig2_multiplet_parity.png, id=175, 514.4018pt x 205.0862pt>
 File: figures/fig2_multiplet_parity.png Graphic file (type png)
 <use figures/fig2_multiplet_parity.png>
 Package pdftex.def Info: figures/fig2_multiplet_parity.png  used on input line 
 16.
 (pdftex.def)             Requested size: 510.0pt x 203.3395pt.
-<figures/fig3_positive_static.png, id=176, 513.117pt x 359.78415pt>
+ [3 <./figures/fig1_model_projection.png>]
+<figures/fig3_positive_static.png, id=184, 513.117pt x 359.78415pt>
 File: figures/fig3_positive_static.png Graphic file (type png)
 <use figures/fig3_positive_static.png>
 Package pdftex.def Info: figures/fig3_positive_static.png  used on input line 3
-4.
+6.
 (pdftex.def)             Requested size: 499.79782pt x 350.45598pt.
-<figures/fig4_entanglement.png, id=177, 520.344pt x 338.5448pt>
+<figures/fig4_entanglement.png, id=185, 520.344pt x 338.5448pt>
 File: figures/fig4_entanglement.png Graphic file (type png)
 <use figures/fig4_entanglement.png>
-Package pdftex.def Info: figures/fig4_entanglement.png  used on input line 42.
+Package pdftex.def Info: figures/fig4_entanglement.png  used on input line 44.
 (pdftex.def)             Requested size: 479.40125pt x 311.92473pt.
-<figures/fig5_selection_rules.png, id=178, 525.965pt x 429.7656pt>
+<figures/fig5_selection_rules.png, id=186, 525.965pt x 429.7656pt>
 File: figures/fig5_selection_rules.png Graphic file (type png)
 <use figures/fig5_selection_rules.png>
 Package pdftex.def Info: figures/fig5_selection_rules.png  used on input line 5
-7.
+9.
 (pdftex.def)             Requested size: 469.19907pt x 383.39513pt.
- [3 <./figures/fig1_model_projection.png>]
-<figures/fig6_fullq_dynamics.png, id=186, 494.3268pt x 351.0716pt>
+<figures/fig6_fullq_dynamics.png, id=187, 494.3268pt x 351.0716pt>
 File: figures/fig6_fullq_dynamics.png Graphic file (type png)
 <use figures/fig6_fullq_dynamics.png>
-Package pdftex.def Info: figures/fig6_fullq_dynamics.png  used on input line 77
+Package pdftex.def Info: figures/fig6_fullq_dynamics.png  used on input line 79
 .
 (pdftex.def)             Requested size: 494.70062pt x 351.34392pt.
-<figures/fig7_cv_tebd.png, id=187, 261.2962pt x 264.8294pt>
+<figures/fig7_cv_tebd.png, id=188, 261.2962pt x 264.8294pt>
 File: figures/fig7_cv_tebd.png Graphic file (type png)
 <use figures/fig7_cv_tebd.png>
-Package pdftex.def Info: figures/fig7_cv_tebd.png  used on input line 85.
+Package pdftex.def Info: figures/fig7_cv_tebd.png  used on input line 87.
 (pdftex.def)             Requested size: 246.0pt x 249.33972pt.
-<figures/fig8_negative_reconstruction.png, id=188, 528.5346pt x 443.9787pt>
+<figures/fig8_negative_reconstruction.png, id=189, 528.5346pt x 443.9787pt>
 File: figures/fig8_negative_reconstruction.png Graphic file (type png)
 <use figures/fig8_negative_reconstruction.png>
 Package pdftex.def Info: figures/fig8_negative_reconstruction.png  used on inpu
-t line 109.
+t line 111.
 (pdftex.def)             Requested size: 246.0pt x 206.64442pt.
  [4 <./figures/fig2_multiplet_parity.png>]
-<figures/fig9_negative_size_evidence.png, id=195, 520.344pt x 389.5353pt>
+<figures/fig9_negative_size_evidence.png, id=196, 520.344pt x 389.5353pt>
 File: figures/fig9_negative_size_evidence.png Graphic file (type png)
 <use figures/fig9_negative_size_evidence.png>
 Package pdftex.def Info: figures/fig9_negative_size_evidence.png  used on input
- line 131.
+ line 136.
 (pdftex.def)             Requested size: 246.0pt x 184.16338pt.
-) (sections/discussion.tex [5 <./figures/fig3_positive_static.png>]) (sections/
-conclusion.tex [6 <./figures/fig4_entanglement.png>]) [7 <./figures/fig5_select
-ion_rules.png>]
-(D:\Project\1x5_Heisenberg_Pentamer\results\autoresearch_v5_20260920\manuscript
-_draft_v1\latex_prb\build\manuscript.bbl [8 <./figures/fig6_fullq_dynamics.png>
-]
+) (sections/discussion.tex [5 <./figures/fig3_positive_static.png>] [6 <./figur
+es/fig4_entanglement.png>]) (sections/conclusion.tex
+[7 <./figures/fig5_selection_rules.png>]) [8 <./figures/fig6_fullq_dynamics.png
+>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 9.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 84.
+
+
+LaTeX Warning: A float is stuck (cannot be placed) on input line 84.
 
 
 Class revtex4-2 Warning: Deferred float stuck during \clearpage processing.
 
-[9 <./figures/fig7_cv_tebd.png> <./figures/fig8_negative_reconstruction.png> <.
-/figures/fig9_negative_size_evidence.png>]) [10]
+
+(D:\Project\1x5_Heisenberg_Pentamer\results\autoresearch_v5_20260920\manuscript
+_draft_v1\latex_prb\build\manuscript.bbl [9 <./figures/fig7_cv_tebd.png> <./fig
+ures/fig8_negative_reconstruction.png> <./figures/fig9_negative_size_evidence.p
+ng>]) [10]
 (D:\Project\1x5_Heisenberg_Pentamer\results\autoresearch_v5_20260920\manuscript
 _draft_v1\latex_prb\build\manuscript.aux)
  ***********
@@ -765,11 +769,11 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 00AD8F13443083A0B8D2471AA707C08F;6600.
  ) 
 Here is how much of TeX's memory you used:
- 19191 strings out of 467872
- 361776 string characters out of 5418392
- 797408 words of memory out of 5000000
+ 19199 strings out of 467872
+ 361856 string characters out of 5418392
+ 797562 words of memory out of 5000000
  47481 multiletter control sequences out of 15000+600000
- 722402 words of font info for 247 fonts, out of 8000000 for 9000
+ 722743 words of font info for 251 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,9n,80p,1003b,1109s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/hh250/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
@@ -794,10 +798,10 @@ h250/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/hh
 0/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/hh250
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
 Output written on D:\Project\1x5_Heisenberg_Pentamer\results\autoresearch_v5_20
-260920\manuscript_draft_v1\latex_prb\build\manuscript.pdf (10 pages, 2561180 by
+260920\manuscript_draft_v1\latex_prb\build\manuscript.pdf (10 pages, 2565201 by
 tes).
 PDF statistics:
- 386 PDF objects out of 1000 (max. 8388607)
+ 388 PDF objects out of 1000 (max. 8388607)
  65 named destinations out of 1000 (max. 500000)
  47878 words of extra memory for PDF output out of 51595 (max. 10000000)
 

@@ -27,8 +27,10 @@ All accepted interior size differences retain the same sign under leave-one-out 
 This bounded negative result establishes that the present data resolve no internal boundary in $0\leq\alpha,\beta\leq1$, but it does not prove that every thermodynamic point belongs to one phase.
 
 At $\alpha=0.23$ and weak inter-cell coupling, matched-size entanglement estimators give $\ceff=1.0240$--1.0331 relative to an open spin-$1/2$ Heisenberg-chain oracle.
+The comparison uses open chains of $N=8$--$24$ pentamers ($L=40$--$120$) with the same boundary condition and fitting window for both models, and the bond entropy is stable against a doubling of the retained bond dimension (largest relative change $2.4\times10^{-4}$).
 Finite-size spin gaps extrapolate close to zero, the correlation envelope has exponents 0.95--0.98, and the static structure factor is dominated by $q=\pi$.
 Together, these observables are consistent with a gapless antiferromagnetic effective chain at the tested points~\cite{descloizeaux1962_verified}.
+The unmatched absolute $\log L$ fits do not pass an independent quality gate, so the calibrated matched-size ratio is the operative statement; we do not report an unbiased thermodynamic central charge.
 
 \begin{figure*}[t]
   \includegraphics[width=0.98\textwidth]{fig3_positive_static.png}
@@ -125,12 +127,16 @@ These ranges measure sensitivity to the fitting window and initialization; they 
 A subsequent size comparison used $L=40,60,80$ at $\alpha=-0.175,-0.150,-0.125,-0.100$ and $\beta=0.25$.
 At $\alpha=-0.10$, the ten-intercept coefficients span 0.970--1.340, 0.625--0.959, and 0.467--0.605 with increasing length.
 At fixed window $f=0.20$, the dual-start mean decreases from 0.988 to 0.695 and 0.533.
-Because only $N=8,12,16$ pentamers are available, this size dependence cannot be identified with a thermodynamic central charge.
+That decrease, however, is not a converged finite-size trend.
+The whole sequence was computed with the historical Krylov setting, and only its $L=80$ endpoint has a $k=8$ control.
+At that point the period-10, $f=0.20$ coefficient moves from 0.582 to 0.932 (\texttt{center}) and from 0.484 to 0.932 (\texttt{ferro\_j2}), after which the two initial states agree to $3.4\times10^{-8}$.
+A solver setting that shifts an endpoint by this amount cannot support a size-scaling reading of the sequence, and the $L=40$ and $L=60$ records have no equivalent control.
 
 \begin{figure}[t]
   \includegraphics[width=\columnwidth]{fig9_negative_size_evidence.png}
   \caption{Joint finite-size evidence near the negative-$\alpha$ anomaly.
-  Entropy coefficients, bond-class variation, connected correlations, and sector gaps are shown together to expose size and initialization sensitivity.}
+  Entropy coefficients, bond-class variation, connected correlations, and sector gaps are shown together to expose size and initialization sensitivity.
+  All panels use the historical solver setting; the $k=8$ control applies only to the $L=80$, $\alpha=-0.10$ endpoint and is not propagated through this figure.}
   \label{fig:negative-size}
 \end{figure}
 
