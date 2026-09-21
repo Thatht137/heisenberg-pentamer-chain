@@ -1,0 +1,73 @@
+{
+  "created_at": "2026-08-03T18:10:35+08:00",
+  "source_run": "results/autoresearch_v5_20260802/round23_tebd_crosscheck/cell-alpha023-dt025-t15-auto/correlation.jld2",
+  "scope": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "L": 40,
+    "negative_alpha_included": false,
+    "fig9_included": false
+  },
+  "method": {
+    "time_evolution": "finite OBC TEBD",
+    "source": "single center-site Sz source",
+    "spatial_transform": "sum over relative distance within 18 sites",
+    "time_transform": "one-sided exponential window",
+    "q_points": 81,
+    "omega_points": 181,
+    "omega_max": 3.0
+  },
+  "results": {
+    "eta_0_1": {
+      "minimum": -0.8962198260309442,
+      "maximum": 4.485401041230604,
+      "negative_points": 5922,
+      "total_points": 14661,
+      "q_rows_with_negative": 78,
+      "total_q_rows": 81,
+      "minimum_q": 5.654866776461628,
+      "minimum_omega": 0.2,
+      "mirror_rms": 0.7243397439371856,
+      "symmetrized_minimum": -0.23134439850446709,
+      "symmetrized_negative_points": 4912,
+      "qpi_minimum": -0.14953319196528475,
+      "qpi_negative_points": 56
+    },
+    "eta_0_2": {
+      "minimum": -0.5203525883431612,
+      "maximum": 2.882468396920964,
+      "negative_points": 5070,
+      "total_points": 14661,
+      "q_rows_with_negative": 71,
+      "total_q_rows": 81,
+      "minimum_q": 5.654866776461628,
+      "minimum_omega": 0.2,
+      "mirror_rms": 0.648973715358776,
+      "symmetrized_minimum": -0.11641894982316989,
+      "symmetrized_negative_points": 1068,
+      "qpi_minimum": 0.003345952827797678,
+      "qpi_negative_points": 0
+    }
+  },
+  "interpretation": {
+    "tebd_execution_failure": false,
+    "simple_window_failure_only": false,
+    "simple_mirror_symmetrization_sufficient": false,
+    "estimator_is_globally_positive_definite": false,
+    "root_cause": "single-center OBC correlator is not the all-site O_q autocorrelation required for a positive spectral measure",
+    "accepted_use": "q=pi diagnostic only after matching eta and normalization",
+    "rejected_use": "full-q production heatmap or clipped raw spectrum"
+  },
+  "next_method": {
+    "primary": "construct O_q|GS> and evolve its autocorrelation for selected q values",
+    "alternative": "average multiple symmetry-related source sites before spatial Fourier transform",
+    "required_checks": [
+      "include or analytically account for t=0",
+      "match CV 1/pi normalization",
+      "dt and dt/2",
+      "at least two eta or tmax settings",
+      "raw nonnegativity at the selected q",
+      "CV peak and weight budgets"
+    ]
+  }
+}

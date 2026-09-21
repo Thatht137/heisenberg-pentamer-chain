@@ -1,0 +1,41 @@
+{
+  "actions": [],
+  "control_state": "HUMAN_REQUIRED",
+  "events": [
+    {
+      "at": "2026-08-01T20:47:16Z",
+      "kind": "INITIALIZED"
+    },
+    {
+      "at": "2026-08-02T04:17:55Z",
+      "kind": "REPORT_INGESTED",
+      "status": "HUMAN_REQUIRED"
+    },
+    {
+      "at": "2026-08-02T04:23:16Z",
+      "kind": "REPORT_INGESTED",
+      "status": "HUMAN_REQUIRED"
+    },
+    {
+      "at": "2026-08-02T04:28:30Z",
+      "kind": "REPORT_INGESTED",
+      "status": "HUMAN_REQUIRED"
+    },
+    {
+      "at": "2026-08-02T04:30:49Z",
+      "kind": "REPORT_INGESTED",
+      "status": "HUMAN_REQUIRED"
+    }
+  ],
+  "goal_id": "pentamer-positive-structure-ratio-mesh-20260802",
+  "latest_report": {
+    "accepted_artifacts": [],
+    "authorized_action_ids": [],
+    "checked_at": "2026-08-02T04:30:47Z",
+    "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\phase-diagram\\report.json",
+    "reason": "no significant crossing bracket exists inside the fixed bounds",
+    "status": "HUMAN_REQUIRED"
+  },
+  "next_wake_at": null,
+  "schema_version": 1
+}

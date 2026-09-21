@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-03",
+  "status": "pass",
+  "shell_syntax": {
+    "returncode": 0,
+    "stderr": "bash.exe: warning: could not find /tmp, please create!"
+  },
+  "token_checks": {
+    "anchor_path": true,
+    "tebd_run": true,
+    "no_parallel_julia_guard": true,
+    "tstep_0025": true,
+    "n_steps_600": true,
+    "threads_8": true,
+    "manifest_gate": true
+  },
+  "python_compile": {
+    "files": [
+      "scripts\\autoresearch_v5\\run_tebd_production.py",
+      "scripts\\autoresearch_v5\\analyze_tebd_crosscheck.py"
+    ],
+    "errors": []
+  },
+  "script_sha256": {
+    "scripts\\autoresearch_v5\\wait_then_run_tebd_remote.sh": "86f70c8375da2044a8ace495366b936eb1660a96b08e31e0f0963cd1b7b230b9",
+    "scripts\\autoresearch_v5\\run_tebd_production.py": "453ec26e5f4e36f18488f46537ab83593d8612d69e12e8662a05777d900f7a3d",
+    "scripts\\autoresearch_v5\\analyze_tebd_crosscheck.py": "984785f85bba00d23d76c14549b72b94a25bfece210b8ec1b98146668004899b"
+  },
+  "execution": "handoff only; no remote computation started",
+  "scope": {
+    "negative_alpha_included": false,
+    "fig9_included": false
+  }
+}

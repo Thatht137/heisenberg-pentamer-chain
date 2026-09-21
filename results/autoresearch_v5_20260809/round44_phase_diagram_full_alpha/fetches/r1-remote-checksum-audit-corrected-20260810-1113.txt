@@ -1,0 +1,455 @@
+CHECKSUM_AUDIT_BEGIN
+CELL_BEGIN:nega-r1-a0350-b0500-L040
+DIR_BEGIN:nega-r1-a0350-b0500-L040
+manifest.json: 成功
+progress.json: 成功
+runner_center.stderr.log: 成功
+runner_center.stdout.log: 成功
+runner_ferro_j2.stderr.log: 成功
+runner_ferro_j2.stdout.log: 成功
+status.json: 成功
+DIR_RC:nega-r1-a0350-b0500-L040:0
+DIR_BEGIN:nega-r1-a0350-b0500-L040/start_center
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0350-b0500-L040/start_center:0
+DIR_BEGIN:nega-r1-a0350-b0500-L040/start_ferro_j2
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0350-b0500-L040/start_ferro_j2:0
+CELL_END:nega-r1-a0350-b0500-L040
+CELL_BEGIN:nega-r1-a0350-b0500-L060
+DIR_BEGIN:nega-r1-a0350-b0500-L060
+manifest.json: 成功
+progress.json: 成功
+runner_center.stderr.log: 成功
+runner_center.stdout.log: 成功
+runner_ferro_j2.stderr.log: 成功
+runner_ferro_j2.stdout.log: 成功
+status.json: 成功
+DIR_RC:nega-r1-a0350-b0500-L060:0
+DIR_BEGIN:nega-r1-a0350-b0500-L060/start_center
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0350-b0500-L060/start_center:0
+DIR_BEGIN:nega-r1-a0350-b0500-L060/start_ferro_j2
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0350-b0500-L060/start_ferro_j2:0
+CELL_END:nega-r1-a0350-b0500-L060
+CELL_BEGIN:nega-r1-a0500-b0500-L040
+DIR_BEGIN:nega-r1-a0500-b0500-L040
+manifest.json: 成功
+progress.json: 成功
+runner_center.stderr.log: 成功
+runner_center.stdout.log: 成功
+runner_ferro_j2.stderr.log: 成功
+runner_ferro_j2.stdout.log: 成功
+status.json: 成功
+DIR_RC:nega-r1-a0500-b0500-L040:0
+DIR_BEGIN:nega-r1-a0500-b0500-L040/start_center
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0500-b0500-L040/start_center:0
+DIR_BEGIN:nega-r1-a0500-b0500-L040/start_ferro_j2
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0500-b0500-L040/start_ferro_j2:0
+CELL_END:nega-r1-a0500-b0500-L040
+CELL_BEGIN:nega-r1-a0500-b0500-L060
+DIR_BEGIN:nega-r1-a0500-b0500-L060
+manifest.json: 成功
+progress.json: 成功
+runner_center.stderr.log: 成功
+runner_center.stdout.log: 成功
+runner_ferro_j2.stderr.log: 成功
+runner_ferro_j2.stdout.log: 成功
+status.json: 成功
+DIR_RC:nega-r1-a0500-b0500-L060:0
+DIR_BEGIN:nega-r1-a0500-b0500-L060/start_center
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0500-b0500-L060/start_center:0
+DIR_BEGIN:nega-r1-a0500-b0500-L060/start_ferro_j2
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0500-b0500-L060/start_ferro_j2:0
+CELL_END:nega-r1-a0500-b0500-L060
+CELL_BEGIN:nega-r1-a0500-b0500-L080
+DIR_BEGIN:nega-r1-a0500-b0500-L080
+manifest.json: 成功
+progress.json: 成功
+runner_center.stderr.log: 成功
+runner_center.stdout.log: 成功
+runner_ferro_j2.stderr.log: 成功
+runner_ferro_j2.stdout.log: 成功
+status.json: 成功
+DIR_RC:nega-r1-a0500-b0500-L080:0
+DIR_BEGIN:nega-r1-a0500-b0500-L080/start_center
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0500-b0500-L080/start_center:0
+DIR_BEGIN:nega-r1-a0500-b0500-L080/start_ferro_j2
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0500-b0500-L080/start_ferro_j2:0
+CELL_END:nega-r1-a0500-b0500-L080
+CELL_BEGIN:nega-r1-a0750-b0500-L040
+DIR_BEGIN:nega-r1-a0750-b0500-L040
+manifest.json: 成功
+progress.json: 成功
+runner_center.stderr.log: 成功
+runner_center.stdout.log: 成功
+runner_ferro_j2.stderr.log: 成功
+runner_ferro_j2.stdout.log: 成功
+status.json: 成功
+DIR_RC:nega-r1-a0750-b0500-L040:0
+DIR_BEGIN:nega-r1-a0750-b0500-L040/start_center
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0750-b0500-L040/start_center:0
+DIR_BEGIN:nega-r1-a0750-b0500-L040/start_ferro_j2
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0750-b0500-L040/start_ferro_j2:0
+CELL_END:nega-r1-a0750-b0500-L040
+CELL_BEGIN:nega-r1-a0750-b0500-L060
+DIR_BEGIN:nega-r1-a0750-b0500-L060
+manifest.json: 成功
+progress.json: 成功
+runner_center.stderr.log: 成功
+runner_center.stdout.log: 成功
+runner_ferro_j2.stderr.log: 成功
+runner_ferro_j2.stdout.log: 成功
+status.json: 成功
+DIR_RC:nega-r1-a0750-b0500-L060:0
+DIR_BEGIN:nega-r1-a0750-b0500-L060/start_center
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0750-b0500-L060/start_center:0
+DIR_BEGIN:nega-r1-a0750-b0500-L060/start_ferro_j2
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0750-b0500-L060/start_ferro_j2:0
+CELL_END:nega-r1-a0750-b0500-L060
+CELL_BEGIN:nega-r1-a0750-b0500-L080
+DIR_BEGIN:nega-r1-a0750-b0500-L080
+manifest.json: 成功
+progress.json: 成功
+runner_center.stderr.log: 成功
+runner_center.stdout.log: 成功
+runner_ferro_j2.stderr.log: 成功
+runner_ferro_j2.stdout.log: 成功
+status.json: 成功
+DIR_RC:nega-r1-a0750-b0500-L080:0
+DIR_BEGIN:nega-r1-a0750-b0500-L080/start_center
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0750-b0500-L080/start_center:0
+DIR_BEGIN:nega-r1-a0750-b0500-L080/start_ferro_j2
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a0750-b0500-L080/start_ferro_j2:0
+CELL_END:nega-r1-a0750-b0500-L080
+CELL_BEGIN:nega-r1-a1000-b0500-L040
+DIR_BEGIN:nega-r1-a1000-b0500-L040
+manifest.json: 成功
+progress.json: 成功
+runner_center.stderr.log: 成功
+runner_center.stdout.log: 成功
+runner_ferro_j2.stderr.log: 成功
+runner_ferro_j2.stdout.log: 成功
+status.json: 成功
+DIR_RC:nega-r1-a1000-b0500-L040:0
+DIR_BEGIN:nega-r1-a1000-b0500-L040/start_center
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a1000-b0500-L040/start_center:0
+DIR_BEGIN:nega-r1-a1000-b0500-L040/start_ferro_j2
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a1000-b0500-L040/start_ferro_j2:0
+CELL_END:nega-r1-a1000-b0500-L040
+CELL_BEGIN:nega-r1-a1000-b0500-L060
+DIR_BEGIN:nega-r1-a1000-b0500-L060
+manifest.json: 成功
+progress.json: 成功
+runner_center.stderr.log: 成功
+runner_center.stdout.log: 成功
+runner_ferro_j2.stderr.log: 成功
+runner_ferro_j2.stdout.log: 成功
+status.json: 成功
+DIR_RC:nega-r1-a1000-b0500-L060:0
+DIR_BEGIN:nega-r1-a1000-b0500-L060/start_center
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a1000-b0500-L060/start_center:0
+DIR_BEGIN:nega-r1-a1000-b0500-L060/start_ferro_j2
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a1000-b0500-L060/start_ferro_j2:0
+CELL_END:nega-r1-a1000-b0500-L060
+CELL_BEGIN:nega-r1-a1000-b0500-L080
+DIR_BEGIN:nega-r1-a1000-b0500-L080
+manifest.json: 成功
+progress.json: 成功
+runner_center.stderr.log: 成功
+runner_center.stdout.log: 成功
+runner_ferro_j2.stderr.log: 成功
+runner_ferro_j2.stdout.log: 成功
+status.json: 成功
+DIR_RC:nega-r1-a1000-b0500-L080:0
+DIR_BEGIN:nega-r1-a1000-b0500-L080/start_center
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a1000-b0500-L080/start_center:0
+DIR_BEGIN:nega-r1-a1000-b0500-L080/start_ferro_j2
+bond_correlations.csv: 成功
+manifest.json: 成功
+metrics.csv: 成功
+progress.json: 成功
+resource.log: 成功
+schmidt_spectrum.csv: 成功
+status.json: 成功
+stderr.log: 成功
+stdout.log: 成功
+string_profile.csv: 成功
+structure_factor_fullq.csv: 成功
+sweep_history_sz0.csv: 成功
+sweep_history_sz1.csv: 成功
+DIR_RC:nega-r1-a1000-b0500-L080/start_ferro_j2:0
+CELL_END:nega-r1-a1000-b0500-L080
+CELL_COUNT:11
+BAD_DIR_COUNT:0
+CHECKSUM_AUDIT_END

@@ -1,0 +1,9 @@
+After sweep 1 energy=-2.4818261538888415  maxlinkdim=8 maxerr=5.80E-09 time=30.077
+After sweep 2 energy=-2.4830004378543484  maxlinkdim=11 maxerr=8.66E-09 time=0.075
+After sweep 3 energy=-2.483001039766285  maxlinkdim=11 maxerr=8.62E-09 time=0.033
+After sweep 4 energy=-2.483001039820742  maxlinkdim=11 maxerr=8.70E-09 time=0.225
+After sweep 1 energy=-2.41538207302271  maxlinkdim=8 maxerr=7.70E-09 time=0.014
+After sweep 2 energy=-2.4157462539024586  maxlinkdim=10 maxerr=7.27E-09 time=0.035
+After sweep 3 energy=-2.416062439601379  maxlinkdim=11 maxerr=9.63E-09 time=0.032
+After sweep 4 energy=-2.416411887047154  maxlinkdim=10 maxerr=9.24E-09 time=0.028
+POSITIVE_STATIC_SUCCESS outdir=D:\Project\1x5_Heisenberg_Pentamer\results\autoresearch_v5_20260730\round8_positive_static_production\local_smoke_L10_v3

@@ -1,0 +1,44 @@
+{
+  "checked_at": "2026-08-03T17:23:23+08:00",
+  "target": "wangjieren@39.96.207.180:6000",
+  "scope": {
+    "alpha": "0 <= alpha <= 1",
+    "beta": "0 <= beta <= 1",
+    "excluded": [
+      "negative alpha",
+      "reference Fig. 9"
+    ]
+  },
+  "anchor": {
+    "status": "success",
+    "local_validator": "pass",
+    "checks_passed": "8/8"
+  },
+  "supervisor": {
+    "status": "running",
+    "phase": "coarse",
+    "run_root": "results/autoresearch_v5_20260803/round24_tebd_eta01_crosscheck"
+  },
+  "progress": {
+    "cell_id": "tebd-alpha023-dt025-t30",
+    "phase": "tebd",
+    "completed_steps": 19,
+    "total_steps": 1200,
+    "percent": 1.6,
+    "eta_seconds": 2578.0,
+    "eta_confidence": "low"
+  },
+  "julia_processes": [
+    {
+      "pid": 179480,
+      "elapsed": "00:03:50",
+      "cpu_percent": 129.0,
+      "memory_percent": 0.4,
+      "rss_kib": 1057600,
+      "threads": 8,
+      "state": "RNl"
+    }
+  ],
+  "decision": "keep_running_without_second_julia",
+  "next_event": "coarse terminal status"
+}

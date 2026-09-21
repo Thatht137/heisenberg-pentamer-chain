@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "cell_id": "crosscheck-alpha023-dt025-t15",
+  "alpha": 0.23,
+  "beta": 0.5,
+  "n_units": 8,
+  "L": 40,
+  "tstep": 0.025,
+  "n_steps": 600,
+  "tmax": 15.0,
+  "dmrg_maxdim": 320,
+  "tebd_maxdim": 320,
+  "dmrg_cutoff": 1e-10,
+  "tebd_cutoff": 1e-09,
+  "nsweeps": 24,
+  "q_points": 81,
+  "omega_points": 181,
+  "omega_max": 3.0,
+  "space_window": 18,
+  "threads": 8,
+  "output_tag": "crosscheck-alpha023-dt025-t15",
+  "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c"
+}

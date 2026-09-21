@@ -1,0 +1,13 @@
+alpha,kind,path,present,bytes,sha256
+0.14,raw_tebd,data/NDSF_pentamer_alpha=0.14_beta=0.5_L=40_L40_t15.jld2,True,486537,39586951571670bb887e060afeebd21bff30ab206bbe05201fe9b5d77a7d9270
+0.14,spin_corr_L80,data/spin_correlations/tasks/corr_a0.14_b0.50_L080.csv,True,4877,927904d5c8926dcd293d8d44daa41d724ff38464476dfc63665fb7e1d0007a3b
+0.14,bond_corr_L100,data/bond_correlations/bond_a0.14_b0.50_L100.csv,True,6816,898d00fbe8f4b792929f531c186c7bb8b5c41347f0e221d404b4e110b5900bcd
+0.14,entanglement_L80,data/entanglement_spectrum/spectrum_a0.14_b0.50_L080.csv,True,6803,387eeece8cc3ad594eee2e8a1b4851238ba993942e22f7e76cf6a40f41a503b9
+0.23,raw_tebd,data/NDSF_pentamer_alpha=0.23_beta=0.5_L=40_L40_t15.jld2,True,485907,1a8a5370cf7165f4de5fd6f957f8f05221ccf370089e9650e3b9d39982d907d8
+0.23,spin_corr_L80,data/spin_correlations/tasks/corr_a0.23_b0.50_L080.csv,True,4877,4b22662c0b61fdefc7618e4bc7dbafa2842498d1f4c422eb82190a05a5ecdd9a
+0.23,bond_corr_L100,data/bond_correlations/bond_a0.23_b0.50_L100.csv,True,6816,dbe6d605bcb610fafa872cb32bdd50cd4094218517eef5d9d08f4dbfa55969af
+0.23,entanglement_L80,data/entanglement_spectrum/spectrum_a0.23_b0.50_L080.csv,False,0,
+0.33,raw_tebd,data/NDSF_pentamer_alpha=0.33_beta=0.5_L=40_L40_t15.jld2,True,486537,b246261b42757e49ba13ccc2195037955222a400b24d9fa97433c6f9aedb1d58
+0.33,spin_corr_L80,data/spin_correlations/tasks/corr_a0.33_b0.50_L080.csv,True,4877,43069220fa9dac331de301d8d06b10ca3c155bdee0b60e87cc2d44ef7bcdcef2
+0.33,bond_corr_L100,data/bond_correlations/bond_a0.33_b0.50_L100.csv,True,6816,b91248e3e424104564f1a7953cf9765b24ff26e5bdadaa9082a336db0024872e
+0.33,entanglement_L80,data/entanglement_spectrum/spectrum_a0.33_b0.50_L080.csv,True,6438,6fb4329c1204a6e0f1aac54c0cb150e5e47330ef83ac42a45907fee52ed6d637

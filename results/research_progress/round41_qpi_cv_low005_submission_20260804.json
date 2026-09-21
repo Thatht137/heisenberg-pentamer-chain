@@ -1,0 +1,133 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-08-04T22:36:21+08:00",
+  "status": "running",
+  "title": "round41 q=pi L=40 omega=0.05 高预算 CV smoke 提交与一次性核验",
+  "scope": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "n_units": 8,
+    "L": 40,
+    "q_over_pi": 1.0,
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "agent_execution_policy": {
+    "sol": "只负责思考、研究决策和验收",
+    "luna_5_6": "负责文件、命令、服务器和报告操作",
+    "standard": "docs/agent_execution_standard.md"
+  },
+  "target": {
+    "ssh": "wangjieren@39.96.207.180:6000",
+    "hostname": "c104-ysu",
+    "project_root": "/home/wangjieren/code/1x5_Heisenberg_Pentamer",
+    "run_root": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260804/round41_qpi_cv_low005_smoke",
+    "cell_dir": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260804/round41_qpi_cv_low005_smoke/cell-l40-qpi-low-005-highbudget"
+  },
+  "preflight": {
+    "checked_at": "2026-08-04T22:13:34+08:00",
+    "julia_version": "1.12.3",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "runner_sha256": "560d4344bc71c4dad487a3028a030bc41ebf813d53427bdcc17ace9eec0cc349",
+    "cv_julia_sha256": "049908c694ed6841bd0c3b3028b3b966cedafd426c49f07e1f491393d59e5292",
+    "progress_sha256": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+    "server": {
+      "cores": 80,
+      "available_memory_gib": 234,
+      "available_disk_gib": 688,
+      "existing_julia_count": 1,
+      "existing_heavy_job": "round31 cell-l40-qpi-high-150",
+      "existing_julia_pid": 324653
+    },
+    "result": "pass"
+  },
+  "parameters": {
+    "cell_id": "cell-l40-qpi-low-005-highbudget",
+    "eta": 0.1,
+    "omega_min": 0.05,
+    "omega_max": 0.05,
+    "omega_step": 0.05,
+    "dmrg_maxdim": 320,
+    "cv_maxdim": 800,
+    "nsweeps": 20,
+    "cutoff": 1e-10,
+    "cv_cutoff": 1e-14,
+    "max_cv_residual": 1e-5,
+    "julia_threads": 4
+  },
+  "resource_limits": {
+    "launcher_nice": 15,
+    "observed_julia_nice": 19,
+    "OPENBLAS_NUM_THREADS": 1,
+    "OMP_NUM_THREADS": 1,
+    "MKL_NUM_THREADS": 1,
+    "JULIA_NUM_THREADS": 4,
+    "offline_dependencies": true,
+    "parallel_policy": "仅本次经预检批准的 4 线程低频 smoke；禁止第三个 Julia 或第二个 L=80"
+  },
+  "launch": {
+    "launcher_script": "scripts/autoresearch_v5/launch_round41_qpi_cv_low005_smoke_remote.sh",
+    "launcher_script_sha256": "766c36e6953b6b21d45460916e808cfab0351ad9bcaa447c3355e28c66acd345",
+    "launcher_log": "results/autoresearch_v5_20260804/round41_qpi_cv_low005_smoke/launcher_cell-l40-qpi-low-005-highbudget_attempt2.log",
+    "launcher_pid_file": "results/autoresearch_v5_20260804/round41_qpi_cv_low005_smoke/launcher_cell-l40-qpi-low-005-highbudget_attempt2.pid",
+    "submission_file": "results/autoresearch_v5_20260804/round41_qpi_cv_low005_smoke/submission_cell-l40-qpi-low-005-highbudget_attempt2.json",
+    "progress_file": "results/autoresearch_v5_20260804/round41_qpi_cv_low005_smoke/cell-l40-qpi-low-005-highbudget/progress.json",
+    "status_file": "results/autoresearch_v5_20260804/round41_qpi_cv_low005_smoke/cell-l40-qpi-low-005-highbudget/status.json",
+    "launcher_pid": 347038,
+    "julia_pid": 347048,
+    "started_at_utc": "2026-08-04T14:35:27.327369+00:00"
+  },
+  "attempt_history": [
+    {
+      "attempt": 1,
+      "result": "protected_exit",
+      "reason": "submission.json 被误写入 cell 目录；wrapper 正确拒绝非空输出目录",
+      "compute_started": false,
+      "recovery": "仅将该 submission 记录移至 run_root，并在确认 cell 为空后 rmdir；无结果文件被删除"
+    },
+    {
+      "attempt": 2,
+      "result": "running",
+      "reason": "submission 移至 run_root，cell 在 wrapper 创建前保持为空"
+    }
+  ],
+  "post_launch_verification": {
+    "checked_at": "2026-08-04T22:36:21+08:00",
+    "low005": {
+      "python_pid": 347038,
+      "julia_pid": 347048,
+      "julia_command_threads": 4,
+      "os_thread_count": 10,
+      "cpu_percent": 104,
+      "rss_kib": 953880,
+      "niceness": 19,
+      "state": "RNl",
+      "status": "running",
+      "progress": {
+        "phase": "julia_linsolve",
+        "total_points": 1,
+        "completed_points": 0,
+        "elapsed_seconds": 30.001
+      }
+    },
+    "high150": {
+      "julia_pid": 324653,
+      "julia_command_threads": 8,
+      "os_thread_count": 57,
+      "cpu_percent": 1571,
+      "rss_kib": 3965252,
+      "state": "RNl",
+      "active": true
+    },
+    "result": "pass"
+  },
+  "acceptance_order": [
+    "自然终态",
+    "远端 SHA-256",
+    "非覆盖回传",
+    "validate_cv_run.py",
+    "accepted-only 组装",
+    "CV--TEBD 重分析"
+  ],
+  "interpretation_boundary": "该记录只证明任务已启动并通过一次性资源核验；不代表 CV residual、动态交叉门或 Fig.6--8 生产升级已通过。"
+}

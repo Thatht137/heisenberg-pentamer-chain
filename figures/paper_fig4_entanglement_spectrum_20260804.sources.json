@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "figure": "Fig. 4",
+  "backend": "Python/matplotlib",
+  "core_conclusion": "The five inequivalent cuts retain structured entanglement spectra while matched-size estimators agree with the c=1 oracle within 3.31%.",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "boundary": "The calibrated comparison is supported; raw absolute log-L fits fail their quality gate and are not used as a thermodynamic estimate.",
+  "source_sha256": {
+    "data\\entanglement_spectrum\\spectrum_a0.14_b0.50_L080.csv": "387eeece8cc3ad594eee2e8a1b4851238ba993942e22f7e76cf6a40f41a503b9",
+    "data\\entanglement_spectrum\\spectrum_a0.33_b0.50_L080.csv": "6fb4329c1204a6e0f1aac54c0cb150e5e47330ef83ac42a45907fee52ed6d637",
+    "results\\autoresearch_v4_20260730\\round1_entanglement_scaling\\analysis\\calibrated_estimators.csv": "0a49b6285ac6bcd78ecd99cf90f308f74512bd8fee846bb6aa798a4232b00584",
+    "results\\autoresearch_v4_20260730\\round1_entanglement_scaling\\analysis\\claim_summary.json": "2d757083529ca8916872ef91da3a06d10ac2aff3948015dc45b64a8a00cebe09"
+  },
+  "outputs": {
+    "figures\\paper_fig4_entanglement_spectrum_20260804.svg": "4a582d0dd7f5e67973baefb594c6d5d6e3df87e8ec77be05c8c73efb20f6e77e",
+    "figures\\paper_fig4_entanglement_spectrum_20260804.pdf": "d6d083354303c336786a62773ec4be409d0dd24f93e644405f8c7a80748e6c93",
+    "figures\\paper_fig4_entanglement_spectrum_20260804.png": "5bd5f9a702eb05f8583bf5ad5acf586698c6472e0207c28642577a66fa07cb62",
+    "figures\\paper_fig4_entanglement_spectrum_20260804.tiff": "943295a582fbff04a378ed0c2f6a0f472f51ee4e016386cc3f465eb2cf475d23"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "checked_at": "2026-08-04T00:21:30+08:00",
+  "source": "results/autoresearch_v5_20260803/round29_qpi_local_handoff/production_crosscheck/summary.json",
+  "status": "NotEvaluable",
+  "instance": "alpha=0.23,beta=0.5,L=40,q/pi=1,eta=0.1,OBC,Sz=0",
+  "tebd": {
+    "coarse_peak_omega": 0.05,
+    "refined_peak_omega": 0.05,
+    "dt_peak_delta": 0.0,
+    "dt_weight_relative_delta": 0.00012347934286219397,
+    "time_window_peak_delta": 0.0
+  },
+  "cv": {
+    "omegas": [
+      0.2,
+      0.25,
+      0.3,
+      0.35
+    ],
+    "main_peak_bracketed": false,
+    "full_weight_window_covered": false,
+    "point_relative_differences": [
+      0.04996135434598632,
+      0.02861653767366431,
+      0.06403928715881681,
+      0.03529230931503146
+    ]
+  },
+  "next_required_cv_grid": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.55,
+    1.0,
+    1.5
+  ],
+  "scope": {
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

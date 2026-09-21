@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "launch_ready": true,
+  "cell_count": 1,
+  "concurrency": 1,
+  "offline": true,
+  "eta_minutes": {
+    "low": 15,
+    "high": 30
+  },
+  "run_spec_sha256": "32ad828f35ea1088d10fdbded93014f4e7d08b899ab623b30f15fb7178bf1c81",
+  "source_hashes_sha256": "1c30107400a827450638994b45e5b340ff9c57517bc48a9507f6ae9208fe4542",
+  "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+  "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+  "r5_validation_summary_sha256": "2ad6f50eff72328c202526b30c46a2f91b3786fed592d5132cb5ed33a118862a",
+  "r5_ingestion_summary_sha256": "7c8933ae9e3e73361fcab683e4e9f6a59760bd18fa238dcda013437b42ae8351",
+  "controller_action_id": "act-cd2b4353726834318d6b",
+  "thresholds_relaxed": false
+}

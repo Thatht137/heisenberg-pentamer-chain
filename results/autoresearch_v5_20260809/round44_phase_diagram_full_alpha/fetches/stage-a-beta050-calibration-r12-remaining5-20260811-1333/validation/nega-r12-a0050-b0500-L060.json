@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "fail",
+  "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r12-remaining5-20260811-1333\\nega-r12-a0050-b0500-L060",
+  "run_spec": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\stage-a-beta050-calibration-r12-remaining5\\parameter-scan.run_spec.json",
+  "cell_id": "nega-r12-a0050-b0500-L060",
+  "checks": {
+    "unique_run_spec_cell": true,
+    "terminal_acceptance": false,
+    "negative_alpha_range": true,
+    "beta_range": true,
+    "parent_checksums": true,
+    "children": true
+  },
+  "failures": [
+    "父 manifest: 非 accepted success",
+    "父 status: 非 accepted success",
+    "父 manifest: children_accepted 未通过",
+    "子 manifest center: 非 accepted success",
+    "子 status center: 非 accepted success",
+    "子 manifest center: variance/site sz1 超门",
+    "子 manifest center: variance_sz1_per_site_le_1e-8 未通过",
+    "子 manifest ferro_j2: 非 accepted success",
+    "子 status ferro_j2: 非 accepted success",
+    "子 manifest ferro_j2: variance/site sz1 超门",
+    "子 manifest ferro_j2: variance_sz1_per_site_le_1e-8 未通过"
+  ]
+}

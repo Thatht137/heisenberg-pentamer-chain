@@ -1,0 +1,19 @@
+{
+  "schema_version": 2,
+  "status": "prepared_only",
+  "launch_ready": false,
+  "dry_run_only": true,
+  "cell_count": 2,
+  "concurrency": 1,
+  "stop_on_first_failure": true,
+  "retry_policy": "none",
+  "run_spec_sha256": "e43ff718a237010ea9ef3c78200193072bffd1c6bc14b44b7a5cc36ff7815f77",
+  "source_hashes_sha256": "152e3620c83a8fd9e6e72dc6f1aa0cb3056b3d8eaefc4223e9543130a071aabd",
+  "julia_parse_fix_sha256": "291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f",
+  "include_dependencies": [
+    "src/utils.jl",
+    "src/exact_diag.jl",
+    "src/dmrg_solver.jl",
+    "src/spectral.jl"
+  ]
+}

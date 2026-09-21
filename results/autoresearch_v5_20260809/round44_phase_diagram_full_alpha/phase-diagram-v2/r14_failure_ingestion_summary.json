@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "blocked_calibration_failure",
+  "cell_id": "nega-r14-a0050-b0500-L080",
+  "counts": {
+    "controller_success_total": 14,
+    "controller_failed_total": 0,
+    "controller_pending_total": 2,
+    "calibration_accepted_total": 6
+  },
+  "failed_calibration": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/failed_calibration_r14.json",
+    "sha256": "f8b1d6bf94b153eaa190a06c756d99a5eb27e9d6ecab0a32477128587b975d1e"
+  },
+  "failure_handoff": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r14-remaining4-20260811-1556/failure_handoff_summary.json",
+    "sha256": "c536e40cefbd0d92693d0153780dc586b9e06069ed52d591b9c6165a5a1bc94c"
+  },
+  "ingestion_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r14_failure_ingestion_audit.json",
+    "sha256": "5c98c3435a7f8a0fb030c8bf88197353fb47d4bd5f05335e4fe18c78a4c7b326"
+  },
+  "observations": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+    "sha256": "0ae1da5dd89c91076d5593d66088c0bc02b74fbeca2b28e10f0d8288e5bf7cb8"
+  },
+  "action_index": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/action_index.json",
+    "sha256": "818c1ad1ce06b703177bdcc4b9e2af32ec290e0c61e24a1cee92b915a947f63c"
+  },
+  "accepted_calibration": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/accepted_calibration_through_r9.json",
+    "sha256": "290083607e50582f79f4afedc5955d0876a9cd86172ae4936293abb42b451bf1"
+  },
+  "thresholds_relaxed": false
+}

@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "summary": "13 pass/1 bounded",
+  "records": [
+    {
+      "cell_id": "negb15-a0025-b0250-L040",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r15_negb15-a0025-b0250-L040_validation_practical_v2_20260903.json",
+      "validation_sha256": "c0d3c4f4b8f4616e10d20ec83edf3961dcd94a9631da30ee9f5a88cfa3dd57a0",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a0025-b0250-L040_fetch_receipt_20260903.json",
+      "receipt_sha256": "adcab39ab6812ebecd0d1f967d91562bd1db6dd71a6ae778bdaa92cfcd2063de"
+    },
+    {
+      "cell_id": "negb15-a0025-b0250-L060",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r15_negb15-a0025-b0250-L060_validation_practical_v2_20260903.json",
+      "validation_sha256": "d7de3eec606177bf140567e989610fb59ef2e00085f2a37e4c319e18bcec5b0c",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a0025-b0250-L060_fetch_receipt_20260903.json",
+      "receipt_sha256": "0ba1d4f1fddcb892a4d7d0505eaba1e0acf69d57947abaef734d3234452bbc8b"
+    },
+    {
+      "cell_id": "negb15-a0100-b0750-L040",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r15_negb15-a0100-b0750-L040_validation_practical_v2_20260903.json",
+      "validation_sha256": "912913cd4e45d0498f595d916a1050b38877a5b6df44aac9d33521155af650d8",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a0100-b0750-L040_fetch_receipt_20260903.json",
+      "receipt_sha256": "4aedb6fe8cf24143c96d0aaa94a9e152ed4e2265a4a5d726ccc7ab073bd1e2b3"
+    },
+    {
+      "cell_id": "negb15-a0100-b0750-L060",
+      "status": "fail",
+      "validation": "results/research_progress/stage_b_r15_negb15-a0100-b0750-L060_validation_practical_v2_20260903.json",
+      "validation_sha256": "3fdf93171243b97feafa3644ac2d69767fa7fe3d2d5100f3a846839c05435112",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a0100-b0750-L060_fetch_receipt_20260903.json",
+      "receipt_sha256": "3ef201cd96be3317e6b5ebe4539eab50cce4df9f5fa6abd13c426c3f00959cf9"
+    },
+    {
+      "cell_id": "negb15-a0250-b0750-L040",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r15_negb15-a0250-b0750-L040_validation_practical_v2_20260903.json",
+      "validation_sha256": "de584125e59f833bd379ab0273ac69fc6507583fcf63361ea262dbfa0824b66f",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a0250-b0750-L040_fetch_receipt_20260903.json",
+      "receipt_sha256": "bb16903c917b7779814fb223ef5bd09b7c6ae273159b3fd8563a2385964f773d"
+    },
+    {
+      "cell_id": "negb15-a0250-b0750-L060",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r15_negb15-a0250-b0750-L060_validation_practical_v2_20260903.json",
+      "validation_sha256": "29702f5b29ffc0f302a8e2c3eec668e4b8170bad2ee8594e48fe1a66b6d98027",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a0250-b0750-L060_fetch_receipt_20260903.json",
+      "receipt_sha256": "1fbdd862e45175ab5d31ec8129dcd2024b4afeb992f9cea1bcfc2a37754d0e8a"
+    },
+    {
+      "cell_id": "negb15-a0350-b0750-L040",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r15_negb15-a0350-b0750-L040_validation_practical_v2_20260903.json",
+      "validation_sha256": "f78034cd74356bdbcbdf93a3579addc4dc6239d539631244f61e892ecea52a3f",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a0350-b0750-L040_fetch_receipt_20260903.json",
+      "receipt_sha256": "5c77f68b1233e5bf1550ecc6153e645169db5dea2cdc809277ef29104d359fd3"
+    },
+    {
+      "cell_id": "negb15-a0350-b0750-L060",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r15_negb15-a0350-b0750-L060_validation_practical_v2_20260903.json",
+      "validation_sha256": "940c03ad242e5f3758a7f6db54dcec69425c2e0d74cf9474180b231395335b0a",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a0350-b0750-L060_fetch_receipt_20260903.json",
+      "receipt_sha256": "6ac54679e95b77c350c89a4bc63cc17c42a2d9d54d92d52b5ea144fbe7880482"
+    },
+    {
+      "cell_id": "negb15-a0500-b0750-L040",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r15_negb15-a0500-b0750-L040_validation_practical_v2_20260903.json",
+      "validation_sha256": "f0eafad0e9c32ef1fa7c0443f43e7ffe9e27177441754fe8e79d391216a7bb9b",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a0500-b0750-L040_fetch_receipt_20260903.json",
+      "receipt_sha256": "c5d5c0b75ba01ad006619cde6d053892569a066b712b844abf3e398c04e5ed1d"
+    },
+    {
+      "cell_id": "negb15-a0500-b0750-L060",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r15_negb15-a0500-b0750-L060_validation_practical_v2_20260903.json",
+      "validation_sha256": "09d2481dcb2348cfa43cc0449abeef9b0d3940cbdfe0fa172ee2aef2dfdbe917",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a0500-b0750-L060_fetch_receipt_20260903.json",
+      "receipt_sha256": "29a40b63abbfc1f9255970de23ad9ad4454b5062e8025e9039f8ca553815fcc5"
+    },
+    {
+      "cell_id": "negb15-a0750-b0750-L040",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r15_negb15-a0750-b0750-L040_validation_practical_v2_20260903.json",
+      "validation_sha256": "5e3d5d80c72cc62bd26b9a01fda4297298fe2ac9112a2f5b21653e9ff80f4c0b",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a0750-b0750-L040_fetch_receipt_20260903.json",
+      "receipt_sha256": "18f21570f4eb35ebdea0f2a3ee6d357e0165cfebd87d7b2bf8d028f1df7c5e42"
+    },
+    {
+      "cell_id": "negb15-a0750-b0750-L060",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r15_negb15-a0750-b0750-L060_validation_practical_v2_20260903.json",
+      "validation_sha256": "bb60970e573d245e905a45ea6061df43264f18b13acce3793c96f2be42872c89",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a0750-b0750-L060_fetch_receipt_20260903.json",
+      "receipt_sha256": "4c0e168cc44dcac54df8309b24e9ad3be1335103c07fda1885c4316e3a0bb27b"
+    },
+    {
+      "cell_id": "negb15-a1000-b0750-L040",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r15_negb15-a1000-b0750-L040_validation_practical_v2_20260903.json",
+      "validation_sha256": "168fd2d8286af4b14364bca15cbbfbd2abfe1f88d6fbe463eee6cb2e988bd2c9",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a1000-b0750-L040_fetch_receipt_20260903.json",
+      "receipt_sha256": "e850aaf5ea3b6c26f60e734d5ae2f24e02b57c565c739391ffabb2cf9d58f2b8"
+    },
+    {
+      "cell_id": "negb15-a1000-b0750-L060",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r15_negb15-a1000-b0750-L060_validation_practical_v2_20260903.json",
+      "validation_sha256": "cf3ebf5ac676d567c45d66732bece2ddc1e23d0896123fd472ffffb1fdc53d8f",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a1000-b0750-L060_fetch_receipt_20260903.json",
+      "receipt_sha256": "55a0a4ecdc96fc69d808519707e87b5d9fa86b98ca3cbf47d25dfbbff4944944"
+    }
+  ]
+}

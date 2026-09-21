@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "target": "/home/wangjieren/code/1x5_Heisenberg_Pentamer",
+  "mode": "offline_upload_and_launch",
+  "stage": "negative-alpha-independent-pilot-r1",
+  "cell_count": 6,
+  "concurrency": 1,
+  "eta_hours": {
+    "low": 4,
+    "high": 10
+  },
+  "files": [
+    {
+      "path": "Project.toml",
+      "sha256": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "bytes": 634
+    },
+    {
+      "path": "Manifest.toml",
+      "sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "bytes": 30279
+    },
+    {
+      "path": "docs/negative_alpha_practical_convergence_standard_20260829.md",
+      "sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+      "bytes": 4936
+    },
+    {
+      "path": "docs/negative_alpha_new_phase_audit_20260913.md",
+      "sha256": "17ad83328b3b8bb5db692f326b9f1803bc92960036884f71165c75b79cad7b71",
+      "bytes": 9180
+    },
+    {
+      "path": "src/PentamerChain.jl",
+      "sha256": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "bytes": 782
+    },
+    {
+      "path": "src/hamiltonian.jl",
+      "sha256": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "bytes": 2775
+    },
+    {
+      "path": "src/order_parameters.jl",
+      "sha256": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "bytes": 7444
+    },
+    {
+      "path": "scripts/autoresearch_v5/progress.py",
+      "sha256": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+      "bytes": 3005
+    },
+    {
+      "path": "scripts/autoresearch_v5/negative_static_cell.jl",
+      "sha256": "0363dbd631f8ad01ce7e6b0b3cf1489b55a157c834ac56919e38876a2d831c29",
+      "bytes": 16863
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_static_cell.py",
+      "sha256": "4e4698beec0de26a815220b4ad4fdbf8ec7f4891ef7da09b7210fe1438744729",
+      "bytes": 13953
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_phase_structure_cell.py",
+      "sha256": "502bf1b4fb1b9c1c2b7091930e0c4e1121c9a3ad03cc6f6c500e77bde176a48e",
+      "bytes": 13702
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_phase_structure_batch.py",
+      "sha256": "1ae4a38867c269832dd6afc57cfe59e9d8ed104f8a329d49dbff156ae3c9e003",
+      "bytes": 8858
+    },
+    {
+      "path": "scripts/autoresearch_v5/launch_negative_phase_independent_pilot.sh",
+      "sha256": "371378af75eee0522a6aa8b2df2d892617c912b7ec06eb319c270fc968fe569b",
+      "bytes": 1763
+    },
+    {
+      "path": "results/autoresearch_v5_20260913/negative_phase_independent_pilot_r1/parameter-scan.run_spec.json",
+      "sha256": "8ddd22ef9e450c20a89a044bd15a644462d5656ac058ef552006aa2b3a041455",
+      "bytes": 4701
+    },
+    {
+      "path": "results/autoresearch_v5_20260913/negative_phase_independent_pilot_r1/source_hashes.sha256",
+      "sha256": "65de8010ea6467cc4e29b2b2ac393045739ddc0eb3fc7cd271650a7ec3124b9b",
+      "bytes": 1386
+    },
+    {
+      "path": "results/autoresearch_v5_20260913/negative_phase_independent_pilot_r1/launch-contract.json",
+      "sha256": "23d52a273dc94ac673a6beea3c085da750ad8b06360b6f741e8f4fb00f5a4a89",
+      "bytes": 588
+    }
+  ]
+}

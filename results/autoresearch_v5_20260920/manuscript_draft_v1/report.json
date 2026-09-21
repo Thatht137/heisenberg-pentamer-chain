@@ -1,0 +1,474 @@
+{
+  "schema_version": 1,
+  "title": "Local multiplets, effective-chain dynamics, and momentum reconstruction in a spin-1/2 Heisenberg pentamer chain",
+  "eyebrow": "RESEARCH ARTICLE · AUTHOR REVIEW DRAFT",
+  "url": "",
+  "lede": "完整英文论文草稿，整合局域多重态、有效链、静态/动态 MPS、负 alpha 动量重构与终态 Krylov 稳定性证据。",
+  "generated_at_utc": "2026-09-20T13:24:58.251919+00:00",
+  "metadata": {
+    "scope": "alpha in [-1,1], beta in [0,1]",
+    "claim_boundary": "finite-size momentum reconstruction; no new phase label",
+    "paper_directory_modified": false
+  },
+  "sections": [
+    {
+      "title": "Manuscript",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "good",
+          "label": "MANUSCRIPT DRAFT · CALCULATION PACKAGE CLOSED",
+          "why": "正文已纳入 k=8→12 终态验收；负 alpha 只主张有限尺寸动量重构。"
+        },
+        {
+          "kind": "text",
+          "text": "**[Authors]** **[Affiliations]** **[Corresponding author]**"
+        }
+      ]
+    },
+    {
+      "title": "Abstract",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "Clusterized quantum spin chains connect local few-spin multiplets to extended many-body excitations. We investigate a spin-1/2 Heisenberg chain with a five-site unit cell by combining exact diagonalization, low-energy projection, finite-size density-matrix renormalization group calculations, entanglement diagnostics, correction-vector spectra, and real-time matrix-product-state dynamics. For positive intra-cell and inter-cell couplings, the isolated pentamer retains an even-reflection-parity spin-1/2 ground-state doublet. Projecting the inter-cell exchange onto this doublet gives an antiferromagnetic effective Heisenberg chain, and both two-pentamer exact diagonalization and finite-chain calculations show that the leading correction to the projected energy is quadratic in the inter-cell coupling. Matched-size entanglement estimates, small finite-size spin gaps, algebraic correlations, and a dominant response at $q=\\pi$ are consistent with a $c=1$ effective-chain description at the tested positive-coupling points, without establishing such behavior over the entire coupling plane. Reflection parity suppresses the lowest excited doublet at $q=\\pi$, whereas spin-3/2 multiplets carry 84.1%--97.6% of the isolated-pentamer inelastic weight. Independently validated correction-vector and time-evolution calculations connect these local selection rules to the collective spectrum. In the negative-$\\alpha$ region, 96 parameter--size records at 48 coupling points were evaluated, of which 89 passed the Practical V2 gates and seven remained bounded. A further 29 $L=60,80$ refinement cells passed the complete numerical and provenance chain. The dominant finite-size momentum reconstructs from approximately $0.60\\pi$ to $\\pi$, but none of eight candidate intervals satisfies the predeclared momentum and finite-size-flow criteria simultaneously. A final $k=8\\rightarrow12$ Krylov-subspace control at the most solver-sensitive $L=80$ point leaves $q_{peak}/\\pi=1$ unchanged and changes the spin gap, dominant ratio, and entropy by at most $7.6\\times10^{-12}$, $8.4\\times10^{-8}$, and $5.8\\times10^{-8}$, respectively. We therefore identify a robust finite-size momentum reconstruction, retain crossover as the working interpretation, and withhold a separate thermodynamic phase label."
+        }
+      ]
+    },
+    {
+      "title": "1. Introduction",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "Clusterized quantum magnets provide a direct route from the spectrum of a few-spin unit to the collective behavior of a quantum many-body system. Their local multiplets can survive as low-energy degrees of freedom, become dispersive, or be removed from an experimental response by symmetry. This makes clusterized chains useful for disentangling three questions that are often mixed together in a conventional phase diagram: which local state is active, how neighboring units couple, and which resulting excitations are actually visible."
+        },
+        {
+          "kind": "text",
+          "text": "The recent spin-1/2 tetramer chain study provides a useful reference because it treats magnetic order, entanglement structure, and excitation spectra within a common coupling diagram [1]. Replacing four spins by five is not, however, a minor geometric modification. A unit cell with an odd number of half-integer spins retains a half-integer degree of freedom unless symmetry breaking or ground-state degeneracy intervenes. Lieb--Schultz--Mattis-type results therefore constrain a unique symmetry-preserving gapped ground state under the relevant translation and spin-rotation assumptions [4,5]. The constraint is important, but it does not determine the phase diagram and does not by itself prove a globally gapless $c=1$ state."
+        },
+        {
+          "kind": "text",
+          "text": "Here we study a linear Heisenberg pentamer chain with two intra-cell exchanges, $J_1$ and $J_2$, and an inter-cell exchange $J_3$. We set $J_1=1$ and write $\\alpha=J_2/J_1$ and $\\beta=J_3/J_1$. The geometry differs from previously studied mixed-spin or differently connected pentamers, so their multiplet assignments are not transferred to the present model [2]. Instead, we determine the complete isolated-cell spectrum, construct the low-energy projected chain, and test the resulting picture against static and dynamical many-body calculations."
+        },
+        {
+          "kind": "text",
+          "text": "Three results organize the paper. First, throughout the sampled positive-$\\alpha$ region, the pentamer ground state is an even-parity spin-1/2 doublet and positive $\\beta$ generates an antiferromagnetic effective chain. Second, reflection parity makes the lowest excited doublet essentially dark at $q=\\pi$ and concentrates the local inelastic weight in spin-3/2 multiplets. Third, negative $\\alpha$ produces a reproducible finite-size reconstruction of the dominant momentum. The last result is not promoted to a thermodynamic phase boundary because two independently declared diagnostics do not localize the same adjacent interval."
+        },
+        {
+          "kind": "text",
+          "text": "This distinction between a resolved microscopic mechanism and a bounded phase-diagram statement is central to our analysis. All production records are accepted only after numerical, transfer, checksum, and independent-validator gates. We show the raw spectral ringing rather than clipping it, distinguish the Krylov dimension $k$ from the matrix-product-state bond dimension $\\chi$, and report initial-state differences as systematic sensitivity rather than statistical uncertainty. The resulting evidence supports an odd-unit-cell route from local multiplets to collective dynamics while defining precisely which conclusions cannot be inherited from the tetramer problem."
+        }
+      ]
+    },
+    {
+      "title": "2. Model and numerical methods",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "2.1 Hamiltonian and isolated-cell projection",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "The Hamiltonian is"
+        },
+        {
+          "kind": "equation",
+          "tex": "H=J_1\\sum_n\\left(\\mathbf S_{n,2}\\cdot\\mathbf S_{n,3}+\\mathbf S_{n,3}\\cdot\\mathbf S_{n,4}\\right)\n+J_2\\sum_n\\left(\\mathbf S_{n,1}\\cdot\\mathbf S_{n,2}+\\mathbf S_{n,4}\\cdot\\mathbf S_{n,5}\\right)\n+J_3\\sum_n\\mathbf S_{n,5}\\cdot\\mathbf S_{n+1,1}."
+        },
+        {
+          "kind": "text",
+          "text": "The isolated pentamer has a 32-dimensional Hilbert space. We diagonalize it completely and resolve every degenerate energy subspace by total spin and reflection parity. Spectral weights are evaluated with projectors onto complete multiplets, avoiding the arbitrary orientation of individual eigenvectors within degenerate subspaces. If $P$ projects onto the ground-state doublet, the local spins act as"
+        },
+        {
+          "kind": "equation",
+          "tex": "P\\mathbf S_{n,a}P=c_a\\mathbf T_n,"
+        },
+        {
+          "kind": "text",
+          "text": "where $\\mathbf T_n$ is an effective spin-1/2 operator. To leading order in the inter-cell coupling,"
+        },
+        {
+          "kind": "equation",
+          "tex": "H_{eff}=NE_5+J_{eff}\\sum_n\\mathbf T_n\\cdot\\mathbf T_{n+1}+O(\\beta^2),\n\\qquad J_{eff}=\\beta c_1c_5."
+        },
+        {
+          "kind": "text",
+          "text": "We test the projection in two ways. Exact diagonalization of two coupled pentamers measures the departure from the projected ground-state energy, while finite-chain calculations at $N=8,12,16$ pentamers test whether the same leading power persists in the extended system."
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "assets/fig1_model_projection.png",
+              "caption": "Figure 1. Geometry, coupling convention, isolated-pentamer multiplets, and the low-energy projection onto an effective spin-1/2 doublet."
+            }
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "2.2 Static finite-chain calculations and acceptance gates",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "Finite chains use open boundaries and $L=5N$ physical spins. Ground states are obtained in fixed total-$S^z$ sectors with density-matrix renormalization group calculations in a matrix-product-state representation [7,8]. Sector-specific initial states are used rather than assuming that a single initialization samples all low-energy solutions."
+        },
+        {
+          "kind": "text",
+          "text": "The positive-region data set contains 105 accepted records at $L=40,60,80$. For negative $\\alpha$, the Practical V2 protocol uses two product-state initializations, `center` and `ferro_j2`, in the $S^z=0$ sector and a fixed `center` initialization in the $S^z=1$ sector. A new record is accepted only if the variance per site is no larger than $5\\times10^{-8}$, the final truncation error is no larger than $10^{-9}$, the measured magnetization satisfies $|S^z-S^z_{target}|\\leq10^{-8}$, and the sector gap is no smaller than $-10^{-8}$. New Practical V2 runs use no more than 64 sweeps. The two $S^z=0$ initial states test initialization sensitivity; they are not independent statistical replicates."
+        },
+        {
+          "kind": "text",
+          "text": "Every accepted remote result is checked by a parent manifest and child checksums, transferred without overwriting an earlier run, checked again locally, and passed through an independent validator. Results that fail a gate are retained as bounded or not evaluable and are excluded from accepted-only boundary inference. This procedure is deliberately stricter than the visual smoothness of a plotted curve."
+        },
+        {
+          "kind": "heading",
+          "text": "2.3 Entanglement, correlation, and momentum diagnostics",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "For an open critical chain, the bond entropy is compared with the conformal form"
+        },
+        {
+          "kind": "equation",
+          "tex": "S(b)=a_g+\\frac{c_{eff}}{6}\\log\\left[\\frac{2L}{\\pi}\\sin\\left(\\frac{\\pi b}{L}\\right)\\right]."
+        },
+        {
+          "kind": "text",
+          "text": "The intercept $a_g$ depends on the bond class $g=b\\bmod5$ or $b\\bmod10$, while a common slope defines the descriptive coefficient $c_{eff}$. Fits use central windows $fL\\leq b\\leq(1-f)L$ with $f=0.10,0.15,0.20,0.25$. We call this quantity an effective entropy coefficient rather than a central charge unless size and solver controls justify the stronger language [6]. Correlation envelopes, finite-size sector gaps, the static structure factor, and connected bond--bond correlations provide complementary diagnostics."
+        },
+        {
+          "kind": "text",
+          "text": "The negative-$\\alpha$ scan tracks the dominant structure-factor momentum $q_{peak}$ and a dominant-ratio observable $R_L$. Candidate boundaries were declared only when an adjacent coupling interval showed both a momentum reconstruction and a consistent finite-size signature in $\\Delta R=R_{80}-R_{60}$. A momentum change without the corresponding $\\Delta R$ condition is reported as finite-size reconstruction, not a phase boundary."
+        },
+        {
+          "kind": "heading",
+          "text": "2.4 Dynamical structure factor",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "We compute the dynamical structure factor by two independent matrix-product-state routes. Correction-vector DMRG gives a fixed-frequency spectrum at $q=\\pi$ [10]. Real-time evolution followed by Fourier transformation provides the full momentum dependence and an independent line-shape check [9,11]. The correction-vector implementation first reproduces the complete $L=10$ spectrum with relative $L_2$ error $8.52\\times10^{-12}$."
+        },
+        {
+          "kind": "text",
+          "text": "The production full-momentum calculations use $L=40$, $t_{\\max}=30$, 121 momentum points, 301 frequency points, and paired time steps $\\Delta t=0.025$ and 0.0125. The raw Fourier matrices, including negative ringing from the finite time window, are retained and tested rather than clipped. The accepted correction-vector/time-evolution comparison is limited to the historical $q=\\pi$, $\\eta=0.1$ slice and its open-boundary normalization and spatial-window approximation; it is not a full-momentum correction-vector claim."
+        },
+        {
+          "kind": "heading",
+          "text": "2.5 Krylov-subspace stability control",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "The saved-state anomaly at $(\\alpha,\\beta)=(-0.10,0.25)$ was the point most sensitive to the local eigensolver configuration. We therefore performed a terminal $L=80$ control in which all physical and DMRG settings were held fixed while the Krylov dimension was increased from $k=8$ to $k=12$. Both `center` and `ferro_j2` initial states used 64 sweeps, maximum configured bond dimension 1200, cutoff $10^{-11}$, and the same 401-point momentum grid. Here $k$ is the Krylov-subspace dimension and must not be confused with the MPS bond dimension $\\chi$."
+        },
+        {
+          "kind": "text",
+          "text": "The $k=12$ run passed the remote and local checksum chain and the Practical V2 validator. Its variance per site was $1.86$--$1.87\\times10^{-11}$, and the two sector gaps were $7.2772047002\\times10^{-5}$ and $7.2772051798\\times10^{-5}$. Across 172 matched records, the $k=8\\rightarrow12$ differences were bounded by $7.5211\\times10^{-12}$ for the spin gap, $8.3994\\times10^{-8}$ for the dominant ratio, and $5.7413\\times10^{-8}$ for the entropy; $q_{peak}/\\pi$ remained 1. This audit closes the Krylov-stability question at one finite-size point, but it is not a bond-dimension sweep or a thermodynamic extrapolation."
+        }
+      ]
+    },
+    {
+      "title": "3. Results",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "3.1 An odd pentamer retains a low-energy spin doublet",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "At all 100 sampled points with $0<\\alpha\\leq1$, the isolated pentamer ground state is an even-reflection-parity spin-1/2 doublet. The lowest excited doublet is odd under reflection, whereas the lowest spin-3/2 multiplet is even. The five-spin unit therefore retains an active half-integer degree of freedom instead of forming a fully quenched singlet cluster."
+        },
+        {
+          "kind": "text",
+          "text": "At $\\alpha=0.14$, 0.23, and 0.33, the projected coupling satisfies $J_{eff}/\\beta=0.4396$, 0.4318, and 0.4189, respectively. Positive $\\beta$ thus generates an antiferromagnetic effective spin-1/2 chain. The residual between projected and exact ground-state energies scales with powers 1.9689--1.9915 for two coupled pentamers and 1.9483--1.9495 for complete chains with $N=8,12,16$. The leading correction is therefore consistent with the expected $O(\\beta^2)$ term."
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "assets/fig2_multiplet_parity.png",
+              "caption": "Figure 2. Positive-alpha multiplet flow and the reflection-parity filter at q=pi. The lowest excited doublet is dark, whereas even-parity spin-3/2 multiplets dominate the local inelastic response."
+            }
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3.2 Positive couplings support one resolved effective-chain regime",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "The strict positive-region mesh contains 105 accepted records. The $L=40,60,80$ finite-size diagnostic does not produce a stable interior crossing: all accepted interior size differences retain the same sign under leave-one-out and weakest-point audits. This is a bounded negative result. It establishes that the present data resolve no internal boundary in $0\\leq\\alpha,\\beta\\leq1$; it does not prove that every thermodynamic point belongs to one phase."
+        },
+        {
+          "kind": "text",
+          "text": "The low-energy observables provide an independent interpretation. At $\\alpha=0.23$ and weak inter-cell coupling, matched-size entanglement estimators give $c_{eff}=1.0240$--1.0331 relative to an open spin-1/2 Heisenberg-chain oracle. Finite-size spin gaps extrapolate close to zero, the correlation envelope has exponents 0.95--0.98, and the static structure factor is dominated by $q=\\pi$. Taken together, these results are consistent with a gapless antiferromagnetic effective chain at the tested points, rather than a gapped tetramer-like cluster phase [12]."
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "assets/fig3_positive_static.png",
+              "caption": "Figure 3. Positive-region ground-state diagnostics. The dense map is exploratory, while the strict 105-record L=40,60,80 mesh provides the accepted crossing test; no stable internal bracket is resolved."
+            }
+          ]
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "assets/fig4_entanglement.png",
+              "caption": "Figure 4. Entanglement and finite-size low-energy diagnostics. The five inequivalent bond classes are calibrated against a matched-size c=1 Heisenberg-chain oracle, so the plotted coefficient is interpreted only at the tested points."
+            }
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3.3 Reflection parity selects the visible local excitation",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "The lowest excited doublet is not the lowest visible $q=\\pi$ excitation. Its projector-resolved spectral weight is below $4.6\\times10^{-27}$ at the three representative positive-$\\alpha$ points because the $q=\\pi$ spin operator is even under reflection whereas the target doublet is odd. The lowest even-parity spin-3/2 multiplet carries a weight of approximately 0.325--0.333, and all spin-3/2 multiplets together account for 84.1%--97.6% of the isolated-pentamer inelastic response."
+        },
+        {
+          "kind": "text",
+          "text": "This result supplies a microscopic selection rule for the extended-chain spectrum. It does not assume that an isolated spin-3/2 multiplet remains a sharp quasiparticle at finite $\\beta$; instead, it identifies which local sector can contribute when collective states are formed."
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "assets/fig5_selection_rules.png",
+              "caption": "Figure 5. Effective-chain continuum and local selection rules. The continuum bounds describe the weak-coupling effective chain, while the isolated-pentamer weights identify bright local spin-3/2 channels without assigning an unvalidated quasiparticle label."
+            }
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3.4 Collective dynamics confirms the pointwise spectral picture",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "At $(\\alpha,\\beta,L,q)=(0.23,0.5,40,\\pi)$, eleven accepted correction-vector frequencies cover $0\\leq\\omega/J_1\\leq1.5$ and pass the peak-bracketing, spectral-weight, and residual gates. The line shape agrees with the independently converged time-evolution result within the declared peak-position and integrated-weight budgets."
+        },
+        {
+          "kind": "text",
+          "text": "Full-momentum time evolution was completed at $(\\alpha,\\beta)=(1,1)$, $(1,0.1)$, and $(0.23,0.5)$. All six individual runs and all three $\\Delta t$/$\\Delta t/2$ pairs passed. The global and $q=\\pi$ peak drifts are 0, 0, and $0.01J_1$ for the uniform, weak-coupling, and agreement points. The corresponding low-frequency integrated-weight changes are $4.32\\times10^{-5}$, $2.74\\times10^{-5}$, and $1.97\\times10^{-5}$."
+        },
+        {
+          "kind": "text",
+          "text": "The uniform point uses broadening $\\eta=0.1$, whereas the weak-coupling and agreement points use $\\eta=0.2$; all three use a spatial window of 18 sites. We therefore compare the organization and time-step stability of the panels, but not weak-peak linewidths across different broadenings. The three points form production spectral evidence, not a dense dynamical phase diagram."
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "assets/fig6_fullq_dynamics.png",
+              "caption": "Figure 6. Raw full-momentum Szz(q,omega) and paired q=pi time-step slices at three representative positive-coupling points. Negative Fourier ringing is shown rather than clipped; all six runs and all three dt/dt2 pairs pass their spectral gates."
+            }
+          ]
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "assets/fig7_cv_tebd.png",
+              "caption": "Figure 7. Pointwise correction-vector and time-evolution comparison at alpha=0.23, beta=0.5, L=40, and q=pi. Eleven accepted frequencies bracket the principal feature and cover omega/J1 from 0 to 1.5."
+            }
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3.5 Negative intra-cell exchange produces a finite-size momentum reconstruction",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "The negative-$\\alpha$ data show a reproducible change in the dominant structure-factor momentum. Deep in the scanned region, $q_{peak}\\simeq0.60\\pi$; closer to $\\alpha=0$, the maximum locks to $q=\\pi$. Stage B evaluated 96 parameter--size records at 48 coupling points. Eighty-nine records passed the Practical V2 gates, while seven non-boundary records remained bounded and were excluded from accepted-only inference."
+        },
+        {
+          "kind": "text",
+          "text": "The accepted-only analysis identified eight candidate intervals across seven $\\beta$ slices. Stage C evaluated these intervals with 29 additional $L=60,80$ cells at 64 sweeps. All 29 cells passed the remote parent and child checksums, non-overwriting transfer, local checksum, and independent validator. Seven of eight targets retain either a momentum reconstruction or a sign change in $\\Delta R=R_{80}-R_{60}$ that meets its declared diagnostic criterion. No adjacent interval, however, carries both signatures. Only the $\\beta=0.05$ momentum interval reaches the target width 0.025, and the $\\beta=0.10$ slice supplies no supported internal interval at the final size pair."
+        },
+        {
+          "kind": "text",
+          "text": "The data therefore establish a finite-size momentum reconstruction but do not locate a joint thermodynamic boundary. The mismatch is compatible with a broad crossover, a slowly converging incommensurate regime, or residual finite-size effects. Distinguishing these possibilities requires a different discriminating observable or substantially larger controlled sizes, not simply more points on the same grid."
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "assets/fig8_negative_reconstruction.png",
+              "caption": "Figure 8. Accepted-only negative-alpha momentum reconstruction. Large-size data move from q_peak about 0.60pi to pi, but the momentum and dominant-ratio diagnostics do not select the same adjacent interval."
+            }
+          ]
+        },
+        {
+          "kind": "heading",
+          "text": "3.6 Saved-state diagnostics and the terminal solver control",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "Six additional points were evaluated with saved $L=80$ ground-state wavefunctions using two $S^z=0$ initial states and 64 sweeps per initial state. The points were $\\alpha=-0.25,-0.175,-0.10$ at $\\beta=0.25$ and $\\alpha=-0.625,-0.50,-0.425$ at $\\beta=0.75$. All parent runs passed the Practical V2 gates, with a largest variance per site of $1.2875\\times10^{-9}$. Numerical acceptance alone did not determine their thermodynamic phase."
+        },
+        {
+          "kind": "text",
+          "text": "At $\\beta=0.25$, the earlier $L=80$ audit gave $c_{eff}=0.467$--0.605 at $\\alpha=-0.10$, compared with 0.886--0.971 at $\\alpha=-0.175$ and 0.981--1.049 at $\\alpha=-0.25$. The three $\\beta=0.75$ points gave 0.905--0.976. These ranges measure sensitivity to the fitting window and initialization; they are not confidence intervals."
+        },
+        {
+          "kind": "text",
+          "text": "A subsequent size comparison used $L=40,60,80$ at $\\alpha=-0.175,-0.150,-0.125,-0.100$ and $\\beta=0.25$. At $\\alpha=-0.10$, the ten-intercept coefficients span 0.970--1.340, 0.625--0.959, and 0.467--0.605 with increasing length. At fixed window $f=0.20$, the dual-start mean decreases from 0.988 to 0.695 and 0.533. Because only $N=8,12,16$ pentamers are available, this strong size dependence cannot be identified with a thermodynamic central charge. Same-class bond differences and connected inter-cell bond correlations also decrease over these sizes, but the available separations neither establish nor exclude a nonzero long-range order parameter."
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "assets/fig9_negative_size_evidence.png",
+              "caption": "Figure 9. Joint finite-size evidence near the negative-alpha anomaly. Entropy coefficients, bond-class variation, connected correlations, and sector gaps are displayed together to expose size and initialization sensitivity."
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "The terminal Krylov control clarifies which part of this anomaly was numerical. The earlier $k=3\\rightarrow8$ change strongly revised some entropy slopes at $\\alpha=-0.10$, showing that the old solver setting was not stable. By contrast, the final $k=8\\rightarrow12$ comparison at the same $L=80$ point is stable to the small absolute differences quoted in Section 2.5 and leaves $q_{peak}=\\pi$. This makes the accepted $L=80$ observables at that point robust against a further increase of the Krylov subspace. It still does not supply a $\\chi$ series, larger system sizes, or a thermodynamic order parameter. Accordingly, the anomaly remains a localized, numerically credible finite-size feature rather than evidence for a new phase."
+        }
+      ]
+    },
+    {
+      "title": "4. Discussion",
+      "blocks": [
+        {
+          "kind": "heading",
+          "text": "4.1 Why the pentamer differs from the tetramer",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "The main contrast with the reference tetramer follows from unit-cell parity. Four spin-1/2 degrees of freedom can form an integer-spin or singlet cluster sector. Five leave a half-integer degree of freedom unless translation symmetry is broken or the ground state is degenerate. In the tested positive-$\\alpha$ pentamer points, the surviving doublet converts the inter-cell exchange into an antiferromagnetic interaction between effective spins. The finite-size data are therefore consistent with a critical effective chain, whereas the tetramer phase names and its local triplon, quarton, or higher composite labels cannot be transferred by geometric analogy alone [1]."
+        },
+        {
+          "kind": "text",
+          "text": "The spectral comparison sharpens this distinction. The pentamer's odd-parity excited doublet is dark at $q=\\pi$, while higher even-parity spin-3/2 sectors remain bright. In the chain, that hierarchy coexists with a dispersive low-energy continuum and five-site folding or high-energy structure. The local multiplet analysis thus predicts visibility, while the many-body calculation determines whether the weight forms a continuum, a broadened branch, or a more complex folded response."
+        },
+        {
+          "kind": "heading",
+          "text": "4.2 Controlled interpretation near alpha=0",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "For $|\\alpha|≪\\min(1,\\beta)$, a trimer--dimer decomposition gives a useful limiting picture. Projecting the trimer doublets and eliminating the inter-cell dimer triplet produces the candidate exchange"
+        },
+        {
+          "kind": "equation",
+          "tex": "J_{eff}=\\frac{2\\alpha^2}{9\\beta}>0."
+        },
+        {
+          "kind": "text",
+          "text": "An eight-spin trimer--dimer--trimer oracle evaluated at 47 points supports this local $\\alpha^2/\\beta$ scaling in its asymptotic domain, consistent with the effective-spin logic of verified trimer-chain work [3]. The finite-$\\alpha$ controls at $(-0.10,0.25)$ and $(-0.175,0.25)$ deviate from the leading term by $-36.1351\\%$ and $-53.8550\\%$, respectively. These are signed deviations of a local controlled approximation, not numerical errors in the $L=80$ calculation. The open-boundary sector gap also need not equal a bulk excitation gap. The decomposition therefore provides a mechanism close to $\\alpha=0$, not proof of a second phase or a global $c=1$ region."
+        },
+        {
+          "kind": "heading",
+          "text": "4.3 What the negative-alpha data establish",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "The negative-$\\alpha$ scan answers a narrower but reproducible question: the dominant finite-size momentum changes across the coupling plane. It does not yet answer whether that change sharpens into a Lifshitz transition, belongs to a broad incommensurate regime, or remains a finite-size crossover. The decisive limitation is not a failed DMRG convergence test. The accepted Stage C cells pass the numerical and provenance gates, and the most sensitive endpoint passes the $k=8\\rightarrow12$ solver control. The limitation is physical: the momentum and finite-size-flow diagnostics do not identify the same boundary interval."
+        },
+        {
+          "kind": "text",
+          "text": "This separation matters for scientific interpretation. Numerical convergence validates the state and measured observables at a finite size; it cannot manufacture agreement between physically distinct diagnostics. Conversely, the absence of a joint boundary does not prove that the entire negative region is a single phase. Our conservative conclusion is therefore positive rather than merely inconclusive: the finite-size momentum reconstruction is established, while a separately named thermodynamic phase is not."
+        },
+        {
+          "kind": "heading",
+          "text": "4.4 Scope and remaining tests",
+          "level": 3
+        },
+        {
+          "kind": "text",
+          "text": "The present work establishes the local multiplet mechanism, positive-coupling effective-chain dynamics at selected points, and a bounded negative-coupling reconstruction. It does not provide a complete thermodynamic phase diagram. A stronger phase claim would require at least one observable with a controlled large-size singularity or crossing that is consistent with the momentum reconstruction, together with an effective bond-dimension series at the most sensitive points. A negative-$\\alpha$ dynamical representative could test whether the momentum reorganization is accompanied by a qualitative spectral transfer, but such a calculation would strengthen the phenomenology rather than by itself prove a phase boundary."
+        }
+      ]
+    },
+    {
+      "title": "5. Conclusion",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "We have traced the behavior of a spin-1/2 Heisenberg pentamer chain from its isolated local multiplets to its collective response. At the tested positive couplings, the pentamer retains an even-parity spin-1/2 doublet, positive inter-cell exchange generates an antiferromagnetic effective chain, and the leading projection error is quadratic in the inter-cell coupling. Entanglement, finite-size gaps, correlations, and static structure factors are consistent with a $c=1$ effective-chain description at those points. Reflection parity makes the lowest excited doublet dark at $q=\\pi$ and shifts most local inelastic weight into spin-3/2 sectors. Correction-vector and real-time calculations then connect this local selection rule to validated collective spectra."
+        },
+        {
+          "kind": "text",
+          "text": "On the negative-$\\alpha$ side, the accepted-only campaign reveals a reconstruction from $q_{peak}\\simeq0.60\\pi$ to $q=\\pi$. All 29 final refinement cells pass the full numerical and provenance chain, and a terminal $k=8\\rightarrow12$ control shows that the most sensitive $L=80$ endpoint is stable with respect to a larger Krylov subspace. Nevertheless, none of the eight candidate intervals satisfies the momentum and dominant-ratio criteria simultaneously. We therefore report a robust finite-size momentum reconstruction and retain crossover as the working interpretation, while deliberately withholding a new phase name. The resulting distinction between an established microscopic mechanism, production-level dynamics, and a bounded phase statement is the central conclusion of this work."
+        }
+      ]
+    },
+    {
+      "title": "Data and code availability",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "All quantitative claims in this draft are linked to local source-data manifests, SHA-256 records, non-overwriting transfer receipts, and independent validator outputs. The manuscript figure masters and their source manifests are stored with the project. Before submission, the authors should replace this paragraph with the public repository or archival DOI, define any embargo, and identify the exact release commit. The current internal evidence index is `results/research_progress/closeout_mechanism_source_data_audit_20260920.json`."
+        }
+      ]
+    },
+    {
+      "title": "Acknowledgements",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "[Add funding, computing resources, institutional support, and individual contributions.]"
+        }
+      ]
+    },
+    {
+      "title": "Author contributions",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "[Add a CRediT contribution statement.]"
+        }
+      ]
+    },
+    {
+      "title": "Competing interests",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "The authors declare no competing interests. [Confirm before submission.]"
+        }
+      ]
+    },
+    {
+      "title": "References",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "Li, J., Cheng, J.-Q., Datta, T. & Yao, D.-X. Spin order and spin excitation spectra of spin-1/2 tetramer chains. npj Quantum Materials **11**, 37 (2026). https://doi.org/10.1038/s41535-026-00855-x",
+            "Haraldsen, J. T. Heisenberg Pentamer: Insights into Inelastic Neutron Scattering on Magnetic Clusters. Physical Review Letters **107**, 037205 (2011). https://doi.org/10.1103/PhysRevLett.107.037205",
+            "Cheng, J.-Q. et al. Fractional and composite excitations of antiferromagnetic quantum spin trimer chains. npj Quantum Materials **7**, 3 (2022). https://doi.org/10.1038/s41535-021-00416-4",
+            "Lieb, E. H., Schultz, T. & Mattis, D. C. Two soluble models of an antiferromagnetic chain. Annals of Physics **16**, 407--466 (1961). https://doi.org/10.1016/0003-4916(61)90115-4",
+            "Ogata, Y. & Tasaki, H. Lieb--Schultz--Mattis Type Theorems for Quantum Spin Chains Without Continuous Symmetry. Communications in Mathematical Physics **372**, 951--962 (2019). https://doi.org/10.1007/s00220-019-03343-5",
+            "Calabrese, P. & Cardy, J. Entanglement entropy and quantum field theory. Journal of Statistical Mechanics: Theory and Experiment 2004, P06002 (2004). https://doi.org/10.1088/1742-5468/2004/06/P06002",
+            "White, S. R. Density matrix formulation for quantum renormalization groups. Physical Review Letters **69**, 2863--2866 (1992). https://doi.org/10.1103/PhysRevLett.69.2863",
+            "Schollwöck, U. The density-matrix renormalization group in the age of matrix product states. Annals of Physics **326**, 96--192 (2011). https://doi.org/10.1016/j.aop.2010.09.012",
+            "Vidal, G. Efficient simulation of one-dimensional quantum many-body systems. Physical Review Letters **93**, 040502 (2004). https://doi.org/10.1103/PhysRevLett.93.040502",
+            "Kühner, T. D. & White, S. R. Dynamical correlation functions using the density matrix renormalization group. Physical Review B **60**, 335--343 (1999). https://doi.org/10.1103/PhysRevB.60.335",
+            "Fishman, M., White, S. R. & Stoudenmire, E. M. The ITensor Software Library for Tensor Network Calculations. SciPost Physics Codebases 4 (2022). https://doi.org/10.21468/SciPostPhysCodeb.4",
+            "des Cloizeaux, J. & Pearson, J. J. Spin-Wave Spectrum of the Antiferromagnetic Linear Chain. Physical Review **128**, 2131--2135 (1962). https://doi.org/10.1103/PhysRev.128.2131"
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+D:\Project\1x5_Heisenberg_Pentamer\.venv\Scripts\python.exe D:\Project\1x5_Heisenberg_Pentamer\scripts\autoresearch_v5\analyze_second_order_schrieffer_wolff.py

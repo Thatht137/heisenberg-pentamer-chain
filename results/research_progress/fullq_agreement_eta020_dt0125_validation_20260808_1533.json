@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_fetch_eta020_20260808_1533\\fullq-agreement-eta020-dt0125",
+  "cell_id": "fullq-agreement-eta020-dt0125",
+  "checks": {
+    "terminal_acceptance": true,
+    "checksums": true,
+    "positive_region": true,
+    "t0_included": true,
+    "variance_per_site": true,
+    "sector_sz0": true,
+    "raw_negative_weight_fraction": true,
+    "artifacts": true
+  },
+  "diagnostics": {
+    "variance_per_site": 2.6078375015003987e-10,
+    "total_sz": -1.0897743423330699e-15,
+    "raw_negative_weight_fraction": 0.09178749956125108,
+    "max_negative_weight_fraction": 0.15,
+    "tstep": 0.0125,
+    "tmax": 30.0
+  },
+  "failures": []
+}

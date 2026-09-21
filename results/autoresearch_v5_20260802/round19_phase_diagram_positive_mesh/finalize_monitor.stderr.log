@@ -1,0 +1,7 @@
+ssh.exe : Connection timed out during banner exchange
+ËùÔÚÎ»ÖÃ D:\Project\1x5_Heisenberg_Pentamer\scripts\autoresearch_v5\download_phase_mesh_results.ps1:90 ×Ö·û: 16
++ ... atusText = (& ssh @sshOptions $remote ("cat " + $remoteRun + "/run_st ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Connection time...banner exchange:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 

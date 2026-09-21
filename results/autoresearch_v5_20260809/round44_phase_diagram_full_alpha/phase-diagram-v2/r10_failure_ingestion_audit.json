@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "pass_failure_only",
+  "controller_counts": {
+    "success": 12,
+    "failed": 1,
+    "pending": 3
+  },
+  "calibration_accepted_total": 6,
+  "pre_observations_sha256": "88dce190c844a52a6ace182d9783c638c2105ebd999cce77d00dfac7ecb8eb82",
+  "pre_action_index_sha256": "bc2c05f064f2f46dd0c907ca638c695da00a8b7f06e249d351b0a8d51373bd19",
+  "post_observations_sha256": "5970880d95732cd4c9b467a113ffb38111f0175702305f9d239c24725bcb660e",
+  "post_action_index_sha256": "6a3b91b254d2881a89163ce64be62ae61f6497afaca37b7ee753a92635a5d24b",
+  "invariants": {
+    "r6_observation_unchanged": true,
+    "r6_half_difference_preserved": true,
+    "r8_observation_unchanged": true,
+    "r7_failure_provenance_preserved": true,
+    "r9_failure_provenance_embedded": true,
+    "failed_observation_has_no_value_or_error": true,
+    "calibration_unchanged": true
+  },
+  "thresholds_relaxed": false,
+  "crossing_assigned": false,
+  "phase_label_assigned": false
+}

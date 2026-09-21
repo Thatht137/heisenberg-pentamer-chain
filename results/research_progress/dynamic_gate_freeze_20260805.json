@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "decided_at": "2026-08-05T22:15:00+08:00",
+  "status": "bounded_dynamic_delivery",
+  "accepted_cv_points": [0.2, 0.25, 0.3, 0.35, 0.55, 1.0, 1.5],
+  "accepted_cv_range": [0.2, 1.5],
+  "cross_method_tag": "NotEvaluable",
+  "shared_point_max_relative_delta": 0.06403928715881681,
+  "shared_window_weight_relative_delta": 0.015252853703575845,
+  "failed_low005": {
+    "omega": 0.05,
+    "relative_residual": 1.1767005759300015e-05,
+    "threshold": 1e-05,
+    "excess_fraction": 0.17670057593000145,
+    "program_returncode": 0,
+    "accepted": false,
+    "validator": "fail"
+  },
+  "checks": {
+    "tebd_internal_convergence": true,
+    "high150_local_validator": true,
+    "accepted_only_integrity": true,
+    "main_peak_bracketed": false,
+    "major_window_covered": false,
+    "final_dynamic_claim_gate": false
+  },
+  "figure_status": {
+    "Fig.6": "exploratory_frozen",
+    "Fig.7": "pilot_frozen",
+    "Fig.8": "bounded_seven_point_overlay"
+  },
+  "compute_decision": {
+    "round42_low000": "cancelled_trigger_not_met",
+    "more_low_frequency_retry": false,
+    "reason": "low-005 retry failed the unchanged residual gate; stop-loss rule applies."
+  },
+  "allowed_claim": "七个已验收 CV 点与 TEBD 在共享频率和共享窗内数值接近。",
+  "forbidden_claim": "CV 与 TEBD 已完成主峰及完整 0--1.5 频率窗的一致性验收。",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "status": "pass",
+  "core_conclusion": "Stage C resolves a finite-size momentum reconstruction but not a dual-diagnostic thermodynamic boundary.",
+  "archetype": "quantitative grid",
+  "backend": "python_matplotlib_only",
+  "source": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_c_practical_v2_r1_boundary_decision.json",
+  "points": 22,
+  "targets": 8,
+  "dual_diagnostic_boundaries": 0,
+  "interpolation_used": false,
+  "exports": {
+    "negative_alpha_crossover_points.csv": {
+      "bytes": 2280,
+      "sha256": "62c13046b684844dac05e148d3131714109b8aab8bc6d4862d1bcf2b6cb03ec8"
+    },
+    "negative_alpha_crossover_evidence.csv": {
+      "bytes": 610,
+      "sha256": "2163be9395ea64b978ca3d5ee9c564dba9793a89443150f6173bcd7df410f890"
+    },
+    "negative_alpha_crossover_summary.svg": {
+      "bytes": 76962,
+      "sha256": "b716b6ddf6db914a88837656fc419e3f0481129da8e51a3bb87dbded5e700ef3"
+    },
+    "negative_alpha_crossover_summary.pdf": {
+      "bytes": 69073,
+      "sha256": "13fbd158a3e5aef067d469d60f9eff941fe59e28b67c6a00dc230f801c2e6383"
+    },
+    "negative_alpha_crossover_summary.png": {
+      "bytes": 302823,
+      "sha256": "bad14b56f2b01cc0e3609c37b43d996890b13ef207fcf491857b43882ddb80a9"
+    },
+    "negative_alpha_crossover_summary.tiff": {
+      "bytes": 64746734,
+      "sha256": "26a6846f108f5b7a4a3e44fc3710c88e9ee7290f19674a7b6687d4bebbcae57e"
+    }
+  },
+  "review_risks": [
+    "Sparse beta slices do not define a continuous thermodynamic boundary.",
+    "Mixed L60/L80 momentum points are marked explicitly and are not assigned a phase label.",
+    "The figure supports crossover wording only; it does not establish a new phase."
+  ]
+}

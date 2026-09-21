@@ -1,0 +1,33 @@
+{
+  "scope": "alpha in [0.01, 1.00], isolated five-site OBC pentamer, single-spin Sz(q)",
+  "alpha_points": 100,
+  "hilbert_dimension": 32,
+  "multiplet_inventory": "5 doublets + 4 quartets + 1 sextet",
+  "max_errors": {
+    "hermiticity": 0.0,
+    "su2_commutator": 1.4922332933226366e-15,
+    "reflection_commutator": 3.3823104336622004e-16,
+    "orthonormality": 7.898142168906908e-15,
+    "multiplet_degeneracy": 0.0,
+    "dft_sum_rule": 2.6645352591003757e-15,
+    "q0_inelastic": 5.123967124141882e-31,
+    "qpi_wrong_parity": 4.629373245839898e-27,
+    "s_five_half_fraction": 1.9595214111033747e-28
+  },
+  "alpha_one_exact_anchor_error": 1.3164813683630427e-10,
+  "legacy_three_point_crosscheck_error": 6.661338147750939e-16,
+  "gates": {
+    "hermiticity": true,
+    "su2": true,
+    "reflection": true,
+    "orthonormality": true,
+    "multiplet_counting": true,
+    "dft_sum_rule": true,
+    "q0_conservation": true,
+    "qpi_parity_rule": true,
+    "rank_one_dark_sextet": true,
+    "alpha_one_anchor": true,
+    "legacy_crosscheck": true
+  },
+  "all_gates_pass": true
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-08-05T08:20:00+08:00",
+  "title": "CV residual 超门槛自动重试修复",
+  "problem": {
+    "run": "round41_qpi_cv_low005",
+    "max_residual": 1.1706774646405482e-05,
+    "gate": 1e-05,
+    "diagnosis": "数值收敛预算不足；不是程序崩溃"
+  },
+  "repair": {
+    "files": [
+      "scripts/autoresearch_v5/cv_dsf_cell.jl",
+      "scripts/autoresearch_v5/cv_dsf_resumable.jl"
+    ],
+    "first_pass": "原预算：maxiter=500, krylovdim=100",
+    "retry_trigger": "单点 relative_residual > 1e-5",
+    "retry_budget": "maxiter=1000, krylovdim=200, nsweeps=max(2N,N+4), 同一解向量 warm start",
+    "acceptance_gate_unchanged": true,
+    "old_results_preserved": true
+  },
+  "verification": {
+    "julia_parse": "pass",
+    "runtime_contract_tests": "3/3 pass",
+    "server_run": "pending high-150 终态后执行",
+    "scope": "0 <= alpha,beta <= 1；排除负 alpha 和 Fig. 9"
+  }
+}

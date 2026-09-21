@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "scope": "0<=alpha,beta<=1；排除负 alpha 与 Fig.9",
+  "non_overwriting": true,
+  "cells": [
+    {
+      "cell_id": "fullq-uniform-dt025",
+      "source": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_fetch_20260807_1630\\fullq-uniform-dt025",
+      "staged": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-uniform-dt025"
+    },
+    {
+      "cell_id": "fullq-uniform-dt0125",
+      "source": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_fetch_20260807_2030\\fullq-uniform-dt0125",
+      "staged": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-uniform-dt0125"
+    },
+    {
+      "cell_id": "fullq-weak-eta020-dt025",
+      "source": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_fetch_eta020_20260808_0045\\fullq-weak-eta020-dt025",
+      "staged": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-weak-eta020-dt025"
+    },
+    {
+      "cell_id": "fullq-weak-eta020-dt0125",
+      "source": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_fetch_eta020_20260808_1145\\fullq-weak-eta020-dt0125",
+      "staged": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-weak-eta020-dt0125"
+    },
+    {
+      "cell_id": "fullq-agreement-eta020-dt025",
+      "source": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_fetch_eta020_20260808_1301\\fullq-agreement-eta020-dt025",
+      "staged": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-agreement-eta020-dt025"
+    },
+    {
+      "cell_id": "fullq-agreement-eta020-dt0125",
+      "source": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_fetch_eta020_20260808_1533\\fullq-agreement-eta020-dt0125",
+      "staged": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-agreement-eta020-dt0125"
+    }
+  ]
+}

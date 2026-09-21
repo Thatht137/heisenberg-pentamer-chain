@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "purpose": "R5 部分终态的 L80 calibration-only accepted evidence",
+  "source_partial_handoff": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/partial_handoff_summary.json",
+  "records": [
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.5,
+        "L": 80
+      },
+      "status": "success",
+      "value": 0.19715321747583414,
+      "error": 0.0002569860264955981,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/cells/nega-r5-a0250-b0500-L080/manifest.json",
+      "accepted_only": true,
+      "calibration_only": true,
+      "controller_action_id": null,
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/validation/nega-r5-a0250-b0500-L080.json",
+        "sha256": "f391ba21a5db6a5cd35025ca458647df0dcbd8bc1d7907c46af5415890e5db51"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/receipts/nega-r5-a0250-b0500-L080.json",
+        "sha256": "03b7695c11a90276393247f82c416a73433814b7da2882d3735d407cf77b9d9d",
+        "manifest_sha256": "10c363934a9b005af1e68bbc56c64ad421a9e32b13c89a53ac5c8ea11a30fac7",
+        "checksums_sha256": "535adca12e6f38c6160bc45d1871bab7c2657d30f70fdacd118c54b5c206522f",
+        "preview_sha256": "32fe76c0f6db5a6d4637ae199584f430cdc7508d7233b74f788ecfba9203332c"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r5-remaining10-20260810",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      },
+      "r5_partial_handoff": true
+    }
+  ]
+}

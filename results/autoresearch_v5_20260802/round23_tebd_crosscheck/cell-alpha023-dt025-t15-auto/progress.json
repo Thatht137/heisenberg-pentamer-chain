@@ -1,0 +1,23 @@
+{
+  "job_type": "tebd_production",
+  "cell_id": "crosscheck-alpha023-dt025-t15-auto",
+  "phase": "finished",
+  "tebd_total_steps": 600,
+  "fourier_total_q": 81,
+  "status": "success",
+  "tebd_returncode": 0,
+  "fourier_returncode": 0,
+  "finished_at": "2026-08-03T06:35:29.968619+00:00",
+  "accepted": false,
+  "tebd_seconds": 501.20948530733585,
+  "fourier_seconds": 165.7526850234717,
+  "returncode": 1,
+  "tebd_step": 600,
+  "tebd_percent": 100.0,
+  "tebd_eta_seconds": 0.0,
+  "fourier_q": 81,
+  "schema_version": 1,
+  "started_at": "2026-08-03T06:24:22.975872+00:00",
+  "updated_at": "2026-08-03T06:35:29.973742+00:00",
+  "elapsed_seconds": 666.998
+}

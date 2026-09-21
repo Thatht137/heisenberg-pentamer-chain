@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "core_conclusion": "Three bulk regimes are a useful working interpretation; the negative-side Lifshitz bracket remains provisional.",
+  "archetype": "asymmetric mixed-modality figure",
+  "scope": {
+    "alpha": [
+      -1,
+      1
+    ],
+    "beta": [
+      0,
+      1
+    ],
+    "fig9_excluded": true
+  },
+  "working_phase_count": 3,
+  "singular_lines": [
+    "alpha=0"
+  ],
+  "calibrated_slice": {
+    "beta": 0.5,
+    "candidate_alpha_bracket": [
+      -0.35,
+      -0.25
+    ]
+  },
+  "strict_boundary_confirmed": false,
+  "inputs": {
+    "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_a_finite_size_diagnostic_latest.csv": "4fccf154298ef8045dfd3391a847f837240b38f733692cad2abad44adfeb1433",
+    "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_a_finite_size_diagnostic_latest.json": "8bf44f7e106b14db62c07874a6405cfec27f50d7f32cda76cd73bba9646f39ce"
+  },
+  "source_data": {
+    "figures/full_alpha_working_phase_diagram_20260812.source.csv": "4fccf154298ef8045dfd3391a847f837240b38f733692cad2abad44adfeb1433"
+  }
+}

@@ -1,0 +1,414 @@
+{
+  "schema_version": 1,
+  "title": "Static Krylov k12 Gate",
+  "eyebrow": "LOCAL GATE · TERMINAL SUMMARY · AUDIT ONLY",
+  "url": "",
+  "lede": "独立 k12 单点门禁记录；本页只呈现可追溯的准备/终态证据，不作物理结论。",
+  "generated_at_utc": "2026-09-20T13:03:30.438566+00:00",
+  "metadata": {
+    "state": "terminal",
+    "source": "results\\research_progress\\project_closeout_status_20260919.json",
+    "claim": "audit_only"
+  },
+  "sections": [
+    {
+      "title": "Gate 状态",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "good",
+          "label": "TERMINAL SUMMARY · AUDIT ONLY",
+          "why": "终态摘要为 terminal_accepted；仍受 audit_only 边界约束。"
+        },
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "state",
+              "terminal"
+            ],
+            [
+              "status",
+              "terminal_accepted"
+            ],
+            [
+              "claim",
+              "audit_only"
+            ],
+            [
+              "package_ready",
+              "是"
+            ],
+            [
+              "launch_ready",
+              "是"
+            ],
+            [
+              "goal_complete",
+              "是"
+            ],
+            [
+              "source",
+              "results\\research_progress\\project_closeout_status_20260919.json"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "运行参数",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "参数",
+            "值"
+          ],
+          "rows": [
+            [
+              "alpha",
+              "-0.1"
+            ],
+            [
+              "beta",
+              "0.25"
+            ],
+            [
+              "L",
+              "80"
+            ],
+            [
+              "n_units",
+              "16"
+            ],
+            [
+              "eigsolve_krylovdim",
+              "12"
+            ],
+            [
+              "nsweeps",
+              "64"
+            ],
+            [
+              "maxdim",
+              "1200"
+            ],
+            [
+              "cutoff",
+              "1e-11"
+            ],
+            [
+              "threads",
+              "8"
+            ],
+            [
+              "q_count",
+              "401"
+            ],
+            [
+              "init_modes",
+              "[\"center\", \"ferro_j2\"]"
+            ],
+            [
+              "save_state",
+              "是"
+            ],
+            [
+              "enriched_diagnostics",
+              "是"
+            ],
+            [
+              "concurrency",
+              "1"
+            ],
+            [
+              "retry_policy",
+              "none"
+            ],
+            [
+              "warmstart",
+              "否"
+            ],
+            [
+              "no_128",
+              "是"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "本地 smoke 与 preflight",
+      "blocks": [
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "artifact",
+              "results/autoresearch_v5_20260920/static_krylov_k12_smoke_r1/a-0100-k12"
+            ],
+            [
+              "status",
+              "pass"
+            ],
+            [
+              "Julia",
+              "1.11.5"
+            ],
+            [
+              "role",
+              "parser/execution evidence only"
+            ],
+            [
+              "not_remote_validation",
+              "是"
+            ],
+            [
+              "preflight",
+              "results/autoresearch_v5_20260920/static_krylov_k12_r1/preflight.json"
+            ],
+            [
+              "dry_run",
+              "DRY_RUN_OK cells=1"
+            ],
+            [
+              "unit_tests",
+              "7 passed"
+            ],
+            [
+              "remote Julia required",
+              "1.12.3"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "证据边界",
+          "style": "warning",
+          "text": "L10 smoke 的 Julia 1.11.5 只证明 parser/execution；不替代远端 Julia 1.12.3 验证。"
+        }
+      ]
+    },
+    {
+      "title": "Manifest / hash / provenance",
+      "blocks": [
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "release_manifest",
+              "results/autoresearch_v5_20260920/static_krylov_controls_release_v3/server_upload_manifest.json"
+            ],
+            [
+              "manifest_sha256",
+              "4f0c3857fc0d6635dc4fb6bf193022b30c46dc43c1170161c40e4bfc2c2b9e30"
+            ],
+            [
+              "run_spec",
+              "results/autoresearch_v5_20260920/static_krylov_k12_r1/parameter-scan.run_spec.json"
+            ],
+            [
+              "run_spec_sha256",
+              "0b21ac0972ed935ab4c5d824af717ee155d57d83e24c1febf25598ce920b0709"
+            ],
+            [
+              "payload files",
+              "41"
+            ],
+            [
+              "control files",
+              "1"
+            ],
+            [
+              "total files",
+              "42"
+            ],
+            [
+              "payload bytes",
+              "345707"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Validator 与 comparison",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "validator 字段",
+            "值"
+          ],
+          "rows": [
+            [
+              "status",
+              "pass"
+            ],
+            [
+              "acceptance_label",
+              "accepted_under_practical_v2_k12"
+            ],
+            [
+              "path",
+              "results/autoresearch_v5_20260920/static_krylov_k12_fetch_2052/validator.pass.json"
+            ],
+            [
+              "sha256",
+              "9b7c5e3e8a82fffb53f314cdd9bf85dede7e82893b6140232e6b8d22df0807a1"
+            ],
+            [
+              "center",
+              "{\"spin_gap\": 7.277204700173456e-05, \"variance_per_site_sz0\": 1.8680879065868793e-11, \"variance_per_site_sz1\": 1.872990651463624e-11}"
+            ],
+            [
+              "ferro_j2",
+              "{\"spin_gap\": 7.277205179789803e-05, \"variance_per_site_sz0\": 1.8633983245308627e-11, \"variance_per_site_sz1\": 1.872990651463624e-11}"
+            ],
+            [
+              "failures",
+              "[]"
+            ]
+          ]
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "comparison 字段",
+            "值"
+          ],
+          "rows": [
+            [
+              "status",
+              "audit_only"
+            ],
+            [
+              "gate_status",
+              "pass"
+            ],
+            [
+              "claim",
+              "none"
+            ],
+            [
+              "baseline_krylovdim",
+              "8"
+            ],
+            [
+              "candidate_krylovdim",
+              "12"
+            ],
+            [
+              "comparison_count",
+              "172"
+            ],
+            [
+              "q_peak_over_pi",
+              "{\"k12\": 1.0, \"k8\": 1.0, \"max_abs_delta\": 0.0}"
+            ],
+            [
+              "max_abs_delta",
+              "{\"dominant_ratio\": 8.399395079461414e-08, \"entropy\": 5.741204534004396e-08, \"spin_gap\": 7.52109485802066e-12}"
+            ],
+            [
+              "summary",
+              "results/autoresearch_v5_20260920/static_krylov_k12_finalize_2057/summary.json"
+            ],
+            [
+              "summary_sha256",
+              "99ea78efdc127818ae811b71260dd7e16bc096ac221be2c4d42e487bbfe5d928"
+            ],
+            [
+              "comparison_file",
+              "results/autoresearch_v5_20260920/static_krylov_k12_finalize_2057/comparison.json"
+            ],
+            [
+              "comparison_sha256",
+              "047be5bd34527ac2dfef97481a6dfb3e887a563c6582257cd720a49be3c5cbf3"
+            ],
+            [
+              "interpretation",
+              "k8→k12在该L80单点数值稳定；仅为audit-only，不单独新增相或热力学声明"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "解释",
+          "style": "info",
+          "text": "prepared-only 阶段不执行 validator/comparison；terminal 阶段只转录已经独立完成的终态验收与比较，不在报告生成器中重算。"
+        }
+      ]
+    },
+    {
+      "title": "Upload / remote state",
+      "blocks": [
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "upload status",
+              "superseded_by_explicit_authorization"
+            ],
+            [
+              "upload performed",
+              "是"
+            ],
+            [
+              "ssh/scp performed",
+              "是"
+            ],
+            [
+              "partial side effects",
+              "否"
+            ],
+            [
+              "no remote side effects",
+              "否"
+            ],
+            [
+              "remote Julia",
+              "1.12.3"
+            ],
+            [
+              "server snapshot",
+              "{\"active_julia\": false, \"cpu_cores\": 80, \"load_average\": 8.0, \"memory_available_gib\": 995, \"qec_workers\": 8, \"snapshot_role\": \"k12终态只读快照；Julia已自然退出\"}"
+            ],
+            [
+              "ETA / timeout",
+              "{\"concurrency\": 1, \"expected_wall_minutes\": \"40-60\", \"threads\": 8, \"timeout_seconds\": 7200}"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "远端边界",
+          "style": "warning",
+          "text": "本报告不会上传、SSH、启动 Julia 或修改远端状态。"
+        }
+      ]
+    },
+    {
+      "title": "Audit-only 边界与下一门",
+      "blocks": [
+        {
+          "kind": "list",
+          "title": "本报告不声称",
+          "items": [
+            "不从这个单点引入新相，也不据此宣称全域单相。",
+            "不把 k8→k12 稳定等同于热力学极限、中心荷或完整有限尺寸标度。",
+            "不改变既有相图证据边界；本门只关闭 Krylov 子空间稳定性问题。"
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "下一门",
+          "items": [
+            "保留 audit_only：逐项复核终态 validator、comparison 和回收文件 hash。",
+            "若所有审计门通过，再由主流程决定是否申请下一点；本报告不授权扩大计算或改变论文结论。"
+          ]
+        }
+      ]
+    }
+  ]
+}

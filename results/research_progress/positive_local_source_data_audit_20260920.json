@@ -1,0 +1,93 @@
+{
+  "schema": "positive_local_source_data_audit/v1",
+  "created_at": "2026-09-20",
+  "status": "local_only_family_level",
+  "scope": {
+    "claim_ids": ["C1", "C2", "C3", "C4", "C5", "C6"],
+    "anchor": "docs/manuscript_claim_evidence_map_20260919.md",
+    "included": ["isolated-pentamer ED", "doublet projection", "local spectral weights", "positive finite-size records", "positive entanglement finite-size sources"],
+    "excluded": ["negative alpha", "time-domain dynamics", "full raw/checkpoint archive", "public deposit", "paper edits"]
+  },
+  "counts": {
+    "positive_observation_records": 105,
+    "unique_alpha_beta_couplings": 35,
+    "sizes_per_coupling": [40, 60, 80],
+    "alpha_zero_boundary_records": 21,
+    "strictly_positive_alpha_records": 84,
+    "beta_zero_records": 0,
+    "interpretation": "105 is parameter-size records, not 105 couplings"
+  },
+  "selected_files": [
+    {"path": "figures/paper_fig1_model_local_multiplets_20260804.sources.json", "bytes": 1180, "sha256": "bcfa5b449593bd60f1003c637f3afae40f54a89569e7b55635c3fe49fe434271"},
+    {"path": "figures/paper_fig2_level_flow_qpi_filter_20260804.sources.json", "bytes": 1176, "sha256": "0cc6a1747c4537017a7d56d0f64cafb3d922b925bed49738fdb943bb97cb3ac2"},
+    {"path": "figures/paper_fig3_positive_groundstate_diagnostics_20260804.sources.json", "bytes": 1245, "sha256": "4c236c5eff5e68c966652edf543101eaebcf005a60410d9bbd4032b1603518de"},
+    {"path": "figures/paper_fig4_entanglement_spectrum_20260804.sources.json", "bytes": 1701, "sha256": "d5079810fbabd23b682577499ca0ee0daaec20b3573409bcc8c7d5068d23ec23"},
+    {"path": "figures/paper_fig5_effective_chain_selection_rules_20260804.sources.json", "bytes": 1581, "sha256": "e02e10c18cb06ec7db7ff338d73c8584f5450a6a246caf4f565f84d2ffcee1c6"},
+    {"path": "results/autoresearch_v3_20260729/round1_doublet_projection/projection_scan.csv", "bytes": 22984, "sha256": "d8c2d2548cf937e5b16b6b77c818174cf33918eb888c4bee5ccdcafb73e8df15"},
+    {"path": "results/autoresearch_v3_20260729/round1_doublet_projection/representative.csv", "bytes": 1079, "sha256": "4be460ca405c4e13f4c61618ec5eb6d5847cf48ae37d9b1debeef5df50c0465f"},
+    {"path": "results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/multiplet_scan.csv", "bytes": 82399, "sha256": "9ce8a9c56f22fd99be701e5795ecde3a9beda56c4903b74d7804072c40eecf9a"},
+    {"path": "results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/folded_transition_weights.csv", "bytes": 324963, "sha256": "e832cf02e8f01d6fc0c9f5e371141869af17f514445407d16c75ded96aa51043"},
+    {"path": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/phase-diagram/observations_merged.json", "bytes": 41339, "sha256": "7276ea8c8680082134bdb6463683005e9da3f0181333a303568608046ee93842"},
+    {"path": "results/research_progress/figure_claim_matrix_audit_20260804.json", "bytes": 1880, "sha256": "92001fc3457d4dbf21c2d3c0a176ff0e26e4568a1f18852b44146c5c46f11b64"},
+    {"path": "results/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/claim_summary.json", "bytes": 1172, "sha256": "2d757083529ca8916872ef91da3a06d10ac2aff3948015dc45b64a8a00cebe09"},
+    {"path": "results/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/calibrated_estimators.csv", "bytes": 120, "sha256": "0a49b6285ac6bcd78ecd99cf90f308f74512bd8fee846bb6aa798a4232b00584"},
+    {"path": "results/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/midchain_scaling_pentamer.csv", "bytes": 357, "sha256": "61da25d81553d9e6c51fb9eab677b679dbbace82d1e88bf0e74797b89981e9f6"},
+    {"path": "data/entanglement_spectrum/spectrum_a0.14_b0.50_L080.csv", "bytes": 6803, "sha256": "387eeece8cc3ad594eee2e8a1b4851238ba993942e22f7e76cf6a40f41a503b9"},
+    {"path": "data/entanglement_spectrum/spectrum_a0.33_b0.50_L080.csv", "bytes": 6438, "sha256": "6fb4329c1204a6e0f1aac54c0cb150e5e47330ef83ac42a45907fee52ed6d637"},
+    {"path": "results/autoresearch_v3_20260729/round3_two_pentamer_ed/summary.json", "bytes": 629, "sha256": "df452c6c8590a7d5e045ffb228ac24777c7ba3f3f32ea5cd940cf5892613437c"},
+    {"path": "results/autoresearch_v3_20260729/round3_two_pentamer_ed/comparison.csv", "bytes": 5324, "sha256": "cb1847b79d30c219691b8fe9966083cd9d2b89db18b6cfd7bb660ac904e1f06a"},
+    {"path": "results/autoresearch_v3_20260729/round2_effective_scan/analysis_final/summary.json", "bytes": 783, "sha256": "9d12e2c3981989b8f4e6a15f43cb9ff9738e99e8e70b51a38543fc9c98819d12"},
+    {"path": "results/autoresearch_v3_20260729/round2_effective_scan/analysis_final/effective_comparison.csv", "bytes": 9379, "sha256": "62b993be6e6ad78a89106e84390e24c7c8730ebe0a294335922014c325af9387"}
+  ],
+  "figure_mapping": [
+    {"figure": "Fig. 1", "panels": ["a", "b"], "panel_sources": {"a": [], "b": ["results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/multiplet_scan.csv"]}, "sources": ["results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/multiplet_scan.csv"], "claim_ids": ["C1"], "scope": "a is a structural schematic; b is isolated five-spin unit-cell ED"},
+    {"figure": "Fig. 2", "panels": ["a", "b"], "sources": ["results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/multiplet_scan.csv"], "claim_ids": ["C6"], "scope": "reflection parity and local q=pi weight"},
+    {"figure": "Fig. 3", "panels": ["a", "b", "c", "d"], "sources": ["results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/phase-diagram/observations_merged.json"], "claim_ids": ["C5"], "scope": "R(L=80) and finite-size diagnostics"},
+    {"figure": "Fig. 4", "panels": ["a", "b", "c"], "sources": ["data/entanglement_spectrum/spectrum_a0.14_b0.50_L080.csv", "data/entanglement_spectrum/spectrum_a0.33_b0.50_L080.csv", "results/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/calibrated_estimators.csv", "results/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/claim_summary.json"], "claim_ids": ["C4"], "scope": "finite-size spectra and matched-size c=1 calibration"},
+    {"figure": "Fig. 5", "panels": ["a", "b", "c", "d", "e", "f"], "panel_sources": {"a": [], "b": ["results/autoresearch_v3_20260729/round1_doublet_projection/projection_scan.csv"], "c": ["results/autoresearch_v3_20260729/round1_doublet_projection/projection_scan.csv"], "d": ["results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/multiplet_scan.csv"], "e": ["results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/folded_transition_weights.csv"], "f": ["results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/multiplet_scan.csv"]}, "sources": ["results/autoresearch_v3_20260729/round1_doublet_projection/projection_scan.csv", "results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/multiplet_scan.csv", "results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/folded_transition_weights.csv"], "claim_ids": ["C2", "C6"], "scope": "a is schematic; b/c are projection observables; d/e/f are local selection-rule observables; C3 is not plotted here"},
+    {"figure": "C3 (independent result; no Fig.5 panel)", "panels": [], "sources": ["results/autoresearch_v3_20260729/round3_two_pentamer_ed/summary.json", "results/autoresearch_v3_20260729/round3_two_pentamer_ed/comparison.csv", "results/autoresearch_v3_20260729/round2_effective_scan/analysis_final/summary.json", "results/autoresearch_v3_20260729/round2_effective_scan/analysis_final/effective_comparison.csv"], "claim_ids": ["C3"], "scope": "two-pentamer ED and finite effective-scan energy-residual powers on tested paths"}
+  ],
+  "csv_schema": {
+    "results/autoresearch_v3_20260729/round1_doublet_projection/projection_scan.csv": {"rows": 100, "columns": ["alpha", "ground_energy", "local_gap", "c1", "c2", "c3", "c4", "c5", "coefficient_sum", "reflection_error", "jeff_over_beta", "dominant_q_over_pi", "dominant_weight_fraction"], "missing_codes_observed": []},
+    "results/autoresearch_v3_20260729/round1_doublet_projection/representative.csv": {"rows": 3, "columns": ["alpha", "ground_energy", "local_gap", "c1", "c2", "c3", "c4", "c5", "coefficient_sum", "jeff_over_beta", "dominant_q_over_pi", "dominant_weight_fraction", "weight_q0", "weight_q1", "weight_q2", "weight_q3", "weight_q4"], "missing_codes_observed": []},
+    "results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/multiplet_scan.csv": {"rows": 1000, "columns": ["alpha", "branch", "spin_S", "parity", "degeneracy", "energy", "excitation", "qpi_weight"], "missing_codes_observed": []},
+    "results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/folded_transition_weights.csv": {"rows": 5000, "columns": ["alpha", "q_over_pi", "branch", "spin_S", "parity", "excitation", "weight"], "missing_codes_observed": []},
+    "results/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/calibrated_estimators.csv": {"rows": 3, "columns": ["estimator", "ratio"], "missing_codes_observed": []},
+    "results/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/midchain_scaling_pentamer.csv": {"rows": 5, "columns": ["model", "N_units", "entropy", "entropy_error", "D_low", "D_high"], "missing_codes_observed": []},
+    "data/entanglement_spectrum/spectrum_a0.14_b0.50_L080.csv": {"rows": 80, "columns": ["alpha", "beta", "L", "bond", "bond_class", "level", "schmidt_sz", "probability", "entanglement_energy", "energy"], "missing_codes_observed": []},
+    "data/entanglement_spectrum/spectrum_a0.33_b0.50_L080.csv": {"rows": 80, "columns": ["alpha", "beta", "L", "bond", "bond_class", "level", "probability", "entanglement_energy", "energy"], "missing_codes_observed": [], "schema_note": "本文件不含 schmidt_sz；不能把该列假定为两点共有"},
+    "results/autoresearch_v3_20260729/round3_two_pentamer_ed/comparison.csv": {"rows": 21, "columns": ["alpha", "beta", "local_gap", "beta_over_local_gap", "jeff", "energy_full", "energy_effective", "energy_residual", "energy_residual_over_beta2", "gap_full", "gap_effective", "gap_ratio", "max_eigensolver_residual", "dimension_sz0", "dimension_sz1"], "missing_codes_observed": []},
+    "results/autoresearch_v3_20260729/round2_effective_scan/analysis_final/effective_comparison.csv": {"rows": 18, "columns": ["alpha", "beta", "N_units", "L", "local_gap", "jeff", "beta_over_local_gap", "energy_full", "energy_effective", "energy_residual", "energy_residual_per_link", "energy_residual_per_link_beta2", "gap_full", "gap_effective", "gap_ratio", "gap_relative_error", "sz0_source_run", "sz1_source_run", "sz0_init_mode", "sz1_init_mode", "sz0_initial_state_spread", "sz1_initial_state_spread", "max_variance_per_site", "max_truncation_error", "max_final_energy_change", "max_actual_maxdim", "max_sector_error", "cells_pass"], "missing_codes_observed": ["nan"], "nan_fields": ["sz0_initial_state_spread", "sz1_initial_state_spread"], "nan_is_unavailable_not_zero": true}
+  },
+  "json_schema": {
+    "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/phase-diagram/observations_merged.json": {"top_level": ["schema_version", "records"], "record_keys": ["artifact", "budget", "error", "params", "status", "value"], "params_keys": ["L", "alpha", "beta", "n_units"], "records": 105, "unique_alpha_beta": 35, "status_values": ["success"]},
+    "results/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/claim_summary.json": {"verdict": "c1_supported_with_matched_oracle", "calibrated_c_range": [1.0240221003381988, 1.0331008570675515], "maximum_calibrated_deviation": 0.033100857067551503, "raw_log_fit_quality": false},
+    "results/autoresearch_v3_20260729/round3_two_pentamer_ed/summary.json": {"energy_residual_power": {"0.14": 1.9689440238317684, "0.23": 1.9847168707535376, "0.33": 1.9915162364993424}, "small_beta_gap_error_power": {"0.14": 1.8940867102643106, "0.23": 1.9485103371342953, "0.33": 1.9696838266830106}, "all_residuals_pass": true},
+    "results/autoresearch_v3_20260729/round2_effective_scan/analysis_final/summary.json": {"selected_cells": 36, "physical_points": 18, "small_beta_energy_residual_power": {"8": 1.9482734267470188, "12": 1.949160340529803, "16": 1.9495372136804565}, "claim_gate": {"second_order_residual": true, "small_beta_gap_within_10_percent": true}}
+  },
+  "code_entrypoints": [
+    "scripts/autoresearch_v5/plot_paper_static_figures_20260804.py",
+    "scripts/autoresearch_v5/plot_model_excitation_mechanism.py",
+    "scripts/autoresearch_v5/plot_reference_aligned_figures_20260803.py",
+    "scripts/autoresearch_v4/analyze_positive_local_spectral_channels.py",
+    "scripts/autoresearch_v5/merge_positive_mesh_observations.py",
+    "scripts/autoresearch_v3/analyze_entanglement_scaling.py",
+    "scripts/autoresearch_v3/finalize_entanglement_claim.py",
+    "scripts/autoresearch_v5/plot_positive_phase_delta_summary_20260804.py"
+  ],
+  "interpretation": {
+    "local_ed_projection": "C1/C2/C6 use isolated-cell multiplet/projection/weight tables; they do not establish a full-chain phase. Fig.1a and Fig.5a are schematics, not numerical source panels.",
+    "second_order_residual": "C3 is supported separately by round3 two-pentamer ED and round2 effective-scan summaries/comparison CSVs; it is finite-size and tested-path evidence, not a Fig.5 projection observable or a uniform strong-coupling error bound.",
+    "positive_mesh": "C5 is a bounded finite-size no-crossing diagnostic across L=40,60,80; it does not prove a global single phase.",
+    "entanglement": "C4 supports calibrated matched-size consistency with a c=1 oracle only; the raw absolute log-L fit gate is false, so no thermodynamic central charge is claimed."
+  },
+  "qa": {
+    "selected_paths_read": true,
+    "selected_hashes_and_bytes_recorded": true,
+    "csv_headers_and_row_counts_recorded": true,
+    "record_count_and_unique_coupling_check": true,
+    "full_validator_or_raw_archive_rerun": false,
+    "public_deposit": false,
+    "license_or_doi": null
+  }
+}

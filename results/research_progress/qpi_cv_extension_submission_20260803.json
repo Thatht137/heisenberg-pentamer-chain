@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "submitted_at": "2026-08-03T22:54:55+08:00",
+  "target": "wangjieren@39.96.207.180:6000",
+  "run_root": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension",
+  "preview": "results/research_progress/qpi_cv_extension_submission_preview_20260803.json",
+  "scope": {"alpha": 0.23, "beta": 0.5, "L": 40, "q_over_pi": 1.0, "negative_alpha_excluded": true, "figure_9_excluded": true},
+  "upload": {"status": "success", "files": ["Project.toml", "Manifest.toml", "src/PentamerChain.jl", "src/hamiltonian.jl", "scripts/autoresearch_v5/run_cv_dsf_cell.py", "scripts/autoresearch_v5/cv_dsf_cell.jl", "scripts/autoresearch_v5/progress.py", "scripts/run_qpi_cv_extension_remote_20260803.sh"], "hash_check": "pass", "syntax_check": "pass"},
+  "launch": {"status": "running", "launcher_pid": 273934, "driver_pid": 273940, "julia_pid": 273948, "julia_process_count": 1, "phase": "starting", "completed_cells": 0, "total_cells": 4, "completed_points": "0/5 in low-frequency cell"},
+  "settings": {"threads": 8, "dmrg_maxdim": 256, "cv_maxdim": 600, "offline_packages": true, "sequential_cells": true},
+  "estimated_wall_hours": {"typical": [8.0, 12.0], "conservative_upper": 16.0},
+  "next": "等待整体或单 cell 终态；不启动第二个 Julia。"
+}

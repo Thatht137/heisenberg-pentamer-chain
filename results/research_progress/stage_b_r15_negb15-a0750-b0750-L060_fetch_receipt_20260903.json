@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "fetched_at": "2026-09-03T04:06:16.634520+00:00",
+  "cell_id": "negb15-a0750-b0750-L060",
+  "source": "wangjieren@39.96.207.180:/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r15-remaining50/cells/negb15-a0750-b0750-L060",
+  "destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-b-negative-coarse-r15-remaining50-20260903-1203\\negb15-a0750-b0750-L060",
+  "file_count": 36,
+  "total_bytes": 120123,
+  "preview_sha256": "9c1ebbd4604cb9b94502fb1fbed323f99a367681a4ed35c2814519a2bd58ea29",
+  "checksums_sha256": "7001a221cbf7487ede1396d97a71a01fc205cdd12f6af2aa7f8063c7b6b8652d",
+  "manifest_sha256": "723330de67de01675f7924746b9579f7fed5ddc68bf986dd3e4fa0177f942580",
+  "non_clobbering": true
+}

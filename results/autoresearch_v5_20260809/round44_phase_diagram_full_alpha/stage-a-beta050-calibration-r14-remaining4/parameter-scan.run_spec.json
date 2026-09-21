@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "run_id": "pentamer-negative-phase-stage-a-r14-remaining4-20260811",
+  "scope": "beta=0.5 Stage A remaining 4 cells; alpha=-0.05,-0.025; Fig.9 excluded",
+  "controller": "local_only",
+  "cells": [
+    {
+      "cell_id": "nega-r14-a0050-b0500-L080",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "A-R14-remaining4",
+      "controller_action_id": null,
+      "calibration_only": true,
+      "continued_from": "nega-r12-a0050-b0500-L080"
+    },
+    {
+      "cell_id": "nega-r14-a0025-b0500-L040",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 64,
+      "stage": "A-R14-remaining4",
+      "controller_action_id": "act-4503b7acb169c6a5092f",
+      "calibration_only": false,
+      "continued_from": "nega-r12-a0025-b0500-L040",
+      "budget_promotion_reason": "邻近alpha=-0.05的L40/L60均需128 sweeps才严格通过，保守提升32→64",
+      "original_action_budget": 32
+    },
+    {
+      "cell_id": "nega-r14-a0025-b0500-L060",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "A-R14-remaining4",
+      "controller_action_id": "act-3d1ab066156655e22ec8",
+      "calibration_only": false,
+      "continued_from": "nega-r12-a0025-b0500-L060",
+      "budget_promotion_reason": "邻近alpha=-0.05的L40/L60均需128 sweeps才严格通过，保守提升32→64",
+      "original_action_budget": 32
+    },
+    {
+      "cell_id": "nega-r14-a0025-b0500-L080",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "A-R14-remaining4",
+      "controller_action_id": null,
+      "calibration_only": true,
+      "continued_from": "nega-r12-a0025-b0500-L080"
+    }
+  ],
+  "settings": {
+    "method": "finite_dmrg_multistart_fullq",
+    "boundary": "OBC",
+    "hamiltonian": "five-site unit cell Heisenberg chain, J1=1, J2=alpha, J3=beta",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim_by_L": {
+      "40": 800,
+      "60": 1000,
+      "80": 1200
+    },
+    "nsweeps": 64,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "q_count": 401,
+    "init_modes": [
+      "center",
+      "ferro_j2"
+    ],
+    "budget_definition": "每个独立初态均为64 sweeps",
+    "acceptance": {
+      "variance_per_site_max": 1e-08,
+      "final_truncation_error_max": 1e-09,
+      "sector_tolerance": 1e-08,
+      "spin_gap_min": -1e-08,
+      "nonnegative_gap_required": true,
+      "q_count_min": 401
+    },
+    "offline": true,
+    "execution": "direct SSH; concurrency=1; stop on first failed cell"
+  },
+  "provenance": {
+    "negative_alpha_included": true,
+    "continuation_reason": "R13严格接入后独立续跑R12未物化四单元",
+    "conservative_budget_policy": "alpha=-0.025的L40/L60由32提升至64；邻近alpha=-0.05的同尺寸需128才通过",
+    "r13_success_ingestion_summary_sha256": "88d25fa79d547f12ad10c1c3e6df209b68da980e3b8fe66b94bb90d6ae643a22",
+    "r13_success_ingestion_audit_sha256": "09ba52fd246607605e61802c4b6633607ab49806affafa1f91effb3c4688e70d",
+    "r13_success_handoff_sha256": "7ec4a9912a000cf89c6f8334329893e560d2d4a49c837d67efe54da166b16e66",
+    "r13_validation_summary_sha256": "488a0abc104ddb3930c40831ec6923a9ac4ce7d86839f3e3245a2728ceca1f7f",
+    "accepted_calibration_through_r9_sha256": "290083607e50582f79f4afedc5955d0876a9cd86172ae4936293abb42b451bf1",
+    "observations_sha256": "0ae1da5dd89c91076d5593d66088c0bc02b74fbeca2b28e10f0d8288e5bf7cb8",
+    "action_index_sha256": "818c1ad1ce06b703177bdcc4b9e2af32ec290e0c61e24a1cee92b915a947f63c",
+    "r12_and_earlier_history_preserved": true,
+    "r6_initial_state_sensitivity_half_difference": 0.011877542575884303,
+    "r7_failure_provenance_preserved": true,
+    "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "project_sha256": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+    "source_commit": "40f4179a5630039485370648edd9621f592c0449",
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "docs/full_phase_diagram_negative_standard_20260809.md": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+      "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+      "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+      "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+      "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+      "scripts/autoresearch_v5/run_negative_phase_structure_batch.py": "055ed8862d08f6a3a59aeb10ce47e8a54af9fbde6c76e2c355cc3d65eaad408f",
+      "scripts/autoresearch_v5/validate_negative_phase_run.py": "f16ca83c39be04516bad2cba518ee7c10ba0c62e3c2c680dd06dffb571d610de",
+      "scripts/autoresearch_v5/launch_negative_phase_stage_a_r14_remaining4.sh": "a8933b8fa704de3303fa8fd078f6e6863cbe59ebee9d3eb2cf046f63551869fa"
+    },
+    "gap_gate_enforced": true,
+    "thresholds_relaxed": false,
+    "exploratory_data_not_accepted": true
+  }
+}

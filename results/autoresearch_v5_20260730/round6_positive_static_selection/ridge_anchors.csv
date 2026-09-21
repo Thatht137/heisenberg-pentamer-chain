@@ -1,0 +1,4 @@
+group,requested_beta,map_beta,ridge_alpha,consensus_fraction,target_scale_span,gradient_to_row_median,gradient_to_row_peak,interpretation
+1,0.1,0.0983,0.05,0.9,0.0,14.44599696479437,1.0,candidate_cross_over_scale_not_phase_boundary
+2,0.5,0.5008,0.075,1.0,0.0,30.210563680899202,1.0,candidate_cross_over_scale_not_phase_boundary
+3,0.9,0.9034,0.1,1.0,0.0,7.037944640265694,1.0,candidate_cross_over_scale_not_phase_boundary

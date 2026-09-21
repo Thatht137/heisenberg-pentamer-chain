@@ -1,0 +1,20 @@
+{
+  "verdict": "momentum_filtered_local_multiplets",
+  "scope": "isolated pentamer, 0.01 <= alpha <= 1.00, single-spin Sz(q)",
+  "claim": "最低激发双重态在 q=pi 因反射宇称严格变暗，q=pi 局域非弹性权重由四重态主导",
+  "all_ground_doublet_even": true,
+  "all_lowest_excited_doublet_odd": true,
+  "all_lowest_quartet_even": true,
+  "max_lowest_doublet_qpi_weight": 4.522843235503021e-27,
+  "quartet_fraction_of_qpi_inelastic_range": [
+    0.8411470452633077,
+    0.9758222570206296
+  ],
+  "lowest_quartet_fraction_of_qpi_inelastic_range": [
+    0.6418862596203193,
+    0.8658935609090306
+  ],
+  "max_sextet_fraction": 1.9595214111033747e-28,
+  "interpretation": "q=pi 首个局域可见分支是 S=3/2 四重态；最低 S=1/2 双重态只在离开 q=pi 后可见；S=5/2 对单自旋探针为暗态",
+  "boundary": "孤立单胞选择定则不等价于有限 beta 链上色散；正式分支归属仍需生产级 DSF 验证"
+}

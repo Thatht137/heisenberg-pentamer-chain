@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "target": "/home/wangjieren/code/1x5_Heisenberg_Pentamer",
+  "mode": "offline_upload_only",
+  "launch_ready": true,
+  "negative_alpha_included": true,
+  "stage": "A-R11-a0050-L040",
+  "cell_count": 1,
+  "concurrency": 1,
+  "eta_minutes": {
+    "low": 20,
+    "high": 45
+  },
+  "remote_git_pull": false,
+  "files": [
+    {
+      "path": "Project.toml",
+      "sha256": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "bytes": 634
+    },
+    {
+      "path": "Manifest.toml",
+      "sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "bytes": 30279
+    },
+    {
+      "path": "docs/full_phase_diagram_negative_standard_20260809.md",
+      "sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+      "bytes": 5542
+    },
+    {
+      "path": "src/PentamerChain.jl",
+      "sha256": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "bytes": 782
+    },
+    {
+      "path": "src/hamiltonian.jl",
+      "sha256": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "bytes": 2775
+    },
+    {
+      "path": "src/order_parameters.jl",
+      "sha256": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "bytes": 7444
+    },
+    {
+      "path": "scripts/autoresearch_v5/progress.py",
+      "sha256": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+      "bytes": 3005
+    },
+    {
+      "path": "scripts/autoresearch_v5/negative_static_cell.jl",
+      "sha256": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+      "bytes": 13631
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_static_cell.py",
+      "sha256": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+      "bytes": 11791
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_phase_structure_cell.py",
+      "sha256": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+      "bytes": 10486
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_phase_structure_batch.py",
+      "sha256": "055ed8862d08f6a3a59aeb10ce47e8a54af9fbde6c76e2c355cc3d65eaad408f",
+      "bytes": 7166
+    },
+    {
+      "path": "scripts/autoresearch_v5/validate_negative_phase_run.py",
+      "sha256": "f16ca83c39be04516bad2cba518ee7c10ba0c62e3c2c680dd06dffb571d610de",
+      "bytes": 14030
+    },
+    {
+      "path": "scripts/autoresearch_v5/launch_negative_phase_stage_a_r11_a0050_L040.sh",
+      "sha256": "87f858b9a16312b0c716214375c868a6525880b699bc8ec64414b2db09250047",
+      "bytes": 2700
+    },
+    {
+      "path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r11-a0050-L040/parameter-scan.run_spec.json",
+      "sha256": "2e6ed8b87b9a260bae20be1d55d311d67a18ba661452bc281cde67ff8f893dd9",
+      "bytes": 4515
+    },
+    {
+      "path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r11-a0050-L040/r11_source_hashes.sha256",
+      "sha256": "1c30107400a827450638994b45e5b340ff9c57517bc48a9507f6ae9208fe4542",
+      "bytes": 1251
+    },
+    {
+      "path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r11-a0050-L040/launch-contract.json",
+      "sha256": "f6f1365bb1b5b25d37b73a7a3b4afc619b66d016a7644ccc559ed4050584a708",
+      "bytes": 1374
+    }
+  ]
+}

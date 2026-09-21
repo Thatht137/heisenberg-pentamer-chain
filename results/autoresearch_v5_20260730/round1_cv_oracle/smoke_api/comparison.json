@@ -1,0 +1,23 @@
+{
+  "tag": "Disagreement",
+  "checks": {
+    "peak_pass": true,
+    "integrated_weight_pass": true,
+    "residual_pass": false,
+    "nonnegative_pass": true
+  },
+  "budgets": {
+    "peak_omega": 0.1,
+    "integrated_weight_relative": 0.15,
+    "max_cv_relative_residual": 1e-05
+  },
+  "exact_peak_omega": 0.0,
+  "cv_peak_omega": 0.0,
+  "peak_difference": 0.0,
+  "exact_integrated_weight": 0.5028100508370215,
+  "cv_integrated_weight": 0.5028090128526348,
+  "integrated_weight_relative_error": 2.0643668218980183e-06,
+  "spectrum_relative_l2": 2.713027488484323e-06,
+  "max_cv_relative_residual": 0.00022788928840537003,
+  "cv_min_intensity": 0.004683189756950146
+}

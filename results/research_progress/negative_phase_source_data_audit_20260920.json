@@ -1,0 +1,145 @@
+{
+  "schema": "negative_phase_source_data_audit/v1",
+  "created_at": "2026-09-20",
+  "status": "local_supporting_data_not_public",
+  "scope": {
+    "coverage": "selected_stage_b_stage_c_and_figure_source_entries_only",
+    "repository_root_relative_paths": true,
+    "public_archive": false,
+    "proposed_public_repository": "not_selected",
+    "no_new_physics_analysis": true,
+    "bounded_excluded_from_boundary": true,
+    "no_global_single_phase_claim": true
+  },
+  "stage_b": {
+    "authoritative_summary": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_completion_summary.json",
+    "grid_cells": 96,
+    "grid_definition": "8 alpha values x 6 beta values x L=40,60",
+    "unique_alpha_beta_points": 48,
+    "accepted": 89,
+    "bounded_not_evaluable": 7,
+    "pending": 0,
+    "beta_values": [0.05, 0.1, 0.25, 0.75, 0.9, 1.0],
+    "alpha_values": [-1.0, -0.75, -0.5, -0.35, -0.25, -0.1, -0.05, -0.025],
+    "sizes": [40, 60],
+    "boundary_rule": "bounded records are excluded; no bridging across bounded holes",
+    "scientific_status": "coarse grid resolved under Practical V2 accounting; does not establish a phase boundary or single phase"
+  },
+  "stage_c": {
+    "authoritative_summary": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_c_practical_v2_r1_terminal_summary.json",
+    "new_records": 29,
+    "unique_alpha_beta_points": 22,
+    "sizes": [60, 80],
+    "numerical_counts": {"success": 29, "failed": 0, "pending": 0},
+    "boundary_targets": 8,
+    "boundary_decision": {"confirmed": 0, "unresolved": 8, "stage_d_ready": false, "phase_label_assigned": false},
+    "diagnostic_csv_counts": {"momentum_reconstruction": 2, "two_sigma_ratio_sign": 5, "dual_diagnostic": 0, "width_le_0p025": 1},
+    "width_result": "the single width<=0.025 flag is beta=0.05; beta=0.1 has no supported interval",
+    "scientific_status": "all 29 records passed the Practical V2 numerical validator; the boundary decision remains bounded/not evaluable"
+  },
+  "selected_files": [
+    {"path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_completion_summary.json", "role": "Stage B count/status", "bytes": 1221, "sha256": "5ab0513cfdac4e13df388c7620580eceabfa4b10058c5e11ce94b5b8757fbeae", "check": "JSON read"},
+    {"path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_accepted_index_final.json", "role": "Stage B accepted-only index", "bytes": 51101, "sha256": "833529f5da540b6de8be351521d5b796bc14d052e092831fe58246e9cfa8fc9a", "records": 89, "check": "JSON count and params read"},
+    {"path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_bounded_records_final.json", "role": "Stage B bounded exclusion index", "bytes": 5336, "sha256": "f84299923738e4682185d6e342c16ebda7cff089a11bc371812fbcd8092002bc", "records": 7, "check": "JSON count/status read"},
+    {"path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_cross_slice_diagnostic_v2.json", "role": "Stage B to Stage C target/action mapping", "bytes": 49619, "sha256": "fc6a5f8a16a03502b677b60f83edef3335e07a091009838e704090614821defd", "actions": 29, "check": "JSON counts/decision/inputs read"},
+    {"path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_c_practical_v2_r1_boundary_decision.json", "role": "Stage C boundary decision", "bytes": 34236, "sha256": "5d787205001615a835f3d09596028ecc531a1ff109249eb5e17ec5ca3b995912", "targets": 8, "check": "JSON decision read"},
+    {"path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_c_practical_v2_r1_terminal_summary.json", "role": "Stage C terminal count", "bytes": 1146, "sha256": "aeb05e1bba27c694d40c1c806469d73c77d69eb1fc01743351d695e9047e691f", "records": 29, "check": "JSON count read"},
+    {"path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_c_practical_v2_r1_terminal_observations.json", "role": "Stage C per-record observations and provenance", "bytes": 74738, "sha256": "481f741744730e7977771841a0470eabfe425f2b93e76b1f5c4b10c64c9c9b12", "records": 29, "check": "JSON record keys/params read"},
+    {"path": "figures/full_alpha_phase_evidence_20260811.source.csv", "role": "historical Stage-A/diagnostic figure source", "bytes": 2833, "sha256": "fea2c377e553f178d6ecb5b880c31ece38e5f1ce9bfbe689a7b09649690419ed", "rows": 23, "check": "CSV header/row count"},
+    {"path": "figures/full_alpha_working_phase_diagram_20260812.source.csv", "role": "historical working figure source", "bytes": 5541, "sha256": "4fccf154298ef8045dfd3391a847f837240b38f733692cad2abad44adfeb1433", "rows": 24, "check": "CSV header/row count"},
+    {"path": "figures/negative_practical_v2_crossover_20260913/negative_alpha_crossover_evidence.csv", "role": "Stage C 8-target diagnostic source", "bytes": 610, "sha256": "2163be9395ea64b978ca3d5ee9c564dba9793a89443150f6173bcd7df410f890", "rows": 8, "check": "CSV header/row count and flag counts"},
+    {"path": "figures/negative_practical_v2_crossover_20260913/negative_alpha_crossover_points.csv", "role": "Stage C point diagnostic source", "bytes": 2280, "sha256": "62c13046b684844dac05e148d3131714109b8aab8bc6d4862d1bcf2b6cb03ec8", "rows": 22, "check": "CSV header/row count"},
+    {"path": "figures/negative_practical_v2_crossover_20260913/negative_alpha_crossover_summary.qa.json", "role": "diagnostic figure QA and source hash ledger", "bytes": 1763, "sha256": "a48301caf1b6e510c5a5387e50b7259987a34969def3fc83662a2a22a5d2caeb", "check": "QA status/source hashes read"}
+  ],
+  "figure_mapping": [
+    {"figure": "figures/full_alpha_phase_evidence_20260811", "source_csv": "figures/full_alpha_phase_evidence_20260811.source.csv", "index_or_validator": "historical stage-A observations and calibration inputs; not final Stage-B accepted-only", "status": "historical_diagnostic", "boundary_claim": "not eligible; momentum shift may be crossover"},
+    {"figure": "figures/full_alpha_working_phase_diagram_20260812", "source_csv": "figures/full_alpha_working_phase_diagram_20260812.source.csv", "index_or_validator": "working source with artifact manifest paths; not final Stage-B accepted-only", "status": "working_candidate", "boundary_claim": "strict_boundary_claimed=false"},
+    {"figure": "figures/negative_practical_v2_crossover_20260913/negative_alpha_crossover_summary", "source_csv": "figures/negative_practical_v2_crossover_20260913/negative_alpha_crossover_points.csv + negative_alpha_crossover_evidence.csv", "index_or_validator": "Stage B cross-slice diagnostic -> Stage C terminal observations -> boundary_decision.json; source QA hashes match", "status": "crossover_only", "boundary_claim": "0 dual-diagnostic boundaries; no new phase or global single-phase claim"}
+  ],
+  "csv_schema": {
+    "figures/full_alpha_phase_evidence_20260811.source.csv": {
+      "columns": {
+        "record_type": "categorical evidence row type",
+        "alpha": "dimensionless coupling, J1=1 convention",
+        "beta": "dimensionless coupling, J1=1 convention",
+        "L": "finite chain length in sites",
+        "R": "dimensionless finite-size diagnostic scalar",
+        "R_error": "error estimate for R, dimensionless",
+        "q_peak_over_pi": "peak momentum q/pi, dimensionless",
+        "q_error": "error estimate for q/pi",
+        "E0": "energy in J1 units",
+        "E1": "lowest energy in the Sz=1 sector (not guaranteed to be the first full-spectrum excitation), in J1 units",
+        "spin_gap": "energy difference in J1 units",
+        "final_energy_change_sz0": "final Sz=0 energy change in J1 units",
+        "variance_per_site_sz0": "Sz=0 variance per site, J1^2 units (numerically normalized with J1=1)",
+        "evidence_class": "categorical acceptance class"
+      },
+      "missing_code": "empty fields remain empty; do not coerce to zero",
+      "scope": "historical diagnostic; finite-size only"
+    },
+    "figures/full_alpha_working_phase_diagram_20260812.source.csv": {
+      "columns": {
+        "alpha": "dimensionless coupling",
+        "beta": "dimensionless coupling",
+        "L": "finite chain length in sites",
+        "R": "dimensionless diagnostic scalar",
+        "R_error": "error estimate",
+        "q_peak_over_pi": "peak q/pi",
+        "boundary_eligible": "boolean local gate, not a phase label",
+        "artifact": "repository-relative manifest path"
+      },
+      "missing_code": "none observed in selected rows; unknown values must not be filled",
+      "scope": "working figure source; not accepted-only closure"
+    },
+    "figures/negative_practical_v2_crossover_20260913/negative_alpha_crossover_evidence.csv": {
+      "columns": {
+        "target": "candidate target integer",
+        "beta": "dimensionless coupling",
+        "alpha_left": "left endpoint, dimensionless coupling",
+        "alpha_right": "right endpoint, dimensionless coupling",
+        "momentum_reconstruction": "0/1 gate",
+        "two_sigma_ratio_sign": "0/1 gate",
+        "width_le_0p025": "0/1 width gate",
+        "dual_diagnostic": "0/1 joint gate",
+        "status": "categorical decision status"
+      },
+      "missing_code": "none; invalid/missing flags are not interpreted as zero",
+      "scope": "8 targets; diagnostic only"
+    },
+    "figures/negative_practical_v2_crossover_20260913/negative_alpha_crossover_points.csv": {
+      "columns": {
+        "beta": "dimensionless coupling",
+        "alpha": "dimensionless coupling",
+        "q_l60": "L=60 peak q/pi",
+        "q_l80": "L=80 peak q/pi",
+        "momentum_class": "categorical finite-size momentum class",
+        "delta_r": "R80-R60 finite-size diagnostic difference",
+        "delta_r_error": "hypot(e80,e60) propagated diagnostic error, not a statistical confidence interval",
+        "delta_r_sigma": "abs(delta_r)/delta_r_error standardized diagnostic difference"
+      },
+      "missing_code": "none observed; L60/L80 mixed points are not phase labels",
+      "scope": "22 unique alpha-beta points; crossover diagnostic; q class is incommensurate if max(q60,q80)<0.9, q=pi if min(q60,q80)>=0.98, otherwise mixed"
+    }
+  },
+  "validator_and_scripts": {
+    "actual_validation_basis": {"path": "scripts/autoresearch_v5/validate_negative_phase_run_practical_v2.py", "sha256": "677a5d3bbe89cf4623fadbbba5f46071e2ec952b371ddc487b152f8041966e94", "variance_per_site_max": 5e-8, "truncation_max": 1e-9, "sector_tolerance": 1e-8, "gap_min": -1e-8, "q_count_min": 401},
+    "strict_base_trace_only": {"path": "scripts/autoresearch_v5/validate_negative_phase_run.py", "sha256": "4272e4130f2f924e6fc981c0400777a697f33ec31067a7c9f812eedde9e742f1", "strict_variance_gate": 1e-8, "claim": "存在且可追溯；不声称 Stage B/C 全部通过 strict 1e-8"},
+    "analysis_scripts": {
+      "scripts/autoresearch_v5/analyze_negative_phase_stage_b.py": "d70df9740d4f148eb98a78d391458a83ef828d136294712db42d6bc8ab1d3683",
+      "scripts/autoresearch_v5/make_negative_phase_stage_c_r1.py": "cda282321289f2a85e3ac64991c0dcaf9f8239443cac90cff34c8ed4e21d4ede",
+      "scripts/autoresearch_v5/stage_negative_phase_stage_c_terminal.py": "d7bed44399894572039f3d0b39b92ea5c36f1d6d4f27a0be168ac75738e73042",
+      "scripts/autoresearch_v5/analyze_negative_phase_stage_c_round.py": "f6be1eac0fd708ab9df01bbaa5b088762a47d0cfb5bb6e2a53505b2ded853e17",
+      "scripts/autoresearch_v5/finalize_full_alpha_phase_diagram.py": "646e1936e702236d69050894c4631b27e9eef50c2c27a962e81a8d053cc4791d",
+      "scripts/autoresearch_v5/plot_final_full_alpha_phase_diagram.py": "ec1cbd8bf2ba37e3e73c639b5cf7937f474746e64e49b6b40c5d286d59b32bfd",
+      "scripts/autoresearch_v5/plot_negative_practical_v2_crossover_summary.py": "d20f9847c5219d93fe7ea0eb0a38ca5fff70a49fbdaf8f854a284e4ce34b0672"
+    }
+  },
+  "exclusions_and_open_gaps": [
+    "Stage B bounded 7 records are excluded from boundary inference",
+    "Stage C has 0 confirmed dual-diagnostic boundaries and no phase label",
+    "no full-domain single-phase conclusion",
+    "Stage B/C raw JLD2 and every per-cell artifact are not duplicated here",
+    "third-party references, SSH/PID/credentials/user paths and operational logs are not public data",
+    "public repository, licence, DOI/accession and final panel mapping remain unresolved"
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "tag": "Agreement",
+  "configuration": {
+    "L": 10,
+    "n_units": 2,
+    "alpha": 0.1,
+    "beta": 0.5,
+    "boundary": "OBC",
+    "hamiltonian": "sum J_ij S_i dot S_j"
+  },
+  "dmrg": {
+    "energy_sz0": -2.4830010958483277,
+    "energy_sz1": -2.416980564988293,
+    "spin_gap": 0.06602053086003457,
+    "uncertainty_source": "sqrt(total energy variance)",
+    "energy_budget_sz0": 2.6266651793158893e-06,
+    "energy_budget_sz1": 1.6060908139177175e-05
+  },
+  "ed": {
+    "sz0": {
+      "target_sz": 0,
+      "dimension": 252,
+      "energy": -2.4830010958506623,
+      "hermiticity_norm": 0.0,
+      "uncertainty": 1.3893692333385818e-11
+    },
+    "sz1": {
+      "target_sz": 1,
+      "dimension": 210,
+      "energy": -2.416980566684594,
+      "hermiticity_norm": 0.0,
+      "uncertainty": 1.1270227395860138e-11
+    },
+    "spin_gap": 0.06602052916606826
+  },
+  "absolute_differences": {
+    "energy_sz0": 2.334576976181779e-12,
+    "energy_sz1": 1.6963008775405797e-09,
+    "spin_gap": 1.693966300564398e-09
+  },
+  "checks": {
+    "same_length": true,
+    "same_boundary": true,
+    "same_sectors": true,
+    "ed_hermiticity_sz0": true,
+    "ed_hermiticity_sz1": true,
+    "energy_sz0_intervals_overlap": true,
+    "energy_sz1_intervals_overlap": true,
+    "spin_gap_intervals_overlap": true
+  },
+  "source_sha256": {
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260730\\round8_positive_static_production\\local_oracle_L10_tight\\manifest.json": "4f7e372e1d1b7187bef628bc1e28c901710adcca60fd0b044776f642f3db7499"
+  }
+}

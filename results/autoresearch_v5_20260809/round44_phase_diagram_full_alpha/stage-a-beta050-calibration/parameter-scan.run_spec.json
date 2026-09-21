@@ -1,0 +1,362 @@
+{
+  "schema_version": 1,
+  "run_id": "pentamer-negative-phase-stage-a-20260809",
+  "scope": "-1<=alpha<0, beta=0.5, L=40/60/80; static phase diagnostics; Fig.9 excluded",
+  "policy": "../phase-diagram-v2/phase-policy.json",
+  "controller": "local_only",
+  "cells": [
+    {
+      "cell_id": "nega-a1000-b0500-L040",
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-4d1fc2cfcf42c1bff2ad",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a1000-b0500-L060",
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-7b7f27ddc16195158ee6",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a1000-b0500-L080",
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": null,
+      "calibration_only": true
+    },
+    {
+      "cell_id": "nega-a0750-b0500-L040",
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-f299effa97d8d15d0da2",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a0750-b0500-L060",
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-422d7df3c52eb52687af",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a0750-b0500-L080",
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": null,
+      "calibration_only": true
+    },
+    {
+      "cell_id": "nega-a0500-b0500-L040",
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-51c60f85544cdb94c9dd",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a0500-b0500-L060",
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-ae60c8b442ad94fde173",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a0500-b0500-L080",
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": null,
+      "calibration_only": true
+    },
+    {
+      "cell_id": "nega-a0350-b0500-L040",
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-07d732a13d4ba0ae6eb0",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a0350-b0500-L060",
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-b39c74e9721492bce614",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a0350-b0500-L080",
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": null,
+      "calibration_only": true
+    },
+    {
+      "cell_id": "nega-a0250-b0500-L040",
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-2d26dfe7cf872627ea81",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a0250-b0500-L060",
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-bd120db6bdbc305ddf42",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a0250-b0500-L080",
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": null,
+      "calibration_only": true
+    },
+    {
+      "cell_id": "nega-a0100-b0500-L040",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-cd2b4353726834318d6b",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a0100-b0500-L060",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-6a4963c3064243f17ed8",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a0100-b0500-L080",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": null,
+      "calibration_only": true
+    },
+    {
+      "cell_id": "nega-a0050-b0500-L040",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-fffdf93a9cae183cb1c1",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a0050-b0500-L060",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-7016420e7cbf8fc354b7",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a0050-b0500-L080",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": null,
+      "calibration_only": true
+    },
+    {
+      "cell_id": "nega-a0025-b0500-L040",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-4503b7acb169c6a5092f",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a0025-b0500-L060",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": "act-3d1ab066156655e22ec8",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-a0025-b0500-L080",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32,
+      "stage": "A",
+      "controller_action_id": null,
+      "calibration_only": true
+    }
+  ],
+  "settings": {
+    "method": "finite_dmrg_multistart_fullq",
+    "boundary": "OBC",
+    "hamiltonian": "five-site unit cell Heisenberg chain, J1=1, J2=alpha, J3=beta",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim_by_L": {
+      "40": 800,
+      "60": 1000,
+      "80": 1200
+    },
+    "nsweeps": 32,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "q_count": 401,
+    "init_modes": [
+      "center",
+      "ferro_j2"
+    ],
+    "budget_definition": "nsweeps per independent start",
+    "observable_definition": "dominant peak-locked structure-factor ratio from connected central-window S(q)",
+    "acceptance": {
+      "variance_per_site_max": 1e-08,
+      "final_truncation_error_max": 1e-09,
+      "sector_tolerance": 1e-08,
+      "q_count_min": 401
+    },
+    "offline": true,
+    "execution": "direct SSH; one heavy cell at a time; stop on first failed cell"
+  },
+  "provenance": {
+    "negative_alpha_included": true,
+    "policy_sha256": "b69eac086f78b909646c93528dc882424c314024261d161f203f2699d7d7de6d",
+    "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "project_sha256": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+    "source_commit": "40f4179a5630039485370648edd9621f592c0449",
+    "exploratory_data_not_accepted": true
+  }
+}

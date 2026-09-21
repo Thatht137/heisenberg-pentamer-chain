@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "created_at": "2026-08-08T03:47:50.833889+00:00",
+  "cell_id": "fullq-weak-eta020-dt0125",
+  "remote": "wangjieren@39.96.207.180",
+  "remote_dir": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260807/minimal_fullq_replan_eta020/fullq-weak-eta020-dt0125",
+  "local_destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_fetch_eta020_20260808_1145\\fullq-weak-eta020-dt0125",
+  "destination_exists": false,
+  "file_count": 14,
+  "total_bytes": 6195351,
+  "remote_checksum_status": "pass",
+  "hashes": {
+    "checksums.sha256": "2371c7a4dccd6a16ab7c3c91e967a2ab8b9fb5bb33498829eee897007cd62fa2",
+    "manifest.json": "4ff60f7e9b0224aea1384d0983c62d9c00171a517ad381ecb76d1886b6d9443b",
+    "status.json": "90a29748630dd62a0d98d91f6f684c93c309b28b813beba134dd0b53127320b4"
+  }
+}

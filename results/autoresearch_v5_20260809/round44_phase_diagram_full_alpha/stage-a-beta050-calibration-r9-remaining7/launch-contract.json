@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "launch_ready": true,
+  "cell_count": 7,
+  "controller_cell_count": 4,
+  "calibration_cell_count": 3,
+  "concurrency": 1,
+  "offline": true,
+  "eta_hours": {
+    "low": 3,
+    "high": 5
+  },
+  "run_spec_sha256": "7290e48b615d2d27ac20cbf36c1939bf9d488f97a374b5bfd94729c81742bf3b",
+  "source_hashes_sha256": "a4299386fa6905622098fe6446a649896c4273b3f86b8992080e1dcf7bd36f15",
+  "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+  "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+  "r8_ingestion_summary_sha256": "4232b1a070e0f70b3aead24901a72ced3bbfd4b80145644a607611a39aaa711f",
+  "observations_sha256": "cecf52421fd99853f1d431df604ac6dd51316cf14d9c26646361276c53d2d819",
+  "r7_r8_evidence_preserved": true,
+  "thresholds_relaxed": false
+}

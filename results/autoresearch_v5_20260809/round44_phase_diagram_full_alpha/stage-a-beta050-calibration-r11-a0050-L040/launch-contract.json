@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "launch_ready": true,
+  "cell_count": 1,
+  "concurrency": 1,
+  "offline": true,
+  "eta_minutes": {
+    "low": 20,
+    "high": 45
+  },
+  "run_spec_sha256": "2e6ed8b87b9a260bae20be1d55d311d67a18ba661452bc281cde67ff8f893dd9",
+  "source_hashes_sha256": "1c30107400a827450638994b45e5b340ff9c57517bc48a9507f6ae9208fe4542",
+  "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+  "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+  "r10_failure_ingestion_summary_sha256": "1f0dd6162ed4392395d47bb7fd4c6673334c7d0d661fe1660d75813f26a68908",
+  "r10_failure_ingestion_audit_sha256": "4a6cc148bddb1df117287e6e87e27d8d8efdaffa931f0f0cd4d2cac9f61cd3b1",
+  "r10_failure_handoff_sha256": "c0e47e2c23cadf4c33bdbaa0a97121e2f0ca3b8c93a4196fd9a8fe39527f2ff7",
+  "r10_validation_summary_sha256": "4faad2491a14a864add375928500053dc6283dd21d725ad377ef87d3e467ec46",
+  "accepted_calibration_through_r9_sha256": "290083607e50582f79f4afedc5955d0876a9cd86172ae4936293abb42b451bf1",
+  "observations_sha256": "5970880d95732cd4c9b467a113ffb38111f0175702305f9d239c24725bcb660e",
+  "action_index_sha256": "6a3b91b254d2881a89163ce64be62ae61f6497afaca37b7ee753a92635a5d24b",
+  "r6_r7_r9_evidence_preserved": true,
+  "gap_gate_enforced": true,
+  "nonnegative_gap_min": -1e-08,
+  "thresholds_relaxed": false
+}

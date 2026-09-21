@@ -1,0 +1,317 @@
+{
+  "alpha0_checks": {
+    "0.1": {
+      "energy_error": 8.881784197001252e-16,
+      "expected_energy": -2.075,
+      "expected_sector_ground_degeneracies": {
+        "3": 1,
+        "4": 2,
+        "5": 1
+      },
+      "full_ground_degeneracy": 4,
+      "ground_subspace_s2": [
+        -2.7755575615628914e-16,
+        1.9999999999999953,
+        1.9999999999999962,
+        2.0000000000000013
+      ],
+      "pass": true,
+      "s2_multiplet_error": 4.6629367034256575e-15,
+      "sector_ground_degeneracies": {
+        "3": 1,
+        "4": 2,
+        "5": 1
+      }
+    },
+    "0.25": {
+      "energy_error": 8.881784197001252e-16,
+      "expected_energy": -2.1875,
+      "expected_sector_ground_degeneracies": {
+        "3": 1,
+        "4": 2,
+        "5": 1
+      },
+      "full_ground_degeneracy": 4,
+      "ground_subspace_s2": [
+        -2.220446049250313e-16,
+        1.999999999999997,
+        2.000000000000004,
+        2.0000000000000044
+      ],
+      "pass": true,
+      "s2_multiplet_error": 4.440892098500626e-15,
+      "sector_ground_degeneracies": {
+        "3": 1,
+        "4": 2,
+        "5": 1
+      }
+    },
+    "0.5": {
+      "energy_error": 8.881784197001252e-16,
+      "expected_energy": -2.375,
+      "expected_sector_ground_degeneracies": {
+        "3": 1,
+        "4": 2,
+        "5": 1
+      },
+      "full_ground_degeneracy": 4,
+      "ground_subspace_s2": [
+        -1.3300887330919073e-60,
+        1.9999999999999982,
+        1.9999999999999991,
+        2.0000000000000013
+      ],
+      "pass": true,
+      "s2_multiplet_error": 1.7763568394002505e-15,
+      "sector_ground_degeneracies": {
+        "3": 1,
+        "4": 2,
+        "5": 1
+      }
+    }
+  },
+  "artifact_hashes": {
+    "oracle_points.csv": "9f3c13fa9a264f4b134fbe088048fba01b34a250b9af01268cd081e7bce6fdbb",
+    "spec.json": "e76627e9e0837cd9f566dbe0d8c731171349c9f8d72be72596edadfba5bcef28"
+  },
+  "artifacts": {
+    "checksums": "checksums.sha256",
+    "points": "oracle_points.csv",
+    "spec": "spec.json",
+    "summary": "summary.json"
+  },
+  "backend": {
+    "backend": "NumPy custom bit-sector + independent full Kronecker matrix",
+    "dependency_note": "本机无可用 XDiag/QuSpin；未调用 Julia，未安装依赖",
+    "numpy": "1.26.4",
+    "platform": "Windows-11-10.0.26100-SP0",
+    "python": "3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)]",
+    "quspin_used": false,
+    "script_sha256": "91e007e81ffce460eee9f301b7e9492e9a99096f2dd38081dbbeaf7c484699c9",
+    "test_sha256": "7812f5825340851a8392de81690edbe1c6ea04b15fa9583d4fa7ed2a450dd292",
+    "xdiag_used": false
+  },
+  "benchmarks": {
+    "three_spin_projection": {
+      "coefficients_from_projection": [
+        0.6666666666666667,
+        -0.33333333333333337,
+        0.6666666666666667
+      ],
+      "component_coefficient_matrices": [
+        [
+          [
+            0.6666666666666666,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.6666666666666666,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.6666666666666667
+          ]
+        ],
+        [
+          [
+            -0.33333333333333337,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            -0.33333333333333337,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            -0.33333333333333326
+          ]
+        ],
+        [
+          [
+            0.6666666666666666,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.6666666666666666,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.6666666666666667
+          ]
+        ]
+      ],
+      "expected_coefficients": [
+        0.6666666666666666,
+        -0.3333333333333333,
+        0.6666666666666666
+      ],
+      "ground_degeneracy": 2,
+      "ground_energy": -1.0,
+      "max_coefficient_error": 1.1102230246251565e-16,
+      "max_projection_matrix_residual": 1.7554167342883506e-16,
+      "phase_gauge": "同一简并子空间基底同时投影，不固定任一本征向量相位"
+    },
+    "two_spin": {
+      "eigenvalues": [
+        -0.75,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "expected": [
+        -0.75,
+        0.25,
+        0.25,
+        0.25
+      ],
+      "hermiticity_error": 0.0,
+      "max_abs_error": 0.0
+    }
+  },
+  "elapsed_s": 0.8872754000040004,
+  "limitations": [
+    "8-spin finite-cluster oracle，不是完整 OBC 链的 Sz gap 或热力学相判断",
+    "full Kronecker 仅为独立 Hamiltonian 构造核对，不是独立多体方法",
+    "仅对预注册非零网格应用 2% 渐近门；finite_alpha_control 不套该门",
+    "NumPy 自定义实现，未使用 XDiag 或 QuSpin",
+    "若渐近门失败，保留全部原始点并如实标记，不删点或用拟合替代原始表格"
+  ],
+  "matrix_and_eigen_checks": {
+    "max_all_norm_error": 3.552713678800501e-15,
+    "max_all_orthogonality_error": 3.552713678800501e-15,
+    "max_all_residual": 3.6890553969328284e-15,
+    "max_construction_error": 0.0,
+    "max_full_hermiticity_error": 0.0,
+    "max_reported_norm_error": 3.552713678800501e-15,
+    "max_reported_orthogonality_error": 3.552713678800501e-15,
+    "max_reported_residual": 3.6890553969328284e-15,
+    "max_total_sz_error": 3.552713678800501e-15
+  },
+  "point_counts": {
+    "finite_alpha_controls": 2,
+    "grid_nonzero": 42,
+    "grid_total": 45,
+    "grid_zero": 3,
+    "total": 47
+  },
+  "prediction": {
+    "asymptotic_gate": {
+      "all_pass": true,
+      "criteria": {
+        "applies_only_to": "42 nonzero grid points, not finite_alpha_control rows",
+        "smallest_abs_relative_error_lt": 0.02,
+        "smallest_vs_second_abs_error_factor_le": 0.75
+      },
+      "groups": [
+        {
+          "beta": 0.1,
+          "pass": true,
+          "second_abs_relative_error": 0.012915225122810625,
+          "sign": "negative",
+          "small_alpha_improves_by_25pct": true,
+          "smallest_abs_relative_error": 0.006468866923569294,
+          "smallest_alpha": -0.000625,
+          "smallest_error_below_2pct": true
+        },
+        {
+          "beta": 0.1,
+          "pass": true,
+          "second_abs_relative_error": 0.013002139387708667,
+          "sign": "positive",
+          "small_alpha_improves_by_25pct": true,
+          "smallest_abs_relative_error": 0.006490602094345377,
+          "smallest_alpha": 0.000625,
+          "smallest_error_below_2pct": true
+        },
+        {
+          "beta": 0.25,
+          "pass": true,
+          "second_abs_relative_error": 0.0054135218642272775,
+          "sign": "negative",
+          "small_alpha_improves_by_25pct": true,
+          "smallest_abs_relative_error": 0.0027090001376564032,
+          "smallest_alpha": -0.000625,
+          "smallest_error_below_2pct": true
+        },
+        {
+          "beta": 0.25,
+          "pass": true,
+          "second_abs_relative_error": 0.005431252174560086,
+          "sign": "positive",
+          "small_alpha_improves_by_25pct": true,
+          "smallest_abs_relative_error": 0.0027134348433719424,
+          "smallest_alpha": 0.000625,
+          "smallest_error_below_2pct": true
+        },
+        {
+          "beta": 0.5,
+          "pass": true,
+          "second_abs_relative_error": 0.0028660086238687654,
+          "sign": "negative",
+          "small_alpha_improves_by_25pct": true,
+          "smallest_abs_relative_error": 0.0014337348043227394,
+          "smallest_alpha": -0.000625,
+          "smallest_error_below_2pct": true
+        },
+        {
+          "beta": 0.5,
+          "pass": true,
+          "second_abs_relative_error": 0.0028718227061972357,
+          "sign": "positive",
+          "small_alpha_improves_by_25pct": true,
+          "smallest_abs_relative_error": 0.0014351920517583494,
+          "smallest_alpha": 0.000625,
+          "smallest_error_below_2pct": true
+        }
+      ]
+    },
+    "definition": "gap=E0(Sz=1)-E0(Sz=0) in this 8-spin oracle only",
+    "finite_alpha_controls": [
+      {
+        "alpha": -0.175,
+        "asymptotic_gate_applicable": false,
+        "beta": 0.25,
+        "prediction_relative_error": -0.5385498884220532
+      },
+      {
+        "alpha": -0.1,
+        "asymptotic_gate_applicable": false,
+        "beta": 0.25,
+        "prediction_relative_error": -0.36135100062892256
+      }
+    ],
+    "not_full_chain_gap": true
+  },
+  "schema": "near_zero_alpha_oracle/v2",
+  "status": "pass",
+  "timing_probe": {
+    "alpha": -0.000625,
+    "beta": 0.1,
+    "elapsed_s": 0.014089499993133359
+  },
+  "validation_gate_pass": true,
+  "validation_gates": {
+    "alpha0_multiplets": true,
+    "bit_vs_full_construction": true,
+    "dimensions": true,
+    "eigen_normalization": true,
+    "eigen_orthogonality": true,
+    "eigen_residuals": true,
+    "hermiticity": true,
+    "nonzero_su2_multiplets": true,
+    "three_spin_projection": true,
+    "total_sz": true,
+    "two_spin_benchmark": true
+  }
+}

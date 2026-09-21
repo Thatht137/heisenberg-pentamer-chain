@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "status": "prepared_only",
+  "launch_started": false,
+  "cell_count": 2,
+  "dry_run_returncode": 0,
+  "dry_run_cells": 2,
+  "checks": {
+    "harness_plan_consumed": true,
+    "two_cells": true,
+    "argv_krylov8": true,
+    "nsweeps_64": true,
+    "maxdim_1200": true,
+    "save_state_and_enriched": true,
+    "julia_parser_fix_recorded": true,
+    "include_dependencies_hashed": true,
+    "single_concurrency_stop_first": true,
+    "no_warmstart_128_retry": true
+  },
+  "parameter_plan": {
+    "requested": "quantum.harness/scripts/parameter_scan.py plan",
+    "path": "C:\\Users\\hh250\\code\\quantum.harness\\scripts\\parameter_scan.py",
+    "available": true,
+    "sha256": "7195b79c9aeda30f1105669285e1a360378edd3506adbfe92e19532fee5bb8a0",
+    "input_run_spec": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_controls_r1\\harness_parameter_scan_preflight\\run_spec.json",
+    "input_run_spec_sha256": "1b988f9d73773fa25008c6f0a53869a73f67247f2bb0a359bc25e482d9413e98",
+    "schema": "existing harness run-spec consumed; no manual enumeration"
+  }
+}

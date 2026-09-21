@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "launch_ready": true,
+  "cell_count": 1,
+  "concurrency": 1,
+  "offline": true,
+  "eta_minutes": {
+    "low": 15,
+    "high": 30
+  },
+  "run_spec_sha256": "44777c51a21bbcbc55448b552ca21ee9c8dcd042e1b324c77f43c85a99e57c3a",
+  "source_hashes_sha256": "1c30107400a827450638994b45e5b340ff9c57517bc48a9507f6ae9208fe4542",
+  "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+  "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+  "r7_validation_summary_sha256": "6b6c77defbc27cfb1b8a3a8f3a6c37587bcf22fd79d04b3fab0dc603035276ca",
+  "r7_failure_ingestion_summary_sha256": "252916b69e1ebf3b362531f5cc98d92537ff400555bccf0ffe85058407cfb94e",
+  "r6_ingestion_summary_sha256": "65dbb8c0256cf659e0200e9b002493994bcb106ffb60f6ad33242fa498cb09ec",
+  "observations_sha256": "ed183dae619248b5ecef44d1a8f4a92a869b5d103f5871ac4210e0dbd63f6a3f",
+  "r6_r7_evidence_preserved": true,
+  "gap_gate_enforced": true,
+  "nonnegative_gap_min": -1e-08,
+  "thresholds_relaxed": false
+}

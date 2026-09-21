@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "figure": "Fig. 2",
+  "backend": "Python/matplotlib",
+  "core_conclusion": "Reflection parity at q=pi suppresses the lowest doublet while quartets dominate the local inelastic channel.",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "boundary": "Isolated-pentamer ED selection rule; branch propagation requires production dynamics.",
+  "source_sha256": {
+    "results\\autoresearch_v4_20260730\\round2_local_spectral_channels_v4\\multiplet_scan.csv": "9ce8a9c56f22fd99be701e5795ecde3a9beda56c4903b74d7804072c40eecf9a"
+  },
+  "outputs": {
+    "figures\\paper_fig2_level_flow_qpi_filter_20260804.svg": "040356b8efd78045d13b906f7331d7ff04c49741fe39d60b9c51e9074aa43967",
+    "figures\\paper_fig2_level_flow_qpi_filter_20260804.pdf": "4c4bca052cec723ad09103573fe489aa2737c0b6d4826da49f900bf4542c64c8",
+    "figures\\paper_fig2_level_flow_qpi_filter_20260804.png": "b3c86ff2cb5539ebdf513c89f93ec3d62a56f868c0dab31707aebaefa0781a7c",
+    "figures\\paper_fig2_level_flow_qpi_filter_20260804.tiff": "9bfb99fc1998539fb43542629ba4c04b7c0120f55525d8c26e234bec794be048"
+  }
+}

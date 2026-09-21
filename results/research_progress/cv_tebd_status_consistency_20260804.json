@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-04T09:15:00+08:00",
+  "status": "pass",
+  "checks": {
+    "historical_tag_not_evaluable": true,
+    "historical_peak_uncovered": true,
+    "historical_weight_uncovered": true,
+    "coverage_status_not_evaluable": true,
+    "coverage_peak_uncovered": true,
+    "coverage_window_uncovered": true
+  },
+  "historical_source": "results/autoresearch_v5_20260803/round29_qpi_local_handoff/production_crosscheck/summary.json",
+  "coverage_source": "results/research_progress/cv_tebd_gate_coverage_20260804.json",
+  "conclusion": "两份独立摘要一致保留 NotEvaluable：CV 未包围 TEBD 主峰约 0.05，也未覆盖 [0,1.5] 主要积分窗。",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

@@ -1,0 +1,334 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-04T00:31:16+08:00",
+  "backend": "Python/matplotlib",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "figures": {
+    "Fig. 1": {
+      "role": "模型与有效自由度",
+      "status": "ready",
+      "claim": "1x5 单胞、投影系数和有效 S=1/2 链",
+      "assets": [
+        {
+          "stem": "reference_aligned_fig1_pentamer_20260803",
+          "exports": [
+            {
+              "path": "figures/reference_aligned_fig1_pentamer_20260803.svg",
+              "bytes": 39968,
+              "sha256": "ee84f682840c557f72b3d6b100cb2eca545e5fc49e8a8c5d1074e0f8d8e53615"
+            },
+            {
+              "path": "figures/reference_aligned_fig1_pentamer_20260803.pdf",
+              "bytes": 55245,
+              "sha256": "0e54cce632eae2cad55f22ce23237cb4126dfd5dda4cbea50e69ecd94f815f56"
+            },
+            {
+              "path": "figures/reference_aligned_fig1_pentamer_20260803.png",
+              "bytes": 205745,
+              "sha256": "8b235df507ff2fda8e5e1933195c4548cf857a982922da5a7f00214a7c7d19b6"
+            },
+            {
+              "path": "figures/reference_aligned_fig1_pentamer_20260803.tiff",
+              "bytes": 30156702,
+              "sha256": "ed8e7cc9b4fc4acb02dd7a584555d2940d1f430fbc4d901ad00707f0432f05f1"
+            }
+          ],
+          "source_sidecar": false
+        }
+      ]
+    },
+    "Fig. 2": {
+      "role": "正 alpha 单胞能级与可见通道",
+      "status": "ready",
+      "claim": "局域多重态、宇称和 q=pi 选择定则",
+      "assets": [
+        {
+          "stem": "reference_aligned_fig2_pentamer_positive_20260803",
+          "exports": [
+            {
+              "path": "figures/reference_aligned_fig2_pentamer_positive_20260803.svg",
+              "bytes": 63768,
+              "sha256": "25c30191512e5f0d9b6647fb8002c023a54e49c723895465e74084695232e2c7"
+            },
+            {
+              "path": "figures/reference_aligned_fig2_pentamer_positive_20260803.pdf",
+              "bytes": 63603,
+              "sha256": "7881eb9e9c689dcfc20c83f0b055d9e396041cad33248358fb60c231c84e5006"
+            },
+            {
+              "path": "figures/reference_aligned_fig2_pentamer_positive_20260803.png",
+              "bytes": 269775,
+              "sha256": "a3ad76f84602d068f6a101dc4504cb0cad78d45034e0d5589918eebc5061ed53"
+            },
+            {
+              "path": "figures/reference_aligned_fig2_pentamer_positive_20260803.tiff",
+              "bytes": 32523974,
+              "sha256": "a2453ad0ffbd31281ed13d0039afcde912d60b8024293061908d946762447627"
+            }
+          ],
+          "source_sidecar": false
+        }
+      ]
+    },
+    "Fig. 3": {
+      "role": "正区有限尺寸诊断",
+      "status": "ready_with_boundary",
+      "claim": "正区尺寸趋势；不宣称已命名相界",
+      "assets": [
+        {
+          "stem": "reference_aligned_fig3_pentamer_positive_20260803",
+          "exports": [
+            {
+              "path": "figures/reference_aligned_fig3_pentamer_positive_20260803.svg",
+              "bytes": 65054,
+              "sha256": "32f7c1cd7e514ca21791e1b5f60a66d314d1962ee6f27048f69bb1e5c90e0378"
+            },
+            {
+              "path": "figures/reference_aligned_fig3_pentamer_positive_20260803.pdf",
+              "bytes": 59994,
+              "sha256": "56b0cdc94b55bfb338ed4d7ff53a0b3eca245e42582c9220b2a1a7ebf2536724"
+            },
+            {
+              "path": "figures/reference_aligned_fig3_pentamer_positive_20260803.png",
+              "bytes": 405032,
+              "sha256": "c0d6b75c446665e0eb9887fbe614089563f1e41f08f69bfe358f78c8e3004d60"
+            },
+            {
+              "path": "figures/reference_aligned_fig3_pentamer_positive_20260803.tiff",
+              "bytes": 47831346,
+              "sha256": "f5b00651f3bbf656225dc2fd8858999e4ddcd6c7dd546f6c14999ba0df07f1f9"
+            }
+          ],
+          "source_sidecar": true
+        }
+      ]
+    },
+    "Fig. 4": {
+      "role": "纠缠结构与标度",
+      "status": "ready_with_boundary",
+      "claim": "有限尺寸 c≈1 证据；不作热力学极限强断言",
+      "assets": [
+        {
+          "stem": "reference_aligned_fig4_pentamer_positive_20260803",
+          "exports": [
+            {
+              "path": "figures/reference_aligned_fig4_pentamer_positive_20260803.svg",
+              "bytes": 107254,
+              "sha256": "dbd9ef27d70b3e0a9e26c036645753b02d664456e783cecfb4043096ff18c30d"
+            },
+            {
+              "path": "figures/reference_aligned_fig4_pentamer_positive_20260803.pdf",
+              "bytes": 57263,
+              "sha256": "de16a755d266965411343fc661064c97d0406c1d8e8643695338a0a2d8dda334"
+            },
+            {
+              "path": "figures/reference_aligned_fig4_pentamer_positive_20260803.png",
+              "bytes": 200507,
+              "sha256": "78d85abd9ecd7c105da40940dfd0e01d5f3fc02af9feea5f6dc13cb3ddd570d6"
+            },
+            {
+              "path": "figures/reference_aligned_fig4_pentamer_positive_20260803.tiff",
+              "bytes": 42597726,
+              "sha256": "0cf95780da6fd4e46e608811f4ea916c56d2e3ab47622089747796a897fa667f"
+            }
+          ],
+          "source_sidecar": true
+        }
+      ]
+    },
+    "Fig. 5": {
+      "role": "激发机制与动量过滤",
+      "status": "ready",
+      "claim": "有效链传播、局域多重态和暗通道",
+      "assets": [
+        {
+          "stem": "pentamer_model_effective_chain_20260731",
+          "exports": [
+            {
+              "path": "figures/pentamer_model_effective_chain_20260731.svg",
+              "bytes": 50021,
+              "sha256": "1601bc9d0edb0622e0b903990807854a80532d9eef3f46295837b7f9de73a949"
+            },
+            {
+              "path": "figures/pentamer_model_effective_chain_20260731.pdf",
+              "bytes": 59850,
+              "sha256": "109033e31733fc69b9d5e7889dca4f1590043d2b0e7f19e98148c524813db098"
+            },
+            {
+              "path": "figures/pentamer_model_effective_chain_20260731.png",
+              "bytes": 308994,
+              "sha256": "ae0ff91632730efac9260da02a98dafbec1d3089a91f1e3a2a465a64eb5e0ce3"
+            },
+            {
+              "path": "figures/pentamer_model_effective_chain_20260731.tiff",
+              "bytes": 897588,
+              "sha256": "3cb7ba0ca066fc7377029ef8acab0c5f9a50a3ce7450e8cda2bdd7571f5672bf"
+            }
+          ],
+          "source_sidecar": true
+        },
+        {
+          "stem": "pentamer_momentum_filter_20260731",
+          "exports": [
+            {
+              "path": "figures/pentamer_momentum_filter_20260731.svg",
+              "bytes": 45660,
+              "sha256": "1a3c30f178ea550ebd31d08dd1c52867e51ffd1216f730dda2fe5e91c0ba5e51"
+            },
+            {
+              "path": "figures/pentamer_momentum_filter_20260731.pdf",
+              "bytes": 53784,
+              "sha256": "fd0bd78768012ed894c23263047222aed7875e7cfa21c3276adcbc126402f275"
+            },
+            {
+              "path": "figures/pentamer_momentum_filter_20260731.png",
+              "bytes": 377019,
+              "sha256": "198bc4d8a4404de00e8f7962a367039b8a5e2793c2475ccf3297340ee4f438d4"
+            },
+            {
+              "path": "figures/pentamer_momentum_filter_20260731.tiff",
+              "bytes": 990058,
+              "sha256": "ca8e5fa6e9d3a81ba5c3787b5ac1c522f6fbf48bf41db11ed2b368fd41e19df8"
+            }
+          ],
+          "source_sidecar": true
+        }
+      ]
+    },
+    "Fig. 6": {
+      "role": "alpha=1 跨 beta 动力学路径",
+      "status": "exploratory",
+      "claim": "正 beta 侦察热图；等待生产 CV/TEBD",
+      "assets": [
+        {
+          "stem": "reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803",
+          "exports": [
+            {
+              "path": "figures/reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.svg",
+              "bytes": 130649,
+              "sha256": "d3ca21f1352e01eeb68a035309cf3cdcdf917f404a59bcd196c0799eca2c1b2c"
+            },
+            {
+              "path": "figures/reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.pdf",
+              "bytes": 87279,
+              "sha256": "5ba7fcdb6144276f445c0af86a040443fdc95c4d5c551a07cfe96392cfb870bf"
+            },
+            {
+              "path": "figures/reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.png",
+              "bytes": 391202,
+              "sha256": "16a45ff306a2856a5b409b5d85b46ebf15b976b64c5d783761c3b49e4823dbd1"
+            },
+            {
+              "path": "figures/reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.tiff",
+              "bytes": 37457822,
+              "sha256": "4045a3f820e42678876ec8c18493c6006695dc703f28e94b3e83250b19663622"
+            }
+          ],
+          "source_sidecar": true
+        }
+      ]
+    },
+    "Fig. 7": {
+      "role": "beta=0.5 正 alpha 路径",
+      "status": "pilot",
+      "claim": "三条正 alpha raw TEBD pilot 路径及 q=pi 峰值/端点/积分窗诊断；不关闭动态门",
+      "assets": [
+        {
+          "stem": "reference_aligned_fig7_pilot_quantitative_20260804",
+          "exports": [
+            {
+              "path": "figures/reference_aligned_fig7_pilot_quantitative_20260804.svg",
+              "bytes": 45970,
+              "sha256": "9b9f426fe51475b7d95de72058552046e404cd760eeb192b3c901d9fb6fd7ebf"
+            },
+            {
+              "path": "figures/reference_aligned_fig7_pilot_quantitative_20260804.pdf",
+              "bytes": 64301,
+              "sha256": "943d9af815c7246173b20aa02f04420e250d716e8f74f60e8479ccbcb9b5f352"
+            },
+            {
+              "path": "figures/reference_aligned_fig7_pilot_quantitative_20260804.png",
+              "bytes": 325965,
+              "sha256": "d883a427064ea5f863ecb388c61a7e0c789afc07b29de3177f60c6d77b22869e"
+            },
+            {
+              "path": "figures/reference_aligned_fig7_pilot_quantitative_20260804.tiff",
+              "bytes": 44848578,
+              "sha256": "9e8f1f80833200e3a636d4cd79bd6d1a1e001b34e17b818d880ee869df607dc0"
+            }
+          ],
+          "source_sidecar": true
+        },
+        {
+          "stem": "reference_aligned_fig7_positive_alpha_pilot_20260804",
+          "exports": [
+            {
+              "path": "figures/reference_aligned_fig7_positive_alpha_pilot_20260804.svg",
+              "bytes": 85911,
+              "sha256": "0f238c6f7fb8dc1954641fc221a26bfdf7d99312a0ff7c7c5356602024da4a6a"
+            },
+            {
+              "path": "figures/reference_aligned_fig7_positive_alpha_pilot_20260804.pdf",
+              "bytes": 69760,
+              "sha256": "3becdff17a77c0ac57302f49931c8e2326bd6568b73056e0b30d5dedf8ae459c"
+            },
+            {
+              "path": "figures/reference_aligned_fig7_positive_alpha_pilot_20260804.png",
+              "bytes": 227715,
+              "sha256": "40e5f8f5016466daa70933710cbeb65434fabb45708170ea148b99cb6dfe2bde"
+            },
+            {
+              "path": "figures/reference_aligned_fig7_positive_alpha_pilot_20260804.tiff",
+              "bytes": 42755978,
+              "sha256": "0a36b8ab3772c21e7cad5eae71c47762c90eb2ddde6190ae67217f47fea41a17"
+            }
+          ],
+          "source_sidecar": true
+        }
+      ]
+    },
+    "Fig. 8": {
+      "role": "连续谱与局域分支叠加",
+      "status": "constrained_overlay",
+      "claim": "有效链连续谱边界与 CV 稀疏点的受限叠加",
+      "assets": [
+        {
+          "stem": "cv_continuum_overlay_20260803",
+          "exports": [
+            {
+              "path": "figures/cv_continuum_overlay_20260803.svg",
+              "bytes": 36007,
+              "sha256": "c90677fb056481ed742b8499a7c1a07b88194840cfe6dde8b714d968c2e6c9ee"
+            },
+            {
+              "path": "figures/cv_continuum_overlay_20260803.pdf",
+              "bytes": 49497,
+              "sha256": "001b4f69edca6b8054f782655f368e71f80c83bc0ec3ee7f534269fb5a75f6c7"
+            },
+            {
+              "path": "figures/cv_continuum_overlay_20260803.png",
+              "bytes": 309155,
+              "sha256": "202c6dbe676a5c6456b8683e8e36f8a2b5f2fb13d12eaa5e6b1c8456dec2d0d2"
+            },
+            {
+              "path": "figures/cv_continuum_overlay_20260803.tiff",
+              "bytes": 499402,
+              "sha256": "5595183f81083ae6a43c5014e74438838368b29138959e3f86b5fe602b16dbf1"
+            }
+          ],
+          "source_sidecar": true
+        }
+      ]
+    }
+  },
+  "checks": {
+    "all_required_roles_present": true,
+    "all_assets_exist": true,
+    "reference_alignment_complete": true,
+    "production_dynamic_ready": false
+  }
+}

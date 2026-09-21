@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-08-03T23:23:46+08:00",
+  "run": "round31_qpi_cv_extension/cell-l40-qpi-low-000-020",
+  "status": "running",
+  "phase": "julia_linsolve",
+  "completed_points": 1,
+  "total_points": 5,
+  "progress_updated_at": "2026-08-03T15:23:25.566260+00:00",
+  "julia_processes": 1,
+  "threads": 8,
+  "cores": 80,
+  "available_memory_gib": 227,
+  "manifest_present": false,
+  "first_point": {
+    "omega": 0.0,
+    "residual": 1.324e-05,
+    "solution_maxdim": 200
+  },
+  "acceptance": {
+    "residual_gate": 1e-05,
+    "first_point_pass": false,
+    "cell_final": false
+  },
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

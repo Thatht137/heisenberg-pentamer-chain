@@ -1,0 +1,182 @@
+{
+  "run_id": "pentamer-entanglement-scaling-20260730",
+  "run_dir": "results/autoresearch_v4_20260730/round1_entanglement_scaling",
+  "settings": {
+    "method": "finite_dmrg",
+    "boundary": "OBC",
+    "nsweeps": 40,
+    "cutoff": 1e-12,
+    "threads": 16,
+    "init_mode": "center",
+    "offline": true
+  },
+  "provenance": {
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "server_julia_version": "1.12.3",
+    "negative_alpha_excluded": true,
+    "hypothesis": "positive-alpha pentamer chain has a gapless c=1 effective spin chain",
+    "fit_form": "OBC CFT logarithmic entanglement scaling"
+  },
+  "cells": [
+    {
+      "cell_id": "cell-0001",
+      "model": "heisenberg",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 8,
+      "maxdim": 80
+    },
+    {
+      "cell_id": "cell-0002",
+      "model": "heisenberg",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 12,
+      "maxdim": 80
+    },
+    {
+      "cell_id": "cell-0003",
+      "model": "heisenberg",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 16,
+      "maxdim": 80
+    },
+    {
+      "cell_id": "cell-0004",
+      "model": "heisenberg",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 20,
+      "maxdim": 80
+    },
+    {
+      "cell_id": "cell-0005",
+      "model": "heisenberg",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 24,
+      "maxdim": 80
+    },
+    {
+      "cell_id": "cell-0006",
+      "model": "heisenberg",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 8,
+      "maxdim": 400
+    },
+    {
+      "cell_id": "cell-0007",
+      "model": "heisenberg",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 12,
+      "maxdim": 400
+    },
+    {
+      "cell_id": "cell-0008",
+      "model": "heisenberg",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 16,
+      "maxdim": 400
+    },
+    {
+      "cell_id": "cell-0009",
+      "model": "heisenberg",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 20,
+      "maxdim": 400
+    },
+    {
+      "cell_id": "cell-0010",
+      "model": "heisenberg",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 24,
+      "maxdim": 400
+    },
+    {
+      "cell_id": "cell-0011",
+      "model": "pentamer",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 8,
+      "maxdim": 80
+    },
+    {
+      "cell_id": "cell-0012",
+      "model": "pentamer",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 12,
+      "maxdim": 80
+    },
+    {
+      "cell_id": "cell-0013",
+      "model": "pentamer",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 16,
+      "maxdim": 80
+    },
+    {
+      "cell_id": "cell-0014",
+      "model": "pentamer",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 20,
+      "maxdim": 80
+    },
+    {
+      "cell_id": "cell-0015",
+      "model": "pentamer",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 24,
+      "maxdim": 80
+    },
+    {
+      "cell_id": "cell-0016",
+      "model": "pentamer",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 8,
+      "maxdim": 400
+    },
+    {
+      "cell_id": "cell-0017",
+      "model": "pentamer",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 12,
+      "maxdim": 400
+    },
+    {
+      "cell_id": "cell-0018",
+      "model": "pentamer",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 16,
+      "maxdim": 400
+    },
+    {
+      "cell_id": "cell-0019",
+      "model": "pentamer",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 20,
+      "maxdim": 400
+    },
+    {
+      "cell_id": "cell-0020",
+      "model": "pentamer",
+      "alpha": 0.23,
+      "beta": 0.05,
+      "N_units": 24,
+      "maxdim": 400
+    }
+  ]
+}

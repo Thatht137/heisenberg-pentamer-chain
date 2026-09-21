@@ -1,0 +1,9 @@
+{
+  "max_residual": 1.553833469547109e-14,
+  "all_residuals_pass": true,
+  "boundary": "OBC",
+  "sectors": [
+    0,
+    1
+  ]
+}

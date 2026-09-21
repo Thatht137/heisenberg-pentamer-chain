@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-03",
+  "status": "pass",
+  "report_references": {
+    "total": 320,
+    "missing_local": [],
+    "allowed_remote": [
+      "results/autoresearch_v5_20260802/round22_cv_l80_anchor/cell-0003-L80-qpi-w025",
+      "results/autoresearch_v5_20260802/round22_cv_l80_anchor/cell-0003-L80-qpi-w025/manifest.json",
+      "results/autoresearch_v5_20260803/round31_qpi_cv_extension",
+      "results/autoresearch_v5_20260803/round31_qpi_cv_extension/cell-l40-qpi-high-150",
+      "results/autoresearch_v5_20260803/round31_qpi_cv_extension/cell-l40-qpi-low-000-020",
+      "results/autoresearch_v5_20260805/code_backup_retry_20260805",
+      "results/autoresearch_v5_20260805/round41_qpi_cv_low005_retry_20260805_2003/cell-l40-qpi-retry-005"
+    ]
+  },
+  "checksums": {
+    "manifests": 556,
+    "entries_checked": 5098,
+    "failures": []
+  },
+  "scope": {
+    "negative_alpha_included": false,
+    "server_polled": false
+  }
+}

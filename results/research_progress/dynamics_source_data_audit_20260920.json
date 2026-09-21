@@ -1,0 +1,149 @@
+{
+  "schema": "dynamics_source_data_audit/v1",
+  "created_at": "2026-09-20",
+  "status": "local_c7_source_chain_closed_not_public_archive",
+  "scope": {
+    "coverage": "selected_final_v2_qpi_cv_tebd_and_minimal_fullq_figure_sources_only",
+    "repository_root_relative_paths": true,
+    "public_archive": false,
+    "persistent_identifier": null,
+    "licence": null,
+    "no_new_physics_analysis": true,
+    "no_raw_time_series_or_large_states_copied": true,
+    "no_ssh_upload_or_remote_operation": true,
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "final_v2_qpi_cv_tebd": {
+    "figure": "figures/round43_fig8_final_20260806_v2.png",
+    "panel_mapping": [
+      {"panel": "a", "title": "Agreement", "source": "11 accepted CV rows over historical q=pi TEBD"},
+      {"panel": "b", "title": "relative difference", "source": "relative_delta from the same 11-row source CSV"},
+      {"panel": "c", "title": "PASS gates", "source": "peak bracket; weight window; peak budget; weight budget"}
+    ],
+    "instance": "alpha=0.23,beta=0.5,L=40,q/pi=1,eta=0.1,OBC,Sz=0",
+    "accepted_points": 11,
+    "cv_manifest": "results/autoresearch_v5_20260806/round43_handoff_final_v2/accepted11/manifest.json",
+    "cv_source_csv": "figures/round43_fig8_final_20260806_v2.source.csv",
+    "tebd_manifest": "results/autoresearch_v5_20260803/round26_qpi_tebd_production/cell-alpha023-qpi-dt00125-t30/manifest.json",
+    "tebd_source_csv": "results/autoresearch_v5_20260803/round26_qpi_tebd_production/cell-alpha023-qpi-dt00125-t30/spectrum.csv",
+    "normalization": {
+      "cv": "O_q=(1/sqrt(L))*sum_j exp(iqj)Sz_j; intensity=-Im(G)/pi",
+      "tebd": "stored_raw/pi",
+      "tebd_provenance": "historical_qpi_slice",
+      "finite_obc_caveat": "center-source and 37-site spatial window approximate the all-site O_q average"
+    },
+    "source_run_residual": {
+      "run": "results/autoresearch_v5_20260806/round43_qpi_cv_lowfreq_desc_fetch_20260806_1815/cell-l40-qpi-lowfreq-desc",
+      "low_frequency_points": 5,
+      "metrics_max_cv_residual": 0.0,
+      "manifest_max_cv_relative_residual": 0.0,
+      "point_csv_reported_residual": 0.0,
+      "interpretation": "reported/clamped value; not proof of mathematical exactness",
+      "independent_stable_residual_recheck": "pending",
+      "code_sha256": "ce3fddb48ad141387d0276c73b982e0fb229b037123ff13e10bc3da75e828d61"
+    },
+    "status": "production_agreement_for_this_qpi_instance_only"
+  },
+  "minimal_fullq": {
+    "figure": "figures/fullq_minimal_eta020_20260808.png",
+    "panel_mapping": [
+      {"panel": "a", "title": "Uniform chain alpha=1, beta=1", "point": "uniform", "heatmap_source": "refined_raw"},
+      {"panel": "b", "title": "Weak coupling alpha=1, beta=0.1", "point": "weak", "heatmap_source": "refined_raw"},
+      {"panel": "c", "title": "Agreement point alpha=0.23, beta=0.5", "point": "agreement", "heatmap_source": "refined_raw"},
+      {"panel": "d", "title": "q=pi dt comparison for uniform", "point": "uniform", "heatmap_source": "coarse_and_refined_qpi_rows"},
+      {"panel": "e", "title": "q=pi dt comparison for weak coupling", "point": "weak", "heatmap_source": "coarse_and_refined_qpi_rows"},
+      {"panel": "f", "title": "q=pi dt comparison for agreement point", "point": "agreement", "heatmap_source": "coarse_and_refined_qpi_rows"}
+    ],
+    "plotter": {
+      "path": "scripts/autoresearch_v5/plot_minimal_fullq_campaign.py",
+      "sha256": "ff365dae2c96115974cbdc6dd3a2367317462eac1c0d5862459374e524c28f05",
+      "selection_rule": "load coarse and refined raw matrices; top heatmap uses refined/positive_max; bottom uses coarse and refined q=pi rows"
+    },
+    "settings": {
+      "q_points": 121,
+      "omega_points": 301,
+      "omega_max_over_J1": 3.0,
+      "space_window": 18,
+      "tmax": 30.0,
+      "coarse_dt": 0.025,
+      "refined_dt": 0.0125,
+      "eta_by_point": {"uniform": 0.1, "weak": 0.2, "agreement": 0.2}
+    },
+    "pairs": {
+      "uniform": {"alpha": 1.0, "beta": 1.0, "coarse": "fullq-uniform-dt025", "refined": "fullq-uniform-dt0125", "status": "pass", "qpi_peak_delta": 0.0, "low_weight_relative_delta": 4.318970945083636e-05, "normalized_rms": 0.0004962069267037719},
+      "weak": {"alpha": 1.0, "beta": 0.1, "coarse": "fullq-weak-eta020-dt025", "refined": "fullq-weak-eta020-dt0125", "status": "pass", "qpi_peak_delta": 0.0, "low_weight_relative_delta": 2.737884553801895e-05, "normalized_rms": 0.0002962042225816509},
+      "agreement": {"alpha": 0.23, "beta": 0.5, "coarse": "fullq-agreement-eta020-dt025", "refined": "fullq-agreement-eta020-dt0125", "status": "pass", "qpi_peak_delta": 0.010000000000000002, "low_weight_relative_delta": 1.96655654787557e-05, "normalized_rms": 0.00016426690248836696}
+    },
+    "acceptance": {"six_single_runs_pass": true, "three_dt_pairs_pass": true, "fullq_cv_validation": false},
+    "status": "production_fullq_dt_crosschecked_for_three_points_only"
+  },
+  "selected_files": [
+    {"path": "figures/round43_fig8_final_20260806_v2.png", "role": "final-v2 panel image", "bytes": 150973, "sha256": "f73385a635e37ceebc54c575dfbaef72534f663c8d67cb2af55af0ffed1f7fc4", "check": "visual panel labels read"},
+    {"path": "figures/round43_fig8_final_20260806_v2.source.csv", "role": "final-v2 11-point comparison source", "bytes": 984, "sha256": "8ac1305882ebbcfe9485dcd8e676513522cc867c73da275d2db5d78eff84f2ae", "rows": 11, "check": "CSV header/row count/missing token scan"},
+    {"path": "figures/round43_fig8_final_20260806_v2.sources.json", "role": "final-v2 source ledger", "bytes": 2809, "sha256": "9f93cefd0a0b91ebe74cd9fddce228960521b615508c6ec070dee038bdf22b3e", "check": "JSON source paths and hashes read"},
+    {"path": "figures/round43_fig8_final_20260806_v2.qa.json", "role": "final-v2 figure QA", "bytes": 316, "sha256": "2e3d7a6d90e402f16ff8f3e7532712c981ae6d8cc2fb0c3cbb263d154757d98e", "check": "status/pass gates read"},
+    {"path": "results/autoresearch_v5_20260806/round43_handoff_final_v2/handoff_summary.json", "role": "final-v2 handoff", "bytes": 2130, "sha256": "c99943636fc2ae3bd598f4e5ab55bf9420de0488b8edb8133bc6ccfa356c6498", "check": "production_ready/11-point coverage read"},
+    {"path": "results/autoresearch_v5_20260806/round43_handoff_final_v2/accepted11/manifest.json", "role": "accepted11 CV manifest", "bytes": 3248, "sha256": "2f826c2f19b403fb42c83b36694c2e91aaeed2ef8b6d54f9b61c9f44b5f5aa7c", "check": "instance/settings/acceptance read"},
+    {"path": "results/autoresearch_v5_20260806/round43_handoff_final_v2/accepted11/spectrum.csv", "role": "accepted11 CV spectrum", "bytes": 2010, "sha256": "0a47c81c3e50f0124cef3279b6bb2fe7fc0497d046c605b173b35bec2edcdea5", "rows": 11, "check": "CSV header/row count/missing token scan"},
+    {"path": "results/autoresearch_v5_20260806/round43_handoff_final_v2/cross_method/cross-method-check.json", "role": "CV-TEBD cross-method validator", "bytes": 3289, "sha256": "583cb4b449bf4b8341e69055915e4e8c595d13010414cea6fc5217f87875e484", "check": "normalization/coverage/budget read"},
+    {"path": "results/autoresearch_v5_20260806/round43_handoff_final_v2/cross_method/cross-method-check.csv", "role": "CV-TEBD shared-window check table", "bytes": 338, "sha256": "d61578008d8489d4feceb1cc94622899611bcd2b37dbf7dad85e64198c91bb29", "rows": 2, "check": "CSV header/row count/missing token scan"},
+    {"path": "results/autoresearch_v5_20260803/round26_qpi_tebd_production/cell-alpha023-qpi-dt00125-t30/manifest.json", "role": "historical qpi TEBD manifest", "bytes": 3226, "sha256": "cd8263f33183c5e6ed2bac67a7c44705796e137cd3c60d351ee1180ecaced2a4", "check": "eta/normalization/37-site provenance read"},
+    {"path": "results/autoresearch_v5_20260803/round26_qpi_tebd_production/cell-alpha023-qpi-dt00125-t30/spectrum.csv", "role": "historical qpi TEBD spectrum", "bytes": 1817, "sha256": "041ca821f3ace2a96a968fbe17ac2c137a0a9654f3257d887654196d112ca7e6", "rows": 61, "check": "CSV header/row count/missing token scan"},
+    {"path": "results/autoresearch_v5_20260806/round43_qpi_cv_lowfreq_desc_fetch_20260806_1815/cell-l40-qpi-lowfreq-desc/manifest.json", "role": "five low-frequency CV source-run manifest", "bytes": 3137, "sha256": "bdc3c801f0f41cac8049d287b495732e7ee98052522c6f603d5d4aec52e6d9d7", "check": "reported residual/validator/source hash read"},
+    {"path": "results/autoresearch_v5_20260806/round43_qpi_cv_lowfreq_desc_fetch_20260806_1815/cell-l40-qpi-lowfreq-desc/metrics.csv", "role": "five low-frequency CV diagnostics", "bytes": 650, "sha256": "ffac95d14226a7b57e9571c47bbf48b950ffef551441ce0c830f59c4effe55ce", "check": "max_cv_residual=0.0 read"},
+    {"path": "results/autoresearch_v5_20260806/round43_qpi_cv_lowfreq_desc_fetch_20260806_1815/cell-l40-qpi-lowfreq-desc/spectrum.csv", "role": "five low-frequency CV source spectrum", "bytes": 424, "sha256": "41728bee2fc6604c34223cd8c6955c4dbfa149d816fa889cd06e5b7383bfd79f", "rows": 5, "check": "reported zero residuals read"},
+    {"path": "scripts/autoresearch_v5/cv_dsf_resumable.jl", "role": "CV residual implementation provenance", "bytes": 17458, "sha256": "ce3fddb48ad141387d0276c73b982e0fb229b037123ff13e10bc3da75e828d61", "check": "matches production manifest code hash"},
+    {"path": "figures/fullq_minimal_eta020_20260808.png", "role": "full-q panel image", "bytes": 406856, "sha256": "8f3f81dea51542e20a60194688de44cd33e95c3079d0ec22f4966e2cc7b994eb", "check": "visual panel labels read"},
+    {"path": "figures/fullq_minimal_eta020_20260808.source.csv", "role": "full-q three-point summary source", "bytes": 468, "sha256": "94f153ec176bee5f6ce82d43d15d510b8aa4c4e2769e90544dfa571c37affe47", "rows": 3, "check": "CSV header/row count/missing field scan"},
+    {"path": "figures/fullq_minimal_eta020_20260808.sources.json", "role": "full-q source ledger", "bytes": 5077, "sha256": "2526a1b4fcbb0a438211fe42279e64834cacdd81cd6b6094de83728cd9bd0585", "check": "coarse/refined raw paths and hashes read"},
+    {"path": "figures/fullq_minimal_eta020_20260808.qa.json", "role": "full-q figure QA", "bytes": 546, "sha256": "743e36a6ba280266308875f359caa0c1324b3bbc74eb3f4e4f73647c3bdef6b7", "check": "status/pass and output QA read"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_handoff_eta020_20260808_1533/handoff_summary.json", "role": "full-q handoff", "bytes": 3220, "sha256": "ba1dfd5401a0e835c0aec6172509c77634d6a8f35858ed7be3b77c5174712a65", "check": "three pairs/pass summary read"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_handoff_eta020_20260808_1533/uniform_dt_crosscheck.json", "role": "uniform dt crosscheck", "bytes": 1757, "sha256": "8d1f912dd02ab2f2da88d37b8aac3ec5cef4dda15c641626288d616a354126e9", "check": "dt/peak/weight diagnostics read"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_handoff_eta020_20260808_1533/weak_dt_crosscheck.json", "role": "weak dt crosscheck", "bytes": 1769, "sha256": "745096544442e0f7d60bd0ea2e7c30981907f42cc40fb2d24c625943da81f571", "check": "dt/peak/weight diagnostics read"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_handoff_eta020_20260808_1533/agreement_dt_crosscheck.json", "role": "agreement dt crosscheck", "bytes": 1813, "sha256": "d0f8d6f5c21852526b336b23a9107ebbefee6fa0f01377b1418c00d786c5496c", "check": "dt/peak/weight diagnostics read"},
+    {"path": "scripts/autoresearch_v5/plot_minimal_fullq_campaign.py", "role": "full-q figure plotter", "bytes": 11495, "sha256": "ff365dae2c96115974cbdc6dd3a2367317462eac1c0d5862459374e524c28f05", "check": "refined/coarse loading rule read"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_final_campaign_eta020/fullq-uniform-dt025/manifest.json", "role": "uniform coarse manifest", "bytes": 3081, "sha256": "0db996c5b6045f889ba7e4fd384a0b5de7b8214d73ebbf3573867e81aa32625e", "check": "settings/acceptance read"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_final_campaign_eta020/fullq-uniform-dt025/spectrum_raw.csv", "role": "uniform coarse raw matrix", "bytes": 734280, "sha256": "d76dc761b2f2d2d51db4217c2997a7b99adc9f93041e511a57f9242ba8f7d8fa", "shape": [121, 301], "check": "headerless matrix shape/missing scan"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_final_campaign_eta020/fullq-uniform-dt0125/manifest.json", "role": "uniform refined manifest", "bytes": 3080, "sha256": "1fdc64d03e8d4e61a8062bdc8fdd137c49517e9cd94e25156af3877a1aa24468", "check": "settings/acceptance read"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_final_campaign_eta020/fullq-uniform-dt0125/spectrum_raw.csv", "role": "uniform refined raw matrix used by panel a", "bytes": 734334, "sha256": "5b676d5acb9f2f5826d13c2556b2e0f42684215fe1a29fc5b0ff34003e8ab9a6", "shape": [121, 301], "check": "headerless matrix shape/missing scan"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_final_campaign_eta020/fullq-weak-eta020-dt025/manifest.json", "role": "weak coarse manifest", "bytes": 3091, "sha256": "e6c5f775950f4fe54cf96693385e7e3c27476db37434599400973fc6a5baba6c", "check": "settings/acceptance read"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_final_campaign_eta020/fullq-weak-eta020-dt025/spectrum_raw.csv", "role": "weak coarse raw matrix", "bytes": 729794, "sha256": "67a1636d29cfc5587b87aa36aad387b4f3641dc67e73936ece48d20d26ca5d96", "shape": [121, 301], "check": "headerless matrix shape/missing scan"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_final_campaign_eta020/fullq-weak-eta020-dt0125/manifest.json", "role": "weak refined manifest", "bytes": 3091, "sha256": "4ff60f7e9b0224aea1384d0983c62d9c00171a517ad381ecb76d1886b6d9443b", "check": "settings/acceptance read"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_final_campaign_eta020/fullq-weak-eta020-dt0125/spectrum_raw.csv", "role": "weak refined raw matrix used by panel b", "bytes": 729795, "sha256": "d3a20d162788fa2200484fa60873cf06d31d741e88310a65f612a635e5ec1fea", "shape": [121, 301], "check": "headerless matrix shape/missing scan"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_final_campaign_eta020/fullq-agreement-eta020-dt025/manifest.json", "role": "agreement coarse manifest", "bytes": 3095, "sha256": "0b075dc3a898d357e5ba9504ecbda4f64c7750514cd8b4e2eaa17c25d4843dc2", "check": "settings/acceptance read"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_final_campaign_eta020/fullq-agreement-eta020-dt025/spectrum_raw.csv", "role": "agreement coarse raw matrix", "bytes": 737777, "sha256": "1f81bb48ffaf39a6528dff9b8e8d338e56417b72bef75f62ca8d04fef54d5859", "shape": [121, 301], "check": "headerless matrix shape/missing scan"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_final_campaign_eta020/fullq-agreement-eta020-dt0125/manifest.json", "role": "agreement refined manifest", "bytes": 3101, "sha256": "5c64ba4e4c5beee452ec7984b48e66984890eda4814c1f8cd8db75ba4d3f37f5", "check": "settings/acceptance read"},
+    {"path": "results/autoresearch_v5_20260807/minimal_fullq_final_campaign_eta020/fullq-agreement-eta020-dt0125/spectrum_raw.csv", "role": "agreement refined raw matrix used by panel c", "bytes": 737953, "sha256": "29fcaec8d468a8b5b53b697b8ffffef8cd42266a4b2648256a616fb951694e9c", "shape": [121, 301], "check": "headerless matrix shape/missing scan"}
+  ],
+  "figure_mapping": [
+    {"figure": "figures/round43_fig8_final_20260806_v2", "source_csv": "figures/round43_fig8_final_20260806_v2.source.csv", "source_role": "11-row CV-vs-historical-qpi-TEBD comparison; not a full spectrum matrix", "panel_labels": ["a Agreement", "b relative difference", "c PASS gates"], "status": "production_agreement", "claim_boundary": "one q=pi instance, eta=0.1, finite OBC normalization/window approximation"},
+    {"figure": "figures/fullq_minimal_eta020_20260808", "source_csv": "figures/fullq_minimal_eta020_20260808.source.csv", "source_role": "3-row point summary only; heatmaps use the six refined/coarse raw matrices listed above", "panel_labels": ["a uniform heatmap", "b weak heatmap", "c agreement heatmap", "d uniform q=pi dt pair", "e weak q=pi dt pair", "f agreement q=pi dt pair"], "status": "production_fullq_dt_crosschecked", "claim_boundary": "three points, eta differs by point, no all-q CV validation"}
+  ],
+  "csv_schema": {
+    "figures/round43_fig8_final_20260806_v2.source.csv": {"rows": 11, "header": "omega,cv_intensity,tebd_intensity,relative_delta,cv_residual,accepted", "units": "omega J1-scaled; intensity/residual retain source normalization; relative fields dimensionless", "missing_code": "none observed"},
+    "results/autoresearch_v5_20260806/round43_handoff_final_v2/accepted11/spectrum.csv": {"rows": 11, "header": "q_over_pi,omega,intensity,relative_residual,source_run", "units": "q_over_pi dimensionless; omega J1-scaled; intensity/residual source-normalized", "missing_code": "none observed"},
+    "results/autoresearch_v5_20260806/round43_handoff_final_v2/cross_method/cross-method-check.csv": {"rows": 2, "header": "method,observable,value,uncertainty,instance,tag", "units": "value/uncertainty retain validator observable normalization; instance/tag identifiers", "missing_code": "none observed"},
+    "results/autoresearch_v5_20260806/round43_qpi_cv_lowfreq_desc_fetch_20260806_1815/cell-l40-qpi-lowfreq-desc/spectrum.csv": {"rows": 5, "header": "q_over_pi,omega,intensity,relative_residual,solve_seconds,solution_maxdim", "units": "q_over_pi dimensionless; omega J1-scaled; solve_seconds seconds; solution_maxdim integer", "missing_code": "none observed"},
+    "results/autoresearch_v5_20260803/round26_qpi_tebd_production/cell-alpha023-qpi-dt00125-t30/spectrum.csv": {"rows": 61, "header": "q_over_pi,omega,intensity", "units": "q_over_pi dimensionless; omega J1-scaled; intensity source-normalized", "missing_code": "none observed"},
+    "figures/fullq_minimal_eta020_20260808.source.csv": {"rows": 3, "header": "point,alpha,beta,refined_positive_max,raw_negative_weight_fraction,overlay,beta_over_local_gap,qpi_peak_delta,low_weight_relative_delta", "units": "alpha/beta and ratios dimensionless; spectral fields retain source normalization", "missing_code": "one intentional empty beta_over_local_gap for uniform; no NaN/NA/null/None"},
+    "fullq_raw_spectrum_csvs": {"files": 6, "rows": 121, "columns": 301, "header": null, "units": "matrix values source-normalized; q/omega axes and eta supplied by manifests", "missing_code": "none observed in selected matrices"}
+  },
+  "qa": {
+    "selected_file_count": 36,
+    "hash_and_byte_evidence": true,
+    "source_ledgers_and_handoffs_read": true,
+    "panel_labels_visually_checked": true,
+    "fullq_raw_shape_check": "all six selected matrices are 121x301 and headerless",
+    "csv_missing_token_scan": "no NaN/NA/null/None tokens; one documented intentional empty summary field",
+    "cv_reported_zero_floor": "five low-frequency residuals are reported/clamped zero; implementation uses sqrt(max(residual_squared,0))/sqrt(bb); independent stable residual recheck pending",
+    "public_deposit_or_identifier": "not selected; local-only evidence",
+    "new_computation_or_download": false
+  },
+  "limitations": [
+    "Final-v2 is q=pi only at eta=0.1, with historical stored raw/pi normalization and finite OBC center-source/37-site window approximation.",
+    "Minimal full-q is a three-point dt cross-check: uniform eta=0.1, weak/agreement eta=0.2; eta is not dt and different widths/weak peaks are not directly quantitative across panels.",
+    "CV agreement is not every-q or thermodynamic/all-q convergence; this selected chain is not a public archive or scientific completion.",
+    "Reported residual zero is not proof of exact mathematical residual because stored code clamps non-negative; historical pass/acceptance records remain unchanged."
+  ]
+}

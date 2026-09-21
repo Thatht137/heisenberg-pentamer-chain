@@ -1,0 +1,18 @@
+{
+  "cells": 2,
+  "all_success": true,
+  "all_checksums_valid": true,
+  "all_states_present": true,
+  "max_variance_per_site": 2.7393554091759144e-11,
+  "strengthened_variance_target": 1e-09,
+  "strengthened_variance_pass": true,
+  "energy_density_difference": 4.1611158962950867e-13,
+  "string_order_relative_difference": 2.779393567777431e-06,
+  "initial_state_pass": true,
+  "max_final_energy_change": 1.2999379350731033e-11,
+  "prior_variance_per_site": 8.41227745240758e-09,
+  "variance_improvement_factor": 307.0896687676705,
+  "selected_cell": "cell-0002",
+  "selected_state": "results/autoresearch_v2_20260729/round2_alpha014_refinement/cells/cell-0002/state.jld2",
+  "round_pass": true
+}

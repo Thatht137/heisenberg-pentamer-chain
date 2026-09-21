@@ -1,0 +1,27 @@
+{
+  "backend": "Python/matplotlib",
+  "reference_mapping": {
+    "Fig. 4": "entanglement spectrum across five cuts"
+  },
+  "scope": {
+    "alpha_min": 0.0,
+    "alpha_max": 1.0,
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "alphas": [
+    0.14,
+    0.33
+  ],
+  "source_sha256": {
+    "data\\entanglement_spectrum\\spectrum_a0.14_b0.50_L080.csv": "387eeece8cc3ad594eee2e8a1b4851238ba993942e22f7e76cf6a40f41a503b9",
+    "data\\entanglement_spectrum\\spectrum_a0.33_b0.50_L080.csv": "6fb4329c1204a6e0f1aac54c0cb150e5e47330ef83ac42a45907fee52ed6d637"
+  },
+  "outputs": [
+    "figures\\reference_aligned_fig4_pentamer_positive_20260803.svg",
+    "figures\\reference_aligned_fig4_pentamer_positive_20260803.pdf",
+    "figures\\reference_aligned_fig4_pentamer_positive_20260803.png",
+    "figures\\reference_aligned_fig4_pentamer_positive_20260803.tiff"
+  ],
+  "interpretation": "正区有限尺寸纠缠谱的版式对应图；不把有限切口简并单独解释为相界。"
+}

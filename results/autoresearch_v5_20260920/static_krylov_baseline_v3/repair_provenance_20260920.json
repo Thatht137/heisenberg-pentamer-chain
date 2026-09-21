@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "kind": "static_krylov_baseline_v3_repair_provenance",
+  "status": "verified_local_postprocess",
+  "scope": "local_postprocess_only",
+  "repair": {
+    "source": "scripts/autoresearch_v5/static_krylov_control_inputs.py",
+    "change": "connected_quarter 仍由既有 helper 计算；仅用相同的 bond_class=0 且 distance_units=L//20 行与返回值配对",
+    "old_failure": "前置 raw metadata 行被错误地与 quarter_values 配对",
+    "regression": "含 target 5/10 前置行的 fixture 验证 target 20/60 坐标与 raw connected/staggered 值同源",
+    "regression_test_sha256": "33c023feba2dbe32139b2828ebb59c5de469f51e707c1807e8eb5f47e5495240",
+    "helper_logic_changed": false,
+    "scientific_data_changed": false
+  },
+  "inputs": {
+    "run_spec": {
+      "path": "results/autoresearch_v5_20260913/negative_phase_independent_pilot_r1/parameter-scan.run_spec.json",
+      "sha256": "8ddd22ef9e450c20a89a044bd15a644462d5656ac058ef552006aa2b3a041455"
+    },
+    "baseline_runs": [
+      "results/autoresearch_v5_20260913/negative_phase_independent_pilot_fetch_20260914_2243/negdiag-a01000-b02500-L080",
+      "results/autoresearch_v5_20260913/negative_phase_independent_pilot_fetch_20260914_2243/negdiag-a01750-b02500-L080"
+    ],
+    "prior_baseline": {
+      "path": "results/autoresearch_v5_20260919/static_krylov_baseline_v2",
+      "manifest_sha256": "c244e261cf965d2dd6e302159d627850cb3dbb178bab6369ef40498433a16f8e",
+      "note": "沿用现有 v2；未修改 v2 文件"
+    }
+  },
+  "verification": {
+    "test_commands": [
+      {
+        "command": "D:/Python3.12.4/python.exe -B -X utf8 scripts/autoresearch_v5/test_static_krylov_control_inputs.py",
+        "tests": 9,
+        "result": "pass"
+      },
+      {
+        "command": "D:/Python3.12.4/python.exe -B -X utf8 scripts/autoresearch_v5/test_static_krylov_candidate_adapter.py",
+        "tests": 10,
+        "result": "pass"
+      },
+      {
+        "command": "D:/Python3.12.4/python.exe -B -X utf8 scripts/autoresearch_v5/test_compare_static_krylov_controls.py",
+        "tests": 9,
+        "result": "pass"
+      }
+    ],
+    "nonconnected_measurement_hashes_equal_v2": true,
+    "staggered_connected_values_equal_v2": true,
+    "connected_rows": {
+      "count": 8,
+      "coordinates": "class0/reference_bond=40/target_bond=20,60/distance_units=4",
+      "raw_source_value_match": true
+    }
+  },
+  "generated_output": {
+    "path": "results/autoresearch_v5_20260920/static_krylov_baseline_v3",
+    "source_hashes_file": "source_hashes.json",
+    "source_hashes_sha256": "3a21b7df47586b1c83e9716bf5e0f28ffd60e5b52333b5b5b5bd5d38cafdef12",
+    "builder_sha256": "f75e1bde5fc4124f4915a5919e9c07c65dafcb97af8755e61d2d0c058ae3eade"
+  },
+  "remote_operations": false,
+  "new_julia": false
+}

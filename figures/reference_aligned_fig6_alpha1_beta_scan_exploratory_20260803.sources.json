@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "figure": "reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803",
+  "backend": "Python/matplotlib",
+  "reference_mapping": "Fig. 6: alpha=1 dynamic spectrum across beta",
+  "scope": {
+    "alpha": 1.0,
+    "betas": [
+      1.0,
+      0.7,
+      0.5,
+      0.4,
+      0.1
+    ],
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "status": "exploratory_not_production",
+  "display": {
+    "raw_data": true,
+    "smoothing": false,
+    "clip": false,
+    "vmin": 0.0,
+    "vmax": 5.60045385069828
+  },
+  "source_files": [
+    {
+      "path": "data/Sqw_tebd_pentamer_alpha=1.0_beta=1.0.csv",
+      "sha256": "bf9f8306276c324e50ec798e0acd981687786199eb01394c0ab0b9e384ec8a34"
+    },
+    {
+      "path": "data/Sqw_tebd_pentamer_alpha=1.0_beta=0.7.csv",
+      "sha256": "e9d437008dea2a160d6096d4f2b75aad7152b022840fac3b3d66001fedaba433"
+    },
+    {
+      "path": "data/Sqw_tebd_pentamer_alpha=1.0_beta=0.5.csv",
+      "sha256": "bb99a76c5b15fe7f4a346174c3fad18602ab1692e655cdf62bdd9f3108b8ce1e"
+    },
+    {
+      "path": "data/Sqw_tebd_pentamer_alpha=1.0_beta=0.4.csv",
+      "sha256": "e769196f3135c19d8fcb449de01dbe1ae165f6fc36423fa43ff6b4e92f443ff2"
+    },
+    {
+      "path": "data/Sqw_tebd_pentamer_alpha=1.0_beta=0.1.csv",
+      "sha256": "79310426d53ae3996441320f9ef1fe73c79481f87362469b1aa61397fe9069b4"
+    }
+  ],
+  "outputs": [
+    "figures/reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.svg",
+    "figures/reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.pdf",
+    "figures/reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.png",
+    "figures/reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.tiff"
+  ],
+  "interpretation": "只复刻参考图的 beta 多面板角色；数据为既有探索性 alpha=1 TEBD 网格，不用于最终动态门或谱支命名。"
+}

@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "cell_id": "negb14-a0750-b0250-L040-ferro_j2",
+  "status": "success",
+  "accepted": true,
+  "params": {
+    "path_id": "negb14-a0750-b0250-L040",
+    "group": 0,
+    "role": "ridge",
+    "alpha": -0.75,
+    "beta": 0.25,
+    "L": 40,
+    "n_units": 8
+  },
+  "settings": {
+    "method": "finite_dmrg",
+    "boundary": "OBC",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim": 800,
+    "nsweeps": 32,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "init_mode_sz0": "ferro_j2",
+    "init_mode_sz1": "center",
+    "q_count": 401,
+    "noise_profile": "legacy",
+    "random_seed": 20260811,
+    "variance_per_site_max": 5e-08
+  },
+  "observables": {
+    "energy_sz0": -11.120627620225346,
+    "energy_sz1": -11.119092784099935,
+    "spin_gap": 0.0015348361254101661,
+    "structure_factor_ratio": -0.012696477136444617,
+    "structure_factor_pi": 0.3123012446941609,
+    "structure_factor_q1": 0.3162663703071035,
+    "structure_factor_window_sites": 32.0,
+    "structure_factor_peak_q": 1.9006635554218247,
+    "structure_factor_peak_q_over_pi": 0.605,
+    "structure_factor_peak": 0.6997280917765658,
+    "dominant_structure_factor_ratio": 0.4766108857743184,
+    "structure_factor_peak_ratio": 0.4766108857743184,
+    "dominant_structure_factor_ratio_mode": "symmetric"
+  },
+  "diagnostics": {
+    "variance_per_site_sz0": 8.459082323497569e-11,
+    "variance_per_site_sz1": 4.688232024818717e-11,
+    "actual_maxdim_sz0": 216.0,
+    "actual_maxdim_sz1": 156.0,
+    "max_truncation_error_sz0": 2.0423887249280006e-11,
+    "max_truncation_error_sz1": 9.999569068184597e-12,
+    "final_truncation_error_sz0": 9.991745968702948e-12,
+    "final_truncation_error_sz1": 9.980376344631698e-12,
+    "final_energy_change_sz0": 9.243660059610193e-09,
+    "final_energy_change_sz1": 1.7763568394002505e-15,
+    "total_sz0": 2.4724146341359443e-15,
+    "total_sz1": 1.0000000000000013,
+    "algorithm_seconds_sz0": 132.463721036911,
+    "algorithm_seconds_sz1": 47.71916604042053,
+    "measurement_seconds": 5.680354833602905,
+    "initial_seed_sz0": 20261798.0,
+    "initial_seed_sz1": -1.0,
+    "peak_rss_kb": 1176448
+  },
+  "acceptance": {
+    "execution_success": true,
+    "variance_sz0_per_site_le_5e-08": true,
+    "variance_sz1_per_site_le_5e-08": true,
+    "truncation_sz0_le_1e-9": true,
+    "truncation_sz1_le_1e-9": true,
+    "sz0_sector": true,
+    "sz1_sector": true,
+    "nonnegative_gap": true,
+    "all_sweeps_completed": true,
+    "fullq_file": true,
+    "fullq_count": true,
+    "measurement_files": true
+  },
+  "provenance": {
+    "source_commit": "uploaded-stage-b-negative-coarse-r14-remaining65-20260829",
+    "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "hostname": "c104-ysu",
+    "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "julia_version": "1.12.3",
+    "julia_pkg_offline": true,
+    "negative_alpha_included": true,
+    "negative_alpha_bounds": [
+      -1.0,
+      0.0
+    ],
+    "noise_protocol": "legacy",
+    "acceptance_policy": "practical_v2",
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+      "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+      "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+    }
+  },
+  "timing": {
+    "started_at": "2026-08-31T12:32:35.368052+00:00",
+    "finished_at": "2026-08-31T12:37:54.028922+00:00"
+  },
+  "returncode": 0
+}

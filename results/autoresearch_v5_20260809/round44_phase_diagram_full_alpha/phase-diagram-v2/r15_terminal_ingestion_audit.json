@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "terminal": "failed_calibration_final_tier",
+  "controller_counts": {
+    "success": 14,
+    "failed": 0,
+    "pending": 2
+  },
+  "calibration_accepted_total": 6,
+  "controller_unchanged": true,
+  "r14_and_earlier_provenance_preserved": true,
+  "thresholds_relaxed": false,
+  "crossing_assigned": false,
+  "phase_label_assigned": false
+}

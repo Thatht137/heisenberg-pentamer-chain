@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "launch_ready": true,
+  "cell_count": 10,
+  "concurrency": 1,
+  "offline": true,
+  "eta_hours": {
+    "low": 5,
+    "high": 8
+  },
+  "run_spec_sha256": "11515393af99f6678db47d88761967725aaecf1d41dde46c22de2d05df05c177",
+  "source_hashes_sha256": "1c30107400a827450638994b45e5b340ff9c57517bc48a9507f6ae9208fe4542",
+  "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+  "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+  "r4_validation_summary_sha256": "25ba1829cb26f7e6382a8d2de258e2a7702c7e7da6a0485c4f21860fc91ce3bc",
+  "r4_ingestion_summary_sha256": "ab7e2c32f2b8157690c06d343aaf6dc363ad7df31db1b49b9cd48842c7cec5e9",
+  "thresholds_relaxed": false
+}

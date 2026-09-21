@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "accepted",
+  "cell_id": "nega-r2-a0350-b0500-L060",
+  "accepted_key": {
+    "alpha": -0.35,
+    "beta": 0.5,
+    "L": 60
+  },
+  "counts": {
+    "validator_pass": 1,
+    "controller_accepted": 1,
+    "controller_failed": 0,
+    "controller_success_total": 8,
+    "controller_pending_total": 8
+  },
+  "validation_summary": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r2-a0350-L060-20260810-1311/validation/summary.json",
+    "sha256": "59c0b36b203cab92b2f8b8b532e4f77bbdbfc6d1c68dd12fa9cd3fa44b4e0356"
+  },
+  "handoff_summary": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r2-a0350-L060-20260810-1311/handoff_summary.json",
+    "sha256": "13f1fa5fc154155bd1699700112161445a2c139cdc21ba244c53266720afbf17"
+  },
+  "r1_failure": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/validation/nega-r1-a0350-b0500-L060.json",
+    "artifact_sha256": "161e354edb5eb94a8e766d8878435f1f2616cacaea82628e8ddc2d90b6d8ad80",
+    "preserved_in_observation": true
+  },
+  "r2_receipt": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r2-a0350-L060-20260810-1311/receipts/nega-r2-a0350-b0500-L060.json",
+    "sha256": "042b592fc9d4c8a5b06ee0d82ab3b457d499eaf4f73072386ebfc3767387e0d4"
+  },
+  "controller": {
+    "status": "WAITING",
+    "reason": "8 registered cells remain pending",
+    "report": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/report.json",
+    "report_sha256": "a93019936e6f390cc7f8ef081cd6cb53236e169ab5249a8e7b9140bba1d29cbe",
+    "phase_boundary_ready": false,
+    "phase_label": "not_assigned"
+  },
+  "interpretation": "仅更新 accepted-only observation；不得据此伪造 crossing 或相名"
+}

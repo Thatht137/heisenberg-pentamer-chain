@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "summary": "4 pass/0 fail",
+  "records": [
+    {
+      "cell_id": "negb20-a0025-b1000-L040",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r20_negb20-a0025-b1000-L040_validation_practical_v2_20260908.json",
+      "validation_sha256": "059da8ba7af3807168805f11b7d0930766f1273adee2701be363eac0582a25fe",
+      "receipt": "results/research_progress/stage_b_r20_negb20-a0025-b1000-L040_fetch_receipt_20260908.json",
+      "receipt_sha256": "84c5a56a81de4894d9c6a6c5282b6cfcfadd5bdad95fc261fdc1dea15a1af1a7",
+      "manifest": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r20-remaining4-20260908-1430/negb20-a0025-b1000-L040/manifest.json",
+      "manifest_sha256": "9b9ce1a849697d3d9d45f0b63f77288866542f840fd306b9a0da5c3d5b8b65dc"
+    },
+    {
+      "cell_id": "negb20-a0025-b1000-L060",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r20_negb20-a0025-b1000-L060_validation_practical_v2_20260908.json",
+      "validation_sha256": "a5b259e7529be8ef33dacfbb30f193d0770b376ad5a54d8aa41ca57a7ff72164",
+      "receipt": "results/research_progress/stage_b_r20_negb20-a0025-b1000-L060_fetch_receipt_20260908.json",
+      "receipt_sha256": "b1f1d8422759349b94b7cb52076aa949a1bc2efe57fde5441f13813c355c6bf4",
+      "manifest": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r20-remaining4-20260908-1430/negb20-a0025-b1000-L060/manifest.json",
+      "manifest_sha256": "7731b2a74210d7eed5e6881966d7bf391d65af7b07ff04bfc2ef375587d4438a"
+    },
+    {
+      "cell_id": "negb20-a0050-b1000-L040",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r20_negb20-a0050-b1000-L040_validation_practical_v2_20260908.json",
+      "validation_sha256": "509eb99bab00c48be0865e5cd439bc84c8d6f4a365c13acec8c0bf1611900de5",
+      "receipt": "results/research_progress/stage_b_r20_negb20-a0050-b1000-L040_fetch_receipt_20260908.json",
+      "receipt_sha256": "c2fb00fec8edac6f9f8e7475b0525ada91a6b54efc8ef9f1fa9e98d8cc10e31d",
+      "manifest": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r20-remaining4-20260908-1430/negb20-a0050-b1000-L040/manifest.json",
+      "manifest_sha256": "1ad279dd27ef726dc2cdb3e604fecc457b2b3a4c687cd806444d32198824fb8f"
+    },
+    {
+      "cell_id": "negb20-a0050-b1000-L060",
+      "status": "pass",
+      "validation": "results/research_progress/stage_b_r20_negb20-a0050-b1000-L060_validation_practical_v2_20260908.json",
+      "validation_sha256": "fe7366fc9093147f6d3ced763ad809e4262cf3d7b716a9cffdf6c64f0611df1d",
+      "receipt": "results/research_progress/stage_b_r20_negb20-a0050-b1000-L060_fetch_receipt_20260908.json",
+      "receipt_sha256": "13b215df0ef29ad6273c1539dd007544d6c6c9417198f45b5a45f839c3f8e255",
+      "manifest": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r20-remaining4-20260908-1430/negb20-a0050-b1000-L060/manifest.json",
+      "manifest_sha256": "99270795925931ed234a779d54b3662b828ca744533163a85442a58c6e0fdcc5"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "figure": "c11_candidate_trends_20260804",
+  "backend": "Python/matplotlib",
+  "claim": "C11 候选点的 R(L) 尺寸变化可视化。",
+  "boundary": "有限尺寸诊断，不定义相界。",
+  "source_files": [
+    {
+      "path": "results/research_progress/c11_candidate_matrix_20260804.json",
+      "sha256": "dc75b7c5f65f2dc530e9d1150e4fa9a10fba8c1399f7f2cd5c9abedb814d775b"
+    }
+  ],
+  "exports": [
+    "figures/c11_candidate_trends_20260804.svg",
+    "figures/c11_candidate_trends_20260804.pdf",
+    "figures/c11_candidate_trends_20260804.png",
+    "figures/c11_candidate_trends_20260804.tiff"
+  ],
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

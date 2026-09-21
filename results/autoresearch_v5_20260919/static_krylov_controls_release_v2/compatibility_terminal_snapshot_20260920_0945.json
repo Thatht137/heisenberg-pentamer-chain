@@ -1,0 +1,222 @@
+{
+  "schema": "static_krylov_controls_release_v2/compatibility_terminal_snapshot/v1",
+  "snapshot_time_cst": "2026-09-20T09:48:44+08:00",
+  "status": "terminal_success",
+  "scope": "heartbeat 只读终态检查；不启动、不重启、不取消、不修改远端文件",
+  "target": {
+    "host": "39.96.207.180",
+    "port": 6000,
+    "account": "wangjieren",
+    "release_root": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2",
+    "run_dir": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2/results/autoresearch_v5_20260919/static_krylov_controls_r2",
+    "run_spec": "results/autoresearch_v5_20260919/static_krylov_controls_r2/parameter-scan.run_spec.json"
+  },
+  "remote_action": {
+    "ssh_attempts": 1,
+    "ssh_reconnects": 0,
+    "action": "single read-only SSH snapshot",
+    "observed_remote_time": "2026-09-20T09:48:44+08:00",
+    "remote_write": false
+  },
+  "state_files": {
+    "supervisor_status.json": {
+      "present": true,
+      "bytes": 142,
+      "mtime_cst": "2026-09-20 08:55:36.826711167 +0800",
+      "status": "completed",
+      "returncode": 0,
+      "pid": 294499,
+      "pgid": 294499,
+      "finished_at_epoch": 1789865736.8277931
+    },
+    "run_status.json": {
+      "present": true,
+      "bytes": 272,
+      "mtime_cst": "2026-09-20 08:55:36.813711168 +0800",
+      "status": "success",
+      "finished_at_utc": "2026-09-20T00:55:36.814944+00:00",
+      "completed": [
+        "negdiag-a01000-b02500-L080-k08",
+        "negdiag-a01750-b02500-L080-k08"
+      ],
+      "cell_count": 2,
+      "eigsolve_krylovdim": 8,
+      "eigsolve_maxiter": 1,
+      "eigsolve_tol": 1e-14
+    },
+    "session.receipt": {
+      "present": true,
+      "bytes": 1085,
+      "mtime_cst": "2026-09-20 07:40:36.286867654 +0800",
+      "batch_pid": 294499,
+      "batch_pgid": 294499,
+      "started_at_epoch": 1789861236.2878916,
+      "run_spec": "parameter-scan.run_spec.json",
+      "expected_julia_version": "1.12.3",
+      "source_commit": "static-krylov-controls-release-v2"
+    },
+    "batch.timeout": {
+      "present": false,
+      "note": "未观察到超时文件"
+    }
+  },
+  "process_identity": {
+    "active_matching_processes": [],
+    "historical_pid_checks": [
+      {
+        "pid": 294213,
+        "expected": "static_krylov_supervisor.py",
+        "observed": "absent"
+      },
+      {
+        "pid": 294499,
+        "expected": "run_negative_phase_structure_batch.py",
+        "observed": "absent"
+      },
+      {
+        "pid": 294507,
+        "expected": "negative_static_cell.jl",
+        "observed": "absent"
+      }
+    ],
+    "note": "按当前精确命令身份核验，未把历史 PID 当作仍在运行"
+  },
+  "cells": [
+    {
+      "cell_id": "negdiag-a01000-b02500-L080-k08",
+      "status": "success",
+      "accepted": true,
+      "returncode": 0,
+      "progress_json_bytes": 1707,
+      "started_at_utc": "2026-09-19T23:40:36.379850+00:00",
+      "finished_at_utc": "2026-09-20T00:14:38.444176+00:00",
+      "elapsed_seconds": 2042.066,
+      "children": [
+        {
+          "cell_id": "negdiag-a01000-b02500-L080-k08-center",
+          "status": "success",
+          "accepted": true,
+          "returncode": 0,
+          "last_sweep": 64,
+          "requested_sweeps": 64,
+          "started_at_utc": "2026-09-19T23:40:36.447012+00:00",
+          "finished_at_utc": "2026-09-19T23:57:56.701762+00:00",
+          "elapsed_seconds": 1040.256,
+          "progress_json_bytes": 539,
+          "stdout_bytes": 11020,
+          "stderr_bytes": 0
+        },
+        {
+          "cell_id": "negdiag-a01000-b02500-L080-k08-ferro_j2",
+          "status": "success",
+          "accepted": true,
+          "returncode": 0,
+          "last_sweep": 64,
+          "requested_sweeps": 64,
+          "started_at_utc": "2026-09-19T23:57:56.828872+00:00",
+          "finished_at_utc": "2026-09-20T00:14:38.412758+00:00",
+          "elapsed_seconds": 1001.585,
+          "progress_json_bytes": 541,
+          "stdout_bytes": 11031,
+          "stderr_bytes": 0
+        }
+      ]
+    },
+    {
+      "cell_id": "negdiag-a01750-b02500-L080-k08",
+      "status": "success",
+      "accepted": true,
+      "returncode": 0,
+      "progress_json_bytes": 1707,
+      "started_at_utc": "2026-09-20T00:14:38.503655+00:00",
+      "finished_at_utc": "2026-09-20T00:55:36.796265+00:00",
+      "elapsed_seconds": 2458.294,
+      "children": [
+        {
+          "cell_id": "negdiag-a01750-b02500-L080-k08-center",
+          "status": "success",
+          "accepted": true,
+          "returncode": 0,
+          "last_sweep": 64,
+          "requested_sweeps": 64,
+          "started_at_utc": "2026-09-20T00:14:38.565828+00:00",
+          "finished_at_utc": "2026-09-20T00:35:14.633599+00:00",
+          "elapsed_seconds": 1236.068,
+          "progress_json_bytes": 539,
+          "stdout_bytes": 11066,
+          "stderr_bytes": 0
+        },
+        {
+          "cell_id": "negdiag-a01750-b02500-L080-k08-ferro_j2",
+          "status": "success",
+          "accepted": true,
+          "returncode": 0,
+          "last_sweep": 64,
+          "requested_sweeps": 64,
+          "started_at_utc": "2026-09-20T00:35:14.732457+00:00",
+          "finished_at_utc": "2026-09-20T00:55:36.760711+00:00",
+          "elapsed_seconds": 1222.029,
+          "progress_json_bytes": 541,
+          "stdout_bytes": 11038,
+          "stderr_bytes": 0
+        }
+      ]
+    }
+  ],
+  "checksums": {
+    "validation": "sha256sum -c",
+    "files_checked": [
+      "cells/negdiag-a01000-b02500-L080-k08/checksums.sha256",
+      "cells/negdiag-a01000-b02500-L080-k08/start_center/checksums.sha256",
+      "cells/negdiag-a01000-b02500-L080-k08/start_ferro_j2/checksums.sha256",
+      "cells/negdiag-a01750-b02500-L080-k08/checksums.sha256",
+      "cells/negdiag-a01750-b02500-L080-k08/start_center/checksums.sha256",
+      "cells/negdiag-a01750-b02500-L080-k08/start_ferro_j2/checksums.sha256"
+    ],
+    "all_exit_codes": 0,
+    "missing_checksums": [],
+    "result": "all observed parent/child checksum manifests passed"
+  },
+  "logs": {
+    "batch.stdout.log": {
+      "bytes": 0,
+      "tail": "empty"
+    },
+    "batch.stderr.log": {
+      "bytes": 0,
+      "tail": "empty"
+    },
+    "compatlauncher.stdout.log": {
+      "bytes": 72,
+      "tail": "{\"status\": \"completed\", \"returncode\": 0, \"pid\": 294499, \"pgid\": 294499}"
+    },
+    "compatlauncher.stderr.log": {
+      "bytes": 0,
+      "tail": "empty"
+    },
+    "cell_stderr_logs": "all four child stderr.log files were 0 bytes",
+    "cell_stdout_tail": "all four child stdout logs ended with NEGATIVE_STATIC_SUCCESS at sweep 64"
+  },
+  "resource_and_fetch_preview": {
+    "active_processes": false,
+    "elapsed_seconds_from_cells": {
+      "first_cell": 2042.066,
+      "second_cell": 2458.294,
+      "sequential_total": 4500.36
+    },
+    "du_raw_observation": "112M  /home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2",
+    "run_du_separate": "remote du invocation did not emit separate nested run/cells lines; no size inferred",
+    "filesystem": "/dev/sdb1 3.6T 3.2T 216G 94% /home",
+    "memory_available": "约 998GiB",
+    "fetch_source_preview": "run_dir above; no fetch or transfer performed"
+  },
+  "safety": {
+    "launcher_started": false,
+    "launcher_restarted": false,
+    "job_cancelled": false,
+    "remote_files_modified": false,
+    "other_qec_tasks_touched": false,
+    "slurm_used": false,
+    "secrets_recorded": false
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "run_id": "stage-a-beta050-calibration-r19-remaining2",
+  "counts": {
+    "pass": 2,
+    "fail": 0
+  },
+  "cells": [
+    {
+      "cell_id": "nega-r19-a0025-b0500-L060",
+      "status": "pass",
+      "validation_sha256": "f0a79b9915e78ff24dd8a0749de6cb4c16c4a512fd89974f055f393968cb636c",
+      "receipt_sha256": "4092c0fdf33e9069868fb6d2e20fa57d64b653da160b393b31945672ccb34262"
+    },
+    {
+      "cell_id": "nega-r19-a0025-b0500-L080",
+      "status": "pass",
+      "validation_sha256": "d4ece38770b836a8529a77bf8d0838f51179751f292c16418937d37fbd8539f6",
+      "receipt_sha256": "5251ac1d9a95a72ba5140521e658ae9901b78f1a453604f9ca43784310f33c7b"
+    }
+  ],
+  "remote_checksums": "pass",
+  "local_checksums": "pass",
+  "non_clobbering": true,
+  "thresholds_relaxed": false
+}

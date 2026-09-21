@@ -1,0 +1,6 @@
+diagnostic,value,budget,accepted
+energy_density_abs,5.551115123125783e-17,1e-10,True
+spin_gap_abs,4.440892098500626e-16,1e-08,True
+string_profile_abs,2.7755575615628914e-17,1e-05,True
+bond_correlation_abs,6.661338147750939e-16,1e-05,True
+schmidt_probability_l1,3.6339610791011334e-15,0.0001,True

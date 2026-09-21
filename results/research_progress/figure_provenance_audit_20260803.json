@@ -1,0 +1,553 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-03",
+  "status": "pass",
+  "synced_previews": [],
+  "report_figures": [
+    {
+      "section": "2026-08-04 C11 候选点有限尺寸趋势",
+      "src": "c11_candidate_trends_20260804.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-04 正区 crossing guard 留一 beta 稳健性",
+      "src": "../../figures/positive_phase_guard_margin_20260804.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-04 Fig.7 正 alpha pilot 定量峰值诊断",
+      "src": "../../figures/reference_aligned_fig7_pilot_quantitative_20260804.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-04 q=pi L=40 已有数据独立重分析",
+      "src": "../../figures/qpi_tebd_local_reanalysis_20260804.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-04 round31 CV 扩展残差—成本离线诊断",
+      "src": "qpi_cv_extension_residual_cost_diagnostic_20260804.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-04 L=40/L=80 CV 锚点尺寸比较",
+      "src": "../../figures/cv_anchor_size_comparison_20260804.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-04 正区有限尺寸差摘要图",
+      "src": "../../figures/positive_phase_delta_summary_20260804.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-04 CV--TEBD 动力学门覆盖审计",
+      "src": "../../figures/cv_tebd_gate_coverage_20260804.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-04 参考 Fig. 7 正 alpha 路径诊断图",
+      "src": "reference_aligned_fig7_positive_alpha_pilot_20260804.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-03 参考 Fig. 6 正区 beta 扫描诊断图",
+      "src": "reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-03 maxdim=96 终态验收与参考图动态谱",
+      "src": "qpi_tebd_maxdim96_production_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-03 参考图一一对应版 Fig. 4--8",
+      "src": "reference_aligned_fig4_pentamer_positive_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-03 参考图一一对应版 Fig. 4--8",
+      "src": "pentamer_model_effective_chain_20260731.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-03 参考图一一对应版 Fig. 4--8",
+      "src": "pentamer_momentum_filter_20260731.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-03 参考图一一对应版 Fig. 4--8",
+      "src": "qpi_tebd_maxdim96_production_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-03 参考图一一对应版 Fig. 1--3",
+      "src": "reference_aligned_fig1_pentamer_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-03 参考图一一对应版 Fig. 1--3",
+      "src": "reference_aligned_fig2_pentamer_positive_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-03 参考图一一对应版 Fig. 1--3",
+      "src": "reference_aligned_fig3_pentamer_positive_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-03 参考图一一对应版 Fig. 1--2",
+      "src": "reference_aligned_fig1_pentamer_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-03 参考图一一对应版 Fig. 1--2",
+      "src": "reference_aligned_fig2_pentamer_positive_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-03 21:12 严格 q=pi L=40 生产回传与真实谱",
+      "src": "../../figures/qpi_tebd_production_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-03 19:47 严格 q=pi TEBD 时域误差缩放",
+      "src": "qpi_tebd_ed_diagnostic_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-03 14:01 服务器占用与本机测试复核",
+      "src": "anchor_heartbeat_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "计算等待期：已有结果可先分析",
+      "src": "positive_region_evidence_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "L=40 CV 三频点：信号、残差与求解成本",
+      "src": "cv_triplet_cost_quality_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "L=40 CV 三频点与有效链连续谱边界（受限叠加）",
+      "src": "cv_continuum_overlay_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "TEBD pilot 审计与交叉检查准备",
+      "src": "positive_tebd_pilot_audit_20260803.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "模型与激发机制正式图",
+      "src": "pentamer_model_effective_chain_20260731.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "模型与激发机制正式图",
+      "src": "pentamer_momentum_filter_20260731.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "纠缠标度与中心荷",
+      "src": "entanglement_claim_overview_20260730.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "局域激发的动量过滤",
+      "src": "local_spectral_channels_20260730.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "有效理论适用范围",
+      "src": "validation_overview.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "连续谱与局域四重态",
+      "src": "effective_continuum_overlap_20260730.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "正区静态候选与弦关联审计",
+      "src": "positive_static_selection_20260730.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "正区静态候选与弦关联审计",
+      "src": "positive_string_distance_20260730.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "有效能隙有限尺寸复核",
+      "src": "effective_gap_scaling_20260731.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "二阶虚激发诱导有效挫折",
+      "src": "schrieffer_wolff_second_order_20260731.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "L=80 尺寸晋级与相图最终验收",
+      "src": "positive_phase_size_promotion_20260802.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "正区扩展相图网格验收",
+      "src": "positive_phase_mesh_size_differences_20260802.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-04 本地交接演练与图件状态",
+      "src": "../../figures/c11_candidate_trends_20260804.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    },
+    {
+      "section": "2026-08-04 本地交接演练与图件状态",
+      "src": "../../figures/qpi_tebd_local_reanalysis_20260804.png",
+      "exists": true,
+      "caption_present": true,
+      "raster_error": "No module named 'PIL'"
+    }
+  ],
+  "report_missing": [],
+  "caption_missing": [],
+  "sidecars": [
+    {
+      "sidecar": "anchor_heartbeat_20260803.sources.json",
+      "figure": "anchor_heartbeat_20260803",
+      "backend": "diagnostic/unspecified",
+      "sources_checked": 10,
+      "exports_checked": 0
+    },
+    {
+      "sidecar": "c11_candidate_trends_20260804.sources.json",
+      "figure": "c11_candidate_trends_20260804",
+      "backend": "Python/matplotlib",
+      "sources_checked": 1,
+      "exports_checked": 4
+    },
+    {
+      "sidecar": "cv_continuum_overlay_20260803.sources.json",
+      "figure": "cv_continuum_overlay_20260803",
+      "backend": "Python/matplotlib",
+      "sources_checked": 5,
+      "exports_checked": 4
+    },
+    {
+      "sidecar": "cv_triplet_cost_quality_20260803.sources.json",
+      "figure": "cv_triplet_cost_quality_20260803",
+      "backend": "Python/matplotlib",
+      "sources_checked": 2,
+      "exports_checked": 4
+    },
+    {
+      "sidecar": "pentamer_model_effective_chain_20260731.sources.json",
+      "figure": "pentamer_model_effective_chain_20260731",
+      "backend": "Python/matplotlib",
+      "sources_checked": 3,
+      "exports_checked": 4
+    },
+    {
+      "sidecar": "pentamer_momentum_filter_20260731.sources.json",
+      "figure": "pentamer_momentum_filter_20260731",
+      "backend": "Python/matplotlib",
+      "sources_checked": 3,
+      "exports_checked": 4
+    },
+    {
+      "sidecar": "positive_phase_guard_margin_20260804.sources.json",
+      "figure": "positive_phase_guard_margin_20260804",
+      "backend": "Python/matplotlib",
+      "sources_checked": 1,
+      "exports_checked": 0
+    },
+    {
+      "sidecar": "positive_region_evidence_20260803.sources.json",
+      "figure": "positive_region_evidence_20260803",
+      "backend": "Python/matplotlib",
+      "sources_checked": 8,
+      "exports_checked": 4
+    },
+    {
+      "sidecar": "qpi_cv_extension_residual_cost_diagnostic_20260804.sources.json",
+      "figure": "qpi_cv_extension_residual_cost_diagnostic_20260804",
+      "backend": "Python/matplotlib",
+      "sources_checked": 4,
+      "exports_checked": 4
+    },
+    {
+      "sidecar": "qpi_tebd_ed_diagnostic_20260803.sources.json",
+      "figure": "qpi_tebd_ed_diagnostic_20260803",
+      "backend": "Python/matplotlib",
+      "sources_checked": 7,
+      "exports_checked": 4
+    },
+    {
+      "sidecar": "qpi_tebd_local_reanalysis_20260804.sources.json",
+      "figure": "qpi_tebd_local_reanalysis_20260804",
+      "backend": "Python matplotlib only",
+      "sources_checked": 4,
+      "exports_checked": 4
+    },
+    {
+      "sidecar": "qpi_tebd_maxdim96_production_20260803.sources.json",
+      "figure": "qpi_tebd_maxdim96_production_20260803",
+      "backend": "Python matplotlib only",
+      "sources_checked": 4,
+      "exports_checked": 4
+    },
+    {
+      "sidecar": "qpi_tebd_production_20260803.sources.json",
+      "figure": "qpi_tebd_production_20260803",
+      "backend": "Python matplotlib only",
+      "sources_checked": 4,
+      "exports_checked": 4
+    },
+    {
+      "sidecar": "reference_aligned_fig3_pentamer_positive_20260803.sources.json",
+      "figure": "reference_aligned_fig3_pentamer_positive_20260803",
+      "backend": "Python/matplotlib",
+      "sources_checked": 0,
+      "exports_checked": 0
+    },
+    {
+      "sidecar": "reference_aligned_fig4_pentamer_positive_20260803.sources.json",
+      "figure": "reference_aligned_fig4_pentamer_positive_20260803",
+      "backend": "Python/matplotlib",
+      "sources_checked": 2,
+      "exports_checked": 0
+    },
+    {
+      "sidecar": "reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.sources.json",
+      "figure": "reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803",
+      "backend": "Python/matplotlib",
+      "sources_checked": 5,
+      "exports_checked": 0
+    },
+    {
+      "sidecar": "reference_aligned_fig7_pilot_quantitative_20260804.sources.json",
+      "figure": "reference_aligned_fig7_pilot_quantitative_20260804",
+      "backend": "Python/matplotlib",
+      "sources_checked": 3,
+      "exports_checked": 0
+    },
+    {
+      "sidecar": "reference_aligned_fig7_positive_alpha_pilot_20260804.sources.json",
+      "figure": "reference_aligned_fig7_positive_alpha_pilot_20260804",
+      "backend": "Python/matplotlib",
+      "sources_checked": 3,
+      "exports_checked": 0
+    },
+    {
+      "sidecar": "reference_aligned_figures_20260803.sources.json",
+      "figure": "reference_aligned_figures_20260803",
+      "backend": "Python/matplotlib",
+      "sources_checked": 0,
+      "exports_checked": 0
+    }
+  ],
+  "source_entries": 69,
+  "export_entries": 44,
+  "source_missing": [],
+  "source_mismatches": [],
+  "warnings": [
+    "anchor_heartbeat_20260803.sources.json:诊断图 sidecar 未声明绘图后端"
+  ],
+  "vector": {
+    "svg_files": 28,
+    "svg_with_editable_text": 27,
+    "svg_text_nodes": {
+      "anchor_heartbeat_20260803.svg": 0,
+      "c11_candidate_trends_20260804.svg": 33,
+      "cv_anchor_size_comparison_20260804.svg": 32,
+      "cv_continuum_overlay_20260803.svg": 41,
+      "cv_tebd_gate_coverage_20260804.svg": 19,
+      "cv_triplet_cost_quality_20260803.svg": 52,
+      "effective_continuum_overlap_20260730.svg": 33,
+      "negative_correlation_continuation_b0.5.svg": 66,
+      "pentamer_model_effective_chain_20260731.svg": 47,
+      "pentamer_momentum_filter_20260731.svg": 51,
+      "positive_phase_delta_summary_20260804.svg": 29,
+      "positive_phase_guard_margin_20260804.svg": 76,
+      "positive_region_evidence_20260803.svg": 112,
+      "positive_tebd_pilot_audit_20260803.svg": 53,
+      "qpi_cv_extension_residual_cost_diagnostic_20260804.svg": 40,
+      "qpi_tebd_ed_diagnostic_20260803.svg": 69,
+      "qpi_tebd_local_reanalysis_20260804.svg": 61,
+      "qpi_tebd_maxdim96_production_20260803.svg": 61,
+      "qpi_tebd_production_20260803.svg": 55,
+      "reference_aligned_fig1_pentamer_20260803.svg": 46,
+      "reference_aligned_fig2_pentamer_positive_20260803.svg": 40,
+      "reference_aligned_fig3_pentamer_positive_20260803.svg": 85,
+      "reference_aligned_fig4_pentamer_positive_20260803.svg": 107,
+      "reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.svg": 47,
+      "reference_aligned_fig7_pilot_quantitative_20260804.svg": 63,
+      "reference_aligned_fig7_positive_alpha_pilot_20260804.svg": 65,
+      "single_pentamer_low_energy_multiplets.svg": 22,
+      "Sqw_beta_half_pilot_L40_t15.svg": 66
+    },
+    "pdf_files": 71,
+    "pdf_with_font_resources": 71,
+    "pdf_font_resources": {
+      "_map_tuning_compare.pdf": true,
+      "anchor_heartbeat_20260803.pdf": true,
+      "bond_correlations_b0.5_L100.pdf": true,
+      "c11_candidate_trends_20260804.pdf": true,
+      "cv_anchor_size_comparison_20260804.pdf": true,
+      "cv_continuum_overlay_20260803.pdf": true,
+      "cv_tebd_gate_coverage_20260804.pdf": true,
+      "cv_triplet_cost_quality_20260803.pdf": true,
+      "dOstr_dalpha.pdf": true,
+      "dOstr_dalpha_vs_L.pdf": true,
+      "edge_magnetization_b0.5.pdf": true,
+      "edge_weight_scaling_b0.5.pdf": true,
+      "effective_central_charge_b0.5.pdf": true,
+      "effective_continuum_overlap_20260730.pdf": true,
+      "energy_levels.pdf": true,
+      "entanglement_profile_a0.25_b0.5.pdf": true,
+      "entanglement_profile_a1.00_b1.0.pdf": true,
+      "entanglement_profile_cft_b0.5_L100.pdf": true,
+      "entanglement_spectrum_b0.5_L80.pdf": true,
+      "entanglement_spectrum_qn_b0.5_L80.pdf": true,
+      "hires_vs_std_compare.pdf": true,
+      "near_zero_continuation_b0.5_L60.pdf": true,
+      "near_zero_multistart_b0.5_L60.pdf": true,
+      "negative_correlation_continuation_b0.5.pdf": true,
+      "negative_string_continuation_b0.5.pdf": true,
+      "Ostr_vs_alpha.pdf": true,
+      "Ostr_vs_beta.pdf": true,
+      "peak_alpha_vs_invL.pdf": true,
+      "pentamer_model_effective_chain_20260731.pdf": true,
+      "pentamer_momentum_filter_20260731.pdf": true,
+      "phase_diagnostics_b0.5.pdf": true,
+      "phase_diagram.pdf": true,
+      "phase_diagram_dense.pdf": true,
+      "phase_diagram_dense_signed.pdf": true,
+      "phase_diagram_derivative.pdf": true,
+      "phase_diagram_signed.pdf": true,
+      "phase_diagram_smooth.pdf": true,
+      "phase_diagram_smooth_signed.pdf": true,
+      "positive_local_spectral_channels_20260730.pdf": true,
+      "positive_phase_delta_summary_20260804.pdf": true,
+      "positive_phase_guard_margin_20260804.pdf": true,
+      "positive_region_evidence_20260803.pdf": true,
+      "positive_tebd_pilot_audit_20260803.pdf": true,
+      "qpi_cv_extension_residual_cost_diagnostic_20260804.pdf": true,
+      "qpi_tebd_ed_diagnostic_20260803.pdf": true,
+      "qpi_tebd_local_reanalysis_20260804.pdf": true,
+      "qpi_tebd_maxdim96_production_20260803.pdf": true,
+      "qpi_tebd_production_20260803.pdf": true,
+      "reference_aligned_fig1_pentamer_20260803.pdf": true,
+      "reference_aligned_fig2_pentamer_positive_20260803.pdf": true,
+      "reference_aligned_fig3_pentamer_positive_20260803.pdf": true,
+      "reference_aligned_fig4_pentamer_positive_20260803.pdf": true,
+      "reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.pdf": true,
+      "reference_aligned_fig7_pilot_quantitative_20260804.pdf": true,
+      "reference_aligned_fig7_positive_alpha_pilot_20260804.pdf": true,
+      "S_L2_vs_alpha_b0.5.pdf": true,
+      "S_L2_vs_logL_b0.5.pdf": true,
+      "single_pentamer_low_energy_multiplets.pdf": true,
+      "spin_correlation_scaling_b0.5.pdf": true,
+      "spin_gap_scaling_b0.5.pdf": true,
+      "Sqw_beta_half_pilot_L40_t15.pdf": true,
+      "Sqw_tebd_alpha=-1.0_beta=0.5.pdf": true,
+      "Sqw_tebd_alpha=1.0_beta=0.1.pdf": true,
+      "Sqw_tebd_alpha=1.0_beta=0.5.pdf": true,
+      "Sqw_tebd_alpha=1.0_beta=1.0.pdf": true,
+      "Sqw_tebd_grid.pdf": true,
+      "Sqw_tebd_grid_inferno.pdf": true,
+      "Sqw_tebd_grid_inferno_sym.pdf": true,
+      "Sqw_tebd_grid_sym.pdf": true,
+      "static_structure_factor_b0.5_L100.pdf": true,
+      "string_order_distance_b0.50_odd_envelope.pdf": true
+    }
+  },
+  "scope": {
+    "negative_alpha_included": false,
+    "fig9_included": false,
+    "server_polled": false
+  }
+}

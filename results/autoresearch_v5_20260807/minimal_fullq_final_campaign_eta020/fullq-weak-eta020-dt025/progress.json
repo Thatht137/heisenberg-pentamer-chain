@@ -1,0 +1,23 @@
+{
+  "job_type": "tebd_production",
+  "cell_id": "fullq-weak-eta020-dt025",
+  "phase": "finished",
+  "tebd_total_steps": 1200,
+  "fourier_total_q": 121,
+  "status": "success",
+  "tebd_returncode": 0,
+  "fourier_returncode": 0,
+  "finished_at": "2026-08-07T16:25:47.048024+00:00",
+  "accepted": true,
+  "tebd_seconds": 2147.2746202182025,
+  "fourier_seconds": 1437.3252974431962,
+  "returncode": 0,
+  "tebd_step": 1200,
+  "tebd_percent": 100.0,
+  "tebd_eta_seconds": 0.0,
+  "fourier_q": 121,
+  "schema_version": 1,
+  "started_at": "2026-08-07T15:26:02.303487+00:00",
+  "updated_at": "2026-08-07T16:25:47.059014+00:00",
+  "elapsed_seconds": 3584.756
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "status": "failed_validation",
+  "cell_id": "nega-r12-a0050-b0500-L060",
+  "params": {
+    "alpha": -0.05,
+    "beta": 0.5,
+    "L": 60
+  },
+  "budget": 64,
+  "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r12-remaining5-20260811-1333/validation/nega-r12-a0050-b0500-L060.json",
+  "manifest": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r12-remaining5-20260811-1333/nega-r12-a0050-b0500-L060/manifest.json",
+  "receipt": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r12-remaining5-20260811-1333/receipts/nega-r12-a0050-b0500-L060.json",
+  "failed_gates": {
+    "center": [
+      "variance_sz1_per_site_le_1e-8"
+    ],
+    "ferro_j2": [
+      "variance_sz1_per_site_le_1e-8"
+    ]
+  },
+  "strict_numerical_diagnostics": {
+    "center": {
+      "variance_per_site_sz0": 5.7180007691689145e-09,
+      "variance_per_site_sz1": 3.962318354903497e-08,
+      "final_truncation_error_sz0": 9.995428477522698e-12,
+      "final_truncation_error_sz1": 9.950662366728093e-12,
+      "total_sz0": -4.718447854656915e-16,
+      "total_sz1": 1.0000000000000024,
+      "spin_gap": 0.00010235618600873408
+    },
+    "ferro_j2": {
+      "variance_per_site_sz0": 2.917535842546689e-09,
+      "variance_per_site_sz1": 3.962318354903497e-08,
+      "final_truncation_error_sz0": 9.982562048947637e-12,
+      "final_truncation_error_sz1": 9.950662366728093e-12,
+      "total_sz0": -4.496403249731884e-15,
+      "total_sz1": 1.0000000000000024,
+      "spin_gap": 0.00022012541904814498
+    }
+  },
+  "accepted_only_eligible": false,
+  "unmaterialized_cells": 4,
+  "validation_summary": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r12-remaining5-20260811-1333/validation/summary.json",
+    "sha256": "29b16484a6cca457c98efdaea5debde11573301585131790ee48dcec0679e109"
+  },
+  "handoff_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r12-remaining5-20260811-1333/handoff_audit.json",
+    "sha256": "9dab04db628df470b2bc61e921cc3d4fd20733bd5e3b9e7412c42bd97547bf53"
+  },
+  "r11_accepted_provenance_required": true,
+  "r6_half_difference": 0.011877542575884303,
+  "r7_r9_r10_provenance_preserved": true,
+  "thresholds_relaxed": false
+}

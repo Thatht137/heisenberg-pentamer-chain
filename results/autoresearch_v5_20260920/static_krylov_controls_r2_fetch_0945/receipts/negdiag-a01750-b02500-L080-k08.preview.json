@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "created_at": "2026-09-20T01:54:25.200073+00:00",
+  "cell_id": "negdiag-a01750-b02500-L080-k08",
+  "remote": "wangjieren@39.96.207.180",
+  "port": "6000",
+  "remote_dir": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2/results/autoresearch_v5_20260919/static_krylov_controls_r2/cells/negdiag-a01750-b02500-L080-k08",
+  "local_destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08",
+  "destination_exists": false,
+  "file_count": 42,
+  "total_bytes": 16921086,
+  "remote_checksum_status": "pass",
+  "hashes": {
+    "checksums.sha256": "1576d59cdbf0d3d26b8433ac6e4b1e78e8eca2711e4ccd41cef8f2a76ea0f730",
+    "manifest.json": "60a8c1bb43c8f089c744d7d615d72f945dea292b01ce4ea6b60df7cf7bf7477b",
+    "status.json": "3db0640bd2fbeab6f3c550c6163aa2f13b07118c0b00d8d579e9b0dd15a2fcac"
+  }
+}

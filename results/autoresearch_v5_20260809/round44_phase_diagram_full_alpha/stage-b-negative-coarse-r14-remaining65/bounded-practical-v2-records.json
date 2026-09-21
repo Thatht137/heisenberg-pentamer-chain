@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "count": 1,
+  "records": [
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.1,
+        "L": 40
+      },
+      "cell_id": "negb13-a0025-b0100-L040",
+      "sweeps": 64,
+      "status": "bounded/NotEvaluable",
+      "failed_gate": "nonnegative_gap",
+      "boundary_eligible": false,
+      "retry_allowed": false,
+      "validation_basis": "results/research_progress/stage_b_r13_negb13-a0025-b0100-L040_validation_practical_v2_20260831.json",
+      "validation_sha256": "30621b25de490b769bb2d637ca307b80457da54d702ebf2e52969286bc07950e",
+      "receipt": "results/research_progress/stage_b_r13_negb13-a0025-b0100-L040_fetch_receipt_20260831.json",
+      "receipt_sha256": "f25c1bcc7e09653c0fd942fb7e239e365cf0562c4ad90760805e60078fc1b160"
+    }
+  ],
+  "accepted_index_unchanged_by_bounded_records": true
+}

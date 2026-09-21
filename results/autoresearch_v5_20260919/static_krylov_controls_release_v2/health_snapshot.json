@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "not_running_launch_failed",
+  "observed_at_utc": "2026-09-19T15:25:31Z",
+  "remote_time_utc": "2026-09-19T15:25:31Z",
+  "remote_target": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2",
+  "remote_run_dir": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2/results/autoresearch_v5_20260919/static_krylov_controls_r2",
+  "processes": {
+    "launcher_pid": 1378242,
+    "launcher_alive": false,
+    "supervisor_pid": null,
+    "batch_pid": null,
+    "julia_processes_for_user": [],
+    "cpu_percent": null,
+    "rss_kib": null,
+    "elapsed": null
+  },
+  "run_files": {
+    "batch.pid": false,
+    "launch-preflight.json": false,
+    "session.receipt": false,
+    "supervisor_status.json": false,
+    "supervisor-self-test.log": false,
+    "batch.timeout": false,
+    "run_status.json": false
+  },
+  "launcher_log": {
+    "path": "results/autoresearch_v5_20260919/static_krylov_controls_r2/launcher.stdout.log",
+    "sha256_check_failure_count": 19,
+    "crlf_count_in_source_hashes": 19,
+    "lf_count_in_source_hashes": 19,
+    "source_hashes_bytes": 1974,
+    "stderr_excerpt": "sha256sum: 'Project.toml'\\r: No such file or directory; sha256sum: warning: 19 listed files could not be read"
+  },
+  "health_scope": "single post-failure diagnostic; no polling or restart",
+  "next_action": "repair/re-stage line endings only after user direction"
+}

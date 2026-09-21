@@ -1,0 +1,19 @@
+{
+  "job_type": "tebd_production",
+  "cell_id": "local-fullq-smoke-v2-20260807",
+  "phase": "finished",
+  "tebd_total_steps": 4,
+  "fourier_total_q": 11,
+  "status": "failed",
+  "tebd_returncode": 1,
+  "fourier_returncode": 1,
+  "finished_at": "2026-08-06T16:17:03.711580+00:00",
+  "accepted": false,
+  "tebd_seconds": 57.86000000000058,
+  "fourier_seconds": 0.0,
+  "returncode": 1,
+  "schema_version": 1,
+  "started_at": "2026-08-06T16:16:05.828711+00:00",
+  "updated_at": "2026-08-06T16:17:03.716582+00:00",
+  "elapsed_seconds": 57.875
+}

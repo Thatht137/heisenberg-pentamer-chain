@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-08-04",
+  "command": ".venv\\Scripts\\python.exe -m unittest discover -s scripts/autoresearch_v5 -p test*.py",
+  "tests": 50,
+  "passed": 50,
+  "failed": 0,
+  "project_python": ".venv\\Scripts\\python.exe",
+  "matplotlib": "3.9.4",
+  "bundled_runtime_note": "Codex bundled Python 缺少 matplotlib；未联网安装，改用项目已有 .venv",
+  "scope": {
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

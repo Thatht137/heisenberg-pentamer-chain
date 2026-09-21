@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "status": "blocked_waiting_r4_evidence",
+  "local_prepared": true,
+  "launch_ready": false,
+  "uploaded": false,
+  "started": false,
+  "cell_count": 10,
+  "concurrency": 1,
+  "eta_hours": {
+    "low": 5,
+    "high": 8,
+    "basis": "R3 声明窗口按剩余单元比例缩放"
+  },
+  "gate": {
+    "reason": "真实 R4 validator 与 accepted-only ingest 尚不存在",
+    "required_validator": "1 pass / 0 fail",
+    "required_ingest": "controller success=10 / failed=0 / pending=6",
+    "fail_closed": true,
+    "launch_artifacts_withheld": [
+      "parameter-scan.run_spec.json",
+      "r5_source_hashes.sha256",
+      "launch-contract.json",
+      "server_upload_manifest.json"
+    ]
+  },
+  "planned_grid": {
+    "beta": [0.5],
+    "alpha_L": [
+      {"alpha": -0.25, "L": [80]},
+      {"alpha": -0.1, "L": [40, 60, 80]},
+      {"alpha": -0.05, "L": [40, 60, 80]},
+      {"alpha": -0.025, "L": [40, 60, 80]}
+    ],
+    "budgets": "L40/L60=32 sweeps；L80=64 sweeps",
+    "init_modes": ["center", "ferro_j2"]
+  },
+  "tests": {
+    "python_py_compile": "pass",
+    "julia_parseall_only": "pass",
+    "blocked_preview_batch_dry_run_cells": 10,
+    "bash_n": "pass",
+    "compute_source_sha256sum_c": "pass",
+    "negative_handoff_regression": "pass",
+    "manifest_builder_fail_closed": "pass",
+    "upload_entry_fail_closed": "pass",
+    "grid_budget_action_assertions": "pass",
+    "lf_only_assertion": "pass",
+    "manifest_file_set_assertion": "pass"
+  },
+  "artifact_sha256": {
+    "make_negative_phase_stage_a_r5.py": "445ac549e531656e4b6d9c5a46be9cd03d50f4e782a5863d4e3b5e90e15305cc",
+    "make_negative_phase_r5_upload_manifest.py": "056f299bab4b6e165120aad67e4d4137947718827362bc14dfd887a07cd910f7",
+    "launch_negative_phase_stage_a_r5_remaining10.sh": "fadea8bdaee673819bf843fb8e711e35ed2f59f44ce5b04e87194b78ba678ca9",
+    "upload_negative_phase_stage_a_r5_remaining10.ps1": "eca335d9e72326b5e7f43dadac5d3677b0376500aea8d44f0f8d2287c963bf1b",
+    "blocked-preview.json": "441ded94c5e427985e15267c2250ddaa76664461649f0d75c0dd6dd8e1ec97b7"
+  },
+  "safety": {
+    "server_connected": false,
+    "julia_compute_started": false,
+    "offline": true,
+    "global_flock": true,
+    "pid_guard": true,
+    "second_julia_guard": true,
+    "stop_on_first_failed_cell": true,
+    "thresholds_lowered": false,
+    "paper_modified": false
+  }
+}

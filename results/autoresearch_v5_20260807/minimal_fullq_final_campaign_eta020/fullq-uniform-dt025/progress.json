@@ -1,0 +1,23 @@
+{
+  "job_type": "tebd_production",
+  "cell_id": "fullq-uniform-dt025",
+  "phase": "finished",
+  "tebd_total_steps": 1200,
+  "fourier_total_q": 121,
+  "status": "success",
+  "tebd_returncode": 0,
+  "fourier_returncode": 0,
+  "finished_at": "2026-08-07T04:37:54.738765+00:00",
+  "accepted": true,
+  "tebd_seconds": 3183.4623498767614,
+  "fourier_seconds": 1315.7698385287076,
+  "returncode": 0,
+  "tebd_step": 1200,
+  "tebd_percent": 100.0,
+  "tebd_eta_seconds": 0.0,
+  "fourier_q": 121,
+  "schema_version": 1,
+  "started_at": "2026-08-07T03:22:55.403701+00:00",
+  "updated_at": "2026-08-07T04:37:54.747485+00:00",
+  "elapsed_seconds": 4499.344
+}

@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "kind": "cv_frequency_extension_seed",
+  "source_dir": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260802/round20_cv_resume_warmstart/cell-0001-L40-qpi-w025",
+  "source_cell_id": "cell-0001-L40-qpi-w025",
+  "seed_frequency": 0.25,
+  "old_omega_max": 0.25,
+  "new_omega_max": 0.35,
+  "copied_files": {
+    "ground_state.jld2": {
+      "sha256": "af42a5bf609d6189d273519c7a2c02b7ee7bba8bd0760f2a23ef0b50dacbaa54",
+      "size": 628462
+    },
+    "source_state.jld2": {
+      "sha256": "169995c657a55ce427eeda54e9a4aaf1802d97d6fe699426aeed186af31d245b",
+      "size": 3397705
+    },
+    "checkpoint_latest.jld2": {
+      "sha256": "7754a05cb883a56972d6e69f838cd817c706d24089387691ebca92394785ecae",
+      "size": 9663255
+    },
+    "points/omega-0001.csv": {
+      "sha256": "1dfa6068402bdc0ec89f4ce2d40221cd46cb9900244db2392ae4cb9c8f441af9",
+      "size": 145
+    }
+  },
+  "negative_alpha_excluded": true
+}

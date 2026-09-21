@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "status": "submitted",
+  "receipt": "direct-pid:623244",
+  "registered_at": "2026-08-09T03:35:15.611494+00:00",
+  "run_id": "pentamer-negative-phase-stage-a-20260809",
+  "cells": 24,
+  "controller_records": 16,
+  "estimated_hours": [
+    5,
+    8
+  ]
+}

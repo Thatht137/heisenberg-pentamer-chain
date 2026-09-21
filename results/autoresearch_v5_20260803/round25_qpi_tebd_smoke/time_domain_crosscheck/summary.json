@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "status": "diagnostic",
+  "instance": "alpha=0.23,beta=0.5,L=10,q/pi=1,OBC,Sz=0",
+  "observable": "complex C_pi(t)",
+  "budget_declared": false,
+  "gate_effect": "none",
+  "definition": {
+    "source": "O_pi=(1/sqrt(L))*sum_j exp(i*pi*j)Sz_j",
+    "correlation": "<O_pi GS|exp(-iHt)|O_pi GS>*exp(iE0t)",
+    "t0_included": true
+  },
+  "exact": {
+    "ground_energy": -2.645354491128436,
+    "source_norm_squared": 0.7282718352523126
+  },
+  "coarse": {
+    "dt": 0.05,
+    "samples": 601,
+    "full": {
+      "relative_l2": 0.0011509321024754766,
+      "max_absolute": 0.0008682737867329537,
+      "terminal_absolute": 0.0008682737867329537
+    },
+    "windows": {
+      "t_le_5": {
+        "relative_l2": 0.0001730802218990789,
+        "max_absolute": 0.0001664720413749861,
+        "terminal_absolute": 0.0001664720413749861
+      },
+      "t_le_15": {
+        "relative_l2": 0.0005938434243759593,
+        "max_absolute": 0.0005307561169107364,
+        "terminal_absolute": 0.0005074516225912503
+      },
+      "t_le_30": {
+        "relative_l2": 0.0011509321024754766,
+        "max_absolute": 0.0008682737867329537,
+        "terminal_absolute": 0.0008682737867329537
+      }
+    }
+  },
+  "refined": {
+    "dt": 0.025,
+    "samples": 1201,
+    "full": {
+      "relative_l2": 0.0002877438592848875,
+      "max_absolute": 0.00021701374454372675,
+      "terminal_absolute": 0.00021701374454372675
+    },
+    "windows": {
+      "t_le_5": {
+        "relative_l2": 4.3254809778652434e-05,
+        "max_absolute": 4.160506623619922e-05,
+        "terminal_absolute": 4.160506623619922e-05
+      },
+      "t_le_15": {
+        "relative_l2": 0.0001484396883945565,
+        "max_absolute": 0.00013262548178291463,
+        "terminal_absolute": 0.0001269696341389931
+      },
+      "t_le_30": {
+        "relative_l2": 0.0002877438592848875,
+        "max_absolute": 0.00021701374454372675,
+        "terminal_absolute": 0.00021701374454372675
+      }
+    }
+  },
+  "dt_vs_dt2": {
+    "relative_l2": 0.0008632113452072425,
+    "max_absolute": 0.0006512600709954756,
+    "terminal_absolute": 0.0006512600709954756
+  },
+  "diagnosis": {
+    "coarse_to_refined_l2_error_ratio": 3.9998493984748063,
+    "interpretation": "时域仅作实现诊断；未声明预算，不改变生产准入。"
+  },
+  "evidence": {
+    "exact_summary_sha256": "e418ebf2eaa6d1505d9424b96a2793e37a2fed98231680eb1c25667ebc68d7d9",
+    "coarse_correlation_sha256": "61e67773afd7029933a5c55f1fd09724668168e12f1546c62af8df5566ace4a1",
+    "refined_correlation_sha256": "cb3988485d82110984e84573e08328eea35e59b90504e6d55008a30a46e30b82",
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "status": "production_fullq_dt_crosschecked",
+  "figure_contract": {
+    "core_conclusion": "三个代表点的全动量谱仅在单 run 与 dt/dt2 门均通过后进入论文证据。",
+    "archetype": "quantitative_grid",
+    "backend": "Python/matplotlib",
+    "final_width_mm": 183,
+    "raw_negative_values_visible": true
+  },
+  "handoff_sha256": "ba1dfd5401a0e835c0aec6172509c77634d6a8f35858ed7be3b77c5174712a65",
+  "sources": [
+    {
+      "point": "uniform",
+      "role": "coarse_raw",
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-uniform-dt025\\spectrum_raw.csv",
+      "sha256": "d76dc761b2f2d2d51db4217c2997a7b99adc9f93041e511a57f9242ba8f7d8fa"
+    },
+    {
+      "point": "uniform",
+      "role": "refined_raw",
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-uniform-dt0125\\spectrum_raw.csv",
+      "sha256": "5b676d5acb9f2f5826d13c2556b2e0f42684215fe1a29fc5b0ff34003e8ab9a6"
+    },
+    {
+      "point": "uniform",
+      "role": "coarse_manifest",
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-uniform-dt025\\manifest.json",
+      "sha256": "0db996c5b6045f889ba7e4fd384a0b5de7b8214d73ebbf3573867e81aa32625e"
+    },
+    {
+      "point": "uniform",
+      "role": "refined_manifest",
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-uniform-dt0125\\manifest.json",
+      "sha256": "1fdc64d03e8d4e61a8062bdc8fdd137c49517e9cd94e25156af3877a1aa24468"
+    },
+    {
+      "point": "weak",
+      "role": "coarse_raw",
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-weak-eta020-dt025\\spectrum_raw.csv",
+      "sha256": "67a1636d29cfc5587b87aa36aad387b4f3641dc67e73936ece48d20d26ca5d96"
+    },
+    {
+      "point": "weak",
+      "role": "refined_raw",
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-weak-eta020-dt0125\\spectrum_raw.csv",
+      "sha256": "d3a20d162788fa2200484fa60873cf06d31d741e88310a65f612a635e5ec1fea"
+    },
+    {
+      "point": "weak",
+      "role": "coarse_manifest",
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-weak-eta020-dt025\\manifest.json",
+      "sha256": "e6c5f775950f4fe54cf96693385e7e3c27476db37434599400973fc6a5baba6c"
+    },
+    {
+      "point": "weak",
+      "role": "refined_manifest",
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-weak-eta020-dt0125\\manifest.json",
+      "sha256": "4ff60f7e9b0224aea1384d0983c62d9c00171a517ad381ecb76d1886b6d9443b"
+    },
+    {
+      "point": "agreement",
+      "role": "coarse_raw",
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-agreement-eta020-dt025\\spectrum_raw.csv",
+      "sha256": "1f81bb48ffaf39a6528dff9b8e8d338e56417b72bef75f62ca8d04fef54d5859"
+    },
+    {
+      "point": "agreement",
+      "role": "refined_raw",
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-agreement-eta020-dt0125\\spectrum_raw.csv",
+      "sha256": "29fcaec8d468a8b5b53b697b8ffffef8cd42266a4b2648256a616fb951694e9c"
+    },
+    {
+      "point": "agreement",
+      "role": "coarse_manifest",
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-agreement-eta020-dt025\\manifest.json",
+      "sha256": "0b075dc3a898d357e5ba9504ecbda4f64c7750514cd8b4e2eaa17c25d4843dc2"
+    },
+    {
+      "point": "agreement",
+      "role": "refined_manifest",
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-agreement-eta020-dt0125\\manifest.json",
+      "sha256": "5c64ba4e4c5beee452ec7984b48e66984890eda4814c1f8cd8db75ba4d3f37f5"
+    }
+  ],
+  "summary_csv": {
+    "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\figures\\fullq_minimal_eta020_20260808.source.csv",
+    "sha256": "94f153ec176bee5f6ce82d43d15d510b8aa4c4e2769e90544dfa571c37affe47"
+  },
+  "outputs": {
+    ".svg": "e86d238ba66321a0d61229cb588b589070bacaea0a221a3e24285e3f3c0899ec",
+    ".pdf": "f47c6b4ddbdcfae430a3855cdc533a4236fca9db7911b02b3d6dfad429a409c1",
+    ".png": "8f3f81dea51542e20a60194688de44cd33e95c3079d0ec22f4966e2cc7b994eb",
+    ".tiff": "ecde9d527b61dcf82f5c4446016074c8af1684c0e50792e7011670f12dbd468a"
+  },
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

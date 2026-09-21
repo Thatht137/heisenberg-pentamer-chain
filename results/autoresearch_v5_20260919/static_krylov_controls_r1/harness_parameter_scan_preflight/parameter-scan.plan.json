@@ -1,0 +1,39 @@
+{
+  "run_id": "static-krylov-controls-r1-harness-plan-preflight",
+  "run_dir": "results/autoresearch_v5_20260919/static_krylov_controls_r1/harness_parameter_scan_preflight",
+  "axes": {
+    "alpha": [
+      -0.1,
+      -0.175
+    ],
+    "beta": [
+      0.25
+    ],
+    "L": [
+      80
+    ],
+    "eigsolve_krylovdim": [
+      8
+    ]
+  },
+  "cells": [
+    {
+      "cell_id": "cell-0001",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 80,
+        "eigsolve_krylovdim": 8
+      }
+    },
+    {
+      "cell_id": "cell-0002",
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 80,
+        "eigsolve_krylovdim": 8
+      }
+    }
+  ]
+}

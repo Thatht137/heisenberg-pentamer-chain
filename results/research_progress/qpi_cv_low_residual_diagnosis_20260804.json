@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-04T09:25:00+08:00",
+  "status": "numerical_convergence_limited",
+  "cell": "results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804/cell-l40-qpi-low-000-020",
+  "points": [
+    {
+      "omega": 0.0,
+      "residual": 1.3237623405931422e-05,
+      "intensity": 1.8189085784561163,
+      "solution_maxdim": 200
+    },
+    {
+      "omega": 0.05,
+      "residual": 1.2289348099916803e-05,
+      "intensity": 1.8715182599565916,
+      "solution_maxdim": 205
+    },
+    {
+      "omega": 0.1,
+      "residual": 1.0714247363838274e-05,
+      "intensity": 1.477312119213328,
+      "solution_maxdim": 221
+    },
+    {
+      "omega": 0.15,
+      "residual": 9.24447196488221e-06,
+      "intensity": 1.1139411598367366,
+      "solution_maxdim": 239
+    },
+    {
+      "omega": 0.2,
+      "residual": 7.797820402731081e-06,
+      "intensity": 0.8094698095517303,
+      "solution_maxdim": 256
+    }
+  ],
+  "failures": [
+    {
+      "omega": 0.0,
+      "residual": 1.3237623405931422e-05,
+      "intensity": 1.8189085784561163,
+      "solution_maxdim": 200
+    },
+    {
+      "omega": 0.05,
+      "residual": 1.2289348099916803e-05,
+      "intensity": 1.8715182599565916,
+      "solution_maxdim": 205
+    },
+    {
+      "omega": 0.1,
+      "residual": 1.0714247363838274e-05,
+      "intensity": 1.477312119213328,
+      "solution_maxdim": 221
+    }
+  ],
+  "checks": {
+    "returncode_zero": true,
+    "stderr_empty": true,
+    "dmrg_variance_pass": true,
+    "dmrg_truncation_pass": true,
+    "spectrum_nonnegative": true,
+    "low_frequency_failures": true,
+    "residual_decreases_with_omega": true
+  },
+  "baseline": {
+    "dmrg_maxdim": 256,
+    "cv_maxdim": 600,
+    "nsweeps": 16,
+    "cutoff": 1e-10,
+    "cv_cutoff": 1e-14,
+    "max_cv_residual": 1e-05,
+    "threads": 8
+  },
+  "proposed_retry": {
+    "dmrg_maxdim": 320,
+    "cv_maxdim": 800,
+    "nsweeps": 20,
+    "cutoff": 1e-10,
+    "cv_cutoff": 1e-14,
+    "max_cv_residual": 1e-05,
+    "threads": 8
+  },
+  "interpretation": "程序正常结束且 DMRG/非负性通过；失败集中在低频并随 omega 升高改善，支持‘CV 线性求解收敛预算不足’诊断，不支持‘程序崩溃’诊断。",
+  "safety": [
+    "新 run 目录，禁止覆盖 round31",
+    "先做单点 omega=0.05 smoke，再决定是否扩展",
+    "仍保持四个 cell 顺序和单 Julia",
+    "保留原始失败目录和 checksum",
+    "不降低 residual、方差、截断或非负性门槛"
+  ],
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

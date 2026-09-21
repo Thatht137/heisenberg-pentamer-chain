@@ -1,0 +1,16 @@
+{
+  "job_type": "cv_dsf_cell",
+  "cell_id": "cell-l40-qpi-retry-005",
+  "phase": "finished",
+  "total_points": 1,
+  "status": "success",
+  "finished_at": "2026-08-05T13:28:11.210364+00:00",
+  "returncode": 0,
+  "completed_points": 1,
+  "stdout_bytes": 1901,
+  "stdout_last_change": "2026-08-05T13:28:11.078130+00:00",
+  "schema_version": 1,
+  "started_at": "2026-08-05T12:09:36.120177+00:00",
+  "updated_at": "2026-08-05T13:28:11.211548+00:00",
+  "elapsed_seconds": 4715.091
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-04T16:28:08+08:00",
+  "run": "results/autoresearch_v5_20260804/round38_mesh0051_high_budget_recheck",
+  "scope": {"alpha": 0.125, "beta": 1.0, "L": 80, "negative_alpha_excluded": true, "fig9_excluded": true},
+  "remote": {"size": "172K", "status": "success", "accepted": true, "children": ["start_center", "start_domain"], "checksum_failures": 0},
+  "diagnostics": {
+    "structure_factor_ratio": 0.2775979495234769,
+    "independent_start_half_range": 0.0017909565916213732,
+    "previous_half_range": 0.006048843767877066,
+    "improvement_fraction": 0.7039333688121134,
+    "variance_per_site_max": 6.83978385040973e-10,
+    "final_truncation_max": 9.999523197126774e-13
+  },
+  "acceptance": {
+    "children_completed": true,
+    "children_accepted": true,
+    "variance_le_1e-8": true,
+    "truncation_le_1e-9": true,
+    "half_range_le_1e-3": false,
+    "thermodynamic_boundary_claim": false
+  },
+  "interpretation": "高预算双初态复核显著降低有限尺寸高误差，但半差仍为 1.791e-3；保留为约束性控制点，不命名热力学相界。"
+}

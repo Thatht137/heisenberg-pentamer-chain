@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "cell_id": "crosscheck-alpha023-dt025-t15-auto",
+  "status": "success",
+  "accepted": false,
+  "params": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "N_units": 8,
+    "L": 40
+  },
+  "settings": {
+    "method": "finite_dmrg_tebd_szz",
+    "boundary": "OBC",
+    "q_points": 81,
+    "omega_points": 181,
+    "omega_max": 3.0,
+    "space_window": 18,
+    "threads": 8
+  },
+  "diagnostics": {
+    "tstep": 0.025,
+    "tmax": 15.0,
+    "dmrg_maxdim": 320,
+    "tebd_maxdim": 320,
+    "nsweeps": 24,
+    "tebd_seconds": 501.20948530733585,
+    "fourier_seconds": 165.7526850234717,
+    "spectrum_shape": [
+      81,
+      181
+    ],
+    "spectrum_min": 0.0,
+    "spectrum_max": 3.35491489577178,
+    "raw_spectrum_shape": [
+      81,
+      181
+    ],
+    "raw_spectrum_min": -2.070877924237078,
+    "raw_spectrum_max": 3.35491489577178
+  },
+  "acceptance": {
+    "tebd_execution": true,
+    "fourier_execution": true,
+    "correlation_artifact": true,
+    "spectrum_artifact": true,
+    "raw_spectrum_csv_artifact": true,
+    "spectrum_csv_shape": true,
+    "spectrum_finite": true,
+    "spectrum_nonnegative": true,
+    "raw_spectrum_csv_shape": true,
+    "raw_spectrum_finite": true,
+    "raw_spectrum_nonnegative": false
+  },
+  "provenance": {
+    "hostname": "c104-ysu",
+    "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "julia_version": "1.12.3",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "standard_sha256": "4f00f333eaf810b2853a46e4e258e192db7ef554c7800d35df2ebe27adee4b46",
+    "source_commit": "working-tree-20260803-raw-spectrum",
+    "julia_pkg_offline": true,
+    "negative_alpha_excluded": true,
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "scripts/05_tebd_pentamer_server.jl": "e072703c0e944309c91dad9428347ee2b0552164b742df9074256e073284e3a7",
+      "scripts/06_ft_tebd_pentamer_mapped_server.jl": "e48b8a8c993b0f381de50f4236570bf1c9b56a883ace2ab10cdf8a2da958ba6f",
+      "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+      "scripts/autoresearch_v5/run_tebd_production.py": "796fee417c3f3bbf0988813173b05a14010539c07e1946d123665c2f03482c0a"
+    }
+  },
+  "timing": {
+    "started_at": "2026-08-03T06:24:22.975272+00:00",
+    "finished_at": "2026-08-03T06:35:29.965420+00:00"
+  },
+  "returncode": 1
+}

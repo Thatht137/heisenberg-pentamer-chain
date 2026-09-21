@@ -1,0 +1,73 @@
+{
+  "tag": "Controlled separation; uncontrolled formal overlap",
+  "formula": {
+    "lower_two_spinon": "omega_L(q)=pi*J_eff/2*abs(sin(q))",
+    "upper_two_spinon": "omega_U(q)=pi*J_eff*abs(sin(q/2))",
+    "formal_embedding_at_q_pi": "beta_embed=Delta_3/2/(pi*(J_eff/beta))"
+  },
+  "convention": "spin-1/2 S operators; H_eff=J_eff sum T_n dot T_(n+1)",
+  "oracle_scope": {
+    "model": "heisenberg-xxx",
+    "covered": "S-operator convention, spinon velocity, lower boundary",
+    "not_covered": "two-spinon upper boundary"
+  },
+  "checks": {
+    "positive_jeff": true,
+    "controlled_quartet_separated": true,
+    "formal_overlap_outside_controlled_region": true,
+    "beta_005_inside_controlled_region": true,
+    "beta_05_outside_controlled_region": true
+  },
+  "rows": [
+    {
+      "alpha": 0.14,
+      "doublet_gap": 0.09396495292427298,
+      "quartet_gap": 0.14357526807862853,
+      "jeff_per_beta": 0.43964832371022755,
+      "controlled_g_max": 0.65,
+      "controlled_beta_max": 0.06107721940077744,
+      "upper_to_quartet_at_controlled_edge": 0.5875636440166389,
+      "formal_beta_embed": 0.10394996358734514,
+      "formal_g_embed": 1.1062631369710698,
+      "g_at_beta_005": 0.532113287390197,
+      "g_at_beta_05": 5.32113287390197
+    },
+    {
+      "alpha": 0.23,
+      "doublet_gap": 0.15499326601793184,
+      "quartet_gap": 0.23928057903755495,
+      "jeff_per_beta": 0.4317623340231316,
+      "controlled_g_max": 0.65,
+      "controlled_beta_max": 0.1007456229116557,
+      "upper_to_quartet_at_controlled_edge": 0.5711015790430601,
+      "formal_beta_embed": 0.17640578595574086,
+      "formal_g_embed": 1.1381512919105254,
+      "g_at_beta_005": 0.32259466030101774,
+      "g_at_beta_05": 3.2259466030101773
+    },
+    {
+      "alpha": 0.33,
+      "doublet_gap": 0.22349465117937628,
+      "quartet_gap": 0.3483069646557605,
+      "jeff_per_beta": 0.4188666516595845,
+      "controlled_g_max": 0.65,
+      "controlled_beta_max": 0.1452715232665946,
+      "upper_to_quartet_at_controlled_edge": 0.5488377681731292,
+      "formal_beta_embed": 0.26468937032184914,
+      "formal_g_embed": 1.184320827926258,
+      "g_at_beta_005": 0.2237190005942027,
+      "g_at_beta_05": 2.237190005942027
+    }
+  ],
+  "source_sha256": {
+    "results\\autoresearch_v3_20260729\\round1_doublet_projection\\representative.csv": "4be460ca405c4e13f4c61618ec5eb6d5847cf48ae37d9b1debeef5df50c0465f",
+    "results\\autoresearch_v4_20260730\\round2_local_spectral_channels_v4\\representative_summary.csv": "008bc3c2b46879ba4870c673a8c8c43950451fcc452f691bf768471316a9cfca"
+  },
+  "figure_sha256": {
+    "effective_continuum_overlap_20260730.svg": "898495bc61bbab8fb25cd5bd3e38a5d550890c1b285d23d7625c2a78ef609d9c",
+    "effective_continuum_overlap_20260730.pdf": "c12ace2448594135501043b7d4844bfd0258b9e0e87cb7f7b58558b58b0df2ea",
+    "effective_continuum_overlap_20260730.png": "48530c7b5616adcd34ee9f3c99d11137025737017eba666c133eb6dc7358bfe7",
+    "effective_continuum_overlap_20260730.tiff": "ad1e71a62b7a94bd746dcea6dc5ed2970b1b9d120cb7346111e6e118f7ada8ae"
+  },
+  "boundary": "The two-spinon formulas are thermodynamic leading-order effective-chain boundaries. Formal overlap beyond g=0.65 is not a controlled hybridization prediction."
+}

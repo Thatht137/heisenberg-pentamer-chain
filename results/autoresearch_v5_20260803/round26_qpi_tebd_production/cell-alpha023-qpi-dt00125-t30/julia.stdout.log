@@ -1,0 +1,148 @@
+After sweep 1 energy=-11.105898432299993  maxlinkdim=4 maxerr=8.47E-16 time=34.730
+After sweep 2 energy=-11.141827457121844  maxlinkdim=16 maxerr=9.73E-11 time=0.907
+After sweep 3 energy=-11.145894500874919  maxlinkdim=44 maxerr=9.94E-11 time=0.524
+After sweep 4 energy=-11.14693620875502  maxlinkdim=55 maxerr=9.97E-11 time=0.616
+After sweep 5 energy=-11.147086510232182  maxlinkdim=58 maxerr=9.88E-11 time=0.651
+After sweep 6 energy=-11.147100246133446  maxlinkdim=59 maxerr=9.95E-11 time=0.644
+After sweep 7 energy=-11.147101017732767  maxlinkdim=61 maxerr=9.95E-11 time=0.620
+After sweep 8 energy=-11.147101023176551  maxlinkdim=55 maxerr=9.96E-11 time=0.595
+After sweep 9 energy=-11.1471010237305  maxlinkdim=55 maxerr=9.99E-11 time=0.618
+After sweep 10 energy=-11.147101023661772  maxlinkdim=55 maxerr=1.00E-10 time=0.608
+After sweep 11 energy=-11.147101023772766  maxlinkdim=55 maxerr=1.00E-10 time=0.593
+After sweep 12 energy=-11.147101023772988  maxlinkdim=55 maxerr=1.00E-10 time=0.595
+After sweep 13 energy=-11.147101023773102  maxlinkdim=55 maxerr=1.00E-10 time=0.614
+After sweep 14 energy=-11.147101023773107  maxlinkdim=55 maxerr=1.00E-10 time=0.595
+After sweep 15 energy=-11.147101023773125  maxlinkdim=55 maxerr=1.00E-10 time=0.591
+After sweep 16 energy=-11.147101023773127  maxlinkdim=55 maxerr=1.00E-10 time=0.625
+After sweep 17 energy=-11.147101023773162  maxlinkdim=55 maxerr=1.00E-10 time=0.595
+After sweep 18 energy=-11.147101023773178  maxlinkdim=55 maxerr=1.00E-10 time=0.595
+After sweep 19 energy=-11.147101023773148  maxlinkdim=55 maxerr=1.00E-10 time=0.593
+After sweep 20 energy=-11.147101023773123  maxlinkdim=55 maxerr=1.00E-10 time=0.598
+After sweep 21 energy=-11.147101023773136  maxlinkdim=55 maxerr=1.00E-10 time=0.609
+After sweep 22 energy=-11.147101023773132  maxlinkdim=55 maxerr=1.00E-10 time=0.593
+After sweep 23 energy=-11.147101023773144  maxlinkdim=55 maxerr=1.00E-10 time=0.613
+After sweep 24 energy=-11.147101023773164  maxlinkdim=55 maxerr=1.00E-10 time=0.583
+step 24/2400 (1.0%) t=0.300000 linkdim=78 elapsed=12.8s ETA=1268.1s
+step 48/2400 (2.0%) t=0.600000 linkdim=78 elapsed=19.9s ETA=975.3s
+step 72/2400 (3.0%) t=0.900000 linkdim=78 elapsed=26.6s ETA=861.6s
+step 96/2400 (4.0%) t=1.200000 linkdim=78 elapsed=33.0s ETA=793.0s
+checkpoint step=100
+step 120/2400 (5.0%) t=1.500000 linkdim=76 elapsed=47.2s ETA=896.7s
+step 144/2400 (6.0%) t=1.800000 linkdim=76 elapsed=53.6s ETA=840.2s
+step 168/2400 (7.0%) t=2.100000 linkdim=76 elapsed=60.0s ETA=797.5s
+step 192/2400 (8.0%) t=2.400000 linkdim=76 elapsed=66.4s ETA=763.9s
+checkpoint step=200
+step 216/2400 (9.0%) t=2.700000 linkdim=76 elapsed=73.2s ETA=740.4s
+step 240/2400 (10.0%) t=3.000000 linkdim=76 elapsed=79.6s ETA=716.0s
+step 264/2400 (11.0%) t=3.300000 linkdim=76 elapsed=86.0s ETA=695.6s
+step 288/2400 (12.0%) t=3.600000 linkdim=76 elapsed=92.3s ETA=677.1s
+checkpoint step=300
+step 312/2400 (13.0%) t=3.900000 linkdim=76 elapsed=99.1s ETA=663.0s
+step 336/2400 (14.0%) t=4.200000 linkdim=76 elapsed=105.3s ETA=646.8s
+step 360/2400 (15.0%) t=4.500000 linkdim=76 elapsed=111.5s ETA=631.9s
+step 384/2400 (16.0%) t=4.800000 linkdim=76 elapsed=117.7s ETA=618.2s
+checkpoint step=400
+step 408/2400 (17.0%) t=5.100000 linkdim=76 elapsed=124.7s ETA=608.9s
+step 432/2400 (18.0%) t=5.400000 linkdim=76 elapsed=131.0s ETA=596.6s
+step 456/2400 (19.0%) t=5.700000 linkdim=76 elapsed=137.1s ETA=584.6s
+step 480/2400 (20.0%) t=6.000000 linkdim=76 elapsed=143.3s ETA=573.3s
+checkpoint step=500
+step 504/2400 (21.0%) t=6.300000 linkdim=76 elapsed=150.4s ETA=565.7s
+step 528/2400 (22.0%) t=6.600000 linkdim=76 elapsed=156.6s ETA=555.2s
+step 552/2400 (23.0%) t=6.900000 linkdim=76 elapsed=162.8s ETA=545.0s
+step 576/2400 (24.0%) t=7.200000 linkdim=76 elapsed=169.0s ETA=535.3s
+step 600/2400 (25.0%) t=7.500000 linkdim=76 elapsed=175.3s ETA=525.8s
+checkpoint step=600
+step 624/2400 (26.0%) t=7.800000 linkdim=76 elapsed=181.7s ETA=517.3s
+step 648/2400 (27.0%) t=8.100000 linkdim=76 elapsed=188.0s ETA=508.2s
+step 672/2400 (28.0%) t=8.400000 linkdim=76 elapsed=194.2s ETA=499.4s
+step 696/2400 (29.0%) t=8.700000 linkdim=76 elapsed=200.5s ETA=490.9s
+checkpoint step=700
+step 720/2400 (30.0%) t=9.000000 linkdim=76 elapsed=207.4s ETA=483.9s
+step 744/2400 (31.0%) t=9.300000 linkdim=76 elapsed=213.7s ETA=475.6s
+step 768/2400 (32.0%) t=9.600000 linkdim=76 elapsed=219.9s ETA=467.3s
+step 792/2400 (33.0%) t=9.900000 linkdim=76 elapsed=226.2s ETA=459.2s
+checkpoint step=800
+step 816/2400 (34.0%) t=10.200000 linkdim=76 elapsed=232.7s ETA=451.7s
+step 840/2400 (35.0%) t=10.500000 linkdim=76 elapsed=238.9s ETA=443.7s
+step 864/2400 (36.0%) t=10.800000 linkdim=76 elapsed=245.2s ETA=435.9s
+step 888/2400 (37.0%) t=11.100000 linkdim=76 elapsed=251.4s ETA=428.1s
+checkpoint step=900
+step 912/2400 (38.0%) t=11.400000 linkdim=76 elapsed=258.0s ETA=420.9s
+step 936/2400 (39.0%) t=11.700000 linkdim=76 elapsed=264.2s ETA=413.3s
+step 960/2400 (40.0%) t=12.000000 linkdim=76 elapsed=270.5s ETA=405.7s
+step 984/2400 (41.0%) t=12.300000 linkdim=76 elapsed=276.7s ETA=398.2s
+checkpoint step=1000
+step 1008/2400 (42.0%) t=12.600000 linkdim=76 elapsed=283.7s ETA=391.7s
+step 1032/2400 (43.0%) t=12.900000 linkdim=76 elapsed=289.9s ETA=384.3s
+step 1056/2400 (44.0%) t=13.200000 linkdim=76 elapsed=296.2s ETA=377.0s
+step 1080/2400 (45.0%) t=13.500000 linkdim=76 elapsed=302.4s ETA=369.6s
+checkpoint step=1100
+step 1104/2400 (46.0%) t=13.800000 linkdim=76 elapsed=310.2s ETA=364.2s
+step 1128/2400 (47.0%) t=14.100000 linkdim=76 elapsed=316.5s ETA=356.9s
+step 1152/2400 (48.0%) t=14.400000 linkdim=76 elapsed=322.8s ETA=349.7s
+step 1176/2400 (49.0%) t=14.700000 linkdim=76 elapsed=329.0s ETA=342.4s
+step 1200/2400 (50.0%) t=15.000000 linkdim=76 elapsed=335.2s ETA=335.2s
+checkpoint step=1200
+step 1224/2400 (51.0%) t=15.300000 linkdim=76 elapsed=341.7s ETA=328.3s
+step 1248/2400 (52.0%) t=15.600000 linkdim=76 elapsed=348.0s ETA=321.2s
+step 1272/2400 (53.0%) t=15.900000 linkdim=76 elapsed=354.2s ETA=314.1s
+step 1296/2400 (54.0%) t=16.200000 linkdim=76 elapsed=360.6s ETA=307.2s
+checkpoint step=1300
+step 1320/2400 (55.0%) t=16.500000 linkdim=76 elapsed=367.2s ETA=300.4s
+step 1344/2400 (56.0%) t=16.800000 linkdim=76 elapsed=373.4s ETA=293.4s
+step 1368/2400 (57.0%) t=17.100000 linkdim=76 elapsed=379.7s ETA=286.5s
+step 1392/2400 (58.0%) t=17.400000 linkdim=76 elapsed=386.0s ETA=279.5s
+checkpoint step=1400
+step 1416/2400 (59.0%) t=17.700000 linkdim=76 elapsed=392.4s ETA=272.7s
+step 1440/2400 (60.0%) t=18.000000 linkdim=76 elapsed=398.7s ETA=265.8s
+step 1464/2400 (61.0%) t=18.300000 linkdim=76 elapsed=404.9s ETA=258.9s
+step 1488/2400 (62.0%) t=18.600000 linkdim=76 elapsed=411.2s ETA=252.0s
+checkpoint step=1500
+step 1512/2400 (63.0%) t=18.900000 linkdim=76 elapsed=417.9s ETA=245.4s
+step 1536/2400 (64.0%) t=19.200000 linkdim=76 elapsed=424.2s ETA=238.6s
+step 1560/2400 (65.0%) t=19.500000 linkdim=76 elapsed=430.5s ETA=231.8s
+step 1584/2400 (66.0%) t=19.800000 linkdim=76 elapsed=436.8s ETA=225.0s
+checkpoint step=1600
+step 1608/2400 (67.0%) t=20.100000 linkdim=76 elapsed=443.3s ETA=218.3s
+step 1632/2400 (68.0%) t=20.400000 linkdim=76 elapsed=449.6s ETA=211.6s
+step 1656/2400 (69.0%) t=20.700000 linkdim=76 elapsed=455.8s ETA=204.8s
+step 1680/2400 (70.0%) t=21.000000 linkdim=76 elapsed=462.3s ETA=198.1s
+checkpoint step=1700
+step 1704/2400 (71.0%) t=21.300000 linkdim=76 elapsed=469.1s ETA=191.6s
+step 1728/2400 (72.0%) t=21.600000 linkdim=76 elapsed=475.4s ETA=184.9s
+step 1752/2400 (73.0%) t=21.900000 linkdim=76 elapsed=481.8s ETA=178.2s
+step 1776/2400 (74.0%) t=22.200000 linkdim=76 elapsed=488.2s ETA=171.5s
+step 1800/2400 (75.0%) t=22.500000 linkdim=76 elapsed=494.7s ETA=164.9s
+checkpoint step=1800
+step 1824/2400 (76.0%) t=22.800000 linkdim=76 elapsed=501.3s ETA=158.3s
+step 1848/2400 (77.0%) t=23.100000 linkdim=76 elapsed=507.8s ETA=151.7s
+step 1872/2400 (78.0%) t=23.400000 linkdim=76 elapsed=514.2s ETA=145.0s
+step 1896/2400 (79.0%) t=23.700000 linkdim=76 elapsed=520.6s ETA=138.4s
+checkpoint step=1900
+step 1920/2400 (80.0%) t=24.000000 linkdim=76 elapsed=527.5s ETA=131.9s
+step 1944/2400 (81.0%) t=24.300000 linkdim=76 elapsed=534.0s ETA=125.3s
+step 1968/2400 (82.0%) t=24.600000 linkdim=76 elapsed=540.6s ETA=118.7s
+step 1992/2400 (83.0%) t=24.900000 linkdim=76 elapsed=547.2s ETA=112.1s
+checkpoint step=2000
+step 2016/2400 (84.0%) t=25.200000 linkdim=76 elapsed=554.4s ETA=105.6s
+step 2040/2400 (85.0%) t=25.500000 linkdim=76 elapsed=561.1s ETA=99.0s
+step 2064/2400 (86.0%) t=25.800000 linkdim=76 elapsed=567.8s ETA=92.4s
+step 2088/2400 (87.0%) t=26.100000 linkdim=76 elapsed=574.5s ETA=85.8s
+checkpoint step=2100
+step 2112/2400 (88.0%) t=26.400000 linkdim=76 elapsed=582.1s ETA=79.4s
+step 2136/2400 (89.0%) t=26.700000 linkdim=76 elapsed=589.0s ETA=72.8s
+step 2160/2400 (90.0%) t=27.000000 linkdim=76 elapsed=595.6s ETA=66.2s
+step 2184/2400 (91.0%) t=27.300000 linkdim=76 elapsed=602.2s ETA=59.6s
+checkpoint step=2200
+step 2208/2400 (92.0%) t=27.600000 linkdim=76 elapsed=609.1s ETA=53.0s
+step 2232/2400 (93.0%) t=27.900000 linkdim=77 elapsed=615.9s ETA=46.4s
+step 2256/2400 (94.0%) t=28.200000 linkdim=78 elapsed=622.7s ETA=39.7s
+step 2280/2400 (95.0%) t=28.500000 linkdim=79 elapsed=629.6s ETA=33.1s
+checkpoint step=2300
+step 2304/2400 (96.0%) t=28.800000 linkdim=80 elapsed=637.0s ETA=26.5s
+step 2328/2400 (97.0%) t=29.100000 linkdim=80 elapsed=643.8s ETA=19.9s
+step 2352/2400 (98.0%) t=29.400000 linkdim=80 elapsed=650.8s ETA=13.3s
+step 2376/2400 (99.0%) t=29.700000 linkdim=80 elapsed=657.6s ETA=6.6s
+step 2400/2400 (100.0%) t=30.000000 linkdim=80 elapsed=664.6s ETA=0.0s
+TEBD_QPI_AUTOCORR_SUCCESS outdir=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round26_qpi_tebd_production/cell-alpha023-qpi-dt00125-t30

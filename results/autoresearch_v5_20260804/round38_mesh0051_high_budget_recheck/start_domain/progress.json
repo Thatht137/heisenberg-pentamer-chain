@@ -1,0 +1,17 @@
+{
+  "job_type": "positive_static_cell",
+  "cell_id": "mesh0051-high-budget-recheck-domain",
+  "phase": "finished",
+  "requested_sweeps": 80,
+  "status": "success",
+  "finished_at": "2026-08-04T06:25:58.992345+00:00",
+  "accepted": true,
+  "returncode": 0,
+  "last_sweep": 80,
+  "stdout_bytes": 13524,
+  "stdout_last_change": "2026-08-04T06:25:58.844360+00:00",
+  "schema_version": 1,
+  "started_at": "2026-08-04T06:18:23.594487+00:00",
+  "updated_at": "2026-08-04T06:25:58.993334+00:00",
+  "elapsed_seconds": 455.399
+}

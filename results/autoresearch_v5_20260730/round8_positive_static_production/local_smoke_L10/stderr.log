@@ -1,0 +1,40 @@
+  Activating project at `D:\Project\1x5_Heisenberg_Pentamer`
+ERROR: LoadError: IOError: open("C:\\Users\\hh250\\.julia\\logs\\manifest_usage.toml.pid", 1282, 292): permission denied (EACCES)
+Stacktrace:
+  [1] uv_error
+    @ .\libuv.jl:106 [inlined]
+  [2] open(path::String, flags::UInt16, mode::UInt16)
+    @ Base.Filesystem .\filesystem.jl:190
+  [3] tryopen_exclusive(path::String, mode::UInt16)
+    @ FileWatching.Pidfile D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\FileWatching\src\pidfile.jl:217
+  [4] open_exclusive(path::String; mode::UInt16, poll_interval::Int64, wait::Bool, stale_age::Int64, refresh::Float64)
+    @ FileWatching.Pidfile D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\FileWatching\src\pidfile.jl:244
+  [5] open_exclusive
+    @ D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\FileWatching\src\pidfile.jl:237 [inlined]
+  [6] mkpidlock(at::String, pid::Int32; stale_age::Int64, refresh::Float64, kwopts::@Kwargs{})
+    @ FileWatching.Pidfile D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\FileWatching\src\pidfile.jl:68
+  [7] mkpidlock
+    @ D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\FileWatching\src\pidfile.jl:63 [inlined]
+  [8] mkpidlock(f::Pkg.Types.var"#52#55"{String, String, Dates.DateTime, String}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\FileWatching\src\pidfile.jl:93
+  [9] mkpidlock
+    @ D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\FileWatching\src\pidfile.jl:92 [inlined]
+ [10] mkpidlock
+    @ D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\FileWatching\src\pidfile.jl:90 [inlined]
+ [11] write_env_usage(source_file::String, usage_filepath::String)
+    @ Pkg.Types D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\Types.jl:534
+ [12] Pkg.Types.EnvCache(env::Nothing)
+    @ Pkg.Types D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\Types.jl:372
+ [13] EnvCache
+    @ D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\Types.jl:351 [inlined]
+ [14] add_snapshot_to_undo(env::Nothing)
+    @ Pkg.API D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\API.jl:1496
+ [15] add_snapshot_to_undo
+    @ D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\API.jl:1492 [inlined]
+ [16] activate(path::String; shared::Bool, temp::Bool, io::IOContext{IO})
+    @ Pkg.API D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\API.jl:1372
+ [17] activate(path::String)
+    @ Pkg.API D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\API.jl:1331
+ [18] top-level scope
+    @ D:\Project\1x5_Heisenberg_Pentamer\scripts\autoresearch_v5\positive_static_cell.jl:4
+in expression starting at D:\Project\1x5_Heisenberg_Pentamer\scripts\autoresearch_v5\positive_static_cell.jl:4

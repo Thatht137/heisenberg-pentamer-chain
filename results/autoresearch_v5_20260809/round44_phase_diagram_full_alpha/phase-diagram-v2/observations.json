@@ -1,0 +1,1553 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.5,
+        "L": 40
+      },
+      "status": "success",
+      "value": 0.41806941032017275,
+      "error": 0.0001,
+      "budget": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/cells/nega-r1-a1000-b0500-L040/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-4d1fc2cfcf42c1bff2ad",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.605,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/validation/nega-r1-a1000-b0500-L040.json",
+        "sha256": "3b41b8a0a7f6f7073f9b0b99e2f25597a6a9ec345a91c0a112b4464efe64509f"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/receipts/nega-r1-a1000-b0500-L040.json",
+        "sha256": "eddef154cc5f8dea4803d0227f9d818ee1a845b4db1c8ed3116239dd9d0b2df2",
+        "manifest_sha256": "364a1f82aade562023d8ebc4ebdf542184f5fafe236d379cb021564df54c6df9",
+        "checksums_sha256": "e95450625d69cc089734300e0973bd54dbc733ff9b8f6869d829af930cec6442",
+        "preview_sha256": "48f465c7f8fac705501b2f4c0ed648ab2a7f74ba8920db55f5360021ea74c2cf"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r1-20260809",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.5,
+        "L": 60
+      },
+      "status": "success",
+      "value": 0.3829236283434855,
+      "error": 0.00018026071825971712,
+      "budget": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/cells/nega-r1-a1000-b0500-L060/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-7b7f27ddc16195158ee6",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6025,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/validation/nega-r1-a1000-b0500-L060.json",
+        "sha256": "f5a24a23c92f76f972a90b26d3c73527e33c7608b759c8f87f679f7f4048de22"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/receipts/nega-r1-a1000-b0500-L060.json",
+        "sha256": "501b353dab68d4302fe31472904be1a1570cfa380ec1c4843b91e9a7ba9b52e0",
+        "manifest_sha256": "e6972cf1448ff8dedf7f2ee53a5908663389e4ba3562692403e087b6be2092fe",
+        "checksums_sha256": "ac7d3ef3721bd46217428827869671547902b66121ea1e2825aa6cca4ca2d079",
+        "preview_sha256": "e2375bca6ccea6e5a0162a58324cd6020722c4936767ba8ddc7c4c04cb5baf64"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r1-20260809",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.5,
+        "L": 40
+      },
+      "status": "success",
+      "value": 0.3866737982572961,
+      "error": 0.0001,
+      "budget": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/cells/nega-r1-a0750-b0500-L040/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-f299effa97d8d15d0da2",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.605,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/validation/nega-r1-a0750-b0500-L040.json",
+        "sha256": "f2da7dd1f718ed213071e57801f81fcb0f527627f5ac869abc5b590eed5b33b2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/receipts/nega-r1-a0750-b0500-L040.json",
+        "sha256": "75a573993a8b74bae4e7b019e0e5ca2d4f7d694a292dfea41dd32b5d0e859d4e",
+        "manifest_sha256": "feda3cfcbf3695af15a6b68f7db41d1d8b69f04d42c826226a6bcdc0ef29db9e",
+        "checksums_sha256": "7c83e8db0c74dd9813ad0ff99e275886a772abdcff26d658e7812b9ebfaa7796",
+        "preview_sha256": "6218c34bf197a8bba58d6f617e493ebce22ec0d69bea85cde7b8199f5bb3a66e"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r1-20260809",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.5,
+        "L": 60
+      },
+      "status": "success",
+      "value": 0.35596844032928915,
+      "error": 0.0003996244011305605,
+      "budget": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/cells/nega-r1-a0750-b0500-L060/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-422d7df3c52eb52687af",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6025,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/validation/nega-r1-a0750-b0500-L060.json",
+        "sha256": "00c80b718116d3440e851415b17ca78c9ebb4e1b0b512d1a40d7156e5b2913e0"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/receipts/nega-r1-a0750-b0500-L060.json",
+        "sha256": "df3db7ffe8c9cf30f23f7fc8e8679ebc1c0adc593a51e840966eec2352ab537c",
+        "manifest_sha256": "bda5fd53eee774783edf2183f0488480a631ae5d7c090e7d8b7f59a1ebf36a43",
+        "checksums_sha256": "31bbb177d18ebffe9edf53968a9a4ab7f1da0217d24df78fb1583c01d9e70893",
+        "preview_sha256": "beb01912cd6627a0e17462ee2221fcf068eafaff5cf64b589aa86cfc86a42ee3"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r1-20260809",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.5,
+        "L": 40
+      },
+      "status": "success",
+      "value": 0.3365955175619182,
+      "error": 0.0001,
+      "budget": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/cells/nega-r1-a0500-b0500-L040/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-51c60f85544cdb94c9dd",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6075,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/validation/nega-r1-a0500-b0500-L040.json",
+        "sha256": "df3e189236ee2e5d6187d717d9d44641816e112f2583b1bb7726cfc35513d011"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/receipts/nega-r1-a0500-b0500-L040.json",
+        "sha256": "cc1623075ea22d0ccca0d8ef60350d69daaee6332e3b338cd59a982ebb119e8a",
+        "manifest_sha256": "ae9635eae8a4b1b32bf7a013e45b2afe1e3d2e175ae403e8ee9a15dedfdfcdea",
+        "checksums_sha256": "b20a2f33b5cfcdf68b33e797918a87447849a3f10a6e8375e64cf24a5667ac69",
+        "preview_sha256": "e8de06894d1fc6cbf59b4ea0fba1743ae6f00dcf431eadb61fd987dffd12615b"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r1-20260809",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.5,
+        "L": 60
+      },
+      "status": "success",
+      "value": 0.31222512913418793,
+      "error": 0.0006663882435926083,
+      "budget": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/cells/nega-r1-a0500-b0500-L060/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-ae60c8b442ad94fde173",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.605,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/validation/nega-r1-a0500-b0500-L060.json",
+        "sha256": "f005c3ec9e3e8e67c3db98c59dc1834e765e3e7b53e83dc1621e6b433e3f6c0a"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/receipts/nega-r1-a0500-b0500-L060.json",
+        "sha256": "fe316a2b8886163cec29dc43e53e9067e3deae0c9ea0eee3e81446cdb75d1567",
+        "manifest_sha256": "7954c831a0ee5a67ff7404f0b843ea47a02a01f73c3668505831db9791549383",
+        "checksums_sha256": "90327563244942459dc9172cc0f138c1933e37f827e599272485292d675f7758",
+        "preview_sha256": "9b6a64274476a8bb8c14995cd35b43e75ed4d020e61baf1f30b2a0fad7119537"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r1-20260809",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.5,
+        "L": 40
+      },
+      "status": "success",
+      "value": 0.2962996764299473,
+      "error": 0.0001,
+      "budget": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/cells/nega-r1-a0350-b0500-L040/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-07d732a13d4ba0ae6eb0",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6075,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/validation/nega-r1-a0350-b0500-L040.json",
+        "sha256": "89aff40fc55eae31e91cd88c221e6bb49629b4996d8fe32affc94f491486c03c"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/receipts/nega-r1-a0350-b0500-L040.json",
+        "sha256": "2c9e2efc83872873155f03e39cefb4dcec243e42f115b45921742d16ae6448b6",
+        "manifest_sha256": "0bb735cd71ddf2b6ce66b9a19c46bac57db5c00dc6e9e9b5ebf045a245b8288e",
+        "checksums_sha256": "a29bcd431e846acfc746cab8d28f99ae74e81c56fa4f5d3c7aff794bd48b60e8",
+        "preview_sha256": "77d8a11f07fca73839e8bb5b803ff49e7be745771e73b3ca4dd2cb3eaa346697"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r1-20260809",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.5,
+        "L": 60
+      },
+      "status": "success",
+      "value": 0.19118030291679533,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r2-a0350-L060-20260810-1311/cells/nega-r2-a0350-b0500-L060/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-b39c74e9721492bce614",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r2-a0350-L060-20260810-1311/validation/nega-r2-a0350-b0500-L060.json",
+        "sha256": "692a494204130e5a5ede274c3b407cf8bbc94bc2131d13fc25c659636c53d15d"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r2-a0350-L060-20260810-1311/receipts/nega-r2-a0350-b0500-L060.json",
+        "sha256": "042b592fc9d4c8a5b06ee0d82ab3b457d499eaf4f73072386ebfc3767387e0d4",
+        "manifest_sha256": "52487525d56c1805835a2d48c024e0c292c4057c37b38dd50542e94ba378073b",
+        "checksums_sha256": "640512ec76fcc1a5fbe921027c3b5e43ccfaed26a1046306bc5b36db50fa8cc9",
+        "preview_sha256": "37d2cc0bbe6614c834d775041f4af665309dfdd9da25ed3216c7e2ce304db8ac"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r2-a0350-L060-20260810",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      },
+      "retry_provenance": {
+        "retry_of": "nega-r1-a0350-b0500-L060",
+        "previous_failed_observation": {
+          "params": {
+            "alpha": -0.35,
+            "beta": 0.5,
+            "L": 60
+          },
+          "status": "failed",
+          "budget": 32,
+          "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/validation/nega-r1-a0350-b0500-L060.json",
+          "controller_action_id": "act-b39c74e9721492bce614",
+          "failure_evidence": {
+            "validator_status": "fail",
+            "checks": {
+              "unique_run_spec_cell": true,
+              "terminal_acceptance": false,
+              "negative_alpha_range": true,
+              "beta_range": true,
+              "parent_checksums": true,
+              "children": true
+            },
+            "receipt": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/receipts/nega-r1-a0350-b0500-L060.json",
+            "receipt_sha256": "0a991244f5a389fee41b89bbb636fd49717a1c3ca698ab989d004437e01bf095",
+            "manifest_sha256": "3431e8e330c2cb83926d213503ae64396026c6c2a75a241d22dda0349dcde82b"
+          }
+        },
+        "previous_failure_artifact_sha256": "161e354edb5eb94a8e766d8878435f1f2616cacaea82628e8ddc2d90b6d8ad80",
+        "r2_run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r2-a0350-L060/parameter-scan.run_spec.json",
+        "r2_run_spec_sha256": "891f78e2a8fcbdb0de57c4f0d8d695b5e5e3d3b4e2570fe0c500737dcbce075e",
+        "r2_receipt": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r2-a0350-L060-20260810-1311/receipts/nega-r2-a0350-b0500-L060.json",
+        "r2_receipt_sha256": "042b592fc9d4c8a5b06ee0d82ab3b457d499eaf4f73072386ebfc3767387e0d4",
+        "r1_failure_provenance_preserved": true
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.5,
+        "L": 40
+      },
+      "status": "success",
+      "value": 0.15061416059789817,
+      "error": 0.0003894037982378751,
+      "budget": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r3-remaining13-20260810-1534/cells/nega-r3-a0250-b0500-L040/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-2d26dfe7cf872627ea81",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r3-remaining13-20260810-1534/validation/nega-r3-a0250-b0500-L040.json",
+        "sha256": "be32216857ad43a8ced290387208041e77797d9381096b4275db64b4c793a49f"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r3-remaining13-20260810-1534/receipts/nega-r3-a0250-b0500-L040.json",
+        "sha256": "24a42b8f3c256de56c774b77a912484678202a8bf4739bd7b79e1f8704613bfd",
+        "manifest_sha256": "c73ec8877053c7322df1f6245caf3f1197a653410902eef7cfea927dbfd3fb3b",
+        "checksums_sha256": "6196a7c269b34f59ed2093deacab3fb14cc1833cc08a1031810053cedc8792df",
+        "preview_sha256": "688e164e81493256d0bfaa4725020e6a0e11a48132b061773059c742986b2a54"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r3-remaining13-20260810",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      },
+      "r3_partial_handoff": true
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.5,
+        "L": 60
+      },
+      "status": "success",
+      "value": 0.21892400712328103,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r4-a0250-L060-20260810-1822/cells/nega-r4-a0250-b0500-L060/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-bd120db6bdbc305ddf42",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r4-a0250-L060-20260810-1822/validation/nega-r4-a0250-b0500-L060.json",
+        "sha256": "2cf86e81b44f236b7c230c931ad22bf4c4afef1eab33de3e81a028acaed44be2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r4-a0250-L060-20260810-1822/receipts/nega-r4-a0250-b0500-L060.json",
+        "sha256": "12544be80c6b1e0ccafc3e2d14d67fc244754f6a3995a9a6bde80ebbfce99aaf",
+        "manifest_sha256": "566b6907bad1fc8769766f2d5c83e72518f1f8c3c506ba621325f6b22198da39",
+        "checksums_sha256": "417665f88b2212ebe6095603a0e88dc749f5b2999f35c8e93117d4f0917893de",
+        "preview_sha256": "1a85d9714a417fc281ae89cd8958064b265e87fc850349c4ac4fefd4df4b38ee"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r4-a0250-L060-20260810",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      },
+      "retry_provenance": {
+        "retry_of": "nega-r3-a0250-b0500-L060",
+        "previous_failed_observation": {
+          "params": {
+            "alpha": -0.25,
+            "beta": 0.5,
+            "L": 60
+          },
+          "status": "failed",
+          "budget": 32,
+          "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r3-remaining13-20260810-1534/validation/nega-r3-a0250-b0500-L060.json",
+          "controller_action_id": "act-bd120db6bdbc305ddf42",
+          "failure_evidence": {
+            "validator_status": "fail",
+            "validator_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r3-remaining13-20260810-1534/validation/nega-r3-a0250-b0500-L060.json",
+            "validator_sha256": "f811ca27c68ab72855fc3c8e08380a742d960e273641844eda0a3111c8958642",
+            "checks": {
+              "unique_run_spec_cell": true,
+              "terminal_acceptance": false,
+              "negative_alpha_range": true,
+              "beta_range": true,
+              "parent_checksums": true,
+              "children": true
+            },
+            "failures": [
+              "父 manifest: 非 accepted success",
+              "父 status: 非 accepted success",
+              "父 manifest: children_accepted 未通过",
+              "子 manifest center: 非 accepted success",
+              "子 status center: 非 accepted success",
+              "子 manifest center: variance/site sz0 超门",
+              "子 manifest center: variance_sz0_per_site_le_1e-8 未通过",
+              "子 manifest ferro_j2: 非 accepted success",
+              "子 status ferro_j2: 非 accepted success",
+              "子 manifest ferro_j2: variance/site sz0 超门",
+              "子 manifest ferro_j2: variance_sz0_per_site_le_1e-8 未通过"
+            ],
+            "receipt": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r3-remaining13-20260810-1534/receipts/nega-r3-a0250-b0500-L060.json",
+            "receipt_sha256": "ed67207a6b2c78dbbea9f3273955767a508bfcfc282ddcf06d48aab798826299",
+            "manifest": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r3-remaining13-20260810-1534/cells/nega-r3-a0250-b0500-L060/manifest.json",
+            "manifest_sha256": "6a3167f77500d23cd3c9c1470e030e16c1e7bb07ddcaeb25f8769235f22a9ce3",
+            "checksums_sha256": "189541c4b3eff15ce8e55c186bab7e309d18eca7a06d81b949469218a55f8a7a",
+            "preview_sha256": "a3f9ce76f890d5b5f0738aa1ff27cd6445313ba9c160ef01e2e09c9c3cf39713"
+          },
+          "r3_partial_handoff": true
+        },
+        "previous_failure_artifact_sha256": "f811ca27c68ab72855fc3c8e08380a742d960e273641844eda0a3111c8958642",
+        "r4_run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r4-a0250-L060/parameter-scan.run_spec.json",
+        "r4_run_spec_sha256": "9938673521d544a13d8a214c4c6a65bf68205d6b89ffb3181a7ce607de0de83f",
+        "r4_receipt": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r4-a0250-L060-20260810-1822/receipts/nega-r4-a0250-b0500-L060.json",
+        "r4_receipt_sha256": "12544be80c6b1e0ccafc3e2d14d67fc244754f6a3995a9a6bde80ebbfce99aaf",
+        "r3_failure_provenance_preserved": true
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.5,
+        "L": 40
+      },
+      "status": "success",
+      "value": 0.1897161493859278,
+      "error": 0.011877542575884303,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r6-a0100-L040-20260810-2142/cells/nega-r6-a0100-b0500-L040/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-cd2b4353726834318d6b",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        },
+        "initial_state_sensitivity": {
+          "kind": "initial_state_half_difference",
+          "center_rpi": 0.2015936919618121,
+          "ferro_j2_rpi": 0.1778386068100435,
+          "absolute_difference": 0.023755085151768607,
+          "half_difference": 0.011877542575884303,
+          "reported_as_observable_error": true,
+          "numerical_gates_passed": true,
+          "systematic_caution_required": true,
+          "interpretation": "validator 通过不消除双初态差异；Rpi 半差作为系统敏感性保留"
+        },
+        "strict_numerical_gates": {
+          "center": {
+            "variance_per_site_sz0": 2.505253249296402e-09,
+            "variance_per_site_sz1": 2.191313797084149e-11,
+            "final_truncation_error_sz0": 9.758324132621427e-12,
+            "final_truncation_error_sz1": 9.998854343019538e-12,
+            "total_sz0": -1.3600232051658168e-15,
+            "total_sz1": 1.0000000000000022
+          },
+          "ferro_j2": {
+            "variance_per_site_sz0": 4.896068972470857e-09,
+            "variance_per_site_sz1": 2.191313797084149e-11,
+            "final_truncation_error_sz0": 9.925279958807757e-12,
+            "final_truncation_error_sz1": 9.998854343019538e-12,
+            "total_sz0": -7.771561172376096e-16,
+            "total_sz1": 1.0000000000000022
+          }
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r6-a0100-L040-20260810-2142/validation/nega-r6-a0100-b0500-L040.json",
+        "sha256": "60495568cdf56f3406347fd9e048c58c5e9010267822448b03bbb254b4a448ba"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r6-a0100-L040-20260810-2142/receipts/nega-r6-a0100-b0500-L040.json",
+        "sha256": "572a0489d17b8f3bac0a140c8befdc5c24bfea5137788db669199a44aa535bce",
+        "manifest_sha256": "b692590c27b181890509e42c05f597537c95d462c7f4d9e81e6fd186eb87a09b",
+        "checksums_sha256": "18922b0faea30515d5d5a963b95e9f47ea123c5ad0886af9f08cc16236539b09",
+        "preview_sha256": "1e970de7f3d163a2ee27d48e3633bbe433a2e309fde0bf2ec4bc2521898dd64b",
+        "parent_checksum_entries": 7,
+        "child_checksum_entries": {
+          "center": 13,
+          "ferro_j2": 13
+        }
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r6-a0100-L040-20260810",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      },
+      "r5_failure_provenance": {
+        "retry_of": "nega-r5-a0100-b0500-L040",
+        "previous_failed_observation": {
+          "params": {
+            "alpha": -0.1,
+            "beta": 0.5,
+            "L": 40
+          },
+          "status": "failed",
+          "budget": 32,
+          "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/validation/nega-r5-a0100-b0500-L040.json",
+          "controller_action_id": "act-cd2b4353726834318d6b",
+          "failure_evidence": {
+            "validator_status": "fail",
+            "validator_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/validation/nega-r5-a0100-b0500-L040.json",
+            "validator_sha256": "392e1c3c886668eadf9661b6ff00e7fdf40d11a570dd73bd3b865298f7e3386d",
+            "checks": {
+              "unique_run_spec_cell": true,
+              "terminal_acceptance": false,
+              "negative_alpha_range": true,
+              "beta_range": true,
+              "parent_checksums": true,
+              "children": true
+            },
+            "failures": [
+              "父 manifest: 非 accepted success",
+              "父 status: 非 accepted success",
+              "父 manifest: children_accepted 未通过",
+              "子 manifest center: 非 accepted success",
+              "子 status center: 非 accepted success",
+              "子 manifest center: variance/site sz0 超门",
+              "子 manifest center: variance_sz0_per_site_le_1e-8 未通过",
+              "子 manifest center: variance/site sz1 超门",
+              "子 manifest center: variance_sz1_per_site_le_1e-8 未通过",
+              "子 manifest ferro_j2: 非 accepted success",
+              "子 status ferro_j2: 非 accepted success",
+              "子 manifest ferro_j2: variance/site sz0 超门",
+              "子 manifest ferro_j2: variance_sz0_per_site_le_1e-8 未通过",
+              "子 manifest ferro_j2: variance/site sz1 超门",
+              "子 manifest ferro_j2: variance_sz1_per_site_le_1e-8 未通过"
+            ],
+            "receipt": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/receipts/nega-r5-a0100-b0500-L040.json",
+            "receipt_sha256": "16314936d37b0faf26c84e79eb27b010f742b28806518fa151a03593c8386344",
+            "manifest": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/cells/nega-r5-a0100-b0500-L040/manifest.json",
+            "manifest_sha256": "467cba33a9359d8e754a34568d12ad92056ed1a1cf33d25476212fd5b3d45596",
+            "checksums_sha256": "1de782430b1212fd4d02c7f75bad2fa48663e20b4b7e848f04d33105971e41e4",
+            "preview_sha256": "a09162b384bf0eddbb862c033154cc36e20238f0282e2456b5bd53c9d5d3ec35",
+            "diagnostics": {
+              "center": {
+                "variance_per_site_sz0": 3.7521125406669854e-08,
+                "variance_per_site_sz1": 4.256882135678097e-08,
+                "final_truncation_error_sz0": 9.965164980011925e-12,
+                "final_truncation_error_sz1": 9.987299602142405e-12,
+                "total_sz0": -7.216449660063518e-16,
+                "total_sz1": 1.0000000000000027
+              },
+              "ferro_j2": {
+                "variance_per_site_sz0": 2.1211983636248986e-08,
+                "variance_per_site_sz1": 4.256882135678097e-08,
+                "final_truncation_error_sz0": 9.987457775439249e-12,
+                "final_truncation_error_sz1": 9.987299602142405e-12,
+                "total_sz0": -1.27675647831893e-15,
+                "total_sz1": 1.0000000000000027
+              }
+            },
+            "thresholds": {
+              "variance_per_site_max": 1e-08,
+              "final_truncation_error_max": 1e-09,
+              "sector_tolerance": 1e-08
+            }
+          },
+          "r5_provenance": {
+            "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r5-remaining10/parameter-scan.run_spec.json",
+            "run_spec_sha256": "11515393af99f6678db47d88761967725aaecf1d41dde46c22de2d05df05c177",
+            "partial_handoff": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/partial_handoff_summary.json",
+            "partial_handoff_sha256": "0b7ffe34e5f11fc734798f6454a9834a998e34081d21ba661c1e62aa0bcc2e73",
+            "previous_pending_observation": {
+              "params": {
+                "alpha": -0.1,
+                "beta": 0.5,
+                "L": 40
+              },
+              "status": "pending",
+              "budget": 32,
+              "receipt": "direct-pid:623244",
+              "artifact": "stage-a-beta050-calibration/cells/nega-a0100-b0500-L040/manifest.json"
+            },
+            "r1_r2_r3_r4_evidence_preserved": true
+          }
+        },
+        "previous_failure_artifact_sha256": "392e1c3c886668eadf9661b6ff00e7fdf40d11a570dd73bd3b865298f7e3386d",
+        "r5_ingestion_summary": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r5_partial_ingestion_summary.json",
+        "r5_ingestion_summary_sha256": "7c8933ae9e3e73361fcab683e4e9f6a59760bd18fa238dcda013437b42ae8351",
+        "r6_run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r6-a0100-L040/parameter-scan.run_spec.json",
+        "r6_run_spec_sha256": "32ad828f35ea1088d10fdbded93014f4e7d08b899ab623b30f15fb7178bf1c81",
+        "preserved": true
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.5,
+        "L": 60
+      },
+      "status": "success",
+      "value": 0.21041408891534108,
+      "error": 0.007205423814601208,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r8-a0100-L060-20260811-0718/cells/nega-r8-a0100-b0500-L060/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-6a4963c3064243f17ed8",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        },
+        "initial_state_sensitivity": {
+          "center_rpi": 0.2176195127299423,
+          "ferro_j2_rpi": 0.20320866510073987,
+          "half_difference": 0.007205423814601208,
+          "systematic_caution_required": true
+        },
+        "strict_numerical_gates": {
+          "center": {
+            "variance_per_site_sz0": 2.039397865398011e-09,
+            "variance_per_site_sz1": 4.732593576288006e-10,
+            "final_truncation_error_sz0": 9.997591676745405e-12,
+            "final_truncation_error_sz1": 9.963981349850752e-12,
+            "total_sz0": -6.106226635438361e-16,
+            "total_sz1": 1.000000000000002,
+            "spin_gap": 3.8321431922838656e-05
+          },
+          "ferro_j2": {
+            "variance_per_site_sz0": 7.579965692154171e-10,
+            "variance_per_site_sz1": 4.732593576288006e-10,
+            "final_truncation_error_sz0": 9.987281955515263e-12,
+            "final_truncation_error_sz1": 9.963981349850752e-12,
+            "total_sz0": 1.942890293094024e-15,
+            "total_sz1": 1.000000000000002,
+            "spin_gap": 3.783487821706899e-05
+          }
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r8-a0100-L060-20260811-0718/validation/nega-r8-a0100-b0500-L060.json",
+        "sha256": "f545c47ed7124885f0e3a476cf62bf163a7e166a6e11be363ed010e49c20f334"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r8-a0100-L060-20260811-0718/receipts/nega-r8-a0100-b0500-L060.json",
+        "sha256": "1baee6805a445a7a46a8c75690980f5495b2a97922593c5477bac0a327f798f7"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r8-a0100-L060-20260811",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      },
+      "r7_failure_provenance": {
+        "previous_failed_observation": {
+          "params": {
+            "alpha": -0.1,
+            "beta": 0.5,
+            "L": 60
+          },
+          "status": "failed",
+          "budget": 32,
+          "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r7-remaining8-20260811-0616/validation/nega-r7-a0100-b0500-L060.json",
+          "controller_action_id": "act-6a4963c3064243f17ed8",
+          "failure_evidence": {
+            "validator_status": "fail",
+            "validator_checks": {
+              "unique_run_spec_cell": true,
+              "terminal_acceptance": false,
+              "negative_alpha_range": true,
+              "beta_range": true,
+              "parent_checksums": true,
+              "children": true
+            },
+            "validator_failures": [
+              "父 manifest: 非 accepted success",
+              "父 status: 非 accepted success",
+              "父 manifest: children_accepted 未通过",
+              "子 manifest center: 非 accepted success",
+              "子 status center: 非 accepted success",
+              "子 manifest center: variance/site sz0 超门",
+              "子 manifest center: variance_sz0_per_site_le_1e-8 未通过",
+              "子 manifest center: variance/site sz1 超门",
+              "子 manifest center: variance_sz1_per_site_le_1e-8 未通过",
+              "子 manifest ferro_j2: 非 accepted success",
+              "子 status ferro_j2: 非 accepted success",
+              "子 manifest ferro_j2: variance/site sz0 超门",
+              "子 manifest ferro_j2: variance_sz0_per_site_le_1e-8 未通过",
+              "子 manifest ferro_j2: variance/site sz1 超门",
+              "子 manifest ferro_j2: variance_sz1_per_site_le_1e-8 未通过"
+            ],
+            "thresholds": {
+              "variance_per_site_max": 1e-08,
+              "final_truncation_error_max": 1e-09,
+              "sector_tolerance": 1e-08
+            },
+            "children": {
+              "center": {
+                "status": "failed_acceptance",
+                "accepted": false,
+                "false_acceptance_flags": [
+                  "nonnegative_gap",
+                  "variance_sz0_per_site_le_1e-8",
+                  "variance_sz1_per_site_le_1e-8"
+                ],
+                "energy_sz0": -16.22245715058653,
+                "energy_sz1": -16.222543839002327,
+                "spin_gap": -8.668841579861919e-05,
+                "dominant_rpi": 0.11932456462131469,
+                "q_peak_over_pi": 1.0,
+                "structure_factor_peak": 0.5996917972583266,
+                "variance_per_site_sz0": 2.534237826997317e-08,
+                "variance_per_site_sz1": 7.035126069846834e-08,
+                "final_truncation_error_sz0": 9.966956231192657e-12,
+                "final_truncation_error_sz1": 9.983836363039065e-12,
+                "total_sz0": -3.0253577421035516e-15,
+                "total_sz1": 1.0000000000000033,
+                "actual_maxdim_sz0": 71,
+                "actual_maxdim_sz1": 72,
+                "requested_sweeps": 32,
+                "q_count": 401,
+                "threshold_comparison": {
+                  "variance_sz0_ratio_to_limit": 2.534237826997317,
+                  "variance_sz1_ratio_to_limit": 7.035126069846834,
+                  "truncation_sz0_ratio_to_limit": 0.009966956231192656,
+                  "truncation_sz1_ratio_to_limit": 0.009983836363039063
+                }
+              },
+              "ferro_j2": {
+                "status": "failed_acceptance",
+                "accepted": false,
+                "false_acceptance_flags": [
+                  "variance_sz0_per_site_le_1e-8",
+                  "variance_sz1_per_site_le_1e-8"
+                ],
+                "energy_sz0": -16.22271293535117,
+                "energy_sz1": -16.222543839002327,
+                "spin_gap": 0.00016909634884143543,
+                "dominant_rpi": 0.0911261564161322,
+                "q_peak_over_pi": 1.0,
+                "structure_factor_peak": 0.5566270530828472,
+                "variance_per_site_sz0": 2.3748604386734464e-08,
+                "variance_per_site_sz1": 7.035126069846834e-08,
+                "final_truncation_error_sz0": 9.985531236610967e-12,
+                "final_truncation_error_sz1": 9.983836363039065e-12,
+                "total_sz0": -6.994405055138486e-15,
+                "total_sz1": 1.0000000000000033,
+                "actual_maxdim_sz0": 54,
+                "actual_maxdim_sz1": 72,
+                "requested_sweeps": 32,
+                "q_count": 401,
+                "threshold_comparison": {
+                  "variance_sz0_ratio_to_limit": 2.3748604386734464,
+                  "variance_sz1_ratio_to_limit": 7.035126069846834,
+                  "truncation_sz0_ratio_to_limit": 0.009985531236610966,
+                  "truncation_sz1_ratio_to_limit": 0.009983836363039063
+                }
+              }
+            },
+            "initial_state_differences": {
+              "dominant_rpi_absolute_difference": 0.02819840820518249,
+              "dominant_rpi_half_difference": 0.014099204102591245,
+              "energy_sz0_absolute_difference": 0.0002557847646400546,
+              "energy_sz1_absolute_difference": 0.0,
+              "spin_gap_absolute_difference": 0.0002557847646400546,
+              "structure_factor_peak_absolute_difference": 0.04306474417547934,
+              "q_peak_over_pi_absolute_difference": 0.0,
+              "systematic_caution_required": true,
+              "interpretation": "数值门失败时双初态差异仅作为失败诊断，不得形成accepted observable"
+            },
+            "parent_failed_diagnostics_only": {
+              "reported_rpi_mean": 0.10522536051872344,
+              "reported_rpi_uncertainty": 0.014099204102591245,
+              "reported_q_peak_over_pi": 1.0,
+              "reported_structure_factor_peak": 0.5781594251705868
+            },
+            "checksum_receipt": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r7-remaining8-20260811-0616/receipts/nega-r7-a0100-b0500-L060.json",
+            "checksum_receipt_sha256": "4023d9223d67a72d3e73197a24481f2f4fa3f9c6fd1f2548c2f7b5d4edf09b3c",
+            "manifest": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r7-remaining8-20260811-0616/cells/nega-r7-a0100-b0500-L060/manifest.json",
+            "manifest_sha256": "d8b113108f42e1d4f7059546993ea0b610c765de4b6a1424e3ce847b39223e74"
+          },
+          "accepted_only_eligible": false,
+          "r7_provenance": {
+            "previous_pending_observation": {
+              "params": {
+                "alpha": -0.1,
+                "beta": 0.5,
+                "L": 60
+              },
+              "status": "pending",
+              "budget": 32,
+              "receipt": "direct-pid:623244",
+              "artifact": "stage-a-beta050-calibration/cells/nega-a0100-b0500-L060/manifest.json"
+            },
+            "run_spec": {
+              "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r7-remaining8/parameter-scan.run_spec.json",
+              "sha256": "ba1faf376298eaeed0857a40dc8f79a1f9f691ce73ede751e7046b4e62715406"
+            },
+            "validation_summary": {
+              "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r7-remaining8-20260811-0616/validation/summary.json",
+              "sha256": "6b6c77defbc27cfb1b8a3a8f3a6c37587bcf22fd79d04b3fab0dc603035276ca"
+            },
+            "partial_handoff_summary": {
+              "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r7-remaining8-20260811-0616/partial_handoff_summary.json",
+              "sha256": "a831b6404687281db47c660353ce68576e788a776caea1c937f582879ccdffe1"
+            },
+            "handoff_audit": {
+              "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r7-remaining8-20260811-0616/handoff_audit.json",
+              "sha256": "673c50f730b8a656c6479f0ec3aef8f2850c403b78d8c1aa5badc24abe44ddc9"
+            },
+            "r6": {
+              "ingestion_summary": {
+                "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r6_ingestion_summary.json",
+                "sha256": "65dbb8c0256cf659e0200e9b002493994bcb106ffb60f6ad33242fa498cb09ec"
+              },
+              "ingestion_audit": {
+                "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r6_ingestion_audit.json",
+                "sha256": "dc1baaf44ffd51cc50d4de17f39a035763f5abd707ea1500e0d8a98803295c25"
+              },
+              "accepted_observation_canonical_sha256": "bf88f3e04fc90d69806ab1ff960646aef684ed59817a66c8f49207e37f80d617",
+              "accepted_artifact": {
+                "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r6-a0100-L040-20260810-2142/cells/nega-r6-a0100-b0500-L040/manifest.json",
+                "sha256": "b692590c27b181890509e42c05f597537c95d462c7f4d9e81e6fd186eb87a09b"
+              },
+              "validation": {
+                "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r6-a0100-L040-20260810-2142/validation/nega-r6-a0100-b0500-L040.json",
+                "sha256": "60495568cdf56f3406347fd9e048c58c5e9010267822448b03bbb254b4a448ba"
+              },
+              "checksum_receipt": {
+                "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r6-a0100-L040-20260810-2142/receipts/nega-r6-a0100-b0500-L040.json",
+                "sha256": "572a0489d17b8f3bac0a140c8befdc5c24bfea5137788db669199a44aa535bce"
+              },
+              "r5_failure_provenance_preserved": true
+            }
+          }
+        },
+        "previous_failure_artifact_sha256": "5009434ac22b74e790b92a465a7abefdad80fd65c03ce062edf10dddaaaaa20b",
+        "r7_ingestion_summary": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r7_failure_ingestion_summary.json",
+        "r7_ingestion_summary_sha256": "252916b69e1ebf3b362531f5cc98d92537ff400555bccf0ffe85058407cfb94e",
+        "preserved": true
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.5,
+        "L": 40
+      },
+      "status": "success",
+      "value": 0.20058285347860516,
+      "error": 0.007629817900589142,
+      "budget": 128,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r11-a0050-L040-20260811-1133/nega-r11-a0050-b0500-L040/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-fffdf93a9cae183cb1c1",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        },
+        "strict_numerical_gates": {
+          "center": {
+            "variance_per_site_sz0": 8.669683637663183e-10,
+            "variance_per_site_sz1": 4.918305762657837e-11,
+            "final_truncation_error_sz0": 9.982905118635766e-12,
+            "final_truncation_error_sz1": 9.979730394867584e-12,
+            "total_sz0": -3.1086244689504383e-15,
+            "total_sz1": 1.0000000000000009,
+            "spin_gap": 2.1522802406082064e-05
+          },
+          "ferro_j2": {
+            "variance_per_site_sz0": 5.045336592957028e-10,
+            "variance_per_site_sz1": 4.918305762657837e-11,
+            "final_truncation_error_sz0": 9.999112360634251e-12,
+            "final_truncation_error_sz1": 9.979730394867584e-12,
+            "total_sz0": -2.7755575615628914e-16,
+            "total_sz1": 1.0000000000000009,
+            "spin_gap": 1.849213544069528e-05
+          }
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r11-a0050-L040-20260811-1133/validation/nega-r11-a0050-b0500-L040.json",
+        "sha256": "3a6005603e53b080bbc0e806adafcf51fe1eeae187f8c8dce953adabd28bd6f0"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r11-a0050-L040-20260811-1133/receipts/nega-r11-a0050-b0500-L040.json",
+        "sha256": "a4c708a59dcdeccacd41a1a0f32272448565c9e076896e01a7023865dcbe20b8"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r11-a0050-L040-20260811",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      },
+      "r10_failure_provenance": {
+        "previous_failed_observation": {
+          "params": {
+            "alpha": -0.05,
+            "beta": 0.5,
+            "L": 40
+          },
+          "status": "failed",
+          "budget": 64,
+          "accepted_only": false,
+          "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r10-a0050-L040-20260811-1032/validation/nega-r10-a0050-b0500-L040.json",
+          "controller_action_id": "act-fffdf93a9cae183cb1c1",
+          "failure_evidence": {
+            "validator_status": "fail",
+            "validator_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r10-a0050-L040-20260811-1032/validation/nega-r10-a0050-b0500-L040.json",
+            "validator_sha256": "327bdeb4c5c9f9b98535503a62272630071cb740d00bc01b8def080c6ea653f5",
+            "manifest_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r10-a0050-L040-20260811-1032/nega-r10-a0050-b0500-L040/manifest.json",
+            "manifest_sha256": "84d6d13d1a2ebf4ef14f0159f0c1b09a75fad6895b0edb572b6f58409dcd628b",
+            "receipt_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r10-a0050-L040-20260811-1032/receipts/nega-r10-a0050-b0500-L040.json",
+            "receipt_sha256": "e5ba5838d70cd1127700a0518f39b447c14533ed140725522c962d5d38a32c1e",
+            "failed_gates": {
+              "center": [
+                "nonnegative_gap",
+                "variance_sz0_per_site_le_1e-8"
+              ],
+              "ferro_j2": []
+            },
+            "strict_numerical_diagnostics": {
+              "center": {
+                "variance_per_site_sz0": 1.1541855116092847e-08,
+                "variance_per_site_sz1": 5.843816808237534e-09,
+                "final_truncation_error_sz0": 9.968190153009691e-12,
+                "final_truncation_error_sz1": 9.912295301373876e-12,
+                "total_sz0": -1.3600232051658168e-15,
+                "total_sz1": 1.0000000000000016,
+                "spin_gap": -3.301289132551233e-05
+              },
+              "ferro_j2": {
+                "variance_per_site_sz0": 2.5659211644324386e-09,
+                "variance_per_site_sz1": 5.843816808237534e-09,
+                "final_truncation_error_sz0": 9.944507032141099e-12,
+                "final_truncation_error_sz1": 9.912295301373876e-12,
+                "total_sz0": -7.771561172376096e-16,
+                "total_sz1": 1.0000000000000016,
+                "spin_gap": 3.4323185325035865e-05
+              }
+            },
+            "thresholds": {
+              "variance_per_site_max": 1e-08,
+              "final_truncation_error_max": 1e-09,
+              "sector_tolerance": 1e-08,
+              "spin_gap_min": -1e-08
+            },
+            "thresholds_relaxed": false
+          },
+          "r10_provenance": {
+            "retry_of": "nega-r9-a0050-b0500-L040",
+            "run_spec": {
+              "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r10-a0050-L040/parameter-scan.run_spec.json",
+              "sha256": "8a22ddc497974317d5de962b57f97338195387d57f6ce38cd8760a72123ab48d"
+            },
+            "failure_handoff": {
+              "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r10-a0050-L040-20260811-1032/failure_handoff_summary.json",
+              "sha256": "c0e47e2c23cadf4c33bdbaa0a97121e2f0ca3b8c93a4196fd9a8fe39527f2ff7"
+            },
+            "r9_failure_provenance": {
+              "params": {
+                "alpha": -0.05,
+                "beta": 0.5,
+                "L": 40
+              },
+              "status": "failed",
+              "budget": 32,
+              "accepted_only": false,
+              "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r9-remaining7-20260811-0932/validation/nega-r9-a0050-b0500-L040.json",
+              "controller_action_id": "act-fffdf93a9cae183cb1c1",
+              "failure_evidence": {
+                "validator_status": "fail",
+                "validator_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r9-remaining7-20260811-0932/validation/nega-r9-a0050-b0500-L040.json",
+                "validator_sha256": "a5749245f4f4b9935c20cffce060dd9ba55d79255de6b75c51be07c46f618c5e",
+                "manifest_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r9-remaining7-20260811-0932/nega-r9-a0050-b0500-L040/manifest.json",
+                "manifest_sha256": "c0f374b88e3041f80971006e7f75ab90a6e3c93aab8123df00401e05a84036db",
+                "receipt_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r9-remaining7-20260811-0932/receipts/nega-r9-a0050-b0500-L040.json",
+                "receipt_sha256": "820caec474d97d903b0c5930e57643d1e995da2c637e373657a5c9347e53797b",
+                "failed_gates": [
+                  "variance_sz0_per_site_le_1e-8",
+                  "variance_sz1_per_site_le_1e-8"
+                ],
+                "strict_numerical_diagnostics": {
+                  "center": {
+                    "variance_per_site_sz0": 3.279615690132687e-08,
+                    "variance_per_site_sz1": 1.518933988364779e-07,
+                    "final_truncation_error_sz0": 9.946262216314783e-12,
+                    "final_truncation_error_sz1": 9.999127101149172e-12,
+                    "total_sz0": -2.1371793224034263e-15,
+                    "total_sz1": 1.0000000000000007,
+                    "spin_gap": 0.0006290561053408084
+                  },
+                  "ferro_j2": {
+                    "variance_per_site_sz0": 6.938344725426759e-08,
+                    "variance_per_site_sz1": 1.518933988364779e-07,
+                    "final_truncation_error_sz0": 9.992901050552198e-12,
+                    "final_truncation_error_sz1": 9.999127101149172e-12,
+                    "total_sz0": -6.106226635438361e-16,
+                    "total_sz1": 1.0000000000000007,
+                    "spin_gap": 0.0006772875451677152
+                  }
+                },
+                "thresholds": {
+                  "variance_per_site_max": 1e-08,
+                  "final_truncation_error_max": 1e-09,
+                  "sector_tolerance": 1e-08,
+                  "spin_gap_min": -1e-08
+                },
+                "thresholds_relaxed": false
+              },
+              "r9_provenance": {
+                "previous_pending_observation": {
+                  "params": {
+                    "alpha": -0.05,
+                    "beta": 0.5,
+                    "L": 40
+                  },
+                  "status": "pending",
+                  "budget": 32,
+                  "receipt": "direct-pid:623244",
+                  "artifact": "stage-a-beta050-calibration/cells/nega-a0050-b0500-L040/manifest.json"
+                },
+                "run_spec": {
+                  "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r9-remaining7/parameter-scan.run_spec.json",
+                  "sha256": "7290e48b615d2d27ac20cbf36c1939bf9d488f97a374b5bfd94729c81742bf3b"
+                },
+                "partial_handoff": {
+                  "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r9-remaining7-20260811-0932/partial_handoff_summary.json",
+                  "sha256": "dac1114d635b15b5c4481f7fe062bd7835e10e88f798627666ae46075553a7eb"
+                },
+                "r7_failure_provenance_preserved": true,
+                "r6_half_difference_preserved": 0.011877542575884303
+              }
+            },
+            "r9_failure_provenance_preserved": true,
+            "r6_half_difference_preserved": 0.011877542575884303,
+            "r7_failure_provenance_preserved": true
+          }
+        },
+        "previous_failure_artifact_sha256": "327bdeb4c5c9f9b98535503a62272630071cb740d00bc01b8def080c6ea653f5",
+        "r10_ingestion_summary": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r10_failure_ingestion_summary.json",
+        "r10_ingestion_summary_sha256": "1f0dd6162ed4392395d47bb7fd4c6673334c7d0d661fe1660d75813f26a68908",
+        "r9_failure_provenance_preserved": true,
+        "preserved": true
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.5,
+        "L": 60
+      },
+      "status": "success",
+      "value": 0.2241927264521733,
+      "error": 0.018036755267434257,
+      "budget": 128,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r13-a0050-L060-20260811-1434/nega-r13-a0050-b0500-L060/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-7016420e7cbf8fc354b7",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        },
+        "strict_numerical_gates": {
+          "center": {
+            "variance_per_site_sz0": 1.8371338228462264e-09,
+            "variance_per_site_sz1": 9.218060389078649e-10,
+            "final_truncation_error_sz0": 9.993353541215e-12,
+            "final_truncation_error_sz1": 9.964443390871176e-12,
+            "total_sz0": -2.942091015256665e-15,
+            "total_sz1": 1.0000000000000018,
+            "spin_gap": 1.497577599707256e-06
+          },
+          "ferro_j2": {
+            "variance_per_site_sz0": 3.3676220330865665e-10,
+            "variance_per_site_sz1": 9.218060389078649e-10,
+            "final_truncation_error_sz0": 9.997808595235953e-12,
+            "final_truncation_error_sz1": 9.964443390871176e-12,
+            "total_sz0": -5.551115123125783e-15,
+            "total_sz1": 1.0000000000000018,
+            "spin_gap": 1.2855057580196672e-05
+          }
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r13-a0050-L060-20260811-1434/validation/nega-r13-a0050-b0500-L060.json",
+        "sha256": "51fdd703788fff13bef2db31fd4b08c5526a6d3964ff5c792e304868a4bef0c9"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r13-a0050-L060-20260811-1434/receipts/nega-r13-a0050-b0500-L060.json",
+        "sha256": "be2ba5b6bdc3b960345b2614eb14de6caf432c10d340838aa9410a84e4d156cb"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r13-a0050-L060-20260811",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      },
+      "r12_failure_provenance": {
+        "previous_failed_observation": {
+          "params": {
+            "alpha": -0.05,
+            "beta": 0.5,
+            "L": 60
+          },
+          "status": "failed",
+          "budget": 64,
+          "accepted_only": false,
+          "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r12-remaining5-20260811-1333/validation/nega-r12-a0050-b0500-L060.json",
+          "controller_action_id": "act-7016420e7cbf8fc354b7",
+          "failure_evidence": {
+            "validator_status": "fail",
+            "validator_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r12-remaining5-20260811-1333/validation/nega-r12-a0050-b0500-L060.json",
+            "validator_sha256": "58d6e5673e4ef04fcf3b63b0214af4e4bf69f62db6d9f5ebd94bc060c7e4d981",
+            "manifest_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r12-remaining5-20260811-1333/nega-r12-a0050-b0500-L060/manifest.json",
+            "manifest_sha256": "181ba4323e19b7e586ec33ad98cffed5440f6a8d3af9628665789f811ee33da7",
+            "receipt_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r12-remaining5-20260811-1333/receipts/nega-r12-a0050-b0500-L060.json",
+            "receipt_sha256": "b97f621eaadb01fb6d7048127cf915525f458e3eda422db5996ae8a379362486",
+            "failed_gates": {
+              "center": [
+                "variance_sz1_per_site_le_1e-8"
+              ],
+              "ferro_j2": [
+                "variance_sz1_per_site_le_1e-8"
+              ]
+            },
+            "strict_numerical_diagnostics": {
+              "center": {
+                "variance_per_site_sz0": 5.7180007691689145e-09,
+                "variance_per_site_sz1": 3.962318354903497e-08,
+                "final_truncation_error_sz0": 9.995428477522698e-12,
+                "final_truncation_error_sz1": 9.950662366728093e-12,
+                "total_sz0": -4.718447854656915e-16,
+                "total_sz1": 1.0000000000000024,
+                "spin_gap": 0.00010235618600873408
+              },
+              "ferro_j2": {
+                "variance_per_site_sz0": 2.917535842546689e-09,
+                "variance_per_site_sz1": 3.962318354903497e-08,
+                "final_truncation_error_sz0": 9.982562048947637e-12,
+                "final_truncation_error_sz1": 9.950662366728093e-12,
+                "total_sz0": -4.496403249731884e-15,
+                "total_sz1": 1.0000000000000024,
+                "spin_gap": 0.00022012541904814498
+              }
+            },
+            "thresholds": {
+              "variance_per_site_max": 1e-08,
+              "final_truncation_error_max": 1e-09,
+              "sector_tolerance": 1e-08,
+              "spin_gap_min": -1e-08
+            },
+            "thresholds_relaxed": false
+          },
+          "r12_provenance": {
+            "previous_pending_observation": {
+              "params": {
+                "alpha": -0.05,
+                "beta": 0.5,
+                "L": 60
+              },
+              "status": "pending",
+              "budget": 32,
+              "receipt": "direct-pid:623244",
+              "artifact": "stage-a-beta050-calibration/cells/nega-a0050-b0500-L060/manifest.json"
+            },
+            "original_action_budget": 32,
+            "run_spec": {
+              "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r12-remaining5/parameter-scan.run_spec.json",
+              "sha256": "3fd8825d1f58ba537e39b3ea771869feb126d6ffa32030bebb48471428866993"
+            },
+            "failure_handoff": {
+              "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r12-remaining5-20260811-1333/failure_handoff_summary.json",
+              "sha256": "6b360aedb5e97a7a4fbb7d6bb3762c4afe43797382ea06c71f440c625a90b211"
+            },
+            "r11_accepted_observation_sha256": "4985e3cb5127aadac3e081def01cf4b88552ec0a43099dcc40b574659743b220",
+            "r11_accepted_provenance_preserved": true,
+            "r9_r10_failure_provenance_preserved": true,
+            "r6_half_difference_preserved": 0.011877542575884303,
+            "r7_failure_provenance_preserved": true
+          }
+        },
+        "previous_failure_artifact_sha256": "58d6e5673e4ef04fcf3b63b0214af4e4bf69f62db6d9f5ebd94bc060c7e4d981",
+        "r12_ingestion_summary": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r12_failure_ingestion_summary.json",
+        "r12_ingestion_summary_sha256": "3f77de206e64bc2b1dc8f45faaa955017e5a094a00f0aeb10ab26427e292d200",
+        "r11_and_r9_r10_history_preserved": true,
+        "preserved": true
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.5,
+        "L": 40
+      },
+      "status": "success",
+      "value": 0.11523279357304228,
+      "error": 0.006419352058196437,
+      "budget": 128,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r18-a0025-L040-20260812-0711/nega-r18-a0025-b0500-L040/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-4503b7acb169c6a5092f",
+      "boundary_eligible": true,
+      "diagnostics": {
+        "q_peak_over_pi": 1.0,
+        "strict_numerical_gates": {
+          "unique_run_spec_cell": true,
+          "terminal_acceptance": true,
+          "negative_alpha_range": true,
+          "beta_range": true,
+          "parent_checksums": true,
+          "children": true
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r18-a0025-L040-20260812-0711/validation/nega-r18-a0025-b0500-L040.json",
+        "sha256": "504c6c5e3fde5f6e5117c19c3d275b4e9abba1927e7bc18e1e8dfca614325378"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r18-a0025-L040-20260812-0711/receipts/nega-r18-a0025-b0500-L040.json",
+        "sha256": "c2d55b2b03b0821c895b6a5ff10f2ea41a36e1f4c8c20744b9533341ba7bbeb9"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r18-a0025-L040-20260812",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "70cb7aeec60340c9275e927a40d1728372e84f891379ba751f1c3dbc9110a2e2",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "2eadf9e6ac59931e2f994e36d2c4b8054def07c18aa0a66739781ce8e19b0d54",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      },
+      "r17_failure_provenance": {
+        "previous_failed_observation": {
+          "params": {
+            "alpha": -0.025,
+            "beta": 0.5,
+            "L": 40
+          },
+          "status": "failed",
+          "budget": 64,
+          "accepted_only": false,
+          "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r17-remaining3-20260812-0630/validation/nega-r17-a0025-b0500-L040.json",
+          "controller_action_id": "act-4503b7acb169c6a5092f",
+          "failure_evidence": {
+            "validator_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r17-remaining3-20260812-0630/validation/nega-r17-a0025-b0500-L040.json",
+            "validator_sha256": "a48842219107a3c449d68fabbd7e124d3acf9d1fa735a67268af5039cc563aca",
+            "manifest_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r17-remaining3-20260812-0630/nega-r17-a0025-b0500-L040/manifest.json",
+            "manifest_sha256": "2e57825b658665d756c174273c38a89d701dacb98bc0a81a0b4d4f269ca5e8fe",
+            "receipt_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r17-remaining3-20260812-0630/receipts/nega-r17-a0025-b0500-L040.json",
+            "receipt_sha256": "f727f28158c22599520e1bfc8f1b5d2ac9295488de37ad37e03ac6a0fc2169e6",
+            "failed_gates": [
+              "父 manifest: 非 accepted success",
+              "父 status: 非 accepted success",
+              "父 manifest: children_accepted 未通过",
+              "子 manifest center: 非 accepted success",
+              "子 status center: 非 accepted success",
+              "子 manifest center: variance/site sz1 超门",
+              "子 manifest center: variance_sz1_per_site_le_1e-8 未通过",
+              "子 manifest ferro_j2: 非 accepted success",
+              "子 status ferro_j2: 非 accepted success",
+              "子 manifest ferro_j2: variance/site sz1 超门",
+              "子 manifest ferro_j2: variance_sz1_per_site_le_1e-8 未通过"
+            ],
+            "strict_numerical_diagnostics": {
+              "center_variance_sz1": 1.2708003893635578e-08,
+              "ferro_j2_variance_sz1": 1.2708003893635578e-08,
+              "threshold": 1e-08
+            },
+            "thresholds_relaxed": false
+          },
+          "r17_provenance": {
+            "previous_pending_observation": {
+              "params": {
+                "alpha": -0.025,
+                "beta": 0.5,
+                "L": 40
+              },
+              "status": "pending",
+              "budget": 32,
+              "receipt": "direct-pid:623244",
+              "artifact": "stage-a-beta050-calibration/cells/nega-a0025-b0500-L040/manifest.json"
+            },
+            "run_spec": {
+              "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r17-remaining3/parameter-scan.run_spec.json",
+              "sha256": "bfa8fe99ab277533e8c94ad90009c4995bbc66e279f77db8ff5885097df7ebc7"
+            },
+            "r16_strict_failure_preserved": true,
+            "r16_boundary_ineligible_preserved": true
+          }
+        },
+        "ingestion_summary": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r17_failure_ingestion_summary.json",
+        "ingestion_summary_sha256": "569236c4f5154d867e87ccdd8ce33e5fbf681e2421248b5e3cdf8dca01b25cbe",
+        "preserved": true
+      },
+      "r18_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r18-a0025-L040/parameter-scan.run_spec.json",
+        "run_spec_sha256": "b63ab1bf415596ce8c4e5807537847d5777ab5e020812043852ce82d8126448b",
+        "last_budget": true,
+        "thresholds_relaxed": false
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.5,
+        "L": 60
+      },
+      "status": "success",
+      "value": 0.02298107198803162,
+      "error": 0.00039537536460237943,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r19-remaining2-20260812-0810/nega-r19-a0025-b0500-L060/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-3d1ab066156655e22ec8",
+      "calibration_only": false,
+      "boundary_eligible": true,
+      "diagnostics": {
+        "q_peak_over_pi": 1.0,
+        "strict_numerical_gates": {
+          "unique_run_spec_cell": true,
+          "terminal_acceptance": true,
+          "negative_alpha_range": true,
+          "beta_range": true,
+          "parent_checksums": true,
+          "children": true
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r19-remaining2-20260812-0810/validation/nega-r19-a0025-b0500-L060.json",
+        "sha256": "f0a79b9915e78ff24dd8a0749de6cb4c16c4a512fd89974f055f393968cb636c"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r19-remaining2-20260812-0810/receipts/nega-r19-a0025-b0500-L060.json",
+        "sha256": "4092c0fdf33e9069868fb6d2e20fa57d64b653da160b393b31945672ccb34262"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-a-r19-remaining2-20260812",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "70cb7aeec60340c9275e927a40d1728372e84f891379ba751f1c3dbc9110a2e2",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "2eadf9e6ac59931e2f994e36d2c4b8054def07c18aa0a66739781ce8e19b0d54",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      },
+      "r19_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r19-remaining2/parameter-scan.run_spec.json",
+        "run_spec_sha256": "0d4a3befa0d71c87e5b0a7aa4966adfcafbe513484ecb44a8eac27d97ec3954d",
+        "r18_failure_history_preserved": true,
+        "thresholds_relaxed": false,
+        "previous_pending_observation": {
+          "params": {
+            "alpha": -0.025,
+            "beta": 0.5,
+            "L": 60
+          },
+          "status": "pending",
+          "budget": 32,
+          "receipt": "direct-pid:623244",
+          "artifact": "stage-a-beta050-calibration/cells/nega-a0025-b0500-L060/manifest.json"
+        }
+      }
+    }
+  ]
+}

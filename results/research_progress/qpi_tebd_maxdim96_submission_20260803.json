@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "submitted_at": "2026-08-03T21:37:25+08:00",
+  "target": "wangjieren@39.96.207.180:6000",
+  "run_root": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round28_qpi_maxdim96",
+  "cell_id": "qpi-alpha023-maxdim096-dt00125-t30",
+  "scope": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "L": 40,
+    "q_over_pi": 1.0,
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "parameters": {
+    "eta": 0.1,
+    "tstep": 0.0125,
+    "tmax": 30.0,
+    "dmrg_maxdim": 96,
+    "tebd_maxdim": 96,
+    "threads": 8,
+    "checkpoint_interval_steps": 100,
+    "omega_grid": [0.0, 3.0, 0.05]
+  },
+  "local_script_sha256": "2b446ed3920d21e274ba4004193fa56fc8ad222958e50362098418523de09b84",
+  "remote_script": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/scripts/run_qpi_tebd_maxdim96_remote_20260803.sh",
+  "upload": {
+    "status": "success",
+    "files": 1,
+    "non_clobbering": true
+  },
+  "launch": {
+    "status": "running",
+    "supervisor_pid": 268497,
+    "driver_pid": 268502,
+    "julia_pid": 268509,
+    "julia_process_count": 1,
+    "remote_status": {
+      "status": "running",
+      "phase": "tebd",
+      "message": "严格 q=pi maxdim=96 运行中"
+    },
+    "checked_at": "2026-08-03T21:37:25+08:00"
+  },
+  "eta_minutes": {
+    "typical": [8, 18],
+    "conservative_upper": 30
+  },
+  "safety": {
+    "target_absent_before_upload": true,
+    "script_absent_before_upload": true,
+    "existing_julia_absent_before_launch": true,
+    "offline_julia_packages": true,
+    "single_julia_guard": true
+  },
+  "next": "等待终态；仅在完成后回传、独立 checksum、maxdim 分析和 HTML 更新。"
+}

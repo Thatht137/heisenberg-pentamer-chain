@@ -1,0 +1,30 @@
+{
+  "core_conclusion": "k=3→k=8 会改变部分 L80 观测量，且初态 spread 与求解器末步能量变化可量化；这些证据不能替代观测量稳定性、有限尺寸标度或物理相判定。",
+  "evidence_chain": [
+    "entropy spatial profiles: old/new at two alpha points and two Sz0 start modes",
+    "gap/dimer/connected sensitivity: comparison records",
+    "finite-size context: old k3 L40/L60/L80 plus new k8 L80 only",
+    "solver diagnostics: final energy change, actual maxdim, q_peak and dominant ratio"
+  ],
+  "archetype": "quantitative grid",
+  "backend": "python_matplotlib",
+  "journal_width_mm": 183,
+  "exports": [
+    "SVG editable text",
+    "PDF editable text",
+    "PNG 600 dpi",
+    "TIFF 600 dpi"
+  ],
+  "statistics": {
+    "deterministic_data": true,
+    "p_values": false,
+    "initial_state_range_is_ci": false,
+    "effective_slope_is_central_charge": false
+  },
+  "review_risks": [
+    "Sz1 initialization is fixed center and non-independent",
+    "actual maxdim below request is not chi convergence",
+    "L40/L60 old k3 and L80 old/new k values must not be combined as a new scaling claim",
+    "no phase claim"
+  ]
+}

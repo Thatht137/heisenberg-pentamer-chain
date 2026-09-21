@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "accepted_stage_c_round_complete",
+  "policy": "Practical V2",
+  "round": 1,
+  "counts": {
+    "success": 29,
+    "failed": 0,
+    "pending": 0
+  },
+  "planned_cells": 29,
+  "observations": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_c_practical_v2_r1_terminal_observations.json",
+    "sha256": "481f741744730e7977771841a0470eabfe425f2b93e76b1f5c4b10c64c9c9b12"
+  },
+  "action_results": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_c_practical_v2_r1_terminal_action_results.json",
+    "sha256": "6b993ab057b9f23acddbc8b97d12a40f1a65535b495cd09feaf093a47ca544cb"
+  },
+  "stage_b_summary": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_completion_summary.json",
+    "sha256": "5ab0513cfdac4e13df388c7620580eceabfa4b10058c5e11ce94b5b8757fbeae"
+  },
+  "next_analysis_ready": true,
+  "stage_d_ready": false,
+  "canonical_controller_mutated": false,
+  "boundary_thresholds_relaxed": false,
+  "max_sweeps": 64
+}

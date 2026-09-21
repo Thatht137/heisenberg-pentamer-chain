@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "cell_id": "cell-0030",
+  "status": "success",
+  "accepted": true,
+  "params": {
+    "alpha": 1.0,
+    "beta": 0.9,
+    "L": 60,
+    "n_units": 12
+  },
+  "settings": {
+    "method": "finite_dmrg_multistart",
+    "boundary": "OBC",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim": 1000,
+    "nsweeps": 32,
+    "budget": 32,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "init_modes": [
+      "center",
+      "domain"
+    ]
+  },
+  "observables": {
+    "structure_factor_ratio": {
+      "value": 0.3531687740842353,
+      "error": 0.0001,
+      "definition": "1 - S(pi-2pi/M)/S(pi), central OBC window M",
+      "start_values": [
+        0.3531687616771011,
+        0.3531687864913695
+      ]
+    }
+  },
+  "diagnostics": {
+    "child_manifests": [
+      "start_center/manifest.json",
+      "start_domain/manifest.json"
+    ],
+    "child_returncodes": {
+      "center": 0,
+      "domain": 0
+    },
+    "child_truncation_max": 2.861393669585026e-10,
+    "independent_start_half_range": 1.2407134208913817e-08
+  },
+  "acceptance": {
+    "children_completed": true,
+    "children_accepted": true,
+    "finite_ratio": true,
+    "finite_error": true
+  },
+  "provenance": {
+    "source_commit": "uploaded-bundle-20260731",
+    "standard_sha256": "9fb6b1a1f07242be9ada456acc1f8064e3350e93aa410e89a7745e5acded2011",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "negative_alpha_excluded": true,
+    "error_definition": "双初态半差与10倍最大截断误差的较大者，另设1e-4数值下限"
+  },
+  "timing": {
+    "started_at": "2026-08-01T16:21:30.073391+00:00",
+    "finished_at": "2026-08-01T16:28:53.855436+00:00"
+  },
+  "returncode": 0
+}

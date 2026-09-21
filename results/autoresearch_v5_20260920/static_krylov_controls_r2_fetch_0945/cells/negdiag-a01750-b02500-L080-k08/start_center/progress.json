@@ -1,0 +1,19 @@
+{
+  "job_type": "negative_static_cell",
+  "cell_id": "negdiag-a01750-b02500-L080-k08-center",
+  "phase": "finished",
+  "requested_sweeps": 64,
+  "eigsolve_krylovdim": 8,
+  "eigsolve_maxiter": 1,
+  "eigsolve_tol": 1e-14,
+  "status": "success",
+  "finished_at": "2026-09-20T00:35:14.633599+00:00",
+  "accepted": true,
+  "returncode": 0,
+  "last_sweep": 64,
+  "stdout_bytes": 11066,
+  "schema_version": 1,
+  "started_at": "2026-09-20T00:14:38.565828+00:00",
+  "updated_at": "2026-09-20T00:35:14.634307+00:00",
+  "elapsed_seconds": 1236.068
+}

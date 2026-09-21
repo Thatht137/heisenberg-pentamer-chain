@@ -1,0 +1,81 @@
+{
+  "run_id": "pentamer-r3-convergence-20260729",
+  "run_dir": "results\\five_rounds_20260729\\round3_convergence",
+  "axes": {
+    "L": [
+      40,
+      60,
+      80
+    ],
+    "maxdim": [
+      200,
+      400,
+      800
+    ]
+  },
+  "cells": [
+    {
+      "cell_id": "cell-0001",
+      "params": {
+        "L": 40,
+        "maxdim": 200
+      }
+    },
+    {
+      "cell_id": "cell-0002",
+      "params": {
+        "L": 40,
+        "maxdim": 400
+      }
+    },
+    {
+      "cell_id": "cell-0003",
+      "params": {
+        "L": 40,
+        "maxdim": 800
+      }
+    },
+    {
+      "cell_id": "cell-0004",
+      "params": {
+        "L": 60,
+        "maxdim": 200
+      }
+    },
+    {
+      "cell_id": "cell-0005",
+      "params": {
+        "L": 60,
+        "maxdim": 400
+      }
+    },
+    {
+      "cell_id": "cell-0006",
+      "params": {
+        "L": 60,
+        "maxdim": 800
+      }
+    },
+    {
+      "cell_id": "cell-0007",
+      "params": {
+        "L": 80,
+        "maxdim": 200
+      }
+    },
+    {
+      "cell_id": "cell-0008",
+      "params": {
+        "L": 80,
+        "maxdim": 400
+      }
+    },
+    {
+      "cell_id": "cell-0009",
+      "params": {
+        "L": 80,
+        "maxdim": 800
+      }
+    }
+  ]
+}

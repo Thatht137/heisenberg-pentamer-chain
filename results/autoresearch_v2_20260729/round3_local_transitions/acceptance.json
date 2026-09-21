@@ -1,0 +1,7 @@
+{
+  "all_hermitian": true,
+  "all_su2_commutators": true,
+  "all_ground_doublets": true,
+  "s_half_to_five_half_forbidden": true,
+  "interpretation": "Sz(q) 是秩一自旋算符；S=1/2 基态可到 S=1/2、3/2，不能直接到 S=5/2"
+}

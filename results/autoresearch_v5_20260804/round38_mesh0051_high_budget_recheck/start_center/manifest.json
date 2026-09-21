@@ -1,0 +1,94 @@
+{
+  "schema_version": 1,
+  "cell_id": "mesh0051-high-budget-recheck-center",
+  "status": "success",
+  "accepted": true,
+  "params": {
+    "path_id": "mesh0051-high-budget-recheck",
+    "group": 0,
+    "role": "ridge",
+    "alpha": 0.125,
+    "beta": 1.0,
+    "L": 80,
+    "n_units": 16
+  },
+  "settings": {
+    "method": "finite_dmrg",
+    "boundary": "OBC",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim": 1600,
+    "nsweeps": 80,
+    "cutoff": 1e-12,
+    "threads": 8,
+    "init_mode_sz0": "center",
+    "init_mode_sz1": "center",
+    "string_margin": 3,
+    "schmidt_levels": 16,
+    "save_state": false
+  },
+  "observables": {
+    "energy_sz0": -27.46899847254169,
+    "energy_sz1": -27.468010960831755,
+    "spin_gap": 0.0009875117099333863,
+    "structure_factor_ratio": 0.27938890611509826,
+    "structure_factor_pi": 0.9515072533552266,
+    "structure_factor_q1": 0.6856666826797282,
+    "structure_factor_window_sites": 64.0
+  },
+  "diagnostics": {
+    "variance_per_site_sz0": 5.131042257744411e-10,
+    "variance_per_site_sz1": 1.646185410209e-10,
+    "actual_maxdim_sz0": 98.0,
+    "actual_maxdim_sz1": 90.0,
+    "max_truncation_error_sz0": 9.999605832006456e-13,
+    "max_truncation_error_sz1": 9.999523197126774e-13,
+    "final_truncation_error_sz0": 9.970207569299222e-13,
+    "final_truncation_error_sz1": 9.999523197126774e-13,
+    "total_sz0": 1.1722935989999517e-15,
+    "total_sz1": 0.9999999999999959,
+    "peak_rss_kb": 1098612,
+    "algorithm_seconds_sz0": 233.69867515563965,
+    "algorithm_seconds_sz1": 126.88060307502747,
+    "measurement_seconds": 13.069356918334961
+  },
+  "acceptance": {
+    "execution_success": true,
+    "variance_sz0_per_site_le_1e-8": true,
+    "variance_sz1_per_site_le_1e-8": true,
+    "truncation_sz0_le_1e-9": true,
+    "truncation_sz1_le_1e-9": true,
+    "sz0_sector": true,
+    "sz1_sector": true,
+    "nonnegative_gap": true,
+    "all_sweeps_completed": true,
+    "measurement_files": true
+  },
+  "provenance": {
+    "source_commit": "working-tree-20260804-mesh0051-recheck",
+    "standard_sha256": "4f00f333eaf810b2853a46e4e258e192db7ef554c7800d35df2ebe27adee4b46",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "hostname": "c104-ysu",
+    "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "julia_version": "1.12.3",
+    "julia_pkg_offline": true,
+    "negative_alpha_excluded": true,
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "scripts/autoresearch_v5/positive_static_cell.jl": "3c96a13b2a44218bb62715a585c38c51b20cc7b6afdaa0d894fe1302354de038",
+      "scripts/autoresearch_v5/run_positive_static_cell.py": "f671dae4cefb46c5c8cf7dc93846a8e98b8e78939b48afa2b848afd54eed703a",
+      "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+    }
+  },
+  "timing": {
+    "started_at": "2026-08-04T06:11:06.980060+00:00",
+    "finished_at": "2026-08-04T06:18:23.510946+00:00"
+  },
+  "returncode": 0
+}

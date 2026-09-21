@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-09-15T14:42:50+08:00",
+  "remote": "wangjieren@39.96.207.180:6000",
+  "run_directory": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260914/negative_entropy_sizes_r1",
+  "run_status": "success",
+  "finished_at": "2026-09-15T01:37:53.152711+00:00",
+  "completed_cells": 10,
+  "julia_processes": 0,
+  "batch_pid_886283_present": false,
+  "stderr_all_empty": true,
+  "checksum_directories_passed": 30,
+  "checksum_parents": 10,
+  "checksum_children": 20,
+  "evidence": "Read-only SSH run_status and process listing; find cells -name checksums.sha256 -execdir sh -c 'sha256sum -c checksums.sha256 >/dev/null && pwd' returned all 30 expected directories, no checksum errors; all stderr file sizes zero. Per-cell preview records separately pin parent hashes.",
+  "new_compute_started": false
+}

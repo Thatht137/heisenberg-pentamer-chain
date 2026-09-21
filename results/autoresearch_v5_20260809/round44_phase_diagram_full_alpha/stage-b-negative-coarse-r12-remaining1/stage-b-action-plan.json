@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "stage": "B-R12-practical-v2-retry1",
+  "canonical_action_index_mutated": false,
+  "actions": [
+    {
+      "action_id": "act-120358e1410c5faff0b1",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.75,
+        "beta": 0.1
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r12-remaining1/cells/negb12-a0750-b0100-L060/manifest.json",
+      "convergence_policy": "practical_v2"
+    }
+  ]
+}

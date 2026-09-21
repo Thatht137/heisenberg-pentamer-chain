@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-08-03T12:02:28+08:00",
+  "host": "39.96.207.180:6000",
+  "anchor": {
+    "driver_pid": 3745209,
+    "julia_pid": 3745217,
+    "status": "running",
+    "elapsed": "15:08:22",
+    "cpu_percent": 1621,
+    "dmrg_sweeps_logged": 16,
+    "points_present": 0,
+    "stderr_empty": true
+  },
+  "supervisor": {
+    "pid": 3862840,
+    "status": "waiting_for_anchor",
+    "last_log": "2026-08-03T12:02:16+08:00 anchor still running"
+  },
+  "tebd": {
+    "status": "not_started",
+    "production_files_present": false
+  },
+  "source_diagnostic": {
+    "source": "scripts/autoresearch_v5/cv_dsf_resumable.jl",
+    "linsolve_before_point_write": true,
+    "point_write_after_linsolve": true,
+    "old_runner_has_progress_json": false,
+    "interpretation": "单个 L=80 CV 求解期间 points 和 stdout 不更新；CPU 活动是主要心跳"
+  },
+  "timing_reference": {
+    "l40_round21_wall_seconds": 10782,
+    "l40_round21_wall": "2:59:42",
+    "l40_round21_cpu_percent": 1481,
+    "l40_round21_points": 3
+  },
+  "decision": "保留 anchor 运行；不因无点文件取消任务，不启动并行 Julia。",
+  "negative_alpha_excluded": true
+}

@@ -1,0 +1,208 @@
+{
+  "schema_version": 1,
+  "status": "released",
+  "launch_ready": true,
+  "reason": "R2 双证据已通过",
+  "cell_count": 13,
+  "eta_hours": {
+    "low": 6,
+    "high": 10
+  },
+  "cells": [
+    {
+      "cell_id": "nega-r3-a0350-b0500-L080",
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "A-R3-remaining13",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败时仅按 32->64->128 或 64->128",
+      "continued_from": "nega-r1-a0350-b0500-L080",
+      "controller_action_id": null,
+      "calibration_only": true
+    },
+    {
+      "cell_id": "nega-r3-a0250-b0500-L040",
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 32,
+      "stage": "A-R3-remaining13",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败时仅按 32->64->128 或 64->128",
+      "continued_from": "nega-r1-a0250-b0500-L040",
+      "controller_action_id": "act-2d26dfe7cf872627ea81",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-r3-a0250-b0500-L060",
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 32,
+      "stage": "A-R3-remaining13",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败时仅按 32->64->128 或 64->128",
+      "continued_from": "nega-r1-a0250-b0500-L060",
+      "controller_action_id": "act-bd120db6bdbc305ddf42",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-r3-a0250-b0500-L080",
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "A-R3-remaining13",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败时仅按 32->64->128 或 64->128",
+      "continued_from": "nega-r1-a0250-b0500-L080",
+      "controller_action_id": null,
+      "calibration_only": true
+    },
+    {
+      "cell_id": "nega-r3-a0100-b0500-L040",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 32,
+      "stage": "A-R3-remaining13",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败时仅按 32->64->128 或 64->128",
+      "continued_from": "nega-r1-a0100-b0500-L040",
+      "controller_action_id": "act-cd2b4353726834318d6b",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-r3-a0100-b0500-L060",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 32,
+      "stage": "A-R3-remaining13",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败时仅按 32->64->128 或 64->128",
+      "continued_from": "nega-r1-a0100-b0500-L060",
+      "controller_action_id": "act-6a4963c3064243f17ed8",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-r3-a0100-b0500-L080",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "A-R3-remaining13",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败时仅按 32->64->128 或 64->128",
+      "continued_from": "nega-r1-a0100-b0500-L080",
+      "controller_action_id": null,
+      "calibration_only": true
+    },
+    {
+      "cell_id": "nega-r3-a0050-b0500-L040",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 32,
+      "stage": "A-R3-remaining13",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败时仅按 32->64->128 或 64->128",
+      "continued_from": "nega-r1-a0050-b0500-L040",
+      "controller_action_id": "act-fffdf93a9cae183cb1c1",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-r3-a0050-b0500-L060",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 32,
+      "stage": "A-R3-remaining13",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败时仅按 32->64->128 或 64->128",
+      "continued_from": "nega-r1-a0050-b0500-L060",
+      "controller_action_id": "act-7016420e7cbf8fc354b7",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-r3-a0050-b0500-L080",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "A-R3-remaining13",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败时仅按 32->64->128 或 64->128",
+      "continued_from": "nega-r1-a0050-b0500-L080",
+      "controller_action_id": null,
+      "calibration_only": true
+    },
+    {
+      "cell_id": "nega-r3-a0025-b0500-L040",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 32,
+      "stage": "A-R3-remaining13",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败时仅按 32->64->128 或 64->128",
+      "continued_from": "nega-r1-a0025-b0500-L040",
+      "controller_action_id": "act-4503b7acb169c6a5092f",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-r3-a0025-b0500-L060",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 32,
+      "stage": "A-R3-remaining13",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败时仅按 32->64->128 或 64->128",
+      "continued_from": "nega-r1-a0025-b0500-L060",
+      "controller_action_id": "act-3d1ab066156655e22ec8",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-r3-a0025-b0500-L080",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "A-R3-remaining13",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败时仅按 32->64->128 或 64->128",
+      "continued_from": "nega-r1-a0025-b0500-L080",
+      "controller_action_id": null,
+      "calibration_only": true
+    }
+  ]
+}

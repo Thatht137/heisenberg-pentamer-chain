@@ -1,0 +1,8 @@
+dt_half_available=false
+production_dynamics_pass=false
+raw_inversion_pass=false
+raw_nonnegative_pass=false
+raw_q0_pass=true
+reason=现有原始数据只有 dt=0.05；未满足 dt/2 强制验收
+time_window_pass=true
+time_window_peak_drift=Dict("alpha_0.14" => 0.0, "alpha_0.23" => 0.0, "alpha_0.33" => 0.0)

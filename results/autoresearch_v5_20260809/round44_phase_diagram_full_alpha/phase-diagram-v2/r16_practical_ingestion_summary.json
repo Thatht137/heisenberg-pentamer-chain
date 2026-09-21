@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "accepted_practical_calibration",
+  "cell_id": "nega-r16-a0050-b0500-L080",
+  "counts": {
+    "controller_success_total": 14,
+    "controller_failed_total": 0,
+    "controller_pending_total": 2,
+    "calibration_accepted_total": 7
+  },
+  "accepted_calibration": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/accepted_calibration_through_r16.json",
+    "sha256": "31f5fa29d79c555df61a7f0b3588c13976e8a80c9366263e8757b933d657f13e"
+  },
+  "ingestion_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r16_practical_ingestion_audit.json",
+    "sha256": "ceedc28af6990c1c2b75336877d0621ef53a5072d888171840fe1139c0e794a0"
+  },
+  "observations": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+    "sha256": "0ae1da5dd89c91076d5593d66088c0bc02b74fbeca2b28e10f0d8288e5bf7cb8"
+  },
+  "action_index": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/action_index.json",
+    "sha256": "818c1ad1ce06b703177bdcc4b9e2af32ec290e0c61e24a1cee92b915a947f63c"
+  },
+  "boundary_eligible": false,
+  "strict_failure_preserved": true,
+  "next": {
+    "auto_start": false,
+    "prepared_only": true
+  }
+}

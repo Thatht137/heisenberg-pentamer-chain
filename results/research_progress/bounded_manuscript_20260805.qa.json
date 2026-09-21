@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\research_progress\\bounded_manuscript_20260805.html",
+  "sha256": "83b65f522f72f5c66cc752d7e08c877edb95aa9b88371f7e7be01c9821ee56ed",
+  "bytes": 1765143,
+  "checks": {
+    "all_sections": true,
+    "six_figures_embedded": true,
+    "positive_scope": true,
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true,
+    "dynamic_not_evaluable": true,
+    "round43_branch_guard": true,
+    "forbidden_claims_absent": true
+  },
+  "figure_sha256": {
+    "fig1": "61c2101c26759946babdbf97971be562715aab8a71b5bfa99e6eef6be92de7c5",
+    "fig2": "b3c86ff2cb5539ebdf513c89f93ec3d62a56f868c0dab31707aebaefa0781a7c",
+    "fig3": "ec289aec3bf422f7ca82e3439491387b499f826842650654ab619cf033a0efb0",
+    "fig4": "5bd5f9a702eb05f8583bf5ad5acf586698c6472e0207c28642577a66fa07cb62",
+    "fig5": "0c3ad00c2333695038360ec49e7d62dc2a2d3a9e1beeded899ef0f24be1527dd",
+    "fig8": "f0d2c452d669a6327da006b824a765d5b0f633075a02e8e8e0d0a6ee3ad44fe0"
+  }
+}

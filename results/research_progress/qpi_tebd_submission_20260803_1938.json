@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "submitted_at": "2026-08-03T19:36:34+08:00",
+  "verified_at": "2026-08-03T19:38:00+08:00",
+  "target": "wangjieren@39.96.207.180:6000",
+  "hostname": "c104-ysu",
+  "run_root": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round26_qpi_tebd_production",
+  "scope": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "upload": {
+    "staging": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/scripts/staging_qpi_20260803_1935",
+    "files": 3,
+    "remote_sha256_match": true,
+    "target_conflict": false,
+    "server_network_used": false
+  },
+  "resource_preflight": {
+    "memory_available_gib": 226,
+    "home_available_gib": 690,
+    "load_average": [8.55, 8.56, 8.64],
+    "existing_julia": 0
+  },
+  "processes": {
+    "supervisor_pid": 238557,
+    "julia_pid": 238575,
+    "single_julia_verified_by_ps": true,
+    "julia_threads": 8,
+    "nice": 10,
+    "julia_rss_kib_at_60s": 937808,
+    "julia_cpu_percent_at_60s": 112.0
+  },
+  "current": {
+    "overall_status": "running",
+    "phase": "coarse",
+    "cell_id": "qpi-alpha023-dt0025-t30",
+    "subphase": "dmrg",
+    "elapsed_seconds": 60.002,
+    "total_tebd_steps": 1200
+  },
+  "sequence": [
+    "coarse dt=0.025, tmax=30, 1200 steps",
+    "only if coarse accepted=true: refined dt=0.0125, tmax=30, 2400 steps",
+    "terminal remote checksum",
+    "non-clobbering local fetch after separate preview and confirmation",
+    "independent local checksum and CV/TEBD validation"
+  ],
+  "estimate": {
+    "total_hours": "1.0-1.7",
+    "conservative_upper_hours": 2.5,
+    "next_check_policy": "不做短间隔轮询；等待 coarse 终态或至少一个有意义的 checkpoint 事件。"
+  }
+}

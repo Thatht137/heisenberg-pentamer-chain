@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "figure_id": 8,
+  "status": "bounded_not_evaluable",
+  "backend": "Python/matplotlib",
+  "archetype": "quantitative grid",
+  "final_size_mm": [
+    89,
+    99
+  ],
+  "core_conclusion": "当前证据未关闭全部动态门，因此 Fig.8 保持 bounded 且不升级谱归属。",
+  "acceptance": {
+    "production_ready": false,
+    "gates": {
+      "peak bracket": false,
+      "weight window": false,
+      "peak budget": false,
+      "weight budget": false
+    }
+  },
+  "source_files": [
+    {
+      "path": "results/autoresearch_v5_20260806/round43_handoff_dryrun_failed005/handoff_summary.json",
+      "sha256": "1ad66a5733dcd54efd3ca0570e79aa4e360f71f41fc56bdc46a4a0b9a23bb753"
+    },
+    {
+      "path": "results/autoresearch_v5_20260806/round43_handoff_dryrun_failed005/checksums.sha256",
+      "sha256": "f39739d0a722f782295194665d946e46f0d9eeb0cfad0da0231fe607d6437058"
+    },
+    {
+      "path": "results/autoresearch_v5_20260805/round40_qpi_cv_anchor_assembly_accepted/spectrum.csv",
+      "sha256": "c6153072b260e8745c1aea62edf33e36b9cdb51adbfa788bad5de9d607847d54"
+    },
+    {
+      "path": "results/autoresearch_v5_20260805/round40_qpi_cv_anchor_assembly_accepted/manifest.json",
+      "sha256": "da34e3db8e0c77d582472cc4e30e8638bdc05368f27497e41671a1707af1aa3e"
+    },
+    {
+      "path": "results/autoresearch_v5_20260805/round40_cv_tebd_accepted7_analysis/cross-method-check.json",
+      "sha256": "1235f90bf671f1e3c954858ff016c1eb3fcace8a60c9d1e09eb2bdbc15c8fc0d"
+    },
+    {
+      "path": "results/autoresearch_v5_20260803/round26_qpi_tebd_production/cell-alpha023-qpi-dt00125-t30/spectrum.csv",
+      "sha256": "041ca821f3ace2a96a968fbe17ac2c137a0a9654f3257d887654196d112ca7e6"
+    },
+    {
+      "path": "results/autoresearch_v5_20260803/round26_qpi_tebd_production/cell-alpha023-qpi-dt00125-t30/manifest.json",
+      "sha256": "cd8263f33183c5e6ed2bac67a7c44705796e137cd3c60d351ee1180ecaced2a4"
+    },
+    {
+      "path": "results/autoresearch_v3_20260729/round1_doublet_projection/representative.csv",
+      "sha256": "4be460ca405c4e13f4c61618ec5eb6d5847cf48ae37d9b1debeef5df50c0465f"
+    },
+    {
+      "path": "figures/round43_fig8_branch_dryrun_bounded_20260806_v2.source.csv",
+      "sha256": "49af8698963c8a6a21119530fe9337e6ae9f1cb256976da77d3d4af45f817858"
+    }
+  ],
+  "outputs": {
+    ".svg": "9a091037709d7571636a6f17cfb26463be6f81024f20329be7c5b0ca42956daf",
+    ".pdf": "bacd4ffde90dd8c4420f4526e50c1ae17a283e01e871232a20f827bbb7fed59c",
+    ".png": "f257579065925007b250c7820951ad9b32a62f8b71125a8a6a90cc8952a09a71",
+    ".tiff": "076619f40d8429c10cfedf3095f7e9483b972743bbbac731dfb5b5fbb412a039"
+  },
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

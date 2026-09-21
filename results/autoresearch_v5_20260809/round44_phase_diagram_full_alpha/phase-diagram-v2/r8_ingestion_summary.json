@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "status": "accepted",
+  "cell_id": "nega-r8-a0100-b0500-L060",
+  "accepted_key": {
+    "alpha": -0.1,
+    "beta": 0.5,
+    "L": 60
+  },
+  "counts": {
+    "validator_pass": 1,
+    "controller_success_total": 12,
+    "controller_failed_total": 0,
+    "controller_pending_total": 4,
+    "calibration_accepted_total": 5
+  },
+  "observable": {
+    "value": 0.21041408891534108,
+    "error": 0.007205423814601208
+  },
+  "strict_numerical_gates": {
+    "center": {
+      "variance_per_site_sz0": 2.039397865398011e-09,
+      "variance_per_site_sz1": 4.732593576288006e-10,
+      "final_truncation_error_sz0": 9.997591676745405e-12,
+      "final_truncation_error_sz1": 9.963981349850752e-12,
+      "total_sz0": -6.106226635438361e-16,
+      "total_sz1": 1.000000000000002,
+      "spin_gap": 3.8321431922838656e-05
+    },
+    "ferro_j2": {
+      "variance_per_site_sz0": 7.579965692154171e-10,
+      "variance_per_site_sz1": 4.732593576288006e-10,
+      "final_truncation_error_sz0": 9.987281955515263e-12,
+      "final_truncation_error_sz1": 9.963981349850752e-12,
+      "total_sz0": 1.942890293094024e-15,
+      "total_sz1": 1.000000000000002,
+      "spin_gap": 3.783487821706899e-05
+    }
+  },
+  "handoff_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r8-a0100-L060-20260811-0718/handoff_audit.json",
+    "sha256": "588ed64d29db2b27c5baa187f2a71d99d6bfec6f61c9c5cf8043dd1647c01e57"
+  },
+  "ingestion_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r8_ingestion_audit.json",
+    "sha256": "a187acf3ad14b8e9b053037d954a828457ac361dd306f85b68c1d221d2f5b047"
+  },
+  "observations": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+    "sha256": "cecf52421fd99853f1d431df604ac6dd51316cf14d9c26646361276c53d2d819"
+  },
+  "action_index": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/action_index.json",
+    "sha256": "8019399c53199f299363f0f338350d44da9e62a06743d5739e3e3b742e85fd10"
+  },
+  "r7_failure_preserved": true,
+  "controller": {
+    "status": "WAITING",
+    "pending": 4,
+    "crossing": "not_assigned",
+    "phase_label": "not_assigned"
+  }
+}

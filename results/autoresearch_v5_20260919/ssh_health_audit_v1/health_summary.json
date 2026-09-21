@@ -1,0 +1,78 @@
+{
+  "schema_version": 1,
+  "target": "wangjieren@39.96.207.180:6000",
+  "host": "c104-ysu",
+  "timestamp": "2026-09-19T20:46:08+08:00",
+  "user": "wangjieren",
+  "julia_processes": {
+    "exact_account_pids": [],
+    "status": "none_observed"
+  },
+  "project_pythonbatch": {
+    "real_process_observed": false,
+    "self_match_excluded": true,
+    "exclusion": "检查 shell 自身命令行含 pythonbatch 字样，非 Python 计算进程"
+  },
+  "resources": {
+    "nproc": 80,
+    "memory": {
+      "total": "1.0Ti",
+      "used": "15Gi",
+      "free": "967Gi",
+      "available": "987Gi"
+    },
+    "swap": {
+      "total": "2.0Gi",
+      "used": "0B",
+      "free": "2.0Gi"
+    },
+    "disk": {
+      "mount": "/home",
+      "total": "3.6T",
+      "used": "3.2T",
+      "available": "216G",
+      "used_percent": 94
+    }
+  },
+  "julia": {
+    "candidate_symlink_exists": true,
+    "command_v_found": false,
+    "usability": "unknown"
+  },
+  "project_files": {
+    "Project.toml": true,
+    "Manifest.toml": true
+  },
+  "locks": {
+    "files_seen": 22,
+    "global_lock_file_seen": true,
+    "observed_holder": false,
+    "status": "no_holder_observed_not_absolute_free"
+  },
+  "credential_like_key_scan": {
+    "source": "stdout.bin",
+    "matched_credential_like_lines": 4,
+    "categories": {
+      "secret_like_key_name": 0,
+      "ssh_connection_metadata": 2,
+      "session_endpoint_metadata": 2
+    },
+    "values_stored": false
+  },
+  "capture": {
+    "returncode": 0,
+    "timed_out": false,
+    "wall_seconds": 2.579,
+    "raw_not_uploaded": true
+  },
+  "evidence_hashes": {
+    "stdout_bin_sha256": "8a97522b0480c6d73576c4ffda77788cc5efcee431ceffe903dcf18cd9d5a6ec",
+    "stderr_bin_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "command_sha256": "49a2885b0f7a47b35195560f7f97cc9cd430e01f16a8280c9d04a685a1676df7",
+    "remote_script_sha256": "c87a0585332fcd3bf83ef1e174596aaa9443aed2a5de5ac317c47096507b3fbe"
+  },
+  "quoting_defect": {
+    "cause": "ssh argv 直接传 bash -lc script 时被 OpenSSH 重分词，导致环境 dump 和命令边界异常",
+    "mechanism_fix": "后续使用 ssh ... bash -s，并通过 stdin 传脚本"
+  }
+}

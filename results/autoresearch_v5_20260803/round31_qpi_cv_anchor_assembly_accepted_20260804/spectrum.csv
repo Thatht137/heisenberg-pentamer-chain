@@ -1,0 +1,7 @@
+q_over_pi,omega,intensity,relative_residual,source_run
+1.0,0.2,0.8094698095517548,7.483842216614274e-06,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260730/round3_cv_L40_probe/cell-0001-L40-qpi-w020
+1.0,0.25,0.5681807186981724,6.021249843402546e-06,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260802/round21_cv_triplet_warmstart/cell-0002-L40-qpi-w025-w035
+1.0,0.3,0.42688706828248535,5.5777823461512965e-06,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260802/round21_cv_triplet_warmstart/cell-0002-L40-qpi-w025-w035
+1.0,0.35,0.3680495733571379,5.2922021892823315e-06,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260802/round21_cv_triplet_warmstart/cell-0002-L40-qpi-w025-w035
+1.0,0.55,0.6241599252850262,6.487727921502834e-06,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804/cell-l40-qpi-high-055
+1.0,1.0,0.07580484466738491,1.9588527835941554e-06,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804/cell-l40-qpi-high-100

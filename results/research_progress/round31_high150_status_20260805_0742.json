@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-05T07:42:29+08:00",
+  "status": "running",
+  "phase": "julia_linsolve",
+  "elapsed_seconds": 59672.412,
+  "cpu_percent": 1609.0,
+  "rss_bytes": 3974647808,
+  "completed_points": 0,
+  "total_points": 1,
+  "stderr_bytes": 0,
+  "next_check": "2026-08-05T15:07:00+08:00",
+  "eta": "无可靠终点预测；15:07 达到 24 h 人工复核边界。"
+}

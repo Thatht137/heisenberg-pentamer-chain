@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "pass_failure",
+  "controller_counts": {
+    "success": 14,
+    "failed": 1,
+    "pending": 1
+  },
+  "pre_observations_sha256": "0ae1da5dd89c91076d5593d66088c0bc02b74fbeca2b28e10f0d8288e5bf7cb8",
+  "pre_action_index_sha256": "818c1ad1ce06b703177bdcc4b9e2af32ec290e0c61e24a1cee92b915a947f63c",
+  "post_observations_sha256": "56ddced878a32e7645b3dafbce5f7bbdbfe50dd2270a8d0da3db916906a68744",
+  "post_action_index_sha256": "ddd3a93210f0a69b58890a3822ad3f8dbcce17fa68274a8585c534044977d118",
+  "invariants": {
+    "l60_pending_unchanged": true,
+    "failed_has_no_value_or_error": true,
+    "r16_boundary_ineligible_preserved": true
+  },
+  "thresholds_relaxed": false,
+  "phase_label_assigned": false
+}

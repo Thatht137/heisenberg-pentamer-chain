@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "fetched_at": "2026-08-04T00:21:29.169141+00:00",
+  "source": "wangjieren@39.96.207.180:/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension",
+  "destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803\\round31_qpi_cv_extension_completed_cells_20260804",
+  "cells": {
+    "cell-l40-qpi-low-000-020": {
+      "status": "pass",
+      "checksums_sha256": "4ab3b6cc7a990a95c410815729b83f70b189e12b328ac9e0aa48cfd38ecf2f75"
+    },
+    "cell-l40-qpi-high-055": {
+      "status": "pass",
+      "checksums_sha256": "f2971f27987cedf669ae6ef22f887c46d6b26cb9441120ee59c51bd4dd183283"
+    }
+  },
+  "file_count": 22,
+  "total_bytes": 33685,
+  "preview_sha256": "b33bdc094e3d001cb6edc59c90b6ce0627fa9cc324d9e8c86561da67ed1882a4",
+  "non_clobbering": true,
+  "remote_write": false,
+  "user_confirmed": true
+}

@@ -1,0 +1,11 @@
+After sweep 1 energy=-2.644589083111732  maxlinkdim=35 maxerr=8.03E-13 time=42.171
+After sweep 2 energy=-2.6453544846011225  maxlinkdim=29 maxerr=8.73E-13 time=0.326
+After sweep 3 energy=-2.6453544911241234  maxlinkdim=23 maxerr=9.87E-13 time=0.067
+After sweep 4 energy=-2.645354491124125  maxlinkdim=23 maxerr=9.31E-13 time=9.308
+After sweep 5 energy=-2.6453544911241225  maxlinkdim=23 maxerr=9.31E-13 time=0.058
+After sweep 6 energy=-2.6453544911241194  maxlinkdim=23 maxerr=9.31E-13 time=0.164
+After sweep 7 energy=-2.6453544911241216  maxlinkdim=23 maxerr=9.31E-13 time=0.060
+After sweep 8 energy=-2.645354491124121  maxlinkdim=23 maxerr=9.31E-13 time=0.076
+After sweep 9 energy=-2.6453544911241216  maxlinkdim=23 maxerr=9.31E-13 time=0.056
+After sweep 10 energy=-2.645354491124126  maxlinkdim=23 maxerr=9.31E-13 time=0.057
+CELL_SUCCESS outdir=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/five_rounds_20260729/round5_crosscheck/dmrg/cells/cell-0001

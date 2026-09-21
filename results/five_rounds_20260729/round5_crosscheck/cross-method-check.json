@@ -1,0 +1,27 @@
+{
+  "tag": "Agreement",
+  "checks": {
+    "alpha_equal": true,
+    "beta_equal": true,
+    "L_equal": true,
+    "boundary_equal": true,
+    "dmrg_sector": true,
+    "ed_sector": true,
+    "normalization": true,
+    "negative_alpha_excluded": true
+  },
+  "energy_difference": 4.3085535139653075e-12,
+  "ed_budget": 1e-12,
+  "dmrg_budget": 3.893625231819498e-06,
+  "dmrg_total_variance": 1.5160317445861438e-11,
+  "dmrg_diagnostics": {
+    "actual_maxdim": 23,
+    "max_truncation_error": 9.874050902598303e-13,
+    "final_energy_change": 4.440892098500626e-15,
+    "nsweeps_completed": 10,
+    "peak_rss_kb": 953068,
+    "algorithm_seconds": 77.60011887550354,
+    "measurement_seconds": 3.8998570442199707
+  },
+  "candidate_failure_modes": []
+}

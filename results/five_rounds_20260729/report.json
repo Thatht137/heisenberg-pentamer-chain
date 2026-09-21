@@ -1,0 +1,421 @@
+{
+  "title": "1x5 Heisenberg 五聚体链：五轮复现计算报告",
+  "eyebrow": "APPROVED v1.0 | 仅正 alpha | 2026-07-29",
+  "url": "https://doi.org/10.1038/s41535-026-00855-x",
+  "lede": "复用参考论文的证据链，但把 1x4 四聚体改为 1x5 五聚体。报告只覆盖 0<=alpha<=1，并把服务器 DMRG、离线环境、收敛与独立 ED 交叉验证统一到可追溯验收流程中。",
+  "sections": [
+    {
+      "title": "研究边界",
+      "blocks": [
+        {
+          "kind": "equation",
+          "tex": "H=\\sum_n[J_2(\\mathbf S_{5n-4}\\cdot\\mathbf S_{5n-3}+\\mathbf S_{5n-1}\\cdot\\mathbf S_{5n})+J_1(\\mathbf S_{5n-3}\\cdot\\mathbf S_{5n-2}+\\mathbf S_{5n-2}\\cdot\\mathbf S_{5n-1})]+J_3\\sum_n\\mathbf S_{5n}\\cdot\\mathbf S_{5n+1}"
+        },
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "参数",
+              "J1=1, alpha=J2/J1, beta=J3/J1"
+            ],
+            [
+              "范围",
+              "0<=alpha<=1, 0<=beta<=1"
+            ],
+            [
+              "生产尺寸",
+              "16 个五聚体，L=80，OBC，Sz=0"
+            ],
+            [
+              "明确排除",
+              "负 alpha、Fig. 9、CuInVO5 材料路径"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "解释边界",
+          "style": "info",
+          "text": "五个 spin-1/2 构成半整数单胞，LSM 型约束使四聚体论文的相名不能直接移植。本报告验收数值质量，不宣告新的热力学相。"
+        }
+      ]
+    },
+    {
+      "title": "第一轮：复用审计",
+      "blocks": [
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "原始相图行数",
+              4974
+            ],
+            [
+              "唯一参数点",
+              4800
+            ],
+            [
+              "重复行",
+              174
+            ],
+            [
+              "正 alpha 唯一点",
+              2400
+            ],
+            [
+              "复用策略",
+              "2400 个正 alpha 点只作选点地图，不整批重算"
+            ]
+          ]
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "round1_inventory/positive_phase_map_audit.png",
+              "caption": "审计后的正 alpha 选点地图。40x60 网格完整；重复记录数值一致。该图只用于选择验证点，不作为最终相界证据。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Julia 与服务器环境",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "warn",
+          "label": "锁定环境可计算；离线包管理受限",
+          "why": "服务器 Julia 1.12.3 可在强制断网代理下加载锁定依赖；Pkg.status 曾尝试访问 registry，因此生产任务完全禁止远端 Pkg 操作。"
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "项目",
+            "本地",
+            "服务器",
+            "状态"
+          ],
+          "rows": [
+            [
+              "Julia",
+              "1.11.5",
+              "1.12.3",
+              "跨版本小尺寸检查"
+            ],
+            [
+              "ITensors",
+              "0.9.27",
+              "0.9.27",
+              "一致"
+            ],
+            [
+              "ITensorMPS",
+              "0.4.1",
+              "0.4.1",
+              "一致"
+            ],
+            [
+              "JLD2",
+              "0.6.4",
+              "0.6.4",
+              "一致"
+            ],
+            [
+              "Manifest SHA-256",
+              "37a53ffd...",
+              "37a53ffd...",
+              "一致"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "第二轮：Smoke",
+      "blocks": [
+        {
+          "kind": "note",
+          "label": "保留的失败证据",
+          "style": "info",
+          "text": "首版 Smoke 的 DMRG 已完成，但局部整数变量 length 遮蔽 Base.length，导致 sweep 汇总失败。失败 run 未覆盖；修复版使用独立目录并通过 3/3。"
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "alpha",
+            "E/L",
+            "variance/L",
+            "actual maxdim",
+            "peak RSS"
+          ],
+          "rows": [
+            [
+              "0.0",
+              "-0.2562500000",
+              "7.105e-16",
+              "2",
+              "913.6 MiB"
+            ],
+            [
+              "0.2",
+              "-0.2708521056",
+              "2.035e-10",
+              "31",
+              "911.4 MiB"
+            ],
+            [
+              "1.0",
+              "-0.4033445558",
+              "5.633e-10",
+              "38",
+              "898.4 MiB"
+            ]
+          ],
+          "numeric": [
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "kind": "verdict",
+          "status": "good",
+          "label": "Smoke 通过",
+          "why": "三个正 alpha 点清单、断网加载、测量、资源记录和 SHA-256 全部通过。"
+        }
+      ]
+    },
+    {
+      "title": "第三轮：收敛",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "L",
+            "actual maxdim",
+            "|d(E/L)| 400-800",
+            "dOstr 400-800",
+            "状态"
+          ],
+          "rows": [
+            [
+              40,
+              55,
+              "0.000e+00",
+              "0.000%",
+              "PASS"
+            ],
+            [
+              60,
+              82,
+              "0.000e+00",
+              "0.000%",
+              "PASS"
+            ],
+            [
+              80,
+              105,
+              "0.000e+00",
+              "0.000%",
+              "PASS"
+            ]
+          ],
+          "numeric": [
+            true,
+            true,
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "analysis/round3_convergence.png",
+              "caption": "通过。alpha=0.23、beta=0.5 的 L 与请求 maxdim 收敛。实际键维仅为 55/82/105，因此三档请求值给出相同结果；方差和截断误差均低于验收线。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "第四轮：正 alpha 验收点",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "alpha",
+            "E/L",
+            "Ostr",
+            "Scenter",
+            "variance/L",
+            "actual maxdim"
+          ],
+          "rows": [
+            [
+              "0.14",
+              "-0.2748396370",
+              "0.032420",
+              "1.388870",
+              "8.412e-09",
+              "76"
+            ],
+            [
+              "0.23",
+              "-0.2810892175",
+              "0.032892",
+              "1.293021",
+              "3.053e-10",
+              "94"
+            ],
+            [
+              "0.33",
+              "-0.2910397937",
+              "0.029291",
+              "1.141677",
+              "3.475e-10",
+              "96"
+            ]
+          ],
+          "numeric": [
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "analysis/round4_validation.png",
+              "caption": "通过。beta=0.5、L=80、maxdim=1200 的三个正 alpha 主点。曲线展示能量密度、五聚体弦序和中心纠缠熵；不据此单独命名相。"
+            }
+          ]
+        },
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "双初态能量密度差",
+              "6.343e-12"
+            ],
+            [
+              "双初态弦序相对差",
+              "0.00012%"
+            ],
+            [
+              "maxdim 800→1200 能量密度差",
+              "1.351e-09"
+            ],
+            [
+              "maxdim 800→1200 弦序相对差",
+              "0.482%"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "边界警示",
+          "style": "pending",
+          "text": "alpha=0.14 的 variance/L=8.41e-9，低于 1e-8 门槛但余量较小。它可进入本轮报告，若用于精确临界拟合应追加 sweep 或更严格方差检查。"
+        }
+      ]
+    },
+    {
+      "title": "第五轮：独立交叉验证",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "good",
+          "label": "Agreement",
+          "why": "同一 alpha=0.23、beta=0.5、L=10、OBC、Sz=0 点比较全 1024 维 Python 密集 ED 与服务器 ITensor DMRG；|dE|=4.309e-12。"
+        },
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "ED budget",
+              "1.000e-12"
+            ],
+            [
+              "DMRG budget",
+              "3.894e-06"
+            ],
+            [
+              "DMRG total variance",
+              "1.516e-11"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "最终验收",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "good",
+          "label": "五轮数值工作通过",
+          "why": "复用审计、Smoke、L/maxdim 收敛、三个正 alpha 主点、双初态、MPS、独立 ED/DMRG 和可追溯清单均已完成。"
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "验收项",
+            "结果",
+            "证据"
+          ],
+          "rows": [
+            [
+              "负 alpha 排除",
+              "PASS",
+              "所有新清单均限制 0<=alpha<=1"
+            ],
+            [
+              "Smoke",
+              "PASS",
+              "3/3，max variance/L=5.63e-10"
+            ],
+            [
+              "收敛矩阵",
+              "PASS",
+              "9/9，实际 maxdim 未触顶"
+            ],
+            [
+              "生产主点",
+              "PASS",
+              "3 主点 + 1 双初态，MPS 齐全"
+            ],
+            [
+              "方法交叉",
+              "Agreement",
+              "|dE|=4.309e-12"
+            ],
+            [
+              "Fig. 9",
+              "不在范围",
+              "按批准标准不复现"
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "结论使用限制",
+          "items": [
+            "L=80 是 16 个五聚体的有限开链，不是热力学极限。",
+            "现有正 alpha 相图是选点地图，不是带误差条的 crossing phase boundary。",
+            "本轮验证基态能量、弦序和纠缠；不包含 Fig. 9，也不新增负 alpha 动力学。",
+            "若下一步写相界或临界指数，需增加尺寸、误差条和独立临界诊断。"
+          ]
+        }
+      ]
+    }
+  ]
+}

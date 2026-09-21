@@ -1,0 +1,9 @@
+asset,location,positive_files,grade,next_action
+single_pentamer_ed,data/single_pentamer_levels.csv,1,accept,reuse_positive_slice
+phase_map,data/phase_diagram_80x60_hires.csv,1,reconnaissance,validate_three_positive_points
+spin_gap,data/spin_gap/tasks,18,baseline,reuse_for_size_trend
+bond_correlations,data/bond_correlations,11,baseline,reuse
+static_structure_factor,data/static_structure_factor,4,baseline,reuse
+entanglement_spectrum,data/entanglement_spectrum,3,baseline,reuse_with_convergence_caveat
+positive_tebd_spectrum,data/Sqw_tebd_pentamer_alpha=*.csv,8,mixed,retain_only_points_with_raw_correlator
+positive_tebd_raw,data/NDSF_pentamer_alpha=*.jld2,5,pilot,reuse_for_report_and_dt_baseline

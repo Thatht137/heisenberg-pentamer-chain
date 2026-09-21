@@ -1,0 +1,3 @@
+method,observable,value,uncertainty,instance,tag
+correction_vector_dmrg,shared_window_weight,0.7178172702759875,0.10767259054139812,"alpha=0.23,beta=0.5,L=40,q/pi=1,eta=0.1,OBC,Sz=0",Agreement
+finite_dmrg_tebd_szz,shared_window_weight,0.7103574675113267,0.10767259054139812,"alpha=0.23,beta=0.5,L=40,q/pi=1,eta=0.1,OBC,Sz=0",Agreement

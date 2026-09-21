@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "run_spec": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\stage-a-beta050-calibration-r1\\parameter-scan.run_spec.json",
+  "cell_count": 11,
+  "rows": [
+    {
+      "cell_id": "nega-r1-a0350-b0500-L040",
+      "exit_code": 0,
+      "validator_status": "pass",
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r1-20260810-1113\\validation\\nega-r1-a0350-b0500-L040.json"
+    },
+    {
+      "cell_id": "nega-r1-a0350-b0500-L060",
+      "exit_code": 1,
+      "validator_status": "fail",
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r1-20260810-1113\\validation\\nega-r1-a0350-b0500-L060.json"
+    },
+    {
+      "cell_id": "nega-r1-a0500-b0500-L040",
+      "exit_code": 0,
+      "validator_status": "pass",
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r1-20260810-1113\\validation\\nega-r1-a0500-b0500-L040.json"
+    },
+    {
+      "cell_id": "nega-r1-a0500-b0500-L060",
+      "exit_code": 0,
+      "validator_status": "pass",
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r1-20260810-1113\\validation\\nega-r1-a0500-b0500-L060.json"
+    },
+    {
+      "cell_id": "nega-r1-a0500-b0500-L080",
+      "exit_code": 0,
+      "validator_status": "pass",
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r1-20260810-1113\\validation\\nega-r1-a0500-b0500-L080.json"
+    },
+    {
+      "cell_id": "nega-r1-a0750-b0500-L040",
+      "exit_code": 0,
+      "validator_status": "pass",
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r1-20260810-1113\\validation\\nega-r1-a0750-b0500-L040.json"
+    },
+    {
+      "cell_id": "nega-r1-a0750-b0500-L060",
+      "exit_code": 0,
+      "validator_status": "pass",
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r1-20260810-1113\\validation\\nega-r1-a0750-b0500-L060.json"
+    },
+    {
+      "cell_id": "nega-r1-a0750-b0500-L080",
+      "exit_code": 0,
+      "validator_status": "pass",
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r1-20260810-1113\\validation\\nega-r1-a0750-b0500-L080.json"
+    },
+    {
+      "cell_id": "nega-r1-a1000-b0500-L040",
+      "exit_code": 0,
+      "validator_status": "pass",
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r1-20260810-1113\\validation\\nega-r1-a1000-b0500-L040.json"
+    },
+    {
+      "cell_id": "nega-r1-a1000-b0500-L060",
+      "exit_code": 0,
+      "validator_status": "pass",
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r1-20260810-1113\\validation\\nega-r1-a1000-b0500-L060.json"
+    },
+    {
+      "cell_id": "nega-r1-a1000-b0500-L080",
+      "exit_code": 0,
+      "validator_status": "pass",
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r1-20260810-1113\\validation\\nega-r1-a1000-b0500-L080.json"
+    }
+  ]
+}

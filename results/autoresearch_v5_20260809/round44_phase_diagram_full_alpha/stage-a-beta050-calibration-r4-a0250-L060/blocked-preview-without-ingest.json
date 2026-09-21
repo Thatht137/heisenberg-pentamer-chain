@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "blocked",
+  "launch_ready": false,
+  "reason": "等待 R3 validator 2 pass / 1 fail 与 accepted-only ingest 双证据",
+  "cell_count": 1,
+  "eta_minutes": {
+    "low": 20,
+    "high": 40,
+    "basis": "R3 L60 双初态实测"
+  },
+  "cell": {
+    "cell_id": "nega-r4-a0250-b0500-L060",
+    "params": {
+      "alpha": -0.25,
+      "beta": 0.5,
+      "L": 60,
+      "n_units": 12
+    },
+    "budget": 64,
+    "stage": "A-R4",
+    "retry_policy": "仅该失败单元 32->64 sweeps；若仍失败仅考虑 64->128；门槛不变",
+    "retry_of": "nega-r3-a0250-b0500-L060",
+    "controller_action_id": "act-bd120db6bdbc305ddf42",
+    "calibration_only": false
+  },
+  "gate_error": "[Errno 2] No such file or directory: 'D:\\\\Project\\\\1x5_Heisenberg_Pentamer\\\\results\\\\autoresearch_v5_20260809\\\\round44_phase_diagram_full_alpha\\\\phase-diagram-v2\\\\missing-r3-ingest.json'"
+}

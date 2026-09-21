@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "qpi_production_status": "pass",
+  "full_dynamic_status": "incomplete",
+  "tebd_qpi_tag": "Agreement",
+  "cross_method_tag": "NotEvaluable",
+  "params": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "L": 40,
+    "q_over_pi": 1.0,
+    "eta": 0.1,
+    "boundary": "OBC",
+    "sector": "Sz=0"
+  },
+  "instance": "alpha=0.23,beta=0.5,L=40,q/pi=1,eta=0.1,OBC,Sz=0",
+  "budgets": {
+    "dt_peak_omega": 0.05,
+    "dt_integrated_weight_relative": 0.05,
+    "tmax_peak_omega": 0.05,
+    "maxdim_peak_omega": 0.05,
+    "maxdim_integrated_weight_relative": 0.05,
+    "cv_peak_omega": 0.1,
+    "cv_integrated_weight_relative": 0.15,
+    "cv_weight_window": [
+      0.0,
+      1.5
+    ]
+  },
+  "gates": {
+    "dt_peak_convergence": true,
+    "dt_weight_convergence": true,
+    "time_window_peak_convergence": true,
+    "coarse_nonnegative": true,
+    "refined_nonnegative": true,
+    "short_window_nonnegative": true,
+    "coarse_fourier_reproducible": true,
+    "refined_fourier_reproducible": true,
+    "terminal_integrity": true,
+    "maxdim_peak_convergence": true,
+    "maxdim_weight_convergence": true
+  },
+  "cross_method_gates": {
+    "peak_delta_le_budget": false,
+    "integrated_weight_delta_le_budget": false
+  },
+  "coverage": {
+    "dt_dt2": true,
+    "two_tmax": true,
+    "two_maxdim": true,
+    "cv_main_peak": false,
+    "cv_major_weight": false,
+    "q0_conservation": false,
+    "momentum_inversion": false
+  },
+  "diagnostics": {
+    "coarse_peak_omega": 0.05,
+    "refined_peak_omega": 0.05,
+    "short_tmax": 25.0,
+    "short_window_peak_omega": 0.05,
+    "full_tmax": 30.0,
+    "dt_peak_delta": 0.0,
+    "dt_weight_relative_delta": 0.0001234793428618915,
+    "time_window_peak_delta": 0.0,
+    "coarse_spectrum_relative_l2_vs_refined": 0.00022305572217791,
+    "short_spectrum_relative_l2_vs_full": 0.031041536546333983,
+    "coarse_fourier_recompute_relative_l2": 9.865534004894365e-16,
+    "refined_fourier_recompute_relative_l2": 2.002390228459791e-15,
+    "coarse_spectrum_min": 0.005200732435347804,
+    "refined_spectrum_min": 0.00519922195173699,
+    "short_spectrum_min": 0.0019274752688135913,
+    "maxdim": {
+      "explicit_second_maxdim_supplied": true,
+      "same_instance": true,
+      "same_grid": true,
+      "same_evolution_settings": true,
+      "configured_maxdim": 96,
+      "reference_maxdim": 320,
+      "actual_maxdim": 96.0,
+      "cap_exercised": true,
+      "spectrum_relative_l2": 1.596152908003976e-06,
+      "peak_delta": 0.0,
+      "weight_relative_delta": 1.6560662817263316e-07
+    },
+    "cv": {
+      "cv_supplied": true,
+      "same_instance": true,
+      "omegas": [
+        0.2,
+        0.25,
+        0.3,
+        0.35
+      ],
+      "cv_intensities": [
+        0.8094698095517548,
+        0.5681807186981724,
+        0.42688706828248535,
+        0.3680495733571379
+      ],
+      "tebd_intensities_nearest_grid": [
+        0.7690276015643616,
+        0.5844400836402484,
+        0.45422461183261287,
+        0.3550602539709524
+      ],
+      "point_relative_differences": [
+        0.04996135434598632,
+        0.02861653767366431,
+        0.06403928715881681,
+        0.03529230931503146
+      ],
+      "main_peak_bracketed": false,
+      "full_weight_window_covered": false,
+      "peak_delta": null,
+      "integrated_weight_relative_delta": null,
+      "cv_intensity_at_refined_peak": null,
+      "weight_window": [
+        0.0,
+        1.5
+      ]
+    }
+  },
+  "failures": [],
+  "limitations": [
+    "严格 q=pi 自相关不包含 q=0 守恒和动量反演检查",
+    "第二档 maxdim 未实际触及上限时不计为独立收敛证据",
+    "CV 未包围主峰并覆盖主要积分窗时不关闭方法交叉门"
+  ],
+  "evidence": {
+    "coarse_manifest_sha256": "35c62e4cfdb67cfab4012e92043acc654247518d7fa8ef34453db91bfed4c117",
+    "refined_manifest_sha256": "cd8263f33183c5e6ed2bac67a7c44705796e137cd3c60d351ee1180ecaced2a4",
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  }
+}

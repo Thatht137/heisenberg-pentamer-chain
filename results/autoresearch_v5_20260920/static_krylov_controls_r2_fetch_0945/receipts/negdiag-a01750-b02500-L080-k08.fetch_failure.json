@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "failed_no_success_artifact",
+  "cell_id": "negdiag-a01750-b02500-L080-k08",
+  "remote": "wangjieren@39.96.207.180",
+  "port": "6000",
+  "remote_dir": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2/results/autoresearch_v5_20260919/static_krylov_controls_r2/cells/negdiag-a01750-b02500-L080-k08",
+  "local_destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08",
+  "preview": {
+    "status": "pass",
+    "destination_exists": false,
+    "file_count": 42,
+    "total_bytes": 16921086,
+    "remote_checksum_status": "pass",
+    "preview_receipt": "negdiag-a01750-b02500-L080-k08.preview.json"
+  },
+  "fetch_attempt": {
+    "confirmed": true,
+    "helper": "scripts/autoresearch_v5/fetch_negative_phase_run.py",
+    "mode": "non-clobbering scp",
+    "success_receipt_exists_after_attempt": false,
+    "destination_exists_after_attempt": false,
+    "captured_error": false,
+    "note": "helper process ended without a success receipt or destination; transport error text was not captured by the tool wrapper"
+  },
+  "policy": {
+    "retry": false,
+    "comparison": false,
+    "remote_files_modified": false,
+    "other_qec_tasks_touched": false
+  }
+}

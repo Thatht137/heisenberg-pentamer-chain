@@ -1,0 +1,31 @@
+{
+  "method": "finite_dmrg_multistart_saved_state_enriched",
+  "boundary": "OBC",
+  "sectors": [
+    "Sz=0",
+    "Sz=1"
+  ],
+  "maxdim_by_L": {
+    "80": 1200
+  },
+  "nsweeps": 64,
+  "cutoff": 1e-11,
+  "threads": 8,
+  "q_count": 401,
+  "init_modes": [
+    "center",
+    "ferro_j2"
+  ],
+  "noise_profile": "legacy",
+  "random_seed": 20260811,
+  "variance_per_site_max": 5e-08,
+  "save_state": true,
+  "enriched_diagnostics": true,
+  "eigsolve_krylovdim": 12,
+  "eigsolve_maxiter": 1,
+  "eigsolve_tol": 1e-14,
+  "warmstart": false,
+  "retry_policy": "none",
+  "maxdim_escalation": false,
+  "execution": "prepared_only; concurrency=1; stop on first failed cell"
+}

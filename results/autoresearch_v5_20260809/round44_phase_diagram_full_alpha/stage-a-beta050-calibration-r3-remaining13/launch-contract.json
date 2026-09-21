@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "launch_ready": true,
+  "cell_count": 13,
+  "concurrency": 1,
+  "eta_hours": {
+    "low": 6,
+    "high": 10
+  },
+  "run_spec_sha256": "27076fa714f6330ad66ee101bd657012804f1e2084e7f8879c4075f070da4bf3",
+  "source_hashes_sha256": "1c30107400a827450638994b45e5b340ff9c57517bc48a9507f6ae9208fe4542",
+  "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+  "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+  "r2_validation_summary_sha256": "59c0b36b203cab92b2f8b8b532e4f77bbdbfc6d1c68dd12fa9cd3fa44b4e0356",
+  "r2_ingestion_summary_sha256": "da9118db823730f736091fafc3fc3d72e509e6fdbaf8454d79ccce9f538d9d3a"
+}

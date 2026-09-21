@@ -1,0 +1,17 @@
+{
+  "run_id": "pentamer-r5-dmrg-ed-crosscheck-20260729",
+  "run_dir": "results\\five_rounds_20260729\\round5_crosscheck\\dmrg",
+  "axes": {
+    "alpha": [
+      0.23
+    ]
+  },
+  "cells": [
+    {
+      "cell_id": "cell-0001",
+      "params": {
+        "alpha": 0.23
+      }
+    }
+  ]
+}

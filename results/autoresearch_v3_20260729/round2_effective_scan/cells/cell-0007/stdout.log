@@ -1,0 +1,25 @@
+After sweep 1 energy=-9.367060487758431  maxlinkdim=21 maxerr=9.96E-12 time=44.196
+After sweep 2 energy=-9.371938872798912  maxlinkdim=38 maxerr=9.94E-12 time=0.850
+After sweep 3 energy=-9.373370702661504  maxlinkdim=53 maxerr=9.87E-12 time=0.616
+After sweep 4 energy=-9.37414189623538  maxlinkdim=62 maxerr=9.94E-12 time=0.975
+After sweep 5 energy=-9.374735934683086  maxlinkdim=68 maxerr=9.95E-12 time=0.618
+After sweep 6 energy=-9.375137605533068  maxlinkdim=71 maxerr=9.92E-12 time=0.642
+After sweep 7 energy=-9.375432170901352  maxlinkdim=72 maxerr=1.00E-11 time=0.671
+After sweep 8 energy=-9.375674808774908  maxlinkdim=75 maxerr=9.98E-12 time=0.660
+After sweep 9 energy=-9.375876215296064  maxlinkdim=78 maxerr=9.94E-12 time=0.689
+After sweep 10 energy=-9.376024064025447  maxlinkdim=82 maxerr=9.94E-12 time=0.690
+After sweep 11 energy=-9.376132687493353  maxlinkdim=85 maxerr=9.99E-12 time=0.679
+After sweep 12 energy=-9.376209714974664  maxlinkdim=90 maxerr=9.92E-12 time=0.690
+After sweep 13 energy=-9.376253797784827  maxlinkdim=93 maxerr=9.97E-12 time=0.689
+After sweep 14 energy=-9.376283869734145  maxlinkdim=95 maxerr=9.80E-12 time=0.683
+After sweep 15 energy=-9.376300416812803  maxlinkdim=97 maxerr=9.91E-12 time=0.680
+After sweep 16 energy=-9.376305194057382  maxlinkdim=94 maxerr=9.98E-12 time=0.663
+After sweep 17 energy=-9.37630672043804  maxlinkdim=93 maxerr=9.95E-12 time=0.681
+After sweep 18 energy=-9.376307466948134  maxlinkdim=92 maxerr=9.98E-12 time=0.667
+After sweep 19 energy=-9.376307755756539  maxlinkdim=87 maxerr=9.99E-12 time=0.674
+After sweep 20 energy=-9.376307885123254  maxlinkdim=88 maxerr=9.92E-12 time=0.644
+After sweep 21 energy=-9.37630792975961  maxlinkdim=90 maxerr=9.91E-12 time=0.675
+After sweep 22 energy=-9.376307933237381  maxlinkdim=85 maxerr=9.91E-12 time=0.638
+After sweep 23 energy=-9.37630793356409  maxlinkdim=84 maxerr=9.99E-12 time=0.650
+After sweep 24 energy=-9.376307933601792  maxlinkdim=83 maxerr=9.96E-12 time=0.645
+SECTOR_CELL_SUCCESS outdir=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v3_20260729/round2_effective_scan/cells/cell-0007

@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-08-04",
+  "target": "wangjieren@39.96.207.180:6000",
+  "result": "connection_refused",
+  "remote_state": "unobservable",
+  "last_authoritative_state": {
+    "checked_at": "2026-08-03T23:23:46+08:00",
+    "cell": "cell-l40-qpi-low-000-020",
+    "completed_points": "1/5",
+    "status": "running",
+    "manifest_present": false,
+    "julia_processes": 1
+  },
+  "action": "只读检查；未写远端、未取消、未启动第二个 Julia、未下载",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

@@ -1,0 +1,23 @@
+	Command being timed: "/home/wangjieren/.juliaup/bin/julia +release --threads=8 --project=. /home/wangjieren/code/1x5_Heisenberg_Pentamer/scripts/autoresearch_v5/negative_static_cell.jl /home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r4-a0250-L060/cells/nega-r4-a0250-b0500-L060/start_ferro_j2 -0.25 0.5 12 1000 64 1e-11 ferro_j2 3 16 401 0"
+	User time (seconds): 2520.88
+	System time (seconds): 5.68
+	Percent of CPU this job got: 548%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:40.34
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1289780
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 0
+	Minor (reclaiming a frame) page faults: 1312815
+	Voluntary context switches: 137878
+	Involuntary context switches: 4385
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 496
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

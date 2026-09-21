@@ -1,0 +1,213 @@
+{
+  "run_id": "pentamer-positive-static-20260730",
+  "run_dir": "results/autoresearch_v5_20260730/round8_positive_static_production",
+  "axes": {
+    "path_id": [
+      "p01",
+      "p02",
+      "p03",
+      "p04",
+      "p05",
+      "p06",
+      "p07",
+      "p08",
+      "p09"
+    ],
+    "L": [
+      40,
+      60,
+      80
+    ]
+  },
+  "cells": [
+    {
+      "cell_id": "cell-0001",
+      "params": {
+        "path_id": "p01",
+        "L": 40
+      }
+    },
+    {
+      "cell_id": "cell-0002",
+      "params": {
+        "path_id": "p01",
+        "L": 60
+      }
+    },
+    {
+      "cell_id": "cell-0003",
+      "params": {
+        "path_id": "p01",
+        "L": 80
+      }
+    },
+    {
+      "cell_id": "cell-0004",
+      "params": {
+        "path_id": "p02",
+        "L": 40
+      }
+    },
+    {
+      "cell_id": "cell-0005",
+      "params": {
+        "path_id": "p02",
+        "L": 60
+      }
+    },
+    {
+      "cell_id": "cell-0006",
+      "params": {
+        "path_id": "p02",
+        "L": 80
+      }
+    },
+    {
+      "cell_id": "cell-0007",
+      "params": {
+        "path_id": "p03",
+        "L": 40
+      }
+    },
+    {
+      "cell_id": "cell-0008",
+      "params": {
+        "path_id": "p03",
+        "L": 60
+      }
+    },
+    {
+      "cell_id": "cell-0009",
+      "params": {
+        "path_id": "p03",
+        "L": 80
+      }
+    },
+    {
+      "cell_id": "cell-0010",
+      "params": {
+        "path_id": "p04",
+        "L": 40
+      }
+    },
+    {
+      "cell_id": "cell-0011",
+      "params": {
+        "path_id": "p04",
+        "L": 60
+      }
+    },
+    {
+      "cell_id": "cell-0012",
+      "params": {
+        "path_id": "p04",
+        "L": 80
+      }
+    },
+    {
+      "cell_id": "cell-0013",
+      "params": {
+        "path_id": "p05",
+        "L": 40
+      }
+    },
+    {
+      "cell_id": "cell-0014",
+      "params": {
+        "path_id": "p05",
+        "L": 60
+      }
+    },
+    {
+      "cell_id": "cell-0015",
+      "params": {
+        "path_id": "p05",
+        "L": 80
+      }
+    },
+    {
+      "cell_id": "cell-0016",
+      "params": {
+        "path_id": "p06",
+        "L": 40
+      }
+    },
+    {
+      "cell_id": "cell-0017",
+      "params": {
+        "path_id": "p06",
+        "L": 60
+      }
+    },
+    {
+      "cell_id": "cell-0018",
+      "params": {
+        "path_id": "p06",
+        "L": 80
+      }
+    },
+    {
+      "cell_id": "cell-0019",
+      "params": {
+        "path_id": "p07",
+        "L": 40
+      }
+    },
+    {
+      "cell_id": "cell-0020",
+      "params": {
+        "path_id": "p07",
+        "L": 60
+      }
+    },
+    {
+      "cell_id": "cell-0021",
+      "params": {
+        "path_id": "p07",
+        "L": 80
+      }
+    },
+    {
+      "cell_id": "cell-0022",
+      "params": {
+        "path_id": "p08",
+        "L": 40
+      }
+    },
+    {
+      "cell_id": "cell-0023",
+      "params": {
+        "path_id": "p08",
+        "L": 60
+      }
+    },
+    {
+      "cell_id": "cell-0024",
+      "params": {
+        "path_id": "p08",
+        "L": 80
+      }
+    },
+    {
+      "cell_id": "cell-0025",
+      "params": {
+        "path_id": "p09",
+        "L": 40
+      }
+    },
+    {
+      "cell_id": "cell-0026",
+      "params": {
+        "path_id": "p09",
+        "L": 60
+      }
+    },
+    {
+      "cell_id": "cell-0027",
+      "params": {
+        "path_id": "p09",
+        "L": 80
+      }
+    }
+  ]
+}

@@ -1,0 +1,482 @@
+{
+  "schema_version": 1,
+  "run_id": "pentamer-negative-phase-stage-c-practical-v2-r1-20260908",
+  "scope": "accepted-only negative-alpha boundary refinement; Fig.9 excluded",
+  "controller": "local_only",
+  "cells": [
+    {
+      "cell_id": "negc-v2-r1-a00500-b00500-L080",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.05,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-d9dffe860d7b4664d1ec",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a00250-b00500-L080",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.05,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-d9b3c630f9694be341da",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a01000-b01000-L080",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-9604320a2a69f627ddf0",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a00750-b01000-L060",
+      "params": {
+        "alpha": -0.075,
+        "beta": 0.1,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-34ad04c3602593438740",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a00750-b01000-L080",
+      "params": {
+        "alpha": -0.075,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-0531c6a97a0be5b00d22",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a00500-b01000-L080",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-ba766280a106d07b8a72",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a02500-b02500-L080",
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-f8aa148bc25ca186d165",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a01750-b02500-L060",
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-2015825a38b335040aef",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a01750-b02500-L080",
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-e0276281f0ca4442cf05",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a01000-b02500-L080",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-2da40639f64fd24ffd55",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a03500-b05000-L080",
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-9a61f4918dfabd63a9a4",
+      "reason": "momentum_reconstruction+two_sigma_ratio_sign",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a03000-b05000-L060",
+      "params": {
+        "alpha": -0.3,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-8f0bf519b68c86bfea06",
+      "reason": "momentum_reconstruction+two_sigma_ratio_sign",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a03000-b05000-L080",
+      "params": {
+        "alpha": -0.3,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-851b666ba8374701b1c7",
+      "reason": "momentum_reconstruction+two_sigma_ratio_sign",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a02500-b05000-L080",
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-6541365ee55e3d02fdbf",
+      "reason": "momentum_reconstruction+two_sigma_ratio_sign",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a07500-b07500-L080",
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-81154595ea8d10610dcb",
+      "reason": "momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a06250-b07500-L060",
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-d44aebac8629418b0372",
+      "reason": "momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a06250-b07500-L080",
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-6ebc4883b0b570977f94",
+      "reason": "momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a05000-b07500-L080",
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-6b91b7c753fcd3144d3e",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a04250-b07500-L060",
+      "params": {
+        "alpha": -0.425,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-46ff31ae842f17ad04e8",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a04250-b07500-L080",
+      "params": {
+        "alpha": -0.425,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-eda7079012f22379d679",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a03500-b07500-L080",
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-e3cac6456088207dd2a1",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a07500-b09000-L080",
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-c814c489c30ef92b9268",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a06250-b09000-L060",
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.9,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-01c8f544b84427ba4407",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a06250-b09000-L080",
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-847bc38ecffe67296a54",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a05000-b09000-L080",
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-7f6d2ed318b67d04abe1",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a07500-b10000-L080",
+      "params": {
+        "alpha": -0.75,
+        "beta": 1.0,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-a759a143436a01a57eae",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a06250-b10000-L060",
+      "params": {
+        "alpha": -0.625,
+        "beta": 1.0,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-8e5d4f8eafa0007aba59",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a06250-b10000-L080",
+      "params": {
+        "alpha": -0.625,
+        "beta": 1.0,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-7a9aee18fc9f6c44e449",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "cell_id": "negc-v2-r1-a05000-b10000-L080",
+      "params": {
+        "alpha": -0.5,
+        "beta": 1.0,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "controller_action_id": "act-ccbf566d8709b6ad8778",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    }
+  ],
+  "settings": {
+    "method": "finite_dmrg_multistart_fullq",
+    "boundary": "OBC",
+    "hamiltonian": "five-site unit cell Heisenberg chain, J1=1, J2=alpha, J3=beta",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim_by_L": {
+      "60": 1000,
+      "80": 1200
+    },
+    "nsweeps": 64,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "q_count": 401,
+    "init_modes": [
+      "center",
+      "ferro_j2"
+    ],
+    "variance_per_site_max": 5e-08,
+    "acceptance": {
+      "variance_per_site_max": 5e-08,
+      "final_truncation_error_max": 1e-09,
+      "sector_tolerance": 1e-08,
+      "spin_gap_min": -1e-08,
+      "boundary_sigma": 2.0,
+      "target_width": 0.025,
+      "final_size_pair": [
+        60,
+        80
+      ]
+    },
+    "offline": true,
+    "execution": "direct SSH; concurrency=1; stop on first failed cell; max sweeps=64"
+  },
+  "provenance": {
+    "negative_alpha_included": true,
+    "stage_b_complete": true,
+    "practical_v2": true,
+    "max_sweeps": 64,
+    "stage_b_summary_sha256": "5ab0513cfdac4e13df388c7620580eceabfa4b10058c5e11ce94b5b8757fbeae",
+    "stage_b_analysis_sha256": "fc6a5f8a16a03502b677b60f83edef3335e07a091009838e704090614821defd",
+    "accepted_index_sha256": "833529f5da540b6de8be351521d5b796bc14d052e092831fe58246e9cfa8fc9a",
+    "bounded_records_sha256": "f84299923738e4682185d6e342c16ebda7cff089a11bc371812fbcd8092002bc",
+    "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "source_commit": "40f4179a5630039485370648edd9621f592c0449",
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "docs/full_phase_diagram_negative_standard_20260809.md": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+      "docs/negative_alpha_practical_convergence_standard_20260829.md": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+      "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+      "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+      "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+      "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+      "scripts/autoresearch_v5/run_negative_phase_structure_batch.py": "3ab6225664e3a4a850400a847f37140fd4800fd16a54ca8842386a404c0fe680",
+      "scripts/autoresearch_v5/validate_negative_phase_run_practical_v2.py": "677a5d3bbe89cf4623fadbbba5f46071e2ec952b371ddc487b152f8041966e94",
+      "scripts/autoresearch_v5/launch_negative_phase_stage_c_practical_v2_r1.sh": "5b3bf267063f5247ac167379193c43b86f8fccaef9cca8ede5a64ead04aa56ab"
+    },
+    "boundary_thresholds_relaxed": false,
+    "phase_label_assigned": false,
+    "bounded_points_excluded": true
+  }
+}

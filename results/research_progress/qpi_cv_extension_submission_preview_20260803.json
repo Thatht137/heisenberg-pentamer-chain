@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "action": "preview_only",
+  "target": "wangjieren@39.96.207.180:6000",
+  "run_root": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension",
+  "scope": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "L": 40,
+    "q_over_pi": 1.0,
+    "eta": 0.1,
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "cells": [
+    {"cell_id": "cell-l40-qpi-low-000-020", "omega_min": 0.0, "omega_max": 0.2, "omega_step": 0.05, "points": 5},
+    {"cell_id": "cell-l40-qpi-high-055", "omega_min": 0.55, "omega_max": 0.55, "omega_step": 0.05, "points": 1},
+    {"cell_id": "cell-l40-qpi-high-100", "omega_min": 1.0, "omega_max": 1.0, "omega_step": 0.05, "points": 1},
+    {"cell_id": "cell-l40-qpi-high-150", "omega_min": 1.5, "omega_max": 1.5, "omega_step": 0.05, "points": 1}
+  ],
+  "settings": {
+    "method": "correction_vector_dmrg",
+    "boundary": "OBC",
+    "sector": "Sz=0",
+    "dmrg_maxdim": 256,
+    "cv_maxdim": 600,
+    "nsweeps": 16,
+    "threads_per_cell": 8,
+    "julia_processes": 1,
+    "network_downloads": false,
+    "execution": "four cells sequentially; no parallel Julia"
+  },
+  "estimated_wall_hours": {"typical": [8.0, 12.0], "conservative_upper": 16.0, "basis": "existing L=40 three-point CV run: 14285.8 s"},
+  "safety": {
+    "remote_target_absent_preflight": true,
+    "single_julia_guard": true,
+    "non_clobbering": true,
+    "offline_julia_packages": true,
+    "no_negative_alpha": true
+  },
+  "local_hashes": {
+    "launcher": "40b8aa7cdcd471647a66dfec04ef7c4dce054162ad15797331855a74ac5816e0",
+    "run_cv_dsf_cell.py": "560d4344bc71c4dad487a3028a030bc41ebf813d53427bdcc17ace9eec0cc349",
+    "cv_dsf_cell.jl": "049908c694ed6841bd0c3b3028b3b966cedafd426c49f07e1f491393d59e5292",
+    "progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+    "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c"
+  },
+  "post_run": ["remote manifest/status/checksums", "non-overwriting download", "validate_cv_run.py", "assemble_qpi_cv_anchors.py", "analyze_qpi_tebd_production.py", "update Fig. 6--8 and report.html"]
+}

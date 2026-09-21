@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-08-03T12:44:06+08:00",
+  "host": "39.96.207.180:6000",
+  "user": "wangjieren",
+  "anchor": {
+    "driver_pid": 3745209,
+    "julia_pid": 3745217,
+    "status": "running",
+    "elapsed": "15:50:00",
+    "cpu_percent": 1623,
+    "stderr_empty": true
+  },
+  "supervisor": {
+    "status": "waiting_for_anchor",
+    "last_log": "2026-08-03T12:43:17+08:00 anchor still running"
+  },
+  "tebd": {
+    "status": "not_started"
+  },
+  "decision": "继续保留 anchor 单任务；不提交新的 Julia，不启动 TEBD",
+  "scope": {
+    "negative_alpha_excluded": true,
+    "reference_fig9_excluded": true
+  }
+}

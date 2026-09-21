@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "cell_id": "cell-0016",
+  "status": "success",
+  "params": {
+    "model": "pentamer",
+    "alpha": 0.23,
+    "beta": 0.05,
+    "N_units": 8,
+    "L": 40,
+    "target_sz": 0
+  },
+  "settings": {
+    "method": "finite_dmrg",
+    "boundary": "OBC",
+    "maxdim": 400,
+    "nsweeps": 40,
+    "cutoff": 1e-12,
+    "threads": 16,
+    "init_mode": "center",
+    "entropy_log_base": "e"
+  },
+  "observables": {
+    "energy": -9.43408399225023,
+    "energy_density": -0.23585209980625574,
+    "midchain_entropy": 0.47627583631961684,
+    "total_sz": 2.970416450899123e-16
+  },
+  "diagnostics": {
+    "variance": 7.106848443072522e-11,
+    "variance_per_site": 1.7767121107681306e-12,
+    "actual_maxdim": 106.0,
+    "max_truncation_error": 9.99570401446315e-13,
+    "final_energy_change": 4.813927034774679e-13,
+    "peak_rss_kb": 1098764,
+    "algorithm_seconds": 118.19715595245361
+  },
+  "provenance": {
+    "hostname": "c104-ysu",
+    "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "julia_version": "1.12.3",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "negative_alpha_excluded": true,
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "scripts/autoresearch_v3/entanglement_cell.jl": "0c91a34fe6c856e6fa03ec37f3e011642a8220a86b0706cba17a9a0e46199262",
+      "scripts/autoresearch_v3/run_entanglement_cell.py": "0cb3afe119636820e29a0335037738fadaba5aeb61788a6a42164d77e65e4d86"
+    }
+  },
+  "timing": {
+    "started_at": "2026-07-30T03:42:50.190371+00:00",
+    "finished_at": "2026-07-30T03:45:34.738187+00:00"
+  },
+  "returncode": 0
+}

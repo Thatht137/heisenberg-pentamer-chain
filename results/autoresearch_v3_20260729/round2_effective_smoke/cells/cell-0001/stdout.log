@@ -1,0 +1,9 @@
+After sweep 1 energy=-9.4216166043069  maxlinkdim=19 maxerr=9.83E-11 time=43.833
+After sweep 2 energy=-9.429861271830703  maxlinkdim=37 maxerr=9.79E-11 time=0.790
+After sweep 3 energy=-9.431834003072778  maxlinkdim=47 maxerr=9.98E-11 time=0.607
+After sweep 4 energy=-9.4329959576282  maxlinkdim=57 maxerr=9.98E-11 time=0.912
+After sweep 5 energy=-9.433698360287819  maxlinkdim=61 maxerr=9.94E-11 time=0.601
+After sweep 6 energy=-9.43399771503884  maxlinkdim=63 maxerr=9.96E-11 time=0.588
+After sweep 7 energy=-9.434075686456447  maxlinkdim=71 maxerr=1.00E-10 time=0.627
+After sweep 8 energy=-9.434083011883926  maxlinkdim=76 maxerr=9.99E-11 time=0.621
+SECTOR_CELL_SUCCESS outdir=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v3_20260729/round2_effective_smoke/cells/cell-0001

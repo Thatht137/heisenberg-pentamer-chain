@@ -1,0 +1,23 @@
+{
+  "job_type": "tebd_production",
+  "cell_id": "fullq-agreement-eta020-dt025",
+  "phase": "finished",
+  "tebd_total_steps": 1200,
+  "fourier_total_q": 121,
+  "status": "success",
+  "tebd_returncode": 0,
+  "fourier_returncode": 0,
+  "finished_at": "2026-08-08T04:58:47.792293+00:00",
+  "accepted": true,
+  "tebd_seconds": 1381.732376229018,
+  "fourier_seconds": 1285.1733394823968,
+  "returncode": 0,
+  "tebd_step": 1200,
+  "tebd_percent": 100.0,
+  "tebd_eta_seconds": 0.0,
+  "fourier_q": 121,
+  "schema_version": 1,
+  "started_at": "2026-08-08T04:14:20.748999+00:00",
+  "updated_at": "2026-08-08T04:58:47.800938+00:00",
+  "elapsed_seconds": 2667.052
+}

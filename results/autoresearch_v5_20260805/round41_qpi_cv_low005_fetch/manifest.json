@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "cell_id": "cell-l40-qpi-low-005-highbudget",
+  "status": "success",
+  "params": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "N_units": 8,
+    "L": 40,
+    "q_over_pi": 1.0,
+    "omega_min": 0.05,
+    "omega_max": 0.05,
+    "omega_step": 0.05
+  },
+  "settings": {
+    "method": "krylov_correction_vector_dmrg",
+    "boundary": "OBC",
+    "sector": "Sz=0",
+    "eta": 0.1,
+    "dmrg_maxdim": 320,
+    "cv_maxdim": 800,
+    "nsweeps": 20,
+    "dmrg_cutoff": 1e-10,
+    "cv_cutoff": 1e-14,
+    "threads": 4,
+    "momentum_normalization": "1/sqrt(L)"
+  },
+  "observables": {
+    "energy": -11.147101023773123,
+    "source_norm_squared": 1.0277313178711698,
+    "source_maxdim": 165.0
+  },
+  "diagnostics": {
+    "variance_per_site": 2.611930227658377e-10,
+    "total_sz": 7.579176696648595e-16,
+    "dmrg_actual_maxdim": 55.0,
+    "max_dmrg_truncation": 9.99645287244195e-11,
+    "final_dmrg_energy_delta": 2.4868995751603507e-14,
+    "max_cv_relative_residual": 1.1706774646405482e-05,
+    "max_solution_dim": 205.0,
+    "dmrg_seconds": 77.50925302505493,
+    "cv_seconds": 1053.8674669265747
+  },
+  "acceptance": {
+    "status": "fail",
+    "checks": {
+      "ground_variance": true,
+      "dmrg_truncation": true,
+      "cv_residual": false,
+      "nonnegative": true
+    },
+    "budgets": {
+      "variance_per_site": 1e-08,
+      "max_dmrg_truncation": 1e-08,
+      "max_cv_relative_residual": 1e-05,
+      "relative_negative_tolerance": 1e-10
+    },
+    "min_intensity": 1.8715182607018286
+  },
+  "provenance": {
+    "hostname": "c104-ysu",
+    "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "julia_version": "1.12.3",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "julia_pkg_offline": true,
+    "negative_alpha_excluded": true,
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "scripts/autoresearch_v5/cv_dsf_cell.jl": "049908c694ed6841bd0c3b3028b3b966cedafd426c49f07e1f491393d59e5292",
+      "scripts/autoresearch_v5/run_cv_dsf_cell.py": "560d4344bc71c4dad487a3028a030bc41ebf813d53427bdcc17ace9eec0cc349",
+      "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+    }
+  },
+  "timing": {
+    "started_at": "2026-08-04T14:35:27.327369+00:00",
+    "finished_at": "2026-08-04T14:56:19.236675+00:00"
+  },
+  "returncode": 0
+}

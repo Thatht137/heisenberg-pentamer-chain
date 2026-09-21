@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "status": "partial_failure_ingested",
+  "accepted_calibration_cell": "nega-r9-a0100-b0500-L080",
+  "failed_controller_cell": "nega-r9-a0050-b0500-L040",
+  "counts": {
+    "controller_success_total": 12,
+    "controller_failed_total": 1,
+    "controller_pending_total": 3,
+    "calibration_accepted_total": 6
+  },
+  "failed_observation_contains_value_or_error": false,
+  "accepted_calibration": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/accepted_calibration_through_r9.json",
+    "sha256": "290083607e50582f79f4afedc5955d0876a9cd86172ae4936293abb42b451bf1"
+  },
+  "handoff": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r9-remaining7-20260811-0932/partial_handoff_summary.json",
+    "sha256": "dac1114d635b15b5c4481f7fe062bd7835e10e88f798627666ae46075553a7eb"
+  },
+  "ingestion_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r9_partial_ingestion_audit.json",
+    "sha256": "462aff6e7f0a09b59630594fe4e29da3b12438b5e33b9497931447a1f38828f8"
+  },
+  "observations": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+    "sha256": "88dce190c844a52a6ace182d9783c638c2105ebd999cce77d00dfac7ecb8eb82"
+  },
+  "action_index": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/action_index.json",
+    "sha256": "bc2c05f064f2f46dd0c907ca638c695da00a8b7f06e249d351b0a8d51373bd19"
+  },
+  "controller": {
+    "status": "NOT_REEVALUATED",
+    "crossing": "not_assigned",
+    "phase_label": "not_assigned"
+  },
+  "thresholds_relaxed": false
+}

@@ -1,0 +1,36 @@
+R4 终态只读 checksum 审计
+checked_at_cst=2026-08-10 18:22-18:25
+remote=wangjieren@39.96.207.180:6000
+remote_cell=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r4-a0250-L060/cells/nega-r4-a0250-b0500-L060
+
+remote_parent_sha256sum_c=pass
+remote_parent_checksums_sha256=417665f88b2212ebe6095603a0e88dc749f5b2999f35c8e93117d4f0917893de
+remote_parent_manifest_sha256=566b6907bad1fc8769766f2d5c83e72518f1f8c3c506ba621325f6b22198da39
+remote_parent_status_sha256=3db0640bd2fbeab6f3c550c6163aa2f13b07118c0b00d8d579e9b0dd15a2fcac
+
+remote_center_sha256sum_c=pass
+remote_center_checksums_sha256=7bbb885040f49393b1ebf7f62163c8f9a91fe81a674d61f5c4a0ee7c96f36f1d
+remote_center_manifest_sha256=f15cee28f7aa8a18eed37fd04f58e676db2f345827980ff5363b6c3aaacaad56
+remote_center_status_sha256=1dd98a9a8dd729456f2265e9e5cda14a4ec9f015fa752e9f4c53a79ab748746f
+
+remote_ferro_j2_sha256sum_c=pass
+remote_ferro_j2_checksums_sha256=9b39486dc55636650f2998cad212eb88f28c55e4941a2fdc3d3059effc6949fa
+remote_ferro_j2_manifest_sha256=70c63af12563453906a5e5af03185923e900fb27a53b80164429c34672613df7
+remote_ferro_j2_status_sha256=a200d2e67b03a36fc39821bed0e5dea7bf293590f3bd781f781c6faeb43ff0ae
+
+preview_command=python scripts/autoresearch_v5/fetch_negative_phase_run.py preview --cell-id nega-r4-a0250-b0500-L060 --remote-campaign <remote-stage>/cells --destination <fetch>/cells/nega-r4-a0250-b0500-L060 --output <fetch>/previews/nega-r4-a0250-b0500-L060.json
+preview_status=pass
+preview_file_count=36
+preview_total_bytes=135434
+
+fetch_command=python scripts/autoresearch_v5/fetch_negative_phase_run.py fetch --preview <fetch>/previews/nega-r4-a0250-b0500-L060.json --destination <fetch>/cells/nega-r4-a0250-b0500-L060 --output <fetch>/receipts/nega-r4-a0250-b0500-L060.json --confirmed
+fetch_status=pass
+fetch_non_clobbering=true
+local_parent_sha256sum_c=pass
+local_center_sha256sum_c=pass
+local_ferro_j2_sha256sum_c=pass
+
+validator_command=python scripts/autoresearch_v5/validate_negative_phase_run.py --run-dir <fetch>/cells/nega-r4-a0250-b0500-L060 --run-spec results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r4-a0250-L060/parameter-scan.run_spec.json --output <fetch>/validation/nega-r4-a0250-b0500-L060.json
+validator_status=pass
+validator_checks=6/6
+validator_failures=0

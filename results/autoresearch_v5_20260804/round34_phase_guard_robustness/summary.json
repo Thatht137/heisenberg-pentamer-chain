@@ -1,0 +1,129 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "source": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/phase-diagram/phase-size-differences.csv",
+  "source_sha256": "ddb67f9daefb870c5df9cebe68f187e266372710a38cdd49a64464c05ec78171",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true,
+    "alpha_zero_boundary_excluded": true
+  },
+  "pair_summary": [
+    {
+      "size_pair": "40-60",
+      "count": 28,
+      "all_negative": true,
+      "all_significant_2sigma": true,
+      "minimum_abs_delta_over_2sigma": 1.2606841996262736,
+      "maximum_abs_delta_over_2sigma": 168.1767277884319
+    },
+    {
+      "size_pair": "60-80",
+      "count": 28,
+      "all_negative": true,
+      "all_significant_2sigma": true,
+      "minimum_abs_delta_over_2sigma": 2.9829265713381163,
+      "maximum_abs_delta_over_2sigma": 110.99915141926873
+    }
+  ],
+  "leave_one_beta_out": [
+    {
+      "size_pair": "40-60",
+      "omitted_beta": 0.05,
+      "rows": 24,
+      "all_negative": true,
+      "all_significant_2sigma": true,
+      "minimum_abs_delta_over_2sigma": 1.2606841996262736
+    },
+    {
+      "size_pair": "40-60",
+      "omitted_beta": 0.1,
+      "rows": 24,
+      "all_negative": true,
+      "all_significant_2sigma": true,
+      "minimum_abs_delta_over_2sigma": 1.2606841996262736
+    },
+    {
+      "size_pair": "40-60",
+      "omitted_beta": 0.25,
+      "rows": 24,
+      "all_negative": true,
+      "all_significant_2sigma": true,
+      "minimum_abs_delta_over_2sigma": 1.2606841996262736
+    },
+    {
+      "size_pair": "40-60",
+      "omitted_beta": 0.5,
+      "rows": 24,
+      "all_negative": true,
+      "all_significant_2sigma": true,
+      "minimum_abs_delta_over_2sigma": 1.2606841996262736
+    },
+    {
+      "size_pair": "40-60",
+      "omitted_beta": 0.75,
+      "rows": 24,
+      "all_negative": true,
+      "all_significant_2sigma": true,
+      "minimum_abs_delta_over_2sigma": 1.2606841996262736
+    },
+    {
+      "size_pair": "40-60",
+      "omitted_beta": 1.0,
+      "rows": 24,
+      "all_negative": true,
+      "all_significant_2sigma": true,
+      "minimum_abs_delta_over_2sigma": 2.763120672519496
+    },
+    {
+      "size_pair": "60-80",
+      "omitted_beta": 0.05,
+      "rows": 24,
+      "all_negative": true,
+      "all_significant_2sigma": true,
+      "minimum_abs_delta_over_2sigma": 2.9829265713381163
+    },
+    {
+      "size_pair": "60-80",
+      "omitted_beta": 0.1,
+      "rows": 24,
+      "all_negative": true,
+      "all_significant_2sigma": true,
+      "minimum_abs_delta_over_2sigma": 2.9829265713381163
+    },
+    {
+      "size_pair": "60-80",
+      "omitted_beta": 0.25,
+      "rows": 24,
+      "all_negative": true,
+      "all_significant_2sigma": true,
+      "minimum_abs_delta_over_2sigma": 2.9829265713381163
+    },
+    {
+      "size_pair": "60-80",
+      "omitted_beta": 0.5,
+      "rows": 24,
+      "all_negative": true,
+      "all_significant_2sigma": true,
+      "minimum_abs_delta_over_2sigma": 2.9829265713381163
+    },
+    {
+      "size_pair": "60-80",
+      "omitted_beta": 0.75,
+      "rows": 24,
+      "all_negative": true,
+      "all_significant_2sigma": true,
+      "minimum_abs_delta_over_2sigma": 2.9829265713381163
+    },
+    {
+      "size_pair": "60-80",
+      "omitted_beta": 1.0,
+      "rows": 24,
+      "all_negative": true,
+      "all_significant_2sigma": true,
+      "minimum_abs_delta_over_2sigma": 3.05605544046896
+    }
+  ],
+  "interpretation": "两组最终相邻尺寸差在所有内部点均为负且过 2σ；逐 beta 留一后仍保持该性质，支持当前 guard 的有限尺寸稳健性，不等价于热力学极限相图完成。"
+}

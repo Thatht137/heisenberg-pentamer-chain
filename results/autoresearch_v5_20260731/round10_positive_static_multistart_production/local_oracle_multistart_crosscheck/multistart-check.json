@@ -1,0 +1,40 @@
+{
+  "tag": "Agreement",
+  "configuration": {
+    "L": 10,
+    "alpha": 0.1,
+    "beta": 0.5,
+    "boundary": "OBC"
+  },
+  "methods": {
+    "primary": "DMRG center product state",
+    "secondary": "DMRG domain product state"
+  },
+  "budgets": {
+    "energy_density_abs_max": 1e-10,
+    "spin_gap_abs_max": 1e-08,
+    "string_profile_abs_max": 1e-05,
+    "bond_correlation_abs_max": 1e-05,
+    "schmidt_probability_l1_max": 0.0001
+  },
+  "metrics": {
+    "energy_density_abs": 5.551115123125783e-17,
+    "spin_gap_abs": 4.440892098500626e-16,
+    "string_profile_abs": 2.7755575615628914e-17,
+    "bond_correlation_abs": 6.661338147750939e-16,
+    "schmidt_probability_l1": 3.6339610791011334e-15
+  },
+  "checks": {
+    "energy_density_abs": true,
+    "spin_gap_abs": true,
+    "string_profile_abs": true,
+    "bond_correlation_abs": true,
+    "schmidt_probability_l1": true
+  },
+  "accepted": true,
+  "source_sha256": {
+    "results\\autoresearch_v5_20260730\\round8_positive_static_production\\local_oracle_L10_tight\\manifest.json": "4f7e372e1d1b7187bef628bc1e28c901710adcca60fd0b044776f642f3db7499",
+    "results\\autoresearch_v5_20260731\\round10_positive_static_multistart_production\\local_oracle_L10_domain_tight\\manifest.json": "356e6ae29667761d15bc6ed5a8f3d5a8117c0a1aff8e132ee7f08120c581486c"
+  },
+  "boundary": "初态一致性只验证实现不依赖这两个产品态；生产尺寸仍须逐点复核。"
+}

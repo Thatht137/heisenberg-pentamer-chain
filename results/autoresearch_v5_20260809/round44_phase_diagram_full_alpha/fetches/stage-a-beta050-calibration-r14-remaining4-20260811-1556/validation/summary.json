@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "fail",
+  "cell_count": 1,
+  "counts": {
+    "pass": 0,
+    "fail": 1
+  },
+  "unmaterialized_cells": 3,
+  "rows": [
+    {
+      "cell_id": "nega-r14-a0050-b0500-L080",
+      "validator_status": "fail",
+      "exit_code": 1,
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r14-remaining4-20260811-1556\\validation.json",
+      "sha256": "771fef19f95efb13722d98619bfa3646d5fde55c63f4da5cb4464788837e489d"
+    }
+  ]
+}

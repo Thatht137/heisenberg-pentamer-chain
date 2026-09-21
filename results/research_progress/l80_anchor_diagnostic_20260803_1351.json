@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-03T13:50:59+08:00",
+  "run_dir": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260802/round22_cv_l80_anchor/cell-0003-L80-qpi-w025",
+  "diagnosis": "active_compute_not_stuck",
+  "evidence": {
+    "julia_pid": 3745217,
+    "driver_pid": 3745209,
+    "process_state": "RNl",
+    "process_cpu_percent": 1622,
+    "wchan": "-",
+    "stderr_bytes": 0,
+    "points_files": 0,
+    "last_completed_dmrg_sweep": 16,
+    "energy": -22.487137396523156,
+    "stdout_last_change": "2026-08-02T20:56:06+08:00",
+    "supervisor_last_log": "2026-08-03T13:50:20+08:00 anchor still running"
+  },
+  "estimate": {
+    "elapsed_hours_at_snapshot": 16.95,
+    "likely_remaining_hours": [0.0, 8.0],
+    "conservative_remaining_hours": [0.0, 12.0],
+    "likely_terminal_window_local": "2026-08-03 13:51--21:51",
+    "conservative_terminal_deadline_local": "2026-08-04 01:51",
+    "confidence": "low_to_medium",
+    "basis": "L=40 三频点实际 CV 总耗时约 3.97 h；先验 L=80 单点估计约 11.84 h；当前 Julia 仍有约 16.2 个 CPU 核的有效计算。"
+  },
+  "action": {
+    "code_modified": false,
+    "do_not_cancel": true,
+    "do_not_launch_parallel_heavy_job": true,
+    "next_check": "仅在 anchor 终态或 2026-08-04 中午决策窗口检查",
+    "next_after_terminal": "独立回传并运行 validate_cv_run.py；通过后确认 supervisor 是否启动 TEBD。"
+  }
+}

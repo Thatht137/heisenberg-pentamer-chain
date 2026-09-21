@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "coarse_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-uniform-dt025",
+  "refined_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020\\fullq-uniform-dt0125",
+  "parameters": {
+    "alpha": 1.0,
+    "beta": 1.0,
+    "N_units": 8,
+    "L": 40
+  },
+  "settings": {
+    "q_points": 121,
+    "omega_points": 301,
+    "omega_max": 3.0,
+    "time_window": "exponential",
+    "window_eta": 0.1,
+    "low_omega_cutoff": 1.5
+  },
+  "diagnostics": {
+    "coarse_tstep": 0.025,
+    "refined_tstep": 0.0125,
+    "tmax": 30.0,
+    "global_peak_omega_coarse": 0.1,
+    "global_peak_omega_refined": 0.1,
+    "global_peak_delta": 0.0,
+    "qpi_peak_omega_coarse": 0.1,
+    "qpi_peak_omega_refined": 0.1,
+    "qpi_peak_delta": 0.0,
+    "low_weight_coarse": 56.00678969530616,
+    "low_weight_refined": 56.009208612280375,
+    "low_weight_relative_delta": 4.318970945083636e-05,
+    "normalized_rms": 0.0004962069267037719
+  },
+  "acceptance": {
+    "dt_half": true,
+    "global_peak_delta_le_tolerance": true,
+    "qpi_peak_delta_le_tolerance": true,
+    "low_weight_delta_le_tolerance": true
+  },
+  "evidence": {
+    "coarse_manifest_sha256": "0db996c5b6045f889ba7e4fd384a0b5de7b8214d73ebbf3573867e81aa32625e",
+    "refined_manifest_sha256": "1fdc64d03e8d4e61a8062bdc8fdd137c49517e9cd94e25156af3877a1aa24468",
+    "coarse_raw_sha256": "d76dc761b2f2d2d51db4217c2997a7b99adc9f93041e511a57f9242ba8f7d8fa",
+    "refined_raw_sha256": "5b676d5acb9f2f5826d13c2556b2e0f42684215fe1a29fc5b0ff34003e8ab9a6",
+    "negative_alpha_excluded": true
+  }
+}

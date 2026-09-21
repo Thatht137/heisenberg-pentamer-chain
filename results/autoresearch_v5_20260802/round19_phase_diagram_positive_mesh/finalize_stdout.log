@@ -1,0 +1,5 @@
+[2026-08-02T08:26:28] remote_status=running completed=34
+[2026-08-02T08:31:29] remote_status=running completed=34
+[2026-08-02T08:36:30] remote_status=running completed=35
+[2026-08-02T08:41:31] remote_status=failed completed=35
+[2026-08-02T08:41:31] remote batch failed; inspect run_status.json and batch.stderr.log

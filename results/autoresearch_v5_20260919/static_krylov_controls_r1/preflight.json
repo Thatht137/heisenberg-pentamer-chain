@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "prepared_only",
+  "launch_started": false,
+  "cell_count": 2,
+  "input_file_count": 18,
+  "source_hash_lines": 15,
+  "dry_run_returncode": 0,
+  "dry_run_cells": 2,
+  "checks": {
+    "two_cells": true,
+    "argv_krylov8": true,
+    "nsweeps_64": true,
+    "maxdim_1200": true,
+    "save_state_and_enriched": true,
+    "single_concurrency_stop_first": true,
+    "no_warmstart_128_retry": true,
+    "helper_in_sources": true
+  },
+  "parameter_plan": {
+    "requested": "quantum.harness/scripts/parameter_scan.py plan",
+    "path": "C:/Users/hh250/code/quantum.harness/scripts/parameter_scan.py",
+    "available": true,
+    "sha256": "7195B79C9AEDA30F1105669285E1A360378EDD3506ADBFE92E19532FEE5BB8A0",
+    "proof": "harness_parameter_scan_preflight/schema_conversion.json",
+    "mapping_verified": true
+  }
+}

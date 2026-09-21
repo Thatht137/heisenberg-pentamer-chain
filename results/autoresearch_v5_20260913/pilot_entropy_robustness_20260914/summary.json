@@ -1,0 +1,98 @@
+{
+  "source_checksums": [
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\entropy_profile_full.csv",
+      "sha256": "b3d85aec894913011ccaec673f03d8495985914fa5ec0a8c242d23c70670cc1f"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "e5d3279549dbbf5c2a4bffc8aeb3f8f6355a3399243ddabebc64d5991a5d9f81"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\entropy_profile_full.csv",
+      "sha256": "ed7f9349744ef9a265d7d71510b931f3f5704ed4010059026b51b88e0dcd6082"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "f7bf08e3f912771d02d9145c191112f6f79d8e76d083e5c954a2a5a2e71319a5"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a02500-b02500-L080\\start_center\\entropy_profile_full.csv",
+      "sha256": "0cffe26ebbe3263c7b4c09aff9293efb3c3efad746260f21bd940b1206a84aed"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a02500-b02500-L080\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "c9a2500d3869273785db466ff46c9fa7e0750e32ebec62b5846e1d47095e9d9f"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a04250-b07500-L080\\start_center\\entropy_profile_full.csv",
+      "sha256": "fe9746630d8d563274531c3220261a1ee1bb584b08add9e4b3ad7d75ec294891"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a04250-b07500-L080\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "75d6bda326029a7ab2d0b4719252751b31c4773a8f4baeb25d6afa9eea064461"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a05000-b07500-L080\\start_center\\entropy_profile_full.csv",
+      "sha256": "99e2b3c67aa0207891e061b3dbd38d16cf43e7e6246a3453e7da8adf317f6484"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a05000-b07500-L080\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "dc64daf0e988660ac3a0396953d0b4f2721496cd68e465e10e1760264fa96494"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a06250-b07500-L080\\start_center\\entropy_profile_full.csv",
+      "sha256": "fb322fc80e6c94eac0dc9c4b6f3166f43fd6c88f0ef79a66ceff25c6de544a55"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a06250-b07500-L080\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "c5db1c955c6b0a4c0ce81cf5f6d36877137f10cc7bce202f7d881189945b3df6"
+    }
+  ],
+  "fits": 336,
+  "windows": [
+    0.1,
+    0.15,
+    0.2,
+    0.25
+  ],
+  "tests": "known_slope_and_rank_rejection_pass",
+  "table": [
+    [
+      "negdiag-a01000-b02500-L080",
+      "0.318 \u2013 0.875",
+      "0.467 \u2013 0.605"
+    ],
+    [
+      "negdiag-a01750-b02500-L080",
+      "0.748 \u2013 1.214",
+      "0.886 \u2013 0.971"
+    ],
+    [
+      "negdiag-a02500-b02500-L080",
+      "0.853 \u2013 1.264",
+      "0.981 \u2013 1.049"
+    ],
+    [
+      "negdiag-a04250-b07500-L080",
+      "0.769 \u2013 1.195",
+      "0.905 \u2013 0.947"
+    ],
+    [
+      "negdiag-a05000-b07500-L080",
+      "0.781 \u2013 1.201",
+      "0.915 \u2013 0.956"
+    ],
+    [
+      "negdiag-a06250-b07500-L080",
+      "0.800 \u2013 1.211",
+      "0.930 \u2013 0.976"
+    ]
+  ],
+  "interpretation": "sensitivity_audit_not_a_phase_classifier",
+  "limitations": [
+    "L80 only",
+    "shared slope is a diagnostic assumption",
+    "ranges are model/window/start sensitivity, not confidence intervals"
+  ]
+}

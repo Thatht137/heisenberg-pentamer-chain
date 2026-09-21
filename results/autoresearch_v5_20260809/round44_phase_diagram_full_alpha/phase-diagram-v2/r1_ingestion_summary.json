@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "status": "not_ready",
+  "source": {
+    "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r1/parameter-scan.run_spec.json",
+    "validation_summary": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r1-20260810-1113/validation/summary.json",
+    "validation_summary_sha256": "a7632c425b90518dbb95e20b07fc923ff75d24f2abaf3df272dcc5bdacb77e68"
+  },
+  "counts": {
+    "validator_pass": 10,
+    "controller_accepted": 7,
+    "calibration_accepted": 3,
+    "controller_failed": 1,
+    "controller_pending": 8
+  },
+  "failed_keys": [
+    {
+      "alpha": -0.35,
+      "beta": 0.5,
+      "L": 60
+    }
+  ],
+  "controller": {
+    "status": "WAITING",
+    "reason": "8 registered cells remain pending",
+    "report": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/report.json",
+    "phase_boundary_ready": false,
+    "phase_label": "not_assigned"
+  },
+  "interpretation": "crossing 未完成前不得赋予相名"
+}

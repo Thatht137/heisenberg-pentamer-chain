@@ -1,0 +1,18 @@
+{
+  "job_type": "tebd_qpi_autocorrelation",
+  "cell_id": "resume-smoke-L10",
+  "phase": "tebd",
+  "total_steps": 4,
+  "status": "success",
+  "finished_at": "2026-08-03T11:24:43.400363+00:00",
+  "accepted": true,
+  "completed_steps": 4,
+  "wall_seconds": 52.39100000000326,
+  "returncode": 0,
+  "percent": 100.0,
+  "eta_seconds": 0.0,
+  "schema_version": 1,
+  "started_at": "2026-08-03T11:23:50.996721+00:00",
+  "updated_at": "2026-08-03T11:24:43.402386+00:00",
+  "elapsed_seconds": 52.406
+}

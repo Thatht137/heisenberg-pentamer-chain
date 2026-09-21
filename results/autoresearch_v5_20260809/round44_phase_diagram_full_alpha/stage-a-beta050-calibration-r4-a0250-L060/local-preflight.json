@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "launch_ready": true,
+  "uploaded": false,
+  "started": false,
+  "cell_count": 1,
+  "cell_id": "nega-r4-a0250-b0500-L060",
+  "controller_action_id": "act-bd120db6bdbc305ddf42",
+  "eta_minutes": {
+    "low": 20,
+    "high": 40,
+    "basis": "R3 L60 双初态实测"
+  },
+  "evidence_gates": {
+    "r3_validation": "2 pass / 1 declared fail",
+    "r3_ingest": "controller success=9 / failed=1 / pending=6；目标失败键无 value/error",
+    "blocked_without_ingest": "pass",
+    "released_with_ingest": "pass"
+  },
+  "tests": {
+    "python_py_compile": "pass",
+    "julia_parseall": "pass",
+    "batch_dry_run_cells": 1,
+    "bash_n": "pass",
+    "sha256sum_c": "pass",
+    "upload_dry_run": "pass",
+    "negative_handoff_regression": "pass",
+    "spec_budget_action_assertions": "pass",
+    "lf_only_assertion": "pass",
+    "upload_manifest_hash_assertion": "pass"
+  },
+  "package_sha256": {
+    "parameter-scan.run_spec.json": "9938673521d544a13d8a214c4c6a65bf68205d6b89ffb3181a7ce607de0de83f",
+    "r4_source_hashes.sha256": "1c30107400a827450638994b45e5b340ff9c57517bc48a9507f6ae9208fe4542",
+    "launch-contract.json": "b241a47b48d6964d6e708ee767643d923e96a7743fd5ac989f262bb99a2b04b5",
+    "server_upload_manifest.json": "d45c6a177455f2f0235c3266065742a8a8095ce446bce41623eee66c2f332bfd"
+  },
+  "safety": {
+    "offline": true,
+    "remote_git_pull": false,
+    "global_flock": true,
+    "pid_guard": true,
+    "second_julia_guard": true,
+    "stop_on_first_failed_cell": true,
+    "thresholds_lowered": false,
+    "paper_modified": false
+  }
+}

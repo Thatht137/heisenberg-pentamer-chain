@@ -1,0 +1,564 @@
+{
+  "schema_version": 1,
+  "policy": "Practical V2",
+  "variance_per_site_max": 5e-08,
+  "records": [
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.05,
+        "L": 40
+      },
+      "cell_id": "negb2-a1000-b0050-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r2-96-20260812-1211/negb2-a1000-b0050-L040/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.05,
+        "L": 60
+      },
+      "cell_id": "negb3-a1000-b0050-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r3-remaining95-20260812-1412/negb3-a1000-b0050-L060/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.1,
+        "L": 40
+      },
+      "cell_id": "negb9-a1000-b0100-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r9-remaining80-20260813-1212/negb9-a1000-b0100-L040/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.1,
+        "L": 60
+      },
+      "cell_id": "negb10-a1000-b0100-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r10-remaining79-20260829/negb10-a1000-b0100-L060/manifest.json",
+      "validation_basis": "results/research_progress/practical_v2_r10_a1000_b0100_L060_validation_20260829.json",
+      "validation_sha256": "c7fc5dd1c13dc44254ee204980bdcaaf7c35c44ac0643a344177a7a239fe7d75",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.25,
+        "L": 40
+      },
+      "cell_id": "negb14-a1000-b0250-L040",
+      "sweeps": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r14-remaining65-20260901-2204/negb14-a1000-b0250-L040/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a1000-b0250-L040_validation_practical_v2_20260901.json",
+      "validation_sha256": "f73a37661c45b0bcef64098eab83924e205a40f22f8761871b483a63c5945610",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.25,
+        "L": 60
+      },
+      "cell_id": "negb14-a1000-b0250-L060",
+      "sweeps": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r14-remaining65-20260901-2204/negb14-a1000-b0250-L060/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a1000-b0250-L060_validation_practical_v2_20260901.json",
+      "validation_sha256": "0fb6b06496b4408e3d7aefb23a373bad767a49ada1d38278295e6db638a7aa46",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.05,
+        "L": 40
+      },
+      "cell_id": "negb4-a0750-b0050-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r4-remaining94-20260812-1615/negb4-a0750-b0050-L040/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.05,
+        "L": 60
+      },
+      "cell_id": "negb5-a0750-b0050-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r5-remaining93-20260812-1812/negb5-a0750-b0050-L060/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.1,
+        "L": 40
+      },
+      "cell_id": "negb10-a0750-b0100-L040",
+      "sweeps": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r10-remaining79-20260829/negb10-a0750-b0100-L040/manifest.json",
+      "validation_basis": "results/research_progress/practical_v2_r10_a0750_b0100_L040_validation_20260829.json",
+      "validation_sha256": "8149edf967134034c398da85677b0e9a34cf8f82cc379757da40bd4eb29bb21f",
+      "legacy_accepted": false
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.1,
+        "L": 60
+      },
+      "cell_id": "negb12-a0750-b0100-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r12-remaining1-20260830-0921/negb12-a0750-b0100-L060/manifest.json",
+      "validation_basis": "results/research_progress/practical_v2_r12_a0750_b0100_L060_validation_20260830.json",
+      "validation_sha256": "6dc177d5aec42b49d5addd44d2aa416f4cda906d71a49fe821e34c9164b71187",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.25,
+        "L": 40
+      },
+      "cell_id": "negb14-a0750-b0250-L040",
+      "sweeps": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r14-remaining65-20260901-2204/negb14-a0750-b0250-L040/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a0750-b0250-L040_validation_practical_v2_20260901.json",
+      "validation_sha256": "d57774109cdcd93e18a23d22f12bf550c4c03dfb6c603060e9ee5e956f0c8c14",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.25,
+        "L": 60
+      },
+      "cell_id": "negb14-a0750-b0250-L060",
+      "sweeps": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r14-remaining65-20260901-2204/negb14-a0750-b0250-L060/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a0750-b0250-L060_validation_practical_v2_20260901.json",
+      "validation_sha256": "3ddd9bc1fc9bf86dfaafad814fe6964af84686ffef4ff2d1ccc4c0ea05eac3ce",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.05,
+        "L": 40
+      },
+      "cell_id": "negb6-a0500-b0050-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r6-remaining92-20260812-2012/negb6-a0500-b0050-L040/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.05,
+        "L": 60
+      },
+      "cell_id": "negb7-a0500-b0050-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r7-remaining91-20260813-restore/negb7-a0500-b0050-L060/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.1,
+        "L": 40
+      },
+      "cell_id": "negb13-a0500-b0100-L040",
+      "sweeps": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r13-remaining76-20260831-0824/negb13-a0500-b0100-L040/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r13_negb13-a0500-b0100-L040_validation_practical_v2_20260831.json",
+      "validation_sha256": "09d01ec067663a22d2e4e17f030cbad5586a5993b83432b9bd5fe40dad7b6b4b",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.1,
+        "L": 60
+      },
+      "cell_id": "negb13-a0500-b0100-L060",
+      "sweeps": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r13-remaining76-20260831-0824/negb13-a0500-b0100-L060/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r13_negb13-a0500-b0100-L060_validation_practical_v2_20260831.json",
+      "validation_sha256": "047230712c792c6e4979af1e7d3890102e7671a64dbc00292aa8590bfddff821",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.25,
+        "L": 40
+      },
+      "cell_id": "negb14-a0500-b0250-L040",
+      "sweeps": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r14-remaining65-20260901-2204/negb14-a0500-b0250-L040/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a0500-b0250-L040_validation_practical_v2_20260901.json",
+      "validation_sha256": "48df7a0843a86051b1f7f96f25f5a222c7e51f646015617cbd70f6ae9b024689",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.25,
+        "L": 60
+      },
+      "cell_id": "negb14-a0500-b0250-L060",
+      "sweeps": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r14-remaining65-20260901-2204/negb14-a0500-b0250-L060/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a0500-b0250-L060_validation_practical_v2_20260901.json",
+      "validation_sha256": "507a71e92edecfe50a1c6d574b52ad64e585c026057c82c8a9a1b777b3f48528",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.05,
+        "L": 40
+      },
+      "cell_id": "negb7-a0350-b0050-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r7-remaining91-20260813-restore/negb7-a0350-b0050-L040/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.05,
+        "L": 60
+      },
+      "cell_id": "negb7-a0350-b0050-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r7-remaining91-20260813-restore/negb7-a0350-b0050-L060/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.1,
+        "L": 40
+      },
+      "cell_id": "negb13-a0350-b0100-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r13-remaining76-20260831-0824/negb13-a0350-b0100-L040/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r13_negb13-a0350-b0100-L040_validation_practical_v2_20260831.json",
+      "validation_sha256": "5a5190178425cc79a2c967fc561ebdfb0d2ce3bffdff535c050657993f589b1f",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.1,
+        "L": 60
+      },
+      "cell_id": "negb13-a0350-b0100-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r13-remaining76-20260831-0824/negb13-a0350-b0100-L060/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r13_negb13-a0350-b0100-L060_validation_practical_v2_20260831.json",
+      "validation_sha256": "4cd5ebf4c4b3fc72159aeefdf6d98eee45460bf45e70c8481a6d52aa0f7c89d6",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.25,
+        "L": 40
+      },
+      "cell_id": "negb14-a0350-b0250-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r14-remaining65-20260901-2204/negb14-a0350-b0250-L040/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a0350-b0250-L040_validation_practical_v2_20260901.json",
+      "validation_sha256": "43a2ab7f93ad6467cc44f148672ebb0ad9cbbd78dc5a551bdb4e2e0c57c2edf1",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.25,
+        "L": 60
+      },
+      "cell_id": "negb14-a0350-b0250-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r14-remaining65-20260901-2204/negb14-a0350-b0250-L060/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a0350-b0250-L060_validation_practical_v2_20260901.json",
+      "validation_sha256": "8cd3a55c35334b59f704cb67b646abe289273ccbd8bbc59d11234624bde03a01",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.05,
+        "L": 40
+      },
+      "cell_id": "negb7-a0250-b0050-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r7-remaining91-20260813-restore/negb7-a0250-b0050-L040/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.05,
+        "L": 60
+      },
+      "cell_id": "negb7-a0250-b0050-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r7-remaining91-20260813-restore/negb7-a0250-b0050-L060/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.1,
+        "L": 40
+      },
+      "cell_id": "negb13-a0250-b0100-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r13-remaining76-20260831-0824/negb13-a0250-b0100-L040/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r13_negb13-a0250-b0100-L040_validation_practical_v2_20260831.json",
+      "validation_sha256": "d1848ed8a407f3e709ce07932297316dc418a87a87db7813c4fcfbab73633d00",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.1,
+        "L": 60
+      },
+      "cell_id": "negb13-a0250-b0100-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r13-remaining76-20260831-0824/negb13-a0250-b0100-L060/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r13_negb13-a0250-b0100-L060_validation_practical_v2_20260831.json",
+      "validation_sha256": "68e1ee920185707590b809130c59901582be447d06276d25aeddcee709e85e23",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.25,
+        "L": 40
+      },
+      "cell_id": "negb14-a0250-b0250-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r14-remaining65-20260901-2204/negb14-a0250-b0250-L040/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a0250-b0250-L040_validation_practical_v2_20260901.json",
+      "validation_sha256": "b315de5532388e16bc702fc5fef1e8497ca61802e73b773ada69e5f2d05cb103",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.25,
+        "L": 60
+      },
+      "cell_id": "negb14-a0250-b0250-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r14-remaining65-20260901-2204/negb14-a0250-b0250-L060/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a0250-b0250-L060_validation_practical_v2_20260901.json",
+      "validation_sha256": "25b6cc8c36a7f3d599c5505308d5dcdabd0ac9b5937370fc0729c63a67d20361",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.05,
+        "L": 40
+      },
+      "cell_id": "negb7-a0100-b0050-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r7-remaining91-20260813-restore/negb7-a0100-b0050-L040/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.05,
+        "L": 60
+      },
+      "cell_id": "negb7-a0100-b0050-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r7-remaining91-20260813-restore/negb7-a0100-b0050-L060/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.1,
+        "L": 40
+      },
+      "cell_id": "negb13-a0100-b0100-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r13-remaining76-20260831-0824/negb13-a0100-b0100-L040/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r13_negb13-a0100-b0100-L040_validation_practical_v2_20260831.json",
+      "validation_sha256": "69f6473d0aa8f1e565137f5d3195eee1decf69e70946d1486131f6e3ddfe837f",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.1,
+        "L": 60
+      },
+      "cell_id": "negb13-a0100-b0100-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r13-remaining76-20260831-0824/negb13-a0100-b0100-L060/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r13_negb13-a0100-b0100-L060_validation_practical_v2_20260831.json",
+      "validation_sha256": "0f3df00656257e21b5435205e59b52b6010e5d6ae945ce1417724efd5104d911",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 40
+      },
+      "cell_id": "negb14-a0100-b0250-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r14-remaining65-20260901-2204/negb14-a0100-b0250-L040/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a0100-b0250-L040_validation_practical_v2_20260901.json",
+      "validation_sha256": "b1f0010e5d032810e988b4347decfa49d6e9977a5b303d1b86f0e5db9e4c9e09",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 60
+      },
+      "cell_id": "negb14-a0100-b0250-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r14-remaining65-20260901-2204/negb14-a0100-b0250-L060/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a0100-b0250-L060_validation_practical_v2_20260901.json",
+      "validation_sha256": "06452e1b3d0ef848e7ccb0590ed91ca2e0a33a1a5e9a08d47b74c2b8fdf51ea5",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.05,
+        "L": 40
+      },
+      "cell_id": "negb7-a0050-b0050-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r7-remaining91-20260813-restore/negb7-a0050-b0050-L040/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.05,
+        "L": 60
+      },
+      "cell_id": "negb7-a0050-b0050-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r7-remaining91-20260813-restore/negb7-a0050-b0050-L060/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.1,
+        "L": 40
+      },
+      "cell_id": "negb13-a0050-b0100-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r13-remaining76-20260831-0824/negb13-a0050-b0100-L040/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r13_negb13-a0050-b0100-L040_validation_practical_v2_20260831.json",
+      "validation_sha256": "d3c1bc60e3cbbeeda77c38980f5cdc35209b4c9e087bfb447faaa4cd994e4804",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.1,
+        "L": 60
+      },
+      "cell_id": "negb13-a0050-b0100-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r13-remaining76-20260831-0824/negb13-a0050-b0100-L060/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r13_negb13-a0050-b0100-L060_validation_practical_v2_20260831.json",
+      "validation_sha256": "47bb8acef3e45e24582df75b2eda98cd0b698d93aa742b684681740ac1b4f27a",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.25,
+        "L": 40
+      },
+      "cell_id": "negb14-a0050-b0250-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r14-remaining65-20260901-2204/negb14-a0050-b0250-L040/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a0050-b0250-L040_validation_practical_v2_20260901.json",
+      "validation_sha256": "d00ee180f61e6ecde437ee2e394285015cdc4970581b0c7871e061a4f7f50e5b",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.05,
+        "L": 40
+      },
+      "cell_id": "negb7-a0025-b0050-L040",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r7-remaining91-20260813-restore/negb7-a0025-b0050-L040/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.05,
+        "L": 60
+      },
+      "cell_id": "negb8-a0025-b0050-L060",
+      "sweeps": 128,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r8-remaining81-20260813-1012/negb8-a0025-b0050-L060/manifest.json",
+      "validation_basis": "threshold_audit_5e-8",
+      "legacy_accepted": true
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.1,
+        "L": 60
+      },
+      "cell_id": "negb14-a0025-b0100-L060",
+      "sweeps": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r14-remaining65-20260901-2204/negb14-a0025-b0100-L060/manifest.json",
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a0025-b0100-L060_validation_practical_v2_20260901.json",
+      "validation_sha256": "294be37c083efe708b409955656af0c91194a532e0ef3d87d0191c98a575a8e6",
+      "legacy_accepted": true
+    }
+  ],
+  "count": 44,
+  "old_manifests_unchanged": true
+}

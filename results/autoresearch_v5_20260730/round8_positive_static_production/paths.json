@@ -1,0 +1,79 @@
+{
+  "scope": "alpha>=0,beta>=0",
+  "selection_source": "results/autoresearch_v5_20260730/round6_positive_static_selection/validation_cells.csv",
+  "selection_source_sha256": "192eed7b0447b5cf3e07cdf772718bdc062ff2df42fd0a6ba5bb4740dd136c59",
+  "paths": [
+    {
+      "path_id": "p01",
+      "group": 1,
+      "role": "left",
+      "alpha": 0.025,
+      "beta": 0.1,
+      "map_beta": 0.0983
+    },
+    {
+      "path_id": "p02",
+      "group": 1,
+      "role": "ridge",
+      "alpha": 0.05,
+      "beta": 0.1,
+      "map_beta": 0.0983
+    },
+    {
+      "path_id": "p03",
+      "group": 1,
+      "role": "right",
+      "alpha": 0.075,
+      "beta": 0.1,
+      "map_beta": 0.0983
+    },
+    {
+      "path_id": "p04",
+      "group": 2,
+      "role": "left",
+      "alpha": 0.05,
+      "beta": 0.5,
+      "map_beta": 0.5008
+    },
+    {
+      "path_id": "p05",
+      "group": 2,
+      "role": "ridge",
+      "alpha": 0.075,
+      "beta": 0.5,
+      "map_beta": 0.5008
+    },
+    {
+      "path_id": "p06",
+      "group": 2,
+      "role": "right",
+      "alpha": 0.1,
+      "beta": 0.5,
+      "map_beta": 0.5008
+    },
+    {
+      "path_id": "p07",
+      "group": 3,
+      "role": "left",
+      "alpha": 0.075,
+      "beta": 0.9,
+      "map_beta": 0.9034
+    },
+    {
+      "path_id": "p08",
+      "group": 3,
+      "role": "ridge",
+      "alpha": 0.1,
+      "beta": 0.9,
+      "map_beta": 0.9034
+    },
+    {
+      "path_id": "p09",
+      "group": 3,
+      "role": "right",
+      "alpha": 0.125,
+      "beta": 0.9,
+      "map_beta": 0.9034
+    }
+  ]
+}

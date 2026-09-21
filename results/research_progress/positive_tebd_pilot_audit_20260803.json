@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "status": "pilot_only",
+  "scope": {
+    "alpha_values": [
+      0.14,
+      0.23,
+      0.33
+    ],
+    "beta": 0.5,
+    "L": 40,
+    "dt": 0.05,
+    "negative_alpha_included": false
+  },
+  "claim": "正区 TEBD pilot 显示 q≈pi 的候选低频响应，但时间窗、raw inversion 和 raw nonnegative 门槛尚未达到生产级。",
+  "rows": [
+    {
+      "alpha": 0.14,
+      "beta": 0.5,
+      "L": 40.0,
+      "dt": 0.05,
+      "tmax": 7.5,
+      "qpi_peak_omega": 0.1,
+      "inversion_relative_rms": 0.8421805097270619,
+      "q0_inelastic_ratio": 9.597861694956827e-17,
+      "negative_to_positive_ratio": 1.791660770644614
+    },
+    {
+      "alpha": 0.14,
+      "beta": 0.5,
+      "L": 40.0,
+      "dt": 0.05,
+      "tmax": 10.0,
+      "qpi_peak_omega": 1.0833333333333333,
+      "inversion_relative_rms": 0.7551388552297232,
+      "q0_inelastic_ratio": 7.808651958198635e-17,
+      "negative_to_positive_ratio": 3.187827842739707
+    },
+    {
+      "alpha": 0.14,
+      "beta": 0.5,
+      "L": 40.0,
+      "dt": 0.05,
+      "tmax": 15.0,
+      "qpi_peak_omega": 0.1,
+      "inversion_relative_rms": 1.17334079062339,
+      "q0_inelastic_ratio": 6.963485524180387e-17,
+      "negative_to_positive_ratio": 0.8272380490986546
+    },
+    {
+      "alpha": 0.23,
+      "beta": 0.5,
+      "L": 40.0,
+      "dt": 0.05,
+      "tmax": 7.5,
+      "qpi_peak_omega": 0.1,
+      "inversion_relative_rms": 0.7062626474638067,
+      "q0_inelastic_ratio": 6.928518357584803e-17,
+      "negative_to_positive_ratio": 0.8212434505958031
+    },
+    {
+      "alpha": 0.23,
+      "beta": 0.5,
+      "L": 40.0,
+      "dt": 0.05,
+      "tmax": 10.0,
+      "qpi_peak_omega": 0.1,
+      "inversion_relative_rms": 0.7592677590629986,
+      "q0_inelastic_ratio": 8.938244340621225e-17,
+      "negative_to_positive_ratio": 0.9756047637245959
+    },
+    {
+      "alpha": 0.23,
+      "beta": 0.5,
+      "L": 40.0,
+      "dt": 0.05,
+      "tmax": 15.0,
+      "qpi_peak_omega": 0.1,
+      "inversion_relative_rms": 0.8749056671192198,
+      "q0_inelastic_ratio": 3.528118563381234e-17,
+      "negative_to_positive_ratio": 0.6746982733311384
+    },
+    {
+      "alpha": 0.33,
+      "beta": 0.5,
+      "L": 40.0,
+      "dt": 0.05,
+      "tmax": 7.5,
+      "qpi_peak_omega": 0.1,
+      "inversion_relative_rms": 0.5397420045809871,
+      "q0_inelastic_ratio": 3.2105940091668974e-17,
+      "negative_to_positive_ratio": 0.7239334751986685
+    },
+    {
+      "alpha": 0.33,
+      "beta": 0.5,
+      "L": 40.0,
+      "dt": 0.05,
+      "tmax": 10.0,
+      "qpi_peak_omega": 0.1,
+      "inversion_relative_rms": 0.6488429569528491,
+      "q0_inelastic_ratio": 2.6184638461487052e-17,
+      "negative_to_positive_ratio": 0.7616222076628111
+    },
+    {
+      "alpha": 0.33,
+      "beta": 0.5,
+      "L": 40.0,
+      "dt": 0.05,
+      "tmax": 15.0,
+      "qpi_peak_omega": 0.1,
+      "inversion_relative_rms": 0.6551079150601363,
+      "q0_inelastic_ratio": 1.5472110084722e-17,
+      "negative_to_positive_ratio": 0.6362737008504613
+    }
+  ],
+  "checks": {
+    "row_count": true,
+    "q0_conservation_max": 9.597861694956827e-17,
+    "raw_inversion_max": 1.17334079062339,
+    "raw_negative_ratio_min": 0.6362737008504613,
+    "dt_half_available": false,
+    "production_acceptance": false
+  },
+  "source_sha256": {
+    "window_summary.csv": "5c6438f78b8eca097c2e5c2cedc90cf023b095436039a3af0865d80e0bc64b8b",
+    "derived_source.csv": "24d52749a0cbb4a24b2ca886aba8be163c7b1ec0f6fc277051ee131b7959a8a0"
+  },
+  "figure_files": [
+    "figures/positive_tebd_pilot_audit_20260803.svg",
+    "figures/positive_tebd_pilot_audit_20260803.pdf",
+    "figures/positive_tebd_pilot_audit_20260803.png",
+    "figures/positive_tebd_pilot_audit_20260803.tiff"
+  ]
+}

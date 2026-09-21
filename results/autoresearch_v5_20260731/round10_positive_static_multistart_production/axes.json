@@ -1,0 +1,21 @@
+{
+  "variant_id": [
+    "p01-center",
+    "p02-center",
+    "p02-domain",
+    "p03-center",
+    "p04-center",
+    "p05-center",
+    "p05-domain",
+    "p06-center",
+    "p07-center",
+    "p08-center",
+    "p08-domain",
+    "p09-center"
+  ],
+  "L": [
+    40,
+    60,
+    80
+  ]
+}

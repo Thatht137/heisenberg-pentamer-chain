@@ -1,0 +1,17 @@
+{
+  "job_type": "positive_static_cell",
+  "cell_id": "mesh0051-high-budget-recheck-center",
+  "phase": "finished",
+  "requested_sweeps": 80,
+  "status": "success",
+  "finished_at": "2026-08-04T06:18:23.514126+00:00",
+  "accepted": true,
+  "returncode": 0,
+  "last_sweep": 80,
+  "stdout_bytes": 13516,
+  "stdout_last_change": "2026-08-04T06:18:23.402236+00:00",
+  "schema_version": 1,
+  "started_at": "2026-08-04T06:11:06.980254+00:00",
+  "updated_at": "2026-08-04T06:18:23.515532+00:00",
+  "elapsed_seconds": 436.535
+}

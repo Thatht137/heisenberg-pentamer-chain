@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "figure": "anchor_heartbeat_20260803",
+  "sources": [
+    {
+      "path": "results/research_progress/server_progress_snapshot_20260803_1154.json",
+      "sha256": "f4a5c73b7cba4a864435d6336987c22ee6afff0a9bfe3a3680820987ec4e0bd9"
+    },
+    {
+      "path": "results/research_progress/server_progress_snapshot_20260803_1202.json",
+      "sha256": "492b310485a6a32c6cd0e58efbe7c0214b7f1f8fdcdb2f470ecb6cd6e6ea3297"
+    },
+    {
+      "path": "results/research_progress/server_progress_snapshot_20260803_1211.json",
+      "sha256": "23830679db15b388d62e16356ec8d578b5617a02a75d36c0e967e5624a4a84d6"
+    },
+    {
+      "path": "results/research_progress/server_progress_snapshot_20260803_1219.json",
+      "sha256": "179aeba52dc0578a558cbfc9128696aa59e75e53966f206aee5936a5a115dd7c"
+    },
+    {
+      "path": "results/research_progress/server_progress_snapshot_20260803_1223.json",
+      "sha256": "23ce90d490a184d015f7d96dc1df37d2e82fdc8236ac76e81461789ca5739e73"
+    },
+    {
+      "path": "results/research_progress/server_progress_snapshot_20260803_1244.json",
+      "sha256": "973a74e2e5d71b6a57f4e4c923d0dda5ad2c77a4f24f2eab18114b7cd379046d"
+    },
+    {
+      "path": "results/research_progress/server_progress_snapshot_20260803_1304.json",
+      "sha256": "37a8df28a840b5ac93ec82fcde638f070719aa39a63121dfa01ab8f81e6b5b1b"
+    },
+    {
+      "path": "results/research_progress/server_progress_snapshot_20260803_1314.json",
+      "sha256": "38ee45259ff3c76f48953e2945854f04ca74ca64daacc2343293c8dac51e54a6"
+    },
+    {
+      "path": "results/research_progress/server_progress_snapshot_20260803_1351.json",
+      "sha256": "12751d087353b1ab8e58153f98b25dc38bc401d8bb28da5b4efe94d353e92568"
+    },
+    {
+      "path": "results/research_progress/server_resource_snapshot_20260803_1230.json",
+      "sha256": "4678ce6be6ae4813d29a09fd46f059bbc0482d323780f00f7304235abf455da5"
+    }
+  ],
+  "interpretation": "CPU 心跳持续而 CV points 尚未写出；TEBD 尚未启动。该图是运行诊断，不是物理结果。",
+  "negative_alpha_excluded": true
+}

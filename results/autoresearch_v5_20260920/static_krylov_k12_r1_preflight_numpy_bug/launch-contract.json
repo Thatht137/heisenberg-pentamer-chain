@@ -1,0 +1,48 @@
+{
+  "schema_version": 3,
+  "release_id": "static-krylov-controls-release-v3",
+  "status": "prepared_only",
+  "launch_ready": false,
+  "dry_run_only": true,
+  "cell_count": 1,
+  "concurrency": 1,
+  "stop_on_first_failure": true,
+  "retry_policy": "none",
+  "run_spec_sha256": "78cf4a1d03dc1af9532c582b8005111ac6a393d3ec3c595609b2878de5ccd47a",
+  "source_hashes_sha256": "3ffc25e269057c500b79f5b3dc8e27715c1f92b58b30a8f6c2e73c1ca283709d",
+  "eigsolve_krylovdim": 12,
+  "expected_remote_julia_version": "1.12.3",
+  "smoke_julia_version": "1.11.5",
+  "smoke_not_remote_validation": true,
+  "future_output_contract": {
+    "schema_version": 1,
+    "parent": {
+      "cell_id": "negdiag-a01000-b02500-L080-k12",
+      "required_status": "success",
+      "required_accepted": true,
+      "required_krylovdim": 12,
+      "required_modes": [
+        "center",
+        "ferro_j2"
+      ],
+      "required_sectors": [
+        "Sz=0",
+        "Sz=1"
+      ]
+    },
+    "children": {
+      "modes": [
+        "center",
+        "ferro_j2"
+      ],
+      "required_status": "success",
+      "required_accepted": true,
+      "required_krylovdim": 12,
+      "required_sectors": [
+        "Sz=0",
+        "Sz=1"
+      ],
+      "required_sweeps": 64
+    }
+  }
+}

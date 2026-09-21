@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-07T12:00:00+08:00",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "claims": {
+    "C10": {
+      "strong_claim": "正区生产谱由有效链连续谱与局域多重态共同归属",
+      "status": "closed_bounded_scope",
+      "supported_now": true,
+      "supported_statement": "round43 accepted11 已包围主峰并覆盖 0--1.5；validator 与 peak/weight 门通过，当前点为 Agreement。",
+      "missing": [],
+      "closure_rule": "已关闭，但只限 alpha=0.23,beta=0.5,L=40,q=pi；其他动量由 full-q 任务独立验收。"
+    },
+    "C11": {
+      "strong_claim": "正 alpha,beta 区域的二维基态结构已确定",
+      "status": "bounded_statement_supported_strong_claim_pending",
+      "supported_now": true,
+      "supported_statement": "当前 40/60/80 有限尺寸正区数据未见可验收内部 crossing。",
+      "missing": [
+        "能支持热力学相名或完整二维结构的独立序参量/临界标度",
+        "round38 双初态半差仍高于 1e-3"
+      ],
+      "closure_rule": "若没有相反符号 bracket，只保留有限尺寸无 crossing 表述，不升级为热力学单相证明。"
+    }
+  },
+  "next_compute": {
+    "running": "minimal full-q cell 1/6: fullq-uniform-dt025",
+    "after_terminal": "远端 checksum、非覆盖回传、本地 checksum 和单 run validator 通过后，才进入同点 dt=0.0125。",
+    "new_parallel_job_now": false
+  },
+  "source_sha256": {
+    "results/research_progress/round38_mesh0051_acceptance_20260804.json": "9577e95270c25238456bafd595492755b5d748923b4f88cb35dc230a0b7858ff",
+    "results/autoresearch_v5_20260805/round40_cv_tebd_accepted7_analysis/cross-method-check.json": "1235f90bf671f1e3c954858ff016c1eb3fcace8a60c9d1e09eb2bdbc15c8fc0d",
+    "results/autoresearch_v5_20260803/round30_qpi_maxdim96_analysis/summary.json": "b4f583693c06bd1b75a98486cc951e3999d9ffbc09ff0ef364d642a15eaa3ee6",
+    "results/research_progress/positive_phase_audit_20260803.json": "4bdbbb75f96ef48b9cb2a6373a3ce93c63de042b3222dee8f47bbee0d60b461b",
+    "results/research_progress/round43_phase1_submission_20260806.json": "6f141f023c073accf65e908f41523c11a27d8047ddac6bcdb71b4bc7b73befb8"
+  }
+}

@@ -1,0 +1,20 @@
+
+=== attempt 1 started 2026-08-02T12:54:06.176107+00:00 ===
+After sweep 1 energy=-22.408239949359267  maxlinkdim=4 maxerr=7.36E-16 time=31.117
+After sweep 2 energy=-22.478159755609898  maxlinkdim=16 maxerr=9.77E-11 time=1.171
+After sweep 3 energy=-22.48362295959818  maxlinkdim=44 maxerr=9.92E-11 time=0.980
+After sweep 4 energy=-22.48497660035258  maxlinkdim=51 maxerr=9.99E-11 time=1.173
+After sweep 5 energy=-22.485817473269634  maxlinkdim=58 maxerr=9.98E-11 time=1.231
+After sweep 6 energy=-22.486515728472437  maxlinkdim=59 maxerr=9.99E-11 time=1.321
+After sweep 7 energy=-22.486976863137304  maxlinkdim=77 maxerr=1.00E-10 time=1.379
+After sweep 8 energy=-22.487097934302017  maxlinkdim=79 maxerr=9.98E-11 time=1.431
+After sweep 9 energy=-22.487128829970622  maxlinkdim=81 maxerr=9.98E-11 time=1.461
+After sweep 10 energy=-22.487136231079987  maxlinkdim=86 maxerr=1.00E-10 time=1.510
+After sweep 11 energy=-22.487137351627872  maxlinkdim=99 maxerr=9.99E-11 time=1.580
+After sweep 12 energy=-22.487137396210606  maxlinkdim=97 maxerr=1.00E-10 time=1.564
+After sweep 13 energy=-22.487137396445494  maxlinkdim=94 maxerr=9.99E-11 time=1.569
+After sweep 14 energy=-22.487137396303943  maxlinkdim=94 maxerr=9.99E-11 time=1.522
+After sweep 15 energy=-22.487137396478563  maxlinkdim=94 maxerr=9.99E-11 time=1.513
+After sweep 16 energy=-22.487137396523156  maxlinkdim=95 maxerr=9.99E-11 time=1.537
+omega 0.2500 (1/1): S=5.90714182e-01 residual=6.715e-06 D=800
+CV_DSF_RESUMABLE_SUCCESS outdir=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260802/round22_cv_l80_anchor/cell-0003-L80-qpi-w025 completed=1/1

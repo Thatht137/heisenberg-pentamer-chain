@@ -1,0 +1,82 @@
+{
+  "scope": {
+    "alpha_min": 0.0,
+    "alpha_max": 1.0,
+    "negative_alpha_excluded": true
+  },
+  "phase_map": {
+    "path": "data\\phase_diagram_80x60_hires.csv",
+    "rows": 4974,
+    "unique_pairs": 4800,
+    "duplicate_rows": 174,
+    "duplicate_groups": 174,
+    "max_duplicate_energy_spread": 0.0,
+    "max_duplicate_order_spread": 0.0,
+    "positive_unique_pairs": 2400,
+    "positive_alpha_values": 40,
+    "beta_values": 60
+  },
+  "reuse_matrix": [
+    {
+      "asset": "single_pentamer_ed",
+      "location": "data/single_pentamer_levels.csv",
+      "positive_files": 1,
+      "grade": "accept",
+      "next_action": "reuse_positive_slice"
+    },
+    {
+      "asset": "phase_map",
+      "location": "data/phase_diagram_80x60_hires.csv",
+      "positive_files": 1,
+      "grade": "reconnaissance",
+      "next_action": "validate_three_positive_points"
+    },
+    {
+      "asset": "spin_gap",
+      "location": "data/spin_gap/tasks",
+      "positive_files": 18,
+      "grade": "baseline",
+      "next_action": "reuse_for_size_trend"
+    },
+    {
+      "asset": "bond_correlations",
+      "location": "data/bond_correlations",
+      "positive_files": 11,
+      "grade": "baseline",
+      "next_action": "reuse"
+    },
+    {
+      "asset": "static_structure_factor",
+      "location": "data/static_structure_factor",
+      "positive_files": 4,
+      "grade": "baseline",
+      "next_action": "reuse"
+    },
+    {
+      "asset": "entanglement_spectrum",
+      "location": "data/entanglement_spectrum",
+      "positive_files": 3,
+      "grade": "baseline",
+      "next_action": "reuse_with_convergence_caveat"
+    },
+    {
+      "asset": "positive_tebd_spectrum",
+      "location": "data/Sqw_tebd_pentamer_alpha=*.csv",
+      "positive_files": 8,
+      "grade": "mixed",
+      "next_action": "retain_only_points_with_raw_correlator"
+    },
+    {
+      "asset": "positive_tebd_raw",
+      "location": "data/NDSF_pentamer_alpha=*.jld2",
+      "positive_files": 5,
+      "grade": "pilot",
+      "next_action": "reuse_for_report_and_dt_baseline"
+    }
+  ],
+  "outputs": [
+    "results\\five_rounds_20260729\\round1_inventory\\positive_phase_map_clean.csv",
+    "results\\five_rounds_20260729\\round1_inventory\\positive_phase_map_audit.png",
+    "results\\five_rounds_20260729\\round1_inventory\\reuse_matrix.csv"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "figure": "Fig. 3 refined",
+  "backend": "Python/matplotlib",
+  "archetype": "quantitative grid",
+  "core_conclusion": "The dense positive static map is smooth, while the strict finite-size crossing diagnostic has no accepted interior bracket.",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "sources": {
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\data\\phase_diagram_80x60_hires.csv": "ead9b7ad8aa590ae5bce0610740041b8c85e346ab3e0133c61bf4cbd14ca7815",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\phase-diagram\\observations_merged.json": "7276ea8c8680082134bdb6463683005e9da3f0181333a303568608046ee93842"
+  },
+  "grid": {
+    "dense_alpha": 40,
+    "dense_beta": 60,
+    "strict_records": 105
+  },
+  "boundary": "The dense O_str map is exploratory; phase-boundary evidence comes only from strict R(L) diagnostics and remains NO_SIGNIFICANT_CROSSING.",
+  "outputs": {
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\figures\\paper_fig3_positive_groundstate_diagnostics_refined_20260808.svg": "926f5ece550cac54e0f53316f23e76fb53d46ba97b9b98d797fcc7dedb6d82b1",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\figures\\paper_fig3_positive_groundstate_diagnostics_refined_20260808.pdf": "9ae4fd312585ec8e615f185f9e7bef4b146b853a09739aa8230e38aed230a88d",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\figures\\paper_fig3_positive_groundstate_diagnostics_refined_20260808.png": "9d878baa6bb6481263d3b5b7b03d81b32c9b97a03ed1c195c8412c1baaa7612f",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\figures\\paper_fig3_positive_groundstate_diagnostics_refined_20260808.tiff": "6361bac898710b6e7e82eb3cbd5c381a861d93415b5a98141cffb696b6536df8",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\figures\\paper_fig3_positive_groundstate_diagnostics_refined_20260808.source.csv": "2891ebc59b4d82f0bb00d0dfd5e572990aded9c7ec6de1f0634d1fd30bf5b9c0"
+  }
+}

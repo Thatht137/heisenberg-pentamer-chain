@@ -1,0 +1,25 @@
+{
+  "status": "pass",
+  "width_mm": 183,
+  "python_only": true,
+  "boundary_claimed": false,
+  "svg_editable_text": "fonttype=none",
+  "outputs": {
+    "svg": {
+      "sha256": "68b83af837333bdce49d854046f99d86baa5f9ed0014139293046b21d3eeff3a",
+      "bytes": 21155
+    },
+    "pdf": {
+      "sha256": "db0756d52edf9a6414da329b28a1441cbaa2afe4ce39b30d211c36e9d20ce326",
+      "bytes": 30941
+    },
+    "png": {
+      "sha256": "3f959f4c0cc92882ac58102feca90f62a13eb114de047429110e7b3fa78e5a22",
+      "bytes": 229497
+    },
+    "tiff": {
+      "sha256": "1287ed295ff4b68d0cc7e4ab52a04dff2a9de05964d8520eb1e9f7888c162e8e",
+      "bytes": 45726966
+    }
+  }
+}

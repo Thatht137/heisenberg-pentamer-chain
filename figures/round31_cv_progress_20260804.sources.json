@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "figure": "round31_cv_progress_20260804",
+  "backend": "Python/matplotlib",
+  "conclusion": "round31 remains 2/4 while high-100 has sustained active CPU and no terminal manifest",
+  "source_snapshots": [
+    {
+      "path": "results/research_progress/qpi_cv_extension_remote_snapshot_20260804_1030.json",
+      "sha256": "4814b77d6ee6b4c0c572e27660abfa360223cbec4d9e249648ac59ae20cac632"
+    },
+    {
+      "path": "results/research_progress/qpi_cv_extension_remote_snapshot_20260804_1341.json",
+      "sha256": "6f4d6fda26a9b0349af4557a77d5b4cb19cea83b830c413f59fee16a8710f18e"
+    },
+    {
+      "path": "results/research_progress/qpi_cv_extension_remote_snapshot_20260804_1358.json",
+      "sha256": "9836a6c8e7598fd47874f7c72e89bd83eb09f9f7644366542ac84b3fccdd5fff"
+    },
+    {
+      "path": "results/research_progress/qpi_cv_extension_remote_snapshot_20260804_1400.json",
+      "sha256": "160bf7cc19ba8b4e30f5529d4a9de7d282a6fa2c4846200439244ed67703669c"
+    }
+  ],
+  "negative_alpha_excluded": true,
+  "figure_9_excluded": true,
+  "no_eta_extrapolation": true
+}

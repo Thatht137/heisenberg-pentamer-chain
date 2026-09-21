@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "checks": {
+    "Fig. 1_bundle": true,
+    "Fig. 2_bundle": true,
+    "Fig. 3_bundle": true,
+    "Fig. 4_bundle": true,
+    "Fig. 5_bundle": true,
+    "current_sections_minimum": true,
+    "current_draft_section": true,
+    "current_nine_images": true,
+    "current_no_missing_images": true,
+    "current_navigation_compact": true,
+    "current_history_link": true,
+    "history_complete": true,
+    "history_no_missing_images": true,
+    "history_current_link": true,
+    "asset_manifest_clean": true
+  },
+  "figures": {
+    "Fig. 1": {
+      "svg_exists": true,
+      "svg_hash": true,
+      "svg_editable_text": true,
+      "pdf_exists": true,
+      "pdf_hash": true,
+      "png_exists": true,
+      "png_hash": true,
+      "png_resolution": true,
+      "tiff_exists": true,
+      "tiff_hash": true,
+      "tiff_resolution": true,
+      "sidecar": true
+    },
+    "Fig. 2": {
+      "svg_exists": true,
+      "svg_hash": true,
+      "svg_editable_text": true,
+      "pdf_exists": true,
+      "pdf_hash": true,
+      "png_exists": true,
+      "png_hash": true,
+      "png_resolution": true,
+      "tiff_exists": true,
+      "tiff_hash": true,
+      "tiff_resolution": true,
+      "sidecar": true
+    },
+    "Fig. 3": {
+      "svg_exists": true,
+      "svg_hash": true,
+      "svg_editable_text": true,
+      "pdf_exists": true,
+      "pdf_hash": true,
+      "png_exists": true,
+      "png_hash": true,
+      "png_resolution": true,
+      "tiff_exists": true,
+      "tiff_hash": true,
+      "tiff_resolution": true,
+      "sidecar": true
+    },
+    "Fig. 4": {
+      "svg_exists": true,
+      "svg_hash": true,
+      "svg_editable_text": true,
+      "pdf_exists": true,
+      "pdf_hash": true,
+      "png_exists": true,
+      "png_hash": true,
+      "png_resolution": true,
+      "tiff_exists": true,
+      "tiff_hash": true,
+      "tiff_resolution": true,
+      "sidecar": true
+    },
+    "Fig. 5": {
+      "svg_exists": true,
+      "svg_hash": true,
+      "svg_editable_text": true,
+      "pdf_exists": true,
+      "pdf_hash": true,
+      "png_exists": true,
+      "png_hash": true,
+      "png_resolution": true,
+      "tiff_exists": true,
+      "tiff_hash": true,
+      "tiff_resolution": true,
+      "sidecar": true
+    }
+  },
+  "metrics": {
+    "current_sections": 10,
+    "history_sections": 170,
+    "current_bytes": 3039394,
+    "history_bytes": 19873770,
+    "current_embedded_images": 9,
+    "history_embedded_images": 53
+  }
+}

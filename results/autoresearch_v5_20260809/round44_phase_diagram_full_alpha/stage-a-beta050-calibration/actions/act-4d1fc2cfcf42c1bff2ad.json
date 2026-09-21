@@ -1,0 +1,9 @@
+{
+  "budget": 32,
+  "kind": "phase-diagram-cell",
+  "params": {
+    "L": 40,
+    "alpha": -1.0,
+    "beta": 0.5
+  }
+}

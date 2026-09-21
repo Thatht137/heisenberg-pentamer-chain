@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round21_cv_triplet_warmstart\\cell-0002-L40-qpi-w025-w035",
+  "checks": {
+    "terminal_acceptance": true,
+    "checksums": true,
+    "positive_region": true,
+    "variance_per_site": true,
+    "dmrg_truncation": true,
+    "cv_residual": true,
+    "complete_spectrum": true,
+    "nonnegative_spectrum": true
+  },
+  "diagnostics": {
+    "variance_per_site": 2.611944438513092e-10,
+    "max_dmrg_truncation": 9.99645287244195e-11,
+    "max_cv_residual": 6.021249843402546e-06,
+    "completed_points": 3.0,
+    "total_points": 3.0,
+    "point_files": 3
+  },
+  "failures": []
+}

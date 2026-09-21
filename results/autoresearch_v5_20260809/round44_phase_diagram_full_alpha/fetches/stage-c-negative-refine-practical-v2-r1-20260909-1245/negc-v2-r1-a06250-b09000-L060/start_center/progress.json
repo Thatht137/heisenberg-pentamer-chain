@@ -1,0 +1,16 @@
+{
+  "job_type": "negative_static_cell",
+  "cell_id": "negc-v2-r1-a06250-b09000-L060-center",
+  "phase": "finished",
+  "requested_sweeps": 64,
+  "status": "success",
+  "finished_at": "2026-09-08T12:58:23.477647+00:00",
+  "accepted": true,
+  "returncode": 0,
+  "last_sweep": 64,
+  "stdout_bytes": 11047,
+  "schema_version": 1,
+  "started_at": "2026-09-08T12:50:48.900555+00:00",
+  "updated_at": "2026-09-08T12:58:23.479116+00:00",
+  "elapsed_seconds": 454.579
+}

@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-03",
+  "status": "PARTIAL_READY",
+  "scope": {
+    "alpha_min": 0.0,
+    "beta_min": 0.0,
+    "negative_alpha_included": false,
+    "fig9_included": false
+  },
+  "checks": {
+    "required_files": true,
+    "positive_phase_audit": true,
+    "cv_l40_recheck": true,
+    "positive_tebd_pilot_audit": true,
+    "tebd_production_ready_after_anchor": true,
+    "l80_runtime_diagnosis": true,
+    "l80_anchor_terminal": true,
+    "tebd_crosscheck_terminal": true,
+    "final_dynamic_claim_gate": false
+  },
+  "completed_evidence": [
+    "静态机制、有效理论和有限尺寸证据已登记",
+    "105 条正区记录和 56 个内部尺寸差通过 guard 复核",
+    "L=40 CV 三频点现场重验通过",
+    "正区 TEBD pilot 已完成限制性审计并生成图表",
+    "TEBD 生产配置与 raw-spectrum 分离检查通过",
+    "L=80 CV anchor 已回传，manifest、checksum 和 CV residual 通过",
+    "L=40 q=pi TEBD 的 dt、时间窗和 96/320 键维交叉通过"
+  ],
+  "pending_evidence": [
+    "CV/TEBD 主峰覆盖和 0--1.5 积分权重交叉门槛"
+  ],
+  "source_sha256": {
+    "results/research_progress/report.json": "b39445d0239592a9de73215979b19d1da9c79bf1ca5f34b7da28ede69ff00b46",
+    "results/research_progress/report.html": "4a3f721ad739f84b4715e911fc7e6fc74c1bc202b30f4aa215d7febdb7057d8a",
+    "results/research_progress/local_integrity_audit_20260803.json": "145410ad291ae9f3e042651ba7a3992fe0e7ef1b6865f64abcc1e5627fa28aea",
+    "results/research_progress/computation_progress_standard_20260803.json": "a6cd207f1e1ff4532b6fb40979fc2376d836e471001b8c113d082956700d0b20",
+    "results/research_progress/l80_anchor_diagnostic_20260803_0953.json": "d57c4bccd0d523a0daa1280897ae65663827ea5346c94c89d43030bd554279f5",
+    "results/research_progress/l80_anchor_diagnostic_20260803_1314.json": "e2d961f8f2a54fa063e610af5dac4f2b89082ddf586ee2bb3dd57e3aae7f6e38",
+    "results/research_progress/server_progress_snapshot_20260803_1314.json": "38ee45259ff3c76f48953e2945854f04ca74ca64daacc2343293c8dac51e54a6",
+    "results/research_progress/figure_provenance_audit_20260803.json": "58f9e9370a34601a12afadbbb417df4e9e8ac3b7f8a550088442819927d69cb0",
+    "results/research_progress/tebd_handoff_audit_20260803.json": "c49a04908496283c0aacdb5c2680ad6f0c93c3ad543c365194a3c6ceb0b6b508",
+    "results/research_progress/server_progress_snapshot_20260803_1351.json": "12751d087353b1ab8e58153f98b25dc38bc401d8bb28da5b4efe94d353e92568",
+    "results/research_progress/l80_anchor_diagnostic_20260803_1351.json": "69c5b649f0d4146d6632e19e2aaf9dbc3b738c050a188433193978a2defe6216",
+    "results/research_progress/l80_anchor_validator_20260803.json": "3d727afeeca213d233e3439200d514cc7ddf74e4dbe8a45d009d45f864b07797",
+    "docs/delivery_plan_to_20260810.md": "23ae281418e0226ae2397adca454b245f40464a63dfb3a24e91edc5deee587c1",
+    "docs/pentamer_reproduction_standard.md": "4f00f333eaf810b2853a46e4e258e192db7ef554c7800d35df2ebe27adee4b46",
+    "docs/claim_evidence_matrix.md": "3812152f1d76f99020582269c9a200d37f15ce1458f292d8e2412bc44fcbdad0",
+    "docs/figure_plan.md": "25478ea376ee97440a74a2a2403ccdd8ad04e6ebeb40d9ec2eee7163b32e2464",
+    "figures/positive_region_evidence_20260803.svg": "97e6ffbb4afca8fbbfafe30b49eed6752fafb86d21f0f216ae25277d3fc231d4",
+    "figures/positive_region_evidence_20260803.pdf": "9d9ac1142f5bf5454d74bb6e672d72c7fc6da1348a273637e8b264321d3006a9",
+    "figures/positive_tebd_pilot_audit_20260803.svg": "12a8a154e89b52bde736fa49a27c1fc4888dbb7805bf4fdfcb32b195c79b4017",
+    "figures/positive_tebd_pilot_audit_20260803.pdf": "771ae7e42f792501eb94dbe876f8d8dab56f5737959ab0685fdda0dafd3cf7b2",
+    "results/research_progress/positive_phase_audit_20260803.json": "4bdbbb75f96ef48b9cb2a6373a3ce93c63de042b3222dee8f47bbee0d60b461b",
+    "results/research_progress/positive_tebd_pilot_audit_20260803.json": "2f734762a7eee13dea55f57824fd208f394e2d297d6ac66c0d97cfb162a46904",
+    "results/research_progress/tebd_readiness_audit_20260803.json": "b2d028acf456a12501e3d4958b62cd5b9754c9b13fbc0e54eb7166dc4523824f",
+    "results/research_progress/l40_cv_triplet_recheck_20260803.json": "316ef1a5abeafbdc06e15793a6fe88c10ad9e3d6f1c902e8a1544e1baad41e7c",
+    "results/autoresearch_v5_20260803/round30_qpi_maxdim96_analysis/summary.json": "b4f583693c06bd1b75a98486cc951e3999d9ffbc09ff0ef364d642a15eaa3ee6",
+    "results/autoresearch_v5_20260804/round39_cv_tebd_accepted6_analysis/cross-method-check.json": "2a77767c661f5f06f03193c9ffa8b68948c5e0590c54da66eb2c7d0fd46576ac"
+  }
+}

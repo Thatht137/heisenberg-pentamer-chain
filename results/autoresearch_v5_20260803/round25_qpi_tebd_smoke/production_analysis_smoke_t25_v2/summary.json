@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "status": "incomplete",
+  "qpi_production_status": "incomplete",
+  "full_dynamic_status": "incomplete",
+  "tebd_qpi_tag": "Agreement",
+  "cross_method_tag": "NotEvaluable",
+  "instance": "alpha=0.23,beta=0.5,L=10,q/pi=1,eta=0.1,OBC,Sz=0",
+  "budgets": {
+    "dt_peak_omega": 0.05,
+    "dt_integrated_weight_relative": 0.05,
+    "tmax_peak_omega": 0.05
+  },
+  "gates": {
+    "dt_peak_convergence": true,
+    "dt_weight_convergence": true,
+    "time_window_peak_convergence": true,
+    "coarse_nonnegative": true,
+    "refined_nonnegative": true,
+    "short_window_nonnegative": true,
+    "coarse_fourier_reproducible": true,
+    "refined_fourier_reproducible": true,
+    "terminal_integrity": true
+  },
+  "coverage": {
+    "dt_dt2": true,
+    "two_tmax": true,
+    "two_maxdim": false,
+    "cv_main_peak": false,
+    "cv_major_weight": false,
+    "q0_conservation": false,
+    "momentum_inversion": false
+  },
+  "diagnostics": {
+    "coarse_peak_omega": 0.15,
+    "refined_peak_omega": 0.15,
+    "short_tmax": 25.0,
+    "short_window_peak_omega": 0.15,
+    "full_tmax": 30.0,
+    "dt_peak_delta": 0.0,
+    "dt_weight_relative_delta": 6.21518204031341e-05,
+    "time_window_peak_delta": 0.0,
+    "coarse_spectrum_relative_l2_vs_refined": 0.00032160231874210626,
+    "short_spectrum_relative_l2_vs_full": 0.0424458718858599,
+    "coarse_fourier_recompute_relative_l2": 1.3739661534729318e-15,
+    "refined_fourier_recompute_relative_l2": 1.7555697809732523e-15,
+    "coarse_spectrum_min": 0.003492479432393983,
+    "refined_spectrum_min": 0.0034844914284170997,
+    "short_spectrum_min": 0.0013039839206314301,
+    "maxdim": {
+      "explicit_second_maxdim_supplied": false
+    },
+    "cv": {
+      "cv_supplied": false
+    }
+  },
+  "failures": [],
+  "limitations": [
+    "严格 q=pi 自相关不包含 q=0 守恒和动量反演检查",
+    "没有第二档 maxdim 时不关闭完整 TEBD 收敛门",
+    "CV 未包围主峰并覆盖主要积分窗时不关闭方法交叉门"
+  ],
+  "evidence": {
+    "coarse_manifest_sha256": "252776debb70be6edbfbfe4c16b1db149b74d08c3035c28c040083104b632f75",
+    "refined_manifest_sha256": "17483379848c4dab9bffbee46a8c3caa9fba805ccb543696b4e228767a083364",
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  }
+}

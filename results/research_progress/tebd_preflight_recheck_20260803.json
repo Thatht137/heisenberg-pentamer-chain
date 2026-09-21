@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "created_at": "2026-08-03",
+  "checks": {
+    "readiness_status": true,
+    "readiness_checks": true,
+    "manifest_hash": true,
+    "standard_hash": true,
+    "fourier_hash": true,
+    "wrapper_present": true,
+    "wrapper_scope_guard": true,
+    "raw_display_separation": true
+  },
+  "actual_sha256": {
+    "manifest": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "standard": "4f00f333eaf810b2853a46e4e258e192db7ef554c7800d35df2ebe27adee4b46",
+    "fourier_live": "e48b8a8c993b0f381de50f4236570bf1c9b56a883ace2ab10cdf8a2da958ba6f",
+    "tebd_wrapper": "796fee417c3f3bbf0988813173b05a14010539c07e1946d123665c2f03482c0a"
+  },
+  "expected_sha256": {
+    "manifest": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "standard": "4f00f333eaf810b2853a46e4e258e192db7ef554c7800d35df2ebe27adee4b46",
+    "fourier_live": "e48b8a8c993b0f381de50f4236570bf1c9b56a883ace2ab10cdf8a2da958ba6f"
+  },
+  "target": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "L": 40,
+    "dt": 0.025,
+    "tmax": 15.0,
+    "q_points": 81,
+    "omega_points": 181,
+    "threads": 8
+  },
+  "boundary": "L=80 anchor 终态前不启动 TEBD；不包含负 alpha 或 Fig. 9"
+}

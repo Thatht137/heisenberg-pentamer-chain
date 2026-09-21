@@ -1,0 +1,1186 @@
+{
+  "accepted_artifacts": [],
+  "actions": [
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -1.0,
+          "beta": 0.05
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -1.0,
+          "beta": 0.05
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.5,
+          "beta": 0.05
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.5,
+          "beta": 0.05
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.35,
+          "beta": 0.05
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.35,
+          "beta": 0.05
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.25,
+          "beta": 0.05
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.25,
+          "beta": 0.05
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.125,
+          "beta": 0.05
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.125,
+          "beta": 0.05
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.05,
+          "beta": 0.05
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.05,
+          "beta": 0.05
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.025,
+          "beta": 0.05
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.025,
+          "beta": 0.05
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -1.0,
+          "beta": 0.1
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -1.0,
+          "beta": 0.1
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.5,
+          "beta": 0.1
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.5,
+          "beta": 0.1
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.35,
+          "beta": 0.1
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.35,
+          "beta": 0.1
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.25,
+          "beta": 0.1
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.25,
+          "beta": 0.1
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.125,
+          "beta": 0.1
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.125,
+          "beta": 0.1
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.05,
+          "beta": 0.1
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.05,
+          "beta": 0.1
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.025,
+          "beta": 0.1
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.025,
+          "beta": 0.1
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -1.0,
+          "beta": 0.25
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -1.0,
+          "beta": 0.25
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.5,
+          "beta": 0.25
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.5,
+          "beta": 0.25
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.35,
+          "beta": 0.25
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.35,
+          "beta": 0.25
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.25,
+          "beta": 0.25
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.25,
+          "beta": 0.25
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.125,
+          "beta": 0.25
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.125,
+          "beta": 0.25
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.05,
+          "beta": 0.25
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.05,
+          "beta": 0.25
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.025,
+          "beta": 0.25
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.025,
+          "beta": 0.25
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -1.0,
+          "beta": 0.5
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -1.0,
+          "beta": 0.5
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.5,
+          "beta": 0.5
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.5,
+          "beta": 0.5
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.35,
+          "beta": 0.5
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.35,
+          "beta": 0.5
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.25,
+          "beta": 0.5
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.25,
+          "beta": 0.5
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.125,
+          "beta": 0.5
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.125,
+          "beta": 0.5
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.05,
+          "beta": 0.5
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.05,
+          "beta": 0.5
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.025,
+          "beta": 0.5
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.025,
+          "beta": 0.5
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -1.0,
+          "beta": 0.75
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -1.0,
+          "beta": 0.75
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.5,
+          "beta": 0.75
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.5,
+          "beta": 0.75
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.35,
+          "beta": 0.75
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.35,
+          "beta": 0.75
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.25,
+          "beta": 0.75
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.25,
+          "beta": 0.75
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.125,
+          "beta": 0.75
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.125,
+          "beta": 0.75
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.05,
+          "beta": 0.75
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.05,
+          "beta": 0.75
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.025,
+          "beta": 0.75
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.025,
+          "beta": 0.75
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -1.0,
+          "beta": 0.9
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -1.0,
+          "beta": 0.9
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.5,
+          "beta": 0.9
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.5,
+          "beta": 0.9
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.35,
+          "beta": 0.9
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.35,
+          "beta": 0.9
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.25,
+          "beta": 0.9
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.25,
+          "beta": 0.9
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.125,
+          "beta": 0.9
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.125,
+          "beta": 0.9
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.05,
+          "beta": 0.9
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.05,
+          "beta": 0.9
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.025,
+          "beta": 0.9
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.025,
+          "beta": 0.9
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -1.0,
+          "beta": 1.0
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -1.0,
+          "beta": 1.0
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.5,
+          "beta": 1.0
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.5,
+          "beta": 1.0
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.35,
+          "beta": 1.0
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.35,
+          "beta": 1.0
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.25,
+          "beta": 1.0
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.25,
+          "beta": 1.0
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.125,
+          "beta": 1.0
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.125,
+          "beta": 1.0
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.05,
+          "beta": 1.0
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.05,
+          "beta": 1.0
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.025,
+          "beta": 1.0
+        }
+      }
+    },
+    {
+      "reason": "complete the declared coarse grid",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.025,
+          "beta": 1.0
+        }
+      }
+    }
+  ],
+  "checked_at": "2026-08-09T03:14:44Z",
+  "evidence": [],
+  "reason": "98 phase-diagram cells are required",
+  "schema_version": 1,
+  "status": "ACTION_REQUIRED"
+}

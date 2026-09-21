@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "cell_id": "L10-qpi-dt005-t30",
+  "status": "success",
+  "accepted": true,
+  "params": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "N_units": 2,
+    "L": 10,
+    "q_over_pi": 1.0
+  },
+  "settings": {
+    "method": "finite_dmrg_tebd_qpi_autocorrelation",
+    "boundary": "OBC",
+    "sector": "Sz=0",
+    "momentum_source": "O_q|GS>",
+    "momentum_normalization": "1/sqrt(L)",
+    "t0_included": true,
+    "trotter_order": 2,
+    "tstep": 0.05,
+    "tmax": 30.0,
+    "time_window": "exponential",
+    "window_eta": 0.1,
+    "fourier_normalization": "one_sided_trapezoid/pi",
+    "omega_min": 0.0,
+    "omega_max": 3.0,
+    "omega_step": 0.05,
+    "dmrg_maxdim": 64,
+    "tebd_maxdim": 64,
+    "dmrg_cutoff": 1e-12,
+    "tebd_cutoff": 1e-12,
+    "nsweeps": 12,
+    "threads": 4
+  },
+  "diagnostics": {
+    "source_norm_squared": 0.728271822384176,
+    "correlation_t0_real": 0.728271822384176,
+    "correlation_t0_imag": 2.606535228943387e-31,
+    "relative_norm_drift": 1.7180645737292281e-10,
+    "variance_per_site": 1.162980822755344e-12,
+    "total_sz": 3.9596079613271205e-16,
+    "dmrg_actual_maxdim": 24.0,
+    "tebd_actual_maxdim": 32.0,
+    "spectrum_min": 0.003492479432393983,
+    "spectrum_max": 1.4840861526481024,
+    "wall_seconds": 148.28199999999924,
+    "dmrg_seconds": 52.513999938964844,
+    "tebd_seconds": 21.667999982833862,
+    "fourier_seconds": 0.0
+  },
+  "acceptance": {
+    "julia_execution": true,
+    "correlation_artifact": true,
+    "spectrum_artifact": true,
+    "jld2_artifacts": true,
+    "t0_included": true,
+    "t0_sum_rule": true,
+    "spectrum_grid_complete": true,
+    "spectrum_finite": true,
+    "spectrum_nonnegative": true,
+    "ground_variance": true,
+    "sector_sz0": true,
+    "qpi_normalization": true
+  },
+  "provenance": {
+    "hostname": "T-137",
+    "platform": "Windows-10-10.0.26100-SP0",
+    "python": "3.9.1",
+    "julia_version": "1.11.5",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "standard_sha256": "4f00f333eaf810b2853a46e4e258e192db7ef554c7800d35df2ebe27adee4b46",
+    "source_commit": "working-tree-20260803-qpi-autocorr",
+    "julia_pkg_offline": true,
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true,
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "src\\PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "src\\hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "scripts\\autoresearch_v5\\tebd_qpi_autocorr.jl": "0e4d8f37b84fc1f98d4ec189dedccf72aaf42936cab418a667dc53c4044394b9",
+      "scripts\\autoresearch_v5\\progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+      "scripts\\autoresearch_v5\\run_tebd_qpi_autocorr.py": "046e57aa58d0135f8d6a2319b505f669643932847e41d4804ccb2b8f682bd7fa"
+    }
+  },
+  "timing": {
+    "started_at": "2026-08-03T11:13:46.183500+00:00",
+    "finished_at": "2026-08-03T11:16:14.459400+00:00"
+  },
+  "returncode": 0
+}

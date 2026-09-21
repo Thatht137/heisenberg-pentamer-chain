@@ -1,0 +1,18 @@
+{
+  "backend": "Python/matplotlib",
+  "reference_mapping": "Fig. 3 heatmap + beta slices + alpha slices + size-difference diagnostic",
+  "source_data": "results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\phase-diagram\\observations_merged.json",
+  "source_sha256": "7276ea8c8680082134bdb6463683005e9da3f0181333a303568608046ee93842",
+  "sizes": [
+    40,
+    60,
+    80
+  ],
+  "scope": {
+    "alpha_min": 0.0,
+    "alpha_max": 1.0,
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "boundary_statement": "R and Delta R are diagnostics; this figure does not claim a phase boundary."
+}

@@ -1,0 +1,42 @@
+{
+  "schema_version": 3,
+  "status": "failed_local_cygwin_process_substitution_timeout",
+  "generated_at_utc": "2026-09-19T16:13:16.8484413Z",
+  "test_file": "scripts/autoresearch_v5/test_static_krylov_crlf_compat.py",
+  "backend": {
+    "scope": "local_gnu_bash_cygwin",
+    "path": "D:/Program Files/SageMath 9.3/runtime/bin/bash.exe",
+    "version": "GNU bash, version 4.4.12(3)-release (x86_64-unknown-cygwin)",
+    "linux_or_git_claim": false
+  },
+  "command": "D:/Python3.12.4/python.exe -B -X utf8 -c <unittest suite for the two local_gnu_bash_cygwin tests>",
+  "observed": {
+    "tests_run": 2,
+    "tests_passed": 1,
+    "tests_failed": 1,
+    "tests_skipped": 0,
+    "return_code": 1,
+    "elapsed_seconds": 25.568,
+    "summary": "bash -n passed; process-substitution fixture raised subprocess.TimeoutExpired after 15 seconds"
+  },
+  "failure": {
+    "test": "test_local_gnu_bash_cygwin_process_substitution_and_awk_reject_tamper",
+    "phase": "temporary fixture bash -s process substitution",
+    "command_fragment": "(cd \"$PWD\" && sha256sum -c <(tr -d '\\r' < \"$HASHES\")) >/dev/null",
+    "timeout_seconds": 15,
+    "result": "Cygwin Bash did not complete the fixture; compatibility behavior remains unverified"
+  },
+  "scope": {
+    "scope_only_local_shell_compatibility": true,
+    "production_launcher_executed": false,
+    "julia_executed": false,
+    "remote_operation": false,
+    "ssh_used": false,
+    "compat_launcher_changed": false,
+    "manifest_changed": false,
+    "v2_skip_receipt_preserved": true,
+    "old_three_test_receipt_preserved": true
+  },
+  "note": "本地 bash -n 通过；Cygwin fixture 超时；远端未测。",
+  "action": "按要求在 Cygwin backend 异常后停止，不安装/下载 Bash，不做重试。"
+}

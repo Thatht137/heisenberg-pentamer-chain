@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "checked_at_server": "2026-08-03T18:57:41+08:00",
+  "requested_check_time": "2026-08-03T16:20:00+08:00",
+  "target": "wangjieren@39.96.207.180:6000",
+  "scope": {
+    "alpha": "0 <= alpha <= 1",
+    "beta": "0 <= beta <= 1",
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "processes": {
+    "julia_count": 0,
+    "supervisor_count": 0,
+    "second_julia_started": false
+  },
+  "resources": {
+    "load_average_1m": 8.55,
+    "load_average_5m": 8.67,
+    "load_average_15m": 8.70,
+    "memory_available_gib": 226,
+    "home_available_gib": 690,
+    "home_used_percent": 81
+  },
+  "anchor": {
+    "status": "success",
+    "accepted": true,
+    "returncode": 0,
+    "finished_at": "2026-08-03T06:23:27.375269+00:00",
+    "variance_per_site": 2.9678162150048595e-10,
+    "max_dmrg_truncation": 9.996486265199119e-11,
+    "max_cv_relative_residual": 6.7152003260163674e-06,
+    "local_validator": "8/8 PASS",
+    "local_validator_artifact": "results/research_progress/l80_anchor_validator_recheck_20260803_1857.json"
+  },
+  "handoff": {
+    "independent_fetch": "complete",
+    "local_checksums": "pass",
+    "validate_cv_run": "pass",
+    "tebd_handoff": "complete"
+  },
+  "tebd": {
+    "phase": "coarse terminal",
+    "status": "success",
+    "accepted": false,
+    "returncode": 1,
+    "completed_steps": "1200/1200",
+    "fourier_points": "81/81",
+    "raw_spectrum_min": -0.9369694489933301,
+    "raw_spectrum_max": 5.167270270588357,
+    "failed_check": "raw_spectrum_nonnegative",
+    "remote_checksums": "12/12 PASS",
+    "refined_started": false
+  },
+  "supervisor": {
+    "process_active": false,
+    "overall_status_file": "running/coarse",
+    "status_file_is_stale": true,
+    "reason": "旧版 set -e 在 coarse wrapper 返回 1 后提前退出，未写入 overall 终态；单 run manifest 是真实终态。"
+  },
+  "eta": "已全部结束，无运行中任务，不适用 ETA。",
+  "next_gate": "先修正为 O_q|GS> 的 q=pi 自相关定义并做小尺寸 smoke；任何新远端 Julia 必须另行预览和确认。"
+}

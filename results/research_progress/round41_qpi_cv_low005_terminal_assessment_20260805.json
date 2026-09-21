@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "status": "rejected_residual",
+  "accepted_only_action": "excluded",
+  "cv_tebd_action": "remain_not_evaluable_six_points",
+  "diagnostics": {
+    "variance_per_site": 2.611930227658377e-10,
+    "total_sz": 7.579176696648595e-16,
+    "dmrg_actual_maxdim": 55.0,
+    "max_dmrg_truncation": 9.99645287244195e-11,
+    "final_dmrg_energy_delta": 2.4868995751603507e-14,
+    "max_cv_relative_residual": 1.1706774646405482e-05,
+    "max_solution_dim": 205.0,
+    "dmrg_seconds": 77.50925302505493,
+    "cv_seconds": 1053.8674669265747
+  },
+  "acceptance": {
+    "status": "fail",
+    "checks": {
+      "ground_variance": true,
+      "dmrg_truncation": true,
+      "cv_residual": false,
+      "nonnegative": true
+    },
+    "budgets": {
+      "variance_per_site": 1e-08,
+      "max_dmrg_truncation": 1e-08,
+      "max_cv_relative_residual": 1e-05,
+      "relative_negative_tolerance": 1e-10
+    },
+    "min_intensity": 1.8715182607018286
+  },
+  "validator": {
+    "schema_version": 1,
+    "status": "fail",
+    "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260805\\round41_qpi_cv_low005_fetch",
+    "checks": {
+      "terminal_acceptance": false,
+      "checksums": true,
+      "positive_region": true,
+      "variance_per_site": true,
+      "dmrg_truncation": true,
+      "cv_residual": false,
+      "complete_spectrum": true,
+      "nonnegative_spectrum": true
+    },
+    "diagnostics": {
+      "variance_per_site": 2.611930227658377e-10,
+      "max_dmrg_truncation": 9.99645287244195e-11,
+      "max_cv_residual": 1.1706774646405482e-05,
+      "completed_points": 1.0,
+      "total_points": 1.0,
+      "point_files": 0
+    },
+    "failures": [
+      "run 未通过终态验收: {'status': 'success', 'accepted': False, 'started_at': '2026-08-04T14:35:27.327369+00:00', 'finished_at': '2026-08-04T14:56:19.236675+00:00', 'returncode': 0}",
+      "manifest.acceptance.status 不是 pass",
+      "max_cv_residual 未通过: 1.1706774646405482e-05",
+      "频点 residual 未通过: max=1.1706774646405482e-05"
+    ]
+  },
+  "stop_rule": "不降低 residual 门槛，不扩展 0--0.20，不自动重试 omega=0.05。",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

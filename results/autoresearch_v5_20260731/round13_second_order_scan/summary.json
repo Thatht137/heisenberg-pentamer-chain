@@ -1,0 +1,50 @@
+{
+  "status": "candidate_new_direction",
+  "claim": "全正 alpha 扫描显示二阶虚激发修正近似由 c1*c5/local_gap 控制，但目前只由两胞 ED 支持。",
+  "alpha_points": 100,
+  "beta_points_per_alpha": 3,
+  "ed_cells": 600,
+  "betas": [
+    0.001,
+    0.0025,
+    0.005
+  ],
+  "scaled_coefficient_mean": 0.4965759037425544,
+  "scaled_coefficient_std": 0.04356069399186864,
+  "scaled_coefficient_min": 0.45603485908216856,
+  "scaled_coefficient_max": 0.6034683491980007,
+  "scaled_coefficient_cv": 0.08772212599033463,
+  "max_window_shift": 0.002649477902748276,
+  "max_eigensolver_residual": 3.5050507148546894e-13,
+  "legacy_window_crosscheck": [
+    {
+      "alpha": 0.14,
+      "legacy_C2_intercept": -2.136920149791166,
+      "new_C2_intercept": -2.1360136240334864,
+      "relative_difference": 0.000424220698077221
+    },
+    {
+      "alpha": 0.23,
+      "legacy_C2_intercept": -1.2775349086702192,
+      "new_C2_intercept": -1.2773310868612655,
+      "relative_difference": 0.00015954304463264141
+    },
+    {
+      "alpha": 0.33,
+      "legacy_C2_intercept": -0.8677962627401391,
+      "new_C2_intercept": -0.8677298293977294,
+      "relative_difference": 7.655407756651919e-05
+    }
+  ],
+  "figure_contract": {
+    "core_conclusion": "C2 的 alpha 依赖主要被 local_gap 和边界投影系数吸收，剩余无量纲系数是否普适仍待三胞 Schrieffer-Wolff 交叉验证。",
+    "evidence_chain": [
+      "a: 全正 alpha 的缩放系数",
+      "b: C2 与 c1c5/local_gap 的线性关系",
+      "c: beta 窗口稳定性"
+    ],
+    "archetype": "quantitative grid",
+    "backend": "Python/matplotlib",
+    "export": "183 mm；SVG/PDF；PNG 300 dpi；LZW TIFF 600 dpi"
+  }
+}

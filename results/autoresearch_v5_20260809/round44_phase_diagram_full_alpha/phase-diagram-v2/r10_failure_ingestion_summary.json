@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "blocked_by_validation_failure",
+  "cell_id": "nega-r10-a0050-b0500-L040",
+  "failed_key": {
+    "alpha": -0.05,
+    "beta": 0.5,
+    "L": 40
+  },
+  "counts": {
+    "controller_success_total": 12,
+    "controller_failed_total": 1,
+    "controller_pending_total": 3,
+    "calibration_accepted_total": 6
+  },
+  "failed_observation_contains_value_or_error": false,
+  "failure_handoff": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r10-a0050-L040-20260811-1032/failure_handoff_summary.json",
+    "sha256": "c0e47e2c23cadf4c33bdbaa0a97121e2f0ca3b8c93a4196fd9a8fe39527f2ff7"
+  },
+  "ingestion_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r10_failure_ingestion_audit.json",
+    "sha256": "4a6cc148bddb1df117287e6e87e27d8d8efdaffa931f0f0cd4d2cac9f61cd3b1"
+  },
+  "observations": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+    "sha256": "5970880d95732cd4c9b467a113ffb38111f0175702305f9d239c24725bcb660e"
+  },
+  "action_index": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/action_index.json",
+    "sha256": "6a3b91b254d2881a89163ce64be62ae61f6497afaca37b7ee753a92635a5d24b"
+  },
+  "accepted_calibration": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/accepted_calibration_through_r9.json",
+    "sha256": "290083607e50582f79f4afedc5955d0876a9cd86172ae4936293abb42b451bf1"
+  },
+  "controller": {
+    "status": "HUMAN_REQUIRED_RETRY_PREPARED",
+    "crossing": "not_assigned",
+    "phase_label": "not_assigned"
+  },
+  "thresholds_relaxed": false
+}

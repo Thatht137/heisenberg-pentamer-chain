@@ -1,0 +1,134 @@
+{
+  "schema_version": 1,
+  "kind": "static_krylov_impact_v1",
+  "status": "audit_only",
+  "claim": "none",
+  "figure_contract": {
+    "core_conclusion": "k=3→k=8 会改变部分 L80 观测量，且初态 spread 与求解器末步能量变化可量化；这些证据不能替代观测量稳定性、有限尺寸标度或物理相判定。",
+    "evidence_chain": [
+      "entropy spatial profiles: old/new at two alpha points and two Sz0 start modes",
+      "gap/dimer/connected sensitivity: comparison records",
+      "finite-size context: old k3 L40/L60/L80 plus new k8 L80 only",
+      "solver diagnostics: final energy change, actual maxdim, q_peak and dominant ratio"
+    ],
+    "archetype": "quantitative grid",
+    "backend": "python_matplotlib",
+    "journal_width_mm": 183,
+    "exports": [
+      "SVG editable text",
+      "PDF editable text",
+      "PNG 600 dpi",
+      "TIFF 600 dpi"
+    ],
+    "statistics": {
+      "deterministic_data": true,
+      "p_values": false,
+      "initial_state_range_is_ci": false,
+      "effective_slope_is_central_charge": false
+    },
+    "review_risks": [
+      "Sz1 initialization is fixed center and non-independent",
+      "actual maxdim below request is not chi convergence",
+      "L40/L60 old k3 and L80 old/new k values must not be combined as a new scaling claim",
+      "no phase claim"
+    ]
+  },
+  "analysis_script": {
+    "path": "scripts\\autoresearch_v5\\analyze_static_krylov_impact.py",
+    "role": "analysis_script",
+    "bytes": 42669,
+    "sha256": "0254c7c0c1cbce5ff34193ceca8e6b667cabd6644773c45f30b81375dfd7839e"
+  },
+  "source_provenance": {
+    "name": "source_provenance.json",
+    "sha256": "6888c2482892754281f1c7e826a07c05f08c7144fb7f9e466c3cfab9611c7b24"
+  },
+  "summary": {
+    "name": "summary.json",
+    "sha256": "67ff7c787666c571257d546425f08c3edcdc61b7313983c5ef8818af3a4b2706"
+  },
+  "outputs": [
+    {
+      "name": "entropy_profiles.csv",
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_impact_v1\\entropy_profiles.csv",
+      "bytes": 77808,
+      "sha256": "f92d3d1fc81cb19d8e0ae72f8345a8f923fc49daacbdc73257483c8c529eb41c"
+    },
+    {
+      "name": "sensitivity_metrics.csv",
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_impact_v1\\sensitivity_metrics.csv",
+      "bytes": 5202,
+      "sha256": "5f95e9d774bf8276f314cf5c8b2b87bd5212b49675109a341dc40bff843ed962"
+    },
+    {
+      "name": "initial_state_spread.csv",
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_impact_v1\\initial_state_spread.csv",
+      "bytes": 3592,
+      "sha256": "b9e43ee1d0b6b7ba33f29a4906c49f32a67e54b0e582bd1329c4371b3040092a"
+    },
+    {
+      "name": "solver_drift.csv",
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_impact_v1\\solver_drift.csv",
+      "bytes": 2386,
+      "sha256": "9e66dd9f55cd2127123247020f4b0b31f356b2615ee7af5b8d3447f3088700e2"
+    },
+    {
+      "name": "entropy_fit_comparison.csv",
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_impact_v1\\entropy_fit_comparison.csv",
+      "bytes": 8001,
+      "sha256": "24af647e1f095fc2b0600ee7177775830326b16095f4e4d83f0b24300223bc72"
+    },
+    {
+      "name": "finite_size_impact.csv",
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_impact_v1\\finite_size_impact.csv",
+      "bytes": 4861,
+      "sha256": "9c5f11766e419076c527716b58db93ab714f6dc02ed38c59ee22c6693823e081"
+    },
+    {
+      "name": "figure_contract.json",
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_impact_v1\\figure_contract.json",
+      "bytes": 1197,
+      "sha256": "79790abbea4c457c4becb922e0ee5acbcffef5fe0b5f2784c24d8effbbe21c9f"
+    },
+    {
+      "name": "static_krylov_impact_v1.svg",
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_impact_v1\\static_krylov_impact_v1.svg",
+      "bytes": 68137,
+      "sha256": "a11491a2365102cefd2ac904ddae40da911fafd6d3a73e804daf15cf76befb97",
+      "format": "svg"
+    },
+    {
+      "name": "static_krylov_impact_v1.pdf",
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_impact_v1\\static_krylov_impact_v1.pdf",
+      "bytes": 57048,
+      "sha256": "4d7da3070195e6740cd188350fa8fc3e6ad4d8f234f5cf881800d3733d75d17f",
+      "format": "pdf"
+    },
+    {
+      "name": "static_krylov_impact_v1.png",
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_impact_v1\\static_krylov_impact_v1.png",
+      "bytes": 850762,
+      "sha256": "b0cb0ebf64f9b8fe155a9f8b451d69109f96eb79727682a11aa11f29624227a1",
+      "format": "png"
+    },
+    {
+      "name": "static_krylov_impact_v1.tiff",
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_impact_v1\\static_krylov_impact_v1.tiff",
+      "bytes": 49211390,
+      "sha256": "1bc78c96addffe78ae5941d6edd4e858aa059c6d458ea46fd9eb6bc88c8a7ef4",
+      "format": "tiff"
+    },
+    {
+      "name": "source_provenance.json",
+      "path": "source_provenance.json",
+      "bytes": 49325,
+      "sha256": "6888c2482892754281f1c7e826a07c05f08c7144fb7f9e466c3cfab9611c7b24"
+    },
+    {
+      "name": "summary.json",
+      "path": "summary.json",
+      "bytes": 23361,
+      "sha256": "67ff7c787666c571257d546425f08c3edcdc61b7313983c5ef8818af3a4b2706"
+    }
+  ]
+}

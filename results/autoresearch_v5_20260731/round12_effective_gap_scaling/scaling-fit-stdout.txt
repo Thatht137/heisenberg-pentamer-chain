@@ -1,0 +1,3 @@
+A = 2.44794 (95% CI 2.37442-2.5254 from 1000 bootstrap, 0 failed); alpha = 0.863872 (95% CI 0.849875-0.877451 from 1000 bootstrap, 0 failed)
+chi2_per_dof = 5.29765
+wrote D:\Project\1x5_Heisenberg_Pentamer\results\autoresearch_v5_20260731\round12_effective_gap_scaling\scaling-fit.csv and D:\Project\1x5_Heisenberg_Pentamer\results\autoresearch_v5_20260731\round12_effective_gap_scaling\scaling-fit.png

@@ -1,0 +1,24 @@
+﻿record_type,alpha,beta,L,R,R_error,q_peak_over_pi,q_error,E0,E1,spin_gap,final_energy_change_sz0,variance_per_site_sz0,evidence_class
+negative_controller,-1.0,0.5,40,0.41806941032017275,0.0001,0.605,0.0025,,,,,,strict accepted
+negative_controller,-1.0,0.5,60,0.3829236283434855,0.00018026071825971712,0.6025,0.0025,,,,,,strict accepted
+negative_controller,-0.75,0.5,40,0.3866737982572961,0.0001,0.605,0.0025,,,,,,strict accepted
+negative_controller,-0.75,0.5,60,0.35596844032928915,0.0003996244011305605,0.6025,0.0025,,,,,,strict accepted
+negative_controller,-0.5,0.5,40,0.3365955175619182,0.0001,0.6075,0.0025,,,,,,strict accepted
+negative_controller,-0.5,0.5,60,0.31222512913418793,0.0006663882435926083,0.605,0.0025,,,,,,strict accepted
+negative_controller,-0.35,0.5,40,0.2962996764299473,0.0001,0.6075,0.0025,,,,,,strict accepted
+negative_controller,-0.35,0.5,60,0.19118030291679533,0.0001,1.0,0.0025,,,,,,strict accepted
+negative_controller,-0.25,0.5,40,0.15061416059789817,0.0003894037982378751,1.0,0.0025,,,,,,strict accepted
+negative_controller,-0.25,0.5,60,0.21892400712328103,0.0001,1.0,0.0025,,,,,,strict accepted
+negative_controller,-0.1,0.5,40,0.1897161493859278,0.011877542575884303,1.0,0.0025,,,,,,strict accepted
+negative_controller,-0.1,0.5,60,0.21041408891534108,0.007205423814601208,1.0,0.0025,,,,,,strict accepted
+negative_controller,-0.05,0.5,40,0.20058285347860516,0.007629817900589142,1.0,0.0025,,,,,,strict accepted
+negative_controller,-0.05,0.5,60,0.2241927264521733,0.018036755267434257,1.0,0.0025,,,,,,strict accepted
+negative_L80_calibration,-1.0,0.5,80,0.3750102358034862,0.0001,0.6,0.0025,,,,,,strict accepted
+negative_L80_calibration,-0.75,0.5,80,0.34890844490373535,0.0001,0.6,0.0025,,,,,,strict accepted
+negative_L80_calibration,-0.5,0.5,80,0.31070276146436643,0.0001,0.6,0.0025,,,,,,strict accepted
+negative_L80_calibration,-0.35,0.5,80,0.27758970747634293,0.0001,0.6,0.0025,,,,,,strict accepted
+negative_L80_calibration,-0.25,0.5,80,0.19715321747583414,0.0002569860264955981,1.0,0.0025,,,,,,strict accepted
+negative_L80_calibration,-0.1,0.5,80,0.20231501928025258,0.013931140652811258,1.0,0.0025,,,,,,strict accepted
+r16_practical_center_random,-0.05,0.5,80,0.22828609822548707,,1.0,0.0025,-21.664949672085605,-21.664939768080135,9.90400546996284e-06,5.06287065604738e-08,1.1681606792990352e-10,practical calibration; boundary ineligible
+r16_practical_ferro_j2,-0.05,0.5,80,0.22677483406964005,,1.0,0.0025,-21.66494951244552,-21.664939768080135,9.744365385699894e-06,5.257303214989406e-08,1.2388667869345227e-10,practical calibration; boundary ineligible
+r16_practical_domain,-0.05,0.5,80,0.21979830631939234,,1.0,0.0025,-21.66494868480556,-21.664939768080135,8.916725423802063e-06,4.5965474981812804e-08,1.0665175409485528e-10,practical calibration; boundary ineligible

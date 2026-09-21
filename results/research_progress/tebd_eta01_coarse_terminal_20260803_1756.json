@@ -1,0 +1,37 @@
+{
+  "checked_at": "2026-08-03T17:55:56+08:00",
+  "target": "wangjieren@39.96.207.180:6000",
+  "run": "results/autoresearch_v5_20260803/round24_tebd_eta01_crosscheck/cell-alpha023-dt025-t30",
+  "scope": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "negative_alpha_included": false,
+    "fig9_included": false
+  },
+  "terminal_observation": {
+    "progress_status": "success",
+    "progress_phase": "finished",
+    "tebd_steps": "1200/1200",
+    "fourier_q": "81/81",
+    "tebd_returncode": 0,
+    "fourier_returncode": 0,
+    "accepted": false,
+    "wrapper_returncode": 1,
+    "tebd_seconds": 911.460995783098,
+    "fourier_seconds": 422.40819113794714,
+    "finished_at": "2026-08-03T17:41:24.267355+08:00"
+  },
+  "supervisor_observation": {
+    "overall_status": "running",
+    "overall_phase": "coarse",
+    "julia_process_count": 0,
+    "diagnosis": "stale_status_due_to_set_e_exit"
+  },
+  "impact": {
+    "delivery_readiness": "remains_7_of_9",
+    "refined_started": false,
+    "static_and_cv_evidence_invalidated": false,
+    "final_dynamic_gate_closed": false
+  },
+  "detail_state": "remote_manifest_read_pending_explicit_approval"
+}

@@ -1,0 +1,215 @@
+{
+  "schema_version": 1,
+  "run_id": "pentamer-positive-phase-diagram-20260802-L80-final",
+  "scope": "alpha>=0,beta>=0; L=80 final promotion; Fig.9 excluded",
+  "policy": "../round17_phase_diagram_positive/phase-diagram/phase-policy.json",
+  "controller": "local_only",
+  "promotion_reason": "首段 40/60 粗扫完成；固定边界无显著 bracket，补充第三尺寸趋势",
+  "cells": [
+    {
+      "cell_id": "l80-cell-0001",
+      "params": {
+        "alpha": 0.0,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32
+    },
+    {
+      "cell_id": "l80-cell-0002",
+      "params": {
+        "alpha": 0.125,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32
+    },
+    {
+      "cell_id": "l80-cell-0003",
+      "params": {
+        "alpha": 0.25,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32
+    },
+    {
+      "cell_id": "l80-cell-0004",
+      "params": {
+        "alpha": 0.5,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32
+    },
+    {
+      "cell_id": "l80-cell-0005",
+      "params": {
+        "alpha": 1.0,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32
+    },
+    {
+      "cell_id": "l80-cell-0006",
+      "params": {
+        "alpha": 0.0,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32
+    },
+    {
+      "cell_id": "l80-cell-0007",
+      "params": {
+        "alpha": 0.125,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32
+    },
+    {
+      "cell_id": "l80-cell-0008",
+      "params": {
+        "alpha": 0.25,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32
+    },
+    {
+      "cell_id": "l80-cell-0009",
+      "params": {
+        "alpha": 0.5,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32
+    },
+    {
+      "cell_id": "l80-cell-0010",
+      "params": {
+        "alpha": 1.0,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32
+    },
+    {
+      "cell_id": "l80-cell-0011",
+      "params": {
+        "alpha": 0.0,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32
+    },
+    {
+      "cell_id": "l80-cell-0012-r64",
+      "params": {
+        "alpha": 0.125,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64
+    },
+    {
+      "cell_id": "l80-cell-0013",
+      "params": {
+        "alpha": 0.25,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32
+    },
+    {
+      "cell_id": "l80-cell-0014",
+      "params": {
+        "alpha": 0.5,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 32
+    },
+    {
+      "cell_id": "l80-cell-0015-final",
+      "params": {
+        "alpha": 1.0,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64
+    }
+  ],
+  "settings": {
+    "method": "finite_dmrg_multistart",
+    "boundary": "OBC",
+    "hamiltonian": "five-site unit cell Heisenberg chain, J1=1, J2=alpha, J3=beta",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim_by_L": {
+      "80": 1200
+    },
+    "nsweeps": 32,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "init_modes": [
+      "center",
+      "domain"
+    ],
+    "budget_definition": "nsweeps per independent start",
+    "observable_definition": "R(L)=1-S(pi-2pi/M)/S(pi), connected Sz structure factor in central M-site window",
+    "error_definition": "half range of center/domain plus 10x largest discarded weight, floor 1e-4",
+    "acceptance": {
+      "variance_per_site_max": 1e-08,
+      "max_truncation_error": 1e-09,
+      "sector_tolerance": 1e-08,
+      "observable_error_floor": 0.0001,
+      "negative_alpha_excluded": true
+    },
+    "offline": true,
+    "execution": "server_after_first_stage_confirmation; one heavy job at a time"
+  },
+  "provenance": {
+    "policy_sha256": "88ab2ae0d712c112d2a987d0084720bdaf6575c26b28512a41169ba154f3743b",
+    "standard_sha256": "9fb6b1a1f07242be9ada456acc1f8064e3350e93aa410e89a7745e5acded2011",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "negative_alpha_excluded": true,
+    "recovery_code_revision": "final-three-sweep-truncation-gate-20260802"
+  },
+  "final_sources": [
+    "results/autoresearch_v5_20260731/round18_phase_diagram_positive_L80/cells/l80-cell-0001",
+    "results/autoresearch_v5_20260731/round18_phase_diagram_positive_L80/cells/l80-cell-0002",
+    "results/autoresearch_v5_20260731/round18_phase_diagram_positive_L80/cells/l80-cell-0003",
+    "results/autoresearch_v5_20260731/round18_phase_diagram_positive_L80/cells/l80-cell-0004",
+    "results/autoresearch_v5_20260731/round18_phase_diagram_positive_L80/cells/l80-cell-0005",
+    "results/autoresearch_v5_20260731/round18_phase_diagram_positive_L80/cells/l80-cell-0006",
+    "results/autoresearch_v5_20260731/round18_phase_diagram_positive_L80/cells/l80-cell-0007",
+    "results/autoresearch_v5_20260731/round18_phase_diagram_positive_L80/cells/l80-cell-0008",
+    "results/autoresearch_v5_20260731/round18_phase_diagram_positive_L80/cells/l80-cell-0009",
+    "results/autoresearch_v5_20260731/round18_phase_diagram_positive_L80/cells/l80-cell-0010",
+    "results/autoresearch_v5_20260731/round18_phase_diagram_positive_L80/cells/l80-cell-0011",
+    "results/autoresearch_v5_20260731/round18b_phase_diagram_positive_L80_recovery/cells/l80-cell-0012-r64",
+    "results/autoresearch_v5_20260731/round18b_phase_diagram_positive_L80_recovery/cells/l80-cell-0013",
+    "results/autoresearch_v5_20260731/round18b_phase_diagram_positive_L80_recovery/cells/l80-cell-0014",
+    "results/autoresearch_v5_20260731/round18d_phase_diagram_positive_L80_retry0015_final/cells/l80-cell-0015-final"
+  ]
+}

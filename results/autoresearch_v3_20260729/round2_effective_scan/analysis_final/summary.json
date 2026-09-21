@@ -1,0 +1,24 @@
+{
+  "candidate_cells": 46,
+  "accepted_candidate_cells": 44,
+  "selected_cells": 36,
+  "physical_points": 18,
+  "all_cells_pass": true,
+  "max_variance_per_site": 1.6456134233067133e-10,
+  "max_truncation_error": 9.999665903539551e-12,
+  "max_final_energy_change": 1.2727939413537115e-07,
+  "initial_state_tests": 4,
+  "max_initial_state_energy_density_spread": 7.638334409421077e-14,
+  "initial_state_stability_pass": true,
+  "small_beta_energy_residual_power": {
+    "8": 1.9482734267470188,
+    "12": 1.949160340529803,
+    "16": 1.9495372136804565
+  },
+  "small_beta_gap_ratio_mean": 1.0386591529122653,
+  "beta_020_gap_ratio_mean": 0.7300314750184378,
+  "claim_gate": {
+    "second_order_residual": true,
+    "small_beta_gap_within_10_percent": true
+  }
+}

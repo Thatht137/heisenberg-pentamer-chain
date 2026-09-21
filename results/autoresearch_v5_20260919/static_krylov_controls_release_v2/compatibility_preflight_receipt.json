@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "local_compatibility_preflight_passed",
+  "generated_at_utc": "2026-09-19T15:38:05.5322564Z",
+  "compatibility_launcher": "scripts/autoresearch_v5/launch_static_krylov_controls_release_v2_crlf_compat.sh",
+  "compatibility_launcher_sha256": "359936af95676cbcf6752b2e4f808267805051a3b9eb00682e280687949752c8",
+  "compatibility_launcher_bytes": 7252,
+  "new_files_in_patch": 1,
+  "tests": [
+    {
+      "command": "D:/Python3.12.4/python.exe -B -X utf8 -c <in-memory CRLF/LF hash-list, tamper, launcher-delta, and manifest assertions>",
+      "result": {
+        "crlf_entries": 19,
+        "lf_entries": 19,
+        "lf_hash_check": "pass",
+        "tamper_rejection": "pass",
+        "launcher_delta": "format_only_plus_original_sha_assertion",
+        "manifest_files": 72,
+        "manifest_sha256": "e0dedb571cb265817f537de63e2bd107369c23fcb12326099c008ef55392efb4"
+      }
+    },
+    {
+      "command": "bash -n scripts/autoresearch_v5/launch_static_krylov_controls_release_v2_crlf_compat.sh",
+      "result": "BASH_N_OK"
+    }
+  ],
+  "scope": {
+    "scientific_settings_changed": false,
+    "original_launcher_changed": false,
+    "manifest_changed": false,
+    "old_receipts_changed": false,
+    "remote_upload_attempted": false,
+    "remote_side_effect": false,
+    "julia_started": false
+  }
+}

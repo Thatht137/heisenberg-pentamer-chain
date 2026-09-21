@@ -1,0 +1,89 @@
+{
+  "audit_version": "ssh_health_audit_v2",
+  "scope": "single_read_only_ssh_startup_precheck",
+  "remote": {
+    "host": "39.96.207.180",
+    "port": 6000,
+    "user": "wangjieren",
+    "time": "2026-09-19T22:22:45+08:00",
+    "uid": 1024,
+    "ssh_exit_code": 0,
+    "ssh_attempts": 2,
+    "successful_remote_checks": 1,
+    "initial_sandbox_attempt": "failed_before_auth_key_permission_denied",
+    "remote_actions": "read_only"
+  },
+  "tool_session": {
+    "issued": false,
+    "handle": null,
+    "waits": 0,
+    "note": "检查在单次工具调用内完成，无需等待或重启。"
+  },
+  "local": {
+    "git_status": "dirty_unmodified",
+    "audit_dir_collision": false,
+    "network_escalation": true
+  },
+  "processes": {
+    "scan_user": "wangjieren",
+    "project_python": [],
+    "user_julia": [],
+    "count": 0
+  },
+  "runtime": {
+    "fixed_julia": {
+      "path": "/home/wangjieren/.julia/juliaup/julia-1.12.3+0.x64.linux.gnu/bin/julia",
+      "status": "available",
+      "version": "julia version 1.12.3"
+    },
+    "numpy": {
+      "status": "unavailable",
+      "version": null
+    },
+    "flock": {
+      "status": "available",
+      "path": "/usr/bin/flock"
+    }
+  },
+  "filesystem": {
+    "project": {
+      "path": "/home/wangjieren/code/1x5_Heisenberg_Pentamer",
+      "exists": true,
+      "type": "directory"
+    },
+    "lock_parent": {
+      "path": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha",
+      "exists": true,
+      "type": "directory"
+    },
+    "isolation_run": {
+      "path": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2",
+      "exists": false,
+      "type": "absent",
+      "entry_count": 0,
+      "run_state": "absent",
+      "state_names": []
+    }
+  },
+  "resources": {
+    "free_h": {
+      "memory_total": "1.0Ti",
+      "memory_used": "15Gi",
+      "memory_free": "967Gi",
+      "memory_shared": "372Mi",
+      "memory_buff_cache": "25Gi",
+      "memory_available": "986Gi",
+      "swap_total": "2.0Gi",
+      "swap_used": "0B",
+      "swap_free": "2.0Gi"
+    },
+    "df_h": {
+      "filesystem": "/dev/sdb1",
+      "size": "3.6T",
+      "used": "3.2T",
+      "available": "216G",
+      "used_percent": "94%",
+      "mount": "/home"
+    }
+  }
+}

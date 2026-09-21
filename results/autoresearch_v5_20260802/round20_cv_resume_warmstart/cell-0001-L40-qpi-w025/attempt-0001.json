@@ -1,0 +1,13 @@
+{
+  "attempt": 1,
+  "resume": false,
+  "max_new_points": 1,
+  "status": "success",
+  "started_at": "2026-08-02T07:21:49.631794+00:00",
+  "finished_at": "2026-08-02T08:24:40.784264+00:00",
+  "returncode": 0,
+  "resource_log": "resource-attempt-0001.log",
+  "completed_points": 1.0,
+  "total_points": 1.0,
+  "cv_seconds_this_attempt": 3595.188560962677
+}

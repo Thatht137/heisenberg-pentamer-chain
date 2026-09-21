@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "acceptance_label": "accepted_under_practical_v2_k12",
+  "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+  "run_spec": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_r1\\parameter-scan.run_spec.json",
+  "cell_id": "negdiag-a01000-b02500-L080-k12",
+  "krylov_contract": {
+    "expected": 12,
+    "observed": {
+      "expected_krylovdim": 12,
+      "run_spec": 12,
+      "parent": 12,
+      "children": {
+        "center": 12,
+        "ferro_j2": 12
+      }
+    }
+  },
+  "practical_v2": {
+    "schema_version": 2,
+    "status": "pass",
+    "acceptance_label": "accepted_under_practical_v2",
+    "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+    "cell_id": "negdiag-a01000-b02500-L080-k12",
+    "params": {
+      "alpha": -0.1,
+      "beta": 0.25,
+      "L": 80,
+      "n_units": 16
+    },
+    "settings": {
+      "nsweeps": 64,
+      "maxdim": 1200,
+      "q_count": 401
+    },
+    "thresholds": {
+      "variance_per_site_max": 5e-08,
+      "final_truncation_error_max": 1e-09,
+      "sector_tolerance": 1e-08,
+      "spin_gap_min": -1e-08
+    },
+    "legacy_parent_accepted": true,
+    "legacy_parent_status": "success",
+    "children": [
+      {
+        "mode": "center",
+        "variance_per_site_sz0": 1.8680879065868793e-11,
+        "final_truncation_error_sz0": 9.990012367370628e-12,
+        "variance_per_site_sz1": 1.872990651463624e-11,
+        "final_truncation_error_sz1": 9.998241606873682e-12,
+        "total_sz0": 9.124279141888318e-16,
+        "total_sz1": 1.0000000000000089,
+        "spin_gap": 7.277204700173456e-05
+      },
+      {
+        "mode": "ferro_j2",
+        "variance_per_site_sz0": 1.8633983245308627e-11,
+        "final_truncation_error_sz0": 9.957043131265493e-12,
+        "variance_per_site_sz1": 1.872990651463624e-11,
+        "final_truncation_error_sz1": 9.998241606873682e-12,
+        "total_sz0": 2.5543116028280024e-15,
+        "total_sz1": 1.0000000000000089,
+        "spin_gap": 7.277205179789803e-05
+      }
+    ],
+    "failures": [],
+    "provenance": {
+      "policy": "docs/negative_alpha_practical_convergence_standard_20260829.md",
+      "original_manifest_sha256": "2ab238b71b79acace851b6ba1a8d6ed451d11ea0351da14895f14b5682c8e6c1",
+      "original_run_spec_sha256": "0b21ac0972ed935ab4c5d824af717ee155d57d83e24c1febf25598ce920b0709",
+      "original_files_unchanged": true
+    }
+  },
+  "failures": []
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 2,
+  "status": "incomplete_git_bash_unavailable",
+  "generated_at_utc": "2026-09-19T16:07:51.6513590Z",
+  "test_file": "scripts/autoresearch_v5/test_static_krylov_crlf_compat.py",
+  "command": "D:/Python3.12.4/python.exe -B -X utf8 -m unittest scripts.autoresearch_v5.test_static_krylov_crlf_compat.StaticKrylovCrlfCompatTests.test_git_bash_process_substitution_and_awk_reject_tamper scripts.autoresearch_v5.test_static_krylov_crlf_compat.StaticKrylovCrlfCompatTests.test_git_bash_n_accepts_compat_launcher -v",
+  "observed": {
+    "tests_run": 2,
+    "tests_passed": 0,
+    "tests_failed": 0,
+    "tests_skipped": 2,
+    "return_code": 0,
+    "summary": "Ran 2 tests in 1.665s; OK (skipped=2)"
+  },
+  "skip_reason": "本机未发现 Git Bash；shutil.which 命中 SageMath Cygwin Bash，已严格排除，不将其计为 Git Bash 通过。",
+  "git_bash_discovery": {
+    "candidate": "D:/Program Files/SageMath 9.3/runtime/bin/bash.exe",
+    "candidate_version": "GNU bash 4.4.12(3)-release x86_64-unknown-cygwin",
+    "accepted_as_git_bash": false,
+    "git_for_windows_path_found": false
+  },
+  "unverified": [
+    "真实 Git Bash stdin 的 sha256sum -c <(tr -d '\\r' < HASHES)",
+    "LF/CRLF 两条 awk SHA 提取",
+    "digest/文件内容篡改拒绝",
+    "Git Bash bash -n 兼容 launcher"
+  ],
+  "scope": {
+    "production_launcher_executed": false,
+    "julia_executed": false,
+    "remote_operation": false,
+    "compat_launcher_changed": false,
+    "manifest_changed": false,
+    "old_regression_receipt_overwritten": false
+  }
+}

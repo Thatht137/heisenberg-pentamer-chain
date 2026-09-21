@@ -1,0 +1,58 @@
+{
+  "qa_date": "2026-09-19",
+  "artifact": "negative_size_joint_evidence",
+  "qa_source": "主进程独立复验",
+  "data_scope": {
+    "physical_points": 12,
+    "initial_state_records": 24,
+    "initial_state_ranges_are_statistical_confidence_intervals": false
+  },
+  "checks": {
+    "png": {
+      "path": "negative_size_joint_evidence.png",
+      "status": "pass",
+      "facts": "四面板完整，无文字裁切或重叠"
+    },
+    "pdf": {
+      "path": "negative_size_joint_evidence.pdf",
+      "status": "checked",
+      "inspector": "bundled Python pypdf",
+      "page_count": 1,
+      "page_size_mm": [
+        183,
+        137
+      ],
+      "extractable_characters": 482
+    },
+    "svg": {
+      "path": "negative_size_joint_evidence.svg",
+      "status": "checked",
+      "extractable_text_elements": 51
+    },
+    "tiff": {
+      "path": "negative_size_joint_evidence.tiff",
+      "status": "checked",
+      "pixels": [
+        4322,
+        3236
+      ],
+      "dpi": [
+        600,
+        600
+      ]
+    }
+  },
+  "limitations": [
+    "未检验目标期刊最终版式规则",
+    "科学结论尚未由热力学极限确认"
+  ],
+  "hash_integrity": {
+    "status": "pass",
+    "tests": 10,
+    "raw_sources_verified": 84,
+    "derived_outputs_verified": 4,
+    "exports_verified": 4,
+    "physical_csv_old_new_consistent": true
+  },
+  "final_parent_check_pending": false
+}

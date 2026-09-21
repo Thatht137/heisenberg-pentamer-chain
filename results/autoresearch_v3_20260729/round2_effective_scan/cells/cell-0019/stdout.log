@@ -1,0 +1,25 @@
+After sweep 1 energy=-9.531567202513807  maxlinkdim=28 maxerr=9.72E-12 time=43.695
+After sweep 2 energy=-9.547543851891296  maxlinkdim=57 maxerr=9.87E-12 time=0.927
+After sweep 3 energy=-9.551641195569282  maxlinkdim=88 maxerr=9.84E-12 time=0.860
+After sweep 4 energy=-9.553413362629504  maxlinkdim=106 maxerr=9.97E-12 time=1.319
+After sweep 5 energy=-9.553911155685881  maxlinkdim=114 maxerr=9.99E-12 time=0.995
+After sweep 6 energy=-9.553987973256104  maxlinkdim=114 maxerr=9.94E-12 time=0.953
+After sweep 7 energy=-9.553992549113843  maxlinkdim=97 maxerr=9.94E-12 time=0.823
+After sweep 8 energy=-9.553992640461502  maxlinkdim=89 maxerr=9.98E-12 time=0.798
+After sweep 9 energy=-9.553992640812465  maxlinkdim=90 maxerr=9.99E-12 time=0.704
+After sweep 10 energy=-9.553992640808868  maxlinkdim=90 maxerr=9.53E-12 time=0.662
+After sweep 11 energy=-9.553992640818015  maxlinkdim=90 maxerr=9.53E-12 time=0.684
+After sweep 12 energy=-9.553992640817285  maxlinkdim=90 maxerr=9.53E-12 time=0.685
+After sweep 13 energy=-9.55399264080891  maxlinkdim=90 maxerr=9.53E-12 time=0.683
+After sweep 14 energy=-9.553992640818036  maxlinkdim=90 maxerr=9.53E-12 time=0.694
+After sweep 15 energy=-9.5539926408173  maxlinkdim=90 maxerr=9.53E-12 time=0.685
+After sweep 16 energy=-9.553992640808918  maxlinkdim=90 maxerr=9.53E-12 time=0.684
+After sweep 17 energy=-9.553992640818032  maxlinkdim=90 maxerr=9.53E-12 time=0.678
+After sweep 18 energy=-9.553992640817308  maxlinkdim=90 maxerr=9.53E-12 time=0.693
+After sweep 19 energy=-9.553992640808916  maxlinkdim=90 maxerr=9.53E-12 time=0.681
+After sweep 20 energy=-9.553992640818043  maxlinkdim=90 maxerr=9.53E-12 time=0.681
+After sweep 21 energy=-9.5539926408173  maxlinkdim=90 maxerr=9.53E-12 time=0.681
+After sweep 22 energy=-9.553992640808916  maxlinkdim=90 maxerr=9.53E-12 time=0.683
+After sweep 23 energy=-9.553992640817023  maxlinkdim=90 maxerr=9.99E-12 time=0.693
+After sweep 24 energy=-9.553992640816311  maxlinkdim=90 maxerr=9.94E-12 time=0.685
+SECTOR_CELL_SUCCESS outdir=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v3_20260729/round2_effective_scan/cells/cell-0019

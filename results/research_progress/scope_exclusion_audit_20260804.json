@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-04T00:38:10+08:00",
+  "status": "pass",
+  "report_negative_parameter_hits": [],
+  "report_fig9_unscoped_hits": [],
+  "allowed_scope_mentions": 64,
+  "manifest_scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "scope": {
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

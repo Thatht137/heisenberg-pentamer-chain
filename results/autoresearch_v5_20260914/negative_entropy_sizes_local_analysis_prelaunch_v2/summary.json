@@ -1,0 +1,178 @@
+{
+  "analyzed_points": 2,
+  "planned_points": 12,
+  "fits": 32,
+  "finite_size_comparison_ready": false,
+  "phase_assigned": false,
+  "statuses": [
+    {
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "missing"
+    },
+    {
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "missing"
+    },
+    {
+      "params": {
+        "alpha": -0.15,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "missing"
+    },
+    {
+      "params": {
+        "alpha": -0.15,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "missing"
+    },
+    {
+      "params": {
+        "alpha": -0.15,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "missing"
+    },
+    {
+      "params": {
+        "alpha": -0.125,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "missing"
+    },
+    {
+      "params": {
+        "alpha": -0.125,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "missing"
+    },
+    {
+      "params": {
+        "alpha": -0.125,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "missing"
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "missing"
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "missing"
+    },
+    {
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 80
+      },
+      "status": "analyzed"
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 80
+      },
+      "status": "analyzed"
+    }
+  ],
+  "sources": [
+    {
+      "manifest": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\manifest.json",
+      "sha256": "15f2efce34332d4ab3e879fa35b3e8bbc35f3e4b8e6a7e9a83634d6a8d8162e6"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\entropy_profile_full.csv",
+      "sha256": "ed7f9349744ef9a265d7d71510b931f3f5704ed4010059026b51b88e0dcd6082"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\bond_bond_connected.csv",
+      "sha256": "8fdda49a760c4c22f1bf8ce5c97c2ed32a70631c60c85aa08a3e379ecccb840c"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\bond_correlations.csv",
+      "sha256": "12f356c9c21182b62cc806a84fe4cf0b9eecd92d58bf5b3cea235619a4e11fd3"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "f7bf08e3f912771d02d9145c191112f6f79d8e76d083e5c954a2a5a2e71319a5"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\bond_bond_connected.csv",
+      "sha256": "605431185c3ff53a25eaad2588956c1fba6da2ab6ab6658944cbb992aeda968f"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\bond_correlations.csv",
+      "sha256": "a1387dd4cf29d215b19750f300e3a241da3c65fbd3799d542218e1d214633908"
+    },
+    {
+      "manifest": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\manifest.json",
+      "sha256": "536ca5a6eed77153fb3ea483e60a7fbbe5cc3140d8d04a803bcc203aaceed0d7"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\entropy_profile_full.csv",
+      "sha256": "b3d85aec894913011ccaec673f03d8495985914fa5ec0a8c242d23c70670cc1f"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\bond_bond_connected.csv",
+      "sha256": "ffaa3accf8f9f9bdac6df77445ca4e5d824a188621415cda977ce1784813e412"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\bond_correlations.csv",
+      "sha256": "62cf41307a87f4810d16bf1198f675b8a9bbc2e938ff9daaed9cf7c66888c1d9"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "e5d3279549dbbf5c2a4bffc8aeb3f8f6355a3399243ddabebc64d5991a5d9f81"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\bond_bond_connected.csv",
+      "sha256": "b52070eb22f329763982b2ba7512e3ab9de7a8eb1b17153ef91a76ffb7169bc6"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\bond_correlations.csv",
+      "sha256": "1a47a580fd94ee78a2df01f482eca9230b21c1e24e641b6b99d60fc47d8f0370"
+    }
+  ],
+  "limitations": [
+    "single-size entries do not establish scaling",
+    "c_eff is diagnostic, not thermodynamic central charge",
+    "window and start ranges are not confidence intervals"
+  ]
+}

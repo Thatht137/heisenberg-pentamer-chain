@@ -1,0 +1,18 @@
+{
+  "checked_at": "2026-08-04",
+  "julia_version": "1.11.5",
+  "project": "D:/Project/1x5_Heisenberg_Pentamer/Project.toml",
+  "default_depot": "C:/Users/hh250/.julia",
+  "status": "runtime_present_but_default_depot_readonly_in_sandbox",
+  "observations": [
+    "Pkg.status failed to create manifest_usage.toml.pid (EACCES)",
+    "PentamerChain precompile failed to create compiled cache pidfile (EACCES)",
+    "compiled-modules=no import reached ITensors but known_hosts read was denied (EACCES)"
+  ],
+  "safe_workaround": "use an explicit writable project-local JULIA_DEPOT_PATH for local smoke checks",
+  "remote_impact": "none; no server process or remote file changed",
+  "scope": {
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-04T10:30:04+08:00",
+  "target": "wangjieren@39.96.207.180:6000",
+  "run_root": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension",
+  "overall": {
+    "phase": "omega_055_done",
+    "completed_cells": 2,
+    "total_cells": 4,
+    "status": "running",
+    "updated_at": "2026-08-03T20:09:49.546643+00:00"
+  },
+  "cells": {
+    "cell-l40-qpi-low-000-020": {
+      "status": "finished",
+      "accepted": false,
+      "manifest_present": true,
+      "completed_points": 5,
+      "max_points": 5,
+      "returncode": 0
+    },
+    "cell-l40-qpi-high-055": {
+      "status": "finished",
+      "accepted": true,
+      "manifest_present": true,
+      "completed_points": 1,
+      "max_points": 1,
+      "returncode": 0
+    },
+    "cell-l40-qpi-high-100": {
+      "status": "running",
+      "phase": "julia_linsolve",
+      "manifest_present": false,
+      "completed_points": 0,
+      "max_points": 1,
+      "elapsed_seconds": 22921.284,
+      "updated_at": "2026-08-04T02:31:50.905043+00:00"
+    },
+    "cell-l40-qpi-high-150": {
+      "status": "not_started",
+      "manifest_present": false
+    }
+  },
+  "resources": {
+    "julia_processes": 2,
+    "compute_threads_requested": 8,
+    "supervisor_files": [],
+    "active_cell": "cell-l40-qpi-high-100",
+    "resource_utilization": "未读取 CPU/内存百分比；仅记录进程与线程配置"
+  },
+  "eta": {
+    "status": "not_estimable",
+    "reason": "high-100 仍在线性求解且无 manifest 终态；不以 high-055 成本外推，避免给出虚假 ETA"
+  },
+  "action": "只读；未写远端、未取消、未启动第二个 Julia、未回传未终态目录",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

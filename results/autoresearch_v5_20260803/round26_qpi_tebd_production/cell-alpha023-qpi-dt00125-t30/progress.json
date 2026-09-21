@@ -1,0 +1,18 @@
+{
+  "job_type": "tebd_qpi_autocorrelation",
+  "cell_id": "qpi-alpha023-dt00125-t30",
+  "phase": "tebd",
+  "total_steps": 2400,
+  "status": "success",
+  "finished_at": "2026-08-03T11:59:43.606747+00:00",
+  "accepted": true,
+  "completed_steps": 2400,
+  "wall_seconds": 844.0383016373962,
+  "returncode": 0,
+  "percent": 100.0,
+  "eta_seconds": 0.0,
+  "schema_version": 1,
+  "started_at": "2026-08-03T11:45:39.551580+00:00",
+  "updated_at": "2026-08-03T11:59:43.608034+00:00",
+  "elapsed_seconds": 844.056
+}

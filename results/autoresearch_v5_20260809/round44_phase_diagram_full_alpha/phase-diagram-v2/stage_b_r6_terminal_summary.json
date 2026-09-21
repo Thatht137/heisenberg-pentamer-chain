@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "status": "partial_failure",
+  "counts": {
+    "success": 1,
+    "failed": 1,
+    "pending": 90
+  },
+  "pass_cells": [
+    "negb6-a0500-b0050-L040"
+  ],
+  "failed_cells": [
+    "negb6-a0500-b0050-L060"
+  ],
+  "unmaterialized_cells": 90,
+  "observations": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_r6_terminal_observations.json",
+    "sha256": "83441dcc361c8e0cb6018ea54928ec63bc4208aeeb2109ee630b855d4d2f90f6"
+  },
+  "action_results": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_r6_terminal_action_results.json",
+    "sha256": "ebc8b2f40db6c1b48951096b05d8d41e669a54447acd700f9ad7f7f62160dbc1"
+  },
+  "stage_c_ready": false,
+  "canonical_controller_mutated": false,
+  "stage_a_release": {
+    "summary": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r19_success_ingestion_summary.json",
+      "sha256": "7551c3fbd06ae2acca446f784a3e360c349ecb95864b3ed9320f6c4e02678b8c"
+    },
+    "analysis": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_a_finite_size_diagnostic_latest.json",
+      "sha256": "8bf44f7e106b14db62c07874a6405cfec27f50d7f32cda76cd73bba9646f39ce"
+    },
+    "calibration": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/accepted_calibration_through_r19.json",
+      "sha256": "6db52b5354c337394f8b082068fe0002c78c56dbf6ecb9962cde25625c6ab2ec"
+    }
+  },
+  "failed_records_contain_value_or_error": false,
+  "boundary_thresholds_relaxed": false
+}

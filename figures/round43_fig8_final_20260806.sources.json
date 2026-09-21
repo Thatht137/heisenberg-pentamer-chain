@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "figure_id": 8,
+  "status": "production_agreement",
+  "backend": "Python/matplotlib",
+  "archetype": "quantitative grid",
+  "final_size_mm": [
+    89,
+    99
+  ],
+  "core_conclusion": "11 个 accepted CV 点关闭低频覆盖门，并通过与 TEBD 的峰位和积分权重验收。",
+  "acceptance": {
+    "production_ready": true,
+    "gates": {
+      "peak bracket": true,
+      "weight window": true,
+      "peak budget": true,
+      "weight budget": true
+    }
+  },
+  "source_files": [
+    {
+      "path": "results/autoresearch_v5_20260806/round43_handoff_final/handoff_summary.json",
+      "sha256": "5fcaff72108571b87f957f8a48abd03745f2741362a82d325b9984cc1de05f09"
+    },
+    {
+      "path": "results/autoresearch_v5_20260806/round43_handoff_final/checksums.sha256",
+      "sha256": "fd19a97acdba9d909b69e24a90d8cf6b76b02fdb878ed39198a0e0e281ba8363"
+    },
+    {
+      "path": "results/autoresearch_v5_20260806/round43_handoff_final/accepted11/spectrum.csv",
+      "sha256": "0a47c81c3e50f0124cef3279b6bb2fe7fc0497d046c605b173b35bec2edcdea5"
+    },
+    {
+      "path": "results/autoresearch_v5_20260806/round43_handoff_final/accepted11/manifest.json",
+      "sha256": "2f826c2f19b403fb42c83b36694c2e91aaeed2ef8b6d54f9b61c9f44b5f5aa7c"
+    },
+    {
+      "path": "results/autoresearch_v5_20260806/round43_handoff_final/cross_method/cross-method-check.json",
+      "sha256": "1e74c5f7932fa699bba918bcd040bcc49b8c6d355628cc2a1fab09a254842797"
+    },
+    {
+      "path": "results/autoresearch_v5_20260803/round26_qpi_tebd_production/cell-alpha023-qpi-dt00125-t30/spectrum.csv",
+      "sha256": "041ca821f3ace2a96a968fbe17ac2c137a0a9654f3257d887654196d112ca7e6"
+    },
+    {
+      "path": "results/autoresearch_v5_20260803/round26_qpi_tebd_production/cell-alpha023-qpi-dt00125-t30/manifest.json",
+      "sha256": "cd8263f33183c5e6ed2bac67a7c44705796e137cd3c60d351ee1180ecaced2a4"
+    },
+    {
+      "path": "results/autoresearch_v3_20260729/round1_doublet_projection/representative.csv",
+      "sha256": "4be460ca405c4e13f4c61618ec5eb6d5847cf48ae37d9b1debeef5df50c0465f"
+    },
+    {
+      "path": "figures/round43_fig8_final_20260806.source.csv",
+      "sha256": "8ac1305882ebbcfe9485dcd8e676513522cc867c73da275d2db5d78eff84f2ae"
+    }
+  ],
+  "outputs": {
+    ".svg": "0a717ed4302dd26544fd68fc22d85bc4ee64e3f248bccea612e1741ae3063e5d",
+    ".pdf": "90d810ebdf49b544b2b0badda2ae7b6593eddf8d40e94d2fed6ad4306c8ab90f",
+    ".png": "f73385a635e37ceebc54c575dfbaef72534f663c8d67cb2af55af0ffed1f7fc4",
+    ".tiff": "6b6402e4223214b576527aa263315d411e42e875cbdf694f7d1fb7c28f9cf0fe"
+  },
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

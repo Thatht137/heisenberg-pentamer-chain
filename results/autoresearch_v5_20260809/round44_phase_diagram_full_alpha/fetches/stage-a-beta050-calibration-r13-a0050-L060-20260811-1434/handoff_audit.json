@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "cell_id": "nega-r13-a0050-b0500-L060",
+  "remote_checksums": "parent_and_two_children_pass",
+  "local_checksums": "pass",
+  "non_clobbering_fetch": true,
+  "checksum_entries": {
+    "parent": 7,
+    "children": {
+      "center": 13,
+      "ferro_j2": 13
+    }
+  },
+  "validator": {
+    "status": "pass",
+    "sha256": "51fdd703788fff13bef2db31fd4b08c5526a6d3964ff5c792e304868a4bef0c9"
+  },
+  "accepted_only_eligible": true,
+  "thresholds_relaxed": false
+}

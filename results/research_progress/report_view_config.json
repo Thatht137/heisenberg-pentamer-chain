@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "canonical_source": "report.json",
+  "current_view": "report.html",
+  "history_view": "report_history.html",
+  "current_sections": [
+    "已验收：L80 Krylov-12 单点",
+    "9月19日收尾阶段1：联合尺寸证据",
+    "收尾阶段2：近零点交换的独立检验",
+    "收尾阶段3：静态对照准备",
+    "收尾状态：尺寸数据已验收，物理判定待完成",
+    "Overview · 完成度与预计交付",
+    "2026-09-13 负 α 新相独立诊断",
+    "2026-08-29 负 α Practical V2 收敛方案",
+    "2026-08-09 负 alpha 完整相图 campaign",
+    "2026-08-11 论文完整草稿 · evidence-locked",
+    "2026-08-07 精简 full-q 复刻与本机收尾",
+    "Implemented · 已实现的工作",
+    "Findings · 目前发现了什么",
+    "Human decisions · 需要人工介入的地方",
+    "Paper figures · 当前图件",
+    "Remaining work · 剩余路径与风险",
+    "Evidence map · 文件与完整历史"
+  ],
+  "history_sections": 195,
+  "render_command": ".venv\\Scripts\\python.exe scripts\\autoresearch_v5\\render_research_progress.py"
+}

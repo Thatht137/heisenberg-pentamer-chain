@@ -1,0 +1,128 @@
+{
+  "schema_version": 1,
+  "status": "partial_terminal",
+  "run_spec": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r5-remaining10/parameter-scan.run_spec.json",
+    "sha256": "11515393af99f6678db47d88761967725aaecf1d41dde46c22de2d05df05c177"
+  },
+  "remote_checksum_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/audit/remote_checksum_20260810_2048.txt",
+    "sha256": "5db0f8f83d864463ec3dd7e4d2e93059dcd2c6ecd0ef1a5dc9f4576b6bd70bc0"
+  },
+  "validation_summary": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/validation/summary.json",
+    "sha256": "2ad6f50eff72328c202526b30c46a2f91b3786fed592d5132cb5ed33a118862a"
+  },
+  "counts": {
+    "materialized": 2,
+    "validator_pass": 1,
+    "validator_fail": 1,
+    "unmaterialized": 8
+  },
+  "records": [
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.5,
+        "L": 80
+      },
+      "status": "success",
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/cells/nega-r5-a0250-b0500-L080/manifest.json",
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/validation/nega-r5-a0250-b0500-L080.json",
+        "sha256": "f391ba21a5db6a5cd35025ca458647df0dcbd8bc1d7907c46af5415890e5db51"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/receipts/nega-r5-a0250-b0500-L080.json",
+        "sha256": "03b7695c11a90276393247f82c416a73433814b7da2882d3735d407cf77b9d9d"
+      },
+      "calibration_only": true,
+      "value": 0.19715321747583414,
+      "error": 0.0002569860264955981,
+      "accepted_only_candidate": true,
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.5,
+        "L": 40
+      },
+      "status": "failed",
+      "budget": 32,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/validation/nega-r5-a0100-b0500-L040.json",
+      "validation": {
+        "status": "fail",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/validation/nega-r5-a0100-b0500-L040.json",
+        "sha256": "392e1c3c886668eadf9661b6ff00e7fdf40d11a570dd73bd3b865298f7e3386d"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/receipts/nega-r5-a0100-b0500-L040.json",
+        "sha256": "16314936d37b0faf26c84e79eb27b010f742b28806518fa151a03593c8386344"
+      },
+      "calibration_only": false,
+      "failure_evidence": {
+        "checks": {
+          "unique_run_spec_cell": true,
+          "terminal_acceptance": false,
+          "negative_alpha_range": true,
+          "beta_range": true,
+          "parent_checksums": true,
+          "children": true
+        },
+        "failures": [
+          "父 manifest: 非 accepted success",
+          "父 status: 非 accepted success",
+          "父 manifest: children_accepted 未通过",
+          "子 manifest center: 非 accepted success",
+          "子 status center: 非 accepted success",
+          "子 manifest center: variance/site sz0 超门",
+          "子 manifest center: variance_sz0_per_site_le_1e-8 未通过",
+          "子 manifest center: variance/site sz1 超门",
+          "子 manifest center: variance_sz1_per_site_le_1e-8 未通过",
+          "子 manifest ferro_j2: 非 accepted success",
+          "子 status ferro_j2: 非 accepted success",
+          "子 manifest ferro_j2: variance/site sz0 超门",
+          "子 manifest ferro_j2: variance_sz0_per_site_le_1e-8 未通过",
+          "子 manifest ferro_j2: variance/site sz1 超门",
+          "子 manifest ferro_j2: variance_sz1_per_site_le_1e-8 未通过"
+        ],
+        "thresholds": {
+          "variance_per_site_max": 1e-08,
+          "final_truncation_error_max": 1e-09,
+          "sector_tolerance": 1e-08
+        },
+        "diagnostics": {
+          "center": {
+            "variance_per_site_sz0": 3.7521125406669854e-08,
+            "variance_per_site_sz1": 4.256882135678097e-08,
+            "final_truncation_error_sz0": 9.965164980011925e-12,
+            "final_truncation_error_sz1": 9.987299602142405e-12,
+            "total_sz0": -7.216449660063518e-16,
+            "total_sz1": 1.0000000000000027
+          },
+          "ferro_j2": {
+            "variance_per_site_sz0": 2.1211983636248986e-08,
+            "variance_per_site_sz1": 4.256882135678097e-08,
+            "final_truncation_error_sz0": 9.987457775439249e-12,
+            "final_truncation_error_sz1": 9.987299602142405e-12,
+            "total_sz0": -1.27675647831893e-15,
+            "total_sz1": 1.0000000000000027
+          }
+        }
+      },
+      "accepted_only_candidate": false
+    }
+  ],
+  "controller_written": false,
+  "retry_started": false,
+  "interpretation": "仅 validator pass 点可作为 accepted-only candidate；失败点不含 value/error。"
+}

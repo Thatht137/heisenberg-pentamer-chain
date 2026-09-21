@@ -1,0 +1,779 @@
+{
+  "schema_version": 1,
+  "mode": "execute",
+  "output_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4",
+  "cases": [
+    {
+      "alpha": -0.1,
+      "krylovdim": 8
+    },
+    {
+      "alpha": -0.175,
+      "krylovdim": 8
+    }
+  ],
+  "settings": {
+    "beta": 0.25,
+    "L": 10,
+    "maxdim": 64,
+    "nsweeps": 16,
+    "cutoff": 1e-11,
+    "threads": 2,
+    "init_mode_sz0": "center",
+    "init_mode_sz1": "center",
+    "noise_profile": "legacy",
+    "random_seed": 20260811,
+    "save_state": true,
+    "enriched_diagnostics": true,
+    "krylov_dimensions": [
+      8
+    ]
+  },
+  "julia": {
+    "executable": "D:/program/Julia-1.11.5/bin/julia.exe",
+    "expected_version": "1.11.5",
+    "pkg_offline": true,
+    "instantiate": false
+  },
+  "source_hashes": {
+    "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+    "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "scripts/autoresearch_v5/negative_static_cell.jl": "291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f",
+    "scripts/autoresearch_v5/static_krylov_ed_reference.py": "172a00088fdbe0e06806a4b0d3da4b5d334f805d2205a91598cc262cab3e00cb",
+    "scripts/autoresearch_v5/smoke_static_krylov.py": "4d06b8e15b4d5a3cff8d8af35d03428124aaae550dab18fc79e335de0b53714f",
+    "src/dmrg_solver.jl": "0b535c8be0f392a7ee827c2e66dbf422d8070bc025f14881fbc2ba501304b0eb",
+    "src/exact_diag.jl": "e8da7c3f3012f620451fdd90b153b57acdb08f23c7c4913d8c2d7e62764cbd83",
+    "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+    "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+    "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+    "src/spectral.jl": "a04ad34901d44849eb7f74fb6c883a13bb7ea6d15872a64aab22fa92be7f88bf",
+    "src/utils.jl": "b434789ab9726118c682f7cdca98fe2f90e1320d3d501108539748a4d95a1cb7",
+    "scripts/autoresearch_v5/smoke_static_krylov_v4.py": "ebbad376886767e33e42f34ef26323d57b104fab52f1530f6d7bb1f0f9fc5cba"
+  },
+  "source_change_scope": {
+    "old_julia_cell_sha256": "17cb83c1922b39efe34542ec795632360ff63873eb173c70763ecaa34337694e",
+    "new_julia_cell_sha256": "291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f",
+    "declared_difference": "negative_static_cell.jl 15/16-args 解析修复；物理模型与门不变",
+    "v4_output_delta": "仅请求 SAVE_STATE=1、ENRICHED=1 产物"
+  },
+  "old_reference_hashes_before": {
+    "v1_a-0100-k3": {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v1\\a-0100-k3",
+      "returncode": 0,
+      "timed_out": true,
+      "file_hashes": {
+        "bond_correlations.csv": "f0e6f12e37aa056706a42ed49aef7a51b6b0e7c6ffe67ad014e3405b43ad907e",
+        "metrics.csv": "cbb6f922369d5cf43a3b18bdfc63f3101d38b7f5a9d13754adc322ebfa0a4b2b",
+        "schmidt_spectrum.csv": "5abe85cda804c4b6fe0cf8d24a54865774ae1e6c48a54553e6900f82d217b8d4",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "7958b8c7b299b9343270ac1c0b5bf24223e2bc0bfbab61322fc2f3e96342e7ce",
+        "string_profile.csv": "b14b87f9bb73a09a4ffda7d4867f6b29ab05b1b93cc72e8c0c763a691138374b",
+        "structure_factor_fullq.csv": "c890eef3dbbd222ccab6641c35db1cc2302037769c9c58b76dcda598d48a3df0",
+        "sweep_history_sz0.csv": "a328a98c5bd1b8f1de96546f63c70d6b514ba39f71639d410896d9a5067cdbf5",
+        "sweep_history_sz1.csv": "bf35c8e68bfe2da7a384d5e684458d813dd8053c29a5b94e83bf8d9cb2caa5c4",
+        "wrapper_run.json": "e7e9fe80e2a5a81b72bb3ce5aab405aecfa1c2a1cf4de566c8b528c99510398f"
+      }
+    },
+    "v2_a-0100-k8": {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v2\\a-0100-k8",
+      "returncode": 0,
+      "timed_out": false,
+      "file_hashes": {
+        "bond_correlations.csv": "6f946be6a20ad724a56639e108ce82e4bcbb6d0b54a8f8fee29cf10cf92f9f18",
+        "metrics.csv": "7bd5f7cdbde92268f8646df2549c6ada5a76e8d92c1a65c7b4672222aa2e5026",
+        "schmidt_spectrum.csv": "7b851a3ed1e724c4c5a3b0e395e7d275ee5466794d9e66eb1ae1fe1d50f5900c",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "37fc5fd6965dcc71600f116b2f80d2789bbc60d173eb3d90d7ffbfdf8a64933a",
+        "string_profile.csv": "57601b98e06cb97fd25477283b6f1e6ab1fa3aeb454ce80b6b17119e946871a9",
+        "structure_factor_fullq.csv": "421e5fe109cefa561837a2e49a3f14b8d86894ab592f5d17ec85e0b7757e3670",
+        "sweep_history_sz0.csv": "2e102d205d8e6449fbe94ba86d1c83f6a5995ffb9f618cfd07b58e7210a5b05b",
+        "sweep_history_sz1.csv": "fc48fe28be2e3969dbe4ba390c405ff8b72f925602c9febd35806d2f5c7c2cf0",
+        "wrapper_run.json": "3f014d17af62098a4c3dbe0aae1a84a4d4efb7a1178df61265a11431d547adb1"
+      }
+    },
+    "v3_a-0175-k3": {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v3\\a-0175-k3",
+      "returncode": 0,
+      "timed_out": false,
+      "file_hashes": {
+        "bond_correlations.csv": "7a9141f2b7a9dedd72a4cf015adb8c00b0b1e4383efac904218436aa3cf6fc1b",
+        "metrics.csv": "c8244cfdcc3e7424bc38166ed342b852a5a27f881887635e5ca4088dbddce038",
+        "schmidt_spectrum.csv": "39c6135fec8f7d1faabce71f84f2b2414433f44d16e9d18c1f5869a8bedc9677",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "d617dc6f9cd4bc716ad21e465a4f54366413f8e20004c67bc8de4c132c5302c4",
+        "string_profile.csv": "0a5808ee2300b1c7f34cf72cc6bcb7873d6d7c2175c027cb2dd04aadad4a1611",
+        "structure_factor_fullq.csv": "2191c55c0b429bd14e9f56b8f9c23b16a15fd80973ee50dc83b41cf6c15b4530",
+        "sweep_history_sz0.csv": "dc6fb1d852f2d9b64ae7766fd988c939efafadaebe881118d1949dd0e2ecd8da",
+        "sweep_history_sz1.csv": "8b7eb07660a733c56045e49ee39ac7a51aef4ff5a7e162ec9972f21502208af3",
+        "wrapper_run.json": "141226cd9bb58374065e4f3d5026d610dd1745fe5f3f0e4a1bfc2f5561d785a7"
+      }
+    },
+    "v3_a-0175-k8": {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v3\\a-0175-k8",
+      "returncode": 0,
+      "timed_out": false,
+      "file_hashes": {
+        "bond_correlations.csv": "42f98c7feb798a23e2a108e89c191528e2c060b68de2f465685c111865cb0648",
+        "metrics.csv": "41e5b7b6ae1203ea53bffc5b43d6c6216829d785c0975ac93fe6f6004dd34d94",
+        "schmidt_spectrum.csv": "186aa8501c8c5bb94bc5c759283d0d548da718af34691cf6fb08056295ac271f",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "1ddfff8b4f17bb8f2853551535abecb91e25875dc216d58da02d7697455de5c5",
+        "string_profile.csv": "6ea36c1edbc1d2d76e8721288499b93ca77eade1cc96e34b470abe82eef6bf94",
+        "structure_factor_fullq.csv": "9d52cfbbb611d85cbb437c72358b9459ad3612eb79f00c8ae375e9f14e395e72",
+        "sweep_history_sz0.csv": "391d948b11b8fe1caacf462c750e32c63148823ccab187a1a22bb8ddd0a663f0",
+        "sweep_history_sz1.csv": "299754950768f23287b8774e80ba09d1ea3ed048d9a9902ee277963354151029",
+        "wrapper_run.json": "2cbc7866dddf748f36c1d08f7bca0645cfbe8c6309e2f49076197f8cfb21a5ec"
+      }
+    }
+  },
+  "preflight_no_active_julia": {
+    "command": [
+      "tasklist",
+      "/FI",
+      "IMAGENAME eq julia.exe",
+      "/FO",
+      "CSV",
+      "/NH"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "ERROR: Access denied\n\n",
+    "active": []
+  },
+  "wall_budget": {
+    "total_seconds": 300.0,
+    "cleanup_grace_seconds": 5.0,
+    "per_case": "remaining_budget_only"
+  },
+  "commands": [
+    {
+      "cell_id": "a-0100-k8",
+      "argv": [
+        "D:/program/Julia-1.11.5/bin/julia.exe",
+        "--startup-file=no",
+        "--threads=2",
+        "--project=.",
+        "scripts/autoresearch_v5/negative_static_cell.jl",
+        "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0100-k8",
+        "-0.1",
+        "0.25",
+        "2",
+        "64",
+        "16",
+        "1e-11",
+        "center",
+        "0",
+        "8",
+        "401",
+        "1",
+        "legacy",
+        "20260811",
+        "1",
+        "8"
+      ],
+      "command": "D:/program/Julia-1.11.5/bin/julia.exe --startup-file=no --threads=2 --project=. scripts/autoresearch_v5/negative_static_cell.jl D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0100-k8 -0.1 0.25 2 64 16 1e-11 center 0 8 401 1 legacy 20260811 1 8",
+      "cwd": "D:\\Project\\1x5_Heisenberg_Pentamer"
+    },
+    {
+      "cell_id": "a-0175-k8",
+      "argv": [
+        "D:/program/Julia-1.11.5/bin/julia.exe",
+        "--startup-file=no",
+        "--threads=2",
+        "--project=.",
+        "scripts/autoresearch_v5/negative_static_cell.jl",
+        "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0175-k8",
+        "-0.175",
+        "0.25",
+        "2",
+        "64",
+        "16",
+        "1e-11",
+        "center",
+        "0",
+        "8",
+        "401",
+        "1",
+        "legacy",
+        "20260811",
+        "1",
+        "8"
+      ],
+      "command": "D:/program/Julia-1.11.5/bin/julia.exe --startup-file=no --threads=2 --project=. scripts/autoresearch_v5/negative_static_cell.jl D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0175-k8 -0.175 0.25 2 64 16 1e-11 center 0 8 401 1 legacy 20260811 1 8",
+      "cwd": "D:\\Project\\1x5_Heisenberg_Pentamer"
+    }
+  ],
+  "ed_reference": [
+    {
+      "alpha": -0.175,
+      "beta": 0.25,
+      "target_sz": 0,
+      "n_up": 5,
+      "dimension": 252,
+      "energy": -2.2741417761740936,
+      "residual_ed": 2.3926453824716266e-15,
+      "norm_ed": 1.0000000000000002,
+      "total_sz_ed": 0.0
+    },
+    {
+      "alpha": -0.175,
+      "beta": 0.25,
+      "target_sz": 1,
+      "n_up": 6,
+      "dimension": 210,
+      "energy": -2.271064707912346,
+      "residual_ed": 1.6119523265639661e-15,
+      "norm_ed": 0.9999999999999996,
+      "total_sz_ed": 1.0
+    },
+    {
+      "alpha": -0.1,
+      "beta": 0.25,
+      "target_sz": 0,
+      "n_up": 5,
+      "dimension": 252,
+      "energy": -2.2315800339427208,
+      "residual_ed": 2.5114342573251213e-15,
+      "norm_ed": 0.9999999999999998,
+      "total_sz_ed": 0.0
+    },
+    {
+      "alpha": -0.1,
+      "beta": 0.25,
+      "target_sz": 1,
+      "n_up": 6,
+      "dimension": 210,
+      "energy": -2.230215544570033,
+      "residual_ed": 1.6485279597711457e-15,
+      "norm_ed": 0.9999999999999999,
+      "total_sz_ed": 1.0
+    }
+  ],
+  "started_at": "2026-09-19T13:31:59.511470+00:00",
+  "host": "Windows-11-10.0.26100-SP0",
+  "python_version": "3.12.6",
+  "julia_version_probe": {
+    "command": [
+      "D:/program/Julia-1.11.5/bin/julia.exe",
+      "--startup-file=no",
+      "--version"
+    ],
+    "command_text": "D:/program/Julia-1.11.5/bin/julia.exe --startup-file=no --version",
+    "expected": "1.11.5",
+    "available": true,
+    "version": "1.11.5",
+    "stdout": "julia version 1.11.5\n",
+    "stderr": "",
+    "returncode": 0,
+    "timed_out": false,
+    "termination": null,
+    "stdout_path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\julia_version_stdout.log",
+    "stderr_path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\julia_version_stderr.log",
+    "wall_seconds": 0.7030000000086147,
+    "matches_expected": true
+  },
+  "finished_at": "2026-09-19T13:34:51.521710+00:00",
+  "wall_seconds_total": 172.01600000000326,
+  "results": [
+    {
+      "cell_id": "a-0100-k8",
+      "command": [
+        "D:/program/Julia-1.11.5/bin/julia.exe",
+        "--startup-file=no",
+        "--threads=2",
+        "--project=.",
+        "scripts/autoresearch_v5/negative_static_cell.jl",
+        "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0100-k8",
+        "-0.1",
+        "0.25",
+        "2",
+        "64",
+        "16",
+        "1e-11",
+        "center",
+        "0",
+        "8",
+        "401",
+        "1",
+        "legacy",
+        "20260811",
+        "1",
+        "8"
+      ],
+      "command_text": "D:/program/Julia-1.11.5/bin/julia.exe --startup-file=no --threads=2 --project=. scripts/autoresearch_v5/negative_static_cell.jl D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0100-k8 -0.1 0.25 2 64 16 1e-11 center 0 8 401 1 legacy 20260811 1 8",
+      "started_at": "2026-09-19T13:32:00.356489+00:00",
+      "finished_at": "2026-09-19T13:33:25.734723+00:00",
+      "wall_seconds": 85.375,
+      "timeout_seconds": 299.1559999999881,
+      "timed_out": false,
+      "termination": null,
+      "returncode": 0,
+      "stdout_path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0100-k8\\stdout.log",
+      "stderr_path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0100-k8\\stderr.log",
+      "metrics_path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0100-k8\\metrics.csv",
+      "alpha": -0.1,
+      "beta": 0.25,
+      "L": 10,
+      "krylovdim": 8,
+      "ed_reference": {
+        "sz0": {
+          "alpha": -0.1,
+          "beta": 0.25,
+          "target_sz": 0,
+          "n_up": 5,
+          "dimension": 252,
+          "energy": -2.2315800339427208,
+          "residual_ed": 2.5114342573251213e-15,
+          "norm_ed": 0.9999999999999998,
+          "total_sz_ed": 0.0
+        },
+        "sz1": {
+          "alpha": -0.1,
+          "beta": 0.25,
+          "target_sz": 1,
+          "n_up": 6,
+          "dimension": 210,
+          "energy": -2.230215544570033,
+          "residual_ed": 1.6485279597711457e-15,
+          "norm_ed": 0.9999999999999999,
+          "total_sz_ed": 1.0
+        }
+      },
+      "observed_metrics": {
+        "energy_sz0": -2.2315800338168588,
+        "energy_sz1": -2.2302155445317204,
+        "variance_per_site_sz0": 3.8262815138523364e-11,
+        "variance_per_site_sz1": 1.0179945775234956e-11,
+        "final_truncation_error_sz0": 7.00801967096196e-12,
+        "final_truncation_error_sz1": 7.019513728757482e-12,
+        "state_norm_sz0": 1.0,
+        "state_norm_sz1": 1.0,
+        "total_sz0": 3.122332850168802e-17,
+        "total_sz1": 1.0,
+        "nsweeps_completed_sz0": 16.0,
+        "nsweeps_completed_sz1": 16.0
+      },
+      "energy_abs_deltas": {
+        "energy_abs_delta_sz0": 1.2586198749886535e-10,
+        "energy_abs_delta_sz1": 3.83124643121846e-11
+      },
+      "gates": {
+        "execution_success": true,
+        "metrics_present": true,
+        "ed_residual_sz0_le_1e-10": true,
+        "ed_norm_sz0_near_1": true,
+        "ed_total_sz0_correct": true,
+        "energy_sz0_abs_delta_le_1e-8": true,
+        "dmrg_total_sz0_correct": true,
+        "state_norm_sz0_near_1": true,
+        "variance_per_site_sz0_le_1e-8": true,
+        "final_truncation_error_sz0_le_1e-9": true,
+        "all_sweeps_sz0": true,
+        "ed_residual_sz1_le_1e-10": true,
+        "ed_norm_sz1_near_1": true,
+        "ed_total_sz1_correct": true,
+        "energy_sz1_abs_delta_le_1e-8": true,
+        "dmrg_total_sz1_correct": true,
+        "state_norm_sz1_near_1": true,
+        "variance_per_site_sz1_le_1e-8": true,
+        "final_truncation_error_sz1_le_1e-9": true,
+        "all_sweeps_sz1": true
+      },
+      "comparison_passed": true,
+      "k8_gate_required": true,
+      "accepted": true,
+      "artifact_checks": {
+        "complete": true,
+        "metrics_complete": true,
+        "files": {
+          "metrics": {
+            "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0100-k8\\metrics.csv",
+            "exists": true,
+            "nonempty": true,
+            "size": 1801,
+            "rows": 61
+          },
+          "entropy": {
+            "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0100-k8\\entropy_profile_full.csv",
+            "exists": true,
+            "nonempty": true,
+            "size": 484,
+            "rows": 9
+          },
+          "bonds": {
+            "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0100-k8\\bond_correlations.csv",
+            "exists": true,
+            "nonempty": true,
+            "size": 334,
+            "rows": 9
+          },
+          "connected": {
+            "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0100-k8\\bond_bond_connected.csv",
+            "exists": true,
+            "nonempty": true,
+            "size": 97,
+            "rows": 1
+          },
+          "state_sz0": {
+            "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0100-k8\\state_sz0.jld2",
+            "exists": true,
+            "nonempty": true,
+            "size": 111215,
+            "rows": null
+          }
+        }
+      },
+      "comparison_passed_with_artifacts": true
+    },
+    {
+      "cell_id": "a-0175-k8",
+      "command": [
+        "D:/program/Julia-1.11.5/bin/julia.exe",
+        "--startup-file=no",
+        "--threads=2",
+        "--project=.",
+        "scripts/autoresearch_v5/negative_static_cell.jl",
+        "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0175-k8",
+        "-0.175",
+        "0.25",
+        "2",
+        "64",
+        "16",
+        "1e-11",
+        "center",
+        "0",
+        "8",
+        "401",
+        "1",
+        "legacy",
+        "20260811",
+        "1",
+        "8"
+      ],
+      "command_text": "D:/program/Julia-1.11.5/bin/julia.exe --startup-file=no --threads=2 --project=. scripts/autoresearch_v5/negative_static_cell.jl D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0175-k8 -0.175 0.25 2 64 16 1e-11 center 0 8 401 1 legacy 20260811 1 8",
+      "started_at": "2026-09-19T13:33:25.740887+00:00",
+      "finished_at": "2026-09-19T13:34:51.397846+00:00",
+      "wall_seconds": 85.65600000000268,
+      "timeout_seconds": 213.76499999999942,
+      "timed_out": false,
+      "termination": null,
+      "returncode": 0,
+      "stdout_path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0175-k8\\stdout.log",
+      "stderr_path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0175-k8\\stderr.log",
+      "metrics_path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0175-k8\\metrics.csv",
+      "alpha": -0.175,
+      "beta": 0.25,
+      "L": 10,
+      "krylovdim": 8,
+      "ed_reference": {
+        "sz0": {
+          "alpha": -0.175,
+          "beta": 0.25,
+          "target_sz": 0,
+          "n_up": 5,
+          "dimension": 252,
+          "energy": -2.2741417761740936,
+          "residual_ed": 2.3926453824716266e-15,
+          "norm_ed": 1.0000000000000002,
+          "total_sz_ed": 0.0
+        },
+        "sz1": {
+          "alpha": -0.175,
+          "beta": 0.25,
+          "target_sz": 1,
+          "n_up": 6,
+          "dimension": 210,
+          "energy": -2.271064707912346,
+          "residual_ed": 1.6119523265639661e-15,
+          "norm_ed": 0.9999999999999996,
+          "total_sz_ed": 1.0
+        }
+      },
+      "observed_metrics": {
+        "energy_sz0": -2.2741417761716782,
+        "energy_sz1": -2.271064707882338,
+        "variance_per_site_sz0": 8.236966664298961e-13,
+        "variance_per_site_sz1": 9.528111633017034e-12,
+        "final_truncation_error_sz0": 7.113419784560022e-13,
+        "final_truncation_error_sz1": 3.7600633928146354e-12,
+        "state_norm_sz0": 1.0,
+        "state_norm_sz1": 1.0,
+        "total_sz0": 4.1285741101890205e-16,
+        "total_sz1": 0.9999999999999999,
+        "nsweeps_completed_sz0": 16.0,
+        "nsweeps_completed_sz1": 16.0
+      },
+      "energy_abs_deltas": {
+        "energy_abs_delta_sz0": 2.4154012123744906e-12,
+        "energy_abs_delta_sz1": 3.000799608798843e-11
+      },
+      "gates": {
+        "execution_success": true,
+        "metrics_present": true,
+        "ed_residual_sz0_le_1e-10": true,
+        "ed_norm_sz0_near_1": true,
+        "ed_total_sz0_correct": true,
+        "energy_sz0_abs_delta_le_1e-8": true,
+        "dmrg_total_sz0_correct": true,
+        "state_norm_sz0_near_1": true,
+        "variance_per_site_sz0_le_1e-8": true,
+        "final_truncation_error_sz0_le_1e-9": true,
+        "all_sweeps_sz0": true,
+        "ed_residual_sz1_le_1e-10": true,
+        "ed_norm_sz1_near_1": true,
+        "ed_total_sz1_correct": true,
+        "energy_sz1_abs_delta_le_1e-8": true,
+        "dmrg_total_sz1_correct": true,
+        "state_norm_sz1_near_1": true,
+        "variance_per_site_sz1_le_1e-8": true,
+        "final_truncation_error_sz1_le_1e-9": true,
+        "all_sweeps_sz1": true
+      },
+      "comparison_passed": true,
+      "k8_gate_required": true,
+      "accepted": true,
+      "artifact_checks": {
+        "complete": true,
+        "metrics_complete": true,
+        "files": {
+          "metrics": {
+            "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0175-k8\\metrics.csv",
+            "exists": true,
+            "nonempty": true,
+            "size": 1821,
+            "rows": 61
+          },
+          "entropy": {
+            "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0175-k8\\entropy_profile_full.csv",
+            "exists": true,
+            "nonempty": true,
+            "size": 484,
+            "rows": 9
+          },
+          "bonds": {
+            "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0175-k8\\bond_correlations.csv",
+            "exists": true,
+            "nonempty": true,
+            "size": 334,
+            "rows": 9
+          },
+          "connected": {
+            "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0175-k8\\bond_bond_connected.csv",
+            "exists": true,
+            "nonempty": true,
+            "size": 97,
+            "rows": 1
+          },
+          "state_sz0": {
+            "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\a-0175-k8\\state_sz0.jld2",
+            "exists": true,
+            "nonempty": true,
+            "size": 114383,
+            "rows": null
+          }
+        }
+      },
+      "comparison_passed_with_artifacts": true
+    }
+  ],
+  "completed_new_cases": true,
+  "source_hashes_after": {
+    "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+    "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "scripts/autoresearch_v5/negative_static_cell.jl": "291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f",
+    "scripts/autoresearch_v5/static_krylov_ed_reference.py": "172a00088fdbe0e06806a4b0d3da4b5d334f805d2205a91598cc262cab3e00cb",
+    "scripts/autoresearch_v5/smoke_static_krylov.py": "4d06b8e15b4d5a3cff8d8af35d03428124aaae550dab18fc79e335de0b53714f",
+    "src/dmrg_solver.jl": "0b535c8be0f392a7ee827c2e66dbf422d8070bc025f14881fbc2ba501304b0eb",
+    "src/exact_diag.jl": "e8da7c3f3012f620451fdd90b153b57acdb08f23c7c4913d8c2d7e62764cbd83",
+    "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+    "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+    "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+    "src/spectral.jl": "a04ad34901d44849eb7f74fb6c883a13bb7ea6d15872a64aab22fa92be7f88bf",
+    "src/utils.jl": "b434789ab9726118c682f7cdca98fe2f90e1320d3d501108539748a4d95a1cb7",
+    "scripts/autoresearch_v5/smoke_static_krylov_v4.py": "ebbad376886767e33e42f34ef26323d57b104fab52f1530f6d7bb1f0f9fc5cba"
+  },
+  "source_hashes_stable": true,
+  "old_reference_hashes_after": {
+    "v1_a-0100-k3": {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v1\\a-0100-k3",
+      "returncode": 0,
+      "timed_out": true,
+      "file_hashes": {
+        "bond_correlations.csv": "f0e6f12e37aa056706a42ed49aef7a51b6b0e7c6ffe67ad014e3405b43ad907e",
+        "metrics.csv": "cbb6f922369d5cf43a3b18bdfc63f3101d38b7f5a9d13754adc322ebfa0a4b2b",
+        "schmidt_spectrum.csv": "5abe85cda804c4b6fe0cf8d24a54865774ae1e6c48a54553e6900f82d217b8d4",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "7958b8c7b299b9343270ac1c0b5bf24223e2bc0bfbab61322fc2f3e96342e7ce",
+        "string_profile.csv": "b14b87f9bb73a09a4ffda7d4867f6b29ab05b1b93cc72e8c0c763a691138374b",
+        "structure_factor_fullq.csv": "c890eef3dbbd222ccab6641c35db1cc2302037769c9c58b76dcda598d48a3df0",
+        "sweep_history_sz0.csv": "a328a98c5bd1b8f1de96546f63c70d6b514ba39f71639d410896d9a5067cdbf5",
+        "sweep_history_sz1.csv": "bf35c8e68bfe2da7a384d5e684458d813dd8053c29a5b94e83bf8d9cb2caa5c4",
+        "wrapper_run.json": "e7e9fe80e2a5a81b72bb3ce5aab405aecfa1c2a1cf4de566c8b528c99510398f"
+      }
+    },
+    "v2_a-0100-k8": {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v2\\a-0100-k8",
+      "returncode": 0,
+      "timed_out": false,
+      "file_hashes": {
+        "bond_correlations.csv": "6f946be6a20ad724a56639e108ce82e4bcbb6d0b54a8f8fee29cf10cf92f9f18",
+        "metrics.csv": "7bd5f7cdbde92268f8646df2549c6ada5a76e8d92c1a65c7b4672222aa2e5026",
+        "schmidt_spectrum.csv": "7b851a3ed1e724c4c5a3b0e395e7d275ee5466794d9e66eb1ae1fe1d50f5900c",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "37fc5fd6965dcc71600f116b2f80d2789bbc60d173eb3d90d7ffbfdf8a64933a",
+        "string_profile.csv": "57601b98e06cb97fd25477283b6f1e6ab1fa3aeb454ce80b6b17119e946871a9",
+        "structure_factor_fullq.csv": "421e5fe109cefa561837a2e49a3f14b8d86894ab592f5d17ec85e0b7757e3670",
+        "sweep_history_sz0.csv": "2e102d205d8e6449fbe94ba86d1c83f6a5995ffb9f618cfd07b58e7210a5b05b",
+        "sweep_history_sz1.csv": "fc48fe28be2e3969dbe4ba390c405ff8b72f925602c9febd35806d2f5c7c2cf0",
+        "wrapper_run.json": "3f014d17af62098a4c3dbe0aae1a84a4d4efb7a1178df61265a11431d547adb1"
+      }
+    },
+    "v3_a-0175-k3": {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v3\\a-0175-k3",
+      "returncode": 0,
+      "timed_out": false,
+      "file_hashes": {
+        "bond_correlations.csv": "7a9141f2b7a9dedd72a4cf015adb8c00b0b1e4383efac904218436aa3cf6fc1b",
+        "metrics.csv": "c8244cfdcc3e7424bc38166ed342b852a5a27f881887635e5ca4088dbddce038",
+        "schmidt_spectrum.csv": "39c6135fec8f7d1faabce71f84f2b2414433f44d16e9d18c1f5869a8bedc9677",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "d617dc6f9cd4bc716ad21e465a4f54366413f8e20004c67bc8de4c132c5302c4",
+        "string_profile.csv": "0a5808ee2300b1c7f34cf72cc6bcb7873d6d7c2175c027cb2dd04aadad4a1611",
+        "structure_factor_fullq.csv": "2191c55c0b429bd14e9f56b8f9c23b16a15fd80973ee50dc83b41cf6c15b4530",
+        "sweep_history_sz0.csv": "dc6fb1d852f2d9b64ae7766fd988c939efafadaebe881118d1949dd0e2ecd8da",
+        "sweep_history_sz1.csv": "8b7eb07660a733c56045e49ee39ac7a51aef4ff5a7e162ec9972f21502208af3",
+        "wrapper_run.json": "141226cd9bb58374065e4f3d5026d610dd1745fe5f3f0e4a1bfc2f5561d785a7"
+      }
+    },
+    "v3_a-0175-k8": {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v3\\a-0175-k8",
+      "returncode": 0,
+      "timed_out": false,
+      "file_hashes": {
+        "bond_correlations.csv": "42f98c7feb798a23e2a108e89c191528e2c060b68de2f465685c111865cb0648",
+        "metrics.csv": "41e5b7b6ae1203ea53bffc5b43d6c6216829d785c0975ac93fe6f6004dd34d94",
+        "schmidt_spectrum.csv": "186aa8501c8c5bb94bc5c759283d0d548da718af34691cf6fb08056295ac271f",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "1ddfff8b4f17bb8f2853551535abecb91e25875dc216d58da02d7697455de5c5",
+        "string_profile.csv": "6ea36c1edbc1d2d76e8721288499b93ca77eade1cc96e34b470abe82eef6bf94",
+        "structure_factor_fullq.csv": "9d52cfbbb611d85cbb437c72358b9459ad3612eb79f00c8ae375e9f14e395e72",
+        "sweep_history_sz0.csv": "391d948b11b8fe1caacf462c750e32c63148823ccab187a1a22bb8ddd0a663f0",
+        "sweep_history_sz1.csv": "299754950768f23287b8774e80ba09d1ea3ed048d9a9902ee277963354151029",
+        "wrapper_run.json": "2cbc7866dddf748f36c1d08f7bca0645cfbe8c6309e2f49076197f8cfb21a5ec"
+      }
+    }
+  },
+  "old_references_stable": true,
+  "postflight_no_active_julia": {
+    "command": [
+      "tasklist",
+      "/FI",
+      "IMAGENAME eq julia.exe",
+      "/FO",
+      "CSV",
+      "/NH"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "ERROR: Access denied\n\n",
+    "active": []
+  },
+  "cross_method_csv": {
+    "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v4\\cross-method-check.csv",
+    "sha256": "46b16cb81e6c66b14ef6ced7ca38df7444e6d2a42766f5097f0da599d8d01e7d",
+    "rows": 4,
+    "fields": [
+      "source_run",
+      "cell_id",
+      "method",
+      "alpha",
+      "beta",
+      "L",
+      "boundary",
+      "target_sz",
+      "krylovdim",
+      "dmrg_energy",
+      "ed_energy",
+      "dmrg_abs_energy_error",
+      "dmrg_energy_error_budget",
+      "ed_residual",
+      "ed_residual_budget",
+      "ed_norm",
+      "ed_total_sz",
+      "dmrg_state_norm",
+      "dmrg_total_sz",
+      "sweeps_completed",
+      "metrics_status",
+      "returncode",
+      "timed_out"
+    ]
+  },
+  "k8_gate": {
+    "passed": true,
+    "required_cases": 2,
+    "rows": [
+      {
+        "cell_id": "a-0100-k8",
+        "accepted": true,
+        "comparison_passed": true,
+        "artifacts_complete": true
+      },
+      {
+        "cell_id": "a-0175-k8",
+        "accepted": true,
+        "comparison_passed": true,
+        "artifacts_complete": true
+      }
+    ]
+  },
+  "all_cases_gate": {
+    "passed": true,
+    "required_cases": 2,
+    "scope": "v4 两个 k=8 保存态/增强诊断点；历史 v1-v3 门另存",
+    "rows": [
+      {
+        "cell_id": "a-0100-k8",
+        "comparison_passed_with_artifacts": true
+      },
+      {
+        "cell_id": "a-0175-k8",
+        "comparison_passed_with_artifacts": true
+      }
+    ]
+  },
+  "status": "pass",
+  "accepted": true,
+  "output_hashes_excluding_manifest": {
+    "a-0100-k8/bond_bond_connected.csv": "39a5dc45935bfa778456cc26d7d3cabd817cd3b409d2d44177cc477aabde1c14",
+    "a-0100-k8/bond_correlations.csv": "6f946be6a20ad724a56639e108ce82e4bcbb6d0b54a8f8fee29cf10cf92f9f18",
+    "a-0100-k8/entropy_profile_full.csv": "84da29886168cfd1d216ca2549b195ce5b9b404b8f553658282b4374a7affd6a",
+    "a-0100-k8/metrics.csv": "9922af0772b66491e931c90d5c0da5830108e8f37490d353489959e580d9a081",
+    "a-0100-k8/schmidt_spectrum.csv": "7b851a3ed1e724c4c5a3b0e395e7d275ee5466794d9e66eb1ae1fe1d50f5900c",
+    "a-0100-k8/state_sz0.jld2": "0ac80d8760cedd0c9e33b967e2531db7f409c56ad79bb34a93aa2d156b142017",
+    "a-0100-k8/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "a-0100-k8/stdout.log": "93c9eddb485797a387d68def62008ddfe62d2b732751cd3ac65586f8ecc54725",
+    "a-0100-k8/string_profile.csv": "57601b98e06cb97fd25477283b6f1e6ab1fa3aeb454ce80b6b17119e946871a9",
+    "a-0100-k8/structure_factor_fullq.csv": "421e5fe109cefa561837a2e49a3f14b8d86894ab592f5d17ec85e0b7757e3670",
+    "a-0100-k8/sweep_history_sz0.csv": "2e102d205d8e6449fbe94ba86d1c83f6a5995ffb9f618cfd07b58e7210a5b05b",
+    "a-0100-k8/sweep_history_sz1.csv": "fc48fe28be2e3969dbe4ba390c405ff8b72f925602c9febd35806d2f5c7c2cf0",
+    "a-0100-k8/wrapper_run.json": "4d4f6db9c4210ad9151287503fc1b66667c433a44cfbc7e512538ff40f0d4620",
+    "a-0175-k8/bond_bond_connected.csv": "aa02e658dac8e8863ab8edfa6908528e3eb226f140e46ff79fd2b91343668477",
+    "a-0175-k8/bond_correlations.csv": "42f98c7feb798a23e2a108e89c191528e2c060b68de2f465685c111865cb0648",
+    "a-0175-k8/entropy_profile_full.csv": "9275aace250e8de211f35392a1ccba585c13fcb3f8b4a2b91d103e9a4492d8e8",
+    "a-0175-k8/metrics.csv": "bda174b8ca3264b3de581404a472d1f6718fb1c185b93c80509d04a2d375ff31",
+    "a-0175-k8/schmidt_spectrum.csv": "186aa8501c8c5bb94bc5c759283d0d548da718af34691cf6fb08056295ac271f",
+    "a-0175-k8/state_sz0.jld2": "927a74ccaa87f776f4b17035d4716f5f38a4dc1b130e93e16e2a8a05b4fd7dad",
+    "a-0175-k8/stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "a-0175-k8/stdout.log": "87cba489644ee21f88d1d1e4f3cc2ec0f356cac021784bfb5c036d3f49e8aaf8",
+    "a-0175-k8/string_profile.csv": "6ea36c1edbc1d2d76e8721288499b93ca77eade1cc96e34b470abe82eef6bf94",
+    "a-0175-k8/structure_factor_fullq.csv": "9d52cfbbb611d85cbb437c72358b9459ad3612eb79f00c8ae375e9f14e395e72",
+    "a-0175-k8/sweep_history_sz0.csv": "391d948b11b8fe1caacf462c750e32c63148823ccab187a1a22bb8ddd0a663f0",
+    "a-0175-k8/sweep_history_sz1.csv": "299754950768f23287b8774e80ba09d1ea3ed048d9a9902ee277963354151029",
+    "a-0175-k8/wrapper_run.json": "0a024fd0e0a6748cd6b3096ad6c40d71058e1a8c7d3396da3eebd3b8fb66ab65",
+    "commands.txt": "b6c80cb55470f9ba40cf52468e0c41614397eca53457a10642a311ec8312f3a5",
+    "cross-method-check.csv": "46b16cb81e6c66b14ef6ced7ca38df7444e6d2a42766f5097f0da599d8d01e7d",
+    "julia_version_stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "julia_version_stdout.log": "b83fc755c9a645b5e3ea1980736156ba6ea43fbe4767a5460fded2367e1f04f9",
+    "run_metadata.json": "b1246badcd8ac9b7f323ffba93899c6d19f01936934997c7e531e687c654797a"
+  }
+}

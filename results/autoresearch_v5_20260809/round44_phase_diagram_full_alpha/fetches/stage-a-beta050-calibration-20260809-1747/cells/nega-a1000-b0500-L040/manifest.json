@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "cell_id": "nega-a1000-b0500-L040",
+  "status": "success",
+  "accepted": true,
+  "params": {
+    "alpha": -1.0,
+    "beta": 0.5,
+    "L": 40,
+    "n_units": 8
+  },
+  "settings": {
+    "method": "finite_dmrg_multistart",
+    "boundary": "OBC",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim": 800,
+    "nsweeps": 32,
+    "budget": 32,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "init_modes": [
+      "center",
+      "ferro_j2"
+    ],
+    "q_count": 401
+  },
+  "observables": {
+    "structure_factor_ratio": {
+      "value": 0.017688724512206877,
+      "error": 0.0001,
+      "definition": "1-S(pi-2pi/M)/S(pi), central OBC window"
+    },
+    "structure_factor_peak_q_over_pi": {
+      "value": 0.605,
+      "error": 0.0025,
+      "definition": "argmax S(q)/pi, q in [0,pi]"
+    },
+    "structure_factor_peak": {
+      "value": 0.6419074262415219,
+      "error": 0.0001,
+      "definition": "max S(q), central OBC window"
+    },
+    "dominant_structure_factor_ratio": {
+      "value": 0.41806941032017275,
+      "error": 0.0001,
+      "definition": "中心峰用双侧邻点，q_peak=0/pi 时用单侧邻点；dq=2pi/M"
+    },
+    "structure_factor_peak_ratio": {
+      "value": 0.41806941032017275,
+      "error": 0.0001,
+      "definition": "兼容别名；见 dominant_structure_factor_ratio"
+    }
+  },
+  "diagnostics": {
+    "child_manifests": [
+      "start_center/manifest.json",
+      "start_ferro_j2/manifest.json"
+    ],
+    "child_returncodes": {
+      "center": 0,
+      "ferro_j2": 0
+    },
+    "child_truncation_max": 9.995629068547056e-12,
+    "independent_start_half_range": {
+      "pi_ratio": 1.099575525076446e-08,
+      "q_peak_over_pi": 0.0,
+      "peak": 1.1428507584732017e-09,
+      "peak_ratio": 1.7908062810434444e-09
+    }
+  },
+  "acceptance": {
+    "children_completed": true,
+    "children_accepted": true,
+    "finite_pi_ratio": true,
+    "finite_q_peak": true,
+    "finite_peak": true,
+    "finite_peak_ratio": true
+  },
+  "provenance": {
+    "source_commit": "uploaded-negative-stage-a-20260809",
+    "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "negative_alpha_included": true,
+    "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+    "code_sha256": {
+      "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+      "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+      "scripts/autoresearch_v5/negative_static_cell.jl": "5ab726b59d01dc7892281ce3a557c6bf2425c4c07c592020787759d812912eaf",
+      "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+    },
+    "error_definition": "双初态半差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+  },
+  "timing": {
+    "started_at": "2026-08-09T03:33:48.843994+00:00",
+    "finished_at": "2026-08-09T03:51:46.628878+00:00"
+  },
+  "returncode": 0
+}

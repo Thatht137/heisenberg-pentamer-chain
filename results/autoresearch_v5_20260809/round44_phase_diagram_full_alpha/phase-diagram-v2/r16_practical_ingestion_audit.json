@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "pass_practical_calibration_only",
+  "controller_counts": {
+    "success": 14,
+    "failed": 0,
+    "pending": 2
+  },
+  "calibration_accepted_total": 7,
+  "controller_unchanged": true,
+  "observations_unchanged": true,
+  "action_index_unchanged": true,
+  "boundary_eligible": false,
+  "strict_failure_preserved": true,
+  "checksum_entries": {
+    "parent": 9,
+    "children": {
+      "center_random": 13,
+      "ferro_j2": 13,
+      "domain": 13
+    }
+  },
+  "crossing_assigned": false,
+  "phase_label_assigned": false
+}

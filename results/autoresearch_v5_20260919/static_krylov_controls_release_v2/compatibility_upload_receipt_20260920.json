@@ -1,0 +1,82 @@
+{
+  "schema": "static_krylov_controls_release_v2/compatibility_upload_receipt/v1",
+  "created_at": "2026-09-20",
+  "status": "uploaded_and_remote_verified",
+  "scope": "single compatibility launcher only; original 73-file upload, manifest and historical receipts unchanged",
+  "authorization": "本轮用户已明确授权上传 launch_static_krylov_controls_release_v2_crlf_compat.sh 并启动原定顺序 Julia；本回执只记录上传与校验",
+  "target": {
+    "host": "39.96.207.180",
+    "port": 6000,
+    "account": "wangjieren",
+    "remote_release_root": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2",
+    "remote_file": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2/scripts/autoresearch_v5/launch_static_krylov_controls_release_v2_crlf_compat.sh"
+  },
+  "local_file": {
+    "path": "scripts/autoresearch_v5/launch_static_krylov_controls_release_v2_crlf_compat.sh",
+    "bytes": 7252,
+    "sha256": "359936af95676cbcf6752b2e4f808267805051a3b9eb00682e280687949752c8"
+  },
+  "events": [
+    {
+      "kind": "remote_readonly_precheck",
+      "remote_time": "2026-09-20T07:31:59+08:00",
+      "status": "pass",
+      "observed": {
+        "bundle_present": true,
+        "run_present": true,
+        "compat_launcher_before_upload": "absent",
+        "original_launcher_sha256": "e4fd4fe02be8581b1f02478513bf0d793a4a7168043790e3912358a9946e7bab",
+        "guard_files_present": [],
+        "cells_nonempty": false,
+        "numpy_runtime_present": false,
+        "owned_campaign_processes": [],
+        "home_free_gib": 216,
+        "memory_available_gib_approx": 998
+      },
+      "command_note": "使用 remote bash -s stdin；无 bash -lc、无环境转储。"
+    },
+    {
+      "kind": "scp_upload",
+      "status": "pass",
+      "result": "scp_status=uploaded_single_compat_launcher",
+      "files_uploaded": 1,
+      "payload_scope": "compatibility launcher only"
+    },
+    {
+      "kind": "remote_verification",
+      "remote_time": "2026-09-20T07:33:04+08:00",
+      "status": "pass",
+      "checks": {
+        "remote_bytes": 7252,
+        "remote_sha256": "359936af95676cbcf6752b2e4f808267805051a3b9eb00682e280687949752c8",
+        "bash_n": "pass",
+        "normalized_bundle_sha256_check": "pass",
+        "awk_extract": "pass",
+        "standard_sha": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "original_launcher_sha256": "e4fd4fe02be8581b1f02478513bf0d793a4a7168043790e3912358a9946e7bab"
+      },
+      "command_note": "Linux 端执行 sha256sum -c <(tr -d '\\r' < HASHES) 及兼容脚本两处 awk CR 剥离；完整 hash 通过。"
+    }
+  ],
+  "initial_command_notes": [
+    "两次早期只读 stdin 尝试因 PowerShell 管道 CRLF 使 head/free 选项带回车而返回 1；仅读操作，无远端副作用。最终改用无 CRLF 的进程 stdin 后 precheck 通过。"
+  ],
+  "launch_state_at_receipt": {
+    "launcher_started_by_this_agent": false,
+    "supervisor_pid": null,
+    "supervisor_pgid": null,
+    "batch_pid": null,
+    "batch_pgid": null,
+    "julia_started": false,
+    "launch_transaction": "not_attempted_by_this_agent; compat_execute handoff pending"
+  },
+  "safety": {
+    "original_73_files_reuploaded": false,
+    "manifest_modified": false,
+    "historical_receipts_modified": false,
+    "other_projects_touched": false,
+    "remote_delete_or_overwrite": false,
+    "secrets_recorded": false
+  }
+}

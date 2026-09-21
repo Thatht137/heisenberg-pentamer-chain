@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "release_id": "static-krylov-controls-release-v1",
+  "status": "prepared_only",
+  "cell_count": 2,
+  "concurrency": 1,
+  "stop_on_first_failure": true,
+  "target": "/home/wangjieren/code/1x5_Heisenberg_Pentamer",
+  "remote_run_dir": "results/autoresearch_v5_20260919/static_krylov_controls_r1",
+  "control_path": "results/autoresearch_v5_20260919/static_krylov_controls_release_v1/server_upload_manifest.json",
+  "base_manifest_path": "results/autoresearch_v5_20260919/static_krylov_controls_r1/server_upload_manifest.json",
+  "base_manifest_sha256": "18ab5fc150e224dfb784997fdeaff0e6d376f31fdb63bfd76b746871ae9eb56d",
+  "file_groups": {
+    "control_input": 18,
+    "adapter": 4,
+    "validation_evidence": 7
+  },
+  "launch_policy": {
+    "dynamic_k8_evidence_required": true,
+    "historical_all_cases_gate_nonblocking": true,
+    "remote_existing_file": "reject",
+    "dry_run_network": false
+  },
+  "files": [
+    {
+      "path": "Project.toml",
+      "sha256": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "bytes": 634,
+      "group": "control_input"
+    },
+    {
+      "path": "Manifest.toml",
+      "sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "bytes": 30279,
+      "group": "control_input"
+    },
+    {
+      "path": "docs/negative_alpha_practical_convergence_standard_20260829.md",
+      "sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+      "bytes": 4936,
+      "group": "control_input"
+    },
+    {
+      "path": "docs/negative_alpha_new_phase_audit_20260913.md",
+      "sha256": "17ad83328b3b8bb5db692f326b9f1803bc92960036884f71165c75b79cad7b71",
+      "bytes": 9180,
+      "group": "control_input"
+    },
+    {
+      "path": "src/PentamerChain.jl",
+      "sha256": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "bytes": 782,
+      "group": "control_input"
+    },
+    {
+      "path": "src/hamiltonian.jl",
+      "sha256": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "bytes": 2775,
+      "group": "control_input"
+    },
+    {
+      "path": "src/order_parameters.jl",
+      "sha256": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "bytes": 7444,
+      "group": "control_input"
+    },
+    {
+      "path": "scripts/autoresearch_v5/progress.py",
+      "sha256": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+      "bytes": 3005,
+      "group": "control_input"
+    },
+    {
+      "path": "scripts/autoresearch_v5/negative_dmrg_options.py",
+      "sha256": "78a084abe62e025497be76a36b4bab2d6aaae46699db112689d08ff15f25a999",
+      "bytes": 1235,
+      "group": "control_input"
+    },
+    {
+      "path": "scripts/autoresearch_v5/negative_static_cell.jl",
+      "sha256": "17cb83c1922b39efe34542ec795632360ff63873eb173c70763ecaa34337694e",
+      "bytes": 17791,
+      "group": "control_input"
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_static_cell.py",
+      "sha256": "b20773f2f03c2133e49b5cb114e8795cc5c29a09061bebe969ea2c64e94a73dc",
+      "bytes": 14631,
+      "group": "control_input"
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_phase_structure_cell.py",
+      "sha256": "c58cd4438349bdfcec4739fe17d4f21f9f2d8891d5e52d13ea5497de00ffb7eb",
+      "bytes": 14396,
+      "group": "control_input"
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_phase_structure_batch.py",
+      "sha256": "447d2c17dcb02493b8b4fbd01e506680f17f3c5df4535e0410732e7ed121fc2b",
+      "bytes": 9852,
+      "group": "control_input"
+    },
+    {
+      "path": "scripts/autoresearch_v5/launch_negative_phase_independent_pilot.sh",
+      "sha256": "371378af75eee0522a6aa8b2df2d892617c912b7ec06eb319c270fc968fe569b",
+      "bytes": 1763,
+      "group": "control_input"
+    },
+    {
+      "path": "scripts/autoresearch_v5/make_static_krylov_controls.py",
+      "sha256": "11b4bb46dd7394d04d106422db38e08c1aef94084aefb82fb88e3cb264ff045a",
+      "bytes": 13872,
+      "group": "control_input"
+    },
+    {
+      "path": "results/autoresearch_v5_20260919/static_krylov_controls_r1/parameter-scan.run_spec.json",
+      "sha256": "eeb3731955674984faf62a73ff012de29b698ce45e2f092cd1d8f17e8215f48b",
+      "bytes": 4611,
+      "group": "control_input"
+    },
+    {
+      "path": "results/autoresearch_v5_20260919/static_krylov_controls_r1/source_hashes.sha256",
+      "sha256": "f96814c9045603889e2857a9ebc74973921f9b5904663cd1a732e196eaa0c392",
+      "bytes": 1637,
+      "group": "control_input"
+    },
+    {
+      "path": "results/autoresearch_v5_20260919/static_krylov_controls_r1/launch-contract.json",
+      "sha256": "2c5c10e09a304c2335c9fcc0c9a9ed6e6aaf2ef7a01b48a07b2fe0fba2d9dc4b",
+      "bytes": 604,
+      "group": "control_input"
+    },
+    {
+      "path": "scripts/autoresearch_v5/static_krylov_launch_preflight.py",
+      "sha256": "41aad8fa159aa17b61d6c235c0e8546175ead08a072f8ea9a9e5cefe748eb79f",
+      "bytes": 21910,
+      "group": "adapter"
+    },
+    {
+      "path": "scripts/autoresearch_v5/static_krylov_ed_reference.py",
+      "sha256": "172a00088fdbe0e06806a4b0d3da4b5d334f805d2205a91598cc262cab3e00cb",
+      "bytes": 12262,
+      "group": "adapter"
+    },
+    {
+      "path": "scripts/autoresearch_v5/upload_static_krylov_controls.ps1",
+      "sha256": "6c48a8cdc510d36003549ff3c2652d40a5d872a25a613a061d109837ae7caf8c",
+      "bytes": 4000,
+      "group": "adapter"
+    },
+    {
+      "path": "scripts/autoresearch_v5/launch_static_krylov_controls.sh",
+      "sha256": "447bc77f977d8f4c000175e88247a3110f66c3087bba38a3ad04f7dba0643528",
+      "bytes": 4125,
+      "group": "adapter"
+    },
+    {
+      "path": "results/autoresearch_v5_20260919/static_krylov_smoke_v2/run_metadata.json",
+      "sha256": "f934df7c17eb39f4034e1855aa3be39c07fc3aa88711c3e9573306863e5d7e2d",
+      "bytes": 12619,
+      "group": "validation_evidence"
+    },
+    {
+      "path": "results/autoresearch_v5_20260919/static_krylov_smoke_v2/a-0100-k8/wrapper_run.json",
+      "sha256": "3f014d17af62098a4c3dbe0aae1a84a4d4efb7a1178df61265a11431d547adb1",
+      "bytes": 3670,
+      "group": "validation_evidence"
+    },
+    {
+      "path": "results/autoresearch_v5_20260919/static_krylov_smoke_v2/a-0100-k8/metrics.csv",
+      "sha256": "7bd5f7cdbde92268f8646df2549c6ada5a76e8d92c1a65c7b4672222aa2e5026",
+      "bytes": 1789,
+      "group": "validation_evidence"
+    },
+    {
+      "path": "results/autoresearch_v5_20260919/static_krylov_smoke_v3/manifest.json",
+      "sha256": "852bf8fd824933bc1e678a0472620d0fe76c56a25b724afb3ca662b392ceb9fd",
+      "bytes": 26555,
+      "group": "validation_evidence"
+    },
+    {
+      "path": "results/autoresearch_v5_20260919/static_krylov_smoke_v3/run_metadata.json",
+      "sha256": "2d6227b1db3a9d22e795d6b9faf2be530a4782c0a910d86e0f18c4b983077684",
+      "bytes": 9092,
+      "group": "validation_evidence"
+    },
+    {
+      "path": "results/autoresearch_v5_20260919/static_krylov_smoke_v3/a-0175-k8/wrapper_run.json",
+      "sha256": "2cbc7866dddf748f36c1d08f7bca0645cfbe8c6309e2f49076197f8cfb21a5ec",
+      "bytes": 3686,
+      "group": "validation_evidence"
+    },
+    {
+      "path": "results/autoresearch_v5_20260919/static_krylov_smoke_v3/a-0175-k8/metrics.csv",
+      "sha256": "41e5b7b6ae1203ea53bffc5b43d6c6216829d785c0975ac93fe6f6004dd34d94",
+      "bytes": 1808,
+      "group": "validation_evidence"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "status": "pass_partial_terminal",
+  "run_spec_sha256": "7290e48b615d2d27ac20cbf36c1939bf9d488f97a374b5bfd94729c81742bf3b",
+  "remote_checksums": "parent_and_two_children_pass_for_both_cells",
+  "local_checksums": "pass",
+  "non_clobbering_fetch": true,
+  "checksum_entries": {
+    "nega-r9-a0100-b0500-L080": {
+      "parent": 7,
+      "center": 13,
+      "ferro_j2": 13
+    },
+    "nega-r9-a0050-b0500-L040": {
+      "parent": 7,
+      "center": 13,
+      "ferro_j2": 13
+    }
+  },
+  "validator_counts": {
+    "pass": 1,
+    "fail": 1
+  },
+  "accepted_calibration_cell": "nega-r9-a0100-b0500-L080",
+  "failed_controller_cell": "nega-r9-a0050-b0500-L040",
+  "thresholds_relaxed": false
+}

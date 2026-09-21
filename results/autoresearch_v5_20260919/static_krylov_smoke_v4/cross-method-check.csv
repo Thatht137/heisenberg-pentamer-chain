@@ -1,0 +1,5 @@
+source_run,cell_id,method,alpha,beta,L,boundary,target_sz,krylovdim,dmrg_energy,ed_energy,dmrg_abs_energy_error,dmrg_energy_error_budget,ed_residual,ed_residual_budget,ed_norm,ed_total_sz,dmrg_state_norm,dmrg_total_sz,sweeps_completed,metrics_status,returncode,timed_out
+v4-save-enriched,a-0100-k8,DMRG,-0.1,0.25,10,OBC,0,8,-2.2315800338168588,-2.2315800339427208,1.2586198749886535e-10,1e-8,2.5114342573251213e-15,1e-10,0.9999999999999998,0.0,1.0,3.122332850168802e-17,16.0,metrics_complete,0,false
+v4-save-enriched,a-0100-k8,DMRG,-0.1,0.25,10,OBC,1,8,-2.2302155445317204,-2.230215544570033,3.83124643121846e-11,1e-8,1.6485279597711457e-15,1e-10,0.9999999999999999,1.0,1.0,1.0,16.0,metrics_complete,0,false
+v4-save-enriched,a-0175-k8,DMRG,-0.175,0.25,10,OBC,0,8,-2.2741417761716782,-2.2741417761740936,2.4154012123744906e-12,1e-8,2.3926453824716266e-15,1e-10,1.0000000000000002,0.0,1.0,4.1285741101890205e-16,16.0,metrics_complete,0,false
+v4-save-enriched,a-0175-k8,DMRG,-0.175,0.25,10,OBC,1,8,-2.271064707882338,-2.271064707912346,3.000799608798843e-11,1e-8,1.6119523265639661e-15,1e-10,0.9999999999999996,1.0,1.0,0.9999999999999999,16.0,metrics_complete,0,false

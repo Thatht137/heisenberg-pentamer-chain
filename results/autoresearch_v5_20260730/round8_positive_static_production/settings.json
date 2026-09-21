@@ -1,0 +1,29 @@
+{
+  "method": "finite_dmrg",
+  "boundary": "OBC",
+  "sectors": [
+    "Sz=0",
+    "Sz=1"
+  ],
+  "maxdim_by_L": {
+    "40": 800,
+    "60": 1000,
+    "80": 1200
+  },
+  "nsweeps": 32,
+  "cutoff": 1e-11,
+  "threads": 8,
+  "init_mode_sz0": "center",
+  "init_mode_sz1": "center",
+  "string_margin": 3,
+  "schmidt_levels": 16,
+  "save_state_rule": "ridge_and_L80_only",
+  "offline": true,
+  "execution": "sequential_nice_10",
+  "acceptance": {
+    "variance_per_site_max": 1e-08,
+    "max_truncation_error": 1e-09,
+    "sector_tolerance": 1e-08,
+    "minimum_spin_gap": -1e-08
+  }
+}

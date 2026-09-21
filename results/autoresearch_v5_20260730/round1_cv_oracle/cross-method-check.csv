@@ -1,0 +1,5 @@
+method,observable,value,uncertainty,instance,tag
+exact_diagonalization,peak_omega,0.15000000000000002,0.0,"alpha=0.23,beta=0.5,L=10,q/pi=1,eta=0.1,OBC,Sz=0",Agreement
+correction_vector_dmrg,peak_omega,0.15000000000000002,0.1,"alpha=0.23,beta=0.5,L=10,q/pi=1,eta=0.1,OBC,Sz=0",Agreement
+exact_diagonalization,integrated_weight,0.6144464512649275,0.0,"alpha=0.23,beta=0.5,L=10,q/pi=1,eta=0.1,OBC,Sz=0",Agreement
+correction_vector_dmrg,integrated_weight,0.6144464512654066,0.09216696768973912,"alpha=0.23,beta=0.5,L=10,q/pi=1,eta=0.1,OBC,Sz=0",Agreement

@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "fetched_at": "2026-09-14T14:50:51.817106+00:00",
+  "cell_id": "negdiag-a04250-b07500-L080",
+  "source": "wangjieren@39.96.207.180:/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260913/negative_phase_independent_pilot_r1/cells/negdiag-a04250-b07500-L080",
+  "destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a04250-b07500-L080",
+  "file_count": 42,
+  "total_bytes": 19129253,
+  "preview_sha256": "a76b3307b268c5986f973d050ae318b0bf44429af36aa32a944df295c94528d3",
+  "checksums_sha256": "2484a25bd4662bb0584eadfb4a06e8c4a7b3c2822c16a5b9faa1e92aa50319b3",
+  "manifest_sha256": "ec0f0dd13e454828eeabe7822dd96be07418609c60945924b936b47222480b30",
+  "non_clobbering": true
+}

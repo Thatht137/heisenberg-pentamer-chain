@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "status": "accepted_stage_a_complete",
+  "cells": [
+    "nega-r19-a0025-b0500-L060",
+    "nega-r19-a0025-b0500-L080"
+  ],
+  "counts": {
+    "controller_success_total": 16,
+    "controller_failed_total": 0,
+    "controller_pending_total": 0,
+    "calibration_accepted_total": 8
+  },
+  "accepted_calibration": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/accepted_calibration_through_r19.json",
+    "sha256": "6db52b5354c337394f8b082068fe0002c78c56dbf6ecb9962cde25625c6ab2ec"
+  },
+  "ingestion_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r19_success_ingestion_audit.json",
+    "sha256": "0da981878f9d497f53ff182cc9ee6bb903214f73abcf1d587008a0b13db73d61"
+  },
+  "observations": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+    "sha256": "987c91fc339e573d70bf605e5c9bd76341b13c6ad1728014838066f914044706"
+  },
+  "action_index": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/action_index.json",
+    "sha256": "799253596f65161347be2ea1b4ccc399406166f982b8e18c33542dc0e0d9768b"
+  },
+  "controller": {
+    "status": "READY_FOR_STAGE_A_ANALYSIS",
+    "crossing": "not_assigned",
+    "phase_label": "not_assigned"
+  },
+  "boundary_thresholds_relaxed": false
+}

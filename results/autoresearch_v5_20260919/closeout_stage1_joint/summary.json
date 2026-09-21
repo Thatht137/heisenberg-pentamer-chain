@@ -1,0 +1,64 @@
+{
+  "stage": 1,
+  "points": 12,
+  "initial_state_records": 24,
+  "fits": 192,
+  "raw_sources_verified": 84,
+  "phase_assigned": false,
+  "thermodynamic_fit_performed": false,
+  "max_gap_start_relative_spread": 0.1264782181236184,
+  "source_data": [
+    {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\closeout_stage1_reanalysis\\entropy_fits.csv",
+      "sha256": "8ea0893bfbfc9d2f902cdf6dd9d3e0c343a6fa0af07a8fb73cc1685eb1e88482"
+    },
+    {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\closeout_stage1_reanalysis\\observables.csv",
+      "sha256": "340f5859304e55e97d4562e749d70bcd00d644e0c983b04887179dbd4e23eebb"
+    },
+    {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\closeout_stage1_reanalysis\\bond_expectations.csv",
+      "sha256": "162ba6e9e4d677512c27eedd32fa34037f33921beea84ead426d8067ed51294d"
+    },
+    {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\closeout_stage1_reanalysis\\connected_bonds.csv",
+      "sha256": "88ada1189fcd66aadc8a8f93a6644ccee98142fc559e8ffeb72d55ee6d1562fe"
+    },
+    {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\closeout_stage1_reanalysis\\summary.json",
+      "sha256": "223feb5551170bb5ccf2201929581331f9975f9af3979b26117d396240d4b313"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "negative_size_joint_evidence.svg",
+      "sha256": "51b1d5c3d28dccf197340d76412e1c9f8d51202646bfe53f243780ba6b098d8c"
+    },
+    {
+      "path": "negative_size_joint_evidence.pdf",
+      "sha256": "6c392e34de6dbdc7ea70cec479fc12038441a59dbbda99e91b737878064eab04"
+    },
+    {
+      "path": "negative_size_joint_evidence.png",
+      "sha256": "3b22aa75998068138c983fd047f01aec7e2f7ec4d63b18616d09e3677713447e"
+    },
+    {
+      "path": "negative_size_joint_evidence.tiff",
+      "sha256": "902d8a4f88dfd4aeae8e464fca3668665be161b2a08259c965cb01a236953c1a"
+    }
+  ],
+  "script_sha256": "0fd1a7e6a554c2d7a08c533eaf73e0848a0ea4c59cc4f77696540fc383ee955d",
+  "definitions": {
+    "entropy": "fixed f=.20 dual-start mean; envelope=f .10/.15/.20/.25 x two starts",
+    "gap": "finite OBC Sz1-Sz0; no inference of bulk gap",
+    "dimer": "RMS(B_b-B_(b+5)) with both bonds in [L/4,3L/4]",
+    "connected": "(-1)^r C_BB at r/N=.25, class0, both directions and starts",
+    "intervals": "sensitivity ranges, not statistical confidence intervals"
+  },
+  "limitations": [
+    "8/12/16 unit cells only",
+    "no bond-dimension sweep in this dataset",
+    "OBC gap may include edge effects",
+    "no new phase assigned"
+  ]
+}

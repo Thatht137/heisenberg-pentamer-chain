@@ -1,0 +1,12 @@
+q_over_pi,omega,intensity,relative_residual,source_run
+1.0,0.0,1.8189085796516546,0.0,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260806/round43_qpi_cv_lowfreq_desc_fetch_20260806_1815/cell-l40-qpi-lowfreq-desc
+1.0,0.05,1.8715182613818067,0.0,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260806/round43_qpi_cv_lowfreq_desc_fetch_20260806_1815/cell-l40-qpi-lowfreq-desc
+1.0,0.1,1.4773121205370505,0.0,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260806/round43_qpi_cv_lowfreq_desc_fetch_20260806_1815/cell-l40-qpi-lowfreq-desc
+1.0,0.15,1.1139411609076546,0.0,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260806/round43_qpi_cv_lowfreq_desc_fetch_20260806_1815/cell-l40-qpi-lowfreq-desc
+1.0,0.2,0.8094698103494653,0.0,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260806/round43_qpi_cv_lowfreq_desc_fetch_20260806_1815/cell-l40-qpi-lowfreq-desc
+1.0,0.25,0.5681807186981724,6.021249843402546e-06,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260802/round21_cv_triplet_warmstart/cell-0002-L40-qpi-w025-w035
+1.0,0.3,0.42688706828248535,5.5777823461512965e-06,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260802/round21_cv_triplet_warmstart/cell-0002-L40-qpi-w025-w035
+1.0,0.35,0.3680495733571379,5.2922021892823315e-06,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260802/round21_cv_triplet_warmstart/cell-0002-L40-qpi-w025-w035
+1.0,0.55,0.6241599252850262,6.487727921502834e-06,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804/cell-l40-qpi-high-055
+1.0,1.0,0.07580484466738491,1.9588527835941554e-06,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804/cell-l40-qpi-high-100
+1.0,1.5,0.2964545006903232,5.540316362540025e-06,D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260805/round40_qpi_cv_high150_fetch/cell-l40-qpi-high-150

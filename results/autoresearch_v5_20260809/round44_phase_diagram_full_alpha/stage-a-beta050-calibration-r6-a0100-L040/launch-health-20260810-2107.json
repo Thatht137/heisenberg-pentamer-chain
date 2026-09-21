@@ -1,0 +1,88 @@
+{
+  "schema_version": "negative-phase-launch-health-v1",
+  "batch_id": "stage-a-beta050-calibration-r6-a0100-L040",
+  "cell_id": "nega-r6-a0100-b0500-L040",
+  "retry_of": "nega-r5-a0100-b0500-L040",
+  "controller_action_id": "act-cd2b4353726834318d6b",
+  "parameters": {
+    "alpha": -0.1,
+    "beta": 0.5,
+    "L": 40,
+    "dmrg_sweeps": 64,
+    "initial_states": [
+      "center",
+      "ferro_j2"
+    ],
+    "maxdim": 800,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "q_count": 401,
+    "concurrency": 1
+  },
+  "strict_gates": {
+    "variance_per_site_max": 1e-8,
+    "truncation_error_max": 1e-9,
+    "sector_tolerance_max": 1e-8,
+    "thresholds_relaxed": false,
+    "fail_closed": true
+  },
+  "r5_precondition": {
+    "validation_pass": 1,
+    "validation_fail": 1,
+    "controller_success_total": 10,
+    "controller_failed_total": 1,
+    "controller_pending_total": 5,
+    "calibration_accepted_total": 5,
+    "failed_provenance_preserved": true
+  },
+  "upload": {
+    "confirmed": true,
+    "file_count": 16,
+    "remote_hash_check": "pass"
+  },
+  "prelaunch": {
+    "checked_at": "2026-08-10T21:06:40+08:00",
+    "other_julia_processes": 0,
+    "global_lock": "available",
+    "result": "pass"
+  },
+  "launch": {
+    "started_at": "2026-08-10T21:07:01+08:00",
+    "batch_pid": 797012,
+    "reported_cells": 1,
+    "reported_concurrency": 1,
+    "eta_minutes": {
+      "min": 15,
+      "max": 30
+    }
+  },
+  "startup_health": {
+    "checked_at": "2026-08-10T21:07:47+08:00",
+    "check_count": 1,
+    "status": "running",
+    "current_cell": "nega-r6-a0100-b0500-L040",
+    "current_initial_state": "center",
+    "phase": "dmrg_two_sectors",
+    "requested_sweeps": 64,
+    "completed_cells": [],
+    "batch_pid": 797012,
+    "cell_runner_pid": 797016,
+    "static_runner_pid": 797018,
+    "time_pid": 797027,
+    "julia_pid": 797028,
+    "julia_process_count": 1,
+    "julia_threads": 8,
+    "batch_rss_kib": 16000,
+    "cell_runner_rss_kib": 16640,
+    "batch_elapsed_seconds": 46,
+    "batch_stderr_bytes": 0,
+    "current_state_stderr_bytes": 0,
+    "result": "pass"
+  },
+  "monitoring": {
+    "no_additional_startup_poll": true,
+    "next_read_at": "2026-08-10T21:40:00+08:00",
+    "next_read_mode": "single_read_only_check"
+  },
+  "overall_status": "running_healthy"
+}

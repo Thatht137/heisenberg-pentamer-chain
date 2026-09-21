@@ -1,0 +1,16 @@
+{
+  "method": "exact_diagonalization_fixed_sz",
+  "alpha": 0.23,
+  "beta": 0.5,
+  "n_units": 2,
+  "L": 10,
+  "sector": "Sz=0",
+  "hilbert_dimension": 252,
+  "q_over_pi": 1.0,
+  "eta": 0.1,
+  "ground_energy": -2.645354491128436,
+  "source_norm_squared": 0.7282718352523129,
+  "sum_rule_weight": 0.728271835252313,
+  "peak_omega": 0.15000000000000002,
+  "integrated_weight": 0.6144464512649275
+}

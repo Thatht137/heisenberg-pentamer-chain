@@ -1,0 +1,10 @@
+group,alpha,beta,map_beta,role,sizes,required_observables,reuse_exact_beta_half
+1,0.025,0.1,0.0983,left,40;60;80,energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt,False
+1,0.05,0.1,0.0983,ridge,40;60;80,energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt,False
+1,0.075,0.1,0.0983,right,40;60;80,energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt,False
+2,0.05,0.5,0.5008,left,40;60;80,energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt,False
+2,0.075,0.5,0.5008,ridge,40;60;80,energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt,False
+2,0.1,0.5,0.5008,right,40;60;80,energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt,True
+3,0.075,0.9,0.9034,left,40;60;80,energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt,False
+3,0.1,0.9,0.9034,ridge,40;60;80,energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt,False
+3,0.125,0.9,0.9034,right,40;60;80,energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt,False

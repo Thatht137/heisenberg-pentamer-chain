@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "launch_ready": true,
+  "previous_failure_validated": true,
+  "practical_v2_ratified": true,
+  "cell_count": 65,
+  "concurrency": 1,
+  "stop_on_first_failure": true,
+  "offline": true,
+  "eta_hours": {
+    "low": 12,
+    "high": 22
+  },
+  "budget_counts": {
+    "32": 24,
+    "64": 41
+  },
+  "max_new_sweeps": 64,
+  "variance_per_site_max": 5e-08,
+  "boundary_thresholds_relaxed": false,
+  "bounded_physical_points": 1,
+  "run_spec_sha256": "9cd7e4638f1dd448dcc6439c93602e83246fc272ed096417a19ddfdc7c785fdf",
+  "source_hashes_sha256": "7061d54257eaf7e1ed4f86cc55b93a5007eae543efcfc32828e1c825e192a383",
+  "action_plan_sha256": "4529dd4435a81e60f8dd0ef455de466eb49eaad92766f7b995307d8be7ef8eee",
+  "accepted_index_sha256": "d0d1c2e35ede5e239ab3c0989beea4bd660f7f5c1197c2cae7d2e356548a1506",
+  "bounded_records_sha256": "df141bb9f5c784d60fdc29701b2db2813db712b4b09ea09800326817d63344eb",
+  "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+  "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c"
+}

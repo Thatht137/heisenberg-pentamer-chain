@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "fail",
+  "cell_count": 3,
+  "counts": {
+    "pass": 2,
+    "fail": 1
+  },
+  "rows": [
+    {
+      "cell_id": "nega-r3-a0250-b0500-L040",
+      "validator_status": "pass",
+      "exit_code": 0,
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r3-remaining13-20260810-1534\\validation\\nega-r3-a0250-b0500-L040.json",
+      "sha256": "be32216857ad43a8ced290387208041e77797d9381096b4275db64b4c793a49f"
+    },
+    {
+      "cell_id": "nega-r3-a0250-b0500-L060",
+      "validator_status": "fail",
+      "exit_code": 1,
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r3-remaining13-20260810-1534\\validation\\nega-r3-a0250-b0500-L060.json",
+      "sha256": "f811ca27c68ab72855fc3c8e08380a742d960e273641844eda0a3111c8958642"
+    },
+    {
+      "cell_id": "nega-r3-a0350-b0500-L080",
+      "validator_status": "pass",
+      "exit_code": 0,
+      "output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r3-remaining13-20260810-1534\\validation\\nega-r3-a0350-b0500-L080.json",
+      "sha256": "cc9776b16944bcd350694e71ba8a1cb660bf5185b0d96bd81fe6b8bd8868278e"
+    }
+  ]
+}

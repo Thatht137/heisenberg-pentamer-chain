@@ -1,0 +1,500 @@
+{
+  "schema_version": 1,
+  "stage": "C-Practical-V2-R1",
+  "canonical_action_index_mutated": false,
+  "actions": [
+    {
+      "action_id": "act-d9dffe860d7b4664d1ec",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.05,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a00500-b00500-L080/manifest.json"
+    },
+    {
+      "action_id": "act-d9b3c630f9694be341da",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.05,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a00250-b00500-L080/manifest.json"
+    },
+    {
+      "action_id": "act-9604320a2a69f627ddf0",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a01000-b01000-L080/manifest.json"
+    },
+    {
+      "action_id": "act-34ad04c3602593438740",
+      "params": {
+        "alpha": -0.075,
+        "beta": 0.1,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a00750-b01000-L060/manifest.json"
+    },
+    {
+      "action_id": "act-0531c6a97a0be5b00d22",
+      "params": {
+        "alpha": -0.075,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a00750-b01000-L080/manifest.json"
+    },
+    {
+      "action_id": "act-ba766280a106d07b8a72",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a00500-b01000-L080/manifest.json"
+    },
+    {
+      "action_id": "act-f8aa148bc25ca186d165",
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a02500-b02500-L080/manifest.json"
+    },
+    {
+      "action_id": "act-2015825a38b335040aef",
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a01750-b02500-L060/manifest.json"
+    },
+    {
+      "action_id": "act-e0276281f0ca4442cf05",
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a01750-b02500-L080/manifest.json"
+    },
+    {
+      "action_id": "act-2da40639f64fd24ffd55",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a01000-b02500-L080/manifest.json"
+    },
+    {
+      "action_id": "act-9a61f4918dfabd63a9a4",
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "momentum_reconstruction+two_sigma_ratio_sign",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a03500-b05000-L080/manifest.json"
+    },
+    {
+      "action_id": "act-8f0bf519b68c86bfea06",
+      "params": {
+        "alpha": -0.3,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "momentum_reconstruction+two_sigma_ratio_sign",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a03000-b05000-L060/manifest.json"
+    },
+    {
+      "action_id": "act-851b666ba8374701b1c7",
+      "params": {
+        "alpha": -0.3,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "momentum_reconstruction+two_sigma_ratio_sign",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a03000-b05000-L080/manifest.json"
+    },
+    {
+      "action_id": "act-6541365ee55e3d02fdbf",
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "momentum_reconstruction+two_sigma_ratio_sign",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a02500-b05000-L080/manifest.json"
+    },
+    {
+      "action_id": "act-81154595ea8d10610dcb",
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a07500-b07500-L080/manifest.json"
+    },
+    {
+      "action_id": "act-d44aebac8629418b0372",
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a06250-b07500-L060/manifest.json"
+    },
+    {
+      "action_id": "act-6ebc4883b0b570977f94",
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a06250-b07500-L080/manifest.json"
+    },
+    {
+      "action_id": "act-6b91b7c753fcd3144d3e",
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a05000-b07500-L080/manifest.json"
+    },
+    {
+      "action_id": "act-46ff31ae842f17ad04e8",
+      "params": {
+        "alpha": -0.425,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a04250-b07500-L060/manifest.json"
+    },
+    {
+      "action_id": "act-eda7079012f22379d679",
+      "params": {
+        "alpha": -0.425,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a04250-b07500-L080/manifest.json"
+    },
+    {
+      "action_id": "act-e3cac6456088207dd2a1",
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a03500-b07500-L080/manifest.json"
+    },
+    {
+      "action_id": "act-c814c489c30ef92b9268",
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a07500-b09000-L080/manifest.json"
+    },
+    {
+      "action_id": "act-01c8f544b84427ba4407",
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.9,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a06250-b09000-L060/manifest.json"
+    },
+    {
+      "action_id": "act-847bc38ecffe67296a54",
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a06250-b09000-L080/manifest.json"
+    },
+    {
+      "action_id": "act-7f6d2ed318b67d04abe1",
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a05000-b09000-L080/manifest.json"
+    },
+    {
+      "action_id": "act-a759a143436a01a57eae",
+      "params": {
+        "alpha": -0.75,
+        "beta": 1.0,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a07500-b10000-L080/manifest.json"
+    },
+    {
+      "action_id": "act-8e5d4f8eafa0007aba59",
+      "params": {
+        "alpha": -0.625,
+        "beta": 1.0,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a06250-b10000-L060/manifest.json"
+    },
+    {
+      "action_id": "act-7a9aee18fc9f6c44e449",
+      "params": {
+        "alpha": -0.625,
+        "beta": 1.0,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a06250-b10000-L080/manifest.json"
+    },
+    {
+      "action_id": "act-ccbf566d8709b6ad8778",
+      "params": {
+        "alpha": -0.5,
+        "beta": 1.0,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false,
+      "observation_status": "success",
+      "accepted": true,
+      "terminal_state": "validated",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a05000-b10000-L080/manifest.json"
+    }
+  ]
+}

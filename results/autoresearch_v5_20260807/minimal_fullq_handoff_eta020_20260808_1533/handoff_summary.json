@@ -1,0 +1,100 @@
+{
+  "schema_version": 1,
+  "status": "production_ready",
+  "created_at": "2026-08-08T07:37:33.471146+00:00",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "campaign_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_final_campaign_eta020",
+  "pairs": {
+    "uniform": {
+      "status": "pass",
+      "coarse": "fullq-uniform-dt025",
+      "refined": "fullq-uniform-dt0125",
+      "crosscheck": "uniform_dt_crosscheck.json",
+      "parameters": {
+        "alpha": 1.0,
+        "beta": 1.0,
+        "N_units": 8,
+        "L": 40
+      },
+      "diagnostics": {
+        "coarse_tstep": 0.025,
+        "refined_tstep": 0.0125,
+        "tmax": 30.0,
+        "global_peak_omega_coarse": 0.1,
+        "global_peak_omega_refined": 0.1,
+        "global_peak_delta": 0.0,
+        "qpi_peak_omega_coarse": 0.1,
+        "qpi_peak_omega_refined": 0.1,
+        "qpi_peak_delta": 0.0,
+        "low_weight_coarse": 56.00678969530616,
+        "low_weight_refined": 56.009208612280375,
+        "low_weight_relative_delta": 4.318970945083636e-05,
+        "normalized_rms": 0.0004962069267037719
+      }
+    },
+    "weak": {
+      "status": "pass",
+      "coarse": "fullq-weak-eta020-dt025",
+      "refined": "fullq-weak-eta020-dt0125",
+      "crosscheck": "weak_dt_crosscheck.json",
+      "parameters": {
+        "alpha": 1.0,
+        "beta": 0.1,
+        "N_units": 8,
+        "L": 40
+      },
+      "diagnostics": {
+        "coarse_tstep": 0.025,
+        "refined_tstep": 0.0125,
+        "tmax": 30.0,
+        "global_peak_omega_coarse": 0.02,
+        "global_peak_omega_refined": 0.02,
+        "global_peak_delta": 0.0,
+        "qpi_peak_omega_coarse": 0.02,
+        "qpi_peak_omega_refined": 0.02,
+        "qpi_peak_delta": 0.0,
+        "low_weight_coarse": 63.240230797841086,
+        "low_weight_refined": 63.23849935333028,
+        "low_weight_relative_delta": 2.737884553801895e-05,
+        "normalized_rms": 0.0002962042225816509
+      }
+    },
+    "agreement": {
+      "status": "pass",
+      "coarse": "fullq-agreement-eta020-dt025",
+      "refined": "fullq-agreement-eta020-dt0125",
+      "crosscheck": "agreement_dt_crosscheck.json",
+      "parameters": {
+        "alpha": 0.23,
+        "beta": 0.5,
+        "N_units": 8,
+        "L": 40
+      },
+      "diagnostics": {
+        "coarse_tstep": 0.025,
+        "refined_tstep": 0.0125,
+        "tmax": 30.0,
+        "global_peak_omega_coarse": 0.04,
+        "global_peak_omega_refined": 0.03,
+        "global_peak_delta": 0.010000000000000002,
+        "qpi_peak_omega_coarse": 0.04,
+        "qpi_peak_omega_refined": 0.03,
+        "qpi_peak_delta": 0.010000000000000002,
+        "low_weight_coarse": 74.46359105142378,
+        "low_weight_refined": 74.46212668279817,
+        "low_weight_relative_delta": 1.96655654787557e-05,
+        "normalized_rms": 0.00016426690248836696
+      }
+    }
+  },
+  "acceptance": {
+    "six_single_runs_pass": true,
+    "three_dt_pairs_pass": true
+  },
+  "failures": [],
+  "next": "仅 production_ready 时允许生成全动量论文图"
+}

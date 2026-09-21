@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "status": "bounded",
+  "production_ready": false,
+  "stage": "round43_validator",
+  "tag": "NotEvaluable",
+  "plan": {
+    "round43": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260805\\round41_qpi_cv_low005_retry_fetch_20260805_2212\\cell-l40-qpi-retry-005",
+    "base_runs": [
+      "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round21_cv_triplet_warmstart\\cell-0002-L40-qpi-w025-w035",
+      "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803\\round31_qpi_cv_extension_completed_cells_20260804\\cell-l40-qpi-high-055",
+      "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803\\round31_qpi_cv_extension_completed_cells_20260804\\cell-l40-qpi-high-100",
+      "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260805\\round40_qpi_cv_high150_fetch\\cell-l40-qpi-high-150"
+    ],
+    "tebd": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803\\round26_qpi_tebd_production\\cell-alpha023-qpi-dt00125-t30",
+    "accepted_output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260806\\round43_handoff_dryrun_failed005\\accepted11",
+    "crosscheck_output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260806\\round43_handoff_dryrun_failed005\\cross_method\\cross-method-check.json",
+    "expected_round43_omegas": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "scope": {
+      "negative_alpha_excluded": true,
+      "figure_9_excluded": true
+    }
+  },
+  "validator": {
+    "schema_version": 1,
+    "status": "fail",
+    "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260805\\round41_qpi_cv_low005_retry_fetch_20260805_2212\\cell-l40-qpi-retry-005",
+    "checks": {
+      "terminal_acceptance": false,
+      "checksums": true,
+      "positive_region": true,
+      "variance_per_site": true,
+      "dmrg_truncation": true,
+      "cv_residual": false,
+      "complete_spectrum": true,
+      "nonnegative_spectrum": true
+    },
+    "diagnostics": {
+      "variance_per_site": 2.611930227658377e-10,
+      "max_dmrg_truncation": 9.99645287244195e-11,
+      "max_cv_residual": 1.1767005759300015e-05,
+      "completed_points": 1.0,
+      "total_points": 1.0,
+      "point_files": 0
+    },
+    "failures": [
+      "run 未通过终态验收: {'status': 'success', 'accepted': False, 'started_at': '2026-08-05T12:09:36.119772+00:00', 'finished_at': '2026-08-05T13:28:11.206291+00:00', 'returncode': 0}",
+      "manifest.acceptance.status 不是 pass",
+      "max_cv_residual 未通过: 1.1767005759300015e-05",
+      "频点 residual 未通过: max=1.1767005759300015e-05"
+    ]
+  },
+  "reason": "round43 未通过独立 validator；禁止 accepted-only 组装"
+}

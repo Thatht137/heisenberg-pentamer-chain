@@ -1,0 +1,13 @@
+After sweep 1 energy=-16.796550580303045  maxlinkdim=21 maxerr=9.95E-11 time=43.636
+After sweep 2 energy=-16.80926889988188  maxlinkdim=40 maxerr=9.90E-11 time=1.203
+After sweep 3 energy=-16.81267442821621  maxlinkdim=48 maxerr=1.00E-10 time=0.986
+After sweep 4 energy=-16.814627500391627  maxlinkdim=52 maxerr=9.99E-11 time=1.281
+After sweep 5 energy=-16.81600134634719  maxlinkdim=59 maxerr=9.97E-11 time=0.991
+After sweep 6 energy=-16.816804806889422  maxlinkdim=67 maxerr=1.00E-10 time=1.039
+After sweep 7 energy=-16.81701691727511  maxlinkdim=71 maxerr=9.95E-11 time=1.089
+After sweep 8 energy=-16.817046807826408  maxlinkdim=72 maxerr=9.96E-11 time=1.031
+After sweep 9 energy=-16.817051041596397  maxlinkdim=78 maxerr=9.96E-11 time=1.033
+After sweep 10 energy=-16.817051492646993  maxlinkdim=83 maxerr=9.97E-11 time=1.052
+After sweep 11 energy=-16.817051501600425  maxlinkdim=81 maxerr=9.99E-11 time=1.021
+After sweep 12 energy=-16.817051501791475  maxlinkdim=82 maxerr=1.00E-10 time=1.030
+CELL_SUCCESS outdir=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/five_rounds_20260729/round3_convergence/cells/cell-0005

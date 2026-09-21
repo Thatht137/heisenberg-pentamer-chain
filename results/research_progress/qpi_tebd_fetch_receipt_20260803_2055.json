@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "fetched_at": "2026-08-03T13:08:28.431131+00:00",
+  "source": "wangjieren@39.96.207.180:/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round26_qpi_tebd_production",
+  "destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803\\round26_qpi_tebd_production",
+  "file_count": 26,
+  "total_bytes": 490122,
+  "overall_status_sha256": "d6201b5e7f2857f4532b27fd4ffa6a5295f36b1c20d5259c712e83a628a9f601",
+  "cells": {
+    "cell-alpha023-qpi-dt0025-t30": {
+      "status": "pass",
+      "checksums_sha256": "5e2d1c72f8020773a13d8dd95db86274c7962c3c40387bf65f24e1a0142b02cf",
+      "manifest_sha256": "35c62e4cfdb67cfab4012e92043acc654247518d7fa8ef34453db91bfed4c117"
+    },
+    "cell-alpha023-qpi-dt00125-t30": {
+      "status": "pass",
+      "checksums_sha256": "ad594b019729625332ccec7c4599ab1dddabceb85ddb34d047ff92415c89d8c0",
+      "manifest_sha256": "cd8263f33183c5e6ed2bac67a7c44705796e137cd3c60d351ee1180ecaced2a4"
+    }
+  },
+  "preview_sha256": "4e027b432fa2f82b45b8596f0d5ecb18d99c3ebba494a63317d68ef0138e2d85",
+  "non_clobbering": true,
+  "user_confirmed": true
+}

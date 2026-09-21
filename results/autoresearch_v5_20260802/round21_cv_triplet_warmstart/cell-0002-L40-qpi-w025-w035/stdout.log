@@ -1,0 +1,5 @@
+
+=== attempt 1 started 2026-08-02T08:33:18.831111+00:00 ===
+omega 0.3000 (2/3): S=4.26887068e-01 residual=5.578e-06 D=294
+omega 0.3500 (3/3): S=3.68049573e-01 residual=5.292e-06 D=305
+CV_DSF_RESUMABLE_SUCCESS outdir=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260802/round21_cv_triplet_warmstart/cell-0002-L40-qpi-w025-w035 completed=3/3

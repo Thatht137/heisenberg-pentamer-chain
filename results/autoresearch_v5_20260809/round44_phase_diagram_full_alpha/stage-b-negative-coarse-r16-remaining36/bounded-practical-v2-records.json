@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "count": 3,
+  "records": [
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.75,
+        "L": 60
+      },
+      "cell_id": "negb15-a0100-b0750-L060",
+      "sweeps": 64,
+      "status": "bounded/NotEvaluable",
+      "failed_gate": "nonnegative_gap",
+      "boundary_eligible": false,
+      "retry_allowed": false,
+      "validation_basis": "results/research_progress/stage_b_r15_negb15-a0100-b0750-L060_validation_practical_v2_20260903.json",
+      "validation_sha256": "3fdf93171243b97feafa3644ac2d69767fa7fe3d2d5100f3a846839c05435112",
+      "receipt": "results/research_progress/stage_b_r15_negb15-a0100-b0750-L060_fetch_receipt_20260903.json",
+      "receipt_sha256": "3ef201cd96be3317e6b5ebe4539eab50cce4df9f5fa6abd13c426c3f00959cf9"
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.25,
+        "L": 60
+      },
+      "cell_id": "negb14-a0050-b0250-L060",
+      "sweeps": 64,
+      "status": "bounded/NotEvaluable",
+      "failed_gate": "nonnegative_gap",
+      "boundary_eligible": false,
+      "retry_allowed": false,
+      "validation_basis": "results/research_progress/stage_b_r14_negb14-a0050-b0250-L060_validation_practical_v2_20260901.json",
+      "validation_sha256": "6a3e1d2f0c463d0d04f27b40191e5fec277bed0abd97a263c08a47c6b863fc4c",
+      "receipt": "results/research_progress/stage_b_r14_negb14-a0050-b0250-L060_fetch_receipt_20260901.json",
+      "receipt_sha256": "d0e5b47389eaa2cb271a4d09ba0de631d9f4eaf697a5c236258c387b17c1f8b9"
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.1,
+        "L": 40
+      },
+      "cell_id": "negb13-a0025-b0100-L040",
+      "sweeps": 64,
+      "status": "bounded/NotEvaluable",
+      "failed_gate": "nonnegative_gap",
+      "boundary_eligible": false,
+      "retry_allowed": false,
+      "validation_basis": "results/research_progress/stage_b_r13_negb13-a0025-b0100-L040_validation_practical_v2_20260831.json",
+      "validation_sha256": "30621b25de490b769bb2d637ca307b80457da54d702ebf2e52969286bc07950e",
+      "receipt": "results/research_progress/stage_b_r13_negb13-a0025-b0100-L040_fetch_receipt_20260831.json",
+      "receipt_sha256": "f25c1bcc7e09653c0fd942fb7e239e365cf0562c4ad90760805e60078fc1b160"
+    }
+  ],
+  "accepted_index_unchanged_by_bounded_records": true
+}

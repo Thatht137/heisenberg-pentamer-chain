@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "run_id": "pentamer-negative-alpha-independent-pilot-r1-20260913",
+  "scope": "six saved-state points testing a distinct phase; Fig.9 excluded",
+  "cells": [
+    {
+      "cell_id": "negdiag-a02500-b02500-L080",
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "negative-alpha-independent-pilot-r1",
+      "role": "before"
+    },
+    {
+      "cell_id": "negdiag-a01750-b02500-L080",
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "negative-alpha-independent-pilot-r1",
+      "role": "middle"
+    },
+    {
+      "cell_id": "negdiag-a01000-b02500-L080",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "negative-alpha-independent-pilot-r1",
+      "role": "after"
+    },
+    {
+      "cell_id": "negdiag-a06250-b07500-L080",
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "negative-alpha-independent-pilot-r1",
+      "role": "before"
+    },
+    {
+      "cell_id": "negdiag-a05000-b07500-L080",
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "negative-alpha-independent-pilot-r1",
+      "role": "middle"
+    },
+    {
+      "cell_id": "negdiag-a04250-b07500-L080",
+      "params": {
+        "alpha": -0.425,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "negative-alpha-independent-pilot-r1",
+      "role": "after"
+    }
+  ],
+  "settings": {
+    "method": "finite_dmrg_multistart_saved_state_enriched",
+    "boundary": "OBC",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim_by_L": {
+      "80": 1200
+    },
+    "nsweeps": 64,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "q_count": 401,
+    "init_modes": [
+      "center",
+      "ferro_j2"
+    ],
+    "variance_per_site_max": 5e-08,
+    "save_state": true,
+    "enriched_diagnostics": true,
+    "offline": true,
+    "execution": "direct SSH; concurrency=1; stop on first failed cell"
+  },
+  "acceptance": {
+    "numerical": "both starts pass variance, truncation, Sz, gap and checksum gates",
+    "required_files": [
+      "state_sz0.jld2",
+      "entropy_profile_full.csv",
+      "bond_bond_connected.csv"
+    ],
+    "phase_claim": "no new phase from q_peak alone; promote only after independent large-size signal"
+  },
+  "provenance": {
+    "negative_alpha_included": true,
+    "audit_sha256": "72adee082d9679036001db0262a0b4c8246fcfb8059ea6d6f04e5ce4a0ae5585",
+    "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "source_commit": "40f4179a5630039485370648edd9621f592c0449",
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "docs/negative_alpha_practical_convergence_standard_20260829.md": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+      "docs/negative_alpha_new_phase_audit_20260913.md": "17ad83328b3b8bb5db692f326b9f1803bc92960036884f71165c75b79cad7b71",
+      "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+      "scripts/autoresearch_v5/negative_static_cell.jl": "0363dbd631f8ad01ce7e6b0b3cf1489b55a157c834ac56919e38876a2d831c29",
+      "scripts/autoresearch_v5/run_negative_static_cell.py": "4e4698beec0de26a815220b4ad4fdbf8ec7f4891ef7da09b7210fe1438744729",
+      "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "502bf1b4fb1b9c1c2b7091930e0c4e1121c9a3ad03cc6f6c500e77bde176a48e",
+      "scripts/autoresearch_v5/run_negative_phase_structure_batch.py": "1ae4a38867c269832dd6afc57cfe59e9d8ed104f8a329d49dbff156ae3c9e003",
+      "scripts/autoresearch_v5/launch_negative_phase_independent_pilot.sh": "371378af75eee0522a6aa8b2df2d892617c912b7ec06eb319c270fc968fe569b"
+    },
+    "user_authorized_upload_and_launch": "2026-09-13",
+    "phase_label_assigned": false
+  }
+}

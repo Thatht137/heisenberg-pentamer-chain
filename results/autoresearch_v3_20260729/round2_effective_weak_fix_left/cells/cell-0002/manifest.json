@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "cell_id": "cell-0002",
+  "status": "success",
+  "params": {
+    "alpha": 0.23,
+    "beta": 0.02,
+    "N_units": 12,
+    "L": 60,
+    "target_sz": 1
+  },
+  "settings": {
+    "method": "finite_dmrg",
+    "boundary": "OBC",
+    "maxdim": 800,
+    "nsweeps": 64,
+    "cutoff": 1e-12,
+    "threads": 16,
+    "init_mode": "left"
+  },
+  "observables": {
+    "energy": -14.06278762614332,
+    "energy_density": -0.23437979376905535,
+    "total_sz": 1.0000000000000007
+  },
+  "diagnostics": {
+    "variance": 8.887468538887333e-11,
+    "variance_per_site": 1.4812447564812222e-12,
+    "actual_maxdim": 129.0,
+    "max_truncation_error": 9.998204124575267e-13,
+    "final_energy_change": 3.552713678800501e-14,
+    "peak_rss_kb": 1066180,
+    "algorithm_seconds": 177.94618105888367
+  },
+  "provenance": {
+    "hostname": "c104-ysu",
+    "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "julia_version": "1.12.3",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "negative_alpha_excluded": true,
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "scripts/autoresearch_v3/effective_sector_cell.jl": "0a830a085cae896b91da54b65df6358a8ea29aa498bb59f194d42ba6307c8763",
+      "scripts/autoresearch_v3/run_effective_sector_cell.py": "55f65a15a2aad6d79daf734494e5162403399ea541c32b2134aba976692e0219"
+    }
+  },
+  "timing": {
+    "started_at": "2026-07-29T13:40:29.902738+00:00",
+    "finished_at": "2026-07-29T13:44:13.303434+00:00"
+  },
+  "returncode": 0
+}

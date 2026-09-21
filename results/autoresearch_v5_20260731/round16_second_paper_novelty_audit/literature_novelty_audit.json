@@ -1,0 +1,53 @@
+{
+  "date": "2026-07-31",
+  "workflow": "multi-source-search fallback",
+  "provider": "OpenAlex metadata via nature-academic-search fallback",
+  "queries": [
+    "cluster spin chain Schrieffer-Wolff induced frustration",
+    "odd spin cluster chain effective next-nearest-neighbor exchange",
+    "pentamer Heisenberg chain effective Hamiltonian frustration",
+    "trimerized spin chain second order effective Hamiltonian next nearest neighbor",
+    "next-nearest-neighbor exchange trimerized Heisenberg spin chain Schrieffer-Wolff"
+  ],
+  "closest_related_works": [
+    {
+      "title": "Spin order and spin excitation spectra of spin-1/2 tetramer chains",
+      "year": 2026,
+      "doi": "10.1038/s41535-026-00855-x",
+      "relation": "参考论文；偶数 tetramer 的相与激发，不是奇数 pentamer 的二阶诱导 J2"
+    },
+    {
+      "title": "Fractional and composite excitations of antiferromagnetic quantum spin trimer chains",
+      "year": 2022,
+      "doi": "10.1038/s41535-021-00416-4",
+      "relation": "奇数 trimer 的复合激发；检索元数据未显示二阶诱导次近邻交换主线"
+    },
+    {
+      "title": "Quantum phase transition and composite excitations of antiferromagnetic spin trimer chains in a magnetic field",
+      "year": 2024,
+      "doi": "10.1038/s41535-024-00705-8",
+      "relation": "场下 trimer 相变与动力学；使用 cluster perturbation theory，但主题不同"
+    },
+    {
+      "title": "Magnetic cluster excitations",
+      "year": 2013,
+      "doi": "10.1103/RevModPhys.85.367",
+      "relation": "磁性团簇激发综述；提供方法背景"
+    },
+    {
+      "title": "Frustrated three-leg spin tubes: From spin 1/2 with chirality to spin 3/2",
+      "year": 2006,
+      "doi": "10.1103/PhysRevB.73.014409",
+      "relation": "团簇链中的挫折，但挫折来自几何与显式耦合，不是本项目的虚激发诱导机制"
+    }
+  ],
+  "direct_match_found": false,
+  "assessment": "未发现直接同类标题或摘要，但当前检索不是穷尽式新颖性证明。",
+  "limitations": [
+    "Scopus 与 Web of Science 未接入",
+    "只检查元数据与摘要片段，没有逐篇全文比较",
+    "中文数据库未检索",
+    "一般奇数团簇系列尚未完成"
+  ],
+  "decision": "值得保留为第二篇文章候选；完成一般奇数团簇推广、独立数值验证和全文文献审计前，不标记为可投稿。"
+}

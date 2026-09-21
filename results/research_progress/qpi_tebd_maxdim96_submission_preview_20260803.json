@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-03T13:16:50.923639+00:00",
+  "target": "wangjieren@39.96.207.180:6000",
+  "action": "preview_only",
+  "scope": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "L": 40,
+    "q_over_pi": 1.0,
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "run_root": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round28_qpi_maxdim96",
+  "cell_id": "qpi-alpha023-maxdim096-dt00125-t30",
+  "parameters": {
+    "method": "finite_dmrg_tebd_qpi_autocorrelation",
+    "boundary": "OBC",
+    "sector": "Sz=0",
+    "eta": 0.1,
+    "tstep": 0.0125,
+    "n_steps": 2400,
+    "tmax": 30.0,
+    "dmrg_maxdim": 96,
+    "tebd_maxdim": 96,
+    "nsweeps": 24,
+    "cutoff": 1e-10,
+    "threads": 8,
+    "omega_grid": [
+      0.0,
+      3.0,
+      0.05
+    ]
+  },
+  "resources": {
+    "nice": 10,
+    "julia_processes": 1,
+    "network_downloads": false,
+    "checkpoint_interval_steps": 100,
+    "estimated_wall_hours": [
+      0.13,
+      0.3
+    ],
+    "conservative_upper_hours": 0.5,
+    "basis": "L=40 refined actual maxdim=117, TEBD wall=664.6 s; D=96 lowers the active cap"
+  },
+  "safety": {
+    "preflight_reject_existing_run": true,
+    "preflight_reject_existing_julia": true,
+    "non_clobbering": true,
+    "offline_julia_packages": true,
+    "remote_write": false,
+    "requires_explicit_confirmation": true
+  },
+  "remote_conflict_checks": {
+    "run_root_exists": false,
+    "remote_script_exists": false,
+    "checked_read_only": true
+  },
+  "commands": {
+    "upload": "scp -P 6000 -i C:\\Users\\hh250\\.ssh\\id_ed25519 scripts/autoresearch_v5/run_qpi_tebd_maxdim96_remote.sh wangjieren@39.96.207.180:/home/wangjieren/code/1x5_Heisenberg_Pentamer/scripts/run_qpi_tebd_maxdim96_remote_20260803.sh",
+    "execute": "ssh -p 6000 -i C:\\Users\\hh250\\.ssh\\id_ed25519 wangjieren@39.96.207.180 bash /home/wangjieren/code/1x5_Heisenberg_Pentamer/scripts/run_qpi_tebd_maxdim96_remote_20260803.sh",
+    "post_run_read_only": "python scripts/autoresearch_v5/check_qpi_tebd_remote_status.py --output results/research_progress/qpi_tebd_remote_status_after_maxdim96.json --key C:/Users/hh250/.ssh/id_ed25519"
+  },
+  "script": {
+    "path": "scripts/autoresearch_v5/run_qpi_tebd_maxdim96_remote.sh",
+    "sha256": "2b446ed3920d21e274ba4004193fa56fc8ad222958e50362098418523de09b84",
+    "upload_files": 1
+  },
+  "post_run": [
+    "terminal manifest/status/checksums",
+    "local independent checksum",
+    "analyze_qpi_tebd_production.py --maxdim-dir",
+    "maxdim peak <=0.05 and integrated weight <=5%",
+    "update report.html"
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "campaign": "stage-a-beta050-calibration-r1",
+  "scope": "仅归档与验收 R1 终态证据；未写入 accepted observations/controller",
+  "remote_state": {
+    "status": "failed",
+    "completed_cells": 10,
+    "materialized_cells": 11,
+    "failed_cell": "nega-r1-a0350-b0500-L060"
+  },
+  "remote_checksum_audit": {
+    "correct_root": "stage-a-beta050-calibration-r1/cells",
+    "cell_directories": 11,
+    "child_directories": 22,
+    "checked_directories": 33,
+    "failed_directories": 0,
+    "record": "../r1-remote-checksum-audit-corrected-20260810-1113.txt",
+    "note": "首次在 R1 根目录使用 cell glob 得到 0 项；该空记录保留在 ../r1-remote-checksum-audit-20260810-1113.txt，随后依据 launcher 的 outdir/cells 布局修正。"
+  },
+  "fetch": {
+    "preview_pass": 11,
+    "confirmed_fetch_pass": 11,
+    "local_checksum_receipts_pass": 11,
+    "non_clobbering_receipts": 11,
+    "cells_directory": "cells",
+    "previews_directory": "previews",
+    "receipts_directory": "receipts"
+  },
+  "validation": {
+    "validator": "scripts/autoresearch_v5/validate_negative_phase_run.py",
+    "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r1/parameter-scan.run_spec.json",
+    "evaluated": 11,
+    "pass": 10,
+    "fail": 1,
+    "accepted_candidate_count": 10,
+    "written_to_controller": 0,
+    "outputs_directory": "validation"
+  },
+  "failed_cell_audit": {
+    "cell_id": "nega-r1-a0350-b0500-L060",
+    "params": {
+      "alpha": -0.35,
+      "beta": 0.5,
+      "L": 60
+    },
+    "parent": {
+      "status": "failed",
+      "accepted": false,
+      "only_false_acceptance_gate": "children_accepted"
+    },
+    "children": {
+      "center": {
+        "status": "success",
+        "accepted": false,
+        "only_false_acceptance_gate": "variance_sz0_per_site_le_1e-8",
+        "variance_per_site_sz0": 1.2442597115599104e-08,
+        "variance_per_site_sz1": 4.134600809872306e-11,
+        "final_truncation_error_sz0": 9.986219228421681e-12,
+        "final_truncation_error_sz1": 9.89401203573618e-12,
+        "total_sz0": -2.220446049250313e-16,
+        "total_sz1": 1.0000000000000004,
+        "actual_maxdim_sz0": 237,
+        "actual_maxdim_sz1": 168
+      },
+      "ferro_j2": {
+        "status": "success",
+        "accepted": false,
+        "only_false_acceptance_gate": "variance_sz0_per_site_le_1e-8",
+        "variance_per_site_sz0": 1.414029876893134e-08,
+        "variance_per_site_sz1": 4.134600809872306e-11,
+        "final_truncation_error_sz0": 9.989663960869605e-12,
+        "final_truncation_error_sz1": 9.89401203573618e-12,
+        "total_sz0": -3.4139358007223564e-15,
+        "total_sz1": 1.0000000000000004,
+        "actual_maxdim_sz0": 236,
+        "actual_maxdim_sz1": 168
+      }
+    },
+    "cross_start": {
+      "energy_sz0_half_range": 3.92849172214937e-06,
+      "dominant_structure_factor_ratio_half_range": 0.0018999339695772166
+    },
+    "failed_numeric_gate_count": 2,
+    "unique_failed_gate": "variance_sz0_per_site_le_1e-8",
+    "recommended_declared_retry": "仅重算该 cell，32 -> 64 sweeps；门槛保持 1e-8，不覆盖 R1 证据。"
+  }
+}

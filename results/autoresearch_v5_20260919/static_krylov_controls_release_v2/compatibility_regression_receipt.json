@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "generated_at_utc": "2026-09-19T15:53:51.7524007Z",
+  "test_file": "scripts/autoresearch_v5/test_static_krylov_crlf_compat.py",
+  "command": "D:/Python3.12.4/python.exe -B -X utf8 -m unittest scripts.autoresearch_v5.test_static_krylov_crlf_compat -v",
+  "observed": {
+    "tests_run": 3,
+    "tests_passed": 3,
+    "tests_failed": 0,
+    "tests_skipped": 0,
+    "elapsed_seconds": 1.602,
+    "return_code": 0,
+    "summary": "Ran 3 tests in 1.602s; OK"
+  },
+  "coverage": [
+    "临时 fixture 真实 sha256sum：CRLF 归一化后 2 项通过，篡改清单返回非零并被拒绝",
+    "兼容 launcher 限定 diff：仅 CRLF 处理、两处 awk 末尾 CR 清理及原 launcher SHA 断言",
+    "manifest 72 entries/SHA e0dedb571cb265817f537de63e2bd107369c23fcb12326099c008ef55392efb4 保持不变",
+    "wheel 未重新下载且不存在；dependency_evidence.json 保留并保持 SHA 588c3c2792fa4a0c6310bb680270eeb319b6d5459bbb96aaba49fe4448177d34"
+  ],
+  "production_safety": {
+    "production_launcher_executed": false,
+    "julia_executed": false,
+    "remote_operation": false,
+    "wheel_downloaded": false,
+    "original_upload_receipt_preserved": true,
+    "original_launch_receipt_preserved": true,
+    "compatibility_preflight_receipt_preserved": true,
+    "compatibility_upload_blocked_preserved": true
+  }
+}

@@ -1,0 +1,458 @@
+{
+  "analyzed_points": 12,
+  "planned_points": 12,
+  "fits": 192,
+  "finite_size_comparison_ready": true,
+  "phase_assigned": false,
+  "statuses": [
+    {
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "analyzed"
+    },
+    {
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "analyzed"
+    },
+    {
+      "params": {
+        "alpha": -0.15,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "analyzed"
+    },
+    {
+      "params": {
+        "alpha": -0.15,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "analyzed"
+    },
+    {
+      "params": {
+        "alpha": -0.15,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "analyzed"
+    },
+    {
+      "params": {
+        "alpha": -0.125,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "analyzed"
+    },
+    {
+      "params": {
+        "alpha": -0.125,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "analyzed"
+    },
+    {
+      "params": {
+        "alpha": -0.125,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "analyzed"
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "analyzed"
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "analyzed"
+    },
+    {
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 80
+      },
+      "status": "analyzed"
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 80
+      },
+      "status": "analyzed"
+    }
+  ],
+  "sources": [
+    {
+      "manifest": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01750-b02500-L040\\manifest.json",
+      "sha256": "225a786a3162259b0b12d262088e2114743bfa63c62928a0406d683f582d3dcd"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01750-b02500-L040\\start_center\\entropy_profile_full.csv",
+      "sha256": "5a221f45fb44a000ea841752160a63e4d8b771a947221d0b05a07ad96013998c"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01750-b02500-L040\\start_center\\bond_bond_connected.csv",
+      "sha256": "2e79850556c4cc9bfc2fd6913ac9580407be3ef700aea5c130daa992f0ff40f6"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01750-b02500-L040\\start_center\\bond_correlations.csv",
+      "sha256": "95100d32d4a64c223cccdcbe28c8088d5379396f4d26cf58b9e55debfa3f20b1"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01750-b02500-L040\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "510d2af4e6e309e7133681492b5571f1c6450cf4382e3ba20839b6e447b5d03c"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01750-b02500-L040\\start_ferro_j2\\bond_bond_connected.csv",
+      "sha256": "e646bd62208ccbc539260fce08443a33b61216ae99714a8218dd632d69bcdc48"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01750-b02500-L040\\start_ferro_j2\\bond_correlations.csv",
+      "sha256": "be170e95c34c4e5a323a63994a8015362be55a2b5681c9e1f192a6a44ae8198d"
+    },
+    {
+      "manifest": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01750-b02500-L060\\manifest.json",
+      "sha256": "52ac30ed548035afc2005d1c0ac1b40e6148556f7ce4bac405461e05e314acd7"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01750-b02500-L060\\start_center\\entropy_profile_full.csv",
+      "sha256": "e232faf50ebd620298a9884c490809fae3b3cf6af8ea97c7d5c0bff4208b0517"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01750-b02500-L060\\start_center\\bond_bond_connected.csv",
+      "sha256": "757ca6d671b0a70071ab8dee53459a5d1169b3e79b71b5ff2a54cdf71a71cdc5"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01750-b02500-L060\\start_center\\bond_correlations.csv",
+      "sha256": "94e651c9e032136e2e48603f125033f7d79af2bbe6c95b34cd96e2c3dbca95de"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01750-b02500-L060\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "6ad7f1fe7d492773c61e435a69541fbc4b37617a150be048c7374bee5f35d759"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01750-b02500-L060\\start_ferro_j2\\bond_bond_connected.csv",
+      "sha256": "5ef4390cea0817c219341cef3a842b59a9d856da300816245864556aafc435ba"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01750-b02500-L060\\start_ferro_j2\\bond_correlations.csv",
+      "sha256": "d95e975912e7dffa5a7057ebb885f9a40fddd2f543212b1cccbffd445c70f2e8"
+    },
+    {
+      "manifest": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L040\\manifest.json",
+      "sha256": "0e3bebf6afabbab5a5547317bda2bb0601f90af4006e6c039505120526fc3f09"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L040\\start_center\\entropy_profile_full.csv",
+      "sha256": "dc22cab71290651a47adc997c92ea4511b1787d8641516b767fd976ed8da76ad"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L040\\start_center\\bond_bond_connected.csv",
+      "sha256": "b83827e87fd3a01bc1913d9e866e56a2dc4bbb2bc7648bff683311bf0177ee1c"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L040\\start_center\\bond_correlations.csv",
+      "sha256": "aa364b39fc91bf9d64b50b905141d900f41805f857604444e132b0edc283ab01"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L040\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "97e0feaa560b239c8d827d377c2af748d471ae6f0fa44832736a6de01e219956"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L040\\start_ferro_j2\\bond_bond_connected.csv",
+      "sha256": "4a7ec75df04e2c0b00d28007e8de9baf16a9bf60824f5527e9383010d9da7b29"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L040\\start_ferro_j2\\bond_correlations.csv",
+      "sha256": "0591b32d7a56d327d15239b565d9e0cdc18c8454c7c8a77b6bbffd1cf6b3b87f"
+    },
+    {
+      "manifest": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L060\\manifest.json",
+      "sha256": "c02a6dc0287b2ef21067a0cf501be24755485e7272b652fbca0ff7b6bfd7197c"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L060\\start_center\\entropy_profile_full.csv",
+      "sha256": "89abdd2d54a24e17c7cdb465bd2fe1ac5f75c5f6d76a4837e59933b590d51000"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L060\\start_center\\bond_bond_connected.csv",
+      "sha256": "7f65e3025d439aa0202523a5d66d19b97c383b8ddc2dd6994a5f095238b63c48"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L060\\start_center\\bond_correlations.csv",
+      "sha256": "f83b47e390cfd455af3177b1e21c1053942eadefe7e687845bfcb9fab993871d"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L060\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "06db35c06c61d1280bf8c56d5db754df855ff4ed11b11161a810ab08b02e0ce3"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L060\\start_ferro_j2\\bond_bond_connected.csv",
+      "sha256": "c33f5a792d6afc772e186b8bce35d3e47232e6c10be1458aa202946d28e3c942"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L060\\start_ferro_j2\\bond_correlations.csv",
+      "sha256": "2020c6ec4e0d0a8094300953eda9db677389927fa02f1f7c46979d470d5f7277"
+    },
+    {
+      "manifest": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L080\\manifest.json",
+      "sha256": "5745c11adecd672892dbabee9df68be83ff2654ec008535a3f6bf16bbf9e3e28"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L080\\start_center\\entropy_profile_full.csv",
+      "sha256": "bf3bd24c8910026bb847555a1c98de91bcfcb08f8dca404b22dd1907fadc5099"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L080\\start_center\\bond_bond_connected.csv",
+      "sha256": "d2694c6f89e56e343686b5636174dd64a1d32763699569ee07e6ac4561724355"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L080\\start_center\\bond_correlations.csv",
+      "sha256": "5b3c01192a1337ee6aec72b5efdf6c45043f2b2594e8aec27949bd3ab383eca4"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L080\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "5fffe37704bc5e5229358a47a4590a084d59c4a0e39aab03319633741dbcf3c7"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L080\\start_ferro_j2\\bond_bond_connected.csv",
+      "sha256": "69f662c5a9e6776aa59106905e55b476d6eb6718991b6a2d4f19c801c4fa5692"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L080\\start_ferro_j2\\bond_correlations.csv",
+      "sha256": "6aeac01255221dd2616e0776b62684d5cf94b7f598fcda472e4aa9d164338b6e"
+    },
+    {
+      "manifest": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L040\\manifest.json",
+      "sha256": "9a005fb2a1484008459647b5361f0010d143d1168f6813216486be704de75eec"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L040\\start_center\\entropy_profile_full.csv",
+      "sha256": "2c863cd5a20289dcdb07d455bc3d381261df7a0ea66dfa93abe41fc6290d42b4"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L040\\start_center\\bond_bond_connected.csv",
+      "sha256": "d4d073aea5ee66d762075cce732bab022d9d890a9033ffc77de519c535610ea7"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L040\\start_center\\bond_correlations.csv",
+      "sha256": "ebe9d1ae04b6dc7e5bc21318aaa380d6556f4af324302785a2539e8a4d556f33"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L040\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "ae764472e2135fc1afa983ef4f700294dc5fe2d465182ce48a0dba794efc1e38"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L040\\start_ferro_j2\\bond_bond_connected.csv",
+      "sha256": "8ff0af82624fec4aaed94759da1260aae20560013b4a992c99ac215661114e94"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L040\\start_ferro_j2\\bond_correlations.csv",
+      "sha256": "e492f2ed2c3e479ca7f40bc71b57f4dffafae9c091a87a4ca0e31db0a0f874f6"
+    },
+    {
+      "manifest": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L060\\manifest.json",
+      "sha256": "37d697260cd0e2dc34c07642c8eb296fc941a9bdd64b77ae8aaf0a88dd5c0a17"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L060\\start_center\\entropy_profile_full.csv",
+      "sha256": "b7ec8ce6a17c3170be21661dc8f2a259074f8bff8923818735675430bf7af876"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L060\\start_center\\bond_bond_connected.csv",
+      "sha256": "67c94e191d1054af3b70c85e477173bb30befe7f3df2ca9b021448a3bcc9706f"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L060\\start_center\\bond_correlations.csv",
+      "sha256": "a181cd6f365fb23e021adeee41b5f0c7b81371dacf07090b1402f2c513a9ffa0"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L060\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "7efd3c7bfa2e2e69943c0e056ccb6b13abb96cbe1debe896dd37a7f2442cb097"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L060\\start_ferro_j2\\bond_bond_connected.csv",
+      "sha256": "8898fa9b6b1f0bebd13565d8137a9f65947fb64f02f4b0f1c3f80a148fb30780"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L060\\start_ferro_j2\\bond_correlations.csv",
+      "sha256": "173873aecb01079715cd044c20a0e88b762edbb84dfc0b06300162a10af76564"
+    },
+    {
+      "manifest": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L080\\manifest.json",
+      "sha256": "640409ecaabe5d3eab1e935c03aa97d756d3d951c3ba1b51fa5538f70b7045ce"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L080\\start_center\\entropy_profile_full.csv",
+      "sha256": "584c2e84182f2e4d664e39b8279b6d6ce74567af6a2e09ff931538cdd241cefb"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L080\\start_center\\bond_bond_connected.csv",
+      "sha256": "665b6ea37752ebab71cff9b27cd6298915126a2cda4e71b1e2f5937f50238c1c"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L080\\start_center\\bond_correlations.csv",
+      "sha256": "5a83bba66d446f023d81fc12e0300f15edbd867665a4832abb09f80ae08f23f9"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L080\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "cdf2b181f5952dc96ce2b93df72ced84239492ce237f09d4985cee12cc98d2e3"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L080\\start_ferro_j2\\bond_bond_connected.csv",
+      "sha256": "3cb709039a284adfd453af1ea2dce2aa85afe37fa66a77fc6fc6341e158c9d5b"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01250-b02500-L080\\start_ferro_j2\\bond_correlations.csv",
+      "sha256": "6b12ada0c45fc08a01187f5eab19d1196644f8209130078cb7e139d3c39fd0e4"
+    },
+    {
+      "manifest": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01000-b02500-L040\\manifest.json",
+      "sha256": "6c0e127b4407f85af7a8688b18081efbb64a170a0edafc6f44666301152c23a2"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01000-b02500-L040\\start_center\\entropy_profile_full.csv",
+      "sha256": "f62f060789b6213c356a5d1966e45a6eb48ee46503e34aea34eeef692018026c"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01000-b02500-L040\\start_center\\bond_bond_connected.csv",
+      "sha256": "a6cf73ad3b94365dae63b1cf5ebfd63cd193a0f55b2f6fa08c2c1cc61f899f64"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01000-b02500-L040\\start_center\\bond_correlations.csv",
+      "sha256": "4ba9850ed896e6c8ec5b3cb23e60c006ebffa903e538a73bdd865cc7fd56515a"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01000-b02500-L040\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "0c3f781fd9ad74bbc40c0baac8cc29ded0d3be4b7a0aadcc3844af8236bdbee0"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01000-b02500-L040\\start_ferro_j2\\bond_bond_connected.csv",
+      "sha256": "e9ad0e4786b1cb89739ae3197f3d39d653aaeb4d44bc5c76bc648666f86f8f7c"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01000-b02500-L040\\start_ferro_j2\\bond_correlations.csv",
+      "sha256": "eb35553d83d5bee8805d594ffa9eb5aca71446c078d72c8c48ebb7e5f6a0b73b"
+    },
+    {
+      "manifest": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01000-b02500-L060\\manifest.json",
+      "sha256": "b6218efb40b56f8cea261db377250bfc4339dafecb62735bd0cfd49f03eea358"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01000-b02500-L060\\start_center\\entropy_profile_full.csv",
+      "sha256": "7c2f5b72464d0918b358176ecde605b386e4531b5001ce3c4c43ae115292db3c"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01000-b02500-L060\\start_center\\bond_bond_connected.csv",
+      "sha256": "25b8fb42a248d74f9decb673be19b785500fb4c1235f883a15b349fa7cb952a1"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01000-b02500-L060\\start_center\\bond_correlations.csv",
+      "sha256": "367c807cdd7242a07e0ba1e77698aabfc175ac292280a8e1406529b942e1f110"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01000-b02500-L060\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "5e9997823849fe06d334524ab60ae025723e2742210343c2d0b827eecabe7a4b"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01000-b02500-L060\\start_ferro_j2\\bond_bond_connected.csv",
+      "sha256": "fd0fd900031593fb580d05cb467052b7b5afd98f1a04e805c5edb7298e4b8cac"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01000-b02500-L060\\start_ferro_j2\\bond_correlations.csv",
+      "sha256": "8ac570827e824e8ba6d7fc71b573546cfe552a363a9c9f4b3cbe7f00c4d7ccb5"
+    },
+    {
+      "manifest": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\manifest.json",
+      "sha256": "15f2efce34332d4ab3e879fa35b3e8bbc35f3e4b8e6a7e9a83634d6a8d8162e6"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\entropy_profile_full.csv",
+      "sha256": "ed7f9349744ef9a265d7d71510b931f3f5704ed4010059026b51b88e0dcd6082"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\bond_bond_connected.csv",
+      "sha256": "8fdda49a760c4c22f1bf8ce5c97c2ed32a70631c60c85aa08a3e379ecccb840c"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\bond_correlations.csv",
+      "sha256": "12f356c9c21182b62cc806a84fe4cf0b9eecd92d58bf5b3cea235619a4e11fd3"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "f7bf08e3f912771d02d9145c191112f6f79d8e76d083e5c954a2a5a2e71319a5"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\bond_bond_connected.csv",
+      "sha256": "605431185c3ff53a25eaad2588956c1fba6da2ab6ab6658944cbb992aeda968f"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\bond_correlations.csv",
+      "sha256": "a1387dd4cf29d215b19750f300e3a241da3c65fbd3799d542218e1d214633908"
+    },
+    {
+      "manifest": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\manifest.json",
+      "sha256": "536ca5a6eed77153fb3ea483e60a7fbbe5cc3140d8d04a803bcc203aaceed0d7"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\entropy_profile_full.csv",
+      "sha256": "b3d85aec894913011ccaec673f03d8495985914fa5ec0a8c242d23c70670cc1f"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\bond_bond_connected.csv",
+      "sha256": "ffaa3accf8f9f9bdac6df77445ca4e5d824a188621415cda977ce1784813e412"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\bond_correlations.csv",
+      "sha256": "62cf41307a87f4810d16bf1198f675b8a9bbc2e938ff9daaed9cf7c66888c1d9"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\entropy_profile_full.csv",
+      "sha256": "e5d3279549dbbf5c2a4bffc8aeb3f8f6355a3399243ddabebc64d5991a5d9f81"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\bond_bond_connected.csv",
+      "sha256": "b52070eb22f329763982b2ba7512e3ab9de7a8eb1b17153ef91a76ffb7169bc6"
+    },
+    {
+      "profile": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\bond_correlations.csv",
+      "sha256": "1a47a580fd94ee78a2df01f482eca9230b21c1e24e641b6b99d60fc47d8f0370"
+    }
+  ],
+  "limitations": [
+    "single-size entries do not establish scaling",
+    "c_eff is diagnostic, not thermodynamic central charge",
+    "window and start ranges are not confidence intervals"
+  ]
+}

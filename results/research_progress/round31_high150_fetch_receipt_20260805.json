@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "fetched_at": "2026-08-05T21:20:00+08:00",
+  "source": "wangjieren@39.96.207.180:/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension/cell-l40-qpi-high-150",
+  "destination": "D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260805/round40_qpi_cv_high150_fetch/cell-l40-qpi-high-150",
+  "non_clobbering": true,
+  "destination_absent_before_fetch": true,
+  "remote_checksum": "pass",
+  "local_checksum": "pass",
+  "file_count": 11,
+  "total_bytes": 16499,
+  "checksums_sha256": "bc4b9f0ce5201f6a1141114f0e4ee4c684f4805c1884a60456e62f47342e5087",
+  "manifest_sha256": "ada854ee1dfae7ef053e714cfa70eac27496858f2638d05d193a0050ab4e593d",
+  "spectrum_sha256": "d5ad7eabae2208cc484616e9b35c9cd9bad8bdcd635250a55438b475fd7d14d3",
+  "validator": "results/research_progress/round31_high150_validator_20260805.json",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

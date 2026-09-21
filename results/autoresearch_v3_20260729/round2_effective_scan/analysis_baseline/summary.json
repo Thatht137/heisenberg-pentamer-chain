@@ -1,0 +1,18 @@
+{
+  "cells": 36,
+  "physical_points": 18,
+  "all_cells_pass": false,
+  "max_variance_per_site": 6.804997028098115e-08,
+  "max_truncation_error": 9.999665903539551e-12,
+  "small_beta_energy_residual_power": {
+    "8": 1.9482734267470205,
+    "12": 1.9496143507847392,
+    "16": 1.957795859299378
+  },
+  "small_beta_gap_ratio_mean": 1.048380650231669,
+  "beta_020_gap_ratio_mean": 0.7300314750184378,
+  "claim_gate": {
+    "second_order_residual": true,
+    "small_beta_gap_within_10_percent": true
+  }
+}

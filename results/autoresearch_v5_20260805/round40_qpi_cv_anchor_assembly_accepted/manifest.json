@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "status": "success",
+  "accepted": true,
+  "params": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "L": 40,
+    "q_over_pi": 1.0,
+    "omega_min": 0.2,
+    "omega_max": 1.5,
+    "omega_points": 7
+  },
+  "settings": {
+    "method": "validated_sparse_correction_vector_anchors",
+    "eta": 0.1,
+    "boundary": "OBC",
+    "sector": "Sz=0",
+    "momentum_normalization": "1/sqrt(L)"
+  },
+  "acceptance": {
+    "status": "pass",
+    "checks": {
+      "source_runs_accepted": true,
+      "source_checksums": true,
+      "same_instance": true,
+      "unique_omega": true,
+      "finite": true,
+      "nonnegative": true,
+      "residual": true
+    }
+  },
+  "coverage": {
+    "sparse_only": true,
+    "main_peak_bracketed": false,
+    "major_weight_window_covered": false
+  },
+  "provenance": {
+    "sources": [
+      {
+        "run": "D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260730/round3_cv_L40_probe/cell-0001-L40-qpi-w020",
+        "manifest_sha256": "543f3aa7f11dc524afff46d33a1e8d5ed8b55ee067861591d1ee67a495323418",
+        "spectrum_sha256": "3a9a4d5641c86fcd037542f60e1e55126fd9fa5a5001dc312af33b3a0dabdef8",
+        "checksums_sha256": "a5950fa2c92822ce8c2cbce6b5b6fab92fe1f07a20aee374ac4c19c55badd709"
+      },
+      {
+        "run": "D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260802/round21_cv_triplet_warmstart/cell-0002-L40-qpi-w025-w035",
+        "manifest_sha256": "3296943dc08ea0610b4098dd1e6344964b0a88892e0d8b8ec677ffd02f079639",
+        "spectrum_sha256": "08f1cb69c4cdedf7c7d3036d838e8abe2438d053fab29f0f57343e80154c1d34",
+        "checksums_sha256": "d8c1016191cc7b20beac94ad6384159111050f60a51b232adfda143e4f8cd8e0"
+      },
+      {
+        "run": "D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804/cell-l40-qpi-high-055",
+        "manifest_sha256": "7bbce3cf98a879a94c361320f2df1f71fa1ade507f776222200714727461832a",
+        "spectrum_sha256": "0b164f5ad838eae172e99d8e4f5d1612e618193c1abf0aea2a229e8f5f439dbc",
+        "checksums_sha256": "f2971f27987cedf669ae6ef22f887c46d6b26cb9441120ee59c51bd4dd183283"
+      },
+      {
+        "run": "D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804/cell-l40-qpi-high-100",
+        "manifest_sha256": "5f43d90192fcd5f3a40d02cfb9956397c5b1934bb047b0b8a7c5c854cb749c94",
+        "spectrum_sha256": "d400bec1a6e28f62ed13209957124749d2d2d3adb54eca5b82447f57ee0c7834",
+        "checksums_sha256": "771a6ad71c4c4e92059236c838775414fe04ef94cf6c23d93d6ba72bb9a404fd"
+      },
+      {
+        "run": "D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260805/round40_qpi_cv_high150_fetch/cell-l40-qpi-high-150",
+        "manifest_sha256": "ada854ee1dfae7ef053e714cfa70eac27496858f2638d05d193a0050ab4e593d",
+        "spectrum_sha256": "d5ad7eabae2208cc484616e9b35c9cd9bad8bdcd635250a55438b475fd7d14d3",
+        "checksums_sha256": "bc4b9f0ce5201f6a1141114f0e4ee4c684f4805c1884a60456e62f47342e5087"
+      }
+    ],
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-08-03T13:14:26+08:00",
+  "host": "39.96.207.180:6000",
+  "user": "wangjieren",
+  "anchor": {
+    "driver_pid": 3745209,
+    "julia_pid": 3745217,
+    "status": "running",
+    "elapsed": "16:20:24",
+    "cpu_percent": 1620,
+    "threads": 8,
+    "points_completed": 0,
+    "stderr_empty": true,
+    "output_files": ["ground_state.jld2", "source_state.jld2"]
+  },
+  "server": {
+    "cpu_cores": 80,
+    "memory_total_gib": 251,
+    "memory_available_gib": 240,
+    "load_average": [26.27, 19.76, 16.89],
+    "uptime_days": 93
+  },
+  "supervisor": {
+    "status": "waiting_for_anchor",
+    "tebd_status_json_present": false
+  },
+  "decision": "不启动额外 Julia；等待 anchor 终态后由 supervisor 自动接 TEBD；空闲核用于后续接续和本地离线分析",
+  "scope": {
+    "negative_alpha_excluded": true,
+    "reference_fig9_excluded": true
+  }
+}

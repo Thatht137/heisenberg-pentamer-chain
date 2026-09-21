@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803\\round31_qpi_cv_extension_completed_cells_20260804\\cell-l40-qpi-high-055",
+  "checks": {
+    "terminal_acceptance": true,
+    "checksums": true,
+    "positive_region": true,
+    "variance_per_site": true,
+    "dmrg_truncation": true,
+    "cv_residual": true,
+    "complete_spectrum": true,
+    "nonnegative_spectrum": true
+  },
+  "diagnostics": {
+    "variance_per_site": 2.611944438513092e-10,
+    "max_dmrg_truncation": 9.99645287244195e-11,
+    "max_cv_residual": 6.487727921502834e-06,
+    "completed_points": 1.0,
+    "total_points": 1.0,
+    "point_files": 0
+  },
+  "failures": []
+}

@@ -1,0 +1,168 @@
+{
+  "verdict": "stable_reconnaissance_ridge",
+  "scope": "alpha>=0,beta>=0",
+  "source_role": "reconnaissance_only",
+  "source_sha256": "7ad40b7b206a1fbe85dc82f8c0cebd20e90aeb9bc03a918ad9fcc19860a39175",
+  "grid": {
+    "alpha_count": 40,
+    "beta_count": 60,
+    "point_count": 2400,
+    "alpha_range": [
+      0.025,
+      1.0
+    ],
+    "beta_range": [
+      0.05,
+      1.0
+    ]
+  },
+  "method": {
+    "smoothing_scales_cells": [
+      0.0,
+      0.6,
+      1.0,
+      1.4
+    ],
+    "ridge_axis": "maximum local abs(dO_str/dalpha) for alpha<=0.30",
+    "beta_neighborhood_rows": 2,
+    "selection": "three beta anchors, each bracketed by one alpha grid step"
+  },
+  "anchors": [
+    {
+      "group": 1,
+      "requested_beta": 0.1,
+      "map_beta": 0.0983,
+      "ridge_alpha": 0.05,
+      "consensus_fraction": 0.9,
+      "target_scale_span": 0.0,
+      "gradient_to_row_median": 14.44599696479437,
+      "gradient_to_row_peak": 1.0,
+      "interpretation": "candidate_cross_over_scale_not_phase_boundary"
+    },
+    {
+      "group": 2,
+      "requested_beta": 0.5,
+      "map_beta": 0.5008,
+      "ridge_alpha": 0.075,
+      "consensus_fraction": 1.0,
+      "target_scale_span": 0.0,
+      "gradient_to_row_median": 30.210563680899202,
+      "gradient_to_row_peak": 1.0,
+      "interpretation": "candidate_cross_over_scale_not_phase_boundary"
+    },
+    {
+      "group": 3,
+      "requested_beta": 0.9,
+      "map_beta": 0.9034,
+      "ridge_alpha": 0.1,
+      "consensus_fraction": 1.0,
+      "target_scale_span": 0.0,
+      "gradient_to_row_median": 7.037944640265694,
+      "gradient_to_row_peak": 1.0,
+      "interpretation": "candidate_cross_over_scale_not_phase_boundary"
+    }
+  ],
+  "validation_cells": [
+    {
+      "group": 1,
+      "alpha": 0.025,
+      "beta": 0.1,
+      "map_beta": 0.0983,
+      "role": "left",
+      "sizes": "40;60;80",
+      "required_observables": "energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt",
+      "reuse_exact_beta_half": false
+    },
+    {
+      "group": 1,
+      "alpha": 0.05,
+      "beta": 0.1,
+      "map_beta": 0.0983,
+      "role": "ridge",
+      "sizes": "40;60;80",
+      "required_observables": "energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt",
+      "reuse_exact_beta_half": false
+    },
+    {
+      "group": 1,
+      "alpha": 0.075,
+      "beta": 0.1,
+      "map_beta": 0.0983,
+      "role": "right",
+      "sizes": "40;60;80",
+      "required_observables": "energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt",
+      "reuse_exact_beta_half": false
+    },
+    {
+      "group": 2,
+      "alpha": 0.05,
+      "beta": 0.5,
+      "map_beta": 0.5008,
+      "role": "left",
+      "sizes": "40;60;80",
+      "required_observables": "energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt",
+      "reuse_exact_beta_half": false
+    },
+    {
+      "group": 2,
+      "alpha": 0.075,
+      "beta": 0.5,
+      "map_beta": 0.5008,
+      "role": "ridge",
+      "sizes": "40;60;80",
+      "required_observables": "energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt",
+      "reuse_exact_beta_half": false
+    },
+    {
+      "group": 2,
+      "alpha": 0.1,
+      "beta": 0.5,
+      "map_beta": 0.5008,
+      "role": "right",
+      "sizes": "40;60;80",
+      "required_observables": "energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt",
+      "reuse_exact_beta_half": true
+    },
+    {
+      "group": 3,
+      "alpha": 0.075,
+      "beta": 0.9,
+      "map_beta": 0.9034,
+      "role": "left",
+      "sizes": "40;60;80",
+      "required_observables": "energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt",
+      "reuse_exact_beta_half": false
+    },
+    {
+      "group": 3,
+      "alpha": 0.1,
+      "beta": 0.9,
+      "map_beta": 0.9034,
+      "role": "ridge",
+      "sizes": "40;60;80",
+      "required_observables": "energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt",
+      "reuse_exact_beta_half": false
+    },
+    {
+      "group": 3,
+      "alpha": 0.125,
+      "beta": 0.9,
+      "map_beta": 0.9034,
+      "role": "right",
+      "sizes": "40;60;80",
+      "required_observables": "energy;variance;truncation;actual_D;spin_gap;bond_corr;O_str;Schmidt",
+      "reuse_exact_beta_half": false
+    }
+  ],
+  "median_track_non_decreasing_fraction": 0.9322033898305084,
+  "checks": {
+    "complete_40x60_grid": true,
+    "positive_domain_only": true,
+    "finite_values": true,
+    "three_anchor_groups": true,
+    "nine_bracket_cells": true,
+    "anchor_persistence_at_least_75pct": true,
+    "anchor_scale_span_at_most_005": true
+  },
+  "boundary": "The legacy map lacks variance, truncation error, actual bond dimension, and size provenance. The selected ridge is a candidate crossover scale, not a phase boundary."
+}

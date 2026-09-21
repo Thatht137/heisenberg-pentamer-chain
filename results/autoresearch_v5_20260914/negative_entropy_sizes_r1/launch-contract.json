@@ -1,0 +1,15 @@
+{
+  "launch_ready": true,
+  "cell_count": 10,
+  "concurrency": 1,
+  "save_state": true,
+  "enriched_diagnostics": true,
+  "stop_on_first_failure": true,
+  "eta_hours": [
+    3,
+    5
+  ],
+  "run_spec_sha256": "7a1e74f8a24a6de31274c82b0386248ec068d0599c4e8663c946f6567fa68902",
+  "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+  "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c"
+}

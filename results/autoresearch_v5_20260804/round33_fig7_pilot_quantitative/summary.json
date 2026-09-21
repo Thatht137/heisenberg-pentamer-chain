@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "status": "pilot_exploratory_not_production",
+  "params": {
+    "alphas": [
+      0.14,
+      0.23,
+      0.33
+    ],
+    "beta": 0.5,
+    "L": 40,
+    "tmax": 15,
+    "omega_window": [
+      0.0,
+      1.5
+    ],
+    "interior_min_omega": 0.1
+  },
+  "observable": "raw Szz(q=pi,omega)",
+  "records": [
+    {
+      "alpha": 0.14,
+      "q_over_pi": 1.0,
+      "peak_omega": 0.5561797752808989,
+      "peak_intensity": 3.213678291194564,
+      "interior_peak_omega": 0.5561797752808989,
+      "interior_peak_intensity": 3.213678291194564,
+      "interior_min_omega": 0.1,
+      "window_weight": 0.8459960815785404,
+      "omega_points": 90
+    },
+    {
+      "alpha": 0.23,
+      "q_over_pi": 1.0,
+      "peak_omega": 0.0,
+      "peak_intensity": 3.3002040932441554,
+      "interior_peak_omega": 0.5898876404494382,
+      "interior_peak_intensity": 2.7236027581002054,
+      "interior_min_omega": 0.1,
+      "window_weight": 0.9240087231449954,
+      "omega_points": 90
+    },
+    {
+      "alpha": 0.33,
+      "q_over_pi": 1.0,
+      "peak_omega": 0.033707865168539325,
+      "peak_intensity": 4.918141873014595,
+      "interior_peak_omega": 0.10112359550561797,
+      "interior_peak_intensity": 4.07893536629121,
+      "interior_min_omega": 0.1,
+      "window_weight": 1.1230291929164447,
+      "omega_points": 90
+    }
+  ],
+  "scope": {
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "interpretation": "只描述 raw pilot 的离散峰和窗口权重，不作收敛、相界或 CV/TEBD Agreement 结论。"
+}

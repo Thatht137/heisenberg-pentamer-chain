@@ -1,0 +1,175 @@
+{
+  "schema_version": 1,
+  "run_id": "pentamer-negative-phase-stage-a-r9-remaining7-20260811",
+  "scope": "beta=0.5 Stage A remaining 7 cells; -0.1<=alpha<=-0.025; Fig.9 excluded",
+  "controller": "local_only",
+  "cells": [
+    {
+      "cell_id": "nega-r9-a0100-b0500-L080",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "A-R9-remaining7",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败仅按32→64→128或64→128",
+      "continued_from": "nega-r7-a0100-b0500-L080",
+      "controller_action_id": null,
+      "calibration_only": true
+    },
+    {
+      "cell_id": "nega-r9-a0050-b0500-L040",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 32,
+      "stage": "A-R9-remaining7",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败仅按32→64→128或64→128",
+      "continued_from": "nega-r7-a0050-b0500-L040",
+      "controller_action_id": "act-fffdf93a9cae183cb1c1",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-r9-a0050-b0500-L060",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 32,
+      "stage": "A-R9-remaining7",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败仅按32→64→128或64→128",
+      "continued_from": "nega-r7-a0050-b0500-L060",
+      "controller_action_id": "act-7016420e7cbf8fc354b7",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-r9-a0050-b0500-L080",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "A-R9-remaining7",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败仅按32→64→128或64→128",
+      "continued_from": "nega-r7-a0050-b0500-L080",
+      "controller_action_id": null,
+      "calibration_only": true
+    },
+    {
+      "cell_id": "nega-r9-a0025-b0500-L040",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.5,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 32,
+      "stage": "A-R9-remaining7",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败仅按32→64→128或64→128",
+      "continued_from": "nega-r7-a0025-b0500-L040",
+      "controller_action_id": "act-4503b7acb169c6a5092f",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-r9-a0025-b0500-L060",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 32,
+      "stage": "A-R9-remaining7",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败仅按32→64→128或64→128",
+      "continued_from": "nega-r7-a0025-b0500-L060",
+      "controller_action_id": "act-3d1ab066156655e22ec8",
+      "calibration_only": false
+    },
+    {
+      "cell_id": "nega-r9-a0025-b0500-L080",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "A-R9-remaining7",
+      "retry_policy": "首次续跑；L40/L60=32、L80=64；失败仅按32→64→128或64→128",
+      "continued_from": "nega-r7-a0025-b0500-L080",
+      "controller_action_id": null,
+      "calibration_only": true
+    }
+  ],
+  "settings": {
+    "method": "finite_dmrg_multistart_fullq",
+    "boundary": "OBC",
+    "hamiltonian": "five-site unit cell Heisenberg chain, J1=1, J2=alpha, J3=beta",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim_by_L": {
+      "40": 800,
+      "60": 1000,
+      "80": 1200
+    },
+    "nsweeps": 32,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "q_count": 401,
+    "init_modes": [
+      "center",
+      "ferro_j2"
+    ],
+    "budget_definition": "每个独立初态的sweeps；L40/L60=32，L80=64",
+    "acceptance": {
+      "variance_per_site_max": 1e-08,
+      "final_truncation_error_max": 1e-09,
+      "sector_tolerance": 1e-08,
+      "q_count_min": 401
+    },
+    "offline": true,
+    "execution": "direct SSH; concurrency=1; stop on first failed cell"
+  },
+  "provenance": {
+    "negative_alpha_included": true,
+    "continuation_reason": "R8严格接入后续跑Stage A剩余四个controller点与三个L80校准点",
+    "r7_run_spec_sha256": "ba1faf376298eaeed0857a40dc8f79a1f9f691ce73ede751e7046b4e62715406",
+    "r8_run_spec_sha256": "44777c51a21bbcbc55448b552ca21ee9c8dcd042e1b324c77f43c85a99e57c3a",
+    "r8_ingestion_summary_sha256": "4232b1a070e0f70b3aead24901a72ced3bbfd4b80145644a607611a39aaa711f",
+    "observations_sha256": "cecf52421fd99853f1d431df604ac6dd51316cf14d9c26646361276c53d2d819",
+    "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "project_sha256": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+    "source_commit": "40f4179a5630039485370648edd9621f592c0449",
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "docs/full_phase_diagram_negative_standard_20260809.md": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+      "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+      "scripts/autoresearch_v5/negative_static_cell.jl": "dc696ffc719a6dcafa9c941684b75021d682c8b2137b828b5fd7a3954516a415",
+      "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+      "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "458f18248a0747926be26433561328690acd62266ed16ccbeeb2b9aa985196fd",
+      "scripts/autoresearch_v5/run_negative_phase_structure_batch.py": "055ed8862d08f6a3a59aeb10ce47e8a54af9fbde6c76e2c355cc3d65eaad408f",
+      "scripts/autoresearch_v5/validate_negative_phase_run.py": "f16ca83c39be04516bad2cba518ee7c10ba0c62e3c2c680dd06dffb571d610de",
+      "scripts/autoresearch_v5/launch_negative_phase_stage_a_r9_remaining7.sh": "9d3e0272540897e41832aa00d85ed5591eab103b56b464850f12e0f2e8aef7fe"
+    },
+    "r7_r8_evidence_preserved": true,
+    "r6_initial_state_sensitivity_half_difference": 0.011877542575884303,
+    "thresholds_relaxed": false,
+    "exploratory_data_not_accepted": true
+  }
+}

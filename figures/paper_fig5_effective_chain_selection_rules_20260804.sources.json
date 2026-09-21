@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "figure": "Fig. 5",
+  "backend": "Python/matplotlib",
+  "core_conclusion": "The projected antiferromagnetic chain carries low-energy propagation while reflection parity filters local multiplet channels at q=pi.",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "boundary": "Mechanism and isolated-cell weights only; no unvalidated quasiparticle name is introduced.",
+  "source_sha256": {
+    "results\\autoresearch_v3_20260729\\round1_doublet_projection\\projection_scan.csv": "d8c2d2548cf937e5b16b6b77c818174cf33918eb888c4bee5ccdcafb73e8df15",
+    "results\\autoresearch_v4_20260730\\round2_local_spectral_channels_v4\\multiplet_scan.csv": "9ce8a9c56f22fd99be701e5795ecde3a9beda56c4903b74d7804072c40eecf9a",
+    "results\\autoresearch_v4_20260730\\round2_local_spectral_channels_v4\\folded_transition_weights.csv": "e832cf02e8f01d6fc0c9f5e371141869af17f514445407d16c75ded96aa51043"
+  },
+  "outputs": {
+    "figures\\paper_fig5_effective_chain_selection_rules_20260804.svg": "4d85fc1f5b05669230565b653067174b6a1686dbdeb5e48531c743fe67227f58",
+    "figures\\paper_fig5_effective_chain_selection_rules_20260804.pdf": "94764d4e64779ba2c53789c7f4a815a01dc815d088f6a18af71ae798fb9f58b4",
+    "figures\\paper_fig5_effective_chain_selection_rules_20260804.png": "0c3ad00c2333695038360ec49e7d62dc2a2d3a9e1beeded899ef0f24be1527dd",
+    "figures\\paper_fig5_effective_chain_selection_rules_20260804.tiff": "37f66a6f53da1ec582da3950424cd8eede5f1a56249433afa1a75e806d635413"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "job_type": "cv_dsf_cell",
+  "cell_id": "cell-l40-qpi-low-000-020",
+  "phase": "finished",
+  "total_points": 5,
+  "status": "success",
+  "finished_at": "2026-08-03T16:56:24.683475+00:00",
+  "returncode": 0,
+  "completed_points": 5,
+  "stdout_bytes": 1798,
+  "stdout_last_change": "2026-08-03T16:56:24.547317+00:00",
+  "schema_version": 1,
+  "started_at": "2026-08-03T14:54:55.502736+00:00",
+  "updated_at": "2026-08-03T16:56:24.684561+00:00",
+  "elapsed_seconds": 7289.182
+}

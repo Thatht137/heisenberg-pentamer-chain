@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "status": "accepted",
+  "cell_id": "nega-r13-a0050-b0500-L060",
+  "accepted_key": {
+    "alpha": -0.05,
+    "beta": 0.5,
+    "L": 60
+  },
+  "counts": {
+    "controller_success_total": 14,
+    "controller_failed_total": 0,
+    "controller_pending_total": 2,
+    "calibration_accepted_total": 6
+  },
+  "observable": {
+    "value": 0.2241927264521733,
+    "error": 0.018036755267434257
+  },
+  "success_handoff": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r13-a0050-L060-20260811-1434/success_handoff_summary.json",
+    "sha256": "7ec4a9912a000cf89c6f8334329893e560d2d4a49c837d67efe54da166b16e66"
+  },
+  "ingestion_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r13_success_ingestion_audit.json",
+    "sha256": "09ba52fd246607605e61802c4b6633607ab49806affafa1f91effb3c4688e70d"
+  },
+  "observations": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+    "sha256": "0ae1da5dd89c91076d5593d66088c0bc02b74fbeca2b28e10f0d8288e5bf7cb8"
+  },
+  "action_index": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/action_index.json",
+    "sha256": "818c1ad1ce06b703177bdcc4b9e2af32ec290e0c61e24a1cee92b915a947f63c"
+  },
+  "accepted_calibration": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/accepted_calibration_through_r9.json",
+    "sha256": "290083607e50582f79f4afedc5955d0876a9cd86172ae4936293abb42b451bf1"
+  },
+  "history_provenance_preserved": true,
+  "controller": {
+    "status": "NOT_REEVALUATED",
+    "crossing": "not_assigned",
+    "phase_label": "not_assigned"
+  },
+  "thresholds_relaxed": false
+}

@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-04T09:10:00+08:00",
+  "status": "ready_for_recovery_check",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "cell_rechecks": {
+    "high055": {
+      "status": "pass",
+      "max_cv_residual": 6.487727921502834e-06,
+      "evidence": "results/research_progress/round31_high055_validator_20260804_recheck.json"
+    },
+    "low000_020": {
+      "status": "fail",
+      "max_cv_residual": 1.3237623405931422e-05,
+      "expected_failure": true,
+      "evidence": "results/research_progress/round31_low_validator_20260804_recheck.json"
+    }
+  },
+  "required_tools": {
+    "scripts/autoresearch_v5/validate_cv_run.py": true,
+    "scripts/autoresearch_v5/assemble_qpi_cv_anchors.py": true,
+    "scripts/autoresearch_v5/analyze_cv_tebd_crosscheck.py": true,
+    "scripts/autoresearch_v5/fetch_qpi_cv_extension_results.py": true,
+    "scripts/autoresearch_v5/audit_local_integrity_20260803.py": true
+  },
+  "non_clobber_target": "results/autoresearch_v5_20260804/qpi_cv_extension_recovery_fetch",
+  "handoff_order": [
+    "read overall_progress/status/progress/manifest",
+    "remote sha256sum -c checksums.sha256",
+    "non-clobber fetch to a new local directory",
+    "local checksum and validate_cv_run.py",
+    "assemble_qpi_cv_anchors.py using accepted cells only",
+    "analyze_cv_tebd_crosscheck.py",
+    "update HTML report and rerun integrity audit"
+  ],
+  "guard": "low residual failure remains isolated; no threshold relaxation or overwrite"
+}

@@ -1,0 +1,47 @@
+{
+  "evidence_version": "offline_numpy1264_cp310_v1",
+  "package": {
+    "name": "numpy",
+    "version": "1.26.4",
+    "wheel_filename": "numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "wheel_path": "D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260919/offline_numpy1264_cp310/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "size_bytes": 18240889,
+    "size_human": "18.2 MB",
+    "local_sha256": "ffa75af20b44f8dba823498024771d5ac50620e6915abac414251bd971b4529f",
+    "pypi_sha256": "ffa75af20b44f8dba823498024771d5ac50620e6915abac414251bd971b4529f",
+    "sha256_match": true
+  },
+  "source": {
+    "index_url": "https://pypi.org/simple",
+    "metadata_url": "https://pypi.org/pypi/numpy/1.26.4/json",
+    "file_url": "https://files.pythonhosted.org/packages/4b/d7/ecf66c1cd12dc28b4040b15ab4d17b773b87fa9d29ca16125de01adb36cd/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "download_python": "D:/Python3.12.4/python.exe",
+    "download_command": "D:/Python3.12.4/python.exe -m pip download --only-binary=:all: --no-deps --platform manylinux2014_x86_64 --python-version 310 --implementation cp --abi cp310 --index-url https://pypi.org/simple --no-cache-dir --dest <offline_numpy1264_cp310> numpy==1.26.4"
+  },
+  "platform_validation": {
+    "python_tag": "cp310",
+    "abi_tag": "cp310",
+    "platform_tag": "manylinux_2_17_x86_64.manylinux2014_x86_64",
+    "cp310_tags_match": true,
+    "manylinux2014_x86_64_match": true
+  },
+  "zip_validation": {
+    "member_count": 1008,
+    "paths_safe": true,
+    "absolute_or_parent_escape_entries": false
+  },
+  "bundle_status": {
+    "wheel_ready_for_offline_bundle": true,
+    "pending_upload": true,
+    "remote_upload_performed": false,
+    "local_wheel_retained": true,
+    "delete_local_wheel_now": false,
+    "delete_after_upload_and_remote_sha256_validation": true
+  },
+  "side_effects": {
+    "local_package_install": false,
+    "remote_connection": false,
+    "remote_download": false,
+    "remote_modification": false
+  }
+}

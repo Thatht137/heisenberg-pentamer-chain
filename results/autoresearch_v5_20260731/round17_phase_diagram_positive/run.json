@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "run_id": "pentamer-positive-phase-diagram-20260731",
+  "source_run_spec": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260731/round17_phase_diagram_positive/parameter-scan.run_spec.json",
+  "cell_count": 30,
+  "provenance": {
+    "source_commit": "uploaded-bundle-20260731",
+    "standard_sha256": "9fb6b1a1f07242be9ada456acc1f8064e3350e93aa410e89a7745e5acded2011",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "julia_version": "1.12.3",
+    "offline": true,
+    "negative_alpha_excluded": true
+  }
+}

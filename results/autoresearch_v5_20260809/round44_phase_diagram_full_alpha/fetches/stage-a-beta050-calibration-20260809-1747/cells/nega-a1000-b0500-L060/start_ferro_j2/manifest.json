@@ -1,0 +1,104 @@
+{
+  "schema_version": 1,
+  "cell_id": "nega-a1000-b0500-L060-ferro_j2",
+  "status": "success",
+  "accepted": true,
+  "params": {
+    "path_id": "nega-a1000-b0500-L060",
+    "group": 0,
+    "role": "ridge",
+    "alpha": -1.0,
+    "beta": 0.5,
+    "L": 60,
+    "n_units": 12
+  },
+  "settings": {
+    "method": "finite_dmrg",
+    "boundary": "OBC",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim": 1000,
+    "nsweeps": 32,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "init_mode_sz0": "ferro_j2",
+    "init_mode_sz1": "center",
+    "q_count": 401
+  },
+  "observables": {
+    "energy_sz0": -19.507496271656336,
+    "energy_sz1": -19.506337118369462,
+    "spin_gap": 0.001159153286874215,
+    "structure_factor_ratio": 0.11366769102952179,
+    "structure_factor_pi": 0.37808845288047394,
+    "structure_factor_q1": 0.33511201143662633,
+    "structure_factor_window_sites": 48.0,
+    "structure_factor_peak_q": 1.8928095737878503,
+    "structure_factor_peak_q_over_pi": 0.6025,
+    "structure_factor_peak": 0.6825138254388823,
+    "dominant_structure_factor_ratio": 0.38274336762522576,
+    "structure_factor_peak_ratio": 0.38274336762522576,
+    "dominant_structure_factor_ratio_mode": "symmetric"
+  },
+  "diagnostics": {
+    "variance_per_site_sz0": 3.903938742647976e-09,
+    "variance_per_site_sz1": 6.928360107849584e-11,
+    "actual_maxdim_sz0": 303.0,
+    "actual_maxdim_sz1": 202.0,
+    "max_truncation_error_sz0": 4.6033177263318046e-11,
+    "max_truncation_error_sz1": 9.99926795765753e-12,
+    "final_truncation_error_sz0": 9.999799484293071e-12,
+    "final_truncation_error_sz1": 9.963496556066456e-12,
+    "total_sz0": 2.0261570199409107e-15,
+    "total_sz1": 0.9999999999999993,
+    "algorithm_seconds_sz0": 304.16056513786316,
+    "algorithm_seconds_sz1": 149.29097700119019,
+    "measurement_seconds": 31.381754159927368,
+    "peak_rss_kb": 1265196
+  },
+  "acceptance": {
+    "execution_success": true,
+    "variance_sz0_per_site_le_1e-8": true,
+    "variance_sz1_per_site_le_1e-8": true,
+    "truncation_sz0_le_1e-9": true,
+    "truncation_sz1_le_1e-9": true,
+    "sz0_sector": true,
+    "sz1_sector": true,
+    "nonnegative_gap": true,
+    "all_sweeps_completed": true,
+    "fullq_file": true,
+    "fullq_count": true,
+    "measurement_files": true
+  },
+  "provenance": {
+    "source_commit": "uploaded-negative-stage-a-20260809",
+    "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "hostname": "c104-ysu",
+    "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "julia_version": "1.12.3",
+    "julia_pkg_offline": true,
+    "negative_alpha_included": true,
+    "negative_alpha_bounds": [
+      -1.0,
+      0.0
+    ],
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "scripts/autoresearch_v5/negative_static_cell.jl": "5ab726b59d01dc7892281ce3a557c6bf2425c4c07c592020787759d812912eaf",
+      "scripts/autoresearch_v5/run_negative_static_cell.py": "d7c01a3091dcf73b6c77e1ab79afbc43b7f8e8f89363307c75f5c09d18212295",
+      "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+    }
+  },
+  "timing": {
+    "started_at": "2026-08-09T04:03:31.883550+00:00",
+    "finished_at": "2026-08-09T04:15:46.371097+00:00"
+  },
+  "returncode": 0
+}

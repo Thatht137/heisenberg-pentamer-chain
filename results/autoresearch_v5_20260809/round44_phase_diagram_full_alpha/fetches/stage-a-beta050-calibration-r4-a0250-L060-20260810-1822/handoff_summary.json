@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "cell_id": "nega-r4-a0250-b0500-L060",
+  "remote_checksum_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r4-a0250-L060-20260810-1822/audit/remote_checksum_20260810_1822.txt",
+    "sha256": "357dfa45e097cac0e8eb8d6e65f9dc7ca128138cc72355a8141d44d14999cc18"
+  },
+  "receipt": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r4-a0250-L060-20260810-1822/receipts/nega-r4-a0250-b0500-L060.json",
+    "sha256": "12544be80c6b1e0ccafc3e2d14d67fc244754f6a3995a9a6bde80ebbfce99aaf"
+  },
+  "validation_summary": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r4-a0250-L060-20260810-1822/validation/summary.json",
+    "sha256": "25ba1829cb26f7e6382a8d2de258e2a7702c7e7da6a0485c4f21860fc91ce3bc"
+  },
+  "accepted_gate": {
+    "validator_pass": true,
+    "non_clobbering_fetch": true,
+    "local_checksum_pass": true,
+    "r3_failure_provenance_preserved": true
+  }
+}

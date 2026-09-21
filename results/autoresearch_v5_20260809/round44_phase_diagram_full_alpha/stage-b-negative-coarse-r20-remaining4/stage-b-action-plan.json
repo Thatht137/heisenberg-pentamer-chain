@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "stage": "B-R20-practical-v2-remaining4",
+  "canonical_action_index_mutated": false,
+  "bounded_actions_excluded": 7,
+  "actions": [
+    {
+      "action_id": "act-6ab6d169f7be3f74a5d4",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.05,
+        "beta": 1.0
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r20-remaining4/cells/negb20-a0050-b1000-L040/manifest.json",
+      "convergence_policy": "practical_v2"
+    },
+    {
+      "action_id": "act-3227f62ca4b007b1e105",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.05,
+        "beta": 1.0
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r20-remaining4/cells/negb20-a0050-b1000-L060/manifest.json",
+      "convergence_policy": "practical_v2"
+    },
+    {
+      "action_id": "act-44c119aa4925e20d539f",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.025,
+        "beta": 1.0
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r20-remaining4/cells/negb20-a0025-b1000-L040/manifest.json",
+      "convergence_policy": "practical_v2"
+    },
+    {
+      "action_id": "act-fc017594e4c1c726f327",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.025,
+        "beta": 1.0
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r20-remaining4/cells/negb20-a0025-b1000-L060/manifest.json",
+      "convergence_policy": "practical_v2"
+    }
+  ]
+}

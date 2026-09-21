@@ -1,0 +1,97 @@
+{
+  "audit_version": "dependency_summary_v1",
+  "scope": "single_read_only_ssh_python_dependency_diagnostic",
+  "remote": {
+    "host": "39.96.207.180",
+    "port": 6000,
+    "user": "wangjieren",
+    "time": "2026-09-19T22:29:51+08:00",
+    "ssh_attempts": 1,
+    "successful_remote_checks": 1,
+    "remote_actions": "read_only"
+  },
+  "tool_session": {
+    "issued": false,
+    "handle": null,
+    "waits": 0,
+    "note": "检查在单次工具调用内完成，无需等待或重启。"
+  },
+  "interpreters": [
+    {
+      "label": "usr_bin_python3",
+      "path": "/usr/bin/python3",
+      "origin": "fixed_path",
+      "version": "Python 3.10.12",
+      "sys_executable": "/usr/bin/python3",
+      "platform_machine": "x86_64",
+      "soabi": "cpython-310-x86_64-linux-gnu",
+      "pip": {
+        "status": "unavailable",
+        "error": "/usr/bin/python3: No module named pip"
+      },
+      "venv": {
+        "status": "available",
+        "probe": "python -m venv --help"
+      },
+      "numpy": {
+        "status": "unavailable",
+        "error_type": "ModuleNotFoundError",
+        "error": "No module named 'numpy'"
+      },
+      "wheel_tags_observed": []
+    },
+    {
+      "label": "command_v_python3",
+      "path": "/usr/bin/python3",
+      "origin": "command_v_python3",
+      "version": "Python 3.10.12",
+      "sys_executable": "/usr/bin/python3",
+      "platform_machine": "x86_64",
+      "soabi": "cpython-310-x86_64-linux-gnu",
+      "pip": {
+        "status": "unavailable",
+        "error": "/usr/bin/python3: No module named pip"
+      },
+      "venv": {
+        "status": "available",
+        "probe": "python -m venv --help"
+      },
+      "numpy": {
+        "status": "unavailable",
+        "error_type": "ModuleNotFoundError",
+        "error": "No module named 'numpy'"
+      },
+      "wheel_tags_observed": []
+    }
+  ],
+  "command_tools": {
+    "pip": "missing",
+    "pip3": "missing"
+  },
+  "project_interpreters": {
+    ".venv/bin/python": {
+      "path": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/.venv/bin/python",
+      "status": "absent"
+    },
+    "venv/bin/python": {
+      "path": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/venv/bin/python",
+      "status": "absent"
+    }
+  },
+  "wheel_download_guidance": {
+    "python_abi": "cp310-cp310",
+    "machine": "x86_64",
+    "preferred_linux_tag_patterns": [
+      "cp310-cp310-manylinux_2_17_x86_64",
+      "cp310-cp310-manylinux2014_x86_64"
+    ],
+    "note": "标签依据 Python 3.10 SOABI 与 x86_64 推断；本轮 pip 不可用，未能由 pip debug 列出标签，manylinux 兼容性仍需满足对应 glibc 基线。"
+  },
+  "usability": {
+    "existing_project_interpreter_usable": false,
+    "reason": "项目根下 .venv/bin/python 与 venv/bin/python 均不存在；系统解释器虽支持 venv，但无 pip 且缺少 NumPy。",
+    "numpy_dependent_precheck_blocked": true,
+    "remote_dependency_install_attempted": false,
+    "julia_started": false
+  }
+}

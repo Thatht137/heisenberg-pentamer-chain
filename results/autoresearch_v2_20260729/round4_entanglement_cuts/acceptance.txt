@@ -1,0 +1,5 @@
+alpha=0.14
+finite_values=true
+five_cut_classes=true
+minimum_retained_probability=0.9999458926459771
+source_state_sha256=fb7a450d886b74a7cc49633d427d84c7634999df7de7b6b103d595e1f67a3698

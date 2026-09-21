@@ -1,0 +1,415 @@
+{
+  "title": "L80 Krylov impact audit",
+  "eyebrow": "LOCAL IMPACT AUDIT · 2026-09-20",
+  "lede": "本页读取真实 impact summary、sensitivity_metrics.csv 和已核验 PNG；只报告 k=3→k=8 的 solver-control 影响，不混合不同 k 做单一拟合。",
+  "sections": [
+    {
+      "title": "审计结论",
+      "note": "输入 summary：results/autoresearch_v5_20260920/static_krylov_impact_v2/summary.json",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "warn",
+          "label": "status=audit_only · claim=none",
+          "why": "数值门、回传和产物完整性已审计；本节不推出 chi 收敛、bulk gap、相变或论文完成。"
+        },
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "Krylov 对照",
+              "k=3 → k=8"
+            ],
+            [
+              "impact summary SHA256",
+              "c2a36207c400aa124e2469feceb142f306f87d79ef5e8ca11d59d53308b7dc32"
+            ],
+            [
+              "gap sensitivity SHA256",
+              "5f95e9d774bf8276f314cf5c8b2b87bd5212b49675109a341dc40bff843ed962"
+            ],
+            [
+              "solver drift SHA256",
+              "9e66dd9f55cd2127123247020f4b0b31f356b2615ee7af5b8d3447f3088700e2"
+            ],
+            [
+              "goal_complete",
+              false
+            ]
+          ]
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "static_krylov_impact_v1.png",
+              "caption": "Impact figure（audit-only）。k=3→k=8 会改变部分 L80 观测量，且初态 spread 与求解器末步能量变化可量化；这些证据不能替代观测量稳定性、有限尺寸标度或物理相判定。 PNG 来源已由 summary 与 manifest 双重 SHA256 核验。"
+            }
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "拟合边界",
+          "style": "pending",
+          "text": "period=10/window=0.20 的 c_eff 仅是有限 L 斜率诊断；baseline k3 与 candidate k8 不得混入同一 scaling fit，也不能当作 thermodynamic central charge。"
+        }
+      ]
+    },
+    {
+      "title": "period10/window.20 纠缠斜率",
+      "note": "严格来自 summary.key_facts.entropy_period10_window020 的 8 行，按 point/start 配对 k3 与 k8。",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "参数点",
+            "初态",
+            "alpha",
+            "beta",
+            "L",
+            "k3 c_eff",
+            "k8 c_eff"
+          ],
+          "rows": [
+            [
+              "negdiag-a01000-b02500-L080",
+              "center",
+              "-0.1",
+              "0.25",
+              "80",
+              "0.582204769545",
+              "0.932464720445"
+            ],
+            [
+              "negdiag-a01000-b02500-L080",
+              "ferro_j2",
+              "-0.1",
+              "0.25",
+              "80",
+              "0.484120193982",
+              "0.932464754389"
+            ],
+            [
+              "negdiag-a01750-b02500-L080",
+              "center",
+              "-0.175",
+              "0.25",
+              "80",
+              "0.932217906787",
+              "0.959896763301"
+            ],
+            [
+              "negdiag-a01750-b02500-L080",
+              "ferro_j2",
+              "-0.175",
+              "0.25",
+              "80",
+              "0.90091384602",
+              "0.959896791181"
+            ]
+          ],
+          "numeric": [
+            false,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "title": "gap 敏感性",
+      "note": "从同目录 sensitivity_metrics.csv 选择 observable=gap 的四行；相对量为源文件的对称相对定义。",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "参数点",
+            "初态",
+            "Δabs",
+            "Δabs index",
+            "|srel|max",
+            "|srel| index",
+            "baseline",
+            "candidate"
+          ],
+          "rows": [
+            [
+              "negdiag-a01000-b02500-L080",
+              "center",
+              "1.98523687942e-05",
+              "0",
+              "31.589%",
+              "0",
+              "5.29196706864e-05",
+              "7.27720394806e-05"
+            ],
+            [
+              "negdiag-a01000-b02500-L080",
+              "ferro_j2",
+              "2.61474727026e-05",
+              "0",
+              "43.7993%",
+              "0",
+              "4.66245809037e-05",
+              "7.27720536062e-05"
+            ],
+            [
+              "negdiag-a01750-b02500-L080",
+              "center",
+              "3.23125402346e-06",
+              "0",
+              "2.05688%",
+              "0",
+              "0.000155479486864",
+              "0.000158710740887"
+            ],
+            [
+              "negdiag-a01750-b02500-L080",
+              "ferro_j2",
+              "7.08695607088e-06",
+              "0",
+              "4.5673%",
+              "0",
+              "0.000151623786845",
+              "0.000158710742916"
+            ]
+          ],
+          "numeric": [
+            false,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        }
+      ]
+    },
+    {
+      "title": "初态 spread 与端点 q 保留",
+      "note": "spread 是 center-versus-ferro_j2 的确定性范围，非 CI；Sz1 固定 center、非独立。",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "参数点",
+            "observable",
+            "k3 max spread",
+            "k8 max spread",
+            "reduction",
+            "语义"
+          ],
+          "rows": [
+            [
+              "negdiag-a01000-b02500-L080",
+              "gap",
+              "6.29508978278e-06",
+              "1.41255895869e-11",
+              "99.9998%",
+              "deterministic center-versus-ferro_j2 range; not CI"
+            ],
+            [
+              "negdiag-a01000-b02500-L080",
+              "entropy",
+              "0.107201631249",
+              "5.18734220023e-08",
+              "100%",
+              "deterministic center-versus-ferro_j2 range; not CI"
+            ],
+            [
+              "negdiag-a01000-b02500-L080",
+              "dimer_rms",
+              "2.86851419944e-05",
+              "9.290115335e-11",
+              "99.9997%",
+              "deterministic center-versus-ferro_j2 range; not CI"
+            ],
+            [
+              "negdiag-a01000-b02500-L080",
+              "connected_quarter",
+              "1.68890080809e-08",
+              "6.44582165421e-11",
+              "99.6183%",
+              "deterministic center-versus-ferro_j2 range; not CI"
+            ],
+            [
+              "negdiag-a01000-b02500-L080",
+              "bond_correlation",
+              "2.73575381271e-05",
+              "5.07534431149e-10",
+              "99.9981%",
+              "deterministic center-versus-ferro_j2 range; not CI"
+            ],
+            [
+              "negdiag-a01750-b02500-L080",
+              "gap",
+              "3.85570001882e-06",
+              "2.0285995106e-12",
+              "99.9999%",
+              "deterministic center-versus-ferro_j2 range; not CI"
+            ],
+            [
+              "negdiag-a01750-b02500-L080",
+              "entropy",
+              "0.0467797370742",
+              "5.93419624551e-09",
+              "100%",
+              "deterministic center-versus-ferro_j2 range; not CI"
+            ],
+            [
+              "negdiag-a01750-b02500-L080",
+              "dimer_rms",
+              "1.3029723036e-05",
+              "6.00743088087e-11",
+              "99.9995%",
+              "deterministic center-versus-ferro_j2 range; not CI"
+            ],
+            [
+              "negdiag-a01750-b02500-L080",
+              "connected_quarter",
+              "1.25649983196e-08",
+              "2.7667257374e-11",
+              "99.7798%",
+              "deterministic center-versus-ferro_j2 range; not CI"
+            ],
+            [
+              "negdiag-a01750-b02500-L080",
+              "bond_correlation",
+              "1.59160813873e-05",
+              "2.35591823827e-10",
+              "99.9985%",
+              "deterministic center-versus-ferro_j2 range; not CI"
+            ]
+          ],
+          "numeric": [
+            false,
+            false,
+            true,
+            true,
+            true,
+            false
+          ]
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "参数点",
+            "初态",
+            "q_peak/π k3",
+            "q_peak/π k8",
+            "ratio k3",
+            "ratio k8",
+            "actual maxdim k8 Sz0",
+            "actual maxdim k8 Sz1",
+            "requested maxdim"
+          ],
+          "rows": [
+            [
+              "negdiag-a01000-b02500-L080",
+              "center",
+              "1.0",
+              "1.0",
+              "0.16900327896075984",
+              "0.21076161517819614",
+              "264.0",
+              "186.0",
+              "1200.0"
+            ],
+            [
+              "negdiag-a01000-b02500-L080",
+              "ferro_j2",
+              "1.0",
+              "1.0",
+              "0.16274728515257808",
+              "0.21076175165186473",
+              "264.0",
+              "186.0",
+              "1200.0"
+            ],
+            [
+              "negdiag-a01750-b02500-L080",
+              "center",
+              "0.6",
+              "0.6",
+              "0.2752572695551454",
+              "0.28020671998147384",
+              "286.0",
+              "213.0",
+              "1200.0"
+            ],
+            [
+              "negdiag-a01750-b02500-L080",
+              "ferro_j2",
+              "0.6",
+              "0.6",
+              "0.2694912415428088",
+              "0.2802067423242237",
+              "286.0",
+              "213.0",
+              "1200.0"
+            ]
+          ],
+          "numeric": [
+            false,
+            false,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true,
+            true
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "q 与 chi 边界",
+          "style": "info",
+          "text": "q_peak 保留只能说明该端点诊断在本次 solver 对照中未移动；actual maxdim 低于 requested maxdim=1200 不是 chi 收敛证明。"
+        }
+      ]
+    },
+    {
+      "title": "分阶段剩余事项",
+      "note": "由项目状态 JSON 的 Stage2/3/4 字段和 post-Krylov 审计文档决策门生成。",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "决策门 1｜solver 误差与截断误差：固定 alpha=-0.10、beta=0.25、L=80 做 k=8→12 单点对照，区分 Krylov 残差与实际生效 chi/maxdim；冻结最多 64 sweeps，不自动改成 128。",
+            "决策门 2｜关键 observable 联合稳定性：alpha=-0.10 的 gap、entropy、dimer、connected 与 bond 量仍有 k 敏感性；不能只凭 variance/truncation 关门，稳定性需按同一观测量集合联合判断。",
+            "决策门 3｜有限尺寸到 bulk 外推：当前仅 L=80/OBC；不能由单点改写为 thermodynamic/bulk gap、全局中心荷或新相结论；若继续，先按同协议 L=60 分离有限尺寸效应。"
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "执行边界",
+          "style": "pending",
+          "text": "本轮只做本地报告接入；后续按既有授权范围与执行安全要求推进，具体批次参数和预算须留档。冻结不超过 64 sweeps，不自动改成 128，不做全域追加。"
+        }
+      ]
+    },
+    {
+      "title": "复现入口",
+      "note": "脚本拒绝缺失 summary、sensitivity CSV、manifest 或 PNG，不使用默认科学数值。",
+      "blocks": [
+        {
+          "kind": "code",
+          "title": "命令",
+          "text": "python -B scripts/autoresearch_v5/update_static_krylov_impact_report.py --impact-summary results/autoresearch_v5_20260920/static_krylov_impact_v2/summary.json --impact-dir results/autoresearch_v5_20260920/static_krylov_impact_v2"
+        },
+        {
+          "kind": "code",
+          "title": "输出",
+          "text": "results/autoresearch_v5_20260920/static_krylov_impact_v2/report.json\nresults/autoresearch_v5_20260920/static_krylov_impact_v2/report.html\nstatus.local_impact_audit"
+        }
+      ]
+    }
+  ]
+}

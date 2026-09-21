@@ -1,0 +1,52 @@
+{
+  "figure": "positive_region_evidence_20260803",
+  "backend": "Python/matplotlib",
+  "claim": "正区没有可验收的 alpha>0 内部 crossing；五聚体低能交换为 AFM，二阶 J2 弱而系统；L=40 CV 三频点通过验收。",
+  "source_files": [
+    {
+      "path": "results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\phase-diagram\\phase-size-differences.csv",
+      "sha256": "ddb67f9daefb870c5df9cebe68f187e266372710a38cdd49a64464c05ec78171"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\phase-diagram\\observations_merged.json",
+      "sha256": "7276ea8c8680082134bdb6463683005e9da3f0181333a303568608046ee93842"
+    },
+    {
+      "path": "results\\autoresearch_v3_20260729\\round1_doublet_projection\\projection_scan.csv",
+      "sha256": "d8c2d2548cf937e5b16b6b77c818174cf33918eb888c4bee5ccdcafb73e8df15"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260731\\round14_schrieffer_wolff\\schrieffer_wolff_scan.csv",
+      "sha256": "8002b211a84ca1dc466010f5e20efaaea2466641eab1d67a2e4c31ad09dd17b4"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260802\\round21_cv_triplet_warmstart\\cell-0002-L40-qpi-w025-w035\\manifest.json",
+      "sha256": "3296943dc08ea0610b4098dd1e6344964b0a88892e0d8b8ec677ffd02f079639"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260802\\round21_cv_triplet_warmstart\\cell-0002-L40-qpi-w025-w035\\points\\omega-0001.csv",
+      "sha256": "1dfa6068402bdc0ec89f4ce2d40221cd46cb9900244db2392ae4cb9c8f441af9"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260802\\round21_cv_triplet_warmstart\\cell-0002-L40-qpi-w025-w035\\points\\omega-0002.csv",
+      "sha256": "0de729aaf7bec34f9df78b235aee33a102b2c9619614547bea651c5056953607"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260802\\round21_cv_triplet_warmstart\\cell-0002-L40-qpi-w025-w035\\points\\omega-0003.csv",
+      "sha256": "f82e36c3f6901433094f1c197a04c818b711e54edd3be6274b239ba7d03d3d1e"
+    }
+  ],
+  "acceptance": {
+    "phase_records_new_mesh": 70,
+    "phase_records_merged": 105,
+    "positive_alpha_internal_crossing": false,
+    "cv_points": 3,
+    "cv_max_residual": 6.021249843402546e-06
+  },
+  "exports": [
+    "figures\\positive_region_evidence_20260803.svg",
+    "figures\\positive_region_evidence_20260803.pdf",
+    "figures\\positive_region_evidence_20260803.tiff",
+    "figures\\positive_region_evidence_20260803.png"
+  ]
+}

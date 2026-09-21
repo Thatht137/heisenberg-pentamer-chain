@@ -1,0 +1,58 @@
+{
+  "schema_version": 2,
+  "status": "fail",
+  "acceptance_label": "rejected_under_practical_v2",
+  "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-b-negative-coarse-r19-remaining19-20260907-2145\\negb19-a0100-b1000-L060",
+  "cell_id": "negb19-a0100-b1000-L060",
+  "params": {
+    "alpha": -0.1,
+    "beta": 1.0,
+    "L": 60,
+    "n_units": 12
+  },
+  "settings": {
+    "nsweeps": 64,
+    "maxdim": 1000,
+    "q_count": 401
+  },
+  "thresholds": {
+    "variance_per_site_max": 5e-08,
+    "final_truncation_error_max": 1e-09,
+    "sector_tolerance": 1e-08,
+    "spin_gap_min": -1e-08
+  },
+  "legacy_parent_accepted": false,
+  "legacy_parent_status": "failed",
+  "children": [
+    {
+      "mode": "center",
+      "variance_per_site_sz0": 1.2659341071715365e-08,
+      "final_truncation_error_sz0": 9.982640818235746e-12,
+      "variance_per_site_sz1": 1.033630496749538e-08,
+      "final_truncation_error_sz1": 9.933736552974533e-12,
+      "total_sz0": -4.163336342344337e-16,
+      "total_sz1": 1.0000000000000024,
+      "spin_gap": -4.1880202402921896e-05
+    },
+    {
+      "mode": "ferro_j2",
+      "variance_per_site_sz0": 3.9102720468993844e-09,
+      "final_truncation_error_sz0": 9.986964987204983e-12,
+      "variance_per_site_sz1": 1.033630496749538e-08,
+      "final_truncation_error_sz1": 9.933736552974533e-12,
+      "total_sz0": -3.9968028886505635e-15,
+      "total_sz1": 1.0000000000000024,
+      "spin_gap": 6.533609455416922e-05
+    }
+  ],
+  "failures": [
+    "negb19-a0100-b1000-L060:center: 原非方差门 nonnegative_gap 未通过",
+    "negb19-a0100-b1000-L060:center: 负 gap 超门"
+  ],
+  "provenance": {
+    "policy": "docs/negative_alpha_practical_convergence_standard_20260829.md",
+    "original_manifest_sha256": "c6ebcf200898f2ffd5345358834a5b0b984706799d3f37f81e80095c45f71030",
+    "original_run_spec_sha256": "3b7ce78e8764daa416f563b1e4752b3d89e23fda5b1ca72ac78ff881a0feeeb9",
+    "original_files_unchanged": true
+  }
+}

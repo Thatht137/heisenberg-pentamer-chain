@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-08T12:18:00+08:00",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true,
+    "paper_directory_modified": false
+  },
+  "execution": "sequential_stop_on_failure",
+  "window_policy": "uniform legacy baseline uses eta=0.10; weak/agreement robustness branches use exponential eta=0.20",
+  "cells": [
+    {
+      "cell_id": "fullq-uniform-dt025",
+      "point": "uniform",
+      "alpha": 1.0,
+      "beta": 1.0,
+      "tstep": 0.025,
+      "n_steps": 1200,
+      "window_eta": 0.10,
+      "status": "accepted",
+      "evidence": "results/autoresearch_v5_20260807/minimal_fullq_fetch_20260807_1630/fullq-uniform-dt025"
+    },
+    {
+      "cell_id": "fullq-uniform-dt0125",
+      "point": "uniform",
+      "alpha": 1.0,
+      "beta": 1.0,
+      "tstep": 0.0125,
+      "n_steps": 2400,
+      "window_eta": 0.10,
+      "status": "accepted",
+      "evidence": "results/autoresearch_v5_20260807/minimal_fullq_fetch_20260807_2030/fullq-uniform-dt0125"
+    },
+    {
+      "cell_id": "fullq-weak-eta020-dt025",
+      "point": "weak",
+      "alpha": 1.0,
+      "beta": 0.1,
+      "tstep": 0.025,
+      "n_steps": 1200,
+      "window_eta": 0.20,
+      "status": "accepted",
+      "evidence": "results/autoresearch_v5_20260807/minimal_fullq_fetch_eta020_20260808_0045/fullq-weak-eta020-dt025"
+    },
+    {
+      "cell_id": "fullq-weak-eta020-dt0125",
+      "point": "weak",
+      "alpha": 1.0,
+      "beta": 0.1,
+      "tstep": 0.0125,
+      "n_steps": 2400,
+      "window_eta": 0.20,
+      "status": "accepted",
+      "evidence": "results/autoresearch_v5_20260807/minimal_fullq_fetch_eta020_20260808_1145/fullq-weak-eta020-dt0125"
+    },
+    {
+      "cell_id": "fullq-agreement-eta020-dt025",
+      "point": "agreement",
+      "alpha": 0.23,
+      "beta": 0.5,
+      "tstep": 0.025,
+      "n_steps": 1200,
+      "window_eta": 0.20,
+      "status": "accepted",
+      "evidence": "results/autoresearch_v5_20260807/minimal_fullq_fetch_eta020_20260808_1301/fullq-agreement-eta020-dt025"
+    },
+    {
+      "cell_id": "fullq-agreement-eta020-dt0125",
+      "point": "agreement",
+      "alpha": 0.23,
+      "beta": 0.5,
+      "tstep": 0.0125,
+      "n_steps": 2400,
+      "window_eta": 0.20,
+      "status": "accepted",
+      "evidence": "results/autoresearch_v5_20260807/minimal_fullq_fetch_eta020_20260808_1533/fullq-agreement-eta020-dt0125"
+    }
+  ],
+  "acceptance": {
+    "single_run": [
+      "terminal success",
+      "remote and local checksums pass",
+      "t0_included=true",
+      "variance/site<=1e-8",
+      "abs(Sz)<=1e-8",
+      "raw negative weight fraction<=0.15",
+      "independent validator pass"
+    ],
+    "pair": [
+      "dt/2",
+      "global peak drift<=0.05 J1",
+      "q=pi peak drift<=0.05 J1",
+      "low-frequency spectral-weight drift<=5%"
+    ]
+  },
+  "failed_evidence_excluded": "results/autoresearch_v5_20260807/minimal_fullq_fetch_20260807_2245/fullq-weak-dt025；eta=0.10 raw negative fraction=0.15728494>0.15"
+}

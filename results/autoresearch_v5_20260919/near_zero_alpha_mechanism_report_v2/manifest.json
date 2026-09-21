@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-19T19:25:18+08:00",
+  "source_dir": "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2",
+  "summary_status": "pass",
+  "checksums_verified": true,
+  "input_files": {
+    "oracle_points.csv": {
+      "sha256": "9f3c13fa9a264f4b134fbe088048fba01b34a250b9af01268cd081e7bce6fdbb"
+    },
+    "spec.json": {
+      "sha256": "e76627e9e0837cd9f566dbe0d8c731171349c9f8d72be72596edadfba5bcef28"
+    },
+    "summary.json": {
+      "sha256": "61c5526545993b3dcc7b62addcf5faa8a9e539cac31a397efac9a8c63028a60e"
+    },
+    "scripts/autoresearch_v5/test_near_zero_alpha_oracle.py": {
+      "sha256": "7812f5825340851a8392de81690edbe1c6ea04b15fa9583d4fa7ed2a450dd292"
+    },
+    "scripts/autoresearch_v5/validate_near_zero_alpha_oracle.py": {
+      "sha256": "91e007e81ffce460eee9f301b7e9492e9a99096f2dd38081dbbeaf7c484699c9"
+    }
+  },
+  "oracle_points_columns": [
+    "point_role",
+    "alpha",
+    "beta",
+    "alpha_abs",
+    "nup3_dimension",
+    "nup4_dimension",
+    "nup5_dimension",
+    "E_sz0",
+    "E_sz1",
+    "E_sz_minus1",
+    "gap_sz1_minus_sz0",
+    "gap_over_alpha2",
+    "predicted_gap_over_alpha2",
+    "prediction_relative_error",
+    "asymptotic_gate_applicable",
+    "s2_sz0_ground",
+    "s2_sz1_ground",
+    "s2_sz_minus1_ground",
+    "s2_sz0_triplet_match",
+    "sz0_triplet_energy_match_error",
+    "full_hermiticity_error",
+    "construction_max_abs_error",
+    "max_reported_residual",
+    "max_reported_norm_error",
+    "max_reported_orthogonality_error",
+    "max_all_residual",
+    "max_all_norm_error",
+    "max_all_orthogonality_error",
+    "alpha0_checks"
+  ],
+  "output_files": {
+    "report.json": "0c1cce18e91685de47024f4275485719b3b4fc8a551301dd5be8564245a444e0",
+    "report.html": "3fa9ea531fd6d2731cceab789228a3a13f443b0689a428004c9a86952ba449d2"
+  },
+  "render_command": [
+    "D:\\Python3.12.4\\python.exe",
+    "-B",
+    "-X",
+    "utf8",
+    "C:\\Users\\hh250\\.codex\\skills\\report\\render_report.py",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\near_zero_alpha_mechanism_report_v2"
+  ],
+  "backend_note": "数值结果由 NumPy oracle 提供；本报告未使用或声称使用 XDiag。"
+}

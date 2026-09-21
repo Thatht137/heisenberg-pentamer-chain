@@ -1,0 +1,1369 @@
+{
+  "schema_version": 1,
+  "stage": "C-Practical-V2-R1",
+  "records": [
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.05,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.24767328701317515,
+      "error": 0.005010673768732765,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a00500-b00500-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-d9dffe860d7b4664d1ec",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6025,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a00500-b00500-L080.json",
+        "sha256": "c6e6b546444d9c7dce70157f6d4e0959bb75cf5f7d6886d96336f337cf72ff4c",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a00500-b00500-L080.json",
+        "sha256": "5e79039833458b94d17d8f4fb4187672f80327ebfca4b6bf626ec115161a5cb3"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.05,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.07538284171422116,
+      "error": 0.015809489920358244,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a00250-b00500-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-d9b3c630f9694be341da",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a00250-b00500-L080.json",
+        "sha256": "95e61191c49fc30573cb1afbe8232fbcc285ce1add1c0445ee5191b482cbd417",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a00250-b00500-L080.json",
+        "sha256": "c82d86402254ef2c60e5b2d83e7e650d9b090fa5dd359085155f278ea7dd72a2"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.28478568631058726,
+      "error": 0.0031022783639233498,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a01000-b01000-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-9604320a2a69f627ddf0",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a01000-b01000-L080.json",
+        "sha256": "82a10347414c8223b3ae502de2541588ecc877b5cb416f3288449e1242ab9c51",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a01000-b01000-L080.json",
+        "sha256": "ed3eb7cbbbfb9331ebb13fae95acc41184627ef0826e113b84e29805d1dcbdf8"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.075,
+        "beta": 0.1,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.1387443922137741,
+      "error": 0.006958073940238951,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a00750-b01000-L060/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-34ad04c3602593438740",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a00750-b01000-L060.json",
+        "sha256": "9d2fe929e4f75e2071ed1d25cef066558a1c45a636ffd31a88c4c0de651fc042",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a00750-b01000-L060.json",
+        "sha256": "bdda58b0d821782d72769c59ad2d0ea7bac689465c6f4d06a6b414d837341995"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.075,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.22608021142786905,
+      "error": 0.0029254428427317736,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a00750-b01000-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-0531c6a97a0be5b00d22",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6025,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a00750-b01000-L080.json",
+        "sha256": "4b5b5800563965c136b7b2fbddaf4baad05acc64dcbff08408bb55daaf238921",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a00750-b01000-L080.json",
+        "sha256": "6f8438df53b275259504d6788b7a3d24e308d844a6a8a130acd768841cceac51"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.1434924948539067,
+      "error": 0.008672857941731671,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a00500-b01000-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-ba766280a106d07b8a72",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a00500-b01000-L080.json",
+        "sha256": "6a1e913057c63d852f2da25ace29a03890057584787d04e0b78e4ad992e92122",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a00500-b01000-L080.json",
+        "sha256": "5aee5c49c36d6b3387918add4c081e8af8c78324350e6252c1919190d305997c"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.3147554129075065,
+      "error": 0.00014813797584256605,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a02500-b02500-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-f8aa148bc25ca186d165",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a02500-b02500-L080.json",
+        "sha256": "92f2b7c0464fb2f2de73479e86d7839b9c51746dcb8e6bd8d4bf9ce649322762",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a02500-b02500-L080.json",
+        "sha256": "c7fcab346555c4d0653b28cdd2f9d9dc7c7ba381c5eba6843a33f8db0e5d7df6"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.1795850594029128,
+      "error": 0.0002151303730892895,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a01750-b02500-L060/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-2015825a38b335040aef",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a01750-b02500-L060.json",
+        "sha256": "e33adfeecf025f26106c8c29cca20e685dae54e4e548496a9fe3eca4f229e720",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a01750-b02500-L060.json",
+        "sha256": "1d2e37d2c0bd7606d2f089b69e68707a82053ed8368fbc949d1f2f099108544f"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.2723742555489771,
+      "error": 0.002883014006168305,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a01750-b02500-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-e0276281f0ca4442cf05",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a01750-b02500-L080.json",
+        "sha256": "0708e7df1b23f6acdedabb9231fc2f0fa392d68fa7779c2ed68968ac82e32143",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a01750-b02500-L080.json",
+        "sha256": "568d9ba0dd0a50dbcaa64d427ec3213ce15dcf51050b16028cc15fca31ae4546"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.16587528205666896,
+      "error": 0.0031279969040908795,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a01000-b02500-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-2da40639f64fd24ffd55",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a01000-b02500-L080.json",
+        "sha256": "649debd9edd642b7d12dbaf27f6b1a25c1e48bdd95777485208b7ace734a4222",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a01000-b02500-L080.json",
+        "sha256": "f2658535465bf82698eeed35db5ecd66d681f18ff828c56907ed905ac0a89270"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.2775813613170579,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a03500-b05000-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-9a61f4918dfabd63a9a4",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a03500-b05000-L080.json",
+        "sha256": "5cd635e0fe93f0fa88c96a04ede1a0c5699a40e9905d31a54818525cc5836660",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a03500-b05000-L080.json",
+        "sha256": "a392e09b35395be64415536461b5593a4eeb5ffb5ea6312ef7283dce73e00dc1"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.3,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.20429249080552586,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a03000-b05000-L060/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-8f0bf519b68c86bfea06",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a03000-b05000-L060.json",
+        "sha256": "5c8bd2028ed49dd9b720b3a35789574787031bdb4d71ac746aa81d175d0da15a",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a03000-b05000-L060.json",
+        "sha256": "c589afebe97f7305ed3b5e6d4437bf6814d5e1ad6ec832a3c58818404f0dceb5"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.3,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.18308230594712604,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a03000-b05000-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-851b666ba8374701b1c7",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a03000-b05000-L080.json",
+        "sha256": "45e21a2949efd2a5f1827cb08f95a3fbcea446973811d9d3efd7b1c524f3aca9",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a03000-b05000-L080.json",
+        "sha256": "8f48f42382d712eeab6454ce08bbfb0679870df05222cf6c554e1df441ca3be2"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.19608486727548036,
+      "error": 0.001325336226849383,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a02500-b05000-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-6541365ee55e3d02fdbf",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a02500-b05000-L080.json",
+        "sha256": "bb044becd526498ae9285d12648d7e7a6424eec889c103ad4e035e8493e7f444",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a02500-b05000-L080.json",
+        "sha256": "600ed25ac11a29e7d4974d9955f36bf7de4d72b6e3798ac89147daef427bdf8e"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.3080441227241791,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a07500-b07500-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-81154595ea8d10610dcb",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a07500-b07500-L080.json",
+        "sha256": "06bcff20319ea3286028daeea207f85c76295403e7cb74754f66651071ac54be",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a07500-b07500-L080.json",
+        "sha256": "c1b6d4e561e9f6e15837ecfc9beb775bb2ec2aa674d452df4934f8836ed9f5ed"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.295084608885393,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a06250-b07500-L060/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-d44aebac8629418b0372",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.605,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a06250-b07500-L060.json",
+        "sha256": "73fe2c81897efc94155910917e8c6d03ef066ffeaf3dfbfa7e70067187b4d8e0",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a06250-b07500-L060.json",
+        "sha256": "32a705bf247dd96a354aaace836f46dae0093c55831a6ba97d120b6d73d5dcdc"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.29160943576743864,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a06250-b07500-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-6ebc4883b0b570977f94",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a06250-b07500-L080.json",
+        "sha256": "15055f747a630229ff18c4e779dce4afc29e4fa67fec5cc3a0301032f8bb22f4",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a06250-b07500-L080.json",
+        "sha256": "4cdb83fcc1b3e42c0ca6b4fc94510bdbc124095f29aab7bd7c6f3d262bc1c14e"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.271824158273619,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a05000-b07500-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-6b91b7c753fcd3144d3e",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a05000-b07500-L080.json",
+        "sha256": "b3ed3f895c3dcc5938445be4bcc554913e50b75a5ff2e36ef6d23f586d33b03b",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a05000-b07500-L080.json",
+        "sha256": "33d876c0529ad0adfeef7f6a61bed53a7153624628b62f30f8787c7436ebee5d"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.425,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.21549255943078421,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a04250-b07500-L060/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-46ff31ae842f17ad04e8",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a04250-b07500-L060.json",
+        "sha256": "d38d8a91963b07cb07f11bb290db79e17e90272ec317543eebf85d650f60b58a",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a04250-b07500-L060.json",
+        "sha256": "261fa12222ba6ce7ef1ff6b6e2513454a66082e73e30996a95f3f4b64ea3991d"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.425,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.1943017169433186,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a04250-b07500-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-eda7079012f22379d679",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a04250-b07500-L080.json",
+        "sha256": "d8bb427e54a1e987a4caf2446eda845743d4c97a1b2b2e72ddac005fa41e2713",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a04250-b07500-L080.json",
+        "sha256": "30b56cdca782307527245daf300193250e4d7b9b494de9eae9eb68d3b0afcd66"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.20808066269311198,
+      "error": 0.0007027506100956149,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a03500-b07500-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-e3cac6456088207dd2a1",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a03500-b07500-L080.json",
+        "sha256": "dea581055fd1e52590f7100dc78aafc217558ee8859851d14f3c5ec59093383f",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a03500-b07500-L080.json",
+        "sha256": "d93c501256370cd72469de9950e05ca8d7c9be179d411578c5cbde48466b6210"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.29084942239133704,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a07500-b09000-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-c814c489c30ef92b9268",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a07500-b09000-L080.json",
+        "sha256": "617ce8d740ea7ae5ef8bae7bda24df41f3f1a169f4ba91ec11bb6c6cafb57943",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a07500-b09000-L080.json",
+        "sha256": "bf8e69f3ea1124317803040be6b0416737075f50b24a003a1bbf55461e31aab3"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.9,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.27901307920938484,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a06250-b09000-L060/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-01c8f544b84427ba4407",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.605,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a06250-b09000-L060.json",
+        "sha256": "16b00089550c6a4c029a9691b1fca987f2c34227b3d35ebd558a4bd4241c5f57",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a06250-b09000-L060.json",
+        "sha256": "62b7a6bdf8aba5d0f5624081d17e0edd899073d40972302c5a013673721d492a"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.2748427771069992,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a06250-b09000-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-847bc38ecffe67296a54",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a06250-b09000-L080.json",
+        "sha256": "171a1c3f52c2976360ac1857926f9fbf7b2f175d5f613569ad8b321b9f416c43",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a06250-b09000-L080.json",
+        "sha256": "2cc0264d467cc7f23928bba1c44d73056f03539c25b6135121dbbfb978cdb970"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.19882966396850588,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a05000-b09000-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-7f6d2ed318b67d04abe1",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a05000-b09000-L080.json",
+        "sha256": "3e9f3cb7bb7bfddb0c3681729eabdb2a45b15896b9f9e9dc992c46dd16d89411",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a05000-b09000-L080.json",
+        "sha256": "5f39f133dcdfacb5ae739f9ccd78577a8d94e7665b0f11290af6f8af904de023"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 1.0,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.2812626408537176,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a07500-b10000-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-a759a143436a01a57eae",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a07500-b10000-L080.json",
+        "sha256": "c062d99129494e84778cce5690b7a24624bb161edd274d7ff6e2bbcaa9fe12d2",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a07500-b10000-L080.json",
+        "sha256": "3b9b0e9699235807297ce2dd79a4d9474fedffe577c4917216bdc08813c59b05"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.625,
+        "beta": 1.0,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.2139551530586804,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a06250-b10000-L060/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-8e5d4f8eafa0007aba59",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a06250-b10000-L060.json",
+        "sha256": "9253b336a232b3e2aca7f5b176199badfbc8d5ad9bc43f3ae5f04c548ab291c3",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a06250-b10000-L060.json",
+        "sha256": "2fe1225262d11013a82f782b60e943f26d0833758f3c48d8a6a814770544f0d2"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.625,
+        "beta": 1.0,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.26556689097013736,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a06250-b10000-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-7a9aee18fc9f6c44e449",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a06250-b10000-L080.json",
+        "sha256": "37861cd8b7d7bddd42b8d93d15bacf77b18d772c22881b681fc1e1203e375b17",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a06250-b10000-L080.json",
+        "sha256": "8e431f13a12f4ddb7ce3dd0534d7e2049fba3752fff0156f92f7021a273d233e"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 1.0,
+        "L": 80,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.20802519770398115,
+      "error": 0.0001,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/negc-v2-r1-a05000-b10000-L080/manifest.json",
+      "accepted_only": true,
+      "boundary_eligible": true,
+      "controller_action_id": "act-ccbf566d8709b6ad8778",
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 1.0,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        }
+      },
+      "validation": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/validation/negc-v2-r1-a05000-b10000-L080.json",
+        "sha256": "9fc34edb775fe0db2612a72704c1b6f3456d0fcfd7a8ccd772fbd2eb3f7f982b",
+        "policy": "Practical V2"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-c-negative-refine-practical-v2-r1-20260909-1245/receipts/negc-v2-r1-a05000-b10000-L080.json",
+        "sha256": "0979dddd858e9d9b37a4978cace11932d32d5ed8ae70d6e453732d37db96b88f"
+      },
+      "provenance": {
+        "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+        "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "acceptance_policy": "practical_v2",
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "figure": "cv_continuum_overlay_20260803",
+  "backend": "Python/matplotlib",
+  "archetype": "asymmetric mixed-modality figure",
+  "claim": "三个已验收 L=40 CV 离散点与 alpha=0.23,beta=0.5 的 leading-order 有效链参考频率窗相容，但不构成连续谱或方法交叉结论。",
+  "scope": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "L": 40,
+    "q": "pi",
+    "eta": 0.1,
+    "negative_alpha_excluded": true
+  },
+  "acceptance": {
+    "points": 3,
+    "max_relative_residual": 6.021249843402546e-06,
+    "all_nonnegative": true,
+    "all_points_inside_reference_window": true,
+    "jeff_over_beta": 0.4317623340231316,
+    "reference_window_upper_qpi": 0.6782106883319263,
+    "local_quartet_gap": 0.23928057903755495
+  },
+  "source_files": [
+    {
+      "path": "results/autoresearch_v5_20260802/round21_cv_triplet_warmstart/cell-0002-L40-qpi-w025-w035/spectrum.csv",
+      "sha256": "08f1cb69c4cdedf7c7d3036d838e8abe2438d053fab29f0f57343e80154c1d34"
+    },
+    {
+      "path": "results/autoresearch_v5_20260802/round21_cv_triplet_warmstart/cell-0002-L40-qpi-w025-w035/manifest.json",
+      "sha256": "3296943dc08ea0610b4098dd1e6344964b0a88892e0d8b8ec677ffd02f079639"
+    },
+    {
+      "path": "results/autoresearch_v3_20260729/round1_doublet_projection/representative.csv",
+      "sha256": "4be460ca405c4e13f4c61618ec5eb6d5847cf48ae37d9b1debeef5df50c0465f"
+    },
+    {
+      "path": "results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/representative_summary.csv",
+      "sha256": "008bc3c2b46879ba4870c673a8c8c43950451fcc452f691bf768471316a9cfca"
+    },
+    {
+      "path": "results/research_progress/cv_continuum_overlay_20260803/cv_points_with_continuum_reference.csv",
+      "sha256": "f8fca24c596c576d48cafd2f2d02aa528925a2733f2e96dea513a2fc4b169337"
+    }
+  ],
+  "exports": [
+    "figures/cv_continuum_overlay_20260803.svg",
+    "figures/cv_continuum_overlay_20260803.pdf",
+    "figures/cv_continuum_overlay_20260803.png",
+    "figures/cv_continuum_overlay_20260803.tiff"
+  ],
+  "interpretation_boundary": "参考边界为有效链热力学 leading-order 公式；图中三点不是完整频率网格，不作谱支命名，不替代 L=80 CV 或 TEBD。"
+}

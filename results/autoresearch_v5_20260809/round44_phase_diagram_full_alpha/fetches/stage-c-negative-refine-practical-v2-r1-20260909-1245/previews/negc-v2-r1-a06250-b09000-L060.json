@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "created_at": "2026-09-09T04:47:20.976034+00:00",
+  "cell_id": "negc-v2-r1-a06250-b09000-L060",
+  "remote": "wangjieren@39.96.207.180",
+  "port": "6000",
+  "remote_dir": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-c-negative-refine-practical-v2-r1/cells/negc-v2-r1-a06250-b09000-L060",
+  "local_destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-c-negative-refine-practical-v2-r1-20260909-1245\\negc-v2-r1-a06250-b09000-L060",
+  "destination_exists": false,
+  "file_count": 36,
+  "total_bytes": 137309,
+  "remote_checksum_status": "pass",
+  "hashes": {
+    "checksums.sha256": "22983a45f9a7bde8d335f619757a7d977d351bd147956de66eb402a35726e64f",
+    "manifest.json": "ce599dc8565067bcb36b0f84d658ce78d9db4244147f0bd6999501d3e5c590ff",
+    "status.json": "3db0640bd2fbeab6f3c550c6163aa2f13b07118c0b00d8d579e9b0dd15a2fcac"
+  }
+}

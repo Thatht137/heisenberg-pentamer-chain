@@ -1,0 +1,899 @@
+{
+  "title": "1×5 Heisenberg 五聚体链：完整研究进展与相结构证据报告",
+  "eyebrow": "FULL RESEARCH REPORT · UPDATED 2026-08-09 · FULL ALPHA CAMPAIGN",
+  "lede": "完整汇总 1×5 Heisenberg 五聚体链的模型、数值链、图件、当前物理判断与证据边界。相图范围为 -1≤alpha≤1、0≤beta≤1；严格口径尚未确认第二个热力学相，宽松口径采用深负alpha非公度区、近零负侧公度区和正alpha无隙反铁磁区三个体相区的工作图，alpha=0另作奇异线；beta=0.5 的 alpha∈[-0.35,-0.25] 暂作动量重构带；R10已自然终态且远端checksum通过；非覆盖回传因本地权限审批超时待恢复，尚未作科学接纳。",
+  "sections": [
+    {
+      "title": "一页结论",
+      "note": "核心结论与证据边界。",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "warn",
+          "label": "严格未确认第二个热力学相；宽松口径采用三个体相区的工作图",
+          "why": "工作计数为：深负alpha的有效S≈3/2、q≈0.60π候选非公度临界区，近零负侧q=π候选公度临界区，以及正alpha有效S=1/2、q=π无隙反铁磁区；alpha=0另作解耦高简并奇异线。alpha=-0.35到-0.25的分隔仍可能只是Lifshitz交叉。"
+        },
+        {
+          "kind": "text",
+          "text": "这句话的准确含义是“在当前参数范围、尺寸序列、观测量和验收门槛下没有看到相边界证据”，不是“证明热力学极限中只有一个相”。有限尺寸效应、观测量灵敏度和未计算的更大尺寸仍然可能隐藏非常窄的结构。"
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "问题",
+            "当前答案",
+            "证据级别"
+          ],
+          "rows": [
+            [
+              "是否找到了新相？",
+              "严格口径尚未；宽松物理判断采用三个体相区，其中负α含两个候选临界区。",
+              "强耦合图像 + beta=0.5有限尺寸数据"
+            ],
+            [
+              "是否找到了相变点？",
+              "候选动量重构区间[-0.35,-0.25]；未定为热力学相界。",
+              "q_peak变化与R60-R40反号"
+            ],
+            [
+              "是否可以说只有一个相？",
+              "不能这样强断言。",
+              "当前结果只支持有限尺寸范围内未见边界"
+            ],
+            [
+              "五聚体是否有新物理？",
+              "有：奇数单胞 S=1/2、q=π 过滤、弱二阶 J2。",
+              "局域 ED、有效理论、动力学交叉验证"
+            ],
+            [
+              "是否已经有可写论文的主线？",
+              "有，但应写成机制与否定结果，而不是新相图。",
+              "证据链已闭合，范围需限定"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "一句话版本",
+          "style": "info",
+          "text": "1×5 不是 1×4 的简单尺寸替换：奇数自旋单胞留下有效 S=1/2 链自由度；当前正耦合数据未显示可验收的额外相界。"
+        }
+      ]
+    },
+    {
+      "title": "研究目标、范围与对象",
+      "note": "所有计算均围绕参考文献的 1×4 链复现逻辑，将单胞改为 1×5。",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "项目",
+            "本项目设定"
+          ],
+          "rows": [
+            [
+              "模型",
+              "1×5 自旋-1/2 Heisenberg 五聚体链，能量单位 J1"
+            ],
+            [
+              "参数范围",
+              "-1 ≤ α ≤ 1，0 ≤ β ≤ 1；α=0、β=0 作为奇异边界控制"
+            ],
+            [
+              "参考复现",
+              "对应参考文献 Fig.3 的完整 α 范围；五聚体替换四聚体"
+            ],
+            [
+              "明确排除",
+              "参考文献 Fig.9；未经严格验收的相名和热力学外推"
+            ],
+            [
+              "边界条件",
+              "静态链以有限尺寸 OBC 诊断为主；动力学主交叉点为 q=π、L=40"
+            ],
+            [
+              "论文状态",
+              "研究结果与图注草稿已在 HTML；未写入或修改 paper/"
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "问题拆解",
+          "items": [
+            "五聚体孤立单胞的低能总自旋、宇称和跃迁通道是什么？",
+            "正 β 耦合后是否投影为有效反铁磁 S=1/2 链？",
+            "能否像四聚体一样从有限尺寸 crossing 识别多个区域？",
+            "q=π 动力学谱是否能被 correction-vector 与 TEBD 独立复核？",
+            "哪些结论可以写进论文，哪些只能作为 bounded 或 exploratory 结果？"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "已经完成的工作链",
+      "note": "本地工具链、服务器计算、回传和图件均有独立证据。",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "模块",
+            "完成内容",
+            "当前状态"
+          ],
+          "rows": [
+            [
+              "局域 ED",
+              "完整五聚体多重态、总自旋/宇称、q=π 跃迁权重",
+              "通过；正 α 扫描"
+            ],
+            [
+              "有效理论",
+              "一阶 J_eff 与二阶虚激发 J2；两/三单胞谱检验",
+              "闭合；误差阶由 O(β²) 推迟到 O(β³)"
+            ],
+            [
+              "静态 DMRG",
+              "双初态、L=40/60/80 晋级、纠缠谱、crossing guard",
+              "完成；未发现可验收内部 crossing"
+            ],
+            [
+              "CV 动力学",
+              "q=π correction-vector、checkpoint、residual 门控",
+              "round43 五点通过；accepted-only"
+            ],
+            [
+              "TEBD 动力学",
+              "严格 q=π、dt/tmax/maxdim/Fourier 独立检查",
+              "通过；与 CV 在限定点 Agreement"
+            ],
+            [
+              "full-q 稳定性",
+              "三个代表点、dt=0.025/0.0125、六个顺序 cell",
+              "六个 validator 与三组 dt 交叉检查通过"
+            ],
+            [
+              "本机验证",
+              "80/80 全项目测试、111 条 source-data inventory、篡改拒绝与导出 QA",
+              "全部通过；合成数据未当作物理结果"
+            ],
+            [
+              "图件与 HTML",
+              "Fig.1–5 主图、Fig.6–8 边界图、精细 Figure 3",
+              "已导出并通过报告审计"
+            ],
+            [
+              "复现性",
+              "远端 checksum、非覆盖回传、本地 checksum、独立 validator",
+              "生产 handoff=production_ready"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "核心定量结果",
+      "note": "下面只列已有数值证据的结果，不把合成数据当成物理结论。",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "诊断",
+            "数值结果",
+            "应如何解释"
+          ],
+          "rows": [
+            [
+              "有效一阶交换",
+              "J_eff/β = 0.4189–0.4396 > 0",
+              "正 β 投影为反铁磁有效 S=1/2 链"
+            ],
+            [
+              "q=π 局域选择定则",
+              "最低激发双重态变暗；四重态承载 84.1%–97.6% 权重",
+              "高能 q=π 通道主要由局域 S=3/2 多重态承载"
+            ],
+            [
+              "二阶有效挫折",
+              "受控边缘 J2/J1 = 3.95%–5.19%",
+              "五聚体虚激发产生弱反铁磁次近邻项；尚不足以命名新相"
+            ],
+            [
+              "低能标度",
+              "matched-size c=1 oracle 比值 1.024–1.033",
+              "有限尺寸上支持反铁磁自旋链低能结构"
+            ],
+            [
+              "静态 crossing",
+              "105 条成功记录；无稳定显著内部 bracket",
+              "当前正区不能报告相变点"
+            ],
+            [
+              "CV 数值准确度",
+              "L=10 对精确谱相对 L2 误差 8.52×10⁻¹²",
+              "CV 实现本身不是当前瓶颈"
+            ],
+            [
+              "CV–TEBD Agreement",
+              "round43 五点 ω=0.00–0.20 全部通过 residual、checksum 与 validator",
+              "结论限定 α=0.23、β=0.5、L=40、q=π"
+            ],
+            [
+              "full-q dt 交叉检查",
+              "最大峰漂移 0.01 J1；低频权重相对漂移 4.32×10⁻⁵",
+              "三个代表点的时间步稳定性通过"
+            ]
+          ]
+        },
+        {
+          "kind": "verdict",
+          "status": "good",
+          "label": "最可靠的正面结果是“机制”，不是“新相图”",
+          "why": "五聚体奇数单胞留下半整数低能自由度；局域多重态、动量过滤和二阶有效项共同形成可检验的新内容。"
+        }
+      ]
+    },
+    {
+      "title": "Figure 3：相结构诊断",
+      "note": "精细版同时展示探索性高密度图和严格有限尺寸证据，避免把视觉平滑误读为相边界。",
+      "blocks": [
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "assets/figure3_refined.png",
+              "caption": "Figure 3 精细版。a：正耦合区域 40×60 的 O_str 静态探索网格，叠加等值线与严格 105 点采样位置；等值线不是相边界。b/c：严格 R(L=80) 切片及误差棒。d：R60−R40 crossing 诊断；严格内部点保持负值。"
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "图中信息",
+            "证据属性",
+            "结论边界"
+          ],
+          "rows": [
+            [
+              "40×60 O_str map",
+              "已有静态探索数据",
+              "可看趋势，不用于拟合热力学相边界"
+            ],
+            [
+              "105 点严格 mesh",
+              "L=40/60/80 成功记录",
+              "所有内部 crossing 诊断未形成可验收 bracket"
+            ],
+            [
+              "R60−R40",
+              "尺寸差符号与误差棒",
+              "当前点全负不等于证明全区单相"
+            ],
+            [
+              "图 3 结论",
+              "有限尺寸否定结果",
+              "应写“未见可验收 crossing”，不写“证明没有相变”"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "学术表述建议",
+          "style": "info",
+          "text": "建议使用：‘在 0≤α,β≤1 的当前有限尺寸数据和严格 crossing 门槛下，未发现稳定内部相界。’ 不建议使用：‘五聚体只有一个相’或‘已经证明不存在相变。’"
+        }
+      ]
+    },
+    {
+      "title": "2026-08-09 负 alpha 完整相图 campaign",
+      "note": "范围扩展为 -1<=alpha<=1、0<=beta<=1；参考 Fig.3 对齐，Fig.9 仍排除。",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "warn",
+          "label": "R10已终态且远端checksum通过 · 非覆盖回传待恢复",
+          "why": "R10的L60补救已完成，下一L40点触发数值门；无Julia残留且stderr为空。两个cell的父/双子checksum均通过，但回传预览因本地权限审批服务两次超时尚未执行，因此不提前接纳任何新结果。"
+        },
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "服务器批次",
+              "stage-b-negative-coarse-r10-remaining79 · PID 1134571"
+            ],
+            [
+              "阶段 A",
+              "24 cells；beta=0.5；L=40/60/80；并发 1"
+            ],
+            [
+              "当前进度",
+              "R10终态：completed=1，failed=negb10-a0750-b0100-L040；累计accepted仍为17"
+            ],
+            [
+              "alpha 网格",
+              "-1.0, -0.75, -0.5, -0.35, -0.25, -0.1, -0.05, -0.025"
+            ],
+            [
+              "条件 ETA",
+              "回传、validator与R11生成通常需10–20分钟"
+            ],
+            [
+              "下次读取窗口",
+              "2026-08-13 15:10 CST resume non-clobbering preview"
+            ],
+            [
+              "持续检查",
+              "recurring heartbeat 每 2 h；不是一次性检查"
+            ],
+            [
+              "服务器启动前负载",
+              "load=41.12；available RAM=181 GiB；因此单 cell 顺序"
+            ]
+          ]
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "assets/7275192f6233_full_alpha_phase_evidence_20260811.png",
+              "caption": "完整 alpha 范围的当前证据相图。a，二维证据分区：正 alpha 为已严格覆盖的常规 q=pi 临界区，负 alpha 仍以斜线表示待分类区，alpha=0 为解耦奇异线；b，beta=0.5 的 q_peak/pi 显示alpha=-0.35 到 -0.25 的动量重分配；c，R(L=60)-R(L=40) 在同一区间反号，但尚不满足0.025边界门；d，R16只未通过1e-8能量平台门，1e-7实用门可接纳。橙色空心点为boundary-ineligible实用校准，不能单独据此命名新相。"
+            },
+            {
+              "src": "assets/3f959f4c0cc9_full_alpha_tentative_phase_diagram_20260811.png",
+              "caption": "较宽松的物理假说相图。正区为有限尺寸数据支持的有效S=1/2、q=pi无隙反铁磁区；深负区按强耦合图像暂标为有效S≈3/2、q≈0.6pi、弦/边缘活跃的候选非公度临界区；靠近alpha=0的负区暂标为低置信的公度临界区。alpha=0是解耦三聚体+跨胞二聚体奇异线。只有beta=0.5的橙色区间由数值校准，负区二维着色是待Stage B/C检验的假说，不是最终相界。"
+            },
+            {
+              "src": "assets/066657c77fb7_full_alpha_working_phase_diagram_20260812.png",
+              "caption": "宽松判定下的工作相图与有限尺寸证据。当前最合理的工作计数是三个体相区：深负alpha的q≈0.60pi非公度临界区、靠近零点负侧的q=pi公度临界区、以及正alpha的q=pi无隙反铁磁区；alpha=0另作解耦高简并奇异线。只有beta=0.5上alpha∈[-0.35,-0.25]的动量重构带已有L40/60/80校准，其二维延伸仍是Stage B/C要检验的工作假说。"
+            }
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "首批失败证据",
+          "style": "warn",
+          "text": "程序门：all six structure_factor_fullq.csv files used literal \\n instead of physical line endings；数值门：L80 ferro_j2 Sz=0 variance/site 2.6970155886374414e-8 exceeds 1e-8。远端/本地 checksum=pass for 3 parent cells and 6 child runs/pass；科学接纳记录=0，没有降低阈值。"
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "阶段",
+            "新增计算",
+            "停止/推进门"
+          ],
+          "rows": [
+            [
+              "A",
+              "beta=0.5；8 alpha×L40/60/80=24",
+              "全 cell 严格验收，校准 q_peak 和负区初态"
+            ],
+            [
+              "B",
+              "其余 6 beta；8 alpha×L40/60=96",
+              "失败即停；不铺满无必要的 L80"
+            ],
+            [
+              "C",
+              "显著 bracket 或诊断冲突点",
+              "2 sigma、Delta alpha<=0.025、最终 L60/80"
+            ],
+            [
+              "D",
+              "合并正区 105 records 与 accepted 负区",
+              "相名至少双诊断；生成图、source manifest 与 HTML"
+            ]
+          ],
+          "widths": [
+            "12%",
+            "42%",
+            "46%"
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "当前科学边界",
+          "style": "pending",
+          "text": "宽松口径下可暂按三个体相区组织文章：深负alpha非公度临界区、近零负侧公度临界区和正alpha无隙反铁磁区，alpha=0为奇异线。严格口径仍把q≈3pi/5到pi的变化记作候选Lifshitz动量重构；Stage B/C需验证其随beta的连续边界和双诊断一致性。"
+        },
+        {
+          "kind": "code",
+          "title": "验收入口",
+          "text": "docs/full_phase_diagram_negative_standard_20260809.md\nresults/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/campaign-plan.json\nscripts/autoresearch_v5/fetch_negative_phase_run.py\nscripts/autoresearch_v5/validate_negative_phase_run.py\nscripts/autoresearch_v5/ingest_negative_phase_r17_success.py\nscripts/autoresearch_v5/analyze_negative_phase_stage_a.py\nscripts/autoresearch_v5/make_negative_phase_stage_b_r1.py\nscripts/autoresearch_v5/stage_negative_phase_stage_b_terminal.py\nscripts/autoresearch_v5/test_negative_phase_stage_b_terminal.py\nscripts/autoresearch_v5/analyze_negative_phase_stage_b.py\nscripts/autoresearch_v5/test_analyze_negative_phase_stage_b.py\nscripts/autoresearch_v5/make_negative_phase_stage_c_r1.py\nscripts/autoresearch_v5/launch_negative_phase_stage_c_r1.sh\nscripts/autoresearch_v5/upload_negative_phase_stage_c_r1.ps1\nresults/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_a_finite_size_diagnostic_latest.json"
+        }
+      ]
+    },
+    {
+      "title": "物理图像下的相数预期",
+      "note": "这里是基于哈密顿量结构和有效理论的预期，不等同于已经由数值证明的相图。",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "good",
+          "label": "严格正区内部最自然的预期是一个 gapless c=1 有效链相",
+          "why": "五个自旋-1/2 组成一个半整数总自旋单胞；所有 α、β>0 时没有负键和几何挫折，低能投影给出反铁磁有效 S=1/2 Heisenberg 链。"
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "区域",
+            "物理图像",
+            "应否称为独立相"
+          ],
+          "rows": [
+            [
+              "0<α≤1、0<β≤1",
+              "局域五聚体 S=1/2 双重态被胞间反铁磁耦合；连续连接到均匀 Heisenberg 链，预期 gapless、c≈1",
+              "预期一个主相"
+            ],
+            [
+              "β=0",
+              "五聚体彼此隔离，每个单元保留 S=1/2 双重态，出现宏观简并",
+              "边界奇异线，不是二维内部相"
+            ],
+            [
+              "α=0、β>0",
+              "J2 边键断开，体系分解为独立三自旋链与胞间二聚体；三自旋双重态产生宏观简并",
+              "边界奇异线，不是内部相"
+            ],
+            [
+              "α=β=0",
+              "独立三聚体与自由边缘自旋的更高简并点",
+              "多重简并端点"
+            ],
+            [
+              "α<0",
+              "铁磁边键可能改变局域多重态和有效自旋，理论上可能产生额外结构",
+              "本项目明确排除，不能纳入当前结论"
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "为什么不预期像四聚体那样有三个内部相",
+          "items": [
+            "四聚体是偶数自旋单胞，可以形成单胞 singlet、整数自旋/Haldane 型结构和临界中间区；",
+            "五聚体是奇数自旋单胞，正 α 下最低局域多重态始终保留 S=1/2，不能被完全淬灭成单胞 singlet；",
+            "当前模型只有最近邻键的正交换，未引入产生自发二聚化或强挫折的额外相互作用；",
+            "因此正区更像同一无隙有效链相的参数变形，而不是三个有隙相之间的切换。"
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "最终判断",
+          "style": "info",
+          "text": "物理图像支持‘正区内部大概率一个 gapless 主相 + α=0、β=0 的边界奇异线’，但数值上仍应写成‘当前有限尺寸数据未发现额外内部相界’，不能写成已证明整个正区只有一个相。"
+        }
+      ]
+    },
+    {
+      "title": "为什么早期相图不同",
+      "note": "旧图与当前图不是同一数据、同一观测量和同一绘图流程；差异主要来自数据质量、数值精度、范围和视觉编码。",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "warn",
+          "label": "旧相图不能直接作为当前正区相图的基准",
+          "why": "旧版 alpha=0 列含有手工写入的 ±0.25 异常值，且旧脚本只做 11×10 单次 DMRG；当前图采用高精度网格和严格有限尺寸诊断。"
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "比较项",
+            "早期 phase_diagram.png",
+            "当前 Figure 3 / 正区诊断"
+          ],
+          "rows": [
+            [
+              "实际数据源",
+              "scripts/plot_phase_diagram.py 内硬编码 data_raw，再写出 data/phase_diagram.csv",
+              "03d 高精度 DMRG 输出 data/phase_diagram_80x60_hires.csv（4974 行、4800 唯一点，含 174 行重复）；严格 crossing 另用 observations_merged.json"
+            ],
+            [
+              "网格",
+              "11×10；α∈[-1,1]、β∈[0.1,1.0]",
+              "探索图正区 40×60；严格网格为 5 个 α × 7 个 β × L=40/60/80"
+            ],
+            [
+              "DMRG 设置",
+              "N_units=12、maxdim=400、cutoff=1e-8、8 sweeps、random_mps",
+              "N_units=12、maxdim=1000、cutoff=1e-10、20 sweeps、确定性 Néel 初态"
+            ],
+            [
+              "α=0 处理",
+              "手工出现 0.25、−0.25 等饱和值，形成亮色竖条；不是可靠物理值",
+              "高密度静态图排除 α=0；严格诊断把 α=0 作为边界点单独记录"
+            ],
+            [
+              "观测量",
+              "|O_str| 单次有限链数值",
+              "面板 a 为 O_str 探索图；面板 b–d 为 central structure-factor ratio R 的有限尺寸 crossing"
+            ],
+            [
+              "显示方式",
+              "旧图线性色标；dense 旧图还做 Gaussian 平滑、LogNorm，并将 β 放在横轴、α 放在纵轴",
+              "Figure 3 使用 raw 正区网格、等值线和严格点叠加；横轴 α、纵轴 β"
+            ],
+            [
+              "论文证据等级",
+              "侦察图，不能给相名或边界",
+              "严格数据仍只支持‘未见可验收 crossing’，不证明全区单相"
+            ]
+          ]
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "重叠点",
+            "早期 O_str",
+            "当前高精度网格最近点",
+            "判断"
+          ],
+          "rows": [
+            [
+              "α=0.20, β≈0.80",
+              "0.02818",
+              "0.06377（β=0.8068）",
+              "旧值明显异常"
+            ],
+            [
+              "α=0.20, β≈0.90",
+              "0.11405",
+              "0.06366（β=0.9034）",
+              "旧值明显异常"
+            ],
+            [
+              "α=0.20, β=1.00",
+              "0.08580",
+              "0.06148",
+              "旧值明显异常"
+            ],
+            [
+              "α=0.40, β≈0.50",
+              "0.04811",
+              "0.04816（β=0.5008）",
+              "基本一致"
+            ],
+            [
+              "α=0.60, β≈0.50",
+              "0.03670",
+              "0.03673（β=0.5008）",
+              "基本一致"
+            ],
+            [
+              "α=1.00, β≈0.50",
+              "0.02333",
+              "0.02335（β=0.5008）",
+              "基本一致"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "原因定位",
+          "style": "info",
+          "text": "因此差异不是五聚体物理模型突然改变，而是旧图混入了 α=0 的占位/敏感值、低预算随机 DMRG 和负 α 区域；当前图改成了正区高精度数据，并把相边界判断交给带尺寸差和误差棒的 R crossing 诊断。"
+        }
+      ]
+    },
+    {
+      "title": "与参考四聚体的对应和区别",
+      "note": "参考四聚体结果不能直接平移到五聚体；对应关系已在主 HTML 中保留。",
+      "blocks": [
+        {
+          "kind": "note",
+          "label": "参考论文范围核对",
+          "style": "info",
+          "text": "参考论文 Figure 3 的正文与图注明确使用 α∈[−1,1]、β∈[0,1]，因此原论文确实包含负 α 半区。当前五聚体项目按既定范围只保留 0≤α,β≤1；若为了视觉对齐而补画负 α，应作为独立的 out-of-scope context，并用同一收敛与 crossing 标准重新验收，不能把旧侦察图直接并入主结论。"
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "参考图",
+            "五聚体当前对应",
+            "当前等级"
+          ],
+          "rows": [
+            [
+              "Fig.1",
+              "局域模型、五聚体多重态与低能投影",
+              "已完成"
+            ],
+            [
+              "Fig.2",
+              "正 α 能级流与 q=π 宇称过滤",
+              "已完成"
+            ],
+            [
+              "Fig.3",
+              "40×60 探索图 + 105 条严格 R 诊断",
+              "精细版；未见可验收 crossing"
+            ],
+            [
+              "Fig.4",
+              "五类切口纠缠谱与 c=1 oracle",
+              "已完成，有限尺寸限定"
+            ],
+            [
+              "Fig.5",
+              "有效链、二阶挫折与选择定则",
+              "已完成"
+            ],
+            [
+              "Fig.6–7",
+              "正区 exploratory/pilot 与 full-q 代表点",
+              "可用，但不是连续二维生产扫描"
+            ],
+            [
+              "Fig.8",
+              "q=π CV–TEBD Agreement / bounded 版本",
+              "Agreement 已通过，范围受限"
+            ],
+            [
+              "Fig.9",
+              "不复刻",
+              "按任务要求排除"
+            ]
+          ]
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "结构",
+            "四聚体 1×4",
+            "五聚体 1×5"
+          ],
+          "rows": [
+            [
+              "单胞自旋数",
+              "4 个自旋-1/2，可形成 S=0 单胞",
+              "5 个自旋-1/2，最低多重态保留 S=1/2 双重态"
+            ],
+            [
+              "弱胞间耦合",
+              "可围绕单胞 singlet/Haldane/临界结构组织",
+              "自然投影为有效反铁磁 S=1/2 链"
+            ],
+            [
+              "低能自由度",
+              "可被局域 singlet 淬灭或重组",
+              "奇数单胞强制留下半整数自由度"
+            ],
+            [
+              "高能谱",
+              "参考文献有三个四聚体区域的谱结构",
+              "q=π 选择定则使局域 quartet 承载主要高能权重"
+            ],
+            [
+              "新修正",
+              "不是本项目重点",
+              "二阶虚激发给出弱 J2/J1≈4%–5% 的有效挫折"
+            ],
+            [
+              "相图结论",
+              "参考文献有相区结构",
+              "当前五聚体数据尚未验收出对应的额外相界"
+            ]
+          ]
+        },
+        {
+          "kind": "verdict",
+          "status": "good",
+          "label": "五聚体的可发表新意在奇数单胞机制",
+          "why": "即使最终没有发现新相，‘奇数单胞有效 S=1/2 + q=π 过滤 + 弱二阶挫折’仍是相对于四聚体的结构性差异。"
+        }
+      ]
+    },
+    {
+      "title": "动力学与 full-q 计算",
+      "note": "动力学结论已经有独立方法和严格门控，但不能外推为整个二维参数区的谱相图。",
+      "blocks": [
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "assets/figure8_cv_tebd.png",
+              "caption": "q=π CV–TEBD Agreement 最终图。CV 频点覆盖 ω=0.00–0.20 的五点并通过 residual、checksum、validator 与峰/权重门；结论限定于 α=0.23、β=0.5、L=40。"
+            },
+            {
+              "src": "assets/fullq_six_cell.png",
+              "caption": "三个代表点的 full-q 六 cell 交叉验收图。每点包含 dt=0.025/0.0125；所有 t0、方差/site、Sz、raw 负谱权和 dt/dt2 稳定性门通过。"
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "验收门",
+            "阈值",
+            "结果"
+          ],
+          "rows": [
+            [
+              "t=0 数据",
+              "必须包含 t0",
+              "六个 full-q cell 全部通过"
+            ],
+            [
+              "方差",
+              "variance/site ≤ 1×10⁻⁸",
+              "约 2.6×10⁻¹⁰–1.0×10⁻⁹"
+            ],
+            [
+              "总 Sz",
+              "|Sz| ≤ 1×10⁻⁸",
+              "全部通过"
+            ],
+            [
+              "raw 负谱权",
+              "≤ 0.15",
+              "约 0.0417–0.0951"
+            ],
+            [
+              "dt/dt2 峰漂移",
+              "≤ 0.05 J1",
+              "最大 0.01 J1"
+            ],
+            [
+              "低频权重漂移",
+              "≤ 5%",
+              "最大约 4.32×10⁻⁵"
+            ],
+            [
+              "CV residual",
+              "每频点 ≤ 1×10⁻⁵",
+              "round43 accepted-only 五点通过"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "可以写什么，不能写什么",
+      "note": "这是给论文讨论和组会汇报使用的 claim boundary。",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "可以主张",
+            "必须带的限定"
+          ],
+          "rows": [
+            [
+              "正耦合五聚体的低能有效 S=1/2 反铁磁链图景",
+              "限定 0≤α,β≤1 与当前有限尺寸/参数扫描"
+            ],
+            [
+              "q=π 局域选择定则和 quartet 高能权重",
+              "不把局域跃迁直接等同于无限链准粒子"
+            ],
+            [
+              "弱二阶有效 J2 是五聚体相对于四聚体的修正",
+              "J2/J1 约 4%–5%，当前不足以支持新相"
+            ],
+            [
+              "指定点的 CV–TEBD Agreement",
+              "仅 α=0.23、β=0.5、L=40、q=π、给定频率窗"
+            ],
+            [
+              "当前有限尺寸未见可验收内部 crossing",
+              "不能改写成热力学极限不存在相变"
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "暂时不能主张",
+          "items": [
+            "五聚体正区已经证明只有一个相；",
+            "已经找到新的 Haldane、临界或其他相；",
+            "已经确定二维热力学相边界位置；",
+            "把 Fig.6–8 的代表点动力学外推到整个 α–β 平面；",
+            "把负 α 区域或 Fig.9 的结论混入本项目主结论。"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "下一步建议与完成标准",
+      "note": "当前计算链已 production_ready；若要继续，目标应是提高相边界排除能力，而不是盲目增加图数量。",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "优先级",
+            "任务",
+            "收益",
+            "是否必须"
+          ],
+          "rows": [
+            [
+              "A",
+              "确认 Figure 3 与相结构表述",
+              "确定论文主张边界",
+              "必须"
+            ],
+            [
+              "B",
+              "若坚持谈相边界：新增更大 L 与候选区域加密点，并保持同一 crossing 门槛",
+              "把‘未见 crossing’提升为更强的排除证据",
+              "取决于论文定位"
+            ],
+            [
+              "C",
+              "整理 Methods/Results/Discussion 草稿和图注",
+              "形成可投稿文本",
+              "必须"
+            ],
+            [
+              "D",
+              "把 accepted-only 数字迁入 paper/",
+              "生成正式论文版本",
+              "需作者明确授权"
+            ],
+            [
+              "E",
+              "补做其他 q 或负 α",
+              "扩展研究范围",
+              "本项目不需要，且当前明确排除"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "完成标准",
+          "style": "info",
+          "text": "若论文定位为‘1×5 五聚体的有效链机制、选择定则和有限尺寸否定结果’，当前证据链已经足够进入写作。若论文必须声称‘完整二维相图’，当前证据还不够，需要新的大尺寸、加密和独立序参量计算。"
+        }
+      ]
+    },
+    {
+      "title": "可复现材料与文件入口",
+      "note": "所有路径均为本地工作区路径；远端结果已经以非覆盖目录回传并通过本地验收。",
+      "blocks": [
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "报告源文件",
+              "results/research_progress/full_research_report_20260808/report.json"
+            ],
+            [
+              "报告 HTML",
+              "results/research_progress/full_research_report_20260808/report.html"
+            ],
+            [
+              "主研究报告",
+              "results/research_progress/report.html"
+            ],
+            [
+              "精细 Figure 3",
+              "figures/paper_fig3_positive_groundstate_diagnostics_refined_20260808.{svg,pdf,png,tiff}"
+            ],
+            [
+              "full-q handoff",
+              "results/autoresearch_v5_20260807/minimal_fullq_handoff_eta020_20260808_1533/handoff_summary.json"
+            ],
+            [
+              "phase observations",
+              "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/phase-diagram/observations_merged.json"
+            ],
+            [
+              "工作标准",
+              "docs/agent_execution_standard.md；docs/pentamer_reproduction_standard.md"
+            ],
+            [
+              "paper/ 状态",
+              "未修改；报告和图件均在 results/ 与 figures/"
+            ]
+          ]
+        },
+        {
+          "kind": "verdict",
+          "status": "good",
+          "label": "完整研究报告已整理",
+          "why": "结论、数字、图件和边界已分开；不把‘未发现’写成‘已证明不存在’。"
+        }
+      ]
+    }
+  ]
+}

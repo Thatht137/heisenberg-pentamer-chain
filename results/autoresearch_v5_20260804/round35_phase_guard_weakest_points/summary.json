@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "source": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/phase-diagram/phase-size-differences.csv",
+  "source_sha256": "ddb67f9daefb870c5df9cebe68f187e266372710a38cdd49a64464c05ec78171",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true,
+    "alpha_zero_boundary_excluded": true
+  },
+  "internal_count": 56,
+  "weakest_points": [
+    {
+      "beta": 1.0,
+      "alpha": 0.125,
+      "size_pair": "40-60",
+      "delta_R": -0.00651064095363213,
+      "error": 0.0025821855130579853,
+      "guard_margin": 0.0013462699275161591,
+      "abs_delta_over_2sigma": 1.2606841996262736,
+      "significant_2sigma": true
+    },
+    {
+      "beta": 0.05,
+      "alpha": 0.25,
+      "size_pair": "60-80",
+      "delta_R": -0.0019150662792082884,
+      "error": 0.0001414213562373095,
+      "guard_margin": 0.0016322235667336695,
+      "abs_delta_over_2sigma": 6.770781762249355,
+      "significant_2sigma": true
+    },
+    {
+      "beta": 0.9,
+      "alpha": 0.125,
+      "size_pair": "40-60",
+      "delta_R": -0.0026129496336854685,
+      "error": 0.00047282582691238434,
+      "guard_margin": 0.0016672979798606998,
+      "abs_delta_over_2sigma": 2.763120672519496,
+      "significant_2sigma": true
+    },
+    {
+      "beta": 0.05,
+      "alpha": 0.5,
+      "size_pair": "60-80",
+      "delta_R": -0.00383787469145358,
+      "error": 0.0001414213562373095,
+      "guard_margin": 0.003555031978978961,
+      "abs_delta_over_2sigma": 13.568936098355275,
+      "significant_2sigma": true
+    },
+    {
+      "beta": 0.05,
+      "alpha": 0.125,
+      "size_pair": "60-80",
+      "delta_R": -0.004878716651325166,
+      "error": 0.0001414213562373095,
+      "guard_margin": 0.004595873938850546,
+      "abs_delta_over_2sigma": 17.24886813819875,
+      "significant_2sigma": true
+    },
+    {
+      "beta": 0.1,
+      "alpha": 0.5,
+      "size_pair": "60-80",
+      "delta_R": -0.005042548966918914,
+      "error": 0.0001414213562373095,
+      "guard_margin": 0.0047597062544442945,
+      "abs_delta_over_2sigma": 17.828102844867917,
+      "significant_2sigma": true
+    },
+    {
+      "beta": 0.1,
+      "alpha": 0.25,
+      "size_pair": "60-80",
+      "delta_R": -0.00591916684528232,
+      "error": 0.0001414213562373095,
+      "guard_margin": 0.0056363241328077004,
+      "abs_delta_over_2sigma": 20.92741507636856,
+      "significant_2sigma": true
+    },
+    {
+      "beta": 0.75,
+      "alpha": 0.125,
+      "size_pair": "40-60",
+      "delta_R": -0.006792569282012051,
+      "error": 0.0001414213562373095,
+      "guard_margin": 0.0065097265695374315,
+      "abs_delta_over_2sigma": 24.015359004950795,
+      "significant_2sigma": true
+    },
+    {
+      "beta": 0.05,
+      "alpha": 1.0,
+      "size_pair": "60-80",
+      "delta_R": -0.01327664985111393,
+      "error": 0.0021721873358875638,
+      "guard_margin": 0.008932275179338804,
+      "abs_delta_over_2sigma": 3.05605544046896,
+      "significant_2sigma": true
+    },
+    {
+      "beta": 0.25,
+      "alpha": 0.5,
+      "size_pair": "60-80",
+      "delta_R": -0.009915273591086238,
+      "error": 0.0001414213562373095,
+      "guard_margin": 0.009632430878611618,
+      "abs_delta_over_2sigma": 35.055785967884844,
+      "significant_2sigma": true
+    },
+    {
+      "beta": 0.1,
+      "alpha": 1.0,
+      "size_pair": "60-80",
+      "delta_R": -0.01048670334074775,
+      "error": 0.0001414213562373095,
+      "guard_margin": 0.01020386062827313,
+      "abs_delta_over_2sigma": 37.076095222671775,
+      "significant_2sigma": true
+    },
+    {
+      "beta": 0.25,
+      "alpha": 1.0,
+      "size_pair": "60-80",
+      "delta_R": -0.011228945402990687,
+      "error": 0.0001414213562373095,
+      "guard_margin": 0.010946102690516067,
+      "abs_delta_over_2sigma": 39.70031720014112,
+      "significant_2sigma": true
+    }
+  ],
+  "selection_rule": "按 |ΔR|-2σ 升序；同值再按 |ΔR|/(2σ) 升序；只用于下一次验证优先级，不自动生成 action。",
+  "next_compute_recommendation": "若服务器 round31 终态后仍需补算，优先复核 weakest_points 前 4 个控制点的独立初态和更高统计预算；先不扩大 alpha/beta 边界。",
+  "interpretation": "所有内部点仍通过既定 2σ guard；weakest 列表只表示数值裕量较小，不表示发现相界。"
+}

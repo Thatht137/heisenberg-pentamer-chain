@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-08-03T13:50:59+08:00",
+  "host": "39.96.207.180:6000",
+  "user": "wangjieren",
+  "anchor": {
+    "driver_pid": 3745209,
+    "julia_pid": 3745217,
+    "status": "running",
+    "elapsed": "16:56:53",
+    "cpu_percent": 1622,
+    "threads": 8,
+    "points_completed": 0,
+    "stderr_empty": true,
+    "stdout_last_change": "2026-08-02T20:56:06+08:00",
+    "last_dmrg_sweep": 16,
+    "energy": -22.487137396523156,
+    "output_files": ["ground_state.jld2", "source_state.jld2"]
+  },
+  "server": {
+    "cpu_cores": 80,
+    "memory_total_gib": 251,
+    "memory_available_gib": 239,
+    "load_average": [23.32, 20.0, 17.91],
+    "uptime_days": 93
+  },
+  "supervisor": {
+    "status": "waiting_for_anchor",
+    "last_log": "2026-08-03T13:50:20+08:00 anchor still running",
+    "tebd_status_json_present": false
+  },
+  "decision": "不启动额外 Julia；anchor 结束后由 supervisor 自动接 TEBD；当前无频点 checkpoint，不扩展 L=80 频率",
+  "scope": {
+    "negative_alpha_excluded": true,
+    "reference_fig9_excluded": true
+  }
+}

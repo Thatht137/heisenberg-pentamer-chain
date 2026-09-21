@@ -1,0 +1,18 @@
+{
+  "accepted_artifacts": [],
+  "actions": [],
+  "checked_at": "2026-08-01T16:47:39Z",
+  "evidence": [
+    {
+      "size_pair": [
+        40,
+        60
+      ],
+      "slice": 0.1
+    }
+  ],
+  "question": "Expand the control bounds, increase the statistics limit, or stop?",
+  "reason": "no significant crossing bracket exists inside the fixed bounds",
+  "schema_version": 1,
+  "status": "HUMAN_REQUIRED"
+}

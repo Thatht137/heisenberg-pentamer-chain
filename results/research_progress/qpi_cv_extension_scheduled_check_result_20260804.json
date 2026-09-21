@@ -1,0 +1,15 @@
+{
+  "executed_at": "2026-08-04T02:09:02+08:00",
+  "target": "wangjieren@39.96.207.180:6000",
+  "result": "connection_refused",
+  "remote_state": "unobservable",
+  "snapshot_written": false,
+  "last_local_remote_snapshot": "results/research_progress/qpi_cv_extension_remote_status_20260804.json",
+  "last_authoritative_remote_state": "2026-08-03T23:23:46+08:00: low cell 1/5 running, manifest absent",
+  "action": "只读；未写远端、未取消、未启动第二个 Julia",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

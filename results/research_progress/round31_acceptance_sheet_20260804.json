@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-04T00:28:49+08:00",
+  "run_root": "results/autoresearch_v5_20260803/round31_qpi_cv_extension",
+  "status": "ready_for_recovery_check",
+  "cells": [
+    {
+      "cell_id": "cell-l40-qpi-low-000-020",
+      "omega": "0.00, 0.05, 0.10, 0.15, 0.20",
+      "purpose": "低频主峰覆盖",
+      "order": 1
+    },
+    {
+      "cell_id": "cell-l40-qpi-high-055",
+      "omega": "0.55",
+      "purpose": "低频尾部与权重连接",
+      "order": 2
+    },
+    {
+      "cell_id": "cell-l40-qpi-high-100",
+      "omega": "1.00",
+      "purpose": "主要积分窗中段",
+      "order": 3
+    },
+    {
+      "cell_id": "cell-l40-qpi-high-150",
+      "omega": "1.50",
+      "purpose": "积分窗上边界",
+      "order": 4
+    }
+  ],
+  "gates": {
+    "positive_region": "0 <= alpha,beta <= 1",
+    "cv_residual": "<= 1e-5",
+    "variance_per_site": "<= 1e-8",
+    "max_dmrg_truncation": "<= 1e-8",
+    "nonnegative_spectrum": true,
+    "checksums": true
+  },
+  "handoff_order": [
+    "read overall_progress/status/progress/manifest",
+    "remote sha256sum -c checksums.sha256",
+    "non-clobber fetch to a new local directory",
+    "local checksum and validate_cv_run.py",
+    "assemble_qpi_cv_anchors.py",
+    "analyze_cv_tebd_crosscheck.py"
+  ],
+  "failure_policy": "residual or checksum failure stays isolated; do not lower thresholds or overwrite a prior run",
+  "scope": {
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

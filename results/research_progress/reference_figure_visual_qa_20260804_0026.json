@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-04T00:26:00+08:00",
+  "status": "pass",
+  "figures": [
+    {
+      "figure": "Fig. 6",
+      "file": "figures/reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.png",
+      "panels": "5 个 beta 面板；共同色标；q-omega 热图",
+      "qa": "通过",
+      "boundary": "正 beta；footer 明确 exploratory，不作生产谱"
+    },
+    {
+      "figure": "Fig. 7",
+      "file": "figures/reference_aligned_fig7_positive_alpha_pilot_20260804.png",
+      "panels": "上排 3 个热图 + 下排 3 个 q=pi 切片",
+      "qa": "通过",
+      "boundary": "alpha=0.14/0.23/0.33、beta=0.5；footer 明确 pilot"
+    },
+    {
+      "figure": "Fig. 6/7 dynamic anchor",
+      "file": "figures/qpi_tebd_maxdim96_production_20260803.png",
+      "panels": "TEBD 收敛谱、差值、门槛占用率",
+      "qa": "通过",
+      "boundary": "CV 点以 sparse anchors 标示；未误标为 Agreement"
+    }
+  ],
+  "checks": {
+    "panel_roles_match_reference": true,
+    "positive_region_only": true,
+    "scope_labels_visible": true,
+    "no_obvious_clipping_or_overlap": true,
+    "dynamic_claims_not_overpromoted": true
+  },
+  "scope": {
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

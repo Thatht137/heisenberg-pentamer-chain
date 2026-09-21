@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "run_id": "negative-entropy-sizes-r1-20260914",
+  "scope": "beta .25 localized entropy size check; no phase assigned; Fig.9 excluded",
+  "cells": [
+    {
+      "cell_id": "negsize-a01750-b02500-L040",
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 64,
+      "stage": "entropy-finite-size-r1"
+    },
+    {
+      "cell_id": "negsize-a01750-b02500-L060",
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "entropy-finite-size-r1"
+    },
+    {
+      "cell_id": "negsize-a01500-b02500-L040",
+      "params": {
+        "alpha": -0.15,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 64,
+      "stage": "entropy-finite-size-r1"
+    },
+    {
+      "cell_id": "negsize-a01500-b02500-L060",
+      "params": {
+        "alpha": -0.15,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "entropy-finite-size-r1"
+    },
+    {
+      "cell_id": "negsize-a01500-b02500-L080",
+      "params": {
+        "alpha": -0.15,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "entropy-finite-size-r1"
+    },
+    {
+      "cell_id": "negsize-a01250-b02500-L040",
+      "params": {
+        "alpha": -0.125,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 64,
+      "stage": "entropy-finite-size-r1"
+    },
+    {
+      "cell_id": "negsize-a01250-b02500-L060",
+      "params": {
+        "alpha": -0.125,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "entropy-finite-size-r1"
+    },
+    {
+      "cell_id": "negsize-a01250-b02500-L080",
+      "params": {
+        "alpha": -0.125,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "entropy-finite-size-r1"
+    },
+    {
+      "cell_id": "negsize-a01000-b02500-L040",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "budget": 64,
+      "stage": "entropy-finite-size-r1"
+    },
+    {
+      "cell_id": "negsize-a01000-b02500-L060",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "entropy-finite-size-r1"
+    }
+  ],
+  "settings": {
+    "method": "finite_dmrg_multistart_saved_state_enriched",
+    "boundary": "OBC",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim_by_L": {
+      "40": 1200,
+      "60": 1200,
+      "80": 1200
+    },
+    "nsweeps": 64,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "q_count": 401,
+    "init_modes": [
+      "center",
+      "ferro_j2"
+    ],
+    "variance_per_site_max": 5e-08,
+    "save_state": true,
+    "enriched_diagnostics": true,
+    "offline": true,
+    "execution": "direct SSH; concurrency=1; stop on first failed cell"
+  },
+  "acceptance": {
+    "numerical": "both starts pass variance, truncation, Sz, gap and checksum gates",
+    "required_files": [
+      "state_sz0.jld2",
+      "entropy_profile_full.csv",
+      "bond_bond_connected.csv"
+    ],
+    "phase_claim": "finite-size diagnostic only; compare entropy, gap and bond observables; no q-peak-only phase claim"
+  },
+  "provenance": {
+    "negative_alpha_included": true,
+    "audit_sha256": "72adee082d9679036001db0262a0b4c8246fcfb8059ea6d6f04e5ce4a0ae5585",
+    "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "source_commit": "40f4179a5630039485370648edd9621f592c0449",
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "docs/negative_alpha_practical_convergence_standard_20260829.md": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+      "docs/negative_alpha_new_phase_audit_20260913.md": "17ad83328b3b8bb5db692f326b9f1803bc92960036884f71165c75b79cad7b71",
+      "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+      "scripts/autoresearch_v5/negative_static_cell.jl": "0363dbd631f8ad01ce7e6b0b3cf1489b55a157c834ac56919e38876a2d831c29",
+      "scripts/autoresearch_v5/run_negative_static_cell.py": "4e4698beec0de26a815220b4ad4fdbf8ec7f4891ef7da09b7210fe1438744729",
+      "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "502bf1b4fb1b9c1c2b7091930e0c4e1121c9a3ad03cc6f6c500e77bde176a48e",
+      "scripts/autoresearch_v5/run_negative_phase_structure_batch.py": "1ae4a38867c269832dd6afc57cfe59e9d8ed104f8a329d49dbff156ae3c9e003",
+      "scripts/autoresearch_v5/launch_negative_entropy_sizes.sh": "2d7e7b34f01f9cbbf23f93adb60f5602f8ea6274633f0c2feb1d7b784c9c9796",
+      "docs/pilot_entropy_closeout_decision_20260914.md": "a24847d1402e72bf00d24425e8fb4ea99e1f7dc0b2ad91b76acf085b6f60c5cd"
+    },
+    "user_authorized_upload_and_launch": "ongoing campaign and active research closeout goal",
+    "phase_label_assigned": false,
+    "parent_spec_sha256": "8ddd22ef9e450c20a89a044bd15a644462d5656ac058ef552006aa2b3a041455"
+  },
+  "reused_cells": [
+    {
+      "alpha": -0.175,
+      "beta": 0.25,
+      "L": 80,
+      "path": "results/autoresearch_v5_20260913/negative_phase_independent_pilot_fetch_20260914_2243/negdiag-a01750-b02500-L080",
+      "manifest_sha256": "15f2efce34332d4ab3e879fa35b3e8bbc35f3e4b8e6a7e9a83634d6a8d8162e6"
+    },
+    {
+      "alpha": -0.1,
+      "beta": 0.25,
+      "L": 80,
+      "path": "results/autoresearch_v5_20260913/negative_phase_independent_pilot_fetch_20260914_2243/negdiag-a01000-b02500-L080",
+      "manifest_sha256": "536ca5a6eed77153fb3ea483e60a7fbbe5cc3140d8d04a803bcc203aaceed0d7"
+    }
+  ]
+}

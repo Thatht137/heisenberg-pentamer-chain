@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "claim_level": "tentative_physics_hypothesis",
+  "scope": {
+    "alpha": [
+      -1,
+      1
+    ],
+    "beta": [
+      0,
+      1
+    ],
+    "fig9_excluded": true
+  },
+  "supported_region": "alpha>0 q=pi gapless AF from accepted positive mesh",
+  "negative_interpretation": "strong-coupling S~3/2 and accepted beta=0.5 q_peak data",
+  "candidate_bracket": {
+    "beta": 0.5,
+    "alpha": [
+      -0.35,
+      -0.25
+    ],
+    "boundary_confirmed": false
+  },
+  "singular_controls": [
+    "alpha=0",
+    "beta=0"
+  ],
+  "inputs": [
+    "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+    "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/accepted_calibration_through_r16.json",
+    "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/phase-diagram/observations.json",
+    "docs/beta_half_negative_critical_assessment.md",
+    "docs/beta_half_results_draft.md"
+  ]
+}

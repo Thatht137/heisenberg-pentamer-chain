@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "local_checksum": {
+    "cell-alpha023-qpi-dt0025-t30": {
+      "status": "pass",
+      "checked_files": 11,
+      "manifest_sha256": "35c62e4cfdb67cfab4012e92043acc654247518d7fa8ef34453db91bfed4c117",
+      "checksums_sha256": "5e2d1c72f8020773a13d8dd95db86274c7962c3c40387bf65f24e1a0142b02cf",
+      "failures": []
+    },
+    "cell-alpha023-qpi-dt00125-t30": {
+      "status": "pass",
+      "checked_files": 11,
+      "manifest_sha256": "cd8263f33183c5e6ed2bac67a7c44705796e137cd3c60d351ee1180ecaced2a4",
+      "checksums_sha256": "ad594b019729625332ccec7c4599ab1dddabceb85ddb34d047ff92415c89d8c0",
+      "failures": []
+    }
+  },
+  "fetch_receipt_check": {
+    "status": "pass",
+    "receipt_sha256": "9061de920bed25da0b6266ddb1594606ba62f8436c52f51af91374a4f2ab463f"
+  },
+  "analysis_status": "incomplete",
+  "qpi_production_status": "incomplete",
+  "full_dynamic_status": "incomplete",
+  "tebd_qpi_tag": "Agreement",
+  "cross_method_tag": "NotEvaluable",
+  "analysis_summary_sha256": "f29eb11b73218af9379d40cbdfe25ed6f7665520b2bf4ae383e7a13804031ead",
+  "negative_alpha_excluded": true,
+  "figure_9_excluded": true
+}

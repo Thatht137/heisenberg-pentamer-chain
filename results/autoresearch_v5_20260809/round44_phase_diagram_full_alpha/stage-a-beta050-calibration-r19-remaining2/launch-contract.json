@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "launch_ready": true,
+  "cell_count": 2,
+  "controller_cell_count": 1,
+  "calibration_cell_count": 1,
+  "concurrency": 1,
+  "stop_on_first_failure": true,
+  "offline": true,
+  "eta_hours": {
+    "low": 0.5,
+    "high": 1.2
+  },
+  "run_spec_sha256": "0d4a3befa0d71c87e5b0a7aa4966adfcafbe513484ecb44a8eac27d97ec3954d",
+  "source_hashes_sha256": "a0ecf6d4b5a6da8561f8ad03af91f215ed420bd30d1b66e5d188ab61f10b8bad",
+  "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+  "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+  "r18_success_summary_sha256": "bfdd5d5ff5c333c32cb80432975fe0eac9511a76c7d7bb02066a6f0c266bd383",
+  "observations_sha256": "5bde228766a44ea6a783a0a19c00b6ac3539d8f1e023d25feb5257c745917c4f",
+  "action_index_sha256": "b1d65257135c45ab3c9da17b03cfae549e128fceb13310cea15a357e153b3016",
+  "history_evidence_preserved": true,
+  "gap_gate_enforced": true,
+  "boundary_thresholds_relaxed": false
+}

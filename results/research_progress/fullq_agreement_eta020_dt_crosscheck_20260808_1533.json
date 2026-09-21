@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "coarse_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_fetch_eta020_20260808_1301\\fullq-agreement-eta020-dt025",
+  "refined_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_fetch_eta020_20260808_1533\\fullq-agreement-eta020-dt0125",
+  "parameters": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "N_units": 8,
+    "L": 40
+  },
+  "settings": {
+    "q_points": 121,
+    "omega_points": 301,
+    "omega_max": 3.0,
+    "time_window": "exponential",
+    "window_eta": 0.2,
+    "low_omega_cutoff": 1.5
+  },
+  "diagnostics": {
+    "coarse_tstep": 0.025,
+    "refined_tstep": 0.0125,
+    "tmax": 30.0,
+    "global_peak_omega_coarse": 0.04,
+    "global_peak_omega_refined": 0.03,
+    "global_peak_delta": 0.010000000000000002,
+    "qpi_peak_omega_coarse": 0.04,
+    "qpi_peak_omega_refined": 0.03,
+    "qpi_peak_delta": 0.010000000000000002,
+    "low_weight_coarse": 74.46359105142378,
+    "low_weight_refined": 74.46212668279817,
+    "low_weight_relative_delta": 1.96655654787557e-05,
+    "normalized_rms": 0.00016426690248836696
+  },
+  "acceptance": {
+    "dt_half": true,
+    "global_peak_delta_le_tolerance": true,
+    "qpi_peak_delta_le_tolerance": true,
+    "low_weight_delta_le_tolerance": true
+  },
+  "evidence": {
+    "coarse_manifest_sha256": "0b075dc3a898d357e5ba9504ecbda4f64c7750514cd8b4e2eaa17c25d4843dc2",
+    "refined_manifest_sha256": "5c64ba4e4c5beee452ec7984b48e66984890eda4814c1f8cd8db75ba4d3f37f5",
+    "coarse_raw_sha256": "1f81bb48ffaf39a6528dff9b8e8d338e56417b72bef75f62ca8d04fef54d5859",
+    "refined_raw_sha256": "29fcaec8d468a8b5b53b697b8ffffef8cd42266a4b2648256a616fb951694e9c",
+    "negative_alpha_excluded": true
+  }
+}

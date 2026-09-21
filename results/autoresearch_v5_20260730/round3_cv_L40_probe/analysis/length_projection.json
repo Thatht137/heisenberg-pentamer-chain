@@ -1,0 +1,30 @@
+{
+  "tag": "Length probe passed",
+  "checks": {
+    "same_physical_point": true,
+    "same_accuracy_settings": true,
+    "small_accepted": true,
+    "large_accepted": true,
+    "large_dimension_below_cap": true,
+    "projected_memory_below_soft_limit": true,
+    "projected_cold_point_below_24h": true
+  },
+  "small_L": 20,
+  "large_L": 40,
+  "cv_time_ratio": 16.809744596880876,
+  "solution_dimension_ratio": 2.4150943396226414,
+  "peak_rss_ratio": 1.2270433653855133,
+  "empirical_exponents": {
+    "cv_time_vs_L": 4.071225899674852,
+    "solution_dimension_vs_L": 1.2720795454368008,
+    "peak_rss_vs_L": 0.29518623671156113
+  },
+  "cold_start_projection": {
+    "L": 80.0,
+    "cv_seconds": 42640.37335896842,
+    "cv_hours": 11.844548155269006,
+    "peak_rss_gib": 1.8450960614819456,
+    "scope": "single difficult frequency; one-step extrapolation only"
+  },
+  "decision": "Do not launch an L=80 grid before measuring adjacent-frequency warm starts and validating resumable checkpoints."
+}

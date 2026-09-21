@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-08-03T12:19:08+08:00",
+  "host": "39.96.207.180:6000",
+  "anchor": {
+    "driver_pid": 3745209,
+    "julia_pid": 3745217,
+    "status": "running",
+    "elapsed": "15:25:02",
+    "cpu_percent": 1625,
+    "points_present": 0,
+    "stdout_last_change": "2026-08-02T20:56:00+08:00",
+    "stderr_empty": true
+  },
+  "supervisor": {
+    "pid": 3862840,
+    "status": "waiting_for_anchor",
+    "last_log": "2026-08-03T12:18:16+08:00 anchor still running"
+  },
+  "tebd": {
+    "status": "not_started",
+    "production_files_present": false
+  },
+  "delta_from_1211": {
+    "elapsed_increase_seconds": 461,
+    "cpu_percent": {
+      "previous": 1624,
+      "current": 1625
+    },
+    "supervisor_log_advanced": true
+  },
+  "decision": "保持 anchor 单任务，不取消、不并行新的 Julia；终态后立即进入验收。",
+  "negative_alpha_excluded": true
+}

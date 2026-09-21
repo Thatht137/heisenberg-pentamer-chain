@@ -1,0 +1,30 @@
+After sweep 1 energy=-5.45474161069551  maxlinkdim=4 maxerr=6.25E-16 time=19.396
+After sweep 2 energy=-5.476634576538231  maxlinkdim=16 maxerr=5.10E-11 time=0.227
+After sweep 3 energy=-5.477768529258428  maxlinkdim=35 maxerr=9.95E-11 time=0.101
+After sweep 4 energy=-5.477783730136732  maxlinkdim=33 maxerr=9.84E-11 time=0.091
+After sweep 5 energy=-5.477783741451677  maxlinkdim=32 maxerr=9.80E-11 time=0.095
+After sweep 6 energy=-5.4777837414241475  maxlinkdim=32 maxerr=9.73E-11 time=0.096
+After sweep 7 energy=-5.477783741451897  maxlinkdim=32 maxerr=9.64E-11 time=0.105
+After sweep 8 energy=-5.477783741451829  maxlinkdim=32 maxerr=9.66E-11 time=0.093
+step 1/20 (5.0%) t=0.025000 linkdim=44 elapsed=4.2s ETA=79.6s
+step 2/20 (10.0%) t=0.050000 linkdim=43 elapsed=4.5s ETA=40.5s
+step 3/20 (15.0%) t=0.075000 linkdim=43 elapsed=4.5s ETA=25.7s
+step 4/20 (20.0%) t=0.100000 linkdim=43 elapsed=4.6s ETA=18.3s
+step 5/20 (25.0%) t=0.125000 linkdim=43 elapsed=4.6s ETA=13.9s
+step 6/20 (30.0%) t=0.150000 linkdim=43 elapsed=4.7s ETA=10.9s
+step 7/20 (35.0%) t=0.175000 linkdim=42 elapsed=4.7s ETA=8.7s
+step 8/20 (40.0%) t=0.200000 linkdim=42 elapsed=4.7s ETA=7.1s
+step 9/20 (45.0%) t=0.225000 linkdim=42 elapsed=4.8s ETA=5.8s
+step 10/20 (50.0%) t=0.250000 linkdim=42 elapsed=4.8s ETA=4.8s
+checkpoint step=10
+step 11/20 (55.0%) t=0.275000 linkdim=42 elapsed=7.9s ETA=6.5s
+step 12/20 (60.0%) t=0.300000 linkdim=42 elapsed=8.0s ETA=5.3s
+step 13/20 (65.0%) t=0.325000 linkdim=42 elapsed=8.0s ETA=4.3s
+step 14/20 (70.0%) t=0.350000 linkdim=42 elapsed=8.1s ETA=3.5s
+step 15/20 (75.0%) t=0.375000 linkdim=42 elapsed=8.1s ETA=2.7s
+step 16/20 (80.0%) t=0.400000 linkdim=42 elapsed=8.1s ETA=2.0s
+step 17/20 (85.0%) t=0.425000 linkdim=42 elapsed=8.2s ETA=1.4s
+step 18/20 (90.0%) t=0.450000 linkdim=42 elapsed=8.2s ETA=0.9s
+step 19/20 (95.0%) t=0.475000 linkdim=42 elapsed=8.3s ETA=0.4s
+step 20/20 (100.0%) t=0.500000 linkdim=42 elapsed=8.3s ETA=0.0s
+TEBD_QPI_AUTOCORR_SUCCESS outdir=D:\Project\1x5_Heisenberg_Pentamer\results\autoresearch_v5_20260803\round25_qpi_tebd_smoke\api-smoke-L20

@@ -1,0 +1,31 @@
+{
+  "run_id": "pentamer-r2-smoke-20260729",
+  "run_dir": "results\\five_rounds_20260729\\round2_smoke",
+  "axes": {
+    "alpha": [
+      0.0,
+      0.2,
+      1.0
+    ]
+  },
+  "cells": [
+    {
+      "cell_id": "cell-0001",
+      "params": {
+        "alpha": 0.0
+      }
+    },
+    {
+      "cell_id": "cell-0002",
+      "params": {
+        "alpha": 0.2
+      }
+    },
+    {
+      "cell_id": "cell-0003",
+      "params": {
+        "alpha": 1.0
+      }
+    }
+  ]
+}

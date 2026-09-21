@@ -1,0 +1,21 @@
+After sweep 1 energy=-21.96723447389964  maxlinkdim=19 maxerr=1.00E-10 time=42.544
+After sweep 2 energy=-21.976323645165255  maxlinkdim=31 maxerr=9.99E-11 time=1.231
+After sweep 3 energy=-21.979653379771477  maxlinkdim=35 maxerr=9.98E-11 time=1.152
+After sweep 4 energy=-21.98185683656023  maxlinkdim=37 maxerr=1.00E-10 time=1.372
+After sweep 5 energy=-21.98336194271309  maxlinkdim=46 maxerr=1.00E-10 time=1.075
+After sweep 6 energy=-21.98442721528395  maxlinkdim=40 maxerr=9.92E-11 time=1.090
+After sweep 7 energy=-21.985226161353445  maxlinkdim=41 maxerr=9.95E-11 time=1.048
+After sweep 8 energy=-21.985706667870414  maxlinkdim=42 maxerr=1.00E-10 time=1.088
+After sweep 9 energy=-21.986060499795972  maxlinkdim=51 maxerr=9.96E-11 time=1.104
+After sweep 10 energy=-21.986300744430327  maxlinkdim=47 maxerr=9.96E-11 time=1.131
+After sweep 11 energy=-21.986514905384787  maxlinkdim=52 maxerr=9.98E-11 time=1.154
+After sweep 12 energy=-21.98668882343516  maxlinkdim=58 maxerr=9.96E-11 time=1.195
+After sweep 13 energy=-21.986814878425605  maxlinkdim=60 maxerr=1.00E-10 time=1.198
+After sweep 14 energy=-21.986926187746295  maxlinkdim=61 maxerr=9.98E-11 time=1.233
+After sweep 15 energy=-21.987003886374726  maxlinkdim=59 maxerr=9.99E-11 time=1.233
+After sweep 16 energy=-21.98706829797611  maxlinkdim=64 maxerr=1.00E-10 time=1.260
+After sweep 17 energy=-21.98711492827657  maxlinkdim=72 maxerr=9.90E-11 time=1.289
+After sweep 18 energy=-21.987143816971116  maxlinkdim=71 maxerr=1.00E-10 time=1.484
+After sweep 19 energy=-21.98716125877485  maxlinkdim=73 maxerr=9.98E-11 time=1.280
+After sweep 20 energy=-21.98717095885388  maxlinkdim=76 maxerr=1.00E-10 time=1.340
+CELL_SUCCESS outdir=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/five_rounds_20260729/round4_validation/cells/cell-0001

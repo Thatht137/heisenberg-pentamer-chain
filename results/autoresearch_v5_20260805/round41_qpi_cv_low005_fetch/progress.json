@@ -1,0 +1,16 @@
+{
+  "job_type": "cv_dsf_cell",
+  "cell_id": "cell-l40-qpi-low-005-highbudget",
+  "phase": "finished",
+  "total_points": 1,
+  "status": "success",
+  "finished_at": "2026-08-04T14:56:19.239924+00:00",
+  "returncode": 0,
+  "completed_points": 1,
+  "stdout_bytes": 1896,
+  "stdout_last_change": "2026-08-04T14:56:19.111004+00:00",
+  "schema_version": 1,
+  "started_at": "2026-08-04T14:35:27.327597+00:00",
+  "updated_at": "2026-08-04T14:56:19.240815+00:00",
+  "elapsed_seconds": 1251.913
+}

@@ -1,0 +1,1671 @@
+{
+  "schema_version": 1,
+  "stage": "B-R4-coarse-96",
+  "records": [
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.05,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.631550773012927,
+      "error": 0.00010571766681655159,
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r4-remaining94-20260812-1615/negb4-a0750-b0050-L040/manifest.json",
+      "accepted_only": true,
+      "controller_action_id": "act-b8a655271dbd935f267b",
+      "boundary_eligible": true,
+      "diagnostics": {
+        "q_peak_over_pi": {
+          "value": 0.6025,
+          "error": 0.0025,
+          "definition": "argmax S(q)/pi, q in [0,pi]"
+        },
+        "strict_numerical_gates": {
+          "unique_run_spec_cell": true,
+          "terminal_acceptance": true,
+          "negative_alpha_range": true,
+          "beta_range": true,
+          "parent_checksums": true,
+          "children": true
+        }
+      },
+      "validation": {
+        "status": "pass",
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r4-remaining94-20260812-1615/validation/negb4-a0750-b0050-L040.json",
+        "sha256": "b82d16400c65671ca03c3a923678872ab9f0807e20155ea4ffd15a30cf2d826a"
+      },
+      "checksum_receipt": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r4-remaining94-20260812-1615/receipts/negb4-a0750-b0050-L040.json",
+        "sha256": "a27d5b14faee08554e256f2b9972eb5b64639a414573a8181b3f473a09fb8b14"
+      },
+      "provenance": {
+        "source_commit": "uploaded-negative-stage-b-r4-remaining94-20260812",
+        "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+        "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+        "negative_alpha_included": true,
+        "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+        "code_sha256": {
+          "scripts/autoresearch_v5/run_negative_static_cell.py": "70cb7aeec60340c9275e927a40d1728372e84f891379ba751f1c3dbc9110a2e2",
+          "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "2eadf9e6ac59931e2f994e36d2c4b8054def07c18aa0a66739781ce8e19b0d54",
+          "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+          "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+        },
+        "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+      },
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.05,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "failed",
+      "budget": 32,
+      "accepted_only": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r4-remaining94-20260812-1615/validation/negb4-a0750-b0050-L060.json",
+      "controller_action_id": "act-979b5cae9b1b5501a209",
+      "failure_evidence": {
+        "validator_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r4-remaining94-20260812-1615/validation/negb4-a0750-b0050-L060.json",
+        "validator_sha256": "f04affc37fd8b0be67d422f397950bca786ac07bfa9769951638334de12f40a4",
+        "manifest_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r4-remaining94-20260812-1615/negb4-a0750-b0050-L060/manifest.json",
+        "manifest_sha256": "6e1e19c3129b1c2abc499f1c20254bd0bdc3057a5bc6f5ee7157b632bd18db80",
+        "receipt_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r4-remaining94-20260812-1615/receipts/negb4-a0750-b0050-L060.json",
+        "receipt_sha256": "a88e34182f2193e6061fdbc094ef1b7c00bac00c753d551406fe7f870bbc748f",
+        "failed_gates": [
+          "父 manifest: 非 accepted success",
+          "父 status: 非 accepted success",
+          "父 manifest: children_accepted 未通过",
+          "子 manifest center: 非 accepted success",
+          "子 status center: 非 accepted success",
+          "子 manifest center: variance/site sz0 超门",
+          "子 manifest center: variance_sz0_per_site_le_1e-8 未通过",
+          "子 manifest center: variance/site sz1 超门",
+          "子 manifest center: variance_sz1_per_site_le_1e-8 未通过",
+          "子 manifest ferro_j2: 非 accepted success",
+          "子 status ferro_j2: 非 accepted success",
+          "子 manifest ferro_j2: variance/site sz0 超门",
+          "子 manifest ferro_j2: variance_sz0_per_site_le_1e-8 未通过",
+          "子 manifest ferro_j2: variance/site sz1 超门",
+          "子 manifest ferro_j2: variance_sz1_per_site_le_1e-8 未通过"
+        ],
+        "thresholds_relaxed": false
+      },
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.05,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-1dbbe9422bee513d499b",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.05,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-9812edc86b5f4455a606",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.05,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-fbc1aaab3d46c7e1b4c1",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.05,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-8a2f34b7c522db7f781a",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.05,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-a431c46448d508e54969",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.05,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-5575adab924591c6dd6a",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.05,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-4825e723ee1580e5ffea",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.05,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-5ba3a266293e357c53b4",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.05,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-4a96cc93a513ac7d4986",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.05,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-c288d4c68d7639804181",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.05,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-f5a8bb1551fd4d7f74ae",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.05,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-f4c9a387484a90e9a723",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.1,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-4f8e49cabcea306302cb",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.1,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-2834d2560441f871304c",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.1,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-065214a6cfba4567ccfc",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.1,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-120358e1410c5faff0b1",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.1,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-198498d8716a917f82fb",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.1,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-6a90ff8479f1553f20a4",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.1,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-83f303b964e9e48dc1dc",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.1,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-3419ea37c357370cf077",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.1,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-8c7663224031e37d5d99",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.1,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-be5b2f5f7497841b29e1",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.1,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-d1921b51cb058e1e8be1",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.1,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-85e4a9c21149b9d34561",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.1,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-cd438ac0bac9f8cf2afd",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.1,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-91b24f65caa0c37cbf84",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.1,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-3c2d9a96a3f4d1238d5b",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.1,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-d6b6312d96f5aa6b6c06",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-1b339606b16e22d6b9c6",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-509998af0f85f9d598bd",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-adb1c4ec53473e4d5733",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-19e70110d7dc69fd8697",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-f7a5d00a5ef73d64f018",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-a3fc0d5ed88998cdabb1",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-483407a442c00b5a7b05",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-405817b8d04aa707d97e",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-194fce87bc552061e3ec",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-19a5db11cd8b97630774",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-77034a3fbcae32a0eb91",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-b59993fe43981d3b9698",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-61cc26be8a87ee52ba10",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-e0b6cd60cbdfff64b13e",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.25,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-8c25b4f5c97172f7023b",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-38ef5ef281995dcb5190",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.75,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-882865d01ad3ce865c5d",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-d1e5b6966eecc6e84043",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.75,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-57371f124157f4d79c24",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-18a29bd38a6cfc328fc6",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.75,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-a14de8ce6c12f12e8b9d",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-92a6c448e325f3946d43",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.75,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-d2de05fa45b3e042e33f",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-6ac4965fa06658462c13",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.75,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-183da6caad2082ed45c7",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-0f0c6657f750b8113485",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.75,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-e5cf23b5750779259b98",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-5bc2310a065479010fbe",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.75,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-57817c7d0ac0b4d309fe",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-5c650301dbc5574f2b81",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.75,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-c0c941a7639fa8fca10d",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-4e2ba5df61e264ea8778",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.9,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-38cb00e241424d334843",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 0.9,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-0e1c35b66883028e438d",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.9,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-87fc9b121665b183157b",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.9,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-94130485c1a2d50088be",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.9,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-5ae0d7e30d6dcfa00b1f",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.9,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-f09cd9d394ac403e725f",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.9,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-ca7139fc810da18959f7",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.9,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-959725baf72cb0e195ae",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.9,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-7ab137c90cec01b55526",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.9,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-3e29ff8fdb325e0ac722",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.9,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-40900f315b96aa470e0d",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.9,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-f8ac738295cc31f81160",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.9,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-0d6c0f120a4d7c164c35",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.9,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-f4efd1dfd969b8d49768",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.9,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-b55f2cbd1b3501569328",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.9,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-58e94f94a3e74a41e6f3",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 1.0,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-2b3bc37ec2d2de1ab69e",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -1.0,
+        "beta": 1.0,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-5d09ba107104e41cb8df",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 1.0,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-076e00c5edf0ce0c7622",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.75,
+        "beta": 1.0,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-a4cd3663c17110233f27",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 1.0,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-be9f539b7116927c3c1b",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.5,
+        "beta": 1.0,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 32,
+      "accepted_only": false,
+      "controller_action_id": "act-1dae89e9e82b80f13aaf",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 1.0,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-6364ed3099057a1dce82",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.35,
+        "beta": 1.0,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-f59ecc9ff9fcb3bee4bd",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 1.0,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-4040b81d6052a8f9ebef",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.25,
+        "beta": 1.0,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-92f1e559ff7843e560bc",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 1.0,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-a8c1c7b1fb8dfb2952bd",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.1,
+        "beta": 1.0,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-5b28e4685c6f6852858d",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 1.0,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-6ab6d169f7be3f74a5d4",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.05,
+        "beta": 1.0,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-3227f62ca4b007b1e105",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 1.0,
+        "L": 40,
+        "n_units": 8
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-44c119aa4925e20d539f",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    },
+    {
+      "params": {
+        "alpha": -0.025,
+        "beta": 1.0,
+        "L": 60,
+        "n_units": 12
+      },
+      "status": "pending",
+      "budget": 64,
+      "accepted_only": false,
+      "controller_action_id": "act-fc017594e4c1c726f327",
+      "artifact": null,
+      "stage_b_provenance": {
+        "run_spec": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r4-remaining94/parameter-scan.run_spec.json",
+        "run_spec_sha256": "844f8566d4a8c683593fc82440c742e5037ce2d7c2d8942ee884139fbdcad78c"
+      }
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "run_id": "pentamer-full-alpha-phase-diagram-20260809",
+  "scope": {
+    "alpha": [-1.0, 1.0],
+    "beta": [0.0, 1.0],
+    "reference_alignment": "Fig.3",
+    "excluded": ["reference Fig.9"]
+  },
+  "analytic_boundaries": {
+    "alpha_zero": "单胞局域自由度重组和解耦特殊线，单独标注",
+    "beta_zero": "孤立五聚体边界，单独标注"
+  },
+  "stages": [
+    {
+      "id": "A",
+      "description": "beta=0.5 负区 runner 与主导动量校准",
+      "alpha": [-1.0, -0.75, -0.5, -0.35, -0.25, -0.1, -0.05, -0.025],
+      "beta": [0.5],
+      "L": [40, 60, 80],
+      "cells": 24,
+      "estimated_hours": [5, 8],
+      "gate": "24 个 cell 全部通过单 cell 验收"
+    },
+    {
+      "id": "B",
+      "description": "其余六条 beta 切片的负区粗网格",
+      "alpha": [-1.0, -0.75, -0.5, -0.35, -0.25, -0.1, -0.05, -0.025],
+      "beta": [0.05, 0.1, 0.25, 0.75, 0.9, 1.0],
+      "L": [40, 60],
+      "cells": 96,
+      "estimated_hours": [16, 28],
+      "gate": "所有 cell 通过，或失败证据触发明确停止"
+    },
+    {
+      "id": "C",
+      "description": "只对显著 bracket 或诊断冲突区间做二分和 L=80 提升",
+      "target_alpha_width": 0.025,
+      "sigma": 2.0,
+      "final_size_pair": [60, 80],
+      "cells": "由本地 guard 决定",
+      "estimated_hours": [8, 24]
+    },
+    {
+      "id": "D",
+      "description": "合并正区 accepted 数据、绘制完整相图并更新 HTML",
+      "server_compute": false
+    }
+  ],
+  "reuse": {
+    "positive_records": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/phase-diagram/observations_merged.json",
+    "exploratory_background": "data/phase_diagram_80x60_hires.csv",
+    "negative_exploratory_only": true
+  },
+  "acceptance_standard": "docs/full_phase_diagram_negative_standard_20260809.md",
+  "execution": {
+    "remote": "direct SSH, scheduler none",
+    "one_heavy_cell_at_a_time": true,
+    "offline_remote": true,
+    "fetch": "remote checksum -> non-clobbering fetch -> local checksum -> validator",
+    "retry_sweeps": [32, 64, 128]
+  }
+}

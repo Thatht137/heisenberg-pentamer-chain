@@ -1,0 +1,841 @@
+{
+  "actions": [
+    {
+      "action_id": "act-07d732a13d4ba0ae6eb0",
+      "created_at": "2026-08-09T03:24:32Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.35,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:35:44Z"
+    },
+    {
+      "action_id": "act-2d26dfe7cf872627ea81",
+      "created_at": "2026-08-09T03:24:33Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.25,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:35:46Z"
+    },
+    {
+      "action_id": "act-3d1ab066156655e22ec8",
+      "created_at": "2026-08-09T03:24:35Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.025,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:35:47Z"
+    },
+    {
+      "action_id": "act-422d7df3c52eb52687af",
+      "created_at": "2026-08-09T03:24:36Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.75,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:35:49Z"
+    },
+    {
+      "action_id": "act-4503b7acb169c6a5092f",
+      "created_at": "2026-08-09T03:24:37Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.025,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:35:50Z"
+    },
+    {
+      "action_id": "act-4d1fc2cfcf42c1bff2ad",
+      "created_at": "2026-08-09T03:24:39Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -1.0,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:35:51Z"
+    },
+    {
+      "action_id": "act-51c60f85544cdb94c9dd",
+      "created_at": "2026-08-09T03:24:40Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.5,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:35:53Z"
+    },
+    {
+      "action_id": "act-6a4963c3064243f17ed8",
+      "created_at": "2026-08-09T03:24:41Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.1,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:35:54Z"
+    },
+    {
+      "action_id": "act-7016420e7cbf8fc354b7",
+      "created_at": "2026-08-09T03:24:43Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.05,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:35:55Z"
+    },
+    {
+      "action_id": "act-7b7f27ddc16195158ee6",
+      "created_at": "2026-08-09T03:24:44Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -1.0,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:35:56Z"
+    },
+    {
+      "action_id": "act-ae60c8b442ad94fde173",
+      "created_at": "2026-08-09T03:24:45Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.5,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:35:58Z"
+    },
+    {
+      "action_id": "act-b39c74e9721492bce614",
+      "created_at": "2026-08-09T03:24:47Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.35,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:35:59Z"
+    },
+    {
+      "action_id": "act-bd120db6bdbc305ddf42",
+      "created_at": "2026-08-09T03:24:48Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 60,
+          "alpha": -0.25,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:36:01Z"
+    },
+    {
+      "action_id": "act-cd2b4353726834318d6b",
+      "created_at": "2026-08-09T03:24:50Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.1,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:36:02Z"
+    },
+    {
+      "action_id": "act-f299effa97d8d15d0da2",
+      "created_at": "2026-08-09T03:24:51Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.75,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:36:04Z"
+    },
+    {
+      "action_id": "act-fffdf93a9cae183cb1c1",
+      "created_at": "2026-08-09T03:24:53Z",
+      "receipt": "direct-pid:623244",
+      "spec": {
+        "budget": 32,
+        "kind": "phase-diagram-cell",
+        "params": {
+          "L": 40,
+          "alpha": -0.05,
+          "beta": 0.5
+        }
+      },
+      "state": "REGISTERED",
+      "updated_at": "2026-08-09T03:36:05Z"
+    }
+  ],
+  "control_state": "RUNNING",
+  "events": [
+    {
+      "at": "2026-08-09T03:23:04Z",
+      "kind": "INITIALIZED"
+    },
+    {
+      "at": "2026-08-09T03:23:11Z",
+      "kind": "REPORT_INGESTED",
+      "status": "ACTION_REQUIRED"
+    },
+    {
+      "action_id": "act-07d732a13d4ba0ae6eb0",
+      "at": "2026-08-09T03:24:32Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-2d26dfe7cf872627ea81",
+      "at": "2026-08-09T03:24:33Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-3d1ab066156655e22ec8",
+      "at": "2026-08-09T03:24:35Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-422d7df3c52eb52687af",
+      "at": "2026-08-09T03:24:36Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-4503b7acb169c6a5092f",
+      "at": "2026-08-09T03:24:37Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-4d1fc2cfcf42c1bff2ad",
+      "at": "2026-08-09T03:24:39Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-51c60f85544cdb94c9dd",
+      "at": "2026-08-09T03:24:40Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-6a4963c3064243f17ed8",
+      "at": "2026-08-09T03:24:41Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-7016420e7cbf8fc354b7",
+      "at": "2026-08-09T03:24:43Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-7b7f27ddc16195158ee6",
+      "at": "2026-08-09T03:24:44Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-ae60c8b442ad94fde173",
+      "at": "2026-08-09T03:24:45Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-b39c74e9721492bce614",
+      "at": "2026-08-09T03:24:47Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-bd120db6bdbc305ddf42",
+      "at": "2026-08-09T03:24:48Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-cd2b4353726834318d6b",
+      "at": "2026-08-09T03:24:50Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-f299effa97d8d15d0da2",
+      "at": "2026-08-09T03:24:51Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-fffdf93a9cae183cb1c1",
+      "at": "2026-08-09T03:24:53Z",
+      "kind": "ACTION_PLANNED"
+    },
+    {
+      "action_id": "act-07d732a13d4ba0ae6eb0",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:16Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-2d26dfe7cf872627ea81",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:17Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-3d1ab066156655e22ec8",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:19Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-422d7df3c52eb52687af",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:20Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-4503b7acb169c6a5092f",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:21Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-4d1fc2cfcf42c1bff2ad",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:23Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-51c60f85544cdb94c9dd",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:24Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-6a4963c3064243f17ed8",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:25Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-7016420e7cbf8fc354b7",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:27Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-7b7f27ddc16195158ee6",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:28Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-ae60c8b442ad94fde173",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:30Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-b39c74e9721492bce614",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:31Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-bd120db6bdbc305ddf42",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:32Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-cd2b4353726834318d6b",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:34Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-f299effa97d8d15d0da2",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:35Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-fffdf93a9cae183cb1c1",
+      "action_state": "PREPARED",
+      "at": "2026-08-09T03:25:37Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PLANNED"
+    },
+    {
+      "action_id": "act-07d732a13d4ba0ae6eb0",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:05Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-2d26dfe7cf872627ea81",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:06Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-3d1ab066156655e22ec8",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:08Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-422d7df3c52eb52687af",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:09Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-4503b7acb169c6a5092f",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:11Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-4d1fc2cfcf42c1bff2ad",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:13Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-51c60f85544cdb94c9dd",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:14Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-6a4963c3064243f17ed8",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:16Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-7016420e7cbf8fc354b7",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:17Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-7b7f27ddc16195158ee6",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:19Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-ae60c8b442ad94fde173",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:20Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-b39c74e9721492bce614",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:22Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-bd120db6bdbc305ddf42",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:23Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-cd2b4353726834318d6b",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:25Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-f299effa97d8d15d0da2",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:26Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-fffdf93a9cae183cb1c1",
+      "action_state": "SUBMITTING",
+      "at": "2026-08-09T03:33:27Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "PREPARED"
+    },
+    {
+      "action_id": "act-07d732a13d4ba0ae6eb0",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:19Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-2d26dfe7cf872627ea81",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:21Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-3d1ab066156655e22ec8",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:22Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-422d7df3c52eb52687af",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:24Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-4503b7acb169c6a5092f",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:26Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-4d1fc2cfcf42c1bff2ad",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:27Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-51c60f85544cdb94c9dd",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:29Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-6a4963c3064243f17ed8",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:31Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-7016420e7cbf8fc354b7",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:32Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-7b7f27ddc16195158ee6",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:34Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-ae60c8b442ad94fde173",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:35Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-b39c74e9721492bce614",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:36Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-bd120db6bdbc305ddf42",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:38Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-cd2b4353726834318d6b",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:40Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-f299effa97d8d15d0da2",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:41Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-fffdf93a9cae183cb1c1",
+      "action_state": "SUBMITTED",
+      "at": "2026-08-09T03:35:43Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTING"
+    },
+    {
+      "action_id": "act-07d732a13d4ba0ae6eb0",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:35:44Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-2d26dfe7cf872627ea81",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:35:46Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-3d1ab066156655e22ec8",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:35:47Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-422d7df3c52eb52687af",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:35:49Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-4503b7acb169c6a5092f",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:35:50Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-4d1fc2cfcf42c1bff2ad",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:35:51Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-51c60f85544cdb94c9dd",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:35:53Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-6a4963c3064243f17ed8",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:35:54Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-7016420e7cbf8fc354b7",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:35:55Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-7b7f27ddc16195158ee6",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:35:56Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-ae60c8b442ad94fde173",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:35:58Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-b39c74e9721492bce614",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:35:59Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-bd120db6bdbc305ddf42",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:36:01Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-cd2b4353726834318d6b",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:36:02Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-f299effa97d8d15d0da2",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:36:04Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "action_id": "act-fffdf93a9cae183cb1c1",
+      "action_state": "REGISTERED",
+      "at": "2026-08-09T03:36:05Z",
+      "kind": "ACTION_ADVANCED",
+      "previous": "SUBMITTED"
+    },
+    {
+      "at": "2026-08-10T03:51:34Z",
+      "kind": "REPORT_INGESTED",
+      "status": "WAITING"
+    },
+    {
+      "at": "2026-08-10T05:23:27Z",
+      "kind": "REPORT_INGESTED",
+      "status": "WAITING"
+    },
+    {
+      "at": "2026-08-10T08:55:09Z",
+      "kind": "REPORT_INGESTED",
+      "status": "WAITING"
+    },
+    {
+      "at": "2026-08-10T10:31:54Z",
+      "kind": "REPORT_INGESTED",
+      "status": "WAITING"
+    },
+    {
+      "at": "2026-08-10T12:59:11Z",
+      "kind": "REPORT_INGESTED",
+      "status": "WAITING"
+    },
+    {
+      "at": "2026-08-10T22:30:48Z",
+      "kind": "REPORT_INGESTED",
+      "status": "WAITING"
+    }
+  ],
+  "goal_id": "pentamer-negative-internal-boundaries-v2-20260809",
+  "latest_report": {
+    "accepted_artifacts": [],
+    "authorized_action_ids": [],
+    "checked_at": "2026-08-10T22:30:47Z",
+    "path": "results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\phase-diagram-v2\\report.json",
+    "reason": "4 registered cells remain pending",
+    "status": "WAITING"
+  },
+  "next_wake_at": "2026-08-10T23:00:47Z",
+  "schema_version": 1
+}

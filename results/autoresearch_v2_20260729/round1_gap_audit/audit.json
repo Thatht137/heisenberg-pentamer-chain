@@ -1,0 +1,25 @@
+{
+  "scope": {
+    "alpha_min": 0.0,
+    "alpha_max": 1.0,
+    "beta": 0.5,
+    "fig9_excluded": true
+  },
+  "targets": [
+    0.14,
+    0.23,
+    0.33
+  ],
+  "prior_round_complete": true,
+  "prior_validation_rows": 4,
+  "assets_present": 11,
+  "assets_expected": 12,
+  "gaps": [
+    "alpha=0.14 的 DMRG 方差余量较小且末 sweep 能量变化偏大",
+    "alpha=0.23 缺五类中心切口纠缠谱",
+    "单五聚体正区缺算符选择定则与谱权重",
+    "正区 TEBD 原始数据尚未做未裁剪时间窗诊断，也没有 dt/2 数据"
+  ],
+  "reuse_decision": "不重算相图、不重复 Smoke；只补以上四个缺口",
+  "negative_alpha_new_compute": false
+}

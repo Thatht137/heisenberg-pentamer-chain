@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "status": "accepted_stage_b_complete_with_bounded",
+  "policy": "Practical V2",
+  "counts": {
+    "grid": 96,
+    "accepted": 89,
+    "bounded": 7,
+    "pending": 0
+  },
+  "grid_fully_resolved": true,
+  "boundary_eligible": 89,
+  "bounded_excluded_from_boundary": 7,
+  "stage_c_analysis_ready": true,
+  "thresholds_relaxed_during_terminal_ingest": false,
+  "max_new_sweeps": 64,
+  "inputs": {
+    "accepted_index": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_accepted_index_final.json",
+      "sha256": "833529f5da540b6de8be351521d5b796bc14d052e092831fe58246e9cfa8fc9a"
+    },
+    "bounded_records": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_bounded_records_final.json",
+      "sha256": "f84299923738e4682185d6e342c16ebda7cff089a11bc371812fbcd8092002bc"
+    },
+    "r20_evidence": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_r20_terminal_evidence.json",
+      "sha256": "c2ecb9467bd10a0fb8f07ae03ddcf1f56be25b4d6a3726050bf1c84601e5f498"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "status": "READY_TO_START_AFTER_ANCHOR",
+  "execution": "remote-only; no local TEBD was started",
+  "target": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "L": 40,
+    "dt": 0.025,
+    "tmax": 15.0,
+    "q_points": 81,
+    "omega_points": 181,
+    "threads": 8
+  },
+  "checks": {
+    "manifest_hash_matches_wrapper": true,
+    "standard_hash_matches_wrapper": true,
+    "positive_alpha_beta": true,
+    "target_L40": true,
+    "dt_0.025_tmax_15": true,
+    "dt_half_ready": true,
+    "raw_display_separation": true,
+    "negative_alpha_excluded": true
+  },
+  "hashes": {
+    "expected_manifest": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "actual_manifest": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "expected_standard": "4f00f333eaf810b2853a46e4e258e192db7ef554c7800d35df2ebe27adee4b46",
+    "actual_standard": "4f00f333eaf810b2853a46e4e258e192db7ef554c7800d35df2ebe27adee4b46",
+    "fourier_live": "e48b8a8c993b0f381de50f4236570bf1c9b56a883ace2ab10cdf8a2da958ba6f"
+  },
+  "boundary": "L=80 CV anchor remains the only active heavy task; supervisor must release it before TEBD starts."
+}

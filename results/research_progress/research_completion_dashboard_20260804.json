@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-07T12:00:00+08:00",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "claim_evidence": {
+    "total": 12,
+    "supported_or_bounded": 12,
+    "pending": 0,
+    "coverage_fraction": 1.0,
+    "pending_ids": []
+  },
+  "figures": {
+    "reference_aligned_total": 8,
+    "static_ready_or_bounded": 5,
+    "dynamic_not_production": 2,
+    "static_ready_or_bounded_ids": [
+      "Fig. 1",
+      "Fig. 2",
+      "Fig. 3",
+      "Fig. 4",
+      "Fig. 5"
+    ],
+    "dynamic_not_production_ids": [
+      "Fig. 6",
+      "Fig. 7"
+    ]
+  },
+  "delivery_gates": {
+    "passed": 9,
+    "total": 9,
+    "pending_ids": [],
+    "status": "QPI_PRODUCTION_READY_FULLQ_PENDING"
+  },
+  "asset_qa": {
+    "status": "pass",
+    "asset_count": 40,
+    "failures": 0
+  },
+  "interpretation": "12/12 claim 条目已有支持或明确边界；Fig.1--5 静态图与限定 q=pi 的 Fig.8 production 通过。Fig.6/7 的 full-q production 仍等待六个 run 与三组 dt/dt2 验收；这不是论文完成率。"
+}

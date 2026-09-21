@@ -1,0 +1,7 @@
+method,observable,value,uncertainty,instance,tag
+exact_diagonalization,peak_omega,0.15000000000000002,0.0,"alpha=0.23,beta=0.5,L=10,q/pi=1,eta=0.1,OBC,Sz=0",Agreement
+tebd_dt,peak_omega,0.15,0.1,"alpha=0.23,beta=0.5,L=10,q/pi=1,eta=0.1,OBC,Sz=0",Agreement
+tebd_dt2,peak_omega,0.15,0.1,"alpha=0.23,beta=0.5,L=10,q/pi=1,eta=0.1,OBC,Sz=0",Agreement
+exact_diagonalization,integrated_weight,0.6144464512649274,0.0,"alpha=0.23,beta=0.5,L=10,q/pi=1,eta=0.1,OBC,Sz=0",Agreement
+tebd_dt,integrated_weight,0.6154621480963244,0.0921669676897391,"alpha=0.23,beta=0.5,L=10,q/pi=1,eta=0.1,OBC,Sz=0",Agreement
+tebd_dt2,integrated_weight,0.6154238983807204,0.0921669676897391,"alpha=0.23,beta=0.5,L=10,q/pi=1,eta=0.1,OBC,Sz=0",Agreement

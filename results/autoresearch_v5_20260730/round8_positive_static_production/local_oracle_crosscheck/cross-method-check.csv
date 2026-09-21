@@ -1,0 +1,7 @@
+method,observable,value,uncertainty,instance,tag
+DMRG,energy_sz0,-2.4830010958483277,2.6266651793158893e-06,L=10;alpha=0.1;beta=0.5;OBC;Sz=0,Agreement
+ED,energy_sz0,-2.4830010958506623,1.3893692333385818e-11,L=10;alpha=0.1;beta=0.5;OBC;Sz=0,Agreement
+DMRG,energy_sz1,-2.416980564988293,1.6060908139177175e-05,L=10;alpha=0.1;beta=0.5;OBC;Sz=1,Agreement
+ED,energy_sz1,-2.416980566684594,1.1270227395860138e-11,L=10;alpha=0.1;beta=0.5;OBC;Sz=1,Agreement
+DMRG,spin_gap,0.06602053086003457,1.8687573318493065e-05,L=10;alpha=0.1;beta=0.5;OBC,Agreement
+ED,spin_gap,0.06602052916606826,2.5163919729245957e-11,L=10;alpha=0.1;beta=0.5;OBC,Agreement

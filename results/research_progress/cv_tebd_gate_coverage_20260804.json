@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-04T09:00:00+08:00",
+  "status": "NotEvaluable",
+  "instance": "alpha=0.23,beta=0.5,L=40,q/pi=1,eta=0.1,OBC,Sz=0",
+  "tebd_peak_omega": 0.05,
+  "accepted_cv_omega": [
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.55,
+    1.0
+  ],
+  "failed_cv_omega": [
+    0.0,
+    0.05,
+    0.1,
+    0.15
+  ],
+  "pending_cv_omega": [
+    1.5
+  ],
+  "required_grid": [
+    0.0,
+    0.05,
+    0.1,
+    0.15,
+    0.2,
+    0.55,
+    1.0,
+    1.5
+  ],
+  "coverage": {
+    "main_peak_covered": false,
+    "integral_window_0_to_1_5_covered": false,
+    "accepted_min": 0.2,
+    "accepted_max": 1.0
+  },
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "interpretation": "当前已通过 CV 点位于 0.20--1.00；TEBD 主峰约 0.05 未被包围，且 [0,1.5] 积分窗未覆盖，因此不能进行 CV--TEBD Agreement 判定。"
+}

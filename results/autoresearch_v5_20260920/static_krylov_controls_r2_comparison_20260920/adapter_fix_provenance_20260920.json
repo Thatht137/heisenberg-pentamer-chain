@@ -1,0 +1,58 @@
+{
+  "schema": "static_krylov_controls_r2_comparison/adapter_fix_provenance/v1",
+  "created_at": "2026-09-20",
+  "status": "comparison_not_generated",
+  "scope": "local post-processing only; no SSH, no upload, no manifest/spec/original-data modification",
+  "repair": {
+    "file": "scripts/autoresearch_v5/static_krylov_candidate_adapter.py",
+    "change": "audit() now passes baseline['points'][point_id] directly because load_baseline_dataset() returns a list of records per point",
+    "candidate_contract_changed": false,
+    "validation_gates_changed": false,
+    "scientific_settings_changed": false
+  },
+  "fixture_repair": {
+    "file": "scripts/autoresearch_v5/test_static_krylov_candidate_adapter.py",
+    "change": "synthetic baseline points now use the real list shape; candidate fixture remains the records/metadata mapping",
+    "real_contract_regression_covered": true
+  },
+  "tests": [
+    {
+      "command": "D:/Python3.12.4/python.exe -B -X utf8 scripts/autoresearch_v5/test_static_krylov_candidate_adapter.py",
+      "result": "pass",
+      "tests": 10
+    },
+    {
+      "command": "D:/Python3.12.4/python.exe -B -X utf8 scripts/autoresearch_v5/test_compare_static_krylov_controls.py",
+      "result": "pass",
+      "tests": 9
+    }
+  ],
+  "current_sources": {
+    "scripts/autoresearch_v5/static_krylov_candidate_adapter.py": {
+      "bytes": 29228,
+      "sha256": "859ea850e016d9d077554950276311a0b756789661290b003c7df6507098850a"
+    },
+    "scripts/autoresearch_v5/test_static_krylov_candidate_adapter.py": {
+      "bytes": 8272,
+      "sha256": "dcb702f4265acf241cd56501e22745374c3afc89dd5cfd216b8ac4ec011ee614"
+    },
+    "scripts/autoresearch_v5/compare_static_krylov_controls.py": {
+      "bytes": 6388,
+      "sha256": "7565bc8df184d721de6b930978a419cc8a5fa7597710806555af4a68ccab525e"
+    },
+    "scripts/autoresearch_v5/test_compare_static_krylov_controls.py": {
+      "bytes": 3550,
+      "sha256": "b1d806a4a8c3bf20007646cbc9c0a97d9fd15a50a4d32e80a2671f8d6555b321"
+    }
+  },
+  "preserved_diagnostics": [
+    "首次显式 r2 adapter 运行在 audit() 的 baseline list/dict 访问处报 TypeError；未写 comparison.json。",
+    "修复后显式 r2 adapter 进入 compare_records，但在 connected_quarter key 配对处报 ValueError；未写 comparison.json。"
+  ],
+  "frozen_inputs": {
+    "baseline_inventory": "results/autoresearch_v5_20260919/static_krylov_baseline_v2",
+    "baseline_run_spec": "results/autoresearch_v5_20260913/negative_phase_independent_pilot_r1/parameter-scan.run_spec.json",
+    "candidate_dir": "results/autoresearch_v5_20260920/static_krylov_controls_r2_fetch_0945",
+    "candidate_run_spec": "results/autoresearch_v5_20260919/static_krylov_controls_r2/parameter-scan.run_spec.json"
+  }
+}

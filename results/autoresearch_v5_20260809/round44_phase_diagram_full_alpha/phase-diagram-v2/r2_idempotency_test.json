@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "operation": "连续两次运行 ingest_negative_phase_r2.py 并比较内容 SHA256",
+  "files": [
+    {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+      "sha256": "6872bba57289ab2dcc67a10003ec686ecc9f26bc8526c10ba6c2d8f1a6c85582",
+      "identical": true
+    },
+    {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/action_index.json",
+      "sha256": "3c2fa8512964075a234cd7db353da48f7b2db49d2ab75f0a3fb0247e15077cd3",
+      "identical": true
+    },
+    {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r2_ingestion_summary.json",
+      "sha256": "da9118db823730f736091fafc3fc3d72e509e6fdbaf8454d79ccce9f538d9d3a",
+      "identical": true
+    },
+    {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r2-a0350-L060-20260810-1311/validation/summary.json",
+      "sha256": "59c0b36b203cab92b2f8b8b532e4f77bbdbfc6d1c68dd12fa9cd3fa44b4e0356",
+      "identical": true
+    },
+    {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r2-a0350-L060-20260810-1311/handoff_summary.json",
+      "sha256": "13f1fa5fc154155bd1699700112161445a2c139cdc21ba244c53266720afbf17",
+      "identical": true
+    }
+  ]
+}

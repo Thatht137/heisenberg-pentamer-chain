@@ -1,0 +1,75 @@
+{
+  "verdict": "finite_distance_string_correlator_not_long_range_order",
+  "scope": "alpha>=0,beta>=0",
+  "observable_definition": "map O_str uses N_units=12, margin=3 and therefore a single maximum-distance bulk pair",
+  "targets": [
+    {
+      "alpha": 0.05,
+      "beta": 0.5
+    },
+    {
+      "alpha": 0.5,
+      "beta": 0.5
+    }
+  ],
+  "fits": {
+    "a0.05_L60": {
+      "n": 3,
+      "slope": -0.1960406768229989,
+      "r2": 0.9816731657878642,
+      "first_envelope": 0.24894276640979998,
+      "last_envelope": 0.113642812851
+    },
+    "a0.05_L80": {
+      "n": 5,
+      "slope": -0.1874898502066039,
+      "r2": 0.9390970159031076,
+      "first_envelope": 0.24892629235433336,
+      "last_envelope": 0.046404564287
+    },
+    "a0.05_L100": {
+      "n": 7,
+      "slope": -0.16391313681771325,
+      "r2": 0.8123544281427018,
+      "first_envelope": 0.24892485341715384,
+      "last_envelope": 0.019510884904
+    },
+    "a0.50_L60": {
+      "n": 3,
+      "slope": -0.3358718575337106,
+      "r2": 0.9846196846117444,
+      "first_envelope": 0.1603019468404,
+      "last_envelope": 0.041828242714
+    },
+    "a0.50_L80": {
+      "n": 5,
+      "slope": -0.21434777826854,
+      "r2": 0.8840063060865258,
+      "first_envelope": 0.16189614868577779,
+      "last_envelope": 0.023275172805
+    },
+    "a0.50_L100": {
+      "n": 7,
+      "slope": -0.15085372540487682,
+      "r2": 0.7810183038581644,
+      "first_envelope": 0.16248132153069234,
+      "last_envelope": 0.015331284812
+    }
+  },
+  "checks": {
+    "positive_alpha_only": true,
+    "target_beta_nonnegative": true,
+    "six_source_files": true,
+    "three_sizes_each": true,
+    "all_finite_envelopes": true
+  },
+  "source_sha256": {
+    "data\\string_order_distance\\pairs\\a+0.05_b0.50_L060.csv": "4e8a6d192c913fcd257e3786fe97647464c1c4b07c93bbcbe616eedf702a8399",
+    "data\\string_order_distance\\pairs\\a+0.05_b0.50_L080.csv": "d68f3eb86baaddb74015be14bbcaeab8c35ff944af79817e44e1318a6f20c2c8",
+    "data\\string_order_distance\\pairs\\a+0.05_b0.50_L100.csv": "8f95047669636135c73a140eb5d48f53fe0370cd45468521c5ff9ba86cf154a4",
+    "data\\string_order_distance\\pairs\\a+0.50_b0.50_L060.csv": "cca22ce2183de97a502aa0ed8b105ae74ead76b4d9ecde8512dd3fcebff2ecaa",
+    "data\\string_order_distance\\pairs\\a+0.50_b0.50_L080.csv": "527c9a44260cd15cfca61e8669aff79e3ef8b781f0477f3989596623782598ec",
+    "data\\string_order_distance\\pairs\\a+0.50_b0.50_L100.csv": "b1612a999c9c0475f26e01393240858a10c3241887288369854b75eb00263ea9"
+  },
+  "boundary": "A decaying odd-distance envelope rules out reading the finite-distance map value as proven long-range string order; it does not by itself determine the full phase diagram."
+}

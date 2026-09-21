@@ -1,0 +1,368 @@
+{
+  "schema_version": 1,
+  "report_checked_at": "2026-07-31T09:29:51Z",
+  "count": 30,
+  "server_submission": "blocked_until_user_confirms_first_stage",
+  "actions": [
+    {
+      "action_id": "act-1e606267d1620e8243b9",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-1e606267d1620e8243b9.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 0.0,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-dc3fb4046a9485693001",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-dc3fb4046a9485693001.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 0.0,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-2eb618b600f76806a476",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-2eb618b600f76806a476.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 0.125,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-77c33f84d47c63bed728",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-77c33f84d47c63bed728.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 0.125,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-039e69bd1780112ea187",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-039e69bd1780112ea187.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 0.25,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-a771523a1e5ec4800b00",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-a771523a1e5ec4800b00.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 0.25,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-90310f29a26eb5c27412",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-90310f29a26eb5c27412.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 0.5,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-822283db52ec510ebff7",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-822283db52ec510ebff7.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 0.5,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-c0a146347c9b5b0014b6",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-c0a146347c9b5b0014b6.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 1.0,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-bf472ca787cc16ca0992",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-bf472ca787cc16ca0992.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 1.0,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-43c342810485762321df",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-43c342810485762321df.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 0.0,
+        "beta": 0.5
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-703252d2753634c5ce71",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-703252d2753634c5ce71.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 0.0,
+        "beta": 0.5
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-bf8b5b814badc0e4ca31",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-bf8b5b814badc0e4ca31.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 0.125,
+        "beta": 0.5
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-c07ec7ae9b14596faa90",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-c07ec7ae9b14596faa90.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 0.125,
+        "beta": 0.5
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-ab52a7b142f39181e33e",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-ab52a7b142f39181e33e.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 0.25,
+        "beta": 0.5
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-f115f95d18fd26ea1a56",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-f115f95d18fd26ea1a56.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 0.25,
+        "beta": 0.5
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-d5ce0efd0eef910aaa10",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-d5ce0efd0eef910aaa10.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 0.5,
+        "beta": 0.5
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-2e08991b4d795e53487d",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-2e08991b4d795e53487d.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 0.5,
+        "beta": 0.5
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-42cb5f2b51060ddbe4aa",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-42cb5f2b51060ddbe4aa.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 1.0,
+        "beta": 0.5
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-deff88e4bbd59fc634c5",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-deff88e4bbd59fc634c5.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 1.0,
+        "beta": 0.5
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-4b91fa17e1d5570b911a",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-4b91fa17e1d5570b911a.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 0.0,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-2c2ebb6a9b4c404ab0b0",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-2c2ebb6a9b4c404ab0b0.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 0.0,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-4d364355102bcea1da03",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-4d364355102bcea1da03.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 0.125,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-5126fc6363ec11ee54db",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-5126fc6363ec11ee54db.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 0.125,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-8e8bd80a7c73206bc53f",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-8e8bd80a7c73206bc53f.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 0.25,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-05901e71aa6cb22c17a2",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-05901e71aa6cb22c17a2.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 0.25,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-f0caaf9bc59b406be5d2",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-f0caaf9bc59b406be5d2.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 0.5,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-2842a27743b4de05393d",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-2842a27743b4de05393d.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 0.5,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-5dc25837369e460362b6",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-5dc25837369e460362b6.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 40,
+        "alpha": 1.0,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    },
+    {
+      "action_id": "act-f08e8bffe3f0194e7666",
+      "spec_path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/act-f08e8bffe3f0194e7666.json",
+      "reason": "complete the declared coarse grid",
+      "params": {
+        "L": 60,
+        "alpha": 1.0,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "state": "PLANNED_INPUT_ONLY"
+    }
+  ]
+}

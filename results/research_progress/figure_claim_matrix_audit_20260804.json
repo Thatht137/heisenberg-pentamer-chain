@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-04T00:35:45+08:00",
+  "status": "pass",
+  "figures": [
+    {
+      "figure": "Fig. 1",
+      "claim_ids": [
+        "C1",
+        "C2"
+      ],
+      "manifest_status": "ready",
+      "claim_status": [
+        "可写",
+        "可写"
+      ]
+    },
+    {
+      "figure": "Fig. 2",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "manifest_status": "ready",
+      "claim_status": [
+        "可写",
+        "可写"
+      ]
+    },
+    {
+      "figure": "Fig. 3",
+      "claim_ids": [
+        "C5",
+        "C11"
+      ],
+      "manifest_status": "ready_with_boundary",
+      "claim_status": [
+        "可写：不支持",
+        "待计算"
+      ]
+    },
+    {
+      "figure": "Fig. 4",
+      "claim_ids": [
+        "C4"
+      ],
+      "manifest_status": "ready_with_boundary",
+      "claim_status": [
+        "较强"
+      ]
+    },
+    {
+      "figure": "Fig. 5",
+      "claim_ids": [
+        "C6",
+        "C7"
+      ],
+      "manifest_status": "ready",
+      "claim_status": [
+        "可写",
+        "可写"
+      ]
+    },
+    {
+      "figure": "Fig. 6",
+      "claim_ids": [
+        "C10"
+      ],
+      "manifest_status": "exploratory",
+      "claim_status": [
+        "待计算"
+      ]
+    },
+    {
+      "figure": "Fig. 7",
+      "claim_ids": [
+        "C10"
+      ],
+      "manifest_status": "pilot",
+      "claim_status": [
+        "待计算"
+      ]
+    },
+    {
+      "figure": "Fig. 8",
+      "claim_ids": [
+        "C10",
+        "C12"
+      ],
+      "manifest_status": "constrained_overlay",
+      "claim_status": [
+        "待计算",
+        "可写：受控区"
+      ]
+    }
+  ],
+  "failures": [],
+  "scope": {
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

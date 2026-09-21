@@ -1,0 +1,8 @@
+{
+  "all_hermitian": true,
+  "doublet_sum_rule": true,
+  "reflection_symmetry": true,
+  "antiferromagnetic_jeff": true,
+  "q_pi_dominant": true,
+  "claim": "正 alpha 五聚体双重态的一阶胞间投影是反铁磁有效 S=1/2 Heisenberg 链，且物理 q=pi 形状因子最强"
+}

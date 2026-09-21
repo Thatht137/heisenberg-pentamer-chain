@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-03",
+  "status": "uploaded_and_verified",
+  "heartbeat_interval_seconds": 30,
+  "entrypoints": {
+    "cv_dsf_resumable": "scripts/autoresearch_v5/run_cv_dsf_resumable.py",
+    "cv_dsf_legacy": "scripts/autoresearch_v5/run_cv_dsf_cell.py",
+    "positive_static": "scripts/autoresearch_v5/run_positive_static_cell.py",
+    "positive_static_multistart": "scripts/autoresearch_v5/run_phase_structure_ratio_cell.py",
+    "tebd_production": "scripts/autoresearch_v5/run_tebd_production.py",
+    "effective_sector_dmrg": "scripts/autoresearch_v3/run_effective_sector_cell.py",
+    "entanglement_dmrg": "scripts/autoresearch_v3/run_entanglement_cell.py",
+    "five_rounds_dmrg": "scripts/five_rounds/run_dmrg_cell.py"
+  },
+  "progress_file": "progress.json",
+  "reported_fields": [
+    "status",
+    "phase",
+    "started_at",
+    "updated_at",
+    "elapsed_seconds",
+    "completed_points",
+    "last_sweep",
+    "tebd_step",
+    "tebd_eta_seconds",
+    "fourier_q",
+    "stdout_last_change"
+  ],
+  "verification": {
+    "py_compile": true,
+    "autoresearch_v5_unit_tests": "19/19 PASS",
+    "remote_ast_parse": "9/9 PASS",
+    "remote_target": "wangjieren@39.96.207.180:6000:/home/wangjieren/code/1x5_Heisenberg_Pentamer/scripts/autoresearch_v5",
+    "negative_alpha_included": false
+  },
+  "remote_sha256": {
+    "progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+    "run_tebd_production.py": "796fee417c3f3bbf0988813173b05a14010539c07e1946d123665c2f03482c0a",
+    "run_cv_dsf_resumable.py": "b89e8824265fc09be28f9ab0b919e85141d3fb6587acbe7bbadcc2eb495efeca",
+    "run_cv_dsf_cell.py": "560d4344bc71c4dad487a3028a030bc41ebf813d53427bdcc17ace9eec0cc349",
+    "run_positive_static_cell.py": "f671dae4cefb46c5c8cf7dc93846a8e98b8e78939b48afa2b848afd54eed703a",
+    "run_phase_structure_ratio_cell.py": "5d67cf2a598c9fa7f458eca189bdd957fbf927f6a3ccd31d6476ab76d34b80d0",
+    "run_effective_sector_cell.py": "4fea00ee17b698d5aa64776e91b59571a853aca3f96b9195355aa727abdb22c3",
+    "run_entanglement_cell.py": "79945f708970b0fbf7c8c104bfe7675dcf6b6e95a79ab9dc565068a8fdd64aa1",
+    "run_dmrg_cell.py": "5eafa9bfff25c751bed595d03ee8dffd14d70a26882da4d018786136724762a9"
+  },
+  "rollout_note": "当前 L=80 anchor 已使用旧版 runner，不中途覆盖；同步后所有新计算必须保留 progress.json。"
+}

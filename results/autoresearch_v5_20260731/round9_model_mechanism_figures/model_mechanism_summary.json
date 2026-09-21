@@ -1,0 +1,47 @@
+{
+  "tag": "pass",
+  "figure_contract": {
+    "model_core_conclusion": "An odd five-spin unit cell retains an effective S=1/2, and positive beta projects to an antiferromagnetic Heisenberg chain.",
+    "filter_core_conclusion": "At q=pi reflection parity suppresses the lowest excited doublet while even S=3/2 quartets carry most local inelastic weight.",
+    "archetype": "schematic-led composite",
+    "backend": "Python/matplotlib",
+    "final_width_mm": 183
+  },
+  "model_metrics": {
+    "coefficient_sum": 0.999999999999999,
+    "reflection_error": 2.1094237467877974e-15,
+    "minimum_jeff_over_beta": 0.26180177873931504,
+    "maximum_jeff_over_beta": 0.4444190200929124
+  },
+  "filter_metrics": {
+    "lowest_doublet_qpi_weight": 9.686837854824297e-32,
+    "lowest_quartet_qpi_weight": 0.3291052520748656,
+    "quartet_fraction_min": 0.8411470452633076,
+    "quartet_fraction_max": 0.9758222570206297,
+    "sextet_fraction_max": 2.640879632889722e-28
+  },
+  "checks": {
+    "coefficient_sum": true,
+    "reflection_symmetry": true,
+    "antiferromagnetic_jeff": true,
+    "lowest_doublet_dark_at_qpi": true,
+    "quartets_dominate_qpi": true,
+    "sextet_rank_one_dark": true
+  },
+  "source_sha256": {
+    "results\\autoresearch_v3_20260729\\round1_doublet_projection\\projection_scan.csv": "d8c2d2548cf937e5b16b6b77c818174cf33918eb888c4bee5ccdcafb73e8df15",
+    "results\\autoresearch_v4_20260730\\round2_local_spectral_channels_v4\\multiplet_scan.csv": "9ce8a9c56f22fd99be701e5795ecde3a9beda56c4903b74d7804072c40eecf9a",
+    "results\\autoresearch_v4_20260730\\round2_local_spectral_channels_v4\\folded_transition_weights.csv": "e832cf02e8f01d6fc0c9f5e371141869af17f514445407d16c75ded96aa51043"
+  },
+  "figure_sha256": {
+    "pentamer_model_effective_chain_20260731.svg": "1601bc9d0edb0622e0b903990807854a80532d9eef3f46295837b7f9de73a949",
+    "pentamer_model_effective_chain_20260731.pdf": "109033e31733fc69b9d5e7889dca4f1590043d2b0e7f19e98148c524813db098",
+    "pentamer_model_effective_chain_20260731.png": "ae0ff91632730efac9260da02a98dafbec1d3089a91f1e3a2a465a64eb5e0ce3",
+    "pentamer_model_effective_chain_20260731.tiff": "3cb7ba0ca066fc7377029ef8acab0c5f9a50a3ce7450e8cda2bdd7571f5672bf",
+    "pentamer_momentum_filter_20260731.svg": "1a3c30f178ea550ebd31d08dd1c52867e51ffd1216f730dda2fe5e91c0ba5e51",
+    "pentamer_momentum_filter_20260731.pdf": "fd0bd78768012ed894c23263047222aed7875e7cfa21c3276adcbc126402f275",
+    "pentamer_momentum_filter_20260731.png": "198bc4d8a4404de00e8f7962a367039b8a5e2793c2475ccf3297340ee4f438d4",
+    "pentamer_momentum_filter_20260731.tiff": "ca8e5fa6e9d3a81ba5c3787b5ac1c522f6fbf48bf41db11ed2b368fd41e19df8"
+  },
+  "scope_boundary": "The projection and selection rules are isolated-cell or first-order statements; finite-beta branch assignment still requires production DSF."
+}

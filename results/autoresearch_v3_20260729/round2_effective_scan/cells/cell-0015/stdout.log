@@ -1,0 +1,25 @@
+After sweep 1 energy=-14.136222367470769  maxlinkdim=24 maxerr=9.89E-12 time=43.723
+After sweep 2 energy=-14.146780340647991  maxlinkdim=49 maxerr=1.00E-11 time=1.311
+After sweep 3 energy=-14.149244042355752  maxlinkdim=59 maxerr=9.93E-12 time=1.114
+After sweep 4 energy=-14.150633320366614  maxlinkdim=66 maxerr=9.98E-12 time=1.386
+After sweep 5 energy=-14.151846175773208  maxlinkdim=71 maxerr=1.00E-11 time=1.101
+After sweep 6 energy=-14.152556253457695  maxlinkdim=76 maxerr=9.99E-12 time=1.110
+After sweep 7 energy=-14.153119982524153  maxlinkdim=84 maxerr=9.99E-12 time=1.170
+After sweep 8 energy=-14.153393498491948  maxlinkdim=91 maxerr=9.99E-12 time=1.174
+After sweep 9 energy=-14.153554030549024  maxlinkdim=98 maxerr=9.98E-12 time=1.244
+After sweep 10 energy=-14.15362884609543  maxlinkdim=101 maxerr=9.95E-12 time=1.301
+After sweep 11 energy=-14.153655558263925  maxlinkdim=97 maxerr=9.99E-12 time=1.267
+After sweep 12 energy=-14.153661111697643  maxlinkdim=94 maxerr=1.00E-11 time=1.288
+After sweep 13 energy=-14.15366266801183  maxlinkdim=104 maxerr=9.99E-12 time=1.425
+After sweep 14 energy=-14.153662979954584  maxlinkdim=113 maxerr=9.98E-12 time=1.235
+After sweep 15 energy=-14.153663028220379  maxlinkdim=123 maxerr=9.99E-12 time=1.421
+After sweep 16 energy=-14.153663030825076  maxlinkdim=123 maxerr=1.00E-11 time=1.449
+After sweep 17 energy=-14.153663030817205  maxlinkdim=120 maxerr=9.97E-12 time=1.394
+After sweep 18 energy=-14.153663030825744  maxlinkdim=120 maxerr=9.89E-12 time=1.389
+After sweep 19 energy=-14.153663030825845  maxlinkdim=120 maxerr=9.91E-12 time=1.381
+After sweep 20 energy=-14.153663030829266  maxlinkdim=120 maxerr=9.95E-12 time=1.382
+After sweep 21 energy=-14.15366303082931  maxlinkdim=120 maxerr=9.98E-12 time=1.381
+After sweep 22 energy=-14.15366303082941  maxlinkdim=120 maxerr=9.91E-12 time=1.324
+After sweep 23 energy=-14.153663030829414  maxlinkdim=120 maxerr=9.86E-12 time=1.354
+After sweep 24 energy=-14.153663030829314  maxlinkdim=120 maxerr=9.86E-12 time=1.363
+SECTOR_CELL_SUCCESS outdir=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v3_20260729/round2_effective_scan/cells/cell-0015

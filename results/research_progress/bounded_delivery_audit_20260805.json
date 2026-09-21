@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-05T22:30:00+08:00",
+  "status": "READY_BOUNDED",
+  "checks": {
+    "required_artifacts": true,
+    "high150_validator_pass": true,
+    "low005_rejected_only_by_acceptance": true,
+    "accepted_anchor_seven_points": true,
+    "cross_method_bounded": true,
+    "stop_loss_applied": true,
+    "figure_bounded_contract": true,
+    "figure_exports_hashed": true,
+    "scope_guard": true,
+    "claims_bounded_not_production": true
+  },
+  "bounded_delivery_gates": {
+    "passed": 10,
+    "total": 10
+  },
+  "production_dynamic_gate": false,
+  "claim_evidence": {
+    "supported_or_bounded": 12,
+    "total": 12,
+    "strong_claims_not_closed": [
+      "C10 production",
+      "C11 thermodynamic"
+    ]
+  },
+  "figures": {
+    "Fig.1-5": "ready_or_bounded",
+    "Fig.6": "exploratory",
+    "Fig.7": "pilot",
+    "Fig.8": "bounded"
+  },
+  "required_sha256": {
+    "results/research_progress/report.html": "1edd3665b21028da2541de5cccaee26b503464975816ba2730aced7cb5c38743",
+    "results/research_progress/report_history.html": "0ab325c9df37b216fba4ff44927d6494246d2f68f686b366768bea906c3f4d10",
+    "results/research_progress/dynamic_gate_freeze_20260805.json": "9c94233d0a6f6c4104404cbc8b792fa9ccabfbef452dde33f5e82eff83ba879c",
+    "results/research_progress/round31_high150_fetch_receipt_20260805.json": "34dbf11fad294985bb4a74706d52f7f44bfc5fe26f9872dc3ee582ce7356b580",
+    "results/research_progress/round41_low005_retry_fetch_receipt_20260805.json": "1c2a7636ff2c52863940b0f774fc556301fb2cf0d274f675a50b647bfbae9525",
+    "results/research_progress/round31_high150_validator_20260805.json": "2d2fb9490538482c42aae9634c36bf85e2c1819d02029d7c6d2f869ca1c17d50",
+    "results/research_progress/round41_low005_retry_validator_20260805.json": "afbbb121d0ffffaccd06ec4f64d09f75c61a94349512cd2c2ec0074499bf9b28",
+    "figures/paper_fig8_bounded_cv_tebd_20260805.svg": "407dda1bc0ececac5dc3ee95f58c6ee29024278f21ea56b82128900e993a3079",
+    "figures/paper_fig8_bounded_cv_tebd_20260805.pdf": "f78b23f1b321a96329cf1ede84e4bd7a30fd5bf10421ec1beafdbaafa5d842f4",
+    "figures/paper_fig8_bounded_cv_tebd_20260805.png": "f0d2c452d669a6327da006b824a765d5b0f633075a02e8e8e0d0a6ee3ad44fe0",
+    "figures/paper_fig8_bounded_cv_tebd_20260805.tiff": "2d87240fcfbead604729153210738be41a7c3e6351a168d7529756f45e50cf6c",
+    "figures/paper_fig8_bounded_cv_tebd_20260805.sources.json": "74d24e8b8cb2bca315cb358f16aa41409a16929a9f068dea6aaa8efa72f0443f",
+    "docs/claim_evidence_matrix.md": "2a3de0781441c319b39d1f9d3cef384c98bf96809a18362a2d1da60e61921ea4",
+    "docs/delivery_plan_to_20260810.md": "7523febd1338621cac4f11ae5405faa21c45e5427bcf45a8fc48af53e64ec35c",
+    "docs/reproducibility_commands_20260804.md": "6a848e1ba1e407838378040f641df82d9c98cf4f347b49982795915e627c8b19",
+    "docs/pentamer_reproduction_standard.md": "aa06eaf6d816b40161e1d493a4c8a800aeac33d8a190eb8312e1ddba90fd7ce8"
+  },
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

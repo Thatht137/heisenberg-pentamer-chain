@@ -1,0 +1,113 @@
+{
+  "schema_version": 1,
+  "target": "/home/wangjieren/code/1x5_Heisenberg_Pentamer",
+  "mode": "offline_upload_only",
+  "launch_ready": true,
+  "previous_failure_validated": true,
+  "stage": "B-R13-practical-v2-remaining76",
+  "stage_directory": "stage-b-negative-coarse-r13-remaining76",
+  "cell_count": 76,
+  "concurrency": 1,
+  "stop_on_first_failure": true,
+  "eta_hours": {
+    "low": 14,
+    "high": 25
+  },
+  "files": [
+    {
+      "path": "Project.toml",
+      "sha256": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "bytes": 634
+    },
+    {
+      "path": "Manifest.toml",
+      "sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "bytes": 30279
+    },
+    {
+      "path": "docs/full_phase_diagram_negative_standard_20260809.md",
+      "sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+      "bytes": 5542
+    },
+    {
+      "path": "docs/negative_alpha_practical_convergence_standard_20260829.md",
+      "sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+      "bytes": 4936
+    },
+    {
+      "path": "src/PentamerChain.jl",
+      "sha256": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "bytes": 782
+    },
+    {
+      "path": "src/hamiltonian.jl",
+      "sha256": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "bytes": 2775
+    },
+    {
+      "path": "src/order_parameters.jl",
+      "sha256": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "bytes": 7444
+    },
+    {
+      "path": "scripts/autoresearch_v5/progress.py",
+      "sha256": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+      "bytes": 3005
+    },
+    {
+      "path": "scripts/autoresearch_v5/negative_static_cell.jl",
+      "sha256": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+      "bytes": 14703
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_static_cell.py",
+      "sha256": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+      "bytes": 13445
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_phase_structure_cell.py",
+      "sha256": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+      "bytes": 13316
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_phase_structure_batch.py",
+      "sha256": "3ab6225664e3a4a850400a847f37140fd4800fd16a54ca8842386a404c0fe680",
+      "bytes": 8648
+    },
+    {
+      "path": "scripts/autoresearch_v5/validate_negative_phase_run_practical_v2.py",
+      "sha256": "677a5d3bbe89cf4623fadbbba5f46071e2ec952b371ddc487b152f8041966e94",
+      "bytes": 9215
+    },
+    {
+      "path": "scripts/autoresearch_v5/launch_negative_phase_stage_b_next.sh",
+      "sha256": "3a7a33172fde890399badc9645df084c7ae4bd546534e83488df60b30fc29855",
+      "bytes": 1869
+    },
+    {
+      "path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r13-remaining76/parameter-scan.run_spec.json",
+      "sha256": "a38880f2e910cb5a8357b6c5d3b977ea8eea25ff948241e6fcb5761484a0a75c",
+      "bytes": 77732
+    },
+    {
+      "path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r13-remaining76/stage-b-action-plan.json",
+      "sha256": "2d086b9c5c4bae9d2f2e50ec655d70b11d66db5e9a3f96a130279eb212d19899",
+      "bytes": 36779
+    },
+    {
+      "path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r13-remaining76/stage_b_next_source_hashes.sha256",
+      "sha256": "7061d54257eaf7e1ed4f86cc55b93a5007eae543efcfc32828e1c825e192a383",
+      "bytes": 1521
+    },
+    {
+      "path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r13-remaining76/accepted-practical-v2-index.json",
+      "sha256": "f49332f479da7d02eedfed77c57230e2d7e9981e950c47ff5bcb9c504f6d814c",
+      "bytes": 9245
+    },
+    {
+      "path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r13-remaining76/launch-contract.json",
+      "sha256": "d7af032eef37599295a248d28d4b64ec139681005424d1189c12c54442eedbec",
+      "bytes": 997
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-08-03T23:14:10+08:00",
+  "remote_run": "round31_qpi_cv_extension/cell-l40-qpi-low-000-020",
+  "status": "running",
+  "phase": "julia_linsolve",
+  "completed_points": 1,
+  "total_points": 5,
+  "omega_range": [
+    0.0,
+    0.2,
+    0.05
+  ],
+  "julia_processes": 1,
+  "threads": 8,
+  "cores": 80,
+  "available_memory_gib": 227,
+  "first_point": {
+    "omega": 0.0,
+    "residual": 1.324e-05,
+    "D": 200
+  },
+  "acceptance_gate": "CV residual <= 1e-5；当前首点仍未通过，整体不验收",
+  "scope": {
+    "alpha_min": 0.0,
+    "alpha_max": 1.0,
+    "beta_min": 0.0,
+    "beta_max": 1.0,
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 1,
+  "status": "accepted",
+  "cell_id": "fullq-weak-eta020-dt0125",
+  "scope": "0<=alpha,beta<=1；排除负 alpha 与 Fig.9",
+  "parameters": {
+    "alpha": 1.0,
+    "beta": 0.1,
+    "L": 40,
+    "tstep": 0.0125,
+    "tmax": 30.0,
+    "q_points": 121,
+    "omega_points": 301,
+    "window": "exponential eta=0.20",
+    "threads": 16
+  },
+  "remote": {
+    "host": "wangjieren@39.96.207.180:6000",
+    "project": "/home/wangjieren/code/1x5_Heisenberg_Pentamer",
+    "run_dir": "results/autoresearch_v5_20260807/minimal_fullq_replan_eta020/fullq-weak-eta020-dt0125",
+    "launcher": "results/autoresearch_v5_20260807/minimal_fullq_replan_eta020/launch_weak_eta020_dt0125.sh",
+    "launcher_sha256": "041e7d121e004e806e3eed7d572c05834cb2d701b4eefb59514599271558f8e0",
+    "launcher_pid": 554547,
+    "python_pid": 554548,
+    "julia_pid": 554555,
+    "log": "results/autoresearch_v5_20260807/minimal_fullq_replan_eta020/launcher_weak_eta020_dt0125_20260808_0045.log",
+    "pid_file": "results/autoresearch_v5_20260807/minimal_fullq_replan_eta020/launcher_weak_eta020_dt0125_20260808_0045.pid"
+  },
+  "started_at": "2026-08-08T10:05:22+08:00",
+  "initial_health": {
+    "status": "running",
+    "phase": "tebd",
+    "tebd_completed": 0,
+    "tebd_total": 2400,
+    "stderr": "empty",
+    "guard": "unique output directory and no prior full-q Julia",
+    "dmrg": "32 sweeps completed; variance/site=4.688800459007325e-10; total Sz=1.125079453124405e-17",
+    "checked_at": "2026-08-08T10:09:20+08:00"
+  },
+  "finished_at": "2026-08-08T11:29:05+08:00",
+  "terminal": {
+    "status": "success",
+    "tebd_steps": "2400/2400",
+    "fourier_q": "121/121",
+    "tebd_seconds": 2186.1474199183285,
+    "fourier_seconds": 2836.476106101647,
+    "raw_negative_weight_fraction": 0.09512083719314997,
+    "variance_per_site": 4.688800459007325e-10,
+    "total_sz": 1.125079453124405e-17,
+    "t0_included": true
+  },
+  "checksum": "remote sha256sum -c checksums.sha256 pass",
+  "fetch": "non-overwriting fetch pass; 14 files; 6195351 bytes",
+  "validator": "results/research_progress/fullq_weak_eta020_dt0125_validation_20260808_1145.json; pass",
+  "dt_crosscheck": "results/research_progress/fullq_weak_eta020_dt_crosscheck_20260808_1145.json; pass",
+  "eta": "已完成；下一 agreement cell 不自动启动",
+  "acceptance": "远端 checksum -> 非覆盖 fetch -> 本地 validator -> coarse/refined crosscheck；全部通过"
+}

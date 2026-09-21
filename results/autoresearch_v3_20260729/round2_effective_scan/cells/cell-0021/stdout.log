@@ -1,0 +1,25 @@
+After sweep 1 energy=-14.30268131558772  maxlinkdim=28 maxerr=9.89E-12 time=42.924
+After sweep 2 energy=-14.324270110755155  maxlinkdim=54 maxerr=9.99E-12 time=1.204
+After sweep 3 energy=-14.331359821456418  maxlinkdim=71 maxerr=9.97E-12 time=1.192
+After sweep 4 energy=-14.334234394657415  maxlinkdim=85 maxerr=9.97E-12 time=1.584
+After sweep 5 energy=-14.335912774167575  maxlinkdim=92 maxerr=9.97E-12 time=1.323
+After sweep 6 energy=-14.337074897721383  maxlinkdim=97 maxerr=9.96E-12 time=1.372
+After sweep 7 energy=-14.337546338221692  maxlinkdim=103 maxerr=1.00E-11 time=1.391
+After sweep 8 energy=-14.337653766444937  maxlinkdim=112 maxerr=9.99E-12 time=1.408
+After sweep 9 energy=-14.337665143589314  maxlinkdim=102 maxerr=1.00E-11 time=1.412
+After sweep 10 energy=-14.337665615743827  maxlinkdim=108 maxerr=9.94E-12 time=1.345
+After sweep 11 energy=-14.337665637058294  maxlinkdim=119 maxerr=1.00E-11 time=1.385
+After sweep 12 energy=-14.337665637247227  maxlinkdim=119 maxerr=9.98E-12 time=1.434
+After sweep 13 energy=-14.337665637243775  maxlinkdim=118 maxerr=9.95E-12 time=1.386
+After sweep 14 energy=-14.337665637245413  maxlinkdim=118 maxerr=9.90E-12 time=1.387
+After sweep 15 energy=-14.337665637245388  maxlinkdim=118 maxerr=9.98E-12 time=1.399
+After sweep 16 energy=-14.337665637249216  maxlinkdim=118 maxerr=9.87E-12 time=1.398
+After sweep 17 energy=-14.337665637249145  maxlinkdim=118 maxerr=9.88E-12 time=1.390
+After sweep 18 energy=-14.337665637249012  maxlinkdim=118 maxerr=9.89E-12 time=1.415
+After sweep 19 energy=-14.337665637248854  maxlinkdim=118 maxerr=9.91E-12 time=1.401
+After sweep 20 energy=-14.337665637248646  maxlinkdim=118 maxerr=9.92E-12 time=1.406
+After sweep 21 energy=-14.337665637248408  maxlinkdim=118 maxerr=9.92E-12 time=1.402
+After sweep 22 energy=-14.337665637248088  maxlinkdim=118 maxerr=9.92E-12 time=1.413
+After sweep 23 energy=-14.33766563724799  maxlinkdim=118 maxerr=9.93E-12 time=1.391
+After sweep 24 energy=-14.337665637247873  maxlinkdim=118 maxerr=9.94E-12 time=1.400
+SECTOR_CELL_SUCCESS outdir=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v3_20260729/round2_effective_scan/cells/cell-0021

@@ -1,0 +1,17 @@
+After sweep 1 energy=-9.420647224927428  maxlinkdim=24 maxerr=9.89E-12 time=45.489
+After sweep 2 energy=-9.429537458228957  maxlinkdim=50 maxerr=9.95E-12 time=0.886
+After sweep 3 energy=-9.431582011780407  maxlinkdim=72 maxerr=9.99E-12 time=0.712
+After sweep 4 energy=-9.432743629939434  maxlinkdim=86 maxerr=1.00E-11 time=1.107
+After sweep 5 energy=-9.43351941019107  maxlinkdim=99 maxerr=9.93E-12 time=0.791
+After sweep 6 energy=-9.4339152366849  maxlinkdim=106 maxerr=9.99E-12 time=0.824
+After sweep 7 energy=-9.434041051001211  maxlinkdim=112 maxerr=9.97E-12 time=0.837
+After sweep 8 energy=-9.434078294595668  maxlinkdim=112 maxerr=9.99E-12 time=0.825
+After sweep 9 energy=-9.43408329546388  maxlinkdim=103 maxerr=9.99E-12 time=0.783
+After sweep 10 energy=-9.434083922830155  maxlinkdim=92 maxerr=9.94E-12 time=0.700
+After sweep 11 energy=-9.43408398815752  maxlinkdim=93 maxerr=9.96E-12 time=0.694
+After sweep 12 energy=-9.43408399192404  maxlinkdim=92 maxerr=9.98E-12 time=0.668
+After sweep 13 energy=-9.434083991932587  maxlinkdim=91 maxerr=9.99E-12 time=0.659
+After sweep 14 energy=-9.434083991918866  maxlinkdim=91 maxerr=9.97E-12 time=0.661
+After sweep 15 energy=-9.434083991917534  maxlinkdim=90 maxerr=1.00E-11 time=0.659
+After sweep 16 energy=-9.434083991919412  maxlinkdim=91 maxerr=9.95E-12 time=0.661
+SECTOR_CELL_SUCCESS outdir=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v3_20260729/round2_effective_smoke_fix1/cells/cell-0001

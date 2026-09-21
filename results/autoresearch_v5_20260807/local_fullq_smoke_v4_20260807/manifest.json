@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "cell_id": "local-fullq-smoke-v4-20260807",
+  "status": "failed",
+  "accepted": false,
+  "params": {
+    "alpha": 1.0,
+    "beta": 1.0,
+    "N_units": 2,
+    "L": 10
+  },
+  "settings": {
+    "method": "finite_dmrg_tebd_szz",
+    "boundary": "OBC",
+    "q_points": 11,
+    "omega_points": 11,
+    "omega_max": 1.0,
+    "space_window": 4,
+    "time_window": "exponential",
+    "window_eta": 0.1,
+    "time_integration": "trapezoid",
+    "t0_included": true,
+    "max_negative_weight_fraction": 1.0,
+    "threads": 2
+  },
+  "diagnostics": {
+    "tstep": 0.05,
+    "tmax": 0.2,
+    "dmrg_maxdim": 40,
+    "tebd_maxdim": 40,
+    "nsweeps": 4,
+    "tebd_seconds": 6.421999999998661,
+    "fourier_seconds": 0.0,
+    "spectrum_shape": [
+      0,
+      0
+    ],
+    "spectrum_min": null,
+    "spectrum_max": null,
+    "raw_spectrum_shape": [
+      0,
+      0
+    ],
+    "raw_spectrum_min": null,
+    "raw_spectrum_max": null,
+    "raw_negative_weight_fraction": null,
+    "variance_per_site": Infinity,
+    "total_sz": Infinity,
+    "dmrg_actual_maxdim": NaN
+  },
+  "acceptance": {
+    "tebd_execution": false,
+    "fourier_execution": false,
+    "correlation_artifact": false,
+    "spectrum_artifact": false,
+    "raw_spectrum_csv_artifact": false,
+    "spectrum_csv_shape": false,
+    "spectrum_finite": false,
+    "spectrum_nonnegative": false,
+    "raw_spectrum_csv_shape": false,
+    "raw_spectrum_finite": false,
+    "t0_included": false,
+    "ground_variance": false,
+    "sector_sz0": false,
+    "raw_negative_weight_fraction": false
+  },
+  "provenance": {
+    "hostname": "T-137",
+    "platform": "Windows-10-10.0.26100-SP0",
+    "python": "3.9.1",
+    "julia_version": "1.11.5",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "standard_sha256": "aa06eaf6d816b40161e1d493a4c8a800aeac33d8a190eb8312e1ddbA90fd7ce8",
+    "source_commit": "local-smoke-v4-20260807",
+    "julia_pkg_offline": true,
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true,
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "src\\PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "scripts\\05_tebd_pentamer_server.jl": "d8b93e6d51ac439669091966c81a3f3f722f1638280f62a9912a7cce325444bf",
+      "scripts\\06_ft_tebd_pentamer_mapped_server.jl": "bceac15c960ebaa51cbf044e8624d4a65b08e8ff884a8dd66e5ecb69c18427a8",
+      "scripts\\autoresearch_v5\\progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+      "scripts\\autoresearch_v5\\run_tebd_production.py": "dc110507bc05660b2ae5c19e95284ad250e7ba38897d24172bb97614e927e27f"
+    }
+  },
+  "timing": {
+    "started_at": "2026-08-06T16:20:32.804325+00:00",
+    "finished_at": "2026-08-06T16:20:39.221701+00:00"
+  },
+  "returncode": 1
+}

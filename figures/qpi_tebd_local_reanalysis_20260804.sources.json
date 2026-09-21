@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "figure_contract": {
+    "core_conclusion": "L=40 q=pi TEBD is stable under dt/2, tmax=25 to 30, and an exercised second maxdim when supplied; CV is promoted to an Agreement only when its peak and weight windows are covered.",
+    "archetype": "quantitative grid",
+    "backend": "Python matplotlib only",
+    "final_size_mm": [
+      183.0,
+      105.0
+    ],
+    "panel_map": {
+      "a": "hero spectrum with TEBD convergence, optional maxdim curve, and CV anchors",
+      "b": "frequency-resolved deviations from refined TEBD",
+      "c": "pre-registered acceptance-budget usage for TEBD and optional cross-method gates"
+    },
+    "reviewer_risk": "A missing or unexercised maxdim cap remains an evidence gap; incomplete CV coverage is labeled NotEvaluable rather than treated as agreement."
+  },
+  "inputs": {
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260804\\round32_local_reanalysis_qpi\\summary.json": "b4f583693c06bd1b75a98486cc951e3999d9ffbc09ff0ef364d642a15eaa3ee6",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260804\\round32_local_reanalysis_qpi\\spectrum_comparison.csv": "d44e2995bb0485806c1059447a952c5b01f3dcb32258c37dc1c80c4af5229e5b",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803\\round27_qpi_cv_anchor_assembly\\spectrum.csv": "3b9dc18027325a533b2d4b5c4860d54f99be8d0e38fd3f28bd542b5839bb32d2",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803\\round27_qpi_cv_anchor_assembly\\manifest.json": "2361cfc2ca00b0d4f95c0853ad457a555b9a417dc830dc810bf6216a93bdb31d"
+  },
+  "outputs": {
+    "svg": "df7634bf3f477b7b98b4c53f5bbc3e8933528400e374da40b7afb6f8f705eb34",
+    "pdf": "1364a30b2147d4ad59b21da77587000f29ac39bfa64394afb1d1851d4b338d89",
+    "tiff": "c0877f28854a1e455cf797bb1bb015628c4f66824937f9ef6883ff736bd6a1c1",
+    "png": "039b45dbb05a5512dfb32ad460a26fb764aee01cabc8988d7536b0153768fd17"
+  },
+  "qa": {
+    "editable_svg_text": true,
+    "pdf_fonttype": 42,
+    "tiff_dpi": 600,
+    "png_dpi": 300,
+    "statistics": "deterministic tensor-network convergence; no sampling error bars",
+    "source_data": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260804\\round32_local_reanalysis_qpi\\spectrum_comparison.csv",
+    "image_adjustments": "none"
+  },
+  "scope": {
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true,
+    "full_dynamic_status": "incomplete",
+    "cross_method_tag": "NotEvaluable"
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "title": "Manuscript evidence closeout: local draft and citation audit",
+  "eyebrow": "LOCAL WRITING · 2026-09-19 · OFFLINE REVIEW",
+  "lede": "This independent report audits the revised manuscript draft against local evidence and verified citation metadata. It does not modify paper/, does not represent a remote launch, and preserves all unfinished scientific gates.",
+  "sections": [
+    {
+      "title": "Scope and closeout status",
+      "note": "The report is a local writing artifact, separate from the main research-progress report.",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "warn",
+          "label": "Draft evidence map complete; compatibility upload blocked",
+          "why": "The 73-file upload hashes passed, but the first launcher failed on CRLF source_hashes parsing; syntax checks passed, while the Cygwin local runtime fixture timed out and the new-script upload was rejected, so remote behavior was not verified and Julia never started."
+        },
+        {
+          "kind": "table",
+          "columns": ["Item", "Current local status", "Evidence / boundary"],
+          "rows": [
+            ["Working title", "From local pentamer multiplets to collective spin dynamics in an odd-unit-cell Heisenberg chain", "Criticality titles remain candidates pending complete-chain evidence."],
+            ["Draft", "Revised", "docs/near_final_manuscript_draft_20260819.md; paper/ untouched."],
+            ["Claim map", "Complete", "docs/manuscript_claim_evidence_map_20260919.md; positive-alpha and negative-alpha scopes separated."],
+            ["Stage 2", "Controlled local oracle verified; full-chain pending", "47 points and 11 gates pass; 8-spin oracle is not a complete chain."],
+            ["Stage 3", "uploaded_startup_failed_compat_upload_blocked", "73-file upload hash verification passed; first launcher failed on CRLF source_hashes parsing; syntax checks passed but the Cygwin local runtime fixture timed out, and the new upload was rejected; remote behavior was not verified; no restart; candidate_present=false; candidate_validated=false; remote_julia_started=false."],
+            ["Stage 4", "writing_in_progress", "Local draft, claim map, verified citation pass and independent report are complete; scientific gates remain open."],
+            ["P3", "Draft-level verified_and_integrated", "12 verified keys inserted in the draft; paper-level bibliography sync is pending." ]
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "Nature-writing routing was completed for a research paper with Introduction, Methods and Discussion sections. The shared core directory was unavailable locally, so the static fallback fragments were used without installing dependencies."
+        },
+        {
+          "kind": "text",
+          "text": "Release receipt boundary: all 73 uploaded files passed hash verification. The initial launcher (PID 1378242, 23:23:35 CST) failed before Julia startup because a 19-line source_hashes list retained CRLF and POSIX sha256sum read the filename with a trailing carriage return. The compatibility receipt records syntax checks passing but the Cygwin local runtime fixture timing out after 15 seconds; this is local shell evidence, not a remote or Julia failure. The script scripts/autoresearch_v5/launch_static_krylov_controls_release_v2_crlf_compat.sh is 7,252 bytes with SHA256 359936af95676cbcf6752b2e4f808267805051a3b9eb00682e280687949752c8, but upload review rejected it as outside the explicit 73-file authorization; no new script was uploaded and no restart occurred."
+        }
+      ]
+    },
+    {
+      "title": "Positive-alpha local evidence",
+      "note": "These claims are restricted to tested positive-alpha points, isolated-pentamer structure, and qualified finite-size consistency.",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": ["Claim", "Status", "Evidence and wording boundary"],
+          "rows": [
+            ["Isolated pentamer", "supported", "Even-parity S=1/2 ground-state doublet at tested positive-alpha points; not a global phase label."],
+            ["Effective exchange", "supported", "J_eff/beta=0.4396, 0.4318, 0.4189 at alpha=0.14, 0.23, 0.33; leading correction is O(beta^2) along tested paths."],
+            ["c=1 picture", "qualified", "Matched-size calibrated ratios 1.0240–1.0331; raw log-L fit quality gate is false, so no thermodynamic central charge claim."],
+            ["Positive-region boundary", "bounded negative result", "105 accepted records show no accepted internal crossing; this is not a proof of a single thermodynamic phase."],
+            ["Local parity filter", "supported locally", "Lowest odd doublet is dark at q=pi; local S=3/2 multiplets carry 84.1%–97.6% of isolated-pentamer inelastic weight."],
+            ["Dynamics", "supported with scope", "CV–real-time agreement is pointwise; full-momentum time-step checks are not a universal phase diagnostic."]
+          ]
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "assets/single_pentamer_low_energy_multiplets.png",
+              "caption": "Local multiplet flow used for the tested positive-alpha isolated-pentamer doublet claim; it is not a complete-chain phase map."
+            },
+            {
+              "src": "assets/positive_local_spectral_channels_20260730.png",
+              "caption": "Projector-resolved local channels supporting the reflection-parity filter and quartet-weight statement."
+            },
+            {
+              "src": "assets/positive_entanglement_claim_overview.png",
+              "caption": "Matched-size mid-chain scaling, profile collapse and calibrated estimators for the positive region; read as finite-size consistency with c=1, not an unbiased thermodynamic extraction."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Near-zero mechanism and negative-alpha boundary",
+      "note": "The local mechanism and finite-size momentum reconstruction are deliberately kept separate from global phase language.",
+      "blocks": [
+        {
+          "kind": "equation",
+          "tex": "J_eff = 2α²/(9β) > 0,  |α| ≪ min(1,β)"
+        },
+        {
+          "kind": "table",
+          "columns": ["Topic", "Recorded result", "Interpretation limit"],
+          "rows": [
+            ["Projection", "(2/3,-1/3,2/3) for the trimer doublet", "Project-specific derivation; trimer literature is only background."],
+            ["Oracle", "8-spin [1,1,alpha,beta,alpha,1,1]; 47 points; 11 validation gates pass", "Same Hamiltonian in two implementations, not an independent many-body method and not a full chain."],
+            ["Finite-alpha controls", "epsilon=-36.1351% at (-0.10,0.25); -53.8550% at (-0.175,0.25)", "epsilon=(gap/alpha^2-2/(9beta))/(2/(9beta)); signed deviation from leading local J_eff, not an L80 error."],
+            ["OBC boundary", "Edge scale O(alpha) can dominate mediated bulk O(alpha^2/beta)", "OBC sector gap need not equal bulk gap."],
+            ["Negative alpha", "q_peak reconstructs from about 0.60pi to pi", "Finite-size momentum reconstruction; no jointly supported thermodynamic boundary or second phase."],
+            ["L80 Krylov-8", "Local L10 calibration verified; 73-file startup failed and compatibility upload is blocked", "No candidate or validation result; no chi-series or production 3-to-8 conclusion; user authorization is required for any new script upload." ]
+          ]
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "assets/negative_alpha_crossover_summary.png",
+              "caption": "Accepted negative-alpha finite-size diagnostics; the shared momentum and dominant-ratio criteria do not close a thermodynamic boundary."
+            },
+            {
+              "src": "assets/fullq_minimal_eta020_20260808.png",
+              "caption": "Existing full-momentum dynamics artifact retained as local production evidence; it does not change the L80 launch state or phase-boundary status."
+            }
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "The two finite-alpha percentages are local oracle deviations relative to the leading J_eff term. They are not complete-chain errors, not remote L80 errors, and not evidence that the Julia calculation failed."
+        }
+      ]
+    },
+    {
+      "title": "Verified citations and method limits",
+      "note": "Citation metadata arrived from the mechanism-report audit and was integrated only into the local draft.",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": ["Role", "Integrated keys", "Scope guard"],
+          "rows": [
+            ["Tetramer / pentamer / trimer context", "li2026tetramer_verified; haraldsen2011; cheng2022trimer", "Background only; none supplies this project's phase map or coefficients."],
+            ["LSM and entanglement/oracle background", "lieb1961; ogata2019; calabrese2004; descloizeaux1962_verified", "Logical/theoretical boundaries only; finite-size data remain local evidence."],
+            ["DMRG/MPS/TEBD/CV methods", "white1992; schollwoeck2011; vidal2004; kuehner1999; fishman2022", "Method citations do not replace residual, dt/dt2, validator, or convergence records."],
+            ["Audit", "12/12 verified", "docs/pentamer_citation_audit_20260919.json; full_text=2, abstract_metadata=10."],
+            ["Paper sync", "not performed", "paper/bibliography.bib and paper/ remain unchanged by this task."
+            ]
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "The draft's P3 is complete at the verified-and-integrated draft level. Submission readiness still requires author-level synchronization into paper/, author metadata, and the unresolved scientific gates."
+        }
+      ]
+    },
+    {
+      "title": "Review checklist and next gate",
+      "note": "This section is intentionally explicit about what remains unfinished.",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "warn",
+          "label": "Await explicit authorization for compatibility-script upload",
+          "why": "The 73-file upload is verified, but the new CRLF-compatible script was rejected as outside that authorization; no reupload or restart is allowed until the user authorizes it."
+        },
+        {
+          "kind": "table",
+          "columns": ["Gate", "Current value", "Do not infer"],
+          "rows": [
+            ["global c=1", "not established", "Do not infer from local c_eff or matched-size calibration."],
+            ["second phase", "not established", "Do not infer from negative-alpha momentum reconstruction or entropy anomaly."],
+            ["candidate_present", "false", "A prepared directory or manifest would not imply validation."],
+            ["candidate_validated", "false", "No L80 candidate exists in the current local status."],
+            ["remote_julia_started", "false", "No server computation failure is claimed; execution did not start."],
+            ["paper modified", "false", "Draft and independent report only; paper/ was preserved." ]
+          ]
+        },
+        {
+          "kind": "text",
+          "text": "Local review outputs: docs/near_final_manuscript_draft_20260819.md, docs/manuscript_claim_evidence_map_20260919.md, and this independent report. The main research-progress report is updated separately with the current release state and an entry point to this independent report."
+        }
+      ]
+    }
+  ]
+}

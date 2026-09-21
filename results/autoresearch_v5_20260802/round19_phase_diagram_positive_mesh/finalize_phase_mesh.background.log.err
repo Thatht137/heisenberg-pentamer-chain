@@ -1,0 +1,8 @@
+Test-Path : 拒绝访问。
+所在位置 D:\Project\1x5_Heisenberg_Pentamer\scripts\autoresearch_v5\download_phase_mesh_results.ps1:18 字符: 11
++ if (-not (Test-Path -LiteralPath $key -PathType Leaf)) {
++           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : PermissionDenied: (C:\Users\hh250\.ssh\id_ed25519:String) [Test-Path], UnauthorizedAcces 
+   sException
+    + FullyQualifiedErrorId : ItemExistsUnauthorizedAccessError,Microsoft.PowerShell.Commands.TestPathCommand
+ 

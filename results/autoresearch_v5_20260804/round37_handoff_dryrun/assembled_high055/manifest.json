@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "status": "success",
+  "accepted": true,
+  "params": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "L": 40,
+    "q_over_pi": 1.0,
+    "omega_min": 0.55,
+    "omega_max": 0.55,
+    "omega_points": 1
+  },
+  "settings": {
+    "method": "validated_sparse_correction_vector_anchors",
+    "eta": 0.1,
+    "boundary": "OBC",
+    "sector": "Sz=0",
+    "momentum_normalization": "1/sqrt(L)"
+  },
+  "acceptance": {
+    "status": "pass",
+    "checks": {
+      "source_runs_accepted": true,
+      "source_checksums": true,
+      "same_instance": true,
+      "unique_omega": true,
+      "finite": true,
+      "nonnegative": true,
+      "residual": true
+    }
+  },
+  "coverage": {
+    "sparse_only": true,
+    "main_peak_bracketed": false,
+    "major_weight_window_covered": false
+  },
+  "provenance": {
+    "sources": [
+      {
+        "run": "D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804/cell-l40-qpi-high-055",
+        "manifest_sha256": "7bbce3cf98a879a94c361320f2df1f71fa1ade507f776222200714727461832a",
+        "spectrum_sha256": "0b164f5ad838eae172e99d8e4f5d1612e618193c1abf0aea2a229e8f5f439dbc",
+        "checksums_sha256": "f2971f27987cedf669ae6ef22f887c46d6b26cb9441120ee59c51bd4dd183283"
+      }
+    ],
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  }
+}

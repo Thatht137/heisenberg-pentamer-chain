@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "status": "audit_only",
+  "harness_script": "C:/Users/hh250/code/quantum.harness/scripts/parameter_scan.py",
+  "harness_script_sha256": "7195B79C9AEDA30F1105669285E1A360378EDD3506ADBFE92E19532FEE5BB8A0",
+  "help_checked": true,
+  "plan_command": "D:/Python3.12.4/python.exe C:/Users/hh250/code/quantum.harness/scripts/parameter_scan.py plan --axes results/autoresearch_v5_20260919/static_krylov_controls_r1/axes.json --run-id static-krylov-controls-r1-harness-plan-preflight --run-dir results/autoresearch_v5_20260919/static_krylov_controls_r1/harness_parameter_scan_preflight --settings results/autoresearch_v5_20260919/static_krylov_controls_r1/settings.json --provenance results/autoresearch_v5_20260919/static_krylov_controls_r1/provenance.json",
+  "physical_points": {
+    "existing_run_spec": [
+      [-0.1, 0.25, 80, 16, 8],
+      [-0.175, 0.25, 80, 16, 8]
+    ],
+    "harness_plan": [
+      [-0.1, 0.25, 80, 8],
+      [-0.175, 0.25, 80, 8]
+    ],
+    "alpha_beta_L_krylov_equal": true,
+    "cell_count_equal": true
+  },
+  "settings": {
+    "existing_run_spec_vs_harness_run_spec_equal": true,
+    "compared_field_count": 21,
+    "nsweeps": 64,
+    "maxdim_by_L": {
+      "80": 1200
+    },
+    "cutoff": 1e-11,
+    "init_modes": [
+      "center",
+      "ferro_j2"
+    ],
+    "noise_profile": "legacy",
+    "save_state": true,
+    "enriched_diagnostics": true,
+    "eigsolve_maxiter": 1,
+    "eigsolve_tol": 1e-14
+  },
+  "schema_conversion": {
+    "cell_id": "existing consumer IDs negdiag-a...-L080-k08 -> generic cell-0001/cell-0002",
+    "n_units": "existing per-cell field retained as L//5=16; generic harness axes omitted this derived field",
+    "budget": "existing per-cell budget=64; generic harness plan carries this through shared settings nsweeps=64 only",
+    "stage": "existing per-cell stage metadata is consumer-specific and absent from generic plan",
+    "acceptance": "existing run-spec acceptance block is preserved only in the production run-spec, not in generic harness output"
+  },
+  "decision": "harness plan matches both physical points and all 21 shared settings; production run-spec remains the existing consumer-specific file, while this directory is plan-only and was not passed to a runner",
+  "execution": {
+    "julia_started": false,
+    "ssh_started": false,
+    "remote_launch": false
+  }
+}

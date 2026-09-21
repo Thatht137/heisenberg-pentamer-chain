@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "checks": {
+    "validator_exit_zero": true,
+    "validator_pass": true,
+    "assembler_exit_zero": true,
+    "accepted_anchor_seven_points": true,
+    "anchor_manifest_matches_canonical": true,
+    "anchor_spectrum_matches_canonical": true,
+    "analyzer_expected_incomplete_exit": true,
+    "cross_tag_not_evaluable": true,
+    "main_peak_not_bracketed": true,
+    "major_window_not_covered": true,
+    "cross_output_matches_canonical": true
+  },
+  "returncodes": {
+    "validator": 0,
+    "assembler": 0,
+    "analyzer": 2
+  },
+  "interpretation": "analyzer 返回 2 表示 incomplete；JSON 必须为 NotEvaluable，不能视为程序崩溃。",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true,
+    "server_used": false
+  }
+}

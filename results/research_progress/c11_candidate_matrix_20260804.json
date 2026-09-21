@@ -1,0 +1,200 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-04T09:40:00+08:00",
+  "status": "plan_only",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true,
+    "alpha_zero_excluded": true
+  },
+  "source": {
+    "cells_dir": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells",
+    "accepted_control_count": 16,
+    "accepted_record_count": 48
+  },
+  "selected_controls": [
+    {
+      "alpha": 0.125,
+      "beta": 1.0,
+      "max_error": 0.006048843767877066,
+      "delta_60_80": -0.039232546599831,
+      "records": [
+        {
+          "alpha": 0.125,
+          "beta": 1.0,
+          "L": 40,
+          "value": 0.319236493663064,
+          "error": 0.0001,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0049/manifest.json",
+          "sha256": "e86ca31e249086a0a620878f2ec73ae8c1a59c66e0fa696a98e9c6afee69356b"
+        },
+        {
+          "alpha": 0.125,
+          "beta": 1.0,
+          "L": 60,
+          "value": 0.3127258527094319,
+          "error": 0.002580248442271893,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0050/manifest.json",
+          "sha256": "ff8be1efb50a0c7c6f1984e0db4627b3ad63238a1cf50db70135ff1755637aa1"
+        },
+        {
+          "alpha": 0.125,
+          "beta": 1.0,
+          "L": 80,
+          "value": 0.2734933061096009,
+          "error": 0.006048843767877066,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0051/manifest.json",
+          "sha256": "dcd011a74895785df09e6307f4ed230db304a5913c6015164af43caedc2eaaa8"
+        }
+      ]
+    },
+    {
+      "alpha": 0.125,
+      "beta": 0.75,
+      "max_error": 0.0001,
+      "delta_60_80": -0.031395301069806925,
+      "records": [
+        {
+          "alpha": 0.125,
+          "beta": 0.75,
+          "L": 40,
+          "value": 0.32888383888620193,
+          "error": 0.0001,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0034/manifest.json",
+          "sha256": "ded5b33605cd5261f2a41416aa3af145d7e9d5505ee0bec3161668493322ecdc"
+        },
+        {
+          "alpha": 0.125,
+          "beta": 0.75,
+          "L": 60,
+          "value": 0.3220912696041899,
+          "error": 0.0001,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0035/manifest.json",
+          "sha256": "a2b49789bab3609ec008a5f4e58c187d42341fa75c2c15e47a7dd27189024247"
+        },
+        {
+          "alpha": 0.125,
+          "beta": 0.75,
+          "L": 80,
+          "value": 0.29069596853438295,
+          "error": 0.0001,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0036/manifest.json",
+          "sha256": "42fb25bdd36d86c791add1066d042f0621cb0513a236b9fdab3e69cb1d5808ba"
+        }
+      ]
+    },
+    {
+      "alpha": 0.125,
+      "beta": 0.05,
+      "max_error": 0.0001,
+      "delta_60_80": -0.004878716651325166,
+      "records": [
+        {
+          "alpha": 0.125,
+          "beta": 0.05,
+          "L": 40,
+          "value": 0.3635808434115202,
+          "error": 0.0001,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0004/manifest.json",
+          "sha256": "fa34ef3e307bdfb741d95df0112529a29534e0e9240c03c12cb5b1e29d5e32e8"
+        },
+        {
+          "alpha": 0.125,
+          "beta": 0.05,
+          "L": 60,
+          "value": 0.316832551068208,
+          "error": 0.0001,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0005/manifest.json",
+          "sha256": "8cba4e2afe76e0a5acf4f2dfcda0b4e2d4915d4e499eae3155b796fd34cd312f"
+        },
+        {
+          "alpha": 0.125,
+          "beta": 0.05,
+          "L": 80,
+          "value": 0.31195383441688285,
+          "error": 0.0001,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0006/manifest.json",
+          "sha256": "0605c73f802d0ef825604fc7f27c2a463f7654212b39d2fa3b1f762a93bb04d9"
+        }
+      ]
+    },
+    {
+      "alpha": 1.0,
+      "beta": 0.05,
+      "max_error": 0.002070151949521537,
+      "delta_60_80": -0.01327664985111393,
+      "records": [
+        {
+          "alpha": 1.0,
+          "beta": 0.05,
+          "L": 40,
+          "value": 0.36890863117261596,
+          "error": 0.0001,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0013/manifest.json",
+          "sha256": "cc1b6e527c26003af21fa166f71c7fee68a02730f8b315e48f749f608a85ef22"
+        },
+        {
+          "alpha": 1.0,
+          "beta": 0.05,
+          "L": 60,
+          "value": 0.33345664526316754,
+          "error": 0.002070151949521537,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0014/manifest.json",
+          "sha256": "283f6fd208562621f1fa62a7e9f5888e2a20380cd398306000f49e62d70b58aa"
+        },
+        {
+          "alpha": 1.0,
+          "beta": 0.05,
+          "L": 80,
+          "value": 0.3201799954120536,
+          "error": 0.0006579276009429091,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0015/manifest.json",
+          "sha256": "634583604c2203b560ac435ed43297dde634e951b7db9f94d8dd1a2838107784"
+        }
+      ]
+    },
+    {
+      "alpha": 1.0,
+      "beta": 1.0,
+      "max_error": 0.0001,
+      "delta_60_80": -0.01840603852324124,
+      "records": [
+        {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "L": 40,
+          "value": 0.3836845275954194,
+          "error": 0.0001,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0058/manifest.json",
+          "sha256": "ed8f1c75eed7fea80a600ec7d02495a5d61c253bcc18263da7bf8a55879efc9e"
+        },
+        {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "L": 60,
+          "value": 0.3538903854409219,
+          "error": 0.0001,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0059/manifest.json",
+          "sha256": "50bf53978e3d441ab91a8b705a0c9c567bb6d53276a24da26c5a6d96f463d6f2"
+        },
+        {
+          "alpha": 1.0,
+          "beta": 1.0,
+          "L": 80,
+          "value": 0.33548434691768064,
+          "error": 0.0001,
+          "manifest": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0060/manifest.json",
+          "sha256": "9c8c6a67d03ec2c52a24a8eff7ef8e2b09a02ea2adc1d6b08f72c6f8649e4da3"
+        }
+      ]
+    }
+  ],
+  "selection_rule": "优先最大独立初态误差，其次最大 60→80 尺寸变化，再覆盖正区网格四角；每个控制点要求 L=40/60/80 三个 manifest。",
+  "next_compute": "仅在服务器当前 Julia 任务完成且 phase policy 获准后，对 selected_controls 做多观测量收敛矩阵；不重扫旧 2400 点。",
+  "acceptance": [
+    "每点 L=40/60/80 均通过方差、截断和独立初态门",
+    "不以 crossing 单独命名相",
+    "若无显著 crossing，C11 仍只写成‘当前有限尺寸数据未见可验收内部 crossing’"
+  ]
+}

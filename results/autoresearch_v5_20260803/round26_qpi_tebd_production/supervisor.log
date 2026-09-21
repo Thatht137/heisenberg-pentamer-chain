@@ -1,0 +1,48 @@
+{"schema_version": 1, "cell_id": "qpi-alpha023-dt0025-t30", "status": "success", "accepted": true, "params": {"alpha": 0.23, "beta": 0.5, "N_units": 8, "L": 40, "q_over_pi": 1.0}, "settings": {"method": "finite_dmrg_tebd_qpi_autocorrelation", "boundary": "OBC", "sector": "Sz=0", "momentum_source": "O_q|GS>", "momentum_normalization": "1/sqrt(L)", "t0_included": true, "trotter_order": 2, "tstep": 0.025, "tmax": 30.0, "time_window": "exponential", "window_eta": 0.1, "fourier_normalization": "one_sided_trapezoid/pi", "omega_min": 0.0, "omega_max": 3.0, "omega_step": 0.05, "dmrg_maxdim": 320, "tebd_maxdim": 320, "dmrg_cutoff": 1e-10, "tebd_cutoff": 1e-10, "nsweeps": 24, "threads": 8}, "diagnostics": {"source_norm_squared": 1.0277290904628422, "correlation_t0_real": 1.0277290904628422, "correlation_t0_imag": 4.1752242077328e-29, "relative_norm_drift": 4.130141131476349e-06, "variance_per_site": 2.611809435393297e-10, "total_sz": -5.444310124915752e-16, "dmrg_actual_maxdim": 55.0, "tebd_actual_maxdim": 117.0, "spectrum_min": 0.005200732435347804, "spectrum_max": 1.8483242512312386, "wall_seconds": 544.7488722810522, "dmrg_seconds": 79.76320099830627, "tebd_seconds": 361.80160784721375, "fourier_seconds": 0.002315998077392578}, "acceptance": {"julia_execution": true, "correlation_artifact": true, "spectrum_artifact": true, "jld2_artifacts": true, "t0_included": true, "t0_sum_rule": true, "spectrum_grid_complete": true, "spectrum_finite": true, "spectrum_nonnegative": true, "ground_variance": true, "sector_sz0": true, "qpi_normalization": true}, "provenance": {"hostname": "c104-ysu", "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35", "python": "3.10.12", "julia_version": "1.12.3", "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c", "standard_sha256": "4f00f333eaf810b2853a46e4e258e192db7ef554c7800d35df2ebe27adee4b46", "source_commit": "working-tree-20260803-qpi-autocorr", "julia_pkg_offline": true, "negative_alpha_excluded": true, "figure_9_excluded": true, "code_sha256": {"Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e", "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c", "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e", "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb", "scripts/autoresearch_v5/tebd_qpi_autocorr.jl": "2194df3002eaec46c86a83fdf30ae8448fea4bfdc1ecfa6fb5b77cbc5cbd9d0a", "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e", "scripts/autoresearch_v5/run_tebd_qpi_autocorr.py": "a669dd5d160c7c7d19a51760fb46dac1be9f5ef8ab97fcd5f471126e6296f282"}}, "timing": {"started_at": "2026-08-03T11:36:34.668397+00:00", "finished_at": "2026-08-03T11:45:39.424489+00:00"}, "returncode": 0}
+	Command being timed: "python3 /home/wangjieren/code/1x5_Heisenberg_Pentamer/scripts/autoresearch_v5/run_tebd_qpi_autocorr.py --cell-id qpi-alpha023-dt0025-t30 --outdir /home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round26_qpi_tebd_production/cell-alpha023-qpi-dt0025-t30 --alpha 0.23 --beta 0.5 --n-units 8 --eta 0.1 --omega-min 0 --omega-max 3 --omega-step 0.05 --tstep 0.025 --n-steps 1200 --dmrg-maxdim 320 --tebd-maxdim 320 --nsweeps 24 --dmrg-cutoff 1e-10 --tebd-cutoff 1e-10 --checkpoint-interval 100 --threads 8 --expected-julia-version 1.12.3 --expected-manifest-sha256 37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c --standard-sha256 4f00f333eaf810b2853a46e4e258e192db7ef554c7800d35df2ebe27adee4b46 --source-commit working-tree-20260803-qpi-autocorr"
+	User time (seconds): 8354.91
+	System time (seconds): 10.43
+	Percent of CPU this job got: 1535%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 9:04.86
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1187468
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 186
+	Minor (reclaiming a frame) page faults: 2011128
+	Voluntary context switches: 185988
+	Involuntary context switches: 20786
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 84416
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+{"schema_version": 1, "cell_id": "qpi-alpha023-dt00125-t30", "status": "success", "accepted": true, "params": {"alpha": 0.23, "beta": 0.5, "N_units": 8, "L": 40, "q_over_pi": 1.0}, "settings": {"method": "finite_dmrg_tebd_qpi_autocorrelation", "boundary": "OBC", "sector": "Sz=0", "momentum_source": "O_q|GS>", "momentum_normalization": "1/sqrt(L)", "t0_included": true, "trotter_order": 2, "tstep": 0.0125, "tmax": 30.0, "time_window": "exponential", "window_eta": 0.1, "fourier_normalization": "one_sided_trapezoid/pi", "omega_min": 0.0, "omega_max": 3.0, "omega_step": 0.05, "dmrg_maxdim": 320, "tebd_maxdim": 320, "dmrg_cutoff": 1e-10, "tebd_cutoff": 1e-10, "nsweeps": 24, "threads": 8}, "diagnostics": {"source_norm_squared": 1.0277290904628422, "correlation_t0_real": 1.0277290904628422, "correlation_t0_imag": 4.1752242077328e-29, "relative_norm_drift": 5.0126349508609675e-06, "variance_per_site": 2.611809435393297e-10, "total_sz": -5.444310124915752e-16, "dmrg_actual_maxdim": 55.0, "tebd_actual_maxdim": 117.0, "spectrum_min": 0.00519922195173699, "spectrum_max": 1.8481844193414996, "wall_seconds": 844.0383016373962, "dmrg_seconds": 77.34469103813171, "tebd_seconds": 664.616131067276, "fourier_seconds": 0.0044841766357421875}, "acceptance": {"julia_execution": true, "correlation_artifact": true, "spectrum_artifact": true, "jld2_artifacts": true, "t0_included": true, "t0_sum_rule": true, "spectrum_grid_complete": true, "spectrum_finite": true, "spectrum_nonnegative": true, "ground_variance": true, "sector_sz0": true, "qpi_normalization": true}, "provenance": {"hostname": "c104-ysu", "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35", "python": "3.10.12", "julia_version": "1.12.3", "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c", "standard_sha256": "4f00f333eaf810b2853a46e4e258e192db7ef554c7800d35df2ebe27adee4b46", "source_commit": "working-tree-20260803-qpi-autocorr", "julia_pkg_offline": true, "negative_alpha_excluded": true, "figure_9_excluded": true, "code_sha256": {"Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e", "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c", "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e", "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb", "scripts/autoresearch_v5/tebd_qpi_autocorr.jl": "2194df3002eaec46c86a83fdf30ae8448fea4bfdc1ecfa6fb5b77cbc5cbd9d0a", "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e", "scripts/autoresearch_v5/run_tebd_qpi_autocorr.py": "a669dd5d160c7c7d19a51760fb46dac1be9f5ef8ab97fcd5f471126e6296f282"}}, "timing": {"started_at": "2026-08-03T11:45:39.551275+00:00", "finished_at": "2026-08-03T11:59:43.603093+00:00"}, "returncode": 0}
+	Command being timed: "python3 /home/wangjieren/code/1x5_Heisenberg_Pentamer/scripts/autoresearch_v5/run_tebd_qpi_autocorr.py --cell-id qpi-alpha023-dt00125-t30 --outdir /home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round26_qpi_tebd_production/cell-alpha023-qpi-dt00125-t30 --alpha 0.23 --beta 0.5 --n-units 8 --eta 0.1 --omega-min 0 --omega-max 3 --omega-step 0.05 --tstep 0.0125 --n-steps 2400 --dmrg-maxdim 320 --tebd-maxdim 320 --nsweeps 24 --dmrg-cutoff 1e-10 --tebd-cutoff 1e-10 --checkpoint-interval 100 --threads 8 --expected-julia-version 1.12.3 --expected-manifest-sha256 37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c --standard-sha256 4f00f333eaf810b2853a46e4e258e192db7ef554c7800d35df2ebe27adee4b46 --source-commit working-tree-20260803-qpi-autocorr"
+	User time (seconds): 13771.70
+	System time (seconds): 15.24
+	Percent of CPU this job got: 1633%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 14:04.14
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1159432
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 375
+	Minor (reclaiming a frame) page faults: 1819280
+	Voluntary context switches: 318924
+	Involuntary context switches: 34035
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 170960
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

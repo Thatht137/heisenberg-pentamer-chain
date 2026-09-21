@@ -1,0 +1,443 @@
+{
+  "schema": "closeout_mechanism_source_data_audit/v1",
+  "created_at": "2026-09-20",
+  "status": "local_supporting_data_not_public",
+  "scope": {
+    "coverage": [
+      "closeout_stage1_joint_v2",
+      "near_zero_alpha_oracle_v2",
+      "static_krylov_baseline_v2",
+      "static_krylov_k12_gate_v3",
+      "negative_phase_independent_audit_v6"
+    ],
+    "repository_root_relative_paths": true,
+    "local_only": true,
+    "public_archive": false,
+    "public_repository_or_doi": null,
+    "no_remote_operations": false,
+    "no_new_scientific_computation": false,
+    "raw_state_hashing_skipped": true,
+    "paper_or_report_source_modified": false,
+    "candidate_comparison_status": "audit_only_pass"
+  },
+  "groups": {
+    "closeout_stage1_joint_v2": {
+      "status": "accepted_local_derived_data",
+      "counts": {
+        "physical_points": 12,
+        "initial_state_records": 24,
+        "fit_records": 192,
+        "raw_sources_verified_in_existing_summary": 84,
+        "raw_source_rehash_performed_here": false
+      },
+      "grid": {
+        "alpha": [-0.175, -0.15, -0.125, -0.1],
+        "beta": [0.25],
+        "L_sites": [40, 60, 80],
+        "unit_cells_N": [8, 12, 16],
+        "starts": ["center", "ferro_j2"]
+      },
+      "source_and_analysis": {
+        "primary_csv": "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/joint_size_evidence.csv",
+        "summary": "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/summary.json",
+        "analysis_script": "scripts/autoresearch_v5/analyze_negative_entropy_sizes.py",
+        "figure_summary_script": "scripts/autoresearch_v5/closeout_negative_size_comparison.py",
+        "reanalysis_inputs_listed_by_summary": [
+          "results/autoresearch_v5_20260919/closeout_stage1_reanalysis_v2/entropy_fits.csv",
+          "results/autoresearch_v5_20260919/closeout_stage1_reanalysis_v2/observables.csv",
+          "results/autoresearch_v5_20260919/closeout_stage1_reanalysis_v2/bond_expectations.csv",
+          "results/autoresearch_v5_20260919/closeout_stage1_reanalysis_v2/connected_bonds.csv"
+        ]
+      },
+      "scientific_limits": [
+        "熵、gap、dimer 和 connected 的范围是双初态/窗口敏感性范围，不是统计置信区间。",
+        "双初态只表示 Sz=0 主态的 center/ferro_j2 起始分支；不等于两个独立的 Sz=1 覆盖。",
+        "gap 是有限 OBC 的 Sz=1-Sz=0 能差，N*gap 不是体能隙外推；未进行热力学拟合或相判定。",
+        "84 个原始大状态只沿用已有 summary/QA 验证记录，本审计不重新逐个 hash。"
+      ]
+    },
+    "near_zero_alpha_oracle_v2": {
+      "status": "local_oracle_validation_pass",
+      "model": {
+        "sites": 8,
+        "boundary": "OBC",
+        "bond_pattern": "[1,1,alpha,beta,alpha,1,1]",
+        "spin_convention": "S=Pauli/2",
+        "sector_dimensions": {"nup3": 56, "nup4": 70, "nup5": 56}
+      },
+      "counts": {
+        "total_rows": 47,
+        "nonzero_grid_rows": 42,
+        "alpha0_rows": 3,
+        "finite_alpha_control_rows": 2,
+        "validation_gates": 11,
+        "validation_gates_all_pass": true
+      },
+      "backend": "Python + NumPy custom bit-sector and independent full-Kronecker construction; not XDiag/QuSpin and not a second many-body method",
+      "source_and_analysis": {
+        "oracle_csv": "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/oracle_points.csv",
+        "spec": "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/spec.json",
+        "summary": "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/summary.json",
+        "checksums": "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/checksums.sha256",
+        "validation_script": "scripts/autoresearch_v5/validate_near_zero_alpha_oracle.py",
+        "test_script": "scripts/autoresearch_v5/test_near_zero_alpha_oracle.py",
+        "mechanism_report_script": "scripts/autoresearch_v5/report_near_zero_alpha_oracle.py",
+        "mechanism_note": "docs/near_zero_alpha_mechanism_note_20260919.md"
+      },
+      "mechanism_figure_status": "mechanism_report_available_no_standalone_figure",
+      "mechanism_figure_note": "oracle_v2 目录没有独立 PNG/SVG 机制图；对应机制入口是 near_zero_alpha_mechanism_report_v2/report.html 与 report.json 的结构化机制页。本审计不补画或把旧图冒充为 v2 图。",
+      "scientific_limits": [
+        "gap=E0(Sz=1)-E0(Sz=0) 只在 8-spin oracle 中定义，不是完整 OBC 链 gap 或热力学相判断。",
+        "finite-alpha control 的 prediction_relative_error 是相对 leading coefficient 2/(9*beta) 的误差，不是 L=80 误差；两类误差不能互换。",
+        "2% asymptotic gate 只适用于 42 个 nonzero grid rows，不适用于两个 finite_alpha_control rows。",
+        "局部构造不验证完整链的动量折叠、谱权和形状因子，也不证明新相或全域单相。"
+      ]
+    },
+    "static_krylov_baseline_v2": {
+      "status": "baseline_and_k12_candidate_verified",
+      "audit_only": true,
+      "baseline_verified": true,
+      "candidate_present": true,
+      "candidate_comparison": "audit_only_pass",
+      "counts": {
+        "parameter_points": 2,
+        "starts": 4,
+        "gap_records": 4,
+        "entropy_records": 316,
+        "fit_records": 32,
+        "bond_correlation_records": 316,
+        "connected_quarter_records": 8,
+        "dimer_records": 4,
+        "k8_k12_comparison_records": 172
+      },
+      "parameters": {
+        "points": [
+          {"alpha": -0.1, "beta": 0.25, "L": 80, "N": 16},
+          {"alpha": -0.175, "beta": 0.25, "L": 80, "N": 16}
+        ],
+        "starts": ["center", "ferro_j2"],
+        "manifest_consistent_krylov": 3,
+        "stability_gate": {"baseline_krylovdim": 8, "candidate_krylovdim": 12, "point": {"alpha": -0.1, "beta": 0.25, "L": 80}}
+      },
+      "source_and_analysis": {
+        "manifest": "results/autoresearch_v5_20260919/static_krylov_baseline_v2/manifest.json",
+        "inventory": "results/autoresearch_v5_20260919/static_krylov_baseline_v2/baseline_inventory.json",
+        "source_hash_registry": "results/autoresearch_v5_20260919/static_krylov_baseline_v2/source_hashes.json",
+        "k12_fetch_receipt": "results/autoresearch_v5_20260920/static_krylov_k12_fetch_2052/fetch.receipt.json",
+        "k12_validator": "results/autoresearch_v5_20260920/static_krylov_k12_fetch_2052/validator.pass.json",
+        "k8_k12_summary": "results/autoresearch_v5_20260920/static_krylov_k12_finalize_2057/summary.json",
+        "k8_k12_comparison": "results/autoresearch_v5_20260920/static_krylov_k12_finalize_2057/comparison.json",
+        "analysis_scripts": [
+          "scripts/autoresearch_v5/static_krylov_control_inputs.py",
+          "scripts/autoresearch_v5/audit_pilot_entropy_robustness.py",
+          "scripts/autoresearch_v5/closeout_negative_size_comparison.py",
+          "scripts/autoresearch_v5/validate_negative_phase_run_practical_v2.py",
+          "scripts/autoresearch_v5/negative_dmrg_options.py",
+          "scripts/autoresearch_v5/negative_static_cell.jl"
+        ]
+      },
+      "scientific_limits": [
+        "这是 L=80 的两点、双起始态 baseline，加上 alpha=-0.1、beta=0.25 的一个 k=8→k=12 门控点；不是参数扫描。",
+        "k8→k12 的172项比较通过 audit-only gate，只关闭该点的 Krylov 子空间稳定性问题。",
+        "Krylov k 参数不是 MPS bond dimension chi；该比较不支持 chi 收敛或热力学极限声明。",
+        "entropy 的起始态/窗口范围不是统计置信区间，gap 仍是有限 OBC Sz=1-Sz=0 定义。"
+      ]
+    },
+    "negative_phase_independent_audit_v6": {
+      "status": "local_supporting_diagnostic_only",
+      "scope": "isolated negative-alpha pentamer/quartet projection and shape-factor diagnostic",
+      "counts": {
+        "single_pentamer_scan_rows": 201,
+        "quartet_projection_scan_rows": 201,
+        "alpha_interval": [-1.0, -0.001]
+      },
+      "observed_summary": {
+        "isolated_ground_spin": "S=3/2",
+        "jeff_over_beta_range": [0.10751475007841073, 0.11111110288797126],
+        "dominant_folded_momentum_q_over_pi": 0.6
+      },
+      "scientific_limits": [
+        "该小组只支持孤立负 alpha 五聚体/四重态投影的局部形状因子诊断，不是全链单相证明。",
+        "不扩展或重算该目录的 DMRG、2-3 cell ED 及其他大文件。"
+      ],
+      "source_and_analysis": {
+        "summary": "results/autoresearch_v5_20260913/negative_phase_independent_audit_v6/summary.json",
+        "analysis_script": "scripts/autoresearch_v5/analyze_negative_phase_independent_observables.py"
+      }
+    }
+  },
+  "selected_files": [
+    {"path": "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/joint_size_evidence.csv", "role": "Stage1 12-point derived source", "bytes": 5394, "sha256": "4e5c19df79d4353e4ecd4dd60fa923365be8efc6a478e6448f8c7a7b6c20274d"},
+    {"path": "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/summary.json", "role": "Stage1 counts/definitions/provenance", "bytes": 3109, "sha256": "4b904bd46eedbfc8c20c9a65898ad63903df3b22b5d161b39bfd2f8c7648baac"},
+    {"path": "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/report.json", "role": "Stage1 panel captions and interpretation limits", "bytes": 5633, "sha256": "99baafdc7c01ebf9e63017b3b411e83c996ca76f036bd49d56cd1495582fcb31"},
+    {"path": "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/qa.json", "role": "Stage1 figure and hash QA", "bytes": 1398, "sha256": "c69379d922490edd3567d515b0dbe799292f4bf8b9069610f8f2021d1f9163a8"},
+    {"path": "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/negative_size_joint_evidence.png", "role": "Stage1 primary four-panel export", "bytes": 191807, "sha256": "9b3a7d342bae2d8535204e7bce1252fd61db685c24d58b6a39784524d73a51fd"},
+    {"path": "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/negative_size_joint_evidence.svg", "role": "Stage1 vector four-panel export", "bytes": 56207, "sha256": "36ce2d447db69d2ce0a8162cd3906b00991449727a5bf76166cfd11df4aade97"},
+    {"path": "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/negative_size_joint_evidence.pdf", "role": "Stage1 PDF four-panel export", "bytes": 59546, "sha256": "88113c0c33fe5d0d6289434ee07e5bd39b84c1e139e7e61be63ffea9a2e67cfc"},
+    {"path": "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/negative_size_joint_evidence.tiff", "role": "Stage1 TIFF four-panel export", "bytes": 1373940, "sha256": "47700d0b80f297a53d6e259d549a8cf1e3b75b7c3f182c702655927a0adbab49"},
+    {"path": "scripts/autoresearch_v5/analyze_negative_entropy_sizes.py", "role": "Stage1 analysis entrypoint", "bytes": 9260, "sha256": "9cd570108cb599088cacd9a09d86344fd02ca96087af31a0dd0f8bdd4652ee4a"},
+    {"path": "scripts/autoresearch_v5/closeout_negative_size_comparison.py", "role": "Stage1 comparison/figure entrypoint", "bytes": 16359, "sha256": "46207eb273c53d781225cb1f54b030d9a190e71ab561cf70d3cab7af7f2404ee"},
+    {"path": "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/oracle_points.csv", "role": "8-spin oracle 47-point source", "bytes": 20792, "sha256": "9f3c13fa9a264f4b134fbe088048fba01b34a250b9af01268cd081e7bce6fdbb"},
+    {"path": "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/spec.json", "role": "8-spin oracle model/grid schema", "bytes": 1932, "sha256": "e76627e9e0837cd9f566dbe0d8c731171349c9f8d72be72596edadfba5bcef28"},
+    {"path": "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/summary.json", "role": "8-spin oracle gate summary", "bytes": 9321, "sha256": "61c5526545993b3dcc7b62addcf5faa8a9e539cac31a397efac9a8c63028a60e"},
+    {"path": "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/checksums.sha256", "role": "8-spin oracle checksum ledger", "bytes": 242, "sha256": "7f75a5c8beac86c97a63170a1edac85bbf8d4e74f7f8c1b2280acb97b06ab600"},
+    {"path": "results/autoresearch_v5_20260919/near_zero_alpha_mechanism_report_v2/report.json", "role": "structured near-zero mechanism report", "bytes": 28189, "sha256": "0c1cce18e91685de47024f4275485719b3b4fc8a551301dd5be8564245a444e0"},
+    {"path": "results/autoresearch_v5_20260919/near_zero_alpha_mechanism_report_v2/report.html", "role": "rendered near-zero mechanism report", "bytes": 24354, "sha256": "3fa9ea531fd6d2731cceab789228a3a13f443b0689a428004c9a86952ba449d2"},
+    {"path": "results/autoresearch_v5_20260919/near_zero_alpha_mechanism_report_v2/manifest.json", "role": "mechanism report input/output manifest", "bytes": 2281, "sha256": "5a64c68807900947347bd8453f7b27308eb8cc59afac93930516ef07ccd240a2"},
+    {"path": "results/autoresearch_v5_20260919/near_zero_alpha_mechanism_report_v2/checksums.sha256", "role": "mechanism report checksum ledger", "bytes": 239, "sha256": "121c2da9f1f34e746e2e7fae927c73b27f360a80c46067acf666c94490aedd3f"},
+    {"path": "docs/near_zero_alpha_mechanism_note_20260919.md", "role": "near-zero mechanism source note", "bytes": 7267, "sha256": "4fcdc1dbf3265467e6a18bc58a912f36799ef92460b75aa8261d0de8fca89a12"},
+    {"path": "scripts/autoresearch_v5/validate_near_zero_alpha_oracle.py", "role": "near-zero validator", "bytes": 34538, "sha256": "91e007e81ffce460eee9f301b7e9492e9a99096f2dd38081dbbeaf7c484699c9"},
+    {"path": "scripts/autoresearch_v5/test_near_zero_alpha_oracle.py", "role": "near-zero tests", "bytes": 4526, "sha256": "7812f5825340851a8392de81690edbe1c6ea04b15fa9583d4fa7ed2a450dd292"},
+    {"path": "scripts/autoresearch_v5/report_near_zero_alpha_oracle.py", "role": "near-zero mechanism report generator", "bytes": 20822, "sha256": "5fbd75720c26cef06cca81f9ba0a26a7f10a3ee57f303d24d87460c34f14800a"},
+    {"path": "results/autoresearch_v5_20260913/negative_phase_independent_audit_v6/single_pentamer_multiplet_scan.csv", "role": "Stage2 isolated pentamer scan", "bytes": 12243, "sha256": "31152aa4bfad9aa90cf44e8ff46b873e53f5d51a9d55e129a2e2205caf50a486"},
+    {"path": "results/autoresearch_v5_20260913/negative_phase_independent_audit_v6/negative_quartet_projection_scan.csv", "role": "Stage2 quartet projection/shape-factor scan", "bytes": 58849, "sha256": "27a0f13d5b2dcbe0e3f7d03594ea3a2f6b6d0eea2ec9f0a095b7a2df47c3adfc"},
+    {"path": "results/autoresearch_v5_20260913/negative_phase_independent_audit_v6/summary.json", "role": "Stage2 local diagnostic summary", "bytes": 4542, "sha256": "72adee082d9679036001db0262a0b4c8246fcfb8059ea6d6f04e5ce4a0ae5585"},
+    {"path": "results/autoresearch_v5_20260913/negative_phase_independent_audit_v6/checksums.sha256", "role": "Stage2 checksum ledger", "bytes": 1969, "sha256": "717ffdcf7a03cebbf6e8dce60fd9837f938d2a686a99bc4b2db50911c52af9fc"},
+    {"path": "results/autoresearch_v5_20260913/negative_phase_independent_audit_v6/negative_alpha_quartet_projection.png", "role": "Stage2 quartet mechanism/shape-factor figure", "bytes": 207250, "sha256": "c63e813bd8da826ed4fe57055ada986d4c8c33f80352f1ca04119997aa65c2f0"},
+    {"path": "scripts/autoresearch_v5/analyze_negative_phase_independent_observables.py", "role": "Stage2 scan and figure entrypoint", "bytes": 33689, "sha256": "ab97d27176317a45b1d554a614fae5e6188ccfc814b81dfb629cb92e32145b93"},
+    {"path": "results/autoresearch_v5_20260919/static_krylov_baseline_v2/gap_records.csv", "role": "baseline gap CSV", "bytes": 321, "sha256": "b635f2e4fecc32bf8e1d6a8f2d0397eed1f7977d863d5bf84026e03cd173749b"},
+    {"path": "results/autoresearch_v5_20260919/static_krylov_baseline_v2/entropy_records.csv", "role": "baseline entropy CSV", "bytes": 29178, "sha256": "ba32983a5e4f1aee0cdb5679e6592b5a5258689e17f7d8badf06ec83b4e0d29b"},
+    {"path": "results/autoresearch_v5_20260919/static_krylov_baseline_v2/entropy_fits.csv", "role": "baseline entropy-fit CSV", "bytes": 3933, "sha256": "12fab54d57a5f33c013e76172932bc4eaf8dc34abd45a60b26bcb308ebecf9c4"},
+    {"path": "results/autoresearch_v5_20260919/static_krylov_baseline_v2/bond_correlations.csv", "role": "baseline bond-correlation CSV", "bytes": 25593, "sha256": "1d6dc718d30312e6f940b4a0c0e60147cb33c51d93cbba6b924ab910e7f60044"},
+    {"path": "results/autoresearch_v5_20260919/static_krylov_baseline_v2/connected_quarter.csv", "role": "baseline connected-quarter CSV", "bytes": 937, "sha256": "b74974e26ad6ec5076ab0ab3fe44f420047e71ee88185a34d4c3a9761858df57"},
+    {"path": "results/autoresearch_v5_20260919/static_krylov_baseline_v2/dimer_rms.csv", "role": "baseline dimer-RMS CSV", "bytes": 348, "sha256": "3e5fde01142ccd8a472cf872fe8952c7d2f0275f3ba4bf1e8066da9003c2cbb6"},
+    {"path": "results/autoresearch_v5_20260919/static_krylov_baseline_v2/manifest.json", "role": "baseline manifest", "bytes": 1326, "sha256": "c244e261cf965d2dd6e302159d627850cb3dbb178bab6369ef40498433a16f8e"},
+    {"path": "results/autoresearch_v5_20260919/static_krylov_baseline_v2/baseline_inventory.json", "role": "baseline inventory and counts", "bytes": 21408, "sha256": "34621b563a5569b07b4577f2e35a6714511fa00178ab22ccd35c18750d30f7da"},
+    {"path": "results/autoresearch_v5_20260919/static_krylov_baseline_v2/source_hashes.json", "role": "baseline source-hash registry", "bytes": 15935, "sha256": "b3118e8ff5e09d33e5e09b3ce2a7e8b8856ca6d5b03ed5ee61777e99eb083e9a"},
+    {"path": "results/autoresearch_v5_20260920/static_krylov_k12_fetch_2052/fetch.preview.json", "role": "k12 non-clobber fetch preview", "bytes": 976, "sha256": "c3f9a16a087e9ecae9786772bb4d4b82a608e2bd184bba2fbe505398e7a4658c"},
+    {"path": "results/autoresearch_v5_20260920/static_krylov_k12_fetch_2052/fetch.receipt.json", "role": "k12 non-clobber fetch receipt", "bytes": 868, "sha256": "9b1b7fa88c03672050d7018152ffd70ae93096c1bbf1aa226f0839994b0b75a6"},
+    {"path": "results/autoresearch_v5_20260920/static_krylov_k12_fetch_2052/validator.pass.json", "role": "k12 independent validator result", "bytes": 2723, "sha256": "9b7c5e3e8a82fffb53f314cdd9bf85dede7e82893b6140232e6b8d22df0807a1"},
+    {"path": "results/autoresearch_v5_20260920/static_krylov_k12_finalize_2057/summary.json", "role": "k12 final gate summary", "bytes": 33474, "sha256": "99ea78efdc127818ae811b71260dd7e16bc096ac221be2c4d42e487bbfe5d928"},
+    {"path": "results/autoresearch_v5_20260920/static_krylov_k12_finalize_2057/comparison.json", "role": "k8 to k12 audit-only comparison", "bytes": 177740, "sha256": "047be5bd34527ac2dfef97481a6dfb3e887a563c6582257cd720a49be3c5cbf3"},
+    {"path": "results/autoresearch_v5_20260920/static_krylov_k12_finalize_2057/checksums.sha256", "role": "k12 final gate checksum ledger", "bytes": 161, "sha256": "22498c055399470a410076ae09c0a88606f3eba222e7a587fd2f3d85579ba59f"},
+    {"path": "scripts/autoresearch_v5/static_krylov_control_inputs.py", "role": "baseline input normalization", "bytes": 18678, "sha256": "f75e1bde5fc4124f4915a5919e9c07c65dafcb97af8755e61d2d0c058ae3eade"},
+    {"path": "scripts/autoresearch_v5/audit_pilot_entropy_robustness.py", "role": "baseline entropy robustness analysis", "bytes": 6161, "sha256": "b29946cbf50ee001dfbe97e6a6f94d70c82b6706e06f7e6834d04ea48f8ff774"},
+    {"path": "scripts/autoresearch_v5/validate_negative_phase_run_practical_v2.py", "role": "baseline validator", "bytes": 9215, "sha256": "677a5d3bbe89cf4623fadbbba5f46071e2ec952b371ddc487b152f8041966e94"},
+    {"path": "scripts/autoresearch_v5/negative_dmrg_options.py", "role": "baseline DMRG options", "bytes": 1235, "sha256": "78a084abe62e025497be76a36b4bab2d6aaae46699db112689d08ff15f25a999"},
+    {"path": "scripts/autoresearch_v5/negative_static_cell.jl", "role": "baseline Julia entrypoint", "bytes": 17791, "sha256": "291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f"}
+  ],
+  "figure_mapping": [
+    {
+      "figure": "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/negative_size_joint_evidence.{png,svg,pdf,tiff}",
+      "panels": ["a", "b", "c", "d"],
+      "sources": ["results/autoresearch_v5_20260919/closeout_stage1_joint_v2/joint_size_evidence.csv", "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/summary.json"],
+      "panel_mapping": {
+        "a": "c10 fixed-f=.20 dual-start means and all-window envelopes: c10_fixed_mean/c10_all_min/c10_all_max; c5_* remains in the CSV but is not plotted in panel a",
+        "b": "N times finite-OBC Sz=1-Sz=0 gap: N plus gap_mean/gap_min/gap_max; N*gap is not a bulk-gap extrapolation",
+        "c": "central-window dimer RMS: dimer_mean/dimer_min/dimer_max and dimer_pairs_per_start",
+        "d": "signed staggered connected bond correlation: staggered_connected_mean/staggered_connected_min/staggered_connected_max and connected_samples"
+      },
+      "status": "derived_four_panel_source_mapped",
+      "claim_boundary": "finite-size comparison only; sensitivity ranges are not confidence intervals and no phase is assigned"
+    },
+    {
+      "figure": "results/autoresearch_v5_20260919/near_zero_alpha_mechanism_report_v2/report.html",
+      "panels": [],
+      "sources": ["results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/oracle_points.csv", "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/spec.json", "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/summary.json", "docs/near_zero_alpha_mechanism_note_20260919.md"],
+      "panel_mapping": {
+        "mechanism_structure": "[1,1,alpha,beta,alpha,1,1] and Delta_8/alpha^2 -> 2/(9 beta)",
+        "validation": "11 validation gates, alpha=0 multiplets, bit-sector/full-Kronecker construction and projection benchmarks",
+        "grid": "42 nonzero grid rows plus 3 alpha=0 rows; finite-alpha controls are displayed separately and excluded from the asymptotic gate"
+      },
+      "status": "mechanism_report_available_no_standalone_figure",
+      "claim_boundary": "8-spin local oracle only; full-chain form factor and phase inference remain pending"
+    },
+    {
+      "figure": "results/autoresearch_v5_20260913/negative_phase_independent_audit_v6/negative_alpha_quartet_projection.{png,svg,pdf,tiff}",
+      "panels": ["a", "b"],
+      "sources": ["results/autoresearch_v5_20260913/negative_phase_independent_audit_v6/negative_quartet_projection_scan.csv", "results/autoresearch_v5_20260913/negative_phase_independent_audit_v6/single_pentamer_multiplet_scan.csv", "results/autoresearch_v5_20260913/negative_phase_independent_audit_v6/summary.json"],
+      "panel_mapping": {
+        "a": "isolated S=3/2 quartet projection coefficients c1..c5 and J_eff/beta",
+        "b": "folded form-factor weights weight_q02pi/weight_q06pi/weight_q10pi with dominant q/pi"
+      },
+      "status": "local_quartet_mechanism_diagnostic",
+      "claim_boundary": "isolated local projection/shape factor; not a full-chain single-phase proof"
+    },
+    {
+      "figure": "static_krylov_baseline_v2 candidate comparison",
+      "panels": [],
+      "sources": [],
+      "panel_mapping": {},
+      "status": "audit_only_pass_no_new_figure",
+      "claim_boundary": "L80 alpha=-0.1 k8→k12 comparison passed for 172 observables; this is not chi convergence, thermodynamic scaling, or a new phase claim"
+    }
+  ],
+  "csv_schema": {
+    "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/joint_size_evidence.csv": {
+      "rows": 12,
+      "columns": {
+        "alpha": "dimensionless coupling, J1=1 convention",
+        "beta": "dimensionless coupling, J1=1 convention",
+        "L": "finite chain length in physical spins",
+        "N": "five-spin unit-cell count, L/5",
+        "c5_fixed_mean/c5_all_min/c5_all_max": "effective central-charge fit values, dimensionless",
+        "c5_fixed_start_difference": "absolute two-start difference of c5, dimensionless",
+        "c10_fixed_mean/c10_all_min/c10_all_max": "effective central-charge fit values, dimensionless",
+        "c10_fixed_start_difference": "absolute two-start difference of c10, dimensionless",
+        "gap_mean/gap_min/gap_max": "finite OBC Sz=1-Sz=0 gap, J1 energy units",
+        "gap_start_relative_spread": "relative two-start spread of gap, dimensionless",
+        "max_variance_per_site": "Sz=0 variance-per-site diagnostic, J1^2 units with J1=1",
+        "dimer_pairs_per_start": "number of central dimer pairs, count",
+        "dimer_mean/dimer_min/dimer_max": "central dimer RMS observable, dimensionless",
+        "staggered_connected_mean/staggered_connected_min/staggered_connected_max": "signed staggered connected bond observable, dimensionless",
+        "connected_samples": "number of connected-correlation samples, count"
+      },
+      "missing_codes_observed": [],
+      "scope": "12 physical points; all selected cells populated"
+    },
+    "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/oracle_points.csv": {
+      "rows": 47,
+      "columns": {
+        "point_role": "grid or finite_alpha_control categorical label",
+        "alpha/beta/alpha_abs": "dimensionless couplings",
+        "nup3_dimension/nup4_dimension/nup5_dimension": "sector Hilbert-space dimensions, count",
+        "E_sz0/E_sz1/E_sz_minus1": "8-spin energies, J1 energy units",
+        "gap_sz1_minus_sz0": "8-spin Sz=1 minus Sz=0 gap, J1 energy units",
+        "gap_over_alpha2/predicted_gap_over_alpha2": "gap divided by alpha^2 and leading prediction, dimensionless coefficient in J1=1 convention",
+        "prediction_relative_error": "relative error to the leading 2/(9 beta) coefficient, not an L=80 error",
+        "asymptotic_gate_applicable": "boolean applicability flag",
+        "s2_sz0_ground/s2_sz1_ground/s2_sz_minus1_ground": "spin-squared diagnostics, dimensionless",
+        "s2_sz0_triplet_match": "boolean/numeric match diagnostic",
+        "sz0_triplet_energy_match_error": "energy-match residual, J1 energy units",
+        "full_hermiticity_error/construction_max_abs_error/max_*_residual/max_*_norm_error/max_*_orthogonality_error": "numerical residuals, dimensionless",
+        "alpha0_checks": "JSON string on alpha=0 rows; not applicable elsewhere"
+      },
+      "missing_codes_observed": [""],
+      "missing_code_policy": "empty cells mean not applicable (not zero); alpha=0 rows do not have alpha-divided prediction fields"
+    },
+    "results/autoresearch_v5_20260913/negative_phase_independent_audit_v6/single_pentamer_multiplet_scan.csv": {
+      "rows": 201,
+      "columns": {
+        "alpha": "dimensionless coupling",
+        "ground_spin": "isolated pentamer ground spin S, dimensionless",
+        "local_multiplet_gap": "local multiplet gap, J1 energy units",
+        "max_residual": "eigensolver residual, dimensionless"
+      },
+      "missing_codes_observed": []
+    },
+    "results/autoresearch_v5_20260913/negative_phase_independent_audit_v6/negative_quartet_projection_scan.csv": {
+      "rows": 201,
+      "columns": {
+        "alpha": "dimensionless coupling",
+        "ground_spin": "isolated ground spin S, dimensionless",
+        "ground_energy": "isolated energy, J1 energy units",
+        "local_multiplet_gap": "local multiplet gap, J1 energy units",
+        "c1/c2/c3/c4/c5": "S=3/2 quartet projection coefficients, dimensionless",
+        "coefficient_sum/reflection_error/hermiticity_norm": "projection/shape-factor diagnostics, dimensionless",
+        "jeff_over_beta": "effective exchange divided by beta, dimensionless",
+        "weight_q02pi/weight_q06pi/weight_q10pi": "folded form-factor weights, dimensionless",
+        "dominant_q_over_pi": "dominant folded momentum q/pi, dimensionless"
+      },
+      "missing_codes_observed": []
+    },
+    "results/autoresearch_v5_20260919/static_krylov_baseline_v2/gap_records.csv": {
+      "rows": 4,
+      "columns": {
+        "cell_id": "categorical run identifier",
+        "alpha/beta": "dimensionless couplings",
+        "L": "finite chain length in physical spins",
+        "start": "center or ferro_j2 start label",
+        "gap": "finite OBC Sz=1-Sz=0 gap, J1 energy units"
+      },
+      "missing_codes_observed": []
+    },
+    "results/autoresearch_v5_20260919/static_krylov_baseline_v2/entropy_records.csv": {
+      "rows": 316,
+      "columns": {
+        "cell_id": "categorical run identifier",
+        "alpha/beta": "dimensionless couplings",
+        "L": "finite chain length in physical spins",
+        "start": "start label",
+        "bond": "bond index, count",
+        "bond_class": "bond class categorical/count label",
+        "log_chord": "chord-distance geometry coordinate, dimensionless",
+        "entropy": "bipartite entropy, dimensionless log entropy"
+      },
+      "missing_codes_observed": [],
+      "range_note": "entropy spread is sensitivity information, not a confidence interval"
+    },
+    "results/autoresearch_v5_20260919/static_krylov_baseline_v2/entropy_fits.csv": {
+      "rows": 32,
+      "columns": {
+        "cell_id/alpha/beta/L/start": "run and parameter identifiers",
+        "window": "fit-window fraction, dimensionless",
+        "period": "unit-cell period, count",
+        "c_eff": "effective central-charge fit, dimensionless",
+        "rmse": "fit residual in entropy units, dimensionless",
+        "rank": "fit matrix rank, count",
+        "n": "fit sample count, count",
+        "condition": "fit condition number, dimensionless"
+      },
+      "missing_codes_observed": []
+    },
+    "results/autoresearch_v5_20260919/static_krylov_baseline_v2/bond_correlations.csv": {
+      "rows": 316,
+      "columns": {
+        "cell_id/alpha/beta/L/start": "run and parameter identifiers",
+        "bond": "bond index, count",
+        "left_site/right_site": "physical site indices, count",
+        "bond_class": "bond class categorical/count label",
+        "correlation": "bond correlation observable, dimensionless"
+      },
+      "missing_codes_observed": []
+    },
+    "results/autoresearch_v5_20260919/static_krylov_baseline_v2/connected_quarter.csv": {
+      "rows": 8,
+      "columns": {
+        "cell_id/alpha/beta/L/start": "run and parameter identifiers",
+        "reference_bond/target_bond": "bond indices, count",
+        "distance_units": "separation in unit-cell coordinate, count/geometry units",
+        "connected": "connected bond correlation, dimensionless",
+        "staggered_connected": "signed staggered connected correlation, dimensionless"
+      },
+      "missing_codes_observed": []
+    },
+    "results/autoresearch_v5_20260919/static_krylov_baseline_v2/dimer_rms.csv": {
+      "rows": 4,
+      "columns": {
+        "cell_id/alpha/beta/L/start": "run and parameter identifiers",
+        "dimer_rms": "central dimer RMS observable, dimensionless",
+        "pair_count": "number of dimer pairs, count"
+      },
+      "missing_codes_observed": []
+    }
+  },
+  "code_entrypoints": [
+    "scripts/autoresearch_v5/analyze_negative_entropy_sizes.py",
+    "scripts/autoresearch_v5/closeout_negative_size_comparison.py",
+    "scripts/autoresearch_v5/validate_near_zero_alpha_oracle.py",
+    "scripts/autoresearch_v5/test_near_zero_alpha_oracle.py",
+    "scripts/autoresearch_v5/report_near_zero_alpha_oracle.py",
+    "scripts/autoresearch_v5/analyze_negative_phase_independent_observables.py",
+    "scripts/autoresearch_v5/static_krylov_control_inputs.py",
+    "scripts/autoresearch_v5/audit_pilot_entropy_robustness.py",
+    "scripts/autoresearch_v5/validate_negative_phase_run_practical_v2.py",
+    "scripts/autoresearch_v5/validate_static_krylov_k12_run.py",
+    "scripts/autoresearch_v5/compare_static_krylov_k8_k12.py",
+    "scripts/autoresearch_v5/finalize_static_krylov_k12_gate.py",
+    "scripts/autoresearch_v5/negative_static_cell.jl"
+  ],
+  "provenance_notes": [
+    "所有 selected_files 的 bytes/SHA256 是本地工作区实测值；已有 checksums/manifest/source_hashes 作为来源记录保留。",
+    "baseline source_hashes.json 是历史来源哈希登记；本审计不重新展开或 hash 其原始大状态。",
+    "near_zero_alpha_mechanism_report_v2 由已有输入报告生成，本审计没有重新渲染或运行科学分析。",
+    "k12 单点使用远端 Julia 1.12.3；父目录与两个子目录远端 checksum、本地非覆盖回传、独立 validator 和 k8→k12 comparison 均通过。"
+  ],
+  "exclusions_and_open_gaps": [
+    "没有 hash 84 个原始大状态，也没有复制/重算大状态。",
+    "static Krylov k8→k12 只覆盖 alpha=-0.1、beta=0.25、L=80 一个点；未生成比较图，也不把 k 稳定性写成 chi 收敛。",
+    "本文件不是全项目数据可用性声明，也不是 public release 完成证明；public repository、license、DOI/accession 均未选择。",
+    "finite-alpha leading-coefficient relative error、双初态仅 Sz=0、熵范围非 CI 和 k8 非 chi 收敛约束必须随结果引用保留。"
+  ],
+  "qa": {
+    "selected_paths_read": true,
+    "selected_hashes_and_bytes_recorded": true,
+    "csv_headers_and_row_counts_recorded": true,
+    "figure_mapping_recorded": true,
+    "raw_state_hashing_repeated": false,
+    "scientific_recompute": false,
+    "remote_side_effects": true,
+    "public_deposit": false,
+    "license_or_doi": null
+  }
+}

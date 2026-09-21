@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-04",
+  "scope": {
+    "alpha_min": 0.0,
+    "beta_min": 0.0,
+    "negative_alpha_excluded": true
+  },
+  "excluded_cell": {
+    "cell_id": "mesh-cell-0051",
+    "alpha": 0.125,
+    "beta": 1.0,
+    "L": 80,
+    "reason": "独立初态误差偏大；只从 60-80 配对中剔除对应 L=80 影响项"
+  },
+  "full_internal_rows": 56,
+  "excluded_rows": 1,
+  "kept_internal_rows": 55,
+  "kept_signs": {
+    "-1": 55,
+    "0": 0,
+    "+1": 0
+  },
+  "kept_all_significant_2sigma": true,
+  "kept_delta_range": [
+    -0.04756756186278571,
+    -0.0019150662792082884
+  ],
+  "status": "UNCHANGED_NO_SIGNIFICANT_CROSSING",
+  "interpretation": "剔除 mesh-cell-0051 对应的 60-80 配对后，剩余正 alpha 内部尺寸差仍全部为负且通过 2sigma；该 cell 可保留警告，但不改变有限尺寸 guard 的方向。",
+  "source_sha256": {
+    "results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\phase-diagram\\phase-size-differences.csv": "ddb67f9daefb870c5df9cebe68f187e266372710a38cdd49a64464c05ec78171",
+    "results\\research_progress\\mesh_cell_0051_diagnostic_20260803.json": "0bf1e100060d6b46e859832d400f29498081f8d4310015c98ca039a0137273ef"
+  }
+}

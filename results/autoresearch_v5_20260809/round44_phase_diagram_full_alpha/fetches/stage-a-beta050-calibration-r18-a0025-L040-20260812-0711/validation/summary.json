@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "counts": {
+    "pass": 1,
+    "fail": 0
+  },
+  "cells": [
+    {
+      "cell_id": "nega-r18-a0025-b0500-L040",
+      "status": "pass",
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r18-a0025-L040-20260812-0711/validation/nega-r18-a0025-b0500-L040.json",
+      "sha256": "504c6c5e3fde5f6e5117c19c3d275b4e9abba1927e7bc18e1e8dfca614325378"
+    }
+  ]
+}

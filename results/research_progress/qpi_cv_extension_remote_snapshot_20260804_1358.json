@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-04T13:58:44+08:00",
+  "target": "wangjieren@39.96.207.180:6000",
+  "run_root": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension",
+  "overall": {"phase": "omega_055_done", "completed_cells": 2, "total_cells": 4, "status": "running"},
+  "cells": {
+    "cell-l40-qpi-low-000-020": {"status": "finished", "accepted": false, "manifest_present": true},
+    "cell-l40-qpi-high-055": {"status": "finished", "accepted": true, "manifest_present": true},
+    "cell-l40-qpi-high-100": {"status": "running", "phase": "julia_linsolve", "manifest_present": false, "cpu_percent": 1758},
+    "cell-l40-qpi-high-150": {"status": "not_started", "manifest_present": false}
+  },
+  "eta": {"status": "not_estimable", "reason": "high-100 无终态 manifest"},
+  "action": "只读；未写远端、未取消、未启动第二个 Julia、未回传未终态目录",
+  "scope": {"alpha_beta": "[0,1]", "negative_alpha_excluded": true, "fig9_excluded": true}
+}

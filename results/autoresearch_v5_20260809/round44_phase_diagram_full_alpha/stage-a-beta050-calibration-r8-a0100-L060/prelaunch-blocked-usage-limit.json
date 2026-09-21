@@ -1,0 +1,45 @@
+{
+  "schema_version": "negative-phase-prelaunch-block-v1",
+  "batch_id": "stage-a-beta050-calibration-r8-a0100-L060",
+  "status": "blocked_before_upload",
+  "local_gates": {
+    "python_compile": "pass",
+    "powershell_parse": "pass",
+    "bash_parse": "pass",
+    "julia_parse": "pass",
+    "batch_dry_run_cells": 1,
+    "upload_dry_run_files": 16,
+    "source_sha256": "pass",
+    "lf_check": "pass",
+    "r7_validator_fail_bound": true,
+    "controller_counts_bound": {
+      "success": 11,
+      "failed": 1,
+      "pending": 4,
+      "calibration_accepted": 5
+    },
+    "r6_initial_state_sensitivity_preserved": true,
+    "r7_failure_provenance_preserved": true,
+    "gap_gate_enforced": true,
+    "thresholds_relaxed": false
+  },
+  "upload": {
+    "attempted_remote_execution": false,
+    "status": "rejected_by_platform_usage_limit",
+    "remote_writes": false,
+    "retry_after": "2026-08-16T10:53:00+08:00"
+  },
+  "launch": {
+    "started": false,
+    "pid": null,
+    "julia_started": false,
+    "health_check_performed": false
+  },
+  "required_resume_sequence": [
+    "重新执行幂等上传与逐文件远端SHA-256",
+    "确认无Julia、无既有R8运行证据且全局锁可用",
+    "验证远端spec、contract、source和launcher哈希",
+    "仅全部通过后启动并做一次健康检查"
+  ],
+  "paper_modified": false
+}

@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-04",
+  "status": "ACTIVE_COMPUTE_NOT_STUCK_BUT_RESIDUAL_GATE_NOT_ADAPTIVE",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "remote_evidence": {
+    "checked_at": "2026-08-03T23:23:46+08:00",
+    "phase": "julia_linsolve",
+    "completed_points": 1,
+    "total_points": 5,
+    "julia_processes": 1,
+    "first_point_residual": 1.324e-05,
+    "residual_gate": 1e-05
+  },
+  "evidence": {
+    "single_julia_guard": true,
+    "progress_probe_present": true,
+    "per_point_flush": true,
+    "linsolve_iteration_cap": true,
+    "residual_measured_after_solve": true,
+    "acceptance_post_run": true
+  },
+  "interpretation": "现有证据支持任务仍在 Julia linsolve 阶段，并非 wrapper 失去进程；但 residual 只在每点求解后记录、在 cell 结束时验收，没有自适应增加 maxdim 或重试机制，因此首点 residual 超门槛会使最终 cell 失败而不是立即修正。",
+  "decision": "不修改正在运行的远端任务；终态回传后若 cell 失败，单独设计带残差重试的下一批，不降低 1e-5 门槛。",
+  "source_sha256": {
+    "results\\research_progress\\qpi_cv_extension_status_20260803_2323.json": "4a3840d29bc5206ef1e81862ef3aec2aa648118913e74cd3a963fbdf212d76e0",
+    "scripts\\autoresearch_v5\\cv_dsf_cell.jl": "049908c694ed6841bd0c3b3028b3b966cedafd426c49f07e1f491393d59e5292",
+    "scripts\\autoresearch_v5\\run_cv_dsf_cell.py": "560d4344bc71c4dad487a3028a030bc41ebf813d53427bdcc17ace9eec0cc349"
+  }
+}

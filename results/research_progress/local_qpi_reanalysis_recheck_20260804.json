@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "full_dynamic_status": "incomplete",
+  "tebd_qpi_tag": "Agreement",
+  "cross_method_tag": "NotEvaluable",
+  "instance": "alpha=0.23,beta=0.5,L=40,q/pi=1,eta=0.1,OBC,Sz=0",
+  "checks": {
+    "dt_weight_relative_delta": 0.0001234793428618915,
+    "maxdim_spectrum_relative_l2": 1.596152908003976e-06,
+    "maxdim_weight_relative_delta": 1.6560662817263316e-07,
+    "refined_peak_omega": 0.05,
+    "cv_main_peak_bracketed": false,
+    "cv_full_weight_window_covered": false
+  },
+  "source": "results/autoresearch_v5_20260804/round36_local_qpi_reanalysis_recheck/",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

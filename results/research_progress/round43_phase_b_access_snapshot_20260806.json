@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-06T18:09:02+08:00",
+  "host": "39.96.207.180",
+  "port": 6000,
+  "task": "round43 q=pi CV phase B",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "access": {
+    "ssh_command_reached_server": false,
+    "gateway_error": "503 Service Unavailable: No available channel for model codex-auto-review",
+    "server_health_inferred": "unknown"
+  },
+  "last_authoritative_local_record": {
+    "checked_at": "2026-08-06T15:37:00+08:00",
+    "status": "running",
+    "completed_points": "4/5",
+    "julia_pid": 448165,
+    "cpu_percent": 106,
+    "rss_gib": 0.93,
+    "stderr": "empty"
+  },
+  "status": "gateway_blocked",
+  "action": "no_restart_no_second_julia_no_download_no_cancel",
+  "next_action": "恢复 SSH 后只读读取 status/progress/process/stderr/omega-0000，再按 checksum、非覆盖回传、validator 顺序交接"
+}

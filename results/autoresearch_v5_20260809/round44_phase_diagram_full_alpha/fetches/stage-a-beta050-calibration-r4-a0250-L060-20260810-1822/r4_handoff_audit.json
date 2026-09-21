@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "status": "accepted_and_ingested",
+  "cell_id": "nega-r4-a0250-b0500-L060",
+  "fetch_directory": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r4-a0250-L060-20260810-1822",
+  "commands": [
+    {
+      "name": "remote_checksum",
+      "command_summary": "ssh -p 6000 -i C:/Users/hh250/.ssh/id_ed25519 wangjieren@39.96.207.180；在 R4 cell、start_center、start_ferro_j2 三个目录逐一运行 sha256sum -c checksums.sha256，并输出 checksums/manifest/status 的 SHA256",
+      "result": "pass for parent and both children"
+    },
+    {
+      "name": "fetch_preview",
+      "command": "python scripts/autoresearch_v5/fetch_negative_phase_run.py preview --cell-id nega-r4-a0250-b0500-L060 --remote-campaign /home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r4-a0250-L060/cells --destination results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r4-a0250-L060-20260810-1822/cells/nega-r4-a0250-b0500-L060 --output results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r4-a0250-L060-20260810-1822/previews/nega-r4-a0250-b0500-L060.json --remote wangjieren@39.96.207.180 --port 6000 --key C:/Users/hh250/.ssh/id_ed25519",
+      "result": "pass; 36 files; 135434 bytes; destination absent"
+    },
+    {
+      "name": "fetch_confirmed",
+      "command": "python scripts/autoresearch_v5/fetch_negative_phase_run.py fetch --preview <fetch>/previews/nega-r4-a0250-b0500-L060.json --destination <fetch>/cells/nega-r4-a0250-b0500-L060 --output <fetch>/receipts/nega-r4-a0250-b0500-L060.json --key C:/Users/hh250/.ssh/id_ed25519 --confirmed",
+      "result": "pass; non_clobbering=true; 36 files; 135434 bytes"
+    },
+    {
+      "name": "local_checksums",
+      "command_summary": "在本地 parent、start_center、start_ferro_j2 三个目录逐一运行 sha256sum -c checksums.sha256",
+      "result": "pass for all listed files"
+    },
+    {
+      "name": "independent_validator",
+      "command": "python scripts/autoresearch_v5/validate_negative_phase_run.py --run-dir <fetch>/cells/nega-r4-a0250-b0500-L060 --run-spec results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r4-a0250-L060/parameter-scan.run_spec.json --output <fetch>/validation/nega-r4-a0250-b0500-L060.json",
+      "result": "pass; 6/6 checks true; failures=[]"
+    },
+    {
+      "name": "accepted_only_ingest",
+      "command": "python scripts/autoresearch_v5/ingest_negative_phase_r4.py --fetch-dir <fetch> --run-spec results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r4-a0250-L060/parameter-scan.run_spec.json --phase-dir results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2 --controller-report results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/report.json",
+      "result": "pass and idempotent"
+    },
+    {
+      "name": "phase_controller",
+      "command_summary": "本地依次运行 phase_diagram_windows_controller.py inspect、check、ingest",
+      "result": "WAITING; 6 registered cells pending; unresolved_submitting=[]"
+    }
+  ],
+  "validator": {
+    "status": "pass",
+    "checks_passed": 6,
+    "failures": [],
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r4-a0250-L060-20260810-1822/validation/nega-r4-a0250-b0500-L060.json",
+    "sha256": "2cf86e81b44f236b7c230c931ad22bf4c4afef1eab33de3e81a028acaed44be2"
+  },
+  "key_gates": {
+    "center_variance_per_site_sz0": 4.8759337308486767e-11,
+    "center_variance_per_site_sz1": 3.685064105714749e-11,
+    "ferro_j2_variance_per_site_sz0": 2.328571705826713e-10,
+    "ferro_j2_variance_per_site_sz1": 3.685064105714749e-11,
+    "variance_per_site_max": 1e-8,
+    "final_truncation_error_max_observed": 9.990530114776796e-12,
+    "final_truncation_error_max": 1e-9,
+    "center_total_sz0": -4.128641872824801e-16,
+    "ferro_j2_total_sz0": 1.3322676295501878e-15,
+    "total_sz1": 0.9999999999999964,
+    "requested_sweeps_per_start": 64
+  },
+  "accepted_only": {
+    "controller_success_total": 10,
+    "controller_failed_total": 0,
+    "controller_pending_total": 6,
+    "controller_action_id": "act-bd120db6bdbc305ddf42",
+    "registered_action_budget_preserved": 32,
+    "accepted_retry_budget": 64,
+    "r3_failure_provenance_preserved": true,
+    "idempotency": "pass; observations/action-index/summary hashes unchanged on replay",
+    "observations_sha256": "529fb103c54cc0b65ac80be9ff1e8f1a383db61f4e34deb3d5ff033b4cbed78f",
+    "action_index_sha256": "ecc39441386a8e3225e68b01007744016aafb122cc57d70fcb5ac6747e85fa7e",
+    "r4_ingestion_summary_sha256": "ab7e2c32f2b8157690c06d343aaf6dc363ad7df31db1b49b9cd48842c7cec5e9"
+  },
+  "artifact_sha256": {
+    "remote_checksum_audit": "357dfa45e097cac0e8eb8d6e65f9dc7ca128138cc72355a8141d44d14999cc18",
+    "preview": "1a85d9714a417fc281ae89cd8958064b265e87fc850349c4ac4fefd4df4b38ee",
+    "receipt": "12544be80c6b1e0ccafc3e2d14d67fc244754f6a3995a9a6bde80ebbfce99aaf",
+    "validation_summary": "25ba1829cb26f7e6382a8d2de258e2a7702c7e7da6a0485c4f21860fc91ce3bc",
+    "handoff_summary": "8c44e7d0ae5b0c2fa8489de09c2e02c4183f21a45517e5f8235e66441665155d",
+    "ingest_script": "6a8fae01a0c360c74d613b8179ee8862c2c66c4739be5c922dbbb06521387413"
+  },
+  "safety": {
+    "thresholds_lowered": false,
+    "r5_uploaded": false,
+    "r5_started": false,
+    "paper_modified": false
+  }
+}

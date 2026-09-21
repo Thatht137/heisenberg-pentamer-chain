@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "figure": "figures\\full_alpha_phase_evidence_20260811",
+  "core_conclusion": "Two critical regimes separated by alpha=0 are the leading physical hypothesis; the alpha=-0.35..-0.25 momentum change is not a confirmed phase boundary.",
+  "evidence_hierarchy": {
+    "hero": "accepted beta=0.5 momentum and crossing data",
+    "validation": "R16 three-start convergence",
+    "control": "positive-region 105-record strict mesh"
+  },
+  "boundary_eligible_r16": false,
+  "sources": [
+    {
+      "path": "results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\phase-diagram-v2\\observations.json",
+      "sha256": "0ae1da5dd89c91076d5593d66088c0bc02b74fbeca2b28e10f0d8288e5bf7cb8"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\phase-diagram-v2\\accepted_calibration_through_r9.json",
+      "sha256": "290083607e50582f79f4afedc5955d0876a9cd86172ae4936293abb42b451bf1"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\phase-diagram\\observations.json",
+      "sha256": "47b1e2dbb5ff1730b5f3d0cbb231d5f44f8b6dead2f3b18b5a666f91968e347b"
+    },
+    {
+      "path": "results\\research_progress\\negative_full_phase_campaign_status_20260809.json",
+      "sha256": "87c0f9893522d6a879762fc6ab81ea7021a879b94f8438882ba2b9dada00839f"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r16-a0050-L080-20260811-2140\\validation.json",
+      "sha256": "d6affb8a1de1896d570f3d555b8816df8b62e54239dd7b3005f0ff701455f0eb"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r16-a0050-L080-20260811-2140\\nega-r16-a0050-b0500-L080\\manifest.json",
+      "sha256": "5ed356864fbc2dddbdf2ae6c0d5896d7cb07e588a7e143a586b076863f3281f7"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r16-a0050-L080-20260811-2140\\nega-r16-a0050-b0500-L080\\start_center_random\\manifest.json",
+      "sha256": "6ad84ed581b7f3d01d428b2c89a74acd1311193587fd8070bcd970e7e3dbb7f0"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r16-a0050-L080-20260811-2140\\nega-r16-a0050-b0500-L080\\start_ferro_j2\\manifest.json",
+      "sha256": "25207f2ac04d48b6da3b9b6b2a35a91b1ebd82145bbd58e99efd22052baca3b6"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r16-a0050-L080-20260811-2140\\nega-r16-a0050-b0500-L080\\start_domain\\manifest.json",
+      "sha256": "7c2e340470fdbdd15a64bc2a21f504761b5250a9b170c36e97d41cca0c222b7b"
+    }
+  ],
+  "source_data": "figures\\full_alpha_phase_evidence_20260811.source.csv"
+}

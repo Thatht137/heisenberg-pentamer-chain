@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "qpi_production_status": "pass",
+  "full_dynamic_status": "incomplete",
+  "tebd_qpi_tag": "Agreement",
+  "cross_method_tag": "NotEvaluable",
+  "params": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "L": 40,
+    "q_over_pi": 1.0,
+    "eta": 0.1,
+    "boundary": "OBC",
+    "sector": "Sz=0"
+  },
+  "diagnostics": {
+    "dt_weight_relative_delta": 0.0001234793428618915,
+    "maxdim_weight_relative_delta": 1.6560662817263316e-07,
+    "maxdim_spectrum_relative_l2": 1.596152908003976e-06,
+    "cv_point_relative_differences": [
+      0.04996135434598632,
+      0.02861653767366431,
+      0.06403928715881681,
+      0.03529230931503146
+    ],
+    "cv_main_peak_bracketed": false,
+    "cv_full_weight_window_covered": false
+  },
+  "scope": {
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "figure": "figures/qpi_tebd_local_reanalysis_20260804.png"
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "pre_observations_sha256": "ed183dae619248b5ecef44d1a8f4a92a869b5d103f5871ac4210e0dbd63f6a3f",
+  "pre_action_index_sha256": "c989f71c917111a4a50c7537cb62d3d4918947546bcf250530984ea6a21967ce",
+  "post_observations_sha256": "cecf52421fd99853f1d431df604ac6dd51316cf14d9c26646361276c53d2d819",
+  "post_action_index_sha256": "8019399c53199f299363f0f338350d44da9e62a06743d5739e3e3b742e85fd10",
+  "controller_counts": {
+    "success": 12,
+    "failed": 0,
+    "pending": 4
+  },
+  "r7_failure_provenance_preserved": true,
+  "crossing_assigned": false,
+  "phase_label_assigned": false
+}

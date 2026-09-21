@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "status": "local_wheel_deleted_after_remote_hash_verification",
+  "deleted_at_utc": "2026-09-19T15:26:18.2538977Z",
+  "wheel_path": "D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260919/offline_numpy1264_cp310/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+  "wheel_bytes": 18240889,
+  "wheel_sha256": "ffa75af20b44f8dba823498024771d5ac50620e6915abac414251bd971b4529f",
+  "delete_command": "Remove-Item -LiteralPath",
+  "remote_full_hash_verified": true,
+  "dependency_evidence": {
+    "path": "D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260919/offline_numpy1264_cp310/dependency_evidence.json",
+    "bytes": 2085,
+    "sha256": "588c3c2792fa4a0c6310bb680270eeb319b6d5459bbb96aaba49fe4448177d34",
+    "preserved": true
+  }
+}

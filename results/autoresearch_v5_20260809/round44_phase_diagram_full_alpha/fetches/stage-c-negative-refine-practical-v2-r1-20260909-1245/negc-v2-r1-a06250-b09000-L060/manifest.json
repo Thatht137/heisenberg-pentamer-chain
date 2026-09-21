@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "cell_id": "negc-v2-r1-a06250-b09000-L060",
+  "status": "success",
+  "accepted": true,
+  "params": {
+    "alpha": -0.625,
+    "beta": 0.9,
+    "L": 60,
+    "n_units": 12
+  },
+  "settings": {
+    "method": "finite_dmrg_multistart",
+    "boundary": "OBC",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim": 1000,
+    "nsweeps": 64,
+    "budget": 64,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "init_modes": [
+      "center",
+      "ferro_j2"
+    ],
+    "q_count": 401,
+    "noise_profile": "legacy",
+    "random_seed": 20260811,
+    "variance_per_site_max": 5e-08
+  },
+  "observables": {
+    "structure_factor_ratio": {
+      "value": 0.20423431623894162,
+      "error": 0.0001,
+      "definition": "1-S(pi-2pi/M)/S(pi), central OBC window"
+    },
+    "structure_factor_peak_q_over_pi": {
+      "value": 0.605,
+      "error": 0.0025,
+      "definition": "argmax S(q)/pi, q in [0,pi]"
+    },
+    "structure_factor_peak": {
+      "value": 0.5317969039768117,
+      "error": 0.0001,
+      "definition": "max S(q), central OBC window"
+    },
+    "dominant_structure_factor_ratio": {
+      "value": 0.27901307920938484,
+      "error": 0.0001,
+      "definition": "中心峰用双侧邻点，q_peak=0/pi 时用单侧邻点；dq=2pi/M"
+    },
+    "structure_factor_peak_ratio": {
+      "value": 0.27901307920938484,
+      "error": 0.0001,
+      "definition": "兼容别名；见 dominant_structure_factor_ratio"
+    }
+  },
+  "diagnostics": {
+    "child_manifests": [
+      "start_center/manifest.json",
+      "start_ferro_j2/manifest.json"
+    ],
+    "child_returncodes": {
+      "center": 0,
+      "ferro_j2": 0
+    },
+    "child_truncation_max": 9.991304793115665e-12,
+    "independent_start_half_range": {
+      "pi_ratio": 1.8857500672098126e-08,
+      "q_peak_over_pi": 0.0,
+      "peak": 1.2328744691814109e-08,
+      "peak_ratio": 2.460084119748629e-08
+    },
+    "independent_start_energy_spread": {
+      "sz0": 9.183764859699295e-12,
+      "sz1": 0.0
+    }
+  },
+  "acceptance": {
+    "children_completed": true,
+    "children_accepted": true,
+    "finite_pi_ratio": true,
+    "finite_q_peak": true,
+    "finite_peak": true,
+    "finite_peak_ratio": true,
+    "energy_consistency": true
+  },
+  "provenance": {
+    "source_commit": "uploaded-stage-c-practical-v2-r1-20260908",
+    "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "negative_alpha_included": true,
+    "acceptance_policy": "practical_v2",
+    "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+    "code_sha256": {
+      "scripts/autoresearch_v5/run_negative_static_cell.py": "9f184fd056da69e625714898a26e84805b25a2cdcd44bb2de49239c23e7fa6c9",
+      "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "d6c3f43a860d68559240fd471407b8ca9776e3736560c3cbbbd5d5f185d2b530",
+      "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+      "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+    },
+    "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+  },
+  "timing": {
+    "started_at": "2026-09-08T12:50:48.829226+00:00",
+    "finished_at": "2026-09-08T13:06:01.351404+00:00"
+  },
+  "returncode": 0
+}

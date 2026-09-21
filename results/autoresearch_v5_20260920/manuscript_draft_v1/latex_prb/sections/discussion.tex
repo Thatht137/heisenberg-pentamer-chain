@@ -1,0 +1,46 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Contrast with the tetramer chain}
+
+The main contrast with the reference tetramer follows from unit-cell parity.
+Four spin-$1/2$ degrees of freedom can form an integer-spin or singlet cluster sector.
+Five leave a half-integer degree of freedom unless translation symmetry is broken or the ground state is degenerate.
+At the tested positive-$\alpha$ pentamer points, the surviving doublet converts the inter-cell exchange into an antiferromagnetic interaction between effective spins.
+The finite-size data are therefore consistent with a critical effective chain, whereas tetramer phase names and its local triplon, quarton, or higher composite labels cannot be transferred by geometric analogy alone~\cite{li2026tetramer_verified}.
+
+The spectral comparison sharpens this distinction.
+The pentamer's odd-parity excited doublet is dark at $q=\pi$, while higher even-parity spin-$3/2$ sectors remain bright.
+In the chain, that local hierarchy coexists with a dispersive low-energy continuum and five-site folding or high-energy structure.
+The multiplet analysis predicts visibility, while the many-body calculation determines whether the weight forms a continuum, a broadened branch, or a more complex folded response.
+
+\subsection{Controlled interpretation near \texorpdfstring{$\alpha=0$}{alpha=0}}
+
+For $|\alpha|\ll\min(1,\beta)$, a trimer--dimer decomposition gives a useful limiting picture.
+Projecting the trimer doublets and eliminating the inter-cell dimer triplet produces the candidate exchange
+\begin{equation}
+\Jeff=\frac{2\alpha^2}{9\beta}>0.
+\label{eq:near-zero}
+\end{equation}
+An eight-spin trimer--dimer--trimer oracle evaluated at 47 points supports this local $\alpha^2/\beta$ scaling in its asymptotic domain, consistent with the effective-spin logic of verified trimer-chain work~\cite{cheng2022trimer}.
+The finite-$\alpha$ controls at $(-0.10,0.25)$ and $(-0.175,0.25)$ deviate from the leading term by $-36.1351\%$ and $-53.8550\%$, respectively.
+These are signed deviations of a local controlled approximation, not numerical errors in the $L=80$ calculation.
+The open-boundary sector gap also need not equal a bulk excitation gap.
+The decomposition therefore provides a mechanism close to $\alpha=0$, not proof of a second phase or a global $c=1$ region.
+
+\subsection{Meaning and boundary of the negative-\texorpdfstring{$\alpha$}{alpha} result}
+
+The negative-$\alpha$ scan answers a narrower but reproducible question: the dominant finite-size momentum changes across the coupling plane.
+It does not determine whether that change sharpens into a Lifshitz transition, belongs to a broad incommensurate regime, or remains a finite-size crossover.
+The decisive limitation is not a failed DMRG convergence test.
+The accepted Stage C cells pass the numerical and provenance gates, and the most sensitive endpoint passes the $k=8\rightarrow12$ solver control.
+The limitation is physical: the momentum and finite-size-flow diagnostics do not identify the same boundary interval.
+
+Numerical convergence validates the state and measured observables at a finite size; it cannot manufacture agreement between physically distinct diagnostics.
+Conversely, the absence of a joint boundary does not prove that the entire negative region is a single phase.
+Our bounded conclusion is that the finite-size momentum reconstruction is established, while a separately named thermodynamic phase is not.
+
+\subsection{Remaining discriminating tests}
+
+A stronger phase claim would require an observable with a controlled large-size singularity or crossing that is consistent with the momentum reconstruction, together with an effective bond-dimension series at the most sensitive points.
+A negative-$\alpha$ dynamical representative could test whether the momentum reorganization is accompanied by a qualitative spectral transfer, but such a calculation would strengthen the phenomenology rather than prove a boundary by itself.

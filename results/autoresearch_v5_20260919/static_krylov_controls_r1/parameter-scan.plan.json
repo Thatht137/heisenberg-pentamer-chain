@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "run_id": "pentamer-negative-alpha-static-krylov-controls-r1-20260919",
+  "run_dir": "results/autoresearch_v5_20260919/static_krylov_controls_r1",
+  "axes": {
+    "alpha": [
+      -0.1,
+      -0.175
+    ],
+    "beta": [
+      0.25
+    ],
+    "L": [
+      80
+    ],
+    "eigsolve_krylovdim": [
+      8
+    ]
+  },
+  "cells": [
+    {
+      "cell_id": "negdiag-a01000-b02500-L080-k08",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16,
+        "eigsolve_krylovdim": 8
+      },
+      "budget": 64,
+      "stage": "static-krylov-controls-r1"
+    },
+    {
+      "cell_id": "negdiag-a01750-b02500-L080-k08",
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16,
+        "eigsolve_krylovdim": 8
+      },
+      "budget": 64,
+      "stage": "static-krylov-controls-r1"
+    }
+  ],
+  "generator": "scripts/autoresearch_v5/make_static_krylov_controls.py",
+  "plan_backend": {
+    "requested": "quantum.harness/scripts/parameter_scan.py plan",
+    "path": "C:/Users/hh250/code/quantum.harness/scripts/parameter_scan.py",
+    "available": true,
+    "sha256": "7195B79C9AEDA30F1105669285E1A360378EDD3506ADBFE92E19532FEE5BB8A0",
+    "proof": "harness_parameter_scan_preflight/schema_conversion.json",
+    "mapping_verified": true
+  }
+}

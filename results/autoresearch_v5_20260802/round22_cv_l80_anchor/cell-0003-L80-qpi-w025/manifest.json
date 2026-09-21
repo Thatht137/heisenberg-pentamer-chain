@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "cell_id": "cell-0003-L80-qpi-w025",
+  "status": "success",
+  "params": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "N_units": 16,
+    "L": 80,
+    "q_over_pi": 1.0,
+    "omega_min": 0.25,
+    "omega_max": 0.25,
+    "omega_step": 0.05
+  },
+  "settings": {
+    "method": "krylov_correction_vector_dmrg_resumable",
+    "boundary": "OBC",
+    "sector": "Sz=0",
+    "eta": 0.1,
+    "dmrg_maxdim": 400,
+    "cv_maxdim": 800,
+    "nsweeps": 16,
+    "dmrg_cutoff": 1e-10,
+    "cv_cutoff": 1e-14,
+    "threads": 8,
+    "momentum_normalization": "1/sqrt(L)",
+    "checkpoint_mode": "atomic_latest_solution_and_unique_frequency_files"
+  },
+  "observables": {
+    "energy": -22.487137396523156,
+    "source_norm_squared": 1.2258909950281152,
+    "source_maxdim": 285.0
+  },
+  "diagnostics": {
+    "variance_per_site": 2.9678162150048595e-10,
+    "total_sz": 2.2593265688300698e-15,
+    "dmrg_actual_maxdim": 95.0,
+    "max_dmrg_truncation": 9.996486265199119e-11,
+    "final_dmrg_energy_delta": 4.459366209630389e-11,
+    "max_cv_relative_residual": 6.7152003260163674e-06,
+    "max_solution_dim": 800.0,
+    "dmrg_seconds": 77.48048400878906,
+    "cv_seconds": 62686.361533880234,
+    "completed_points": 1.0,
+    "total_points": 1.0,
+    "ground_reused_last_attempt": false,
+    "source_reused_last_attempt": false
+  },
+  "acceptance": {
+    "status": "pass",
+    "checks": {
+      "ground_variance": true,
+      "dmrg_truncation": true,
+      "cv_residual": true,
+      "nonnegative": true
+    },
+    "budgets": {
+      "variance_per_site": 1e-08,
+      "max_dmrg_truncation": 1e-08,
+      "max_cv_relative_residual": 1e-05,
+      "relative_negative_tolerance": 1e-10
+    },
+    "min_intensity": 0.5907141816551653
+  },
+  "provenance": {
+    "hostname": "c104-ysu",
+    "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "julia_version": "1.12.3",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "run_config_sha256": "12bb059a6ee0d385f2b7d7b255bb11d1241e3590963af5d1993c8580478fe041",
+    "julia_pkg_offline": true,
+    "negative_alpha_excluded": true,
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "scripts/autoresearch_v5/cv_dsf_resumable.jl": "bf1a848d271738821286827a69b601c85d12e99dee3c2a9adea2c1e720bb272e",
+      "scripts/autoresearch_v5/run_cv_dsf_resumable.py": "b89e8824265fc09be28f9ab0b919e85141d3fb6587acbe7bbadcc2eb495efeca"
+    }
+  },
+  "attempts": 1,
+  "timing": {
+    "last_started_at": "2026-08-02T12:54:06.176107+00:00",
+    "last_finished_at": "2026-08-03T06:23:27.375269+00:00"
+  },
+  "returncode": 0
+}

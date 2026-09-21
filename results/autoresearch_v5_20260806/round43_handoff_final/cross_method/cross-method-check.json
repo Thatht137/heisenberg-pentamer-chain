@@ -1,0 +1,107 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "tag": "Agreement",
+  "instance": "alpha=0.23,beta=0.5,L=40,q/pi=1,eta=0.1,OBC,Sz=0",
+  "methods": [
+    "correction_vector_dmrg",
+    "finite_dmrg_tebd_szz"
+  ],
+  "observable": "Szz(q=pi,omega)",
+  "budgets": {
+    "peak_omega": 0.1,
+    "major_integrated_weight_relative": 0.15,
+    "weight_window": [
+      0.0,
+      1.5
+    ]
+  },
+  "normalization": {
+    "cv": "O_q=(1/sqrt(L))*sum_j exp(iqj)Sz_j; intensity=-Im(G)/pi",
+    "tebd_stored": "center-source sum_r integral_0^tmax dt exp(i(omega*t-q*r))C(r,t)",
+    "tebd_transform": "stored_raw/pi",
+    "tebd_scale_factor": 0.3183098861837907,
+    "finite_obc_caveat": "center-source and 37-site spatial window approximate the all-site O_q average",
+    "tebd_spectrum_provenance": "historical_qpi_slice"
+  },
+  "coverage": {
+    "main_peak_bracketed_by_cv_grid": true,
+    "major_weight_window_covered_by_cv_grid": true
+  },
+  "checks": {
+    "peak_delta_le_budget": true,
+    "major_weight_delta_le_budget": true
+  },
+  "diagnostics": {
+    "cv_omegas": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.55,
+      1.0,
+      1.5
+    ],
+    "cv_intensities": [
+      1.8189085796516546,
+      1.8715182613818067,
+      1.4773121205370505,
+      1.1139411609076546,
+      0.8094698103494653,
+      0.5681807186981724,
+      0.42688706828248535,
+      0.3680495733571379,
+      0.6241599252850262,
+      0.07580484466738491,
+      0.2964545006903232
+    ],
+    "tebd_shared_intensities_after_divide_pi": [
+      1.7641156237464213,
+      1.8481844193414996,
+      1.5433414725431969,
+      1.1005272775895572,
+      0.7690276015643616,
+      0.5844400836402484,
+      0.45422461183261287,
+      0.3550602539709524,
+      0.6066546264075828,
+      0.0717322763142003,
+      0.30259674805605463
+    ],
+    "shared_point_relative_differences": [
+      0.030124084584683717,
+      0.01246786767823409,
+      0.04469560026498839,
+      0.01204182392108362,
+      0.049961355282223535,
+      0.02861653767366431,
+      0.06403928715881681,
+      0.03529230931503146,
+      0.028046175616689022,
+      0.05372438095552,
+      0.020719022148183323
+    ],
+    "cv_shared_window_weight": 0.7178172702759875,
+    "tebd_shared_window_weight": 0.7103574675113267,
+    "shared_window_weight_relative_delta": 0.010392342276458038,
+    "cv_shared_peak_omega": 0.05,
+    "tebd_shared_peak_omega": 0.05,
+    "peak_delta": 0.0,
+    "tebd_total_sz": -5.444310124915752e-16
+  },
+  "limitations": [
+    "共享窗口权重只作诊断，不等同于标准要求的主要积分权重",
+    "CV 网格未包围主峰或未覆盖主要积分区间时，不允许关闭最终动态门"
+  ],
+  "evidence": {
+    "cv_manifest_sha256": "2f826c2f19b403fb42c83b36694c2e91aaeed2ef8b6d54f9b61c9f44b5f5aa7c",
+    "cv_spectrum_sha256": "0a47c81c3e50f0124cef3279b6bb2fe7fc0497d046c605b173b35bec2edcdea5",
+    "tebd_manifest_sha256": "cd8263f33183c5e6ed2bac67a7c44705796e137cd3c60d351ee1180ecaced2a4",
+    "tebd_raw_sha256": "041ca821f3ace2a96a968fbe17ac2c137a0a9654f3257d887654196d112ca7e6",
+    "negative_alpha_excluded": true
+  }
+}

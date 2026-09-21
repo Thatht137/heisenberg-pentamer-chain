@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "summary": "14 pass/1 bounded",
+  "records": [
+    {
+      "cell_id": "negb18-a0050-b0900-L040",
+      "status": "fail",
+      "validation": "results/research_progress/stage_b_r18_negb18-a0050-b0900-L040_validation_practical_v2_20260906.json",
+      "validation_sha256": "3b871625427a9d999efecff57318cda1892bd1b14d75ef4f50245fe20961533b",
+      "receipt": "results/research_progress/stage_b_r18_negb18-a0050-b0900-L040_fetch_receipt_20260906.json",
+      "receipt_sha256": "0ce7f6c0de6d3c498ba262f030cdf6979cbabe01107e4d704f3dcae7a7b4aae6"
+    }
+  ]
+}

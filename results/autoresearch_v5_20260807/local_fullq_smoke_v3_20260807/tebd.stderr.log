@@ -1,0 +1,140 @@
+ERROR: LoadError: SystemError: longpath: 拒绝访问。 
+Stacktrace:
+  [1] windowserror(p::Symbol, code::UInt32; extrainfo::Nothing)
+    @ Base .\error.jl:191
+  [2] windowserror
+    @ .\error.jl:190 [inlined]
+  [3] longpath(path::String)
+    @ Base.Filesystem .\path.jl:479
+  [4] isfile_casesensitive(path::String)
+    @ Base .\loading.jl:15
+  [5] load_path_expand(env::String)
+    @ Base .\initdefs.jl:318
+  [6] activate(path::String; shared::Bool, temp::Bool, io::IOContext{IO})
+    @ Pkg.API D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\API.jl:1366
+  [7] activate(path::String)
+    @ Pkg.API D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\API.jl:1331
+  [8] (::Pkg.var"#5#7"{String})()
+    @ Pkg D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\precompile.jl:27
+  [9] cd(f::Pkg.var"#5#7"{String}, dir::String)
+    @ Base.Filesystem .\file.jl:101
+ [10] _run_precompilation_script_setup
+    @ D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\precompile.jl:8 [inlined]
+ [11] (::Pkg.var"#9#13")()
+    @ Pkg D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\precompile.jl:113
+ [12] withenv(::Pkg.var"#9#13", ::Pair{String, Nothing}, ::Vararg{Pair{String, Nothing}})
+    @ Base .\env.jl:265
+ [13] (::Pkg.var"#pkg_precompile#12")()
+    @ Pkg D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\precompile.jl:112
+ [14] top-level scope
+    @ D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\precompile.jl:168
+ [15] include(mod::Module, _path::String)
+    @ Base .\Base.jl:557
+ [16] include(x::String)
+    @ Pkg D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\Pkg.jl:3
+ [17] top-level scope
+    @ D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\Pkg.jl:850
+ [18] include
+    @ .\Base.jl:557 [inlined]
+ [19] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::String)
+    @ Base .\loading.jl:2881
+ [20] top-level scope
+    @ stdin:6
+in expression starting at D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\precompile.jl:101
+in expression starting at D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\Pkg.jl:3
+in expression starting at stdin:6
+Precompiling Pkg...
+   3969.8 ms  ✓ Downloads
+Info Given Pkg was explicitly requested, output will be shown live [0K
+[0KERROR: LoadError: SystemError: longpath: 拒绝访问。 
+[0KStacktrace:
+[0K  [1] windowserror(p::Symbol, code::UInt32; extrainfo::Nothing)
+[0K    @ Base .\error.jl:191
+[0K  [2] windowserror
+[0K    @ .\error.jl:190 [inlined]
+[0K  [3] longpath(path::String)
+[0K    @ Base.Filesystem .\path.jl:479
+[0K  [4] isfile_casesensitive(path::String)
+[0K    @ Base .\loading.jl:15
+[0K  [5] load_path_expand(env::String)
+[0K    @ Base .\initdefs.jl:318
+[0K  [6] activate(path::String; shared::Bool, temp::Bool, io::IOContext{IO})
+[0K    @ Pkg.API D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\API.jl:1366
+[0K  [7] activate(path::String)
+[0K    @ Pkg.API D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\API.jl:1331
+[0K  [8] (::Pkg.var"#5#7"{String})()
+[0K    @ Pkg D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\precompile.jl:27
+[0K  [9] cd(f::Pkg.var"#5#7"{String}, dir::String)
+[0K    @ Base.Filesystem .\file.jl:101
+[0K [10] _run_precompilation_script_setup
+[0K    @ D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\precompile.jl:8 [inlined]
+[0K [11] (::Pkg.var"#9#13")()
+[0K    @ Pkg D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\precompile.jl:113
+[0K [12] withenv(::Pkg.var"#9#13", ::Pair{String, Nothing}, ::Vararg{Pair{String, Nothing}})
+[0K    @ Base .\env.jl:265
+[0K [13] (::Pkg.var"#pkg_precompile#12")()
+[0K    @ Pkg D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\precompile.jl:112
+[0K [14] top-level scope
+[0K    @ D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\precompile.jl:168
+[0K [15] include(mod::Module, _path::String)
+[0K    @ Base .\Base.jl:557
+[0K [16] include(x::String)
+[0K    @ Pkg D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\Pkg.jl:3
+[0K [17] top-level scope
+[0K    @ D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\Pkg.jl:850
+[0K [18] include
+[0K    @ .\Base.jl:557 [inlined]
+[0K [19] include_package_for_output(pkg::Base.PkgId, input::String, depot_path::Vector{String}, dl_load_path::Vector{String}, load_path::Vector{String}, concrete_deps::Vector{Pair{Base.PkgId, UInt128}}, source::Nothing)
+[0K    @ Base .\loading.jl:2881
+[0K [20] top-level scope
+[0K    @ stdin:6
+[0Kin expression starting at D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\precompile.jl:101
+[0Kin expression starting at D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\Pkg\src\Pkg.jl:3
+[0Kin expression starting at stdin:6
+           ✗ Pkg
+  1 dependency successfully precompiled in 20 seconds. 21 already precompiled.
+ERROR: LoadError: Failed to precompile Pkg [44cfe95a-1eb2-52ea-b672-e2afdf69b78f] to "D:\\Project\\1x5_Heisenberg_Pentamer\\.julia_depot\\compiled\\v1.11\\Pkg\\jl_4003.tmp".
+Stacktrace:
+  [1] error(s::String)
+    @ Base .\error.jl:35
+  [2] compilecache(pkg::Base.PkgId, path::String, internal_stderr::IO, internal_stdout::IO, keep_loaded_modules::Bool; flags::Cmd, cacheflags::Base.CacheFlags, reasons::Dict{String, Int64}, loadable_exts::Nothing)
+    @ Base .\loading.jl:3174
+  [3] (::Base.var"#1110#1111"{Base.PkgId})()
+    @ Base .\loading.jl:2579
+  [4] mkpidlock(f::Base.var"#1110#1111"{Base.PkgId}, at::String, pid::Int32; kwopts::@Kwargs{stale_age::Int64, wait::Bool})
+    @ FileWatching.Pidfile D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\FileWatching\src\pidfile.jl:95
+  [5] #mkpidlock#6
+    @ D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\FileWatching\src\pidfile.jl:90 [inlined]
+  [6] trymkpidlock(::Function, ::Vararg{Any}; kwargs::@Kwargs{stale_age::Int64})
+    @ FileWatching.Pidfile D:\program\Julia-1.11.5\share\julia\stdlib\v1.11\FileWatching\src\pidfile.jl:116
+  [7] #invokelatest#2
+    @ .\essentials.jl:1057 [inlined]
+  [8] invokelatest
+    @ .\essentials.jl:1052 [inlined]
+  [9] maybe_cachefile_lock(f::Base.var"#1110#1111"{Base.PkgId}, pkg::Base.PkgId, srcpath::String; stale_age::Int64)
+    @ Base .\loading.jl:3698
+ [10] maybe_cachefile_lock
+    @ .\loading.jl:3695 [inlined]
+ [11] _require(pkg::Base.PkgId, env::String)
+    @ Base .\loading.jl:2565
+ [12] __require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base .\loading.jl:2388
+ [13] #invoke_in_world#3
+    @ .\essentials.jl:1089 [inlined]
+ [14] invoke_in_world
+    @ .\essentials.jl:1086 [inlined]
+ [15] _require_prelocked(uuidkey::Base.PkgId, env::String)
+    @ Base .\loading.jl:2375
+ [16] macro expansion
+    @ .\loading.jl:2314 [inlined]
+ [17] macro expansion
+    @ .\lock.jl:273 [inlined]
+ [18] __require(into::Module, mod::Symbol)
+    @ Base .\loading.jl:2271
+ [19] #invoke_in_world#3
+    @ .\essentials.jl:1089 [inlined]
+ [20] invoke_in_world
+    @ .\essentials.jl:1086 [inlined]
+ [21] require(into::Module, mod::Symbol)
+    @ Base .\loading.jl:2260
+in expression starting at D:\Project\1x5_Heisenberg_Pentamer\scripts\05_tebd_pentamer_server.jl:6

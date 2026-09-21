@@ -1,0 +1,218 @@
+{
+  "schema_version": 1,
+  "mode": "execute",
+  "output_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v3",
+  "completion_only": true,
+  "cases": [
+    {
+      "alpha": -0.175,
+      "krylovdim": 3
+    },
+    {
+      "alpha": -0.175,
+      "krylovdim": 8
+    }
+  ],
+  "settings": {
+    "beta": 0.25,
+    "L": 10,
+    "maxdim": 64,
+    "nsweeps": 16,
+    "cutoff": 1e-11,
+    "init_mode": "center",
+    "noise_profile": "legacy",
+    "random_seed": 20260811,
+    "krylov_dimensions": [
+      3,
+      8
+    ]
+  },
+  "julia": {
+    "executable": "D:/program/Julia-1.11.5/bin/julia.exe",
+    "expected_version": "1.11.5",
+    "pkg_offline": true,
+    "instantiate": false
+  },
+  "source_hashes_before": {
+    "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+    "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "scripts/autoresearch_v5/negative_static_cell.jl": "17cb83c1922b39efe34542ec795632360ff63873eb173c70763ecaa34337694e",
+    "scripts/autoresearch_v5/static_krylov_ed_reference.py": "172a00088fdbe0e06806a4b0d3da4b5d334f805d2205a91598cc262cab3e00cb",
+    "scripts/autoresearch_v5/smoke_static_krylov.py": "4d06b8e15b4d5a3cff8d8af35d03428124aaae550dab18fc79e335de0b53714f",
+    "src/dmrg_solver.jl": "0b535c8be0f392a7ee827c2e66dbf422d8070bc025f14881fbc2ba501304b0eb",
+    "src/exact_diag.jl": "e8da7c3f3012f620451fdd90b153b57acdb08f23c7c4913d8c2d7e62764cbd83",
+    "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+    "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+    "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+    "src/spectral.jl": "a04ad34901d44849eb7f74fb6c883a13bb7ea6d15872a64aab22fa92be7f88bf",
+    "src/utils.jl": "b434789ab9726118c682f7cdca98fe2f90e1320d3d501108539748a4d95a1cb7",
+    "scripts/autoresearch_v5/smoke_static_krylov_completion.py": "fd3cdb1f0d07faea0525f55d568b493e026ee0f53f94459062ad5883b77623ca"
+  },
+  "references_before": {
+    "v1_a-0100-k3": {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v1\\a-0100-k3",
+      "file_hashes": {
+        "bond_correlations.csv": "f0e6f12e37aa056706a42ed49aef7a51b6b0e7c6ffe67ad014e3405b43ad907e",
+        "metrics.csv": "cbb6f922369d5cf43a3b18bdfc63f3101d38b7f5a9d13754adc322ebfa0a4b2b",
+        "schmidt_spectrum.csv": "5abe85cda804c4b6fe0cf8d24a54865774ae1e6c48a54553e6900f82d217b8d4",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "7958b8c7b299b9343270ac1c0b5bf24223e2bc0bfbab61322fc2f3e96342e7ce",
+        "string_profile.csv": "b14b87f9bb73a09a4ffda7d4867f6b29ab05b1b93cc72e8c0c763a691138374b",
+        "structure_factor_fullq.csv": "c890eef3dbbd222ccab6641c35db1cc2302037769c9c58b76dcda598d48a3df0",
+        "sweep_history_sz0.csv": "a328a98c5bd1b8f1de96546f63c70d6b514ba39f71639d410896d9a5067cdbf5",
+        "sweep_history_sz1.csv": "bf35c8e68bfe2da7a384d5e684458d813dd8053c29a5b94e83bf8d9cb2caa5c4",
+        "wrapper_run.json": "e7e9fe80e2a5a81b72bb3ce5aab405aecfa1c2a1cf4de566c8b528c99510398f"
+      },
+      "returncode": 0,
+      "timed_out": true
+    },
+    "v2_a-0100-k8": {
+      "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v2\\a-0100-k8",
+      "file_hashes": {
+        "bond_correlations.csv": "6f946be6a20ad724a56639e108ce82e4bcbb6d0b54a8f8fee29cf10cf92f9f18",
+        "metrics.csv": "7bd5f7cdbde92268f8646df2549c6ada5a76e8d92c1a65c7b4672222aa2e5026",
+        "schmidt_spectrum.csv": "7b851a3ed1e724c4c5a3b0e395e7d275ee5466794d9e66eb1ae1fe1d50f5900c",
+        "stderr.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "stdout.log": "37fc5fd6965dcc71600f116b2f80d2789bbc60d173eb3d90d7ffbfdf8a64933a",
+        "string_profile.csv": "57601b98e06cb97fd25477283b6f1e6ab1fa3aeb454ce80b6b17119e946871a9",
+        "structure_factor_fullq.csv": "421e5fe109cefa561837a2e49a3f14b8d86894ab592f5d17ec85e0b7757e3670",
+        "sweep_history_sz0.csv": "2e102d205d8e6449fbe94ba86d1c83f6a5995ffb9f618cfd07b58e7210a5b05b",
+        "sweep_history_sz1.csv": "fc48fe28be2e3969dbe4ba390c405ff8b72f925602c9febd35806d2f5c7c2cf0",
+        "wrapper_run.json": "3f014d17af62098a4c3dbe0aae1a84a4d4efb7a1178df61265a11431d547adb1"
+      },
+      "returncode": 0,
+      "timed_out": false
+    }
+  },
+  "preflight_no_active_julia": {
+    "command": [
+      "tasklist",
+      "/FI",
+      "IMAGENAME eq julia.exe",
+      "/FO",
+      "CSV",
+      "/NH"
+    ],
+    "returncode": 1,
+    "stdout": "",
+    "stderr": "ERROR: Access denied\n\n",
+    "active": []
+  },
+  "wall_budget": {
+    "case_budget_seconds": 240.0,
+    "cleanup_grace_seconds": 5.0,
+    "per_case": "remaining_budget_only",
+    "reason": "v1 首点约85.734 s且v2冷启动约84.094 s，原180 s不足以完成四个冷启动；仅补跑 .175 两点。"
+  },
+  "commands": [
+    {
+      "cell_id": "a-0175-k3",
+      "argv": [
+        "D:/program/Julia-1.11.5/bin/julia.exe",
+        "--startup-file=no",
+        "--threads=2",
+        "--project=.",
+        "scripts/autoresearch_v5/negative_static_cell.jl",
+        "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v3\\a-0175-k3",
+        "-0.175",
+        "0.25",
+        "2",
+        "64",
+        "16",
+        "1e-11",
+        "center",
+        "0",
+        "8",
+        "401",
+        "0",
+        "legacy",
+        "20260811",
+        "0",
+        "3"
+      ],
+      "command": "D:/program/Julia-1.11.5/bin/julia.exe --startup-file=no --threads=2 --project=. scripts/autoresearch_v5/negative_static_cell.jl D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v3\\a-0175-k3 -0.175 0.25 2 64 16 1e-11 center 0 8 401 0 legacy 20260811 0 3",
+      "cwd": "D:\\Project\\1x5_Heisenberg_Pentamer"
+    },
+    {
+      "cell_id": "a-0175-k8",
+      "argv": [
+        "D:/program/Julia-1.11.5/bin/julia.exe",
+        "--startup-file=no",
+        "--threads=2",
+        "--project=.",
+        "scripts/autoresearch_v5/negative_static_cell.jl",
+        "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v3\\a-0175-k8",
+        "-0.175",
+        "0.25",
+        "2",
+        "64",
+        "16",
+        "1e-11",
+        "center",
+        "0",
+        "8",
+        "401",
+        "0",
+        "legacy",
+        "20260811",
+        "0",
+        "8"
+      ],
+      "command": "D:/program/Julia-1.11.5/bin/julia.exe --startup-file=no --threads=2 --project=. scripts/autoresearch_v5/negative_static_cell.jl D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v3\\a-0175-k8 -0.175 0.25 2 64 16 1e-11 center 0 8 401 0 legacy 20260811 0 8",
+      "cwd": "D:\\Project\\1x5_Heisenberg_Pentamer"
+    }
+  ],
+  "reference_commands": {
+    "v1_a-0100-k3": "D:/program/Julia-1.11.5/bin/julia.exe --startup-file=no --threads=2 --project=. scripts/autoresearch_v5/negative_static_cell.jl D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v1\\a-0100-k3 -0.1 0.25 2 64 16 1e-11 center 0 8 401 0 legacy 20260811 0 3",
+    "v2_a-0100-k8": "D:/program/Julia-1.11.5/bin/julia.exe --startup-file=no --threads=2 --project=. scripts/autoresearch_v5/negative_static_cell.jl D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_smoke_v2\\a-0100-k8 -0.1 0.25 2 64 16 1e-11 center 0 8 401 0 legacy 20260811 0 8"
+  },
+  "ed_reference": [
+    {
+      "alpha": -0.175,
+      "beta": 0.25,
+      "target_sz": 0,
+      "n_up": 5,
+      "dimension": 252,
+      "energy": -2.2741417761740936,
+      "residual_ed": 2.3926453824716266e-15,
+      "norm_ed": 1.0000000000000002,
+      "total_sz_ed": 0.0
+    },
+    {
+      "alpha": -0.175,
+      "beta": 0.25,
+      "target_sz": 1,
+      "n_up": 6,
+      "dimension": 210,
+      "energy": -2.271064707912346,
+      "residual_ed": 1.6119523265639661e-15,
+      "norm_ed": 0.9999999999999996,
+      "total_sz_ed": 1.0
+    },
+    {
+      "alpha": -0.1,
+      "beta": 0.25,
+      "target_sz": 0,
+      "n_up": 5,
+      "dimension": 252,
+      "energy": -2.2315800339427208,
+      "residual_ed": 2.5114342573251213e-15,
+      "norm_ed": 0.9999999999999998,
+      "total_sz_ed": 0.0
+    },
+    {
+      "alpha": -0.1,
+      "beta": 0.25,
+      "target_sz": 1,
+      "n_up": 6,
+      "dimension": 210,
+      "energy": -2.230215544570033,
+      "residual_ed": 1.6485279597711457e-15,
+      "norm_ed": 0.9999999999999999,
+      "total_sz_ed": 1.0
+    }
+  ],
+  "started_at": "2026-09-19T12:34:28.516629+00:00",
+  "host": "Windows-11-10.0.26100-SP0",
+  "python_version": "3.12.6"
+}

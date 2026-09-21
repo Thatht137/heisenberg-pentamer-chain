@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-09-20T21:03:32+08:00",
+  "asset_count": 42,
+  "missing": [],
+  "assets": {
+    "7188fca4ffe8_paper_fig1_model_local_multiplets_20260804.png": {
+      "source": "figures\\paper_fig1_model_local_multiplets_20260804.png",
+      "staged": "results\\research_progress\\assets\\7188fca4ffe8_paper_fig1_model_local_multiplets_20260804.png",
+      "sha256": "7188fca4ffe8f5e2f65a89bd0f83f3307386692d9b192d2032a9d5942523d9e3",
+      "bytes": 128563
+    },
+    "b3c86ff2cb55_paper_fig2_level_flow_qpi_filter_20260804.png": {
+      "source": "figures\\paper_fig2_level_flow_qpi_filter_20260804.png",
+      "staged": "results\\research_progress\\assets\\b3c86ff2cb55_paper_fig2_level_flow_qpi_filter_20260804.png",
+      "sha256": "b3c86ff2cb5539ebdf513c89f93ec3d62a56f868c0dab31707aebaefa0781a7c",
+      "bytes": 212248
+    },
+    "ec289aec3bf4_paper_fig3_positive_groundstate_diagnostics_20260804.png": {
+      "source": "figures\\paper_fig3_positive_groundstate_diagnostics_20260804.png",
+      "staged": "results\\research_progress\\assets\\ec289aec3bf4_paper_fig3_positive_groundstate_diagnostics_20260804.png",
+      "sha256": "ec289aec3bf422f7ca82e3439491387b499f826842650654ab619cf033a0efb0",
+      "bytes": 312916
+    },
+    "5bd5f9a702eb_paper_fig4_entanglement_spectrum_20260804.png": {
+      "source": "figures\\paper_fig4_entanglement_spectrum_20260804.png",
+      "staged": "results\\research_progress\\assets\\5bd5f9a702eb_paper_fig4_entanglement_spectrum_20260804.png",
+      "sha256": "5bd5f9a702eb05f8583bf5ad5acf586698c6472e0207c28642577a66fa07cb62",
+      "bytes": 162866
+    },
+    "0c3ad00c2333_paper_fig5_effective_chain_selection_rules_20260804.png": {
+      "source": "figures\\paper_fig5_effective_chain_selection_rules_20260804.png",
+      "staged": "results\\research_progress\\assets\\0c3ad00c2333_paper_fig5_effective_chain_selection_rules_20260804.png",
+      "sha256": "0c3ad00c2333695038360ec49e7d62dc2a2d3a9e1beeded899ef0f24be1527dd",
+      "bytes": 355013
+    },
+    "f0d2c452d669_paper_fig8_bounded_cv_tebd_20260805.png": {
+      "source": "figures\\paper_fig8_bounded_cv_tebd_20260805.png",
+      "staged": "results\\research_progress\\assets\\f0d2c452d669_paper_fig8_bounded_cv_tebd_20260805.png",
+      "sha256": "f0d2c452d669a6327da006b824a765d5b0f633075a02e8e8e0d0a6ee3ad44fe0",
+      "bytes": 136468
+    },
+    "f0aad146018e_negative_alpha_saved_state_independent_diagnostics.png": {
+      "source": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_analysis_20260914_v3\\negative_alpha_saved_state_independent_diagnostics.png",
+      "staged": "results\\research_progress\\assets\\f0aad146018e_negative_alpha_saved_state_independent_diagnostics.png",
+      "sha256": "f0aad146018e198960174333ad77f4cfc7e8f25c642d07d8e6a21c11fba35826",
+      "bytes": 270558
+    },
+    "9d6ad9c96950_negative_alpha_independent_diagnostics.png": {
+      "source": "results\\autoresearch_v5_20260913\\negative_phase_independent_audit_v6\\negative_alpha_independent_diagnostics.png",
+      "staged": "results\\research_progress\\assets\\9d6ad9c96950_negative_alpha_independent_diagnostics.png",
+      "sha256": "9d6ad9c969505f5c51c50bc59a943a2b1c50d204625c919f4f18926ddfcec98a",
+      "bytes": 922138
+    },
+    "2a8ba9e2bbce_negative_alpha_finite_size_scaling.png": {
+      "source": "results\\autoresearch_v5_20260913\\negative_phase_independent_audit_v6\\negative_alpha_finite_size_scaling.png",
+      "staged": "results\\research_progress\\assets\\2a8ba9e2bbce_negative_alpha_finite_size_scaling.png",
+      "sha256": "2a8ba9e2bbce742b3266bd1f42654a5b874ffafbed32e55ebdfc4ecd127ef597",
+      "bytes": 197800
+    },
+    "c63e813bd8da_negative_alpha_quartet_projection.png": {
+      "source": "results\\autoresearch_v5_20260913\\negative_phase_independent_audit_v6\\negative_alpha_quartet_projection.png",
+      "staged": "results\\research_progress\\assets\\c63e813bd8da_negative_alpha_quartet_projection.png",
+      "sha256": "c63e813bd8da826ed4fe57055ada986d4c8c33f80352f1ca04119997aa65c2f0",
+      "bytes": 207250
+    },
+    "bad14b56f2b0_negative_alpha_crossover_summary.png": {
+      "source": "figures\\negative_practical_v2_crossover_20260913\\negative_alpha_crossover_summary.png",
+      "staged": "results\\research_progress\\assets\\bad14b56f2b0_negative_alpha_crossover_summary.png",
+      "sha256": "bad14b56f2b01cc0e3609c37b43d996890b13ef207fcf491857b43882ddb80a9",
+      "bytes": 302823
+    },
+    "7275192f6233_full_alpha_phase_evidence_20260811.png": {
+      "source": "figures\\full_alpha_phase_evidence_20260811.png",
+      "staged": "results\\research_progress\\assets\\7275192f6233_full_alpha_phase_evidence_20260811.png",
+      "sha256": "7275192f6233ecfdfe60d59df85a811e952f35cce0bb21b84eae2ac47d927e14",
+      "bytes": 423835
+    },
+    "3f959f4c0cc9_full_alpha_tentative_phase_diagram_20260811.png": {
+      "source": "figures\\full_alpha_tentative_phase_diagram_20260811.png",
+      "staged": "results\\research_progress\\assets\\3f959f4c0cc9_full_alpha_tentative_phase_diagram_20260811.png",
+      "sha256": "3f959f4c0cc92882ac58102feca90f62a13eb114de047429110e7b3fa78e5a22",
+      "bytes": 229497
+    },
+    "066657c77fb7_full_alpha_working_phase_diagram_20260812.png": {
+      "source": "figures\\full_alpha_working_phase_diagram_20260812.png",
+      "staged": "results\\research_progress\\assets\\066657c77fb7_full_alpha_working_phase_diagram_20260812.png",
+      "sha256": "066657c77fb7aa35f6adea6337488db59391078d3f38378bde1d63bbdf2215c6",
+      "bytes": 282797
+    },
+    "f73385a635e3_round43_fig8_final_20260806_v2.png": {
+      "source": "figures\\round43_fig8_final_20260806_v2.png",
+      "staged": "results\\research_progress\\assets\\f73385a635e3_round43_fig8_final_20260806_v2.png",
+      "sha256": "f73385a635e37ceebc54c575dfbaef72534f663c8d67cb2af55af0ffed1f7fc4",
+      "bytes": 150973
+    },
+    "ca923a5ea4f6_cv_tebd_gate_coverage_20260804.png": {
+      "source": "figures\\cv_tebd_gate_coverage_20260804.png",
+      "staged": "results\\research_progress\\assets\\ca923a5ea4f6_cv_tebd_gate_coverage_20260804.png",
+      "sha256": "ca923a5ea4f63f4dccbe3086344c0a19ebee3775e72910c18015464d5874ec50",
+      "bytes": 218434
+    },
+    "2bc2894a8d0a_round31_cv_progress_20260804.png": {
+      "source": "figures\\round31_cv_progress_20260804.png",
+      "staged": "results\\research_progress\\assets\\2bc2894a8d0a_round31_cv_progress_20260804.png",
+      "sha256": "2bc2894a8d0afd5dca2d8ea313983bb359781e7c604bdfbc58f979edb3207c42",
+      "bytes": 329490
+    },
+    "1b0e28226e28_c11_candidate_trends_20260804.png": {
+      "source": "figures\\c11_candidate_trends_20260804.png",
+      "staged": "results\\research_progress\\assets\\1b0e28226e28_c11_candidate_trends_20260804.png",
+      "sha256": "1b0e28226e2837797ab1c17d4d82116b8b8574c7ea47fa6a3ca68495bdd47be3",
+      "bytes": 261112
+    },
+    "f9ba38fd6a53_positive_phase_guard_margin_20260804.png": {
+      "source": "figures\\positive_phase_guard_margin_20260804.png",
+      "staged": "results\\research_progress\\assets\\f9ba38fd6a53_positive_phase_guard_margin_20260804.png",
+      "sha256": "f9ba38fd6a53b2ebff16c6c30ad2f886d5ba846fba09d81b464ee88ed3a26135",
+      "bytes": 276569
+    },
+    "d883a427064e_reference_aligned_fig7_pilot_quantitative_20260804.png": {
+      "source": "figures\\reference_aligned_fig7_pilot_quantitative_20260804.png",
+      "staged": "results\\research_progress\\assets\\d883a427064e_reference_aligned_fig7_pilot_quantitative_20260804.png",
+      "sha256": "d883a427064ea5f863ecb388c61a7e0c789afc07b29de3177f60c6d77b22869e",
+      "bytes": 325965
+    },
+    "039b45dbb05a_qpi_tebd_local_reanalysis_20260804.png": {
+      "source": "figures\\qpi_tebd_local_reanalysis_20260804.png",
+      "staged": "results\\research_progress\\assets\\039b45dbb05a_qpi_tebd_local_reanalysis_20260804.png",
+      "sha256": "039b45dbb05a5512dfb32ad460a26fb764aee01cabc8988d7536b0153768fd17",
+      "bytes": 207734
+    },
+    "2c9531efefcc_qpi_cv_extension_residual_cost_diagnostic_20260804.png": {
+      "source": "figures\\qpi_cv_extension_residual_cost_diagnostic_20260804.png",
+      "staged": "results\\research_progress\\assets\\2c9531efefcc_qpi_cv_extension_residual_cost_diagnostic_20260804.png",
+      "sha256": "2c9531efefccc0029a2df453e5890c6012e9db2a2f42580a533137dbc24c7725",
+      "bytes": 217176
+    },
+    "8e6eee5ad0c0_cv_anchor_size_comparison_20260804.png": {
+      "source": "figures\\cv_anchor_size_comparison_20260804.png",
+      "staged": "results\\research_progress\\assets\\8e6eee5ad0c0_cv_anchor_size_comparison_20260804.png",
+      "sha256": "8e6eee5ad0c03f1f07f35baf74d0218de2ebe810c9297f6ba12e79156f6f6208",
+      "bytes": 240318
+    },
+    "cb6fe6d4be58_positive_phase_delta_summary_20260804.png": {
+      "source": "figures\\positive_phase_delta_summary_20260804.png",
+      "staged": "results\\research_progress\\assets\\cb6fe6d4be58_positive_phase_delta_summary_20260804.png",
+      "sha256": "cb6fe6d4be5819c7d5e4b183a3460ee537574a6d8a6c38ce0a920e0d0ae6151d",
+      "bytes": 479552
+    },
+    "40e5f8f50164_reference_aligned_fig7_positive_alpha_pilot_20260804.png": {
+      "source": "figures\\reference_aligned_fig7_positive_alpha_pilot_20260804.png",
+      "staged": "results\\research_progress\\assets\\40e5f8f50164_reference_aligned_fig7_positive_alpha_pilot_20260804.png",
+      "sha256": "40e5f8f5016466daa70933710cbeb65434fabb45708170ea148b99cb6dfe2bde",
+      "bytes": 227715
+    },
+    "16a45ff306a2_reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.png": {
+      "source": "figures\\reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.png",
+      "staged": "results\\research_progress\\assets\\16a45ff306a2_reference_aligned_fig6_alpha1_beta_scan_exploratory_20260803.png",
+      "sha256": "16a45ff306a2856a5b409b5d85b46ebf15b976b64c5d783761c3b49e4823dbd1",
+      "bytes": 391202
+    },
+    "efb024abf79a_qpi_tebd_maxdim96_production_20260803.png": {
+      "source": "figures\\qpi_tebd_maxdim96_production_20260803.png",
+      "staged": "results\\research_progress\\assets\\efb024abf79a_qpi_tebd_maxdim96_production_20260803.png",
+      "sha256": "efb024abf79a4ca513db9df639e7a51f90e12b88ad096dcfe823e231f4b8fff7",
+      "bytes": 235629
+    },
+    "78d85abd9ecd_reference_aligned_fig4_pentamer_positive_20260803.png": {
+      "source": "figures\\reference_aligned_fig4_pentamer_positive_20260803.png",
+      "staged": "results\\research_progress\\assets\\78d85abd9ecd_reference_aligned_fig4_pentamer_positive_20260803.png",
+      "sha256": "78d85abd9ecd7c105da40940dfd0e01d5f3fc02af9feea5f6dc13cb3ddd570d6",
+      "bytes": 200507
+    },
+    "ae0ff9163273_pentamer_model_effective_chain_20260731.png": {
+      "source": "figures\\pentamer_model_effective_chain_20260731.png",
+      "staged": "results\\research_progress\\assets\\ae0ff9163273_pentamer_model_effective_chain_20260731.png",
+      "sha256": "ae0ff91632730efac9260da02a98dafbec1d3089a91f1e3a2a465a64eb5e0ce3",
+      "bytes": 308994
+    },
+    "198bc4d8a440_pentamer_momentum_filter_20260731.png": {
+      "source": "figures\\pentamer_momentum_filter_20260731.png",
+      "staged": "results\\research_progress\\assets\\198bc4d8a440_pentamer_momentum_filter_20260731.png",
+      "sha256": "198bc4d8a4404de00e8f7962a367039b8a5e2793c2475ccf3297340ee4f438d4",
+      "bytes": 377019
+    },
+    "8b235df507ff_reference_aligned_fig1_pentamer_20260803.png": {
+      "source": "figures\\reference_aligned_fig1_pentamer_20260803.png",
+      "staged": "results\\research_progress\\assets\\8b235df507ff_reference_aligned_fig1_pentamer_20260803.png",
+      "sha256": "8b235df507ff2fda8e5e1933195c4548cf857a982922da5a7f00214a7c7d19b6",
+      "bytes": 205745
+    },
+    "a3ad76f84602_reference_aligned_fig2_pentamer_positive_20260803.png": {
+      "source": "figures\\reference_aligned_fig2_pentamer_positive_20260803.png",
+      "staged": "results\\research_progress\\assets\\a3ad76f84602_reference_aligned_fig2_pentamer_positive_20260803.png",
+      "sha256": "a3ad76f84602d068f6a101dc4504cb0cad78d45034e0d5589918eebc5061ed53",
+      "bytes": 269775
+    },
+    "c0d6b75c4466_reference_aligned_fig3_pentamer_positive_20260803.png": {
+      "source": "figures\\reference_aligned_fig3_pentamer_positive_20260803.png",
+      "staged": "results\\research_progress\\assets\\c0d6b75c4466_reference_aligned_fig3_pentamer_positive_20260803.png",
+      "sha256": "c0d6b75c446665e0eb9887fbe614089563f1e41f08f69bfe358f78c8e3004d60",
+      "bytes": 405032
+    },
+    "e5c8d01e45b5_qpi_tebd_production_20260803.png": {
+      "source": "figures\\qpi_tebd_production_20260803.png",
+      "staged": "results\\research_progress\\assets\\e5c8d01e45b5_qpi_tebd_production_20260803.png",
+      "sha256": "e5c8d01e45b5be920ca1bab8a17028459e4ed2e33f0bb1dc11d778007e224f21",
+      "bytes": 209446
+    },
+    "570281e40852_qpi_tebd_ed_diagnostic_20260803.png": {
+      "source": "figures\\qpi_tebd_ed_diagnostic_20260803.png",
+      "staged": "results\\research_progress\\assets\\570281e40852_qpi_tebd_ed_diagnostic_20260803.png",
+      "sha256": "570281e4085215cc8c21c1ab313699b5e25284ae3aeebec3b71453aa5f1231a8",
+      "bytes": 192976
+    },
+    "fbcc726bec8e_anchor_heartbeat_20260803.png": {
+      "source": "figures\\anchor_heartbeat_20260803.png",
+      "staged": "results\\research_progress\\assets\\fbcc726bec8e_anchor_heartbeat_20260803.png",
+      "sha256": "fbcc726bec8e10c389014b6722d4d35454b4e65e16ca164a3bb7b8fc725cdd7a",
+      "bytes": 86060
+    },
+    "5477dacd2bde_positive_region_evidence_20260803.png": {
+      "source": "figures\\positive_region_evidence_20260803.png",
+      "staged": "results\\research_progress\\assets\\5477dacd2bde_positive_region_evidence_20260803.png",
+      "sha256": "5477dacd2bde85078f6cc4ecc22a116f02db37e83b63aec1086d35615a429a77",
+      "bytes": 613988
+    },
+    "0c64bfcdf518_cv_triplet_cost_quality_20260803.png": {
+      "source": "figures\\cv_triplet_cost_quality_20260803.png",
+      "staged": "results\\research_progress\\assets\\0c64bfcdf518_cv_triplet_cost_quality_20260803.png",
+      "sha256": "0c64bfcdf518bbc2bed5c5768acdfffecc28de420ae9fe09a9db09d04c38a230",
+      "bytes": 342191
+    },
+    "202c6dbe676a_cv_continuum_overlay_20260803.png": {
+      "source": "figures\\cv_continuum_overlay_20260803.png",
+      "staged": "results\\research_progress\\assets\\202c6dbe676a_cv_continuum_overlay_20260803.png",
+      "sha256": "202c6dbe676a5c6456b8683e8e36f8a2b5f2fb13d12eaa5e6b1c8456dec2d0d2",
+      "bytes": 309155
+    },
+    "151438d7dc28_positive_tebd_pilot_audit_20260803.png": {
+      "source": "figures\\positive_tebd_pilot_audit_20260803.png",
+      "staged": "results\\research_progress\\assets\\151438d7dc28_positive_tebd_pilot_audit_20260803.png",
+      "sha256": "151438d7dc28020dc6a3ff85cb451640ee51fddc7ed9bc02ff2c04239ba7bc4c",
+      "bytes": 482366
+    },
+    "48530c7b5616_effective_continuum_overlap_20260730.png": {
+      "source": "figures\\effective_continuum_overlap_20260730.png",
+      "staged": "results\\research_progress\\assets\\48530c7b5616_effective_continuum_overlap_20260730.png",
+      "sha256": "48530c7b5616adcd34ee9f3c99d11137025737017eba666c133eb6dc7358bfe7",
+      "bytes": 371129
+    },
+    "9b3a7d342bae_negative_size_joint_evidence.png": {
+      "source": "results\\autoresearch_v5_20260919\\closeout_stage1_joint_v2\\negative_size_joint_evidence.png",
+      "staged": "results\\research_progress\\assets\\9b3a7d342bae_negative_size_joint_evidence.png",
+      "sha256": "9b3a7d342bae2d8535204e7bce1252fd61db685c24d58b6a39784524d73a51fd",
+      "bytes": 191807
+    }
+  }
+}

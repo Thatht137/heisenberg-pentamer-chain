@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "target": "/home/wangjieren/code/1x5_Heisenberg_Pentamer",
+  "mode": "offline_upload_only",
+  "negative_alpha_excluded": true,
+  "remote_git_pull": false,
+  "files": [
+    {
+      "path": "Project.toml",
+      "sha256": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "bytes": 634
+    },
+    {
+      "path": "Manifest.toml",
+      "sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "bytes": 30279
+    },
+    {
+      "path": "docs/pentamer_reproduction_standard.md",
+      "sha256": "9fb6b1a1f07242be9ada456acc1f8064e3350e93aa410e89a7745e5acded2011",
+      "bytes": 21723
+    },
+    {
+      "path": "src/PentamerChain.jl",
+      "sha256": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "bytes": 782
+    },
+    {
+      "path": "src/hamiltonian.jl",
+      "sha256": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "bytes": 2775
+    },
+    {
+      "path": "src/order_parameters.jl",
+      "sha256": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "bytes": 7444
+    },
+    {
+      "path": "scripts/autoresearch_v5/positive_static_cell.jl",
+      "sha256": "adfc07488e8084b72cc68412cb2f8babdccba7b8430d39629e22fcb9f887d6ed",
+      "bytes": 12526
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_positive_static_cell.py",
+      "sha256": "ce38bfe1952d8acfc5a83335f1da1a1aba76147542b5118db9f5f329af38d188",
+      "bytes": 12218
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_phase_structure_ratio_cell.py",
+      "sha256": "687e7628d798f0a859c99831359362d0017f7e34605cb525244af7823b2e853a",
+      "bytes": 8394
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_phase_structure_batch.py",
+      "sha256": "5eb9ac447b13607e0328c55e725f0e6c976e637eac6df44ad4d4a27f1351cb28",
+      "bytes": 6880
+    },
+    {
+      "path": "scripts/autoresearch_v5/launch_phase_batch_remote.sh",
+      "sha256": "2034298d003529bd08c3bf879ef98c0c058286941fc0c0fafcb7a638f3adb35f",
+      "bytes": 1562
+    },
+    {
+      "path": "results/autoresearch_v5_20260731/round17_phase_diagram_positive/parameter-scan.run_spec.json",
+      "sha256": "06294329f74d18b706d3b5171a56e66b642a253d25a81a7f3847af43403504c1",
+      "bytes": 7123
+    }
+  ],
+  "post_upload": [
+    "远端逐文件 sha256sum 对照",
+    "Julia 1.12.3 离线 smoke",
+    "先运行 --dry-run，再提交单个重任务",
+    "每个 cell 回传并校验后再继续"
+  ]
+}

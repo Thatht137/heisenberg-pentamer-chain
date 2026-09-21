@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-03T09:33:40+08:00",
+  "run_dir": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260802/round22_cv_l80_anchor/cell-0003-L80-qpi-w025",
+  "status_file": "running",
+  "diagnosis": "active_compute_not_stuck",
+  "evidence": {
+    "julia_pid": 3745217,
+    "process_state": "R",
+    "wchan": "0",
+    "process_cpu_percent": 1631,
+    "main_thread_cpu_percent": 96.9,
+    "threads": 57,
+    "vmrss_kib": 5178540,
+    "read_bytes": 0,
+    "write_bytes": 22159360,
+    "stderr_bytes": 0,
+    "points_files": 0,
+    "stdout_last_change": "2026-08-02T20:56:06+08:00",
+    "last_sweep": 16,
+    "energy": -22.487137396523156,
+    "code_sha256": {
+      "scripts/autoresearch_v5/cv_dsf_resumable.jl": "bf1a848d271738821286827a69b601c85d12e99dee3c2a9adea2c1e720bb272e",
+      "scripts/autoresearch_v5/run_cv_dsf_resumable.py": "6de1386b5692462c3cea1731354c8409a0979de529d616ede0ee5e139837e3e1"
+    },
+    "run_config_code_hash_matches": true
+  },
+  "cost_reference": {
+    "l40_omega025_seconds": 3595.18856096,
+    "l40_omega030_seconds": 4642.15426993,
+    "l40_omega035_seconds": 6048.43292809,
+    "prior_l80_single_point_estimate_hours": 11.84,
+    "elapsed_hours_at_diagnostic": 12.66
+  },
+  "estimate": {
+    "likely_remaining_hours": [1.0, 8.0],
+    "conservative_remaining_hours": [1.0, 12.0],
+    "confidence": "low_to_medium",
+    "basis": "L=80 correction-vector solve has no intermediate progress counter; estimate uses prior L=40 solve times and the earlier L=80 cost probe, while active CPU proves forward progress but not completion percentage."
+  },
+  "action": {
+    "code_modified": false,
+    "do_not_cancel": true,
+    "do_not_launch_parallel_heavy_job": true,
+    "next_after_terminal": "回传独立目录，运行 validate_cv_run.py；通过后再由 supervisor 启动 TEBD。"
+  }
+}

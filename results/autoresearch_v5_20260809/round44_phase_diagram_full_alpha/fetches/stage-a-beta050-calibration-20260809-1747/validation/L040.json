@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "fail",
+  "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-20260809-1747\\cells\\nega-a1000-b0500-L040",
+  "run_spec": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\stage-a-beta050-calibration\\parameter-scan.run_spec.json",
+  "cell_id": "nega-a1000-b0500-L040",
+  "checks": {
+    "unique_run_spec_cell": true,
+    "terminal_acceptance": true,
+    "negative_alpha_range": true,
+    "beta_range": true,
+    "parent_checksums": true,
+    "children": true
+  },
+  "failures": [
+    "子 manifest center: full-q 将换行写成字面 \\n，记录不可解析",
+    "子 manifest ferro_j2: full-q 将换行写成字面 \\n，记录不可解析"
+  ]
+}

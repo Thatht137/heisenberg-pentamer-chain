@@ -1,0 +1,14 @@
+{
+  "checked_at": "2026-08-04T00:09:54+08:00",
+  "host": "39.96.207.180",
+  "port": 6000,
+  "result": "connection_refused",
+  "remote_state": "unobservable",
+  "last_authoritative_state": "2026-08-03T23:23:46+08:00: cell 1/5, running, manifest absent",
+  "action": "no_restart_no_cancel_no_parallel_julia_no_download",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

@@ -1,0 +1,689 @@
+{
+  "schema_version": 1,
+  "gate": "static_krylov_k12_finalize",
+  "inputs": {
+    "k12_cell_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+    "k12_run_spec": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_r1\\parameter-scan.run_spec.json",
+    "k8_cell_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08"
+  },
+  "validator": {
+    "schema_version": 1,
+    "status": "pass",
+    "acceptance_label": "accepted_under_practical_v2_k12",
+    "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+    "run_spec": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_r1\\parameter-scan.run_spec.json",
+    "cell_id": "negdiag-a01000-b02500-L080-k12",
+    "krylov_contract": {
+      "expected": 12,
+      "observed": {
+        "expected_krylovdim": 12,
+        "run_spec": 12,
+        "parent": 12,
+        "children": {
+          "center": 12,
+          "ferro_j2": 12
+        }
+      }
+    },
+    "practical_v2": {
+      "schema_version": 2,
+      "status": "pass",
+      "acceptance_label": "accepted_under_practical_v2",
+      "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "cell_id": "negdiag-a01000-b02500-L080-k12",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "settings": {
+        "nsweeps": 64,
+        "maxdim": 1200,
+        "q_count": 401
+      },
+      "thresholds": {
+        "variance_per_site_max": 5e-08,
+        "final_truncation_error_max": 1e-09,
+        "sector_tolerance": 1e-08,
+        "spin_gap_min": -1e-08
+      },
+      "legacy_parent_accepted": true,
+      "legacy_parent_status": "success",
+      "children": [
+        {
+          "mode": "center",
+          "variance_per_site_sz0": 1.8680879065868793e-11,
+          "final_truncation_error_sz0": 9.990012367370628e-12,
+          "variance_per_site_sz1": 1.872990651463624e-11,
+          "final_truncation_error_sz1": 9.998241606873682e-12,
+          "total_sz0": 9.124279141888318e-16,
+          "total_sz1": 1.0000000000000089,
+          "spin_gap": 7.277204700173456e-05
+        },
+        {
+          "mode": "ferro_j2",
+          "variance_per_site_sz0": 1.8633983245308627e-11,
+          "final_truncation_error_sz0": 9.957043131265493e-12,
+          "variance_per_site_sz1": 1.872990651463624e-11,
+          "final_truncation_error_sz1": 9.998241606873682e-12,
+          "total_sz0": 2.5543116028280024e-15,
+          "total_sz1": 1.0000000000000089,
+          "spin_gap": 7.277205179789803e-05
+        }
+      ],
+      "failures": [],
+      "provenance": {
+        "policy": "docs/negative_alpha_practical_convergence_standard_20260829.md",
+        "original_manifest_sha256": "2ab238b71b79acace851b6ba1a8d6ed451d11ea0351da14895f14b5682c8e6c1",
+        "original_run_spec_sha256": "0b21ac0972ed935ab4c5d824af717ee155d57d83e24c1febf25598ce920b0709",
+        "original_files_unchanged": true
+      }
+    },
+    "failures": []
+  },
+  "comparison_file": "comparison.json",
+  "failures": [],
+  "physical_stability_conclusion": "not_generated",
+  "status": "audit_only",
+  "audit_only": true,
+  "claim": "none",
+  "gate_status": "pass",
+  "input_sha256": [
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "checksums.sha256",
+      "bytes": 606,
+      "sha256": "3f6fca0054e80bc7219dbc5193d217d5073caa90847709a73154ec79a54e0bd3"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "manifest.json",
+      "bytes": 3762,
+      "sha256": "2ab238b71b79acace851b6ba1a8d6ed451d11ea0351da14895f14b5682c8e6c1"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "progress.json",
+      "bytes": 1708,
+      "sha256": "c5d3d3624104caf47cece8355ab9cd1602d6ee8833b4f3f74f35ab74c102a22a"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "runner_center.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "runner_center.stdout.log",
+      "bytes": 3936,
+      "sha256": "21a142fd7f36e758c7e02866ff0b9197b32f64aa3238a96081ad1d521fff88b3"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "runner_ferro_j2.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "runner_ferro_j2.stdout.log",
+      "bytes": 3949,
+      "sha256": "26629cd02dc1cdfaef06783503600fbe520469ae10eea9adfb7d5080c6b3dbe7"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\bond_bond_connected.csv",
+      "bytes": 1091,
+      "sha256": "1e75addea753fec7da19cdcc4cc4f20be3e8825268c71752fef759e822fbd159"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\bond_correlations.csv",
+      "bytes": 2756,
+      "sha256": "1846d605bc32dedb0a2647e116104ded96b018a3ea7899651ecba60fde4d7255"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\checksums.sha256",
+      "bytes": 1340,
+      "sha256": "afcaab4595930844e56ad1dafb09357db6372a2b961db73901eb5ec80fce087b"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\entropy_profile_full.csv",
+      "bytes": 4054,
+      "sha256": "3dacc6f47aacc6fc033cfd4c71404b70fa56f1aedefd8213bb8c7ded74d603ca"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\manifest.json",
+      "bytes": 4420,
+      "sha256": "010d3a256dfa2c0acfe4fece047b128828842033e62ac478dace88f1347f02ff"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\metrics.csv",
+      "bytes": 1823,
+      "sha256": "e68c6c97be7a20871137fac2d9d62e418a054bed5e1e2917cb79f717212a7dd8"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\progress.json",
+      "bytes": 540,
+      "sha256": "dd9121baecb1bce3e730d6b07091c361e5d38050f99f4fdbc01b6ce28fe352a8"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\resource.log",
+      "bytes": 1222,
+      "sha256": "91a5b43df3f609c35ead3e7e6925a0d896a92f05a8c1daa6cd12f5985ba738b9"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\schmidt_spectrum.csv",
+      "bytes": 4691,
+      "sha256": "1c3b31428b5fb02d7972e183d2705d3a5f609ae84ba57781a55d9aa3a29cc79e"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\state_sz0.jld2",
+      "bytes": 6353831,
+      "sha256": "6c050afc412833c3e10497563203621579f3071b1f84f878a82d21dcb5d5d7dc"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\status.json",
+      "bytes": 170,
+      "sha256": "263983f0b02695303189c797a81d80a888014d901e85e2caa9ba60c1060d492c"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\stdout.log",
+      "bytes": 11081,
+      "sha256": "f617da4d5e0d37773ff0152fdc91c1ea96636425cb85b701d6d205e3282cb298"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\string_profile.csv",
+      "bytes": 702,
+      "sha256": "c39da3f6416e6902bfd88f01718e22cb87f3f0663cf98be086c5fbe52b691ded"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\structure_factor_fullq.csv",
+      "bytes": 28900,
+      "sha256": "773e2965a63f7798f6da0dc6cdb955c300a31ccdb605ff76d2692f41aac55a73"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\sweep_history_sz0.csv",
+      "bytes": 3225,
+      "sha256": "d3b6083c52281e78eda8f56b141f10dc71befb148c24a56fb4452ffcc35877af"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_center\\sweep_history_sz1.csv",
+      "bytes": 3225,
+      "sha256": "70bc3dcd7a5c0d81b8ccbd718ae2e20cee7980e077ba77e0ee07a250b6fa8941"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\bond_bond_connected.csv",
+      "bytes": 1091,
+      "sha256": "84eb8735b91ed42be1a9ad0858d0fb015fdc06a84b24acfbef2465900e0ff3bf"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\bond_correlations.csv",
+      "bytes": 2756,
+      "sha256": "413e74c2278fc2a3cd35f425bfc7d4c09585f9e2495a4f667a6944ba92dc64fe"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\checksums.sha256",
+      "bytes": 1340,
+      "sha256": "4ead41c2a6373bcb4f95d8be5f17e8a398934bb8f071fbd999b966c5741aa98e"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\entropy_profile_full.csv",
+      "bytes": 4054,
+      "sha256": "f58200f0f10703a85440d3f0ac0169cd2e8521af0852823ab1b6eb0de4237b36"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\manifest.json",
+      "bytes": 4433,
+      "sha256": "86a9cf87dbfa885c049de18e7fe80367a6246d43c04aa98b9b54f9e2c3361be8"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\metrics.csv",
+      "bytes": 1834,
+      "sha256": "b18b7cab221bc0ca2b359f3f9fbec1fee33f11c494335fbf9171e9cdf54d2457"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\progress.json",
+      "bytes": 541,
+      "sha256": "9fe4b8265a4f026bca4b05e37d0a6491c4b3f248f06c9c1b352b6c1561486c48"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\resource.log",
+      "bytes": 1226,
+      "sha256": "f4717c811f6c003d1b3b19d4bb32c81253be4b314f48b9773a50facd13627739"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\schmidt_spectrum.csv",
+      "bytes": 4691,
+      "sha256": "efd9650a54598898e764fdef4cac805dd3cd24a7710c7418e30d91d27f7adca4"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\state_sz0.jld2",
+      "bytes": 6362255,
+      "sha256": "4668ab927172be6fa2368b5361f21d2ba9c75f8cfd58dc940d7ae88db931a4f4"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\status.json",
+      "bytes": 170,
+      "sha256": "3493f5f0d34de29df34f28598b10b943209468e4f9c61da49db5e38bc803ca4c"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\stdout.log",
+      "bytes": 11096,
+      "sha256": "786d82d55974f7f05b1885305deb1b49d2e63308566b380b2612a5ba93aac4b6"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\string_profile.csv",
+      "bytes": 703,
+      "sha256": "3c5b4acc2c8cc8065b262e0a2426e7ab3e1a1f177bed04abbb64cce4d8b082c7"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\structure_factor_fullq.csv",
+      "bytes": 28900,
+      "sha256": "cc0348d99e3d1a7319418101f9ba1c50d0ba16be9a2c06c9992c159a3141a0eb"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\sweep_history_sz0.csv",
+      "bytes": 3225,
+      "sha256": "529e1c0fd293d67cf7be9c431884fdb0fe873fd649980c51398fd1490ee0b4d3"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "start_ferro_j2\\sweep_history_sz1.csv",
+      "bytes": 3225,
+      "sha256": "70bc3dcd7a5c0d81b8ccbd718ae2e20cee7980e077ba77e0ee07a250b6fa8941"
+    },
+    {
+      "role": "k12_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+      "path": "status.json",
+      "bytes": 65,
+      "sha256": "3db0640bd2fbeab6f3c550c6163aa2f13b07118c0b00d8d579e9b0dd15a2fcac"
+    },
+    {
+      "role": "k12_run_spec",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_r1",
+      "path": "parameter-scan.run_spec.json",
+      "bytes": 7036,
+      "sha256": "0b21ac0972ed935ab4c5d824af717ee155d57d83e24c1febf25598ce920b0709"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "checksums.sha256",
+      "bytes": 606,
+      "sha256": "0bcb2ee37e498e9f5b9f1aba690ec56b1fce8e856508165cc994279a6930c918"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "manifest.json",
+      "bytes": 3763,
+      "sha256": "93b3e2b67603b3f72ec6cdb24d86419219ffad332e916d7ca5d9553c37244754"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "progress.json",
+      "bytes": 1707,
+      "sha256": "639857398528ae18f03f9f307106c4ae40c3d03213fd634b6290898eb53c994f"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "runner_center.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "runner_center.stdout.log",
+      "bytes": 3936,
+      "sha256": "7e011809add84b853b3d3ef06c491e9ab9f1718c2639d9bc47682f098a6da04f"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "runner_ferro_j2.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "runner_ferro_j2.stdout.log",
+      "bytes": 3948,
+      "sha256": "759f623e1e09b857886967dbb7f6db632a045a02b6ce89e520ca8e1e9fababfc"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\bond_bond_connected.csv",
+      "bytes": 1091,
+      "sha256": "00292dc189a9d4413eed7d18e8e49d2663b9195633e2e2973ae1a90071f995f3"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\bond_correlations.csv",
+      "bytes": 2756,
+      "sha256": "70e2f0e4d47e835738272862af8a34a460d394a0d72654114c771d54caf59fdc"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\checksums.sha256",
+      "bytes": 1340,
+      "sha256": "37580585f8981bcff2d5a82b5f1df8bcec15ce3f77dabf0c3bcf251384b04861"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\entropy_profile_full.csv",
+      "bytes": 4054,
+      "sha256": "a961fefb242e63aef03f20a8e70f70f5ec2e3bd43014e57b519894cf317535fe"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\manifest.json",
+      "bytes": 4420,
+      "sha256": "6a653d6b066f01469a7f0375f5282a69b6ec18a1fac89c5143d25cabacd3561a"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\metrics.csv",
+      "bytes": 1823,
+      "sha256": "d87cc9f8823b4f187441937f839904b8d4b19fd927e16b0c15e505aaaddce9fe"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\progress.json",
+      "bytes": 539,
+      "sha256": "b8659275cf859905b5237f6f367458bb1d5c8c942c4041523a8673493140880b"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\resource.log",
+      "bytes": 1232,
+      "sha256": "fc177bbf1b4854ca4f500c051947982f946b580adbebc71e6d278299df01df53"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\schmidt_spectrum.csv",
+      "bytes": 4691,
+      "sha256": "04dc180bb136c153ba342be8163d2a57be4408069325a45bf4cf2ed940a8b657"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\state_sz0.jld2",
+      "bytes": 6350111,
+      "sha256": "9616aac802d91a1dc75a4a4c1fe506bd3562089ee0cad198ba433151cf80a153"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\status.json",
+      "bytes": 170,
+      "sha256": "1ef84e390d0d97b7a3f9295089539cb10d7310ca6b77c8c288d53626235b418d"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\stdout.log",
+      "bytes": 11020,
+      "sha256": "501463631470b5480c89095518865c01e8e8c8ac180a1e99d247f2d8d592a35e"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\string_profile.csv",
+      "bytes": 703,
+      "sha256": "9575fecb4a994bb53a1a352996a4e4e094dfa64c04d6eb775e0868b82def47c4"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\structure_factor_fullq.csv",
+      "bytes": 28900,
+      "sha256": "654aaa61bef5bebbdff93cd5bf6923848f0cfa9eb42887e64e8af28a8384e45d"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\sweep_history_sz0.csv",
+      "bytes": 3225,
+      "sha256": "3cda5503a651c766a50fbe94c20583f2c0ff6395fdbc7d026c194fc64634e997"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_center\\sweep_history_sz1.csv",
+      "bytes": 3225,
+      "sha256": "a2944d7e04f4d9a7cae50694b7ec75514d8eb38f2ac58913ba2e76692e9aff1b"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\bond_bond_connected.csv",
+      "bytes": 1091,
+      "sha256": "1ac689a831cb040280c4a79bee509ae91ecdb7cf42f4f0ce45601b154795d3c2"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\bond_correlations.csv",
+      "bytes": 2756,
+      "sha256": "d361ef84a63a3c2ac8fd17e5ba4361e7cd645e6eb4c8e2601762e16055ce3fca"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\checksums.sha256",
+      "bytes": 1340,
+      "sha256": "f6b12f6009d0c9c40e68978f0483358fdc8391c951202322fa8d483c82c3c286"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\entropy_profile_full.csv",
+      "bytes": 4054,
+      "sha256": "a44c178bac27deb03ae56350fac3abedbd5c2561481c90a9bd6d83dcfecc0c3e"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\manifest.json",
+      "bytes": 4432,
+      "sha256": "1c0eaaaa3c6753f79387014fd74da7ac07590b4721e9b3c0fa3bee45a510be63"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\metrics.csv",
+      "bytes": 1833,
+      "sha256": "fbdc89ebc1253c62228aab067aa88c9dc7035946336e5e83a74dee4d4947f945"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\progress.json",
+      "bytes": 541,
+      "sha256": "210f3bdd417894251d58dcbdc2ae9ffe532321fd4c331fb55871f90fac7a806e"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\resource.log",
+      "bytes": 1232,
+      "sha256": "caef04b4bb84197b57ace750046f035c807a71c913913740acc44d1670fb0075"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\schmidt_spectrum.csv",
+      "bytes": 4691,
+      "sha256": "394a3479f0b3a4a0e8af0fc5ae743ebb29d376e7bac10650b93911baf692285c"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\state_sz0.jld2",
+      "bytes": 6361735,
+      "sha256": "37fe1268c9572dc2a2614359cfbc12c5cf3e4717f60bcb4743bb5c80791bd962"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\status.json",
+      "bytes": 170,
+      "sha256": "a7044be3a5e3cddad4c7c5317a3e2c5e391c256775af5999e84939db81a284d1"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\stdout.log",
+      "bytes": 11031,
+      "sha256": "197714efff2f1b3fc32ff81ff84cc77fe54f0e0e7805e3006e4115a8f4ccc19a"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\string_profile.csv",
+      "bytes": 703,
+      "sha256": "ecf1d0edc240acba13fdaf074faa215646bf1de740559fa7242f5d8a3944a5d1"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\structure_factor_fullq.csv",
+      "bytes": 28900,
+      "sha256": "fb46439f0a7e735cfbcd54ffe3508016d2e53a652fe1098c09d7f8e3c0bb8185"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\sweep_history_sz0.csv",
+      "bytes": 3225,
+      "sha256": "804f37f503db45913fbad91879834a6e27bfe7cd57eb6d91a0c63fa9185deaae"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "start_ferro_j2\\sweep_history_sz1.csv",
+      "bytes": 3225,
+      "sha256": "a2944d7e04f4d9a7cae50694b7ec75514d8eb38f2ac58913ba2e76692e9aff1b"
+    },
+    {
+      "role": "k8_cell_dir",
+      "root": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08",
+      "path": "status.json",
+      "bytes": 65,
+      "sha256": "3db0640bd2fbeab6f3c550c6163aa2f13b07118c0b00d8d579e9b0dd15a2fcac"
+    }
+  ]
+}

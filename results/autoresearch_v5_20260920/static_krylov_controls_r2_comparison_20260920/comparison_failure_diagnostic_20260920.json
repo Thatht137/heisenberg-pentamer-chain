@@ -1,0 +1,43 @@
+{
+  "schema": "static_krylov_controls_r2_comparison/failure_diagnostic/v1",
+  "created_at": "2026-09-20",
+  "status": "not_evaluable",
+  "comparison_json_written": false,
+  "summary_written": false,
+  "audit_only": true,
+  "adapter_status_before_compare_failure": "candidate_verified",
+  "failure": {
+    "type": "connected_quarter_key_mismatch",
+    "message": "records key 不完整配对",
+    "observed_point": {
+      "alpha": -0.1,
+      "beta": 0.25,
+      "L": 80
+    },
+    "baseline_missing_keys": [
+      ["center", "connected_quarter", 40005],
+      ["center", "connected_quarter", 40010],
+      ["ferro_j2", "connected_quarter", 40005],
+      ["ferro_j2", "connected_quarter", 40010]
+    ],
+    "candidate_extra_keys": [
+      ["center", "connected_quarter", 40020],
+      ["center", "connected_quarter", 40060],
+      ["ferro_j2", "connected_quarter", 40020],
+      ["ferro_j2", "connected_quarter", 40060]
+    ],
+    "baseline_source": "results/autoresearch_v5_20260919/static_krylov_baseline_v2/connected_quarter.csv uses reference_bond=40,target_bond=5,10",
+    "candidate_source": "candidate bond_bond_connected.csv at distance_units=L//20=4 selects target_bond=20,60",
+    "code_path": "scripts/autoresearch_v5/static_krylov_candidate_adapter.py::_candidate_records plus compare_static_krylov_controls.compare_records"
+  },
+  "interpretation": "这是 baseline/candidate connected-quarter 索引语义不一致诊断，不是通过重标 index 或改科学数据来宣布比较通过。需主控决定是否另行授权兼容映射或修订冻结 baseline schema。",
+  "protection": {
+    "adapter_protocol_rewritten": false,
+    "candidate_validation_gates_relaxed": false,
+    "manifest_modified": false,
+    "run_spec_modified": false,
+    "original_data_modified": false,
+    "remote_operations": false,
+    "phase_or_convergence_claim": false
+  }
+}

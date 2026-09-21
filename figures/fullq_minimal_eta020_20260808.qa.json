@@ -1,0 +1,17 @@
+{
+  "status": "pass",
+  "pixel_size": [
+    3078,
+    2186
+  ],
+  "editable_svg_text": "fonttype=none",
+  "pdf_fonttype": 42,
+  "raw_negative_values_visible": true,
+  "shared_axes": true,
+  "outputs": {
+    ".svg": "e86d238ba66321a0d61229cb588b589070bacaea0a221a3e24285e3f3c0899ec",
+    ".pdf": "f47c6b4ddbdcfae430a3855cdc533a4236fca9db7911b02b3d6dfad429a409c1",
+    ".png": "8f3f81dea51542e20a60194688de44cd33e95c3079d0ec22f4966e2cc7b994eb",
+    ".tiff": "ecde9d527b61dcf82f5c4446016074c8af1684c0e50792e7011670f12dbd468a"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "status": "pass",
+  "width_mm": 183,
+  "height_mm": 116,
+  "backend": "python",
+  "editable_svg_text": true,
+  "strict_boundary_claimed": false,
+  "source_rows": 24,
+  "outputs": {
+    "svg": {
+      "sha256": "72c23f32276f31bc978563a76dced2521756e3022429244840fbe5735d1c5081",
+      "bytes": 55944
+    },
+    "pdf": {
+      "sha256": "d6f74609f7bd245c85bfd0378661d5fee028729dfb6ba87917fc043914de1551",
+      "bytes": 81717
+    },
+    "png": {
+      "sha256": "066657c77fb7aa35f6adea6337488db59391078d3f38378bde1d63bbdf2215c6",
+      "bytes": 282797
+    },
+    "tiff": {
+      "sha256": "9f41cf850e12d4996cf5635d10a4fd82e7c3604a54af9058bd9425f3bd1e1d3b",
+      "bytes": 48530846
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "status": "blocked_pending_precise_user_authorization",
+  "generated_at_utc": "2026-09-19T15:38:05.5322564Z",
+  "action": "upload one new independent CRLF compatibility launcher beside the original launcher",
+  "new_file_count": 1,
+  "file": "scripts/autoresearch_v5/launch_static_krylov_controls_release_v2_crlf_compat.sh",
+  "sha256": "359936af95676cbcf6752b2e4f808267805051a3b9eb00682e280687949752c8",
+  "bytes": 7252,
+  "review": {
+    "tool_call_started": false,
+    "approval_result": "rejected",
+    "reason": "该操作将新增的兼容 launcher 作为未获明确授权的新文件上传至远端；原授权仅覆盖73个指定文件及启动计算，不能扩展到该衍生脚本的敏感数据出站。The agent must not attempt to achieve the same outcome via workaround, indirect execution, or policy circumvention. Proceed only with a materially safer alternative, or if the user explicitly approves the action after being informed of the risk. Otherwise, stop and request user input."
+  },
+  "remote_effect": {
+    "upload_executed": false,
+    "new_remote_file_created": false,
+    "original_73_files_modified": false,
+    "manifest_modified": false,
+    "old_receipts_modified": false,
+    "julia_started": false
+  },
+  "required_next_authorization": "明确授权新增并上传该独立兼容 launcher 文件；此前73文件授权不延伸至此文件。"
+}

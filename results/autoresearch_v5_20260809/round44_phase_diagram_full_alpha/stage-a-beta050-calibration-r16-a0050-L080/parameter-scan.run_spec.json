@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "run_id": "pentamer-negative-phase-stage-a-r16-a0050-L080-20260811",
+  "scope": "alpha=-0.05, beta=0.5, L=80; convergence-protocol repair; Fig.9 excluded",
+  "controller": "local_only",
+  "cells": [
+    {
+      "cell_id": "nega-r16-a0050-b0500-L080",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 256,
+      "stage": "A-R16",
+      "retry_of": "nega-r15-a0050-b0500-L080",
+      "retry_policy": "固定门槛下使用三初态、repair noise 和能量平台门；禁止事后选支",
+      "controller_action_id": null,
+      "calibration_only": true
+    }
+  ],
+  "settings": {
+    "method": "finite_dmrg_multistart_fullq",
+    "boundary": "OBC",
+    "hamiltonian": "five-site unit cell Heisenberg chain, J1=1, J2=alpha, J3=beta",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim_by_L": {
+      "80": 1200
+    },
+    "nsweeps": 256,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "q_count": 401,
+    "init_modes": [
+      "center_random",
+      "ferro_j2",
+      "domain"
+    ],
+    "noise_profile": "repair",
+    "random_seed": 20260811,
+    "energy_change_max": 1e-08,
+    "energy_spread_max": 1e-06,
+    "budget_definition": "每个独立初态均为256 sweeps",
+    "acceptance": {
+      "variance_per_site_max": 1e-08,
+      "final_truncation_error_max": 1e-09,
+      "sector_tolerance": 1e-08,
+      "spin_gap_min": -1e-08,
+      "energy_change_max": 1e-08,
+      "energy_spread_max": 1e-06,
+      "q_count_min": 401
+    },
+    "offline": true,
+    "execution": "direct SSH; concurrency=1; stop on first failed cell"
+  },
+  "provenance": {
+    "negative_alpha_included": true,
+    "r16_reason": "R15两条高精度分支给出冲突隙，改用预声明三初态协议判定一致低能分支",
+    "r15_terminal_ingestion_summary_sha256": "b75415b32263522171eedf7df0dadb3bb7944b59b58555724b606e530611e2b5",
+    "r15_terminal_ingestion_audit_sha256": "1978d3f07ffa7a25bfb82ff8de2b8dcedaa578e4d60ae4e103ab29d85ae081a8",
+    "r15_failed_calibration_sha256": "6e5e2da68c528fd4de0147e7b955255a18b905b0c9a1b76ac6c4824409e45135",
+    "accepted_calibration_through_r9_sha256": "290083607e50582f79f4afedc5955d0876a9cd86172ae4936293abb42b451bf1",
+    "observations_sha256": "0ae1da5dd89c91076d5593d66088c0bc02b74fbeca2b28e10f0d8288e5bf7cb8",
+    "action_index_sha256": "818c1ad1ce06b703177bdcc4b9e2af32ec290e0c61e24a1cee92b915a947f63c",
+    "r15_and_earlier_failure_provenance_preserved": true,
+    "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "project_sha256": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+    "source_commit": "40f4179a5630039485370648edd9621f592c0449",
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "docs/full_phase_diagram_negative_standard_20260809.md": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+      "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+      "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+      "scripts/autoresearch_v5/run_negative_static_cell.py": "70cb7aeec60340c9275e927a40d1728372e84f891379ba751f1c3dbc9110a2e2",
+      "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "2eadf9e6ac59931e2f994e36d2c4b8054def07c18aa0a66739781ce8e19b0d54",
+      "scripts/autoresearch_v5/run_negative_phase_structure_batch.py": "e086cb1887f5f870fbd0cc53b27c1684cf44606f8fa5edae17309400e8494faa",
+      "scripts/autoresearch_v5/validate_negative_phase_run.py": "4272e4130f2f924e6fc981c0400777a697f33ec31067a7c9f812eedde9e742f1"
+    },
+    "thresholds_relaxed": false,
+    "posthoc_branch_selection_forbidden": true,
+    "exploratory_data_not_accepted": true
+  }
+}

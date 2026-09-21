@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-04T16:28:08+08:00",
+  "run": "results/autoresearch_v5_20260803/round31_qpi_cv_extension",
+  "overall": {"completed_cells": 3, "total_cells": 4, "status": "running"},
+  "high100": {"status": "success", "accepted": true, "cv_seconds": 39278.81550192833, "max_cv_relative_residual": 1.9588527835941554e-06},
+  "high150": {"status": "running", "pid": 324653, "elapsed_seconds": 4919, "cpu_percent_snapshot": 1522, "threads": 8, "manifest": false},
+  "resource_snapshot": {"load_1m": 21.32, "memory_available_gib": 225, "host_cores": 80},
+  "eta": {"range_hours": [8, 12], "confidence": "low", "basis": "high100同类终态耗时约10.91小时；high150尚处linsolve且无可外推迭代进度"},
+  "action": "不启动第二个Julia；high150终态后再checksum、回传、validator。"
+}

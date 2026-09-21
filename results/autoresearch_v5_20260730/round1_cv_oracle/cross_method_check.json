@@ -1,0 +1,23 @@
+{
+  "tag": "Agreement",
+  "checks": {
+    "peak_pass": true,
+    "integrated_weight_pass": true,
+    "residual_pass": true,
+    "nonnegative_pass": true
+  },
+  "budgets": {
+    "peak_omega": 0.1,
+    "integrated_weight_relative": 0.15,
+    "max_cv_relative_residual": 1e-05
+  },
+  "exact_peak_omega": 0.15000000000000002,
+  "cv_peak_omega": 0.15000000000000002,
+  "peak_difference": 0.0,
+  "exact_integrated_weight": 0.6144464512649275,
+  "cv_integrated_weight": 0.6144464512654066,
+  "integrated_weight_relative_error": 7.798438032179561e-13,
+  "spectrum_relative_l2": 8.52375000083448e-12,
+  "max_cv_relative_residual": 5.82271788920983e-07,
+  "cv_min_intensity": 0.004683199660466504
+}

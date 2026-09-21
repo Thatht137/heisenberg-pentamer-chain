@@ -1,0 +1,425 @@
+{
+  "run_id": "pentamer-positive-static-multistart-20260731",
+  "run_dir": "results/autoresearch_v5_20260731/round10_positive_static_multistart_production",
+  "settings": {
+    "method": "finite_dmrg",
+    "boundary": "OBC",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim_by_L": {
+      "40": 800,
+      "60": 1000,
+      "80": 1200
+    },
+    "nsweeps": 32,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "init_mode_sz0_default": "center",
+    "init_mode_sz1": "center",
+    "initialization_modes_by_role": {
+      "left": [
+        "center"
+      ],
+      "ridge": [
+        "center",
+        "domain"
+      ],
+      "right": [
+        "center"
+      ]
+    },
+    "string_margin": 3,
+    "schmidt_levels": 16,
+    "save_state_rule": "ridge_L80_center_only",
+    "offline": true,
+    "execution": "sequential_nice_10",
+    "acceptance": {
+      "variance_per_site_max": 1e-08,
+      "max_truncation_error": 1e-09,
+      "sector_tolerance": 1e-08,
+      "minimum_spin_gap": -1e-08
+    },
+    "initialization_validation": {
+      "energy_density_abs_max": 1e-10,
+      "spin_gap_abs_max": 1e-08,
+      "string_profile_abs_max": 1e-05,
+      "bond_correlation_abs_max": 1e-05,
+      "schmidt_probability_l1_max": 0.0001
+    }
+  },
+  "provenance": {
+    "source_commit": "40f4179a5630039485370648edd9621f592c0449",
+    "git_dirty": true,
+    "standard_sha256": "9fb6b1a1f07242be9ada456acc1f8064e3350e93aa410e89a7745e5acded2011",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "server_julia_version": "1.12.3",
+    "selection_sha256": "192eed7b0447b5cf3e07cdf772718bdc062ff2df42fd0a6ba5bb4740dd136c59",
+    "negative_alpha_excluded": true,
+    "remote_target": "wangjieren@39.96.207.180:6000",
+    "submission_state": "not_uploaded_waiting_for_confirmation"
+  },
+  "cells": [
+    {
+      "cell_id": "cell-0001",
+      "params": {
+        "variant_id": "p01-center",
+        "L": 40
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0002",
+      "params": {
+        "variant_id": "p01-center",
+        "L": 60
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0003",
+      "params": {
+        "variant_id": "p01-center",
+        "L": 80
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0004",
+      "params": {
+        "variant_id": "p02-center",
+        "L": 40
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0005",
+      "params": {
+        "variant_id": "p02-center",
+        "L": 60
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0006",
+      "params": {
+        "variant_id": "p02-center",
+        "L": 80
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0007",
+      "params": {
+        "variant_id": "p02-domain",
+        "L": 40
+      },
+      "settings": {
+        "init_mode_sz0": "domain"
+      }
+    },
+    {
+      "cell_id": "cell-0008",
+      "params": {
+        "variant_id": "p02-domain",
+        "L": 60
+      },
+      "settings": {
+        "init_mode_sz0": "domain"
+      }
+    },
+    {
+      "cell_id": "cell-0009",
+      "params": {
+        "variant_id": "p02-domain",
+        "L": 80
+      },
+      "settings": {
+        "init_mode_sz0": "domain"
+      }
+    },
+    {
+      "cell_id": "cell-0010",
+      "params": {
+        "variant_id": "p03-center",
+        "L": 40
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0011",
+      "params": {
+        "variant_id": "p03-center",
+        "L": 60
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0012",
+      "params": {
+        "variant_id": "p03-center",
+        "L": 80
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0013",
+      "params": {
+        "variant_id": "p04-center",
+        "L": 40
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0014",
+      "params": {
+        "variant_id": "p04-center",
+        "L": 60
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0015",
+      "params": {
+        "variant_id": "p04-center",
+        "L": 80
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0016",
+      "params": {
+        "variant_id": "p05-center",
+        "L": 40
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0017",
+      "params": {
+        "variant_id": "p05-center",
+        "L": 60
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0018",
+      "params": {
+        "variant_id": "p05-center",
+        "L": 80
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0019",
+      "params": {
+        "variant_id": "p05-domain",
+        "L": 40
+      },
+      "settings": {
+        "init_mode_sz0": "domain"
+      }
+    },
+    {
+      "cell_id": "cell-0020",
+      "params": {
+        "variant_id": "p05-domain",
+        "L": 60
+      },
+      "settings": {
+        "init_mode_sz0": "domain"
+      }
+    },
+    {
+      "cell_id": "cell-0021",
+      "params": {
+        "variant_id": "p05-domain",
+        "L": 80
+      },
+      "settings": {
+        "init_mode_sz0": "domain"
+      }
+    },
+    {
+      "cell_id": "cell-0022",
+      "params": {
+        "variant_id": "p06-center",
+        "L": 40
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0023",
+      "params": {
+        "variant_id": "p06-center",
+        "L": 60
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0024",
+      "params": {
+        "variant_id": "p06-center",
+        "L": 80
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0025",
+      "params": {
+        "variant_id": "p07-center",
+        "L": 40
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0026",
+      "params": {
+        "variant_id": "p07-center",
+        "L": 60
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0027",
+      "params": {
+        "variant_id": "p07-center",
+        "L": 80
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0028",
+      "params": {
+        "variant_id": "p08-center",
+        "L": 40
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0029",
+      "params": {
+        "variant_id": "p08-center",
+        "L": 60
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0030",
+      "params": {
+        "variant_id": "p08-center",
+        "L": 80
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0031",
+      "params": {
+        "variant_id": "p08-domain",
+        "L": 40
+      },
+      "settings": {
+        "init_mode_sz0": "domain"
+      }
+    },
+    {
+      "cell_id": "cell-0032",
+      "params": {
+        "variant_id": "p08-domain",
+        "L": 60
+      },
+      "settings": {
+        "init_mode_sz0": "domain"
+      }
+    },
+    {
+      "cell_id": "cell-0033",
+      "params": {
+        "variant_id": "p08-domain",
+        "L": 80
+      },
+      "settings": {
+        "init_mode_sz0": "domain"
+      }
+    },
+    {
+      "cell_id": "cell-0034",
+      "params": {
+        "variant_id": "p09-center",
+        "L": 40
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0035",
+      "params": {
+        "variant_id": "p09-center",
+        "L": 60
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    },
+    {
+      "cell_id": "cell-0036",
+      "params": {
+        "variant_id": "p09-center",
+        "L": 80
+      },
+      "settings": {
+        "init_mode_sz0": "center"
+      }
+    }
+  ]
+}

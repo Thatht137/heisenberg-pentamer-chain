@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "figure": "positive_phase_guard_margin_20260804",
+  "backend": "Python/matplotlib",
+  "reference_mapping": "positive phase finite-size crossing guard",
+  "source_files": [
+    {
+      "path": "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/phase-diagram/phase-size-differences.csv",
+      "sha256": "ddb67f9daefb870c5df9cebe68f187e266372710a38cdd49a64464c05ec78171"
+    }
+  ],
+  "outputs": [
+    "figures/positive_phase_guard_margin_20260804.svg",
+    "figures/positive_phase_guard_margin_20260804.pdf",
+    "figures/positive_phase_guard_margin_20260804.png",
+    "figures/positive_phase_guard_margin_20260804.tiff"
+  ],
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true,
+    "alpha_zero_boundary_excluded": true
+  },
+  "status": "pass"
+}

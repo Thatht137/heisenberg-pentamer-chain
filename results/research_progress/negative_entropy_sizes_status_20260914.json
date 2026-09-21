@@ -1,0 +1,37 @@
+{
+  "state": "completed_validated",
+  "updated_at": "2026-09-15T14:50:00+08:00",
+  "run_directory": "results/autoresearch_v5_20260914/negative_entropy_sizes_r1",
+  "new_cells": 10,
+  "reused_cells": 2,
+  "files": 17,
+  "concurrency": 1,
+  "sweeps": 64,
+  "local_checks": {"batch_dry_run": "pass_10_cells", "upload_manifest_hashes": "pass_17_files"},
+  "remote_readonly_check": {
+    "time": "2026-09-14T23:12:40+08:00",
+    "julia_processes": 0,
+    "negative_batch_processes": 0,
+    "disk_available": "255G"
+  },
+  "prior_upload_attempt": "rejected_before_execution_on_20260914",
+  "explicit_approval": "2026-09-15 user approved 17 files and 10 Julia cells",
+  "upload_attempt": "success_17_remote_hashes_verified",
+  "uploaded": true,
+  "launched": true,
+  "launch": {"started_at": "2026-09-15T07:46:17+08:00", "batch_pid": 886283, "julia_pid": 886299},
+  "health": {"checked_at": "2026-09-15T07:46:35+08:00", "unique_julia": true, "elapsed_seconds": 18, "cpu_percent": 147, "rss_kib": 895840, "stderr": "empty", "completed_cells": 0, "current_cell": "negsize-a01750-b02500-L040", "phase": "dmrg_two_sectors"},
+  "conditional_eta_hours_after_launch": [3, 5],
+  "monitor": {"automation_id": "automation", "next_check": null, "status": "DELETED_AFTER_CHECK", "one_time": true},
+  "terminal": {"checked_at": "2026-09-15T14:42:50+08:00", "finished_at": "2026-09-15T09:37:53.152711+08:00", "completed_cells": 10, "julia_processes": 0, "stderr": "empty", "remote_checksum_directories_passed": 30},
+  "fetch_directory": "results/autoresearch_v5_20260914/negative_entropy_sizes_fetch_20260915_1445",
+  "coverage": {"pass": 12, "fail": 0, "missing": 0, "source": "results/autoresearch_v5_20260914/negative_entropy_sizes_fetch_20260915_1445/coverage.json"},
+  "analysis_directory": "results/autoresearch_v5_20260914/negative_entropy_sizes_analysis_20260915",
+  "analysis": {"points": 12, "entropy_fits": 192, "phase_assigned": false, "local_tests": "4/4 pass after allowing temporary-directory access"},
+  "result_note": "10个新点于9月15日09:37完成，约耗时1小时52分。远端30份父/子checksum、非覆盖回传及本地独立V2验收通过；合并2个既有端点后12/12通过，0失败、0缺失。已生成192次纠缠拟合及能隙、键期望、连接关联表；尚未确认第二个热力学相。本轮未启动新Julia。",
+  "report_blocks": [
+    {"kind": "table", "columns": ["alpha (beta=0.25)", "L40有效斜率", "L60有效斜率", "L80有效斜率"], "rows": [["-0.175", "1.07–1.33", "0.95–1.15", "0.89–0.97"], ["-0.150", "1.04–1.33", "0.89–1.14", "0.78–0.91"], ["-0.125", "1.01–1.34", "0.83–1.10", "0.66–0.77"], ["-0.100", "0.97–1.34", "0.63–0.96", "0.47–0.60"]]},
+    {"kind": "note", "text": "上表为十类截距模型，覆盖全部四个窗口和双初态；范围是敏感性范围，不是统计置信区间，也不是热力学中心荷。有效斜率有明显尺寸依赖，能隙亦随尺寸下降；不能据此直接命名新相或声称全域只有一个相。原始来源和192次拟合保存在negative_entropy_sizes_analysis_20260915。"}
+  ],
+  "next_action": "Complete joint finite-size interpretation and figures from accepted entropy/gap/bond data; review response-point necessity and manuscript claims. No automatic new Julia or further server polling is needed for this completed batch."
+}

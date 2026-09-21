@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "fetched_at": "2026-09-15T06:45:26.768834+00:00",
+  "cell_id": "negsize-a01500-b02500-L040",
+  "source": "wangjieren@39.96.207.180:/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260914/negative_entropy_sizes_r1/cells/negsize-a01500-b02500-L040",
+  "destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260914\\negative_entropy_sizes_fetch_20260915_1445\\negsize-a01500-b02500-L040",
+  "file_count": 42,
+  "total_bytes": 2833340,
+  "preview_sha256": "9dd7d52e408fc73daeab48de36f4161951a3e95e7d109376508cca0e820fc61d",
+  "checksums_sha256": "813a824f5d3dff3654108aaf08615180692ababaf5096d8ec1969b2c2b71ff5e",
+  "manifest_sha256": "0e3bebf6afabbab5a5547317bda2bb0601f90af4006e6c039505120526fc3f09",
+  "non_clobbering": true
+}

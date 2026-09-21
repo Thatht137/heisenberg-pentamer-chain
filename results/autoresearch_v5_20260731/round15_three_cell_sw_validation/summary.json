@@ -1,0 +1,39 @@
+{
+  "status": "agreement",
+  "claim": "完整十五自旋低能谱验证了三胞二阶有效 Hamiltonian 中诱导 J2 的必要性。",
+  "alphas": [
+    0.14,
+    0.23,
+    0.33
+  ],
+  "betas": [
+    0.0025,
+    0.005,
+    0.01,
+    0.02
+  ],
+  "cells": 12,
+  "block_dimension": 6435,
+  "max_eigensolver_residual": 2.3439384354747364e-12,
+  "with_J2_error_power": {
+    "0.14": 3.0140705507547674,
+    "0.23": 3.010489737504651,
+    "0.33": 3.008693679151577
+  },
+  "without_J2_error_power": {
+    "0.14": 2.186066194272815,
+    "0.23": 2.115142226944504,
+    "0.33": 2.0782498486019607
+  },
+  "improvement_factor_range": [
+    2.230393292131251,
+    31.151591367964397
+  ],
+  "all_improved": true,
+  "acceptance": {
+    "eigensolver_residual_le_1e-10": true,
+    "with_J2_power_near_three": true,
+    "without_J2_power_near_two": true,
+    "J2_improves_every_cell": true
+  }
+}

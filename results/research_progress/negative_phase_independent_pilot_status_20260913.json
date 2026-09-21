@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-14T22:55:00+08:00",
+  "state": "completed_with_localized_candidate",
+  "scientific_scope": "six saved-state L=80 points testing a distinct negative-alpha phase",
+  "cells": 6,
+  "points": [
+    {"alpha": -0.25, "beta": 0.25, "role": "before"},
+    {"alpha": -0.175, "beta": 0.25, "role": "middle"},
+    {"alpha": -0.1, "beta": 0.25, "role": "after"},
+    {"alpha": -0.625, "beta": 0.75, "role": "before"},
+    {"alpha": -0.5, "beta": 0.75, "role": "middle"},
+    {"alpha": -0.425, "beta": 0.75, "role": "after"}
+  ],
+  "settings": {
+    "L": 80,
+    "maxdim": 1200,
+    "nsweeps": 64,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "init_modes": ["center", "ferro_j2"],
+    "variance_per_site_max": 5e-8,
+    "concurrency": 1,
+    "save_state": true,
+    "enriched_diagnostics": true
+  },
+  "local_readiness": {
+    "julia_enriched_smoke": "pass",
+    "python_compile": "pass",
+    "batch_dry_run": "pass_6_of_6",
+    "upload_dry_run": "pass_16_files",
+    "package_hashes": "pass",
+    "upload_manifest_sha256": "6c8320a07a957c71fa5bf75572e18424276c6e3c1b125cf63b0fc7532b4b623e",
+    "run_spec_sha256": "8ddd22ef9e450c20a89a044bd15a644462d5656ac058ef552006aa2b3a041455",
+    "source_hashes_sha256": "65de8010ea6467cc4e29b2b2ac393045739ddc0eb3fc7cd271650a7ec3124b9b",
+    "launch_contract_sha256": "23d52a273dc94ac673a6beea3c085da750ad8b06360b6f741e8f4fb00f5a4a89"
+  },
+  "remote_access": {
+    "target": "wangjieren@39.96.207.180:6000",
+    "attempts_this_turn": 1,
+    "tcp_connection": "established",
+    "ssh_result": "authenticated",
+    "authentication_reached": true,
+    "upload_started": true,
+    "remote_hashes": "pass_16_of_16",
+    "julia_started": true
+  },
+  "launch": {
+    "started_at": "2026-09-14T19:50:49+08:00",
+    "batch_pid": 351267,
+    "julia_pid": 351284,
+    "current_cell": "negdiag-a02500-b02500-L080",
+    "completed_cells": 0,
+    "julia_cpu_percent": 105.0,
+    "julia_rss_mib": 787.8,
+    "stderr": "empty",
+    "source_hash_line_ending_fix": "CRLF_to_LF_before_launch",
+    "next_read_not_before": "2026-09-14T21:50:00+08:00"
+  },
+  "terminal": {
+    "finished_at": "2026-09-14T21:48:55+08:00",
+    "status": "success",
+    "completed_cells": 6,
+    "accepted_child_runs": 12,
+    "remaining_python_or_julia": 0,
+    "stderr": "empty",
+    "remote_checksum_files": 18,
+    "remote_checksum_status": "pass"
+  },
+  "fetch": {
+    "destination": "results/autoresearch_v5_20260913/negative_phase_independent_pilot_fetch_20260914_2243",
+    "non_clobbering": true,
+    "cell_directories": 6,
+    "files": 252,
+    "bytes": 106587919,
+    "local_checksum_status": "pass"
+  },
+  "validation": {
+    "policy": "practical_v2_frozen_at_5e-8",
+    "accepted_cells": 6,
+    "total_cells": 6,
+    "maximum_variance_per_site": 1.2874771471160783e-9,
+    "maximum_final_truncation_error": 9.999758917373574e-12,
+    "minimum_spin_gap": 4.662458090365362e-5,
+    "legacy_1e-8_validator": "not_applicable_to_this_frozen_practical_v2_run"
+  },
+  "analysis": {
+    "output": "results/autoresearch_v5_20260913/negative_phase_independent_pilot_analysis_20260914_v3",
+    "verdict": "localized_entanglement_candidate_but_no_second_thermodynamic_phase_confirmed",
+    "candidate": {"alpha": -0.1, "beta": 0.25},
+    "candidate_reason": "single-L profile c_eff is suppressed and dual-start energy-density spread is largest",
+    "counterevidence": "far connected bond tails remain at order 1e-5 and no spin-sector crossing occurs",
+    "maximum_dual_start_energy_per_site_spread": 7.868862228477269e-8,
+    "c_effective_profile_range": [0.5312586882782111, 1.0127967097025152],
+    "maximum_far_connected_bond_abs_mean": 1.2378023409398073e-5
+  },
+  "conditional_eta_hours_after_launch": [4, 10],
+  "automation": {
+    "id": "6",
+    "interval_hours": 2,
+    "notification_policy": "meaningful_change_only",
+    "status_after_delivery": "paused"
+  },
+  "next_action": "freeze the six-point evidence in HTML; treat alpha=-0.10,beta=0.25 as an optional finite-size follow-up rather than a named phase"
+}

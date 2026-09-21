@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "created_at": "2026-09-14T14:45:07.476102+00:00",
+  "cell_id": "negdiag-a02500-b02500-L080",
+  "remote": "wangjieren@39.96.207.180",
+  "port": "6000",
+  "remote_dir": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260913/negative_phase_independent_pilot_r1/cells/negdiag-a02500-b02500-L080",
+  "local_destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a02500-b02500-L080",
+  "destination_exists": false,
+  "file_count": 42,
+  "total_bytes": 21171236,
+  "remote_checksum_status": "pass",
+  "hashes": {
+    "checksums.sha256": "121b7793152ef69afec390bdb111e48afa29df46f327b9df043dbe1cd550b898",
+    "manifest.json": "aad292d3f607786d5e2a4868037fa4bdba0a40f6c9f780a3586ce5fd7bf03f0d",
+    "status.json": "3db0640bd2fbeab6f3c550c6163aa2f13b07118c0b00d8d579e9b0dd15a2fcac"
+  }
+}

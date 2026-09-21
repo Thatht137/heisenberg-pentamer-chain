@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "verdict": "no_independent_evidence_for_a_second_thermodynamic_phase",
+  "interpretation": "the six saved-state points support smooth momentum reconstruction inside one gapless negative-alpha phase; they do not prove that a second phase is mathematically absent",
+  "accepted_cells": 6,
+  "accepted_child_runs": 12,
+  "saved_states": 12,
+  "beta_slices": [
+    0.25,
+    0.75
+  ],
+  "alpha_points_per_slice": 3,
+  "maximum_variance_per_site": 1.2874771471160783e-09,
+  "maximum_final_truncation_error": 9.999758917373574e-12,
+  "minimum_spin_gap": 4.662458090365362e-05,
+  "maximum_dual_start_energy_per_site_spread": 7.868862228477269e-08,
+  "c_effective_profile_range": [
+    0.18346947269959163,
+    0.6777150686282027
+  ],
+  "maximum_far_connected_bond_abs_mean": 1.2378023409398073e-05,
+  "q_peak_sequences": {
+    "0.25": [
+      {
+        "alpha": -0.25,
+        "q_peak_over_pi": 0.6
+      },
+      {
+        "alpha": -0.175,
+        "q_peak_over_pi": 0.6
+      },
+      {
+        "alpha": -0.1,
+        "q_peak_over_pi": 1.0
+      }
+    ],
+    "0.75": [
+      {
+        "alpha": -0.625,
+        "q_peak_over_pi": 0.6
+      },
+      {
+        "alpha": -0.5,
+        "q_peak_over_pi": 0.6
+      },
+      {
+        "alpha": -0.425,
+        "q_peak_over_pi": 1.0
+      }
+    ]
+  },
+  "evidence": {
+    "dual_start": "energies and enriched observables agree within recorded half-ranges",
+    "entanglement": "class-resolved full-chain profiles vary smoothly; single-L c_eff is diagnostic only",
+    "connected_bond_correlations": "far connected tails remain small and show no finite plateau at these points",
+    "spin_sector": "all gaps are nonnegative under the frozen tolerance"
+  },
+  "reviewer_risks": [
+    "only one size L=80 is available for the saved-state observables",
+    "three alpha points per beta slice can exclude a sharp anomaly only at coarse resolution",
+    "profile c_eff and bond-tail decay are finite-OBC diagnostics, not standalone phase identifiers"
+  ],
+  "figure_contract": {
+    "core_conclusion": "six saved-state checks reveal smooth reconstruction but no independent phase-changing signature",
+    "archetype": "quantitative_grid",
+    "backend": "Python/matplotlib",
+    "final_size_mm": [
+      183,
+      133
+    ],
+    "hero_evidence": "full-profile c_eff and far connected bond tails",
+    "validation_evidence": "dual-start energy agreement, nonnegative spin gaps and Practical V2 acceptance"
+  }
+}

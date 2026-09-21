@@ -1,0 +1,203 @@
+{
+  "title": "项目收尾状态：两点数值验收通过；旧 k3 能隙存在敏感性",
+  "eyebrow": "2026-09-20 · COMPARISON AUDIT ONLY · NUMERICAL VALIDATION PASS",
+  "lede": "L=80 两点 Krylov=8 已完成 Practical V2 与独立完整性验收；终态回执为 success，2 点共 648 条逐观测量对照记录，baseline 使用修复后的 v3。新数值门通过且双初态一致性改善，但旧 k=3 能隙在 alpha=-0.10 仍有明显漂移，因此本报告不宣称全部观测量收敛、新相、全域单相或论文完成；原 73-file 阻塞记录保留为历史。",
+  "sections": [
+    {
+      "title": "当前状态",
+      "note": "状态源：results/research_progress/project_closeout_status_20260919.json；终态、独立 validator 与 comparison 均已核验；overall_status=completed_validated_comparison_audit，但物理稳定性结论仍受限。",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "warn",
+          "label": "两点数值验收通过；旧 k3 能隙存在敏感性",
+          "why": "终态回执为 success，2 点/4 子运行、84 个回传文件与独立 Practical V2 validator 均通过；comparison status=audit_only、failures=[]。candidate_validated=true 仅表示数值门与完整性通过，不是全部观测量收敛门。"
+        },
+        {
+          "kind": "table",
+          "columns": ["项目", "事实"],
+          "rows": [
+            ["当前目标", "Stage2 full chain pending；Stage3 numerical_done_physics_stability_not_claimed；Stage4 writing_in_progress"],
+            ["L=80 状态", "terminal_success；2 cells/4 child runs；84 files/29,785,370 bytes 回传；candidate_validated=true"],
+            ["上传/启动", "07:40:31 启动；supervisor=294213；batch=294499；Julia=294507；8 threads；单并发；无 retry；终态 09:48:44"],
+            ["历史上传记录", "旧 execution_upload_rejected（73 files）保留；不覆盖当前 compat 上传事实"],
+            ["远端 Julia", "remote_julia_started=true；terminal 后无活动匹配进程；stderr=0 bytes；历史 health 快照仅作运行证据"],
+            ["健康回执/监控", "compatibility_terminal_snapshot_20260920_0945.json；automation l80-krylov 已删除；无后续检查"],
+            ["本地校准", "local_k8_calibration_verified=true；v4 SAVE_STATE/ENRICHED 两点均通过"],
+            ["本地 launch preflight", "8/8 tests 通过；supervisor 5 pass、4 Windows skip（远端 POSIX 未执行）；guardrail soft，无 hardblock"],
+            ["初始化口径", "生产基线拟用双 Sz=0；本地 L=10 校准仅 center，Sz=1 也为 center"],
+            ["本次能量门", "总能量 absE<=1e-8；独立于历史 Practical V2 variance/site 门"]
+          ]
+        },
+        {
+          "kind": "table",
+          "columns": ["点", "旧 k3 gap（两初态）", "新 k8 gap（两初态）", "对称相对差"],
+          "rows": [
+            ["alpha=-0.100, beta=0.25", "5.291967e-5；4.662458e-5", "7.277203948e-5；7.277205361e-5", "31.59%；43.80%"],
+            ["alpha=-0.175, beta=0.25", "1.5547949e-4；1.5162379e-4", "1.587107409e-4；1.587107429e-4", "2.06%；4.57%"]
+          ]
+        },
+        {
+          "kind": "note",
+          "style": "info",
+          "label": "比较解释边界",
+          "text": "对称相对差定义为 2*(new-old)/(|new|+|old|)，不是以旧值为分母的传统相对误差。新 k=8 数值门通过且双初态 gap 更一致；但 alpha=-0.10 的旧 k=3 gap 漂移显著，相关熵等观测量也不能由本轮自动判定收敛。"
+        },
+        {
+          "kind": "text",
+          "text": "终态说明：整批 supervisor 上限为 7200 秒并有 60 秒退出宽限；本次实际顺序运行约 4500.36 秒。该时间只描述已完成批次，不构成后续完成时间保证。"
+        },
+        {
+          "kind": "list",
+          "title": "可复核产物",
+          "items": [
+            "docs/static_krylov_control_protocol_20260919.md",
+            "results/research_progress/project_closeout_status_20260919.json",
+            "results/autoresearch_v5_20260919/static_krylov_smoke_v1",
+            "results/autoresearch_v5_20260919/static_krylov_smoke_v2",
+            "results/autoresearch_v5_20260919/static_krylov_smoke_v3/manifest.json",
+            "results/autoresearch_v5_20260919/static_krylov_smoke_v3/cross-method-check.csv",
+            "results/autoresearch_v5_20260919/static_krylov_smoke_v4/manifest.json",
+            "results/autoresearch_v5_20260919/static_krylov_smoke_v4/cross-method-check.csv",
+            "results/autoresearch_v5_20260919/static_krylov_controls_release_v2/compatibility_upload_receipt_20260920.json",
+            "results/autoresearch_v5_20260919/static_krylov_controls_release_v2/compatibility_launch_health_receipt_20260920.json",
+            "results/autoresearch_v5_20260919/static_krylov_controls_release_v2/compatibility_terminal_snapshot_20260920_0945.json",
+            "results/autoresearch_v5_20260920/static_krylov_controls_r2_fetch_0945/validation_negdiag-a01000-b02500-L080-k08.json",
+            "results/autoresearch_v5_20260920/static_krylov_controls_r2_fetch_0945/validation_negdiag-a01750-b02500-L080-k08.json",
+            "results/autoresearch_v5_20260920/static_krylov_baseline_v3/repair_provenance_20260920.json",
+            "results/autoresearch_v5_20260920/static_krylov_controls_r2_comparison_20260920/comparison.json"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "L=10 四点对照与 gate",
+      "note": "表中 timeout flag 与 returncode/metrics 分开；数值门是本次总能量 absE<=1e-8，不替代历史 variance/site 门。",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": ["来源/cell", "alpha", "k", "Sz=0 absE", "Sz=1 absE", "sweeps", "norm/Sz", "执行事实"],
+          "rows": [
+            ["v1 / a-0100-k3", "-0.100", "3", "5.6143420579e-8 · fail", "1.0643028681e-9", "16/16", "1；0/1", "rc=0；timed_out=true；metrics 完整"],
+            ["v2 / a-0100-k8", "-0.100", "8", "1.2586198750e-10", "3.8312464312e-11", "16/16", "1；0/1", "rc=0；未超时；metrics 完整"],
+            ["v3 / a-0175-k3", "-0.175", "3", "2.2880808359e-11", "3.0005331553e-11", "16/16", "1；0/1", "rc=0；未超时；metrics 完整"],
+            ["v3 / a-0175-k8", "-0.175", "8", "2.4154012124e-12", "3.0007996088e-11", "16/16", "1；0/1", "rc=0；未超时；metrics 完整"]
+          ]
+        },
+        {
+          "kind": "kv",
+          "pairs": [
+            ["k8_gate", "PASS；required_cases=2；两个 k=8 case 均 comparison_passed=true"],
+            ["all_cases_gate", "FAIL；required_cases=4；仅 v1 a-0100-k3 Sz=0 总能量门失败，旧 timeout 单独保留"],
+            ["wall 计划修订", "原 180 s 不足以覆盖四个冷启动；仅剩余 .175 两点追加 240 s 安排，实际 completion wall=167.203 s"],
+            ["物理设置", "未改变 beta、OBC、Sz=0/1、sweeps、maxdim、cutoff、noise、初始化或验收门；v1/v2 未覆盖"]
+          ]
+        },
+        {
+          "kind": "note",
+          "style": "info",
+          "label": "解释边界",
+          "text": "L=10 k=8 calibration 只证明本地小链在本次总能量门下的两点对照完整；不能推出 L=80 DMRG 收敛、不能替代生产 3→8 对照，也不支持新相或全域单相结论。"
+        }
+      ]
+    },
+    {
+      "title": "L=10 v4 保存态与增强诊断",
+      "note": "v4 使用新源哈希与 SAVE_STATE=1、ENRICHED=1；它是本地 k=8 校准，不改变历史四点 all_cases_gate 的失败事实。",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": ["cell", "alpha", "Sz=0 absE", "Sz=1 absE", "ED residual Sz=0/1", "norm；total Sz", "sweeps", "执行/产物"],
+          "rows": [
+            ["v4 / a-0100-k8", "-0.100", "1.2586198750e-10", "3.8312464312e-11", "2.5114342573e-15 / 1.6485279598e-15", "1；3.12e-17/1", "16/16", "rc=0；未超时；metrics/entropy/bonds/connected/state_sz0 完整"],
+            ["v4 / a-0175-k8", "-0.175", "2.4154012124e-12", "3.0007996088e-11", "2.3926453825e-15 / 1.6119523266e-15", "1；4.13e-16/1", "16/16", "rc=0；未超时；metrics/entropy/bonds/connected/state_sz0 完整"]
+          ]
+        },
+        {
+          "kind": "kv",
+          "pairs": [
+            ["v4 gates", "k8_gate=PASS；all_cases_gate=PASS（v4 两点范围）；历史 v1–v3 all_cases_gate 仍 FAIL，独立保留"],
+            ["设置", "L=10 OBC；beta=0.25；Krylov=8；16 sweeps；maxdim=64；cutoff=1e-11；2 threads；legacy noise；本地两 sector 均为 center（未覆盖 ferro_j2）；生产基线拟用双 Sz=0 初态"],
+            ["源/运行哈希", "negative_static_cell.jl SHA256=291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f；v4 driver SHA256=ebbad376886767e33e42f34ef26323d57b104fab52f1530f6d7bb1f0f9fc5cba；source/old v1–v3 hashes stable"],
+            ["墙钟", "v4 两点合计 172.016 s；300 s 预算内；未重跑旧点"],
+            ["cross-method", "results/autoresearch_v5_20260919/static_krylov_smoke_v4/cross-method-check.csv；4 rows；DMRG absE=1e-8 与 ED residual=1e-10 分列"]
+          ]
+        },
+        {
+          "kind": "note",
+          "style": "info",
+          "label": "解释边界",
+          "text": "保存态/增强诊断产物证明两点 L=10 k=8 运行完整；L=80 两点已完成数值门与完整性验收，但本轮 comparison 仍是 audit_only，不能推出全部观测量收敛或负区低能谱热力学结论。"
+        }
+      ]
+    },
+    {
+      "title": "远端只读 preflight 与敏感输出边界",
+      "note": "保留启动时健康快照与终态回执；本轮终态为 2026-09-20T09:48:44+08:00 success，仅使用 allowlist/receipt 摘要，不嵌入原始环境 dump。",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": ["检查项", "结果"],
+          "rows": [
+            ["主机/账户", "c104-ysu；wangjieren"],
+            ["精确 Julia 进程", "Julia PID=294507；命令 negative_static_cell.jl；--threads=8"],
+            ["本轮终态检查", "09:48:44；supervisor completed；batch returncode=0；2 cells/4 child runs；无活动匹配进程"],
+            ["project pythonbatch", "未观察到真实 Python 进程；唯一命中为检查 shell 自匹配，已排除"],
+            ["资源", "nproc=80；memory available≈987 GiB；/home available≈216 GiB（94% used）"],
+            ["Julia 可执行性", "启动时固定 Julia 路径检查通过；终态无活动匹配进程"],
+            ["项目文件", "Project.toml 与 Manifest.toml 均存在"],
+            ["全局锁", "22 个旧 lock 文件可见；/proc/locks/fuser 未观察到持有者，不宣称绝对空闲"],
+            ["原始环境 dump", "不链接、不嵌入、不上传；仅保留 health_summary.json allowlist"]
+          ]
+        },
+        {
+          "kind": "kv",
+          "pairs": [
+            ["allowlist", "results/autoresearch_v5_20260919/ssh_health_audit_v1/health_summary.json"],
+            ["latest health allowlist", "results/autoresearch_v5_20260919/ssh_health_audit_v2/health_summary.json；22:22 无项目 Python/本用户 Julia"],
+            ["stdout evidence hash", "8a97522b0480c6d73576c4ffda77788cc5efcee431ceffe903dcf18cd9d5a6ec"],
+            ["command hash", "49a2885b0f7a47b35195560f7f97cc9cd430e01f16a8280c9d04a685a1676df7"],
+            ["NumPy 依赖准备", "numpy 1.26.4 wheel 的本地来源/SHA 已核对；当前启动回执不把依赖准备误作科学结果"],
+            ["NumPy wheel SHA256", "ffa75af20b44f8dba823498024771d5ac50620e6915abac414251bd971b4529f；证据 dependency_evidence.json"],
+            ["历史上传拦截原因", "旧 execution_upload_rejected 仅作历史：当时 require_escalated 外传授权未确认；当前 compat launcher 已按授权上传并核验"],
+            ["控制 manifest SHA256", "e0dedb571cb265817f537de63e2bd107369c23fcb12326099c008ef55392efb4；未重试"],
+            ["Julia startup/terminal receipt", "compatibility_launch_health_receipt（历史健康快照）+ compatibility_terminal_snapshot_20260920_0945.json（当前终态 success）"]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "未完成项与 QA",
+      "blocks": [
+        {
+          "kind": "list",
+          "items": [
+            "L=80 两点 candidate 与生产 3→8 comparison 已完成数值验收；Stage3 为 numerical_done_physics_stability_not_claimed，comparison 仅 audit_only。",
+            "Stage2 full chain 仍 pending；Stage4 writing_in_progress。",
+            "本地 8/8 launch preflight、远端终态 checksum 与两个独立 Practical V2 validator 均通过；旧 73-file execution_upload_rejected 仅保留为历史。",
+            "独立 ED 预检的 NumPy 1.26.4 cp310/manylinux2014 wheel 来源与 SHA 已核验；当前 running receipt 不将依赖状态冒充科学结果。",
+            "旧 baseline_v2 的 connected_quarter 行坐标错配已由同一 raw 来源修复为 baseline_v3；v2 保留为历史快照，当前 comparison 使用 v3。",
+            "本轮不据 gap/熵等有限对照宣称全部观测量收敛、新相、全域单相、全局 c=1 或论文完成；无自动重试、无后续监控。"
+          ]
+        },
+        {
+          "kind": "table",
+          "columns": ["QA", "结果"],
+          "rows": [
+            ["ED reference", "8 tests；residual/norm/Sz 与 bit-sector/Kronecker 核对通过"],
+            ["Krylov hook / comparator / adapter / preparer", "6 / 17 / 19 / 4 tests；既有 QA 通过"],
+            ["v3 output", "baseline v3 使用修复后 connected_quarter 导出；其余五类 CSV 与 v2 SHA 一致，8 行 staggered 值不变"],
+            ["comparison", "2 points × 324 = 648 records；status=audit_only；candidate=verified；failures=[]"],
+            ["cross-method CSV", "8 rows；DMRG absE 与 ED residual 阈值分列；未把 residual 当统计误差"]
+          ]
+        },
+        {
+          "kind": "verdict",
+          "status": "warn",
+          "label": "两点数值验收通过；观测量稳定性未宣称",
+          "why": "L=80 终态 success，Practical V2/独立完整性 validator 通过，comparison audit_only 且 failures=[]；旧 k=3 gap 尤其在 alpha=-0.10 对两初态敏感（对称相对差 31.59%/43.80%）。Stage2 完整链和 Stage4 仍未完成，因此不作新相或全域结论。"
+        }
+      ]
+    }
+  ]
+}

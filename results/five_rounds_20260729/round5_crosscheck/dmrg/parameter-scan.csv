@@ -1,0 +1,2 @@
+cell_id,alpha,status,energy,energy_density,variance_per_site,actual_maxdim,max_truncation_error,final_energy_change
+cell-0001,0.23,success,-2.645354491124126,-0.2645354491124126,1.5160317445861438e-12,23,9.874050902598303e-13,4.440892098500626e-15

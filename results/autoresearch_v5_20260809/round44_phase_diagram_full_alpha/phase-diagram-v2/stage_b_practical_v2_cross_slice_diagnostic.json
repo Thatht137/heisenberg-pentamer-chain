@@ -1,0 +1,1955 @@
+{
+  "schema_version": 1,
+  "status": "action_required",
+  "policy": "Practical V2 accepted-only",
+  "inputs": {
+    "stage_b_summary": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_completion_summary.json",
+      "sha256": "5ab0513cfdac4e13df388c7620580eceabfa4b10058c5e11ce94b5b8757fbeae"
+    },
+    "accepted_index": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_accepted_index_final.json",
+      "sha256": "833529f5da540b6de8be351521d5b796bc14d052e092831fe58246e9cfa8fc9a"
+    },
+    "bounded_records": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_bounded_records_final.json",
+      "sha256": "f84299923738e4682185d6e342c16ebda7cff089a11bc371812fbcd8092002bc"
+    },
+    "stage_a": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_a_finite_size_diagnostic_latest.json",
+      "sha256": "8bf44f7e106b14db62c07874a6405cfec27f50d7f32cda76cd73bba9646f39ce"
+    }
+  },
+  "criteria": {
+    "sigma": 2.0,
+    "target_width": 0.025,
+    "final_size_pair": [
+      60,
+      80
+    ],
+    "sweeps": 64,
+    "dual_diagnostic_for_phase_name": true
+  },
+  "slices": [
+    {
+      "beta": 0.05,
+      "points": [
+        {
+          "alpha": -1.0,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.05408839248624142,
+            "error": 0.01521912250790289,
+            "sigma": 3.55397576030778
+          },
+          "q_peak_median": 0.6025,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.6025,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.75,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.04460729351373782,
+            "error": 0.006797268125744128,
+            "sigma": 6.562532577579387
+          },
+          "q_peak_median": 0.6025,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.6025,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.5,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.04108733949997312,
+            "error": 0.0012277478229717198,
+            "sigma": 33.46561788276902
+          },
+          "q_peak_median": 0.6025,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.6025,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.35,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.040246689863969065,
+            "error": 0.001022845707381647,
+            "sigma": 39.34776239809951
+          },
+          "q_peak_median": 0.60375,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.605,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.25,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.04271720290912473,
+            "error": 0.00046461855755444145,
+            "sigma": 91.94037176209726
+          },
+          "q_peak_median": 0.60375,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.605,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.1,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.05802435359467312,
+            "error": 0.010141750837871385,
+            "sigma": 5.721334957076468
+          },
+          "q_peak_median": 0.60375,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.605,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.05,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.07145767234368539,
+            "error": 0.015113107694510141,
+            "sigma": 4.728191831097882
+          },
+          "q_peak_median": 0.6074999999999999,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.60875,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.60625,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.025,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": 0.05863009963700272,
+            "error": 0.009768755177282462,
+            "sigma": 6.001798445450738
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        }
+      ],
+      "sign_brackets": [
+        {
+          "alpha": [
+            -0.05,
+            -0.025
+          ],
+          "width": 0.025,
+          "left": {
+            "value": -0.07145767234368539,
+            "error": 0.015113107694510141,
+            "sigma": 4.728191831097882
+          },
+          "right": {
+            "value": 0.05863009963700272,
+            "error": 0.009768755177282462,
+            "sigma": 6.001798445450738
+          }
+        }
+      ],
+      "momentum_brackets": [
+        {
+          "alpha": [
+            -0.05,
+            -0.025
+          ],
+          "width": 0.025,
+          "q_left": 0.6074999999999999,
+          "q_right": 1.0
+        }
+      ],
+      "bounded_grid_keys": []
+    },
+    {
+      "beta": 0.1,
+      "points": [
+        {
+          "alpha": -1.0,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.040502369131118265,
+            "error": 0.00015738018318597966,
+            "sigma": 257.3536789142996
+          },
+          "q_peak_median": 0.6025,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.6025,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.75,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.04064780201617679,
+            "error": 0.0019382579357804847,
+            "sigma": 20.97130689667937
+          },
+          "q_peak_median": 0.6025,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.6025,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.5,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.07149428582406137,
+            "error": 0.016474815431715768,
+            "sigma": 4.339610730110352
+          },
+          "q_peak_median": 0.60375,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.605,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.35,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.04321300560683733,
+            "error": 0.0001414213562373095,
+            "sigma": 305.56209300046976
+          },
+          "q_peak_median": 0.60375,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.605,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.25,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.0411118529442811,
+            "error": 0.0001414213562373095,
+            "sigma": 290.70470004045296
+          },
+          "q_peak_median": 0.60375,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.605,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.1,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.04070534612409932,
+            "error": 0.011764418220458855,
+            "sigma": 3.4600390228656512
+          },
+          "q_peak_median": 0.60625,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.6075,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.605,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.05,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": 0.028736373663936166,
+            "error": 0.004867919871807648,
+            "sigma": 5.9032141901845305
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.025,
+          "status": "bounded_missing_size",
+          "missing_sizes": [
+            40
+          ],
+          "boundary_eligible": false
+        }
+      ],
+      "sign_brackets": [
+        {
+          "alpha": [
+            -0.1,
+            -0.05
+          ],
+          "width": 0.05,
+          "left": {
+            "value": -0.04070534612409932,
+            "error": 0.011764418220458855,
+            "sigma": 3.4600390228656512
+          },
+          "right": {
+            "value": 0.028736373663936166,
+            "error": 0.004867919871807648,
+            "sigma": 5.9032141901845305
+          }
+        }
+      ],
+      "momentum_brackets": [
+        {
+          "alpha": [
+            -0.1,
+            -0.05
+          ],
+          "width": 0.05,
+          "q_left": 0.60625,
+          "q_right": 1.0
+        }
+      ],
+      "bounded_grid_keys": [
+        [
+          -0.025,
+          0.1,
+          40
+        ]
+      ]
+    },
+    {
+      "beta": 0.25,
+      "points": [
+        {
+          "alpha": -1.0,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.04660462396520154,
+            "error": 0.0022844975803949447,
+            "sigma": 20.40038228324344
+          },
+          "q_peak_median": 0.60375,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.605,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.75,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.043961411329486166,
+            "error": 0.0014945109105988978,
+            "sigma": 29.41524950919859
+          },
+          "q_peak_median": 0.60375,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.605,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.5,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.039767263241381745,
+            "error": 0.002119160386924611,
+            "sigma": 18.765575029973633
+          },
+          "q_peak_median": 0.60375,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.605,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.35,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.026374591038680895,
+            "error": 0.0001414213562373095,
+            "sigma": 186.4965217447321
+          },
+          "q_peak_median": 0.605,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.6075,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.25,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.024274801877996355,
+            "error": 0.0001414213562373095,
+            "sigma": 171.64877019891162
+          },
+          "q_peak_median": 0.60625,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.6075,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.605,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.1,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": 0.02913840533666079,
+            "error": 0.009506411372210748,
+            "sigma": 3.06513196155581
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.05,
+          "status": "bounded_missing_size",
+          "missing_sizes": [
+            60
+          ],
+          "boundary_eligible": false
+        },
+        {
+          "alpha": -0.025,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.036268874603924806,
+            "error": 0.003171681151776308,
+            "sigma": 11.435220902836443
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        }
+      ],
+      "sign_brackets": [
+        {
+          "alpha": [
+            -0.25,
+            -0.1
+          ],
+          "width": 0.15,
+          "left": {
+            "value": -0.024274801877996355,
+            "error": 0.0001414213562373095,
+            "sigma": 171.64877019891162
+          },
+          "right": {
+            "value": 0.02913840533666079,
+            "error": 0.009506411372210748,
+            "sigma": 3.06513196155581
+          }
+        }
+      ],
+      "momentum_brackets": [
+        {
+          "alpha": [
+            -0.25,
+            -0.1
+          ],
+          "width": 0.15,
+          "q_left": 0.60625,
+          "q_right": 1.0
+        }
+      ],
+      "bounded_grid_keys": [
+        [
+          -0.05,
+          0.25,
+          60
+        ]
+      ]
+    },
+    {
+      "beta": 0.75,
+      "points": [
+        {
+          "alpha": -1.0,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.027003375872785784,
+            "error": 0.0001414213562373095,
+            "sigma": 190.94270194576035
+          },
+          "q_peak_median": 0.60375,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.605,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.75,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.018398311480637197,
+            "error": 0.00017588783828864562,
+            "sigma": 104.60252203705032
+          },
+          "q_peak_median": 0.605,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.6075,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.5,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.09033772529667156,
+            "error": 0.0027250702565215852,
+            "sigma": 33.15060412863744
+          },
+          "q_peak_median": 0.80375,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.6075,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "size_sensitive_or_mixed",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.35,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": 0.06614413516395479,
+            "error": 0.0001414213562373095,
+            "sigma": 467.70966510152
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.25,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": 0.054554457794910416,
+            "error": 0.0014255202294085104,
+            "sigma": 38.26985872908071
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.1,
+          "status": "bounded_missing_size",
+          "missing_sizes": [
+            60
+          ],
+          "boundary_eligible": false
+        },
+        {
+          "alpha": -0.05,
+          "status": "bounded_missing_size",
+          "missing_sizes": [
+            40
+          ],
+          "boundary_eligible": false
+        },
+        {
+          "alpha": -0.025,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.009320406201350606,
+            "error": 0.007591690077661498,
+            "sigma": 1.2277116302173405
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        }
+      ],
+      "sign_brackets": [
+        {
+          "alpha": [
+            -0.5,
+            -0.35
+          ],
+          "width": 0.15000000000000002,
+          "left": {
+            "value": -0.09033772529667156,
+            "error": 0.0027250702565215852,
+            "sigma": 33.15060412863744
+          },
+          "right": {
+            "value": 0.06614413516395479,
+            "error": 0.0001414213562373095,
+            "sigma": 467.70966510152
+          }
+        }
+      ],
+      "momentum_brackets": [
+        {
+          "alpha": [
+            -0.75,
+            -0.5
+          ],
+          "width": 0.25,
+          "q_left": 0.605,
+          "q_right": 0.80375
+        },
+        {
+          "alpha": [
+            -0.5,
+            -0.35
+          ],
+          "width": 0.15000000000000002,
+          "q_left": 0.80375,
+          "q_right": 1.0
+        }
+      ],
+      "bounded_grid_keys": [
+        [
+          -0.1,
+          0.75,
+          60
+        ],
+        [
+          -0.05,
+          0.75,
+          40
+        ]
+      ]
+    },
+    {
+      "beta": 0.9,
+      "points": [
+        {
+          "alpha": -1.0,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.023118942034961343,
+            "error": 0.00014785035532539995,
+            "sigma": 156.36717263262216
+          },
+          "q_peak_median": 0.60375,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.605,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.75,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.01904485332243866,
+            "error": 0.00029452286392385403,
+            "sigma": 64.6634120988397
+          },
+          "q_peak_median": 0.60625,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.6075,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.605,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.5,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": 0.06274363508703024,
+            "error": 0.0052531968099686095,
+            "sigma": 11.943895756573635
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.35,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": 0.06094235508986673,
+            "error": 0.00020495531847413827,
+            "sigma": 297.3445897553352
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.25,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": 0.042573888606582844,
+            "error": 0.005004527783699091,
+            "sigma": 8.507074083044536
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.1,
+          "status": "bounded_missing_size",
+          "missing_sizes": [
+            60
+          ],
+          "boundary_eligible": false
+        },
+        {
+          "alpha": -0.05,
+          "status": "bounded_missing_size",
+          "missing_sizes": [
+            40
+          ],
+          "boundary_eligible": false
+        },
+        {
+          "alpha": -0.025,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.006157386169483692,
+            "error": 0.008309993047359516,
+            "sigma": 0.7409616511580824
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        }
+      ],
+      "sign_brackets": [
+        {
+          "alpha": [
+            -0.75,
+            -0.5
+          ],
+          "width": 0.25,
+          "left": {
+            "value": -0.01904485332243866,
+            "error": 0.00029452286392385403,
+            "sigma": 64.6634120988397
+          },
+          "right": {
+            "value": 0.06274363508703024,
+            "error": 0.0052531968099686095,
+            "sigma": 11.943895756573635
+          }
+        }
+      ],
+      "momentum_brackets": [
+        {
+          "alpha": [
+            -0.75,
+            -0.5
+          ],
+          "width": 0.25,
+          "q_left": 0.60625,
+          "q_right": 1.0
+        }
+      ],
+      "bounded_grid_keys": [
+        [
+          -0.1,
+          0.9,
+          60
+        ],
+        [
+          -0.05,
+          0.9,
+          40
+        ]
+      ]
+    },
+    {
+      "beta": 1.0,
+      "points": [
+        {
+          "alpha": -1.0,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.017604449333503747,
+            "error": 0.00018124959988615713,
+            "sigma": 97.12821073569873
+          },
+          "q_peak_median": 0.605,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.6075,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.6025,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.75,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.01683793773806963,
+            "error": 0.0004142120166792987,
+            "sigma": 40.65052934257653
+          },
+          "q_peak_median": 0.60625,
+          "q_peak_by_size": {
+            "40": {
+              "value": 0.6075,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 0.605,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "incommensurate",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.5,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": 0.0542320142258742,
+            "error": 0.008498658772681406,
+            "sigma": 6.381243873468695
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.35,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": 0.058307521198120604,
+            "error": 0.0001414213562373095,
+            "sigma": 412.2964363336945
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.25,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": 0.03251032715196872,
+            "error": 0.007656383205312346,
+            "sigma": 4.246172935729181
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.1,
+          "status": "bounded_missing_size",
+          "missing_sizes": [
+            60
+          ],
+          "boundary_eligible": false
+        },
+        {
+          "alpha": -0.05,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.02731695486191371,
+            "error": 0.006232203902579137,
+            "sigma": 4.383193375718798
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        },
+        {
+          "alpha": -0.025,
+          "status": "accepted_pair",
+          "sizes": [
+            40,
+            60
+          ],
+          "delta_R_60_40": {
+            "value": -0.0075924679182088894,
+            "error": 0.010477340117376926,
+            "sigma": 0.7246560513595044
+          },
+          "q_peak_median": 1.0,
+          "q_peak_by_size": {
+            "40": {
+              "value": 1.0,
+              "error": 0.0025
+            },
+            "60": {
+              "value": 1.0,
+              "error": 0.0025
+            }
+          },
+          "momentum_class": "commensurate_qpi",
+          "boundary_eligible": true
+        }
+      ],
+      "sign_brackets": [
+        {
+          "alpha": [
+            -0.75,
+            -0.5
+          ],
+          "width": 0.25,
+          "left": {
+            "value": -0.01683793773806963,
+            "error": 0.0004142120166792987,
+            "sigma": 40.65052934257653
+          },
+          "right": {
+            "value": 0.0542320142258742,
+            "error": 0.008498658772681406,
+            "sigma": 6.381243873468695
+          }
+        }
+      ],
+      "momentum_brackets": [
+        {
+          "alpha": [
+            -0.75,
+            -0.5
+          ],
+          "width": 0.25,
+          "q_left": 0.60625,
+          "q_right": 1.0
+        }
+      ],
+      "bounded_grid_keys": [
+        [
+          -0.1,
+          1.0,
+          60
+        ]
+      ]
+    }
+  ],
+  "refinement_targets": [
+    {
+      "beta": 0.05,
+      "alpha": [
+        -0.05,
+        -0.025
+      ],
+      "width": 0.025,
+      "evidence": [
+        "two_sigma_ratio_sign",
+        "momentum_reconstruction"
+      ],
+      "dual_diagnostic": true,
+      "status": "candidate_not_boundary"
+    },
+    {
+      "beta": 0.1,
+      "alpha": [
+        -0.1,
+        -0.05
+      ],
+      "width": 0.05,
+      "evidence": [
+        "two_sigma_ratio_sign",
+        "momentum_reconstruction"
+      ],
+      "dual_diagnostic": true,
+      "status": "candidate_not_boundary"
+    },
+    {
+      "beta": 0.25,
+      "alpha": [
+        -0.25,
+        -0.1
+      ],
+      "width": 0.15,
+      "evidence": [
+        "two_sigma_ratio_sign",
+        "momentum_reconstruction"
+      ],
+      "dual_diagnostic": true,
+      "status": "candidate_not_boundary"
+    },
+    {
+      "beta": 0.5,
+      "alpha": [
+        -0.35,
+        -0.25
+      ],
+      "width": 0.09999999999999998,
+      "evidence": [
+        "momentum_reconstruction",
+        "two_sigma_ratio_sign"
+      ],
+      "dual_diagnostic": true,
+      "status": "candidate_not_boundary"
+    },
+    {
+      "beta": 0.75,
+      "alpha": [
+        -0.75,
+        -0.5
+      ],
+      "width": 0.25,
+      "evidence": [
+        "momentum_reconstruction"
+      ],
+      "dual_diagnostic": false,
+      "status": "candidate_not_boundary"
+    },
+    {
+      "beta": 0.75,
+      "alpha": [
+        -0.5,
+        -0.35
+      ],
+      "width": 0.15000000000000002,
+      "evidence": [
+        "two_sigma_ratio_sign",
+        "momentum_reconstruction"
+      ],
+      "dual_diagnostic": true,
+      "status": "candidate_not_boundary"
+    },
+    {
+      "beta": 0.9,
+      "alpha": [
+        -0.75,
+        -0.5
+      ],
+      "width": 0.25,
+      "evidence": [
+        "two_sigma_ratio_sign",
+        "momentum_reconstruction"
+      ],
+      "dual_diagnostic": true,
+      "status": "candidate_not_boundary"
+    },
+    {
+      "beta": 1.0,
+      "alpha": [
+        -0.75,
+        -0.5
+      ],
+      "width": 0.25,
+      "evidence": [
+        "two_sigma_ratio_sign",
+        "momentum_reconstruction"
+      ],
+      "dual_diagnostic": true,
+      "status": "candidate_not_boundary"
+    }
+  ],
+  "stage_c_actions": [
+    {
+      "action_id": "act-d9dffe860d7b4664d1ec",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.05,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-75350249eb578eaa77b6",
+      "params": {
+        "alpha": -0.0375,
+        "beta": 0.05,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-1729fa4a130b3b7b3f0b",
+      "params": {
+        "alpha": -0.0375,
+        "beta": 0.05,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-d9b3c630f9694be341da",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.05,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-9604320a2a69f627ddf0",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-34ad04c3602593438740",
+      "params": {
+        "alpha": -0.075,
+        "beta": 0.1,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-0531c6a97a0be5b00d22",
+      "params": {
+        "alpha": -0.075,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-ba766280a106d07b8a72",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.1,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-f8aa148bc25ca186d165",
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-2015825a38b335040aef",
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-e0276281f0ca4442cf05",
+      "params": {
+        "alpha": -0.175,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-2da40639f64fd24ffd55",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.25,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-9a61f4918dfabd63a9a4",
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "momentum_reconstruction+two_sigma_ratio_sign",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-8f0bf519b68c86bfea06",
+      "params": {
+        "alpha": -0.3,
+        "beta": 0.5,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "momentum_reconstruction+two_sigma_ratio_sign",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-851b666ba8374701b1c7",
+      "params": {
+        "alpha": -0.3,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "momentum_reconstruction+two_sigma_ratio_sign",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-6541365ee55e3d02fdbf",
+      "params": {
+        "alpha": -0.25,
+        "beta": 0.5,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "momentum_reconstruction+two_sigma_ratio_sign",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-81154595ea8d10610dcb",
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-d44aebac8629418b0372",
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-6ebc4883b0b570977f94",
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-6b91b7c753fcd3144d3e",
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-46ff31ae842f17ad04e8",
+      "params": {
+        "alpha": -0.425,
+        "beta": 0.75,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-eda7079012f22379d679",
+      "params": {
+        "alpha": -0.425,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-e3cac6456088207dd2a1",
+      "params": {
+        "alpha": -0.35,
+        "beta": 0.75,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-c814c489c30ef92b9268",
+      "params": {
+        "alpha": -0.75,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-01c8f544b84427ba4407",
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.9,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-847bc38ecffe67296a54",
+      "params": {
+        "alpha": -0.625,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-7f6d2ed318b67d04abe1",
+      "params": {
+        "alpha": -0.5,
+        "beta": 0.9,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-a759a143436a01a57eae",
+      "params": {
+        "alpha": -0.75,
+        "beta": 1.0,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-8e5d4f8eafa0007aba59",
+      "params": {
+        "alpha": -0.625,
+        "beta": 1.0,
+        "L": 60,
+        "n_units": 12
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-7a9aee18fc9f6c44e449",
+      "params": {
+        "alpha": -0.625,
+        "beta": 1.0,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    },
+    {
+      "action_id": "act-ccbf566d8709b6ad8778",
+      "params": {
+        "alpha": -0.5,
+        "beta": 1.0,
+        "L": 80,
+        "n_units": 16
+      },
+      "budget": 64,
+      "stage": "C-R1-practical-v2-refine",
+      "reason": "two_sigma_ratio_sign+momentum_reconstruction",
+      "boundary_thresholds_relaxed": false
+    }
+  ],
+  "counts": {
+    "slices": 7,
+    "accepted": 89,
+    "bounded": 7,
+    "refinement_targets": 8,
+    "actions": 31
+  },
+  "decision": {
+    "phase_boundary_confirmed": false,
+    "phase_label_assigned": false,
+    "stage_c_required": true,
+    "boundary_thresholds_relaxed": false,
+    "bounded_points_excluded": true,
+    "no_bridging_across_bounded_holes": true
+  }
+}

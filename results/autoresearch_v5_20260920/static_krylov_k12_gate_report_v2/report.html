@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Static Krylov k12 Gate</title><style>
+:root{
+  --bg:#fbfaf6; --panel:#fff; --ink:#1a1a1a; --muted:#5b5b5b; --line:#e6e3da;
+  --accent:#1f5cd6; --accent-soft:#e6efff; --warm:#b8651e; --warm-soft:#fcefdc;
+  --good:#1e7d3c; --good-soft:#e1f3e6; --bad:#b3261e; --bad-soft:#fbe4e2;
+  --olive:#7c6f1d; --olive-soft:#f5f1d8; --code-bg:#f2f1eb;
+  --serif:"Iowan Old Style","Source Serif 4","Charter",Cambria,Georgia,serif;
+  --sans:-apple-system,"Inter","Segoe UI",system-ui,sans-serif;
+  --mono:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--ink);margin:0;font-family:var(--sans);-webkit-font-smoothing:antialiased}
+body{line-height:1.55}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent}
+a:hover{border-bottom-color:var(--accent)}
+code{font-family:var(--mono);font-size:.9em;background:var(--code-bg);padding:1px 5px;border-radius:3px}
+mark{background:#fde68a;color:var(--ink);padding:1px 5px;border-radius:3px;font-weight:600;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+math{font-family:var(--serif);font-size:1.04em}
+math[display="block"]{font-size:1.2em;margin:2px 0}
+.wrap{max-width:880px;margin:0 auto;padding:46px 40px 100px}
+@media(max-width:720px){.wrap{padding:26px 18px 70px}}
+.eyebrow{font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-family:var(--serif);font-size:30px;line-height:1.15;margin:8px 0 12px;max-width:32ch}
+.sub{font-size:13px;color:var(--muted);margin:0}
+.lede{font-size:15px;color:#2a2a2a;margin:14px 0 0;max-width:72ch}
+.expected{margin:18px 0 0;padding:12px 15px;background:var(--accent-soft);border:1px solid #c4d9f7;border-radius:6px;font-size:14px}
+.expected b{color:#143b87}
+.hero{padding-bottom:24px;margin-bottom:8px;border-bottom:1px solid var(--line)}
+section{margin:38px 0 0}
+section>h2{font-family:var(--serif);font-size:22px;margin:0 0 4px}
+section>.note{color:var(--muted);font-size:13px;margin:0 0 16px;max-width:72ch}
+section h3{font-family:var(--serif);font-size:18px;margin:22px 0 6px;border-top:1px solid var(--line);padding-top:14px}
+.para{font-size:14px;margin:10px 0;max-width:72ch}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:13px 16px;margin:10px 0}
+.card .title{font-family:var(--serif);font-size:15px;font-weight:600;margin-bottom:2px}
+.eq{text-align:center;margin:6px 0 12px;padding:6px 0;overflow-x:auto}
+.kv{display:grid;grid-template-columns:150px minmax(0,1fr);gap:4px 14px;font-size:13.5px;margin-top:6px}
+.kv .k{color:var(--muted)} .kv .v{color:#1a1a1a}
+table{width:100%;border-collapse:collapse;font-size:13.5px;background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow:hidden;margin:8px 0}
+thead th{background:#f7f5ed;text-align:left;padding:9px 11px;font-weight:600;border-bottom:1px solid var(--line)}
+tbody td{padding:9px 11px;border-top:1px solid var(--line);vertical-align:top}
+tbody tr:hover{background:#faf9f4}
+td.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+td.muted{color:var(--muted);font-size:.92em}
+.pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:999px;border:1px solid var(--line);background:#fafafa;color:#444;white-space:nowrap}
+.pill.exact{background:var(--good-soft);border-color:#b4d9bd;color:var(--good)}
+.pill.approx{background:var(--warm-soft);border-color:#e7c79b;color:var(--warm)}
+ul.flat{padding-left:20px;margin:6px 0} ul.flat li{margin:3px 0;font-size:13.5px}
+.verdict{display:flex;gap:12px;align-items:baseline;padding:13px 16px;border-radius:6px;border:1px solid var(--line);margin:6px 0 14px}
+.verdict .label{font-family:var(--serif);font-size:17px;font-weight:600;white-space:nowrap}
+.verdict .why{font-size:13.5px;color:#222}
+.verdict.good{background:var(--good-soft);border-color:#b4d9bd} .verdict.good .label{color:var(--good)}
+.verdict.warn{background:var(--olive-soft);border-color:#d9d09b} .verdict.warn .label{color:var(--olive)}
+.verdict.bad{background:var(--bad-soft);border-color:#f1bdc1} .verdict.bad .label{color:var(--bad)}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:14px 0;width:min(1180px,94vw);position:relative;left:50%;transform:translateX(-50%)}
+.figbox{border:1px solid var(--line);border-radius:6px;background:var(--panel);padding:10px;text-align:center}
+.figbox img{max-width:100%;height:auto;display:block;margin:0 auto;border-radius:3px}
+.figbox .cap{font-size:12px;color:var(--muted);margin-top:7px}
+.pending{padding:14px 16px;border:1px dashed var(--line);border-radius:6px;color:var(--muted);font-size:14px;background:#faf8f2}
+.toc{position:fixed;top:118px;left:calc(50% - 608px);width:152px;max-height:72vh;overflow:auto;font-size:12.5px;line-height:1.4}
+.toc .lbl{text-transform:uppercase;letter-spacing:.07em;font-size:10px;color:var(--muted);font-weight:700;margin-bottom:9px}
+.toc a{display:block;color:var(--muted);padding:4px 0 4px 12px;border-left:2px solid var(--line);border-bottom:none}
+.toc a:hover{color:var(--ink)}
+.toc a.on{color:var(--accent);border-left-color:var(--accent);font-weight:600}
+.toc-bar{display:none}
+@media(max-width:1299px){
+  .toc{display:none}
+  .toc-bar{display:flex;gap:7px;overflow-x:auto;margin:20px 0 0;padding-bottom:2px}
+  .toc-bar a{white-space:nowrap;font-size:12px;padding:5px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:var(--panel)}
+  .toc-bar a:hover{color:var(--ink)}
+  .toc-bar a.on{color:var(--accent);border-color:#bcd2f5;background:var(--accent-soft);font-weight:600}
+}
+.footer{margin-top:56px;padding-top:18px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+.print-btn{position:fixed;top:16px;right:18px;font-family:var(--sans);font-size:12.5px;padding:7px 12px;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:5px;cursor:pointer}
+.print-btn:hover{border-color:var(--accent);color:var(--accent)}
+@media print{.print-btn,.toc,.toc-bar{display:none}.wrap{max-width:100%;padding:0}.figs{position:static;left:auto;transform:none;width:auto}.card,table,.verdict,.figbox{break-inside:avoid}}
+.lattix{position:relative;width:100%;margin:6px 0}
+.lattix-poster{display:block;width:100%}
+@media print{.lattix-poster{display:block}}
+</style></head><body><button class="print-btn" onclick="window.print()">Save as PDF</button><main class="wrap"><nav class="toc"><div class="lbl">Contents</div><a href="#gate">Gate 状态</a><a href="#section">运行参数</a><a href="#smoke-preflight">本地 smoke 与 preflight</a><a href="#manifest-hash-provenance">Manifest / hash / provenance</a><a href="#validator-comparison">Validator 与 comparison</a><a href="#upload-remote-state">Upload / remote state</a><a href="#audit-only">Audit-only 边界与下一门</a></nav><header class="hero"><div class="eyebrow">LOCAL GATE · TERMINAL SUMMARY · REVIEW</div><h1>Static Krylov k12 Gate</h1><p class="lede">独立 k12 单点门禁记录；本页只呈现可追溯的准备/终态证据，不作物理结论。</p></header><nav class="toc-bar"><a href="#gate">Gate 状态</a><a href="#section">运行参数</a><a href="#smoke-preflight">本地 smoke 与 preflight</a><a href="#manifest-hash-provenance">Manifest / hash / provenance</a><a href="#validator-comparison">Validator 与 comparison</a><a href="#upload-remote-state">Upload / remote state</a><a href="#audit-only">Audit-only 边界与下一门</a></nav><section id="gate"><h2>Gate 状态</h2><div class="verdict warn"><span class="label">TERMINAL SUMMARY · REVIEW</span><span class="why">终态摘要为 terminal_accepted；需按 validator/comparison 结果继续审计。</span></div><div class="kv"><div class="k">state</div><div class="v">terminal</div><div class="k">status</div><div class="v">terminal_accepted</div><div class="k">claim</div><div class="v">audit_only</div><div class="k">package_ready</div><div class="v">是</div><div class="k">launch_ready</div><div class="v">是</div><div class="k">goal_complete</div><div class="v">是</div><div class="k">source</div><div class="v">results\research_progress\project_closeout_status_20260919.json</div></div></section><section id="section"><h2>运行参数</h2><table><thead><tr><th>参数</th><th>值</th></tr></thead><tbody><tr><td>alpha</td><td>-0.1</td></tr><tr><td>beta</td><td>0.25</td></tr><tr><td>L</td><td>80</td></tr><tr><td>n_units</td><td>16</td></tr><tr><td>eigsolve_krylovdim</td><td>12</td></tr><tr><td>nsweeps</td><td>64</td></tr><tr><td>maxdim</td><td>1200</td></tr><tr><td>cutoff</td><td>1e-11</td></tr><tr><td>threads</td><td>8</td></tr><tr><td>q_count</td><td>401</td></tr><tr><td>init_modes</td><td>[&quot;center&quot;, &quot;ferro_j2&quot;]</td></tr><tr><td>save_state</td><td>是</td></tr><tr><td>enriched_diagnostics</td><td>是</td></tr><tr><td>concurrency</td><td>1</td></tr><tr><td>retry_policy</td><td>none</td></tr><tr><td>warmstart</td><td>否</td></tr><tr><td>no_128</td><td>是</td></tr></tbody></table></section><section id="smoke-preflight"><h2>本地 smoke 与 preflight</h2><div class="kv"><div class="k">artifact</div><div class="v">results/autoresearch_v5_20260920/static_krylov_k12_smoke_r1/a-0100-k12</div><div class="k">status</div><div class="v">pass</div><div class="k">Julia</div><div class="v">1.11.5</div><div class="k">role</div><div class="v">parser/execution evidence only</div><div class="k">not_remote_validation</div><div class="v">是</div><div class="k">preflight</div><div class="v">results/autoresearch_v5_20260920/static_krylov_k12_r1/preflight.json</div><div class="k">dry_run</div><div class="v">DRY_RUN_OK cells=1</div><div class="k">unit_tests</div><div class="v">7 passed</div><div class="k">remote Julia required</div><div class="v">1.12.3</div></div><div class="expected"><b>证据边界</b> L10 smoke 的 Julia 1.11.5 只证明 parser/execution；不替代远端 Julia 1.12.3 验证。</div></section><section id="manifest-hash-provenance"><h2>Manifest / hash / provenance</h2><div class="kv"><div class="k">release_manifest</div><div class="v">results/autoresearch_v5_20260920/static_krylov_controls_release_v3/server_upload_manifest.json</div><div class="k">manifest_sha256</div><div class="v">4f0c3857fc0d6635dc4fb6bf193022b30c46dc43c1170161c40e4bfc2c2b9e30</div><div class="k">run_spec</div><div class="v">results/autoresearch_v5_20260920/static_krylov_k12_r1/parameter-scan.run_spec.json</div><div class="k">run_spec_sha256</div><div class="v">0b21ac0972ed935ab4c5d824af717ee155d57d83e24c1febf25598ce920b0709</div><div class="k">payload files</div><div class="v">41</div><div class="k">control files</div><div class="v">1</div><div class="k">total files</div><div class="v">42</div><div class="k">payload bytes</div><div class="v">345707</div></div></section><section id="validator-comparison"><h2>Validator 与 comparison</h2><table><thead><tr><th>validator 字段</th><th>值</th></tr></thead><tbody><tr><td>status</td><td>pass</td></tr><tr><td>acceptance_label</td><td>accepted_under_practical_v2_k12</td></tr><tr><td>path</td><td>results/autoresearch_v5_20260920/static_krylov_k12_fetch_2052/validator.pass.json</td></tr><tr><td>sha256</td><td>9b7c5e3e8a82fffb53f314cdd9bf85dede7e82893b6140232e6b8d22df0807a1</td></tr><tr><td>center</td><td>{&quot;spin_gap&quot;: 7.277204700173456e-05, &quot;variance_per_site_sz0&quot;: 1.8680879065868793e-11, &quot;variance_per_site_sz1&quot;: 1.872990651463624e-11}</td></tr><tr><td>ferro_j2</td><td>{&quot;spin_gap&quot;: 7.277205179789803e-05, &quot;variance_per_site_sz0&quot;: 1.8633983245308627e-11, &quot;variance_per_site_sz1&quot;: 1.872990651463624e-11}</td></tr><tr><td>failures</td><td>[]</td></tr></tbody></table><table><thead><tr><th>comparison 字段</th><th>值</th></tr></thead><tbody><tr><td>status</td><td>audit_only</td></tr><tr><td>gate_status</td><td>pass</td></tr><tr><td>claim</td><td>none</td></tr><tr><td>baseline_krylovdim</td><td>8</td></tr><tr><td>candidate_krylovdim</td><td>12</td></tr><tr><td>comparison_count</td><td>172</td></tr><tr><td>q_peak_over_pi</td><td>{&quot;k12&quot;: 1.0, &quot;k8&quot;: 1.0, &quot;max_abs_delta&quot;: 0.0}</td></tr><tr><td>max_abs_delta</td><td>{&quot;dominant_ratio&quot;: 8.399395079461414e-08, &quot;entropy&quot;: 5.741204534004396e-08, &quot;spin_gap&quot;: 7.52109485802066e-12}</td></tr><tr><td>summary</td><td>results/autoresearch_v5_20260920/static_krylov_k12_finalize_2057/summary.json</td></tr><tr><td>summary_sha256</td><td>99ea78efdc127818ae811b71260dd7e16bc096ac221be2c4d42e487bbfe5d928</td></tr><tr><td>comparison_file</td><td>results/autoresearch_v5_20260920/static_krylov_k12_finalize_2057/comparison.json</td></tr><tr><td>comparison_sha256</td><td>047be5bd34527ac2dfef97481a6dfb3e887a563c6582257cd720a49be3c5cbf3</td></tr><tr><td>interpretation</td><td>k8→k12在该L80单点数值稳定；仅为audit-only，不单独新增相或热力学声明</td></tr></tbody></table><div class="expected"><b>解释</b> prepared-only 阶段的 validator/comparison 明确标为未执行；terminal 阶段仅转录未来摘要，不在本脚本中重算。</div></section><section id="upload-remote-state"><h2>Upload / remote state</h2><div class="kv"><div class="k">upload status</div><div class="v">superseded_by_explicit_authorization</div><div class="k">upload performed</div><div class="v">是</div><div class="k">ssh/scp performed</div><div class="v">是</div><div class="k">partial side effects</div><div class="v">否</div><div class="k">no remote side effects</div><div class="v">否</div><div class="k">remote Julia</div><div class="v">1.12.3</div><div class="k">server snapshot</div><div class="v">{&quot;active_julia&quot;: false, &quot;cpu_cores&quot;: 80, &quot;load_average&quot;: 8.0, &quot;memory_available_gib&quot;: 995, &quot;qec_workers&quot;: 8, &quot;snapshot_role&quot;: &quot;k12终态只读快照；Julia已自然退出&quot;}</div><div class="k">ETA / timeout</div><div class="v">{&quot;concurrency&quot;: 1, &quot;expected_wall_minutes&quot;: &quot;40-60&quot;, &quot;threads&quot;: 8, &quot;timeout_seconds&quot;: 7200}</div></div><div class="expected"><b>远端边界</b> 本报告不会上传、SSH、启动 Julia 或修改远端状态。</div></section><section id="audit-only"><h2>Audit-only 边界与下一门</h2><div class="card"><div class="title">本报告不声称</div><ul class="flat"><li>不引入新相，不宣称全域单相。</li><li>不宣称热力学 c=1 或全局收敛。</li><li>不替代论文/原始数据验收，也不改变 goal_complete=false。</li></ul></div><div class="card"><div class="title">下一门</div><ul class="flat"><li>保留 audit_only：逐项复核终态 validator、comparison 和回收文件 hash。</li><li>若所有审计门通过，再由主流程决定是否申请下一点；本报告不授权扩大计算或改变论文结论。</li></ul></div></section><div class="footer">Generated 2026-09-20. Single file, no external assets, opens offline.</div></main><script>(function(){var L=[].slice.call(document.querySelectorAll('.toc a,.toc-bar a'));if(!L.length)return;var m={};L.forEach(function(a){var i=a.getAttribute('href').slice(1);(m[i]=m[i]||[]).push(a)});var o=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){L.forEach(function(a){a.classList.remove('on')});(m[e.target.id]||[]).forEach(function(a){a.classList.add('on')})}})},{rootMargin:'-12% 0px -78% 0px'});document.querySelectorAll('section[id]').forEach(function(s){o.observe(s)});})();</script></body></html>

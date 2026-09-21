@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-04T16:47:00+08:00",
+  "status": "prepared_waiting_for_terminal",
+  "remote_root": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension",
+  "cell_id": "cell-l40-qpi-high-150",
+  "local_paths": {
+    "fetch_destination": "results/autoresearch_v5_20260805/round40_qpi_cv_high150_fetch",
+    "validator": "results/research_progress/round31_high150_validator_20260805.json",
+    "accepted_anchor": "results/autoresearch_v5_20260805/round40_qpi_cv_anchor_assembly_accepted",
+    "crosscheck": "results/autoresearch_v5_20260805/round40_cv_tebd_accepted7_analysis/cross-method-check.json",
+    "receipt": "results/research_progress/round31_high150_fetch_receipt_20260805.json"
+  },
+  "order": [
+    "overall/high-150 终态只读检查",
+    "远端 sha256sum -c",
+    "非覆盖回传单 cell",
+    "本地 checksum 与 validate_cv_run.py",
+    "accepted-only anchor 组装，排除 low cell",
+    "与 dt=0.0125,maxdim=320 TEBD 对照",
+    "finalize_round31_high150_report.py",
+    "delivery audit、HTML render、local integrity"
+  ],
+  "guards": {
+    "destination_must_not_exist": true,
+    "low_cell_excluded": true,
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true,
+    "residual_threshold": 1e-5,
+    "running_directory_fetch_forbidden": true
+  },
+  "expected_after_high150_only": "accepted CV 扩至 0.20--1.50，但主峰 omega≈0.05 仍未被包围，预计仍为 NotEvaluable。"
+}

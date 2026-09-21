@@ -1,0 +1,1 @@
+D:\Project\1x5_Heisenberg_Pentamer\.venv\Scripts\python.exe D:\Project\1x5_Heisenberg_Pentamer\scripts\autoresearch_v5\scan_second_order_virtual_correction.py --betas 0.001 0.0025 0.005

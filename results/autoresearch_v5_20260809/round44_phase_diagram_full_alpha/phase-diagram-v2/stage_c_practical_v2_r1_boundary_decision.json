@@ -1,0 +1,1348 @@
+{
+  "schema_version": 1,
+  "status": "bounded_not_evaluable",
+  "round": 1,
+  "inputs": {
+    "stage_b_practical_v2_cross_slice_diagnostic_v2": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_cross_slice_diagnostic_v2.json",
+      "sha256": "fc6a5f8a16a03502b677b60f83edef3335e07a091009838e704090614821defd"
+    },
+    "observations": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+      "sha256": "987c91fc339e573d70bf605e5c9bd76341b13c6ad1728014838066f914044706"
+    },
+    "stage_b_practical_v2_accepted_index_final": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_accepted_index_final.json",
+      "sha256": "833529f5da540b6de8be351521d5b796bc14d052e092831fe58246e9cfa8fc9a"
+    },
+    "stage_c_practical_v2_r1_terminal_summary": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_c_practical_v2_r1_terminal_summary.json",
+      "sha256": "aeb05e1bba27c694d40c1c806469d73c77d69eb1fc01743351d695e9047e691f"
+    },
+    "stage_c_practical_v2_r1_terminal_observations": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_c_practical_v2_r1_terminal_observations.json",
+      "sha256": "481f741744730e7977771841a0470eabfe425f2b93e76b1f5c4b10c64c9c9b12"
+    }
+  },
+  "criteria": {
+    "sigma": 2.0,
+    "target_width": 0.025,
+    "final_size_pair": [
+      60,
+      80
+    ],
+    "dual_diagnostic": true,
+    "max_sweeps": 64
+  },
+  "decisions": [
+    {
+      "beta": 0.05,
+      "initial_alpha": [
+        -0.05,
+        -0.025
+      ],
+      "points": [
+        {
+          "alpha": -0.05,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 0.60625,
+            "L80": 0.6025
+          },
+          "momentum_class": "incommensurate",
+          "delta_R_80_60": {
+            "value": -0.004170404957461404,
+            "error": 0.00974321382315143,
+            "sigma": 0.4280317596594111
+          }
+        },
+        {
+          "alpha": -0.025,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 1.0
+          },
+          "momentum_class": "commensurate_qpi",
+          "delta_R_80_60": {
+            "value": -0.0906584355291179,
+            "error": 0.017871657293274612,
+            "sigma": 5.072749216337877
+          }
+        }
+      ],
+      "candidate_brackets": [
+        {
+          "alpha": [
+            -0.05,
+            -0.025
+          ],
+          "width": 0.025,
+          "evidence": [
+            "momentum_reconstruction"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.05,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 0.60625,
+              "L80": 0.6025
+            },
+            "momentum_class": "incommensurate",
+            "delta_R_80_60": {
+              "value": -0.004170404957461404,
+              "error": 0.00974321382315143,
+              "sigma": 0.4280317596594111
+            }
+          },
+          "right": {
+            "alpha": -0.025,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 1.0
+            },
+            "momentum_class": "commensurate_qpi",
+            "delta_R_80_60": {
+              "value": -0.0906584355291179,
+              "error": 0.017871657293274612,
+              "sigma": 5.072749216337877
+            }
+          }
+        }
+      ],
+      "selected": null,
+      "status": "single_diagnostic_or_not_evaluable"
+    },
+    {
+      "beta": 0.1,
+      "initial_alpha": [
+        -0.1,
+        -0.05
+      ],
+      "points": [
+        {
+          "alpha": -0.1,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 0.605,
+            "L80": 0.6
+          },
+          "momentum_class": "incommensurate",
+          "delta_R_80_60": {
+            "value": -0.018046338390071914,
+            "error": 0.012166168957939521,
+            "sigma": 1.4833213686626514
+          }
+        },
+        {
+          "alpha": -0.075,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 0.6025
+          },
+          "momentum_class": "size_sensitive_or_mixed",
+          "delta_R_80_60": {
+            "value": 0.08733581921409495,
+            "error": 0.007548046686654963,
+            "sigma": 11.570651698340145
+          }
+        },
+        {
+          "alpha": -0.05,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 1.0
+          },
+          "momentum_class": "commensurate_qpi",
+          "delta_R_80_60": {
+            "value": -0.009000673572358953,
+            "error": 0.00911854147333509,
+            "sigma": 0.9870738208165403
+          }
+        }
+      ],
+      "candidate_brackets": [],
+      "selected": null,
+      "status": "no_supported_internal_boundary"
+    },
+    {
+      "beta": 0.25,
+      "initial_alpha": [
+        -0.25,
+        -0.1
+      ],
+      "points": [
+        {
+          "alpha": -0.25,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 0.605,
+            "L80": 0.6
+          },
+          "momentum_class": "incommensurate",
+          "delta_R_80_60": {
+            "value": -0.0014105488504707608,
+            "error": 0.00017873125044807548,
+            "sigma": 7.892010193710079
+          }
+        },
+        {
+          "alpha": -0.175,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 0.6
+          },
+          "momentum_class": "size_sensitive_or_mixed",
+          "delta_R_80_60": {
+            "value": 0.09278919614606429,
+            "error": 0.0028910293732835293,
+            "sigma": 32.095556345274204
+          }
+        },
+        {
+          "alpha": -0.1,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 1.0
+          },
+          "momentum_class": "commensurate_qpi",
+          "delta_R_80_60": {
+            "value": -0.03067672931130555,
+            "error": 0.009997888185187076,
+            "sigma": 3.0683209036840755
+          }
+        }
+      ],
+      "candidate_brackets": [
+        {
+          "alpha": [
+            -0.25,
+            -0.175
+          ],
+          "width": 0.07500000000000001,
+          "evidence": [
+            "two_sigma_ratio_sign"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.25,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 0.605,
+              "L80": 0.6
+            },
+            "momentum_class": "incommensurate",
+            "delta_R_80_60": {
+              "value": -0.0014105488504707608,
+              "error": 0.00017873125044807548,
+              "sigma": 7.892010193710079
+            }
+          },
+          "right": {
+            "alpha": -0.175,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 0.6
+            },
+            "momentum_class": "size_sensitive_or_mixed",
+            "delta_R_80_60": {
+              "value": 0.09278919614606429,
+              "error": 0.0028910293732835293,
+              "sigma": 32.095556345274204
+            }
+          }
+        },
+        {
+          "alpha": [
+            -0.175,
+            -0.1
+          ],
+          "width": 0.07499999999999998,
+          "evidence": [
+            "two_sigma_ratio_sign"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.175,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 0.6
+            },
+            "momentum_class": "size_sensitive_or_mixed",
+            "delta_R_80_60": {
+              "value": 0.09278919614606429,
+              "error": 0.0028910293732835293,
+              "sigma": 32.095556345274204
+            }
+          },
+          "right": {
+            "alpha": -0.1,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 1.0
+            },
+            "momentum_class": "commensurate_qpi",
+            "delta_R_80_60": {
+              "value": -0.03067672931130555,
+              "error": 0.009997888185187076,
+              "sigma": 3.0683209036840755
+            }
+          }
+        }
+      ],
+      "selected": null,
+      "status": "single_diagnostic_or_not_evaluable"
+    },
+    {
+      "beta": 0.5,
+      "initial_alpha": [
+        -0.35,
+        -0.25
+      ],
+      "points": [
+        {
+          "alpha": -0.35,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 0.6
+          },
+          "momentum_class": "size_sensitive_or_mixed",
+          "delta_R_80_60": {
+            "value": 0.08640105840026258,
+            "error": 0.0001414213562373095,
+            "sigma": 610.9477429652059
+          }
+        },
+        {
+          "alpha": -0.3,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 1.0
+          },
+          "momentum_class": "commensurate_qpi",
+          "delta_R_80_60": {
+            "value": -0.021210184858399816,
+            "error": 0.0001414213562373095,
+            "sigma": 149.97865543594742
+          }
+        },
+        {
+          "alpha": -0.25,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 1.0
+          },
+          "momentum_class": "commensurate_qpi",
+          "delta_R_80_60": {
+            "value": -0.02283913984780067,
+            "error": 0.0013291035001832471,
+            "sigma": 17.183868558507125
+          }
+        }
+      ],
+      "candidate_brackets": [
+        {
+          "alpha": [
+            -0.35,
+            -0.3
+          ],
+          "width": 0.04999999999999999,
+          "evidence": [
+            "two_sigma_ratio_sign"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.35,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 0.6
+            },
+            "momentum_class": "size_sensitive_or_mixed",
+            "delta_R_80_60": {
+              "value": 0.08640105840026258,
+              "error": 0.0001414213562373095,
+              "sigma": 610.9477429652059
+            }
+          },
+          "right": {
+            "alpha": -0.3,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 1.0
+            },
+            "momentum_class": "commensurate_qpi",
+            "delta_R_80_60": {
+              "value": -0.021210184858399816,
+              "error": 0.0001414213562373095,
+              "sigma": 149.97865543594742
+            }
+          }
+        }
+      ],
+      "selected": null,
+      "status": "single_diagnostic_or_not_evaluable"
+    },
+    {
+      "beta": 0.75,
+      "initial_alpha": [
+        -0.75,
+        -0.5
+      ],
+      "points": [
+        {
+          "alpha": -0.75,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 0.6025,
+            "L80": 0.6
+          },
+          "momentum_class": "incommensurate",
+          "delta_R_80_60": {
+            "value": -0.007578570826927589,
+            "error": 0.00017588783828864562,
+            "sigma": 43.0875204372605
+          }
+        },
+        {
+          "alpha": -0.625,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 0.605,
+            "L80": 0.6
+          },
+          "momentum_class": "incommensurate",
+          "delta_R_80_60": {
+            "value": -0.0034751731179543666,
+            "error": 0.0001414213562373095,
+            "sigma": 24.573184775027304
+          }
+        },
+        {
+          "alpha": -0.5,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 0.6
+          },
+          "momentum_class": "size_sensitive_or_mixed",
+          "delta_R_80_60": {
+            "value": 0.07222575437349882,
+            "error": 0.0027250702565215852,
+            "sigma": 26.504180653929765
+          }
+        }
+      ],
+      "candidate_brackets": [
+        {
+          "alpha": [
+            -0.625,
+            -0.5
+          ],
+          "width": 0.125,
+          "evidence": [
+            "two_sigma_ratio_sign"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.625,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 0.605,
+              "L80": 0.6
+            },
+            "momentum_class": "incommensurate",
+            "delta_R_80_60": {
+              "value": -0.0034751731179543666,
+              "error": 0.0001414213562373095,
+              "sigma": 24.573184775027304
+            }
+          },
+          "right": {
+            "alpha": -0.5,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 0.6
+            },
+            "momentum_class": "size_sensitive_or_mixed",
+            "delta_R_80_60": {
+              "value": 0.07222575437349882,
+              "error": 0.0027250702565215852,
+              "sigma": 26.504180653929765
+            }
+          }
+        }
+      ],
+      "selected": null,
+      "status": "single_diagnostic_or_not_evaluable"
+    },
+    {
+      "beta": 0.75,
+      "initial_alpha": [
+        -0.5,
+        -0.35
+      ],
+      "points": [
+        {
+          "alpha": -0.5,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 0.6
+          },
+          "momentum_class": "size_sensitive_or_mixed",
+          "delta_R_80_60": {
+            "value": 0.07222575437349882,
+            "error": 0.0027250702565215852,
+            "sigma": 26.504180653929765
+          }
+        },
+        {
+          "alpha": -0.425,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 1.0
+          },
+          "momentum_class": "commensurate_qpi",
+          "delta_R_80_60": {
+            "value": -0.02119084248746561,
+            "error": 0.0001414213562373095,
+            "sigma": 149.8418842194294
+          }
+        },
+        {
+          "alpha": -0.35,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 1.0
+          },
+          "momentum_class": "commensurate_qpi",
+          "delta_R_80_60": {
+            "value": -0.021241871160602332,
+            "error": 0.0007098298528448624,
+            "sigma": 29.92529981018546
+          }
+        }
+      ],
+      "candidate_brackets": [
+        {
+          "alpha": [
+            -0.5,
+            -0.425
+          ],
+          "width": 0.07500000000000001,
+          "evidence": [
+            "two_sigma_ratio_sign"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.5,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 0.6
+            },
+            "momentum_class": "size_sensitive_or_mixed",
+            "delta_R_80_60": {
+              "value": 0.07222575437349882,
+              "error": 0.0027250702565215852,
+              "sigma": 26.504180653929765
+            }
+          },
+          "right": {
+            "alpha": -0.425,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 1.0
+            },
+            "momentum_class": "commensurate_qpi",
+            "delta_R_80_60": {
+              "value": -0.02119084248746561,
+              "error": 0.0001414213562373095,
+              "sigma": 149.8418842194294
+            }
+          }
+        }
+      ],
+      "selected": null,
+      "status": "single_diagnostic_or_not_evaluable"
+    },
+    {
+      "beta": 0.9,
+      "initial_alpha": [
+        -0.75,
+        -0.5
+      ],
+      "points": [
+        {
+          "alpha": -0.75,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 0.605,
+            "L80": 0.6
+          },
+          "momentum_class": "incommensurate",
+          "delta_R_80_60": {
+            "value": -0.003438944827918955,
+            "error": 0.00029452286392385403,
+            "sigma": 11.676325505268956
+          }
+        },
+        {
+          "alpha": -0.625,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 0.605,
+            "L80": 0.6
+          },
+          "momentum_class": "incommensurate",
+          "delta_R_80_60": {
+            "value": -0.004170302102385615,
+            "error": 0.0001414213562373095,
+            "sigma": 29.48848896193384
+          }
+        },
+        {
+          "alpha": -0.5,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 1.0
+          },
+          "momentum_class": "commensurate_qpi",
+          "delta_R_80_60": {
+            "value": -0.012490183021407864,
+            "error": 0.0052531968099686095,
+            "sigma": 2.3776347000185014
+          }
+        }
+      ],
+      "candidate_brackets": [
+        {
+          "alpha": [
+            -0.625,
+            -0.5
+          ],
+          "width": 0.125,
+          "evidence": [
+            "momentum_reconstruction"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.625,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 0.605,
+              "L80": 0.6
+            },
+            "momentum_class": "incommensurate",
+            "delta_R_80_60": {
+              "value": -0.004170302102385615,
+              "error": 0.0001414213562373095,
+              "sigma": 29.48848896193384
+            }
+          },
+          "right": {
+            "alpha": -0.5,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 1.0
+            },
+            "momentum_class": "commensurate_qpi",
+            "delta_R_80_60": {
+              "value": -0.012490183021407864,
+              "error": 0.0052531968099686095,
+              "sigma": 2.3776347000185014
+            }
+          }
+        }
+      ],
+      "selected": null,
+      "status": "single_diagnostic_or_not_evaluable"
+    },
+    {
+      "beta": 1.0,
+      "initial_alpha": [
+        -0.75,
+        -0.5
+      ],
+      "points": [
+        {
+          "alpha": -0.75,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 0.605,
+            "L80": 0.6
+          },
+          "momentum_class": "incommensurate",
+          "delta_R_80_60": {
+            "value": -0.003666566007167582,
+            "error": 0.0004142120166792987,
+            "sigma": 8.851906413923283
+          }
+        },
+        {
+          "alpha": -0.625,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 0.6
+          },
+          "momentum_class": "size_sensitive_or_mixed",
+          "delta_R_80_60": {
+            "value": 0.051611737911456956,
+            "error": 0.0001414213562373095,
+            "sigma": 364.9500986601403
+          }
+        },
+        {
+          "alpha": -0.5,
+          "sizes": [
+            60,
+            80
+          ],
+          "q": {
+            "L60": 1.0,
+            "L80": 1.0
+          },
+          "momentum_class": "commensurate_qpi",
+          "delta_R_80_60": {
+            "value": -0.0066633399038167895,
+            "error": 0.008498658772681406,
+            "sigma": 0.784046057389176
+          }
+        }
+      ],
+      "candidate_brackets": [
+        {
+          "alpha": [
+            -0.75,
+            -0.625
+          ],
+          "width": 0.125,
+          "evidence": [
+            "two_sigma_ratio_sign"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.75,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 0.605,
+              "L80": 0.6
+            },
+            "momentum_class": "incommensurate",
+            "delta_R_80_60": {
+              "value": -0.003666566007167582,
+              "error": 0.0004142120166792987,
+              "sigma": 8.851906413923283
+            }
+          },
+          "right": {
+            "alpha": -0.625,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 0.6
+            },
+            "momentum_class": "size_sensitive_or_mixed",
+            "delta_R_80_60": {
+              "value": 0.051611737911456956,
+              "error": 0.0001414213562373095,
+              "sigma": 364.9500986601403
+            }
+          }
+        }
+      ],
+      "selected": null,
+      "status": "single_diagnostic_or_not_evaluable"
+    }
+  ],
+  "confirmed_boundaries": [],
+  "unresolved_targets": [
+    {
+      "beta": 0.05,
+      "initial_alpha": [
+        -0.05,
+        -0.025
+      ],
+      "status": "single_diagnostic_or_not_evaluable",
+      "candidate_brackets": [
+        {
+          "alpha": [
+            -0.05,
+            -0.025
+          ],
+          "width": 0.025,
+          "evidence": [
+            "momentum_reconstruction"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.05,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 0.60625,
+              "L80": 0.6025
+            },
+            "momentum_class": "incommensurate",
+            "delta_R_80_60": {
+              "value": -0.004170404957461404,
+              "error": 0.00974321382315143,
+              "sigma": 0.4280317596594111
+            }
+          },
+          "right": {
+            "alpha": -0.025,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 1.0
+            },
+            "momentum_class": "commensurate_qpi",
+            "delta_R_80_60": {
+              "value": -0.0906584355291179,
+              "error": 0.017871657293274612,
+              "sigma": 5.072749216337877
+            }
+          }
+        }
+      ]
+    },
+    {
+      "beta": 0.1,
+      "initial_alpha": [
+        -0.1,
+        -0.05
+      ],
+      "status": "no_supported_internal_boundary",
+      "candidate_brackets": []
+    },
+    {
+      "beta": 0.25,
+      "initial_alpha": [
+        -0.25,
+        -0.1
+      ],
+      "status": "single_diagnostic_or_not_evaluable",
+      "candidate_brackets": [
+        {
+          "alpha": [
+            -0.25,
+            -0.175
+          ],
+          "width": 0.07500000000000001,
+          "evidence": [
+            "two_sigma_ratio_sign"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.25,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 0.605,
+              "L80": 0.6
+            },
+            "momentum_class": "incommensurate",
+            "delta_R_80_60": {
+              "value": -0.0014105488504707608,
+              "error": 0.00017873125044807548,
+              "sigma": 7.892010193710079
+            }
+          },
+          "right": {
+            "alpha": -0.175,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 0.6
+            },
+            "momentum_class": "size_sensitive_or_mixed",
+            "delta_R_80_60": {
+              "value": 0.09278919614606429,
+              "error": 0.0028910293732835293,
+              "sigma": 32.095556345274204
+            }
+          }
+        },
+        {
+          "alpha": [
+            -0.175,
+            -0.1
+          ],
+          "width": 0.07499999999999998,
+          "evidence": [
+            "two_sigma_ratio_sign"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.175,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 0.6
+            },
+            "momentum_class": "size_sensitive_or_mixed",
+            "delta_R_80_60": {
+              "value": 0.09278919614606429,
+              "error": 0.0028910293732835293,
+              "sigma": 32.095556345274204
+            }
+          },
+          "right": {
+            "alpha": -0.1,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 1.0
+            },
+            "momentum_class": "commensurate_qpi",
+            "delta_R_80_60": {
+              "value": -0.03067672931130555,
+              "error": 0.009997888185187076,
+              "sigma": 3.0683209036840755
+            }
+          }
+        }
+      ]
+    },
+    {
+      "beta": 0.5,
+      "initial_alpha": [
+        -0.35,
+        -0.25
+      ],
+      "status": "single_diagnostic_or_not_evaluable",
+      "candidate_brackets": [
+        {
+          "alpha": [
+            -0.35,
+            -0.3
+          ],
+          "width": 0.04999999999999999,
+          "evidence": [
+            "two_sigma_ratio_sign"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.35,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 0.6
+            },
+            "momentum_class": "size_sensitive_or_mixed",
+            "delta_R_80_60": {
+              "value": 0.08640105840026258,
+              "error": 0.0001414213562373095,
+              "sigma": 610.9477429652059
+            }
+          },
+          "right": {
+            "alpha": -0.3,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 1.0
+            },
+            "momentum_class": "commensurate_qpi",
+            "delta_R_80_60": {
+              "value": -0.021210184858399816,
+              "error": 0.0001414213562373095,
+              "sigma": 149.97865543594742
+            }
+          }
+        }
+      ]
+    },
+    {
+      "beta": 0.75,
+      "initial_alpha": [
+        -0.75,
+        -0.5
+      ],
+      "status": "single_diagnostic_or_not_evaluable",
+      "candidate_brackets": [
+        {
+          "alpha": [
+            -0.625,
+            -0.5
+          ],
+          "width": 0.125,
+          "evidence": [
+            "two_sigma_ratio_sign"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.625,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 0.605,
+              "L80": 0.6
+            },
+            "momentum_class": "incommensurate",
+            "delta_R_80_60": {
+              "value": -0.0034751731179543666,
+              "error": 0.0001414213562373095,
+              "sigma": 24.573184775027304
+            }
+          },
+          "right": {
+            "alpha": -0.5,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 0.6
+            },
+            "momentum_class": "size_sensitive_or_mixed",
+            "delta_R_80_60": {
+              "value": 0.07222575437349882,
+              "error": 0.0027250702565215852,
+              "sigma": 26.504180653929765
+            }
+          }
+        }
+      ]
+    },
+    {
+      "beta": 0.75,
+      "initial_alpha": [
+        -0.5,
+        -0.35
+      ],
+      "status": "single_diagnostic_or_not_evaluable",
+      "candidate_brackets": [
+        {
+          "alpha": [
+            -0.5,
+            -0.425
+          ],
+          "width": 0.07500000000000001,
+          "evidence": [
+            "two_sigma_ratio_sign"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.5,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 0.6
+            },
+            "momentum_class": "size_sensitive_or_mixed",
+            "delta_R_80_60": {
+              "value": 0.07222575437349882,
+              "error": 0.0027250702565215852,
+              "sigma": 26.504180653929765
+            }
+          },
+          "right": {
+            "alpha": -0.425,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 1.0
+            },
+            "momentum_class": "commensurate_qpi",
+            "delta_R_80_60": {
+              "value": -0.02119084248746561,
+              "error": 0.0001414213562373095,
+              "sigma": 149.8418842194294
+            }
+          }
+        }
+      ]
+    },
+    {
+      "beta": 0.9,
+      "initial_alpha": [
+        -0.75,
+        -0.5
+      ],
+      "status": "single_diagnostic_or_not_evaluable",
+      "candidate_brackets": [
+        {
+          "alpha": [
+            -0.625,
+            -0.5
+          ],
+          "width": 0.125,
+          "evidence": [
+            "momentum_reconstruction"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.625,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 0.605,
+              "L80": 0.6
+            },
+            "momentum_class": "incommensurate",
+            "delta_R_80_60": {
+              "value": -0.004170302102385615,
+              "error": 0.0001414213562373095,
+              "sigma": 29.48848896193384
+            }
+          },
+          "right": {
+            "alpha": -0.5,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 1.0
+            },
+            "momentum_class": "commensurate_qpi",
+            "delta_R_80_60": {
+              "value": -0.012490183021407864,
+              "error": 0.0052531968099686095,
+              "sigma": 2.3776347000185014
+            }
+          }
+        }
+      ]
+    },
+    {
+      "beta": 1.0,
+      "initial_alpha": [
+        -0.75,
+        -0.5
+      ],
+      "status": "single_diagnostic_or_not_evaluable",
+      "candidate_brackets": [
+        {
+          "alpha": [
+            -0.75,
+            -0.625
+          ],
+          "width": 0.125,
+          "evidence": [
+            "two_sigma_ratio_sign"
+          ],
+          "dual_diagnostic": false,
+          "left": {
+            "alpha": -0.75,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 0.605,
+              "L80": 0.6
+            },
+            "momentum_class": "incommensurate",
+            "delta_R_80_60": {
+              "value": -0.003666566007167582,
+              "error": 0.0004142120166792987,
+              "sigma": 8.851906413923283
+            }
+          },
+          "right": {
+            "alpha": -0.625,
+            "sizes": [
+              60,
+              80
+            ],
+            "q": {
+              "L60": 1.0,
+              "L80": 0.6
+            },
+            "momentum_class": "size_sensitive_or_mixed",
+            "delta_R_80_60": {
+              "value": 0.051611737911456956,
+              "error": 0.0001414213562373095,
+              "sigma": 364.9500986601403
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "next_actions": [],
+  "counts": {
+    "targets": 8,
+    "confirmed": 0,
+    "unresolved": 8,
+    "next_actions": 0
+  },
+  "decision": {
+    "stage_d_ready": false,
+    "bounded_not_evaluable": true,
+    "phase_label_assigned": false,
+    "boundary_thresholds_relaxed": false
+  }
+}

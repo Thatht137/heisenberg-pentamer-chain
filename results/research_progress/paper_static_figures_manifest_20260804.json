@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-04",
+  "backend": "Python/matplotlib",
+  "status": "pass",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "figures": {
+    "Fig. 1": {
+      "stem": "paper_fig1_model_local_multiplets_20260804",
+      "outputs": {
+        "svg": {
+          "path": "figures\\paper_fig1_model_local_multiplets_20260804.svg",
+          "sha256": "d11ea45853b3caddef51004e2a4c63a79961ca2806570f2335934b0907629e54",
+          "bytes": 27240
+        },
+        "pdf": {
+          "path": "figures\\paper_fig1_model_local_multiplets_20260804.pdf",
+          "sha256": "7bb3082afb8fcfacf9e8f4ecbaae81221dc7e28682d50de744a77f6fddbda109",
+          "bytes": 45952
+        },
+        "png": {
+          "path": "figures\\paper_fig1_model_local_multiplets_20260804.png",
+          "sha256": "7188fca4ffe8f5e2f65a89bd0f83f3307386692d9b192d2032a9d5942523d9e3",
+          "bytes": 128563
+        },
+        "tiff": {
+          "path": "figures\\paper_fig1_model_local_multiplets_20260804.tiff",
+          "sha256": "73a0388167196fb985dcf6bdda1e9193791e75b68773e112016518820ab75fa1",
+          "bytes": 526848
+        }
+      },
+      "sidecar": "figures\\paper_fig1_model_local_multiplets_20260804.sources.json"
+    },
+    "Fig. 2": {
+      "stem": "paper_fig2_level_flow_qpi_filter_20260804",
+      "outputs": {
+        "svg": {
+          "path": "figures\\paper_fig2_level_flow_qpi_filter_20260804.svg",
+          "sha256": "040356b8efd78045d13b906f7331d7ff04c49741fe39d60b9c51e9074aa43967",
+          "bytes": 55124
+        },
+        "pdf": {
+          "path": "figures\\paper_fig2_level_flow_qpi_filter_20260804.pdf",
+          "sha256": "4c4bca052cec723ad09103573fe489aa2737c0b6d4826da49f900bf4542c64c8",
+          "bytes": 55586
+        },
+        "png": {
+          "path": "figures\\paper_fig2_level_flow_qpi_filter_20260804.png",
+          "sha256": "b3c86ff2cb5539ebdf513c89f93ec3d62a56f868c0dab31707aebaefa0781a7c",
+          "bytes": 212248
+        },
+        "tiff": {
+          "path": "figures\\paper_fig2_level_flow_qpi_filter_20260804.tiff",
+          "sha256": "9bfb99fc1998539fb43542629ba4c04b7c0120f55525d8c26e234bec794be048",
+          "bytes": 645580
+        }
+      },
+      "sidecar": "figures\\paper_fig2_level_flow_qpi_filter_20260804.sources.json"
+    },
+    "Fig. 3": {
+      "stem": "paper_fig3_positive_groundstate_diagnostics_20260804",
+      "outputs": {
+        "svg": {
+          "path": "figures\\paper_fig3_positive_groundstate_diagnostics_20260804.svg",
+          "sha256": "d1392ff31876f54fa73a0b29ae1309feee88c47f75f9a7c2ed6dd96db59dfa21",
+          "bytes": 53879
+        },
+        "pdf": {
+          "path": "figures\\paper_fig3_positive_groundstate_diagnostics_20260804.pdf",
+          "sha256": "d70ab9f75183d06a5f549bececc7e17ae43a56ce6d9580d13eb594fa5e0c76a5",
+          "bytes": 54088
+        },
+        "png": {
+          "path": "figures\\paper_fig3_positive_groundstate_diagnostics_20260804.png",
+          "sha256": "ec289aec3bf422f7ca82e3439491387b499f826842650654ab619cf033a0efb0",
+          "bytes": 312916
+        },
+        "tiff": {
+          "path": "figures\\paper_fig3_positive_groundstate_diagnostics_20260804.tiff",
+          "sha256": "2cf965be974ef6a7b1b24d08e384b82ede073bbff4eea1319f04f44c06327899",
+          "bytes": 1269196
+        }
+      },
+      "sidecar": "figures\\paper_fig3_positive_groundstate_diagnostics_20260804.sources.json"
+    },
+    "Fig. 4": {
+      "stem": "paper_fig4_entanglement_spectrum_20260804",
+      "outputs": {
+        "svg": {
+          "path": "figures\\paper_fig4_entanglement_spectrum_20260804.svg",
+          "sha256": "4a582d0dd7f5e67973baefb594c6d5d6e3df87e8ec77be05c8c73efb20f6e77e",
+          "bytes": 86039
+        },
+        "pdf": {
+          "path": "figures\\paper_fig4_entanglement_spectrum_20260804.pdf",
+          "sha256": "d6d083354303c336786a62773ec4be409d0dd24f93e644405f8c7a80748e6c93",
+          "bytes": 51816
+        },
+        "png": {
+          "path": "figures\\paper_fig4_entanglement_spectrum_20260804.png",
+          "sha256": "5bd5f9a702eb05f8583bf5ad5acf586698c6472e0207c28642577a66fa07cb62",
+          "bytes": 162866
+        },
+        "tiff": {
+          "path": "figures\\paper_fig4_entanglement_spectrum_20260804.tiff",
+          "sha256": "943295a582fbff04a378ed0c2f6a0f472f51ee4e016386cc3f465eb2cf475d23",
+          "bytes": 972760
+        }
+      },
+      "sidecar": "figures\\paper_fig4_entanglement_spectrum_20260804.sources.json"
+    },
+    "Fig. 5": {
+      "stem": "paper_fig5_effective_chain_selection_rules_20260804",
+      "outputs": {
+        "svg": {
+          "path": "figures\\paper_fig5_effective_chain_selection_rules_20260804.svg",
+          "sha256": "4d85fc1f5b05669230565b653067174b6a1686dbdeb5e48531c743fe67227f58",
+          "bytes": 82423
+        },
+        "pdf": {
+          "path": "figures\\paper_fig5_effective_chain_selection_rules_20260804.pdf",
+          "sha256": "94764d4e64779ba2c53789c7f4a815a01dc815d088f6a18af71ae798fb9f58b4",
+          "bytes": 65589
+        },
+        "png": {
+          "path": "figures\\paper_fig5_effective_chain_selection_rules_20260804.png",
+          "sha256": "0c3ad00c2333695038360ec49e7d62dc2a2d3a9e1beeded899ef0f24be1527dd",
+          "bytes": 355013
+        },
+        "tiff": {
+          "path": "figures\\paper_fig5_effective_chain_selection_rules_20260804.tiff",
+          "sha256": "37f66a6f53da1ec582da3950424cd8eede5f1a56249433afa1a75e806d635413",
+          "bytes": 1387814
+        }
+      },
+      "sidecar": "figures\\paper_fig5_effective_chain_selection_rules_20260804.sources.json"
+    }
+  },
+  "boundary": "Fig.1--5 are manuscript-ready static or explicitly bounded finite-size figures; Fig.6--8 remain dynamic non-production assets."
+}

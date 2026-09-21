@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "status": "pass_failure_only",
+  "pre_r7_observations_sha256": "41d954a59a405407a17d2b695e50132bce695d8b95033440b7f6ff73ac9f61e4",
+  "pre_r7_action_index_sha256": "d1abcec372aeb6199575f37c9813e2ae4b4d694cf008d9228d6f8d75fee3470d",
+  "post_r7_observations_sha256": "ed183dae619248b5ecef44d1a8f4a92a869b5d103f5871ac4210e0dbd63f6a3f",
+  "post_r7_action_index_sha256": "c989f71c917111a4a50c7537cb62d3d4918947546bcf250530984ea6a21967ce",
+  "input_evidence": {
+    "run_spec": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r7-remaining8/parameter-scan.run_spec.json",
+      "sha256": "ba1faf376298eaeed0857a40dc8f79a1f9f691ce73ede751e7046b4e62715406"
+    },
+    "validation_summary": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r7-remaining8-20260811-0616/validation/summary.json",
+      "sha256": "6b6c77defbc27cfb1b8a3a8f3a6c37587bcf22fd79d04b3fab0dc603035276ca"
+    },
+    "partial_handoff_summary": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r7-remaining8-20260811-0616/partial_handoff_summary.json",
+      "sha256": "a831b6404687281db47c660353ce68576e788a776caea1c937f582879ccdffe1"
+    },
+    "handoff_audit": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r7-remaining8-20260811-0616/handoff_audit.json",
+      "sha256": "673c50f730b8a656c6479f0ec3aef8f2850c403b78d8c1aa5badc24abe44ddc9"
+    },
+    "r6_ingestion_summary": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r6_ingestion_summary.json",
+      "sha256": "65dbb8c0256cf659e0200e9b002493994bcb106ffb60f6ad33242fa498cb09ec"
+    },
+    "r6_ingestion_audit": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r6_ingestion_audit.json",
+      "sha256": "dc1baaf44ffd51cc50d4de17f39a035763f5abd707ea1500e0d8a98803295c25"
+    },
+    "calibration": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/accepted_calibration_through_r5.json",
+      "sha256": "2588c76b36f8217a6844c3362b5df147c55d64c3b4c00aecb7316db8614413e6"
+    }
+  },
+  "checksum_entries": {
+    "parent": 7,
+    "children": {
+      "center": 13,
+      "ferro_j2": 13
+    }
+  },
+  "invariants": {
+    "controller_counts": {
+      "success": 11,
+      "failed": 1,
+      "pending": 4
+    },
+    "calibration_accepted_total": 5,
+    "failure_record_has_value_error": false,
+    "original_pending_preserved": true,
+    "r6_provenance_preserved": true,
+    "remaining_pending_unchanged": true,
+    "crossing_assigned": false,
+    "phase_label_assigned": false
+  },
+  "outputs": {
+    "observations": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+    "action_index": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/action_index.json"
+  }
+}

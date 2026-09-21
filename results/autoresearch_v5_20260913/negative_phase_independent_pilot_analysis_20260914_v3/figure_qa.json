@@ -1,0 +1,20 @@
+{
+  "backend_exclusive": "Python",
+  "editable_svg_text": true,
+  "pdf_fonttype": 42,
+  "source_data": [
+    "saved_state_point_summary.csv",
+    "saved_state_child_metrics.csv",
+    "entropy_profile_class_fits.csv"
+  ],
+  "error_definition": "error bars are half-ranges across the center and ferro_j2 initial states",
+  "panel_map": {
+    "a": "dominant momentum",
+    "b": "spin-sector gap",
+    "c": "class-resolved entanglement-profile slope",
+    "d": "far connected beta-bond correlations",
+    "e": "far connected alpha-bond correlations",
+    "f": "dual-start energy density spread"
+  },
+  "image_integrity": "data-native line art; no selective image adjustment"
+}

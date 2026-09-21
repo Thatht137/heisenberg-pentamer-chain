@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-05T07:51:11+08:00",
+  "status": "healthy_running",
+  "phase": "julia_linsolve",
+  "pid": 324653,
+  "process_state": "RNl",
+  "elapsed_seconds": 60212.432,
+  "cpu_percent": 1609.0,
+  "rss_bytes": 3954257920,
+  "threads": 57,
+  "completed_points": 0,
+  "total_points": 1,
+  "stderr_bytes": 0,
+  "progress_heartbeat_fresh": true,
+  "available_memory_gib": 238,
+  "swap_used_mib": 5,
+  "home_free_gib": 688,
+  "kernel_error_matches": 0,
+  "diagnosis": "进程正在消耗 CPU，非睡眠或 I/O 阻塞；无 stderr、OOM、segfault 或磁盘不足迹象。当前是异常缓慢但仍活跃的线性求解。",
+  "next_check": "2026-08-05T15:07:00+08:00",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

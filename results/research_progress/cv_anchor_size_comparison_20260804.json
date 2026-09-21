@@ -1,0 +1,37 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-04T09:20:00+08:00",
+  "status": "pass",
+  "instance": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "q_over_pi": 1.0,
+    "omega": 0.25,
+    "eta": 0.1
+  },
+  "points": {
+    "L40": {
+      "q_over_pi": 1.0,
+      "omega": 0.25,
+      "intensity": 0.5681807186981724,
+      "relative_residual": 6.021249843402546e-06
+    },
+    "L80": {
+      "q_over_pi": 1.0,
+      "omega": 0.25,
+      "intensity": 0.5907141816551653,
+      "relative_residual": 6.7152003260163674e-06
+    }
+  },
+  "relative_intensity_change_L80_vs_L40": 0.039658971548034966,
+  "source_sha256": {
+    "L40": "08f1cb69c4cdedf7c7d3036d838e8abe2438d053fab29f0f57343e80154c1d34",
+    "L80": "6ff60621dd7b2e1200e5d57c39506d35cacf464849f4e16d8842a223a3510506"
+  },
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "interpretation": "L=40 到 L=80 的同频率强度变化约为 3.97%，两点 residual 均低于 1e-5；这是单锚点尺寸诊断，不是完整谱或 CV--TEBD Agreement。"
+}

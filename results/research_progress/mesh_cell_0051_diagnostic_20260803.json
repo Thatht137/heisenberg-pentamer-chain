@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-03",
+  "cell_id": "mesh-cell-0051",
+  "scope": {
+    "alpha": 0.125,
+    "beta": 1.0,
+    "L": 80,
+    "negative_alpha_excluded": true
+  },
+  "cell": {
+    "ratio": 0.2734933061096009,
+    "error": 0.006048843767877066,
+    "start_values": [0.27954214987747794, 0.2674444623417238],
+    "independent_start_half_range": 0.006048843767877066,
+    "child_truncation_max": 9.999117408459313e-12,
+    "error_dominant_source": "independent_start_half_range"
+  },
+  "size_pairs": [
+    {
+      "pair": "40-60",
+      "delta_R": -0.00651064095363213,
+      "error": 0.0025821855130579853,
+      "sigma": -2.520568183853462,
+      "significant_2sigma": true
+    },
+    {
+      "pair": "60-80",
+      "delta_R": -0.039232546599831,
+      "error": 0.006576183768115955,
+      "sigma": -5.965853142676233,
+      "significant_2sigma": true
+    }
+  ],
+  "diagnosis": "孤立的双初态不一致导致误差偏大；不是截断失败，不改变 60-80 内部尺寸差的负号或 guard 结论",
+  "decision": {
+    "status": "retain_with_warning",
+    "use_for_phase_boundary": false,
+    "recompute_now": false,
+    "recommended_future_check": "若需要提高 beta=1、alpha=0.125 的精度，使用统一 warm-start 或增加独立初态；不扩大二维网格"
+  },
+  "source_files": [
+    "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/cells/mesh-cell-0051/manifest.json",
+    "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/phase-diagram/phase-size-differences.csv",
+    "results/research_progress/positive_phase_audit_20260803.json"
+  ]
+}

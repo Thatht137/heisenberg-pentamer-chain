@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "cell_id": "local-smoke-L10-v3",
+  "status": "success",
+  "accepted": false,
+  "params": {
+    "path_id": "smoke",
+    "group": 0,
+    "role": "ridge",
+    "alpha": 0.1,
+    "beta": 0.5,
+    "L": 10,
+    "n_units": 2
+  },
+  "settings": {
+    "method": "finite_dmrg",
+    "boundary": "OBC",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim": 40,
+    "nsweeps": 4,
+    "cutoff": 1e-08,
+    "threads": 2,
+    "init_mode_sz0": "center",
+    "init_mode_sz1": "center",
+    "string_margin": 0,
+    "schmidt_levels": 4,
+    "save_state": false
+  },
+  "observables": {
+    "energy_sz0": -2.483001039820742,
+    "energy_sz1": -2.416411887047154,
+    "spin_gap": 0.06658915277358801
+  },
+  "diagnostics": {
+    "variance_per_site_sz0": 1.233955160273581e-08,
+    "variance_per_site_sz1": 3.4433584346516e-06,
+    "actual_maxdim_sz0": 11.0,
+    "actual_maxdim_sz1": 10.0,
+    "max_truncation_error_sz0": 8.70236168721644e-09,
+    "max_truncation_error_sz1": 9.625033464009222e-09,
+    "total_sz0": 1.841449627330849e-17,
+    "total_sz1": 1.0000000000000002,
+    "peak_rss_kb": null,
+    "algorithm_seconds_sz0": 47.39100003242493,
+    "algorithm_seconds_sz1": 0.1099998950958252,
+    "measurement_seconds": 3.684000015258789
+  },
+  "acceptance": {
+    "execution_success": true,
+    "variance_sz0_per_site_le_1e-8": false,
+    "variance_sz1_per_site_le_1e-8": false,
+    "truncation_sz0_le_1e-9": false,
+    "truncation_sz1_le_1e-9": false,
+    "sz0_sector": true,
+    "sz1_sector": true,
+    "nonnegative_gap": true,
+    "all_sweeps_completed": true,
+    "measurement_files": true
+  },
+  "provenance": {
+    "source_commit": "local-smoke",
+    "standard_sha256": "9fb6b1a1f07242be9ada456acc1f8064e3350e93aa410e89a7745e5acded2011",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "hostname": "T-137",
+    "platform": "Windows-10-10.0.26100-SP0",
+    "python": "3.9.1",
+    "julia_version": "1.11.5",
+    "julia_pkg_offline": true,
+    "negative_alpha_excluded": true,
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "src\\hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "src\\order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "scripts\\autoresearch_v5\\positive_static_cell.jl": "4dbeb56894f0daac3914d31877d9d79b911fe0cf3fcc2a3a18d96fcca1f5761b",
+      "scripts\\autoresearch_v5\\run_positive_static_cell.py": "ae4b49c0d0edae45a793496ff07432fd19838a0d79714fc67e78befdd53d9157"
+    }
+  },
+  "timing": {
+    "started_at": "2026-07-30T12:47:19.654407+00:00",
+    "finished_at": "2026-07-30T12:48:41.703082+00:00"
+  },
+  "returncode": 0
+}

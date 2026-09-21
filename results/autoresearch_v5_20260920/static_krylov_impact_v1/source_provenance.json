@@ -1,0 +1,819 @@
+{
+  "schema_version": 1,
+  "scope": "selected source files only; no state JLD2 hashing; project status is not a permanent input",
+  "files": [
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_comparison_20260920\\comparison.json",
+      "role": "comparison_audit",
+      "bytes": 321640,
+      "sha256": "511c326ab7d357f886892fc3417f0fbd3ebc7de06c11b0785ad8ae78259e97c3"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\manifest.json",
+      "role": "baseline_manifest",
+      "bytes": 1326,
+      "sha256": "d66b5e222c95a34a381f4d24593270639492361a12a37ddc51ae592f84f2a18c"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\baseline_inventory.json",
+      "role": "baseline_inventory",
+      "bytes": 21408,
+      "sha256": "f0b4475c01fc4493829e9a488fd0a227b234aa2dd7dedabe5b3cfe534e0a5141"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\source_hashes.json",
+      "role": "baseline_source_hashes",
+      "bytes": 15935,
+      "sha256": "3a21b7df47586b1c83e9716bf5e0f28ffd60e5b52333b5b5b5bd5d38cafdef12"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\gap_records.csv",
+      "role": "baseline_measurement",
+      "bytes": 321,
+      "sha256": "b635f2e4fecc32bf8e1d6a8f2d0397eed1f7977d863d5bf84026e03cd173749b"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\entropy_records.csv",
+      "role": "baseline_measurement",
+      "bytes": 29178,
+      "sha256": "ba32983a5e4f1aee0cdb5679e6592b5a5258689e17f7d8badf06ec83b4e0d29b"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\entropy_fits.csv",
+      "role": "baseline_measurement",
+      "bytes": 3933,
+      "sha256": "12fab54d57a5f33c013e76172932bc4eaf8dc34abd45a60b26bcb308ebecf9c4"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\bond_correlations.csv",
+      "role": "baseline_measurement",
+      "bytes": 25593,
+      "sha256": "1d6dc718d30312e6f940b4a0c0e60147cb33c51d93cbba6b924ab910e7f60044"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\connected_quarter.csv",
+      "role": "baseline_measurement",
+      "bytes": 932,
+      "sha256": "ba16a86601e4c31fd36fba6247fecebf16bfc3ea49351f12296131e3c69a7397"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\dimer_rms.csv",
+      "role": "baseline_measurement",
+      "bytes": 348,
+      "sha256": "3e5fde01142ccd8a472cf872fe8952c7d2f0275f3ba4bf1e8066da9003c2cbb6"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260919\\static_krylov_controls_r2\\parameter-scan.run_spec.json",
+      "role": "candidate_run_spec",
+      "bytes": 7874,
+      "sha256": "e43ff718a237010ea9ef3c78200193072bffd1c6bc14b44b7a5cc36ff7815f77"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\manifest.json",
+      "role": "candidate_parent_manifest",
+      "bytes": 3763,
+      "sha256": "93b3e2b67603b3f72ec6cdb24d86419219ffad332e916d7ca5d9553c37244754"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\checksums.sha256",
+      "role": "candidate_parent_checksums",
+      "bytes": 606,
+      "sha256": "0bcb2ee37e498e9f5b9f1aba690ec56b1fce8e856508165cc994279a6930c918"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_center\\manifest.json",
+      "role": "candidate_measurement",
+      "bytes": 4420,
+      "sha256": "6a653d6b066f01469a7f0375f5282a69b6ec18a1fac89c5143d25cabacd3561a"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_center\\metrics.csv",
+      "role": "candidate_measurement",
+      "bytes": 1823,
+      "sha256": "d87cc9f8823b4f187441937f839904b8d4b19fd927e16b0c15e505aaaddce9fe"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\manifest.json",
+      "role": "baseline_raw_solver_diagnostic",
+      "bytes": 4219,
+      "sha256": "432daf64d832659acbf6d8d4d9f86ad620a9059f8a107910b0a8082251c8390a"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\metrics.csv",
+      "role": "baseline_raw_solver_diagnostic",
+      "bytes": 1722,
+      "sha256": "bc04c996eb5fc7235a0d95e97d711fe89c9a0dfea628f9d4c5f589ef096018b3"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_center\\entropy_profile_full.csv",
+      "role": "candidate_measurement",
+      "bytes": 4054,
+      "sha256": "a961fefb242e63aef03f20a8e70f70f5ec2e3bd43014e57b519894cf317535fe"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_center\\bond_correlations.csv",
+      "role": "candidate_measurement",
+      "bytes": 2756,
+      "sha256": "70e2f0e4d47e835738272862af8a34a460d394a0d72654114c771d54caf59fdc"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_center\\bond_bond_connected.csv",
+      "role": "candidate_measurement",
+      "bytes": 1091,
+      "sha256": "00292dc189a9d4413eed7d18e8e49d2663b9195633e2e2973ae1a90071f995f3"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_ferro_j2\\manifest.json",
+      "role": "candidate_measurement",
+      "bytes": 4432,
+      "sha256": "1c0eaaaa3c6753f79387014fd74da7ac07590b4721e9b3c0fa3bee45a510be63"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_ferro_j2\\metrics.csv",
+      "role": "candidate_measurement",
+      "bytes": 1833,
+      "sha256": "fbdc89ebc1253c62228aab067aa88c9dc7035946336e5e83a74dee4d4947f945"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\manifest.json",
+      "role": "baseline_raw_solver_diagnostic",
+      "bytes": 4229,
+      "sha256": "45b8a960322b31f0015745c38a7c5f675f7d86f238bdba1d0bee4ab959038e6f"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\metrics.csv",
+      "role": "baseline_raw_solver_diagnostic",
+      "bytes": 1732,
+      "sha256": "bf9dfae63ea64f00ef78116e30e5244177737ee165c876cf07fa99afe5c2bb11"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_ferro_j2\\entropy_profile_full.csv",
+      "role": "candidate_measurement",
+      "bytes": 4054,
+      "sha256": "a44c178bac27deb03ae56350fac3abedbd5c2561481c90a9bd6d83dcfecc0c3e"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_ferro_j2\\bond_correlations.csv",
+      "role": "candidate_measurement",
+      "bytes": 2756,
+      "sha256": "d361ef84a63a3c2ac8fd17e5ba4361e7cd645e6eb4c8e2601762e16055ce3fca"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_ferro_j2\\bond_bond_connected.csv",
+      "role": "candidate_measurement",
+      "bytes": 1091,
+      "sha256": "1ac689a831cb040280c4a79bee509ae91ecdb7cf42f4f0ce45601b154795d3c2"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\manifest.json",
+      "role": "candidate_parent_manifest",
+      "bytes": 3761,
+      "sha256": "60a8c1bb43c8f089c744d7d615d72f945dea292b01ce4ea6b60df7cf7bf7477b"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\checksums.sha256",
+      "role": "candidate_parent_checksums",
+      "bytes": 606,
+      "sha256": "1576d59cdbf0d3d26b8433ac6e4b1e78e8eca2711e4ccd41cef8f2a76ea0f730"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_center\\manifest.json",
+      "role": "candidate_measurement",
+      "bytes": 4423,
+      "sha256": "ea689844c42e8d18540176bd9195c25e1380a14016b9d01fd3b89af3487d60a6"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_center\\metrics.csv",
+      "role": "candidate_measurement",
+      "bytes": 1828,
+      "sha256": "0db9680ef97b3c0b1d823b503765f20b416d25e6752828fb2f4cb420a6b3c42c"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\manifest.json",
+      "role": "baseline_raw_solver_diagnostic",
+      "bytes": 4219,
+      "sha256": "f90cb3f17c76261aee761383d67e051ab86ed8fc9c22553bc3a84d0d83c4efd1"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\metrics.csv",
+      "role": "baseline_raw_solver_diagnostic",
+      "bytes": 1725,
+      "sha256": "f464fabe2338e72e442316d317ca1fe557655ec35656269f8af4dac5fa2ec382"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_center\\entropy_profile_full.csv",
+      "role": "candidate_measurement",
+      "bytes": 4054,
+      "sha256": "4e681d64f425374b59ef30f2f6fa2262c3a21d6a17d678dbb170e87448e23148"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_center\\bond_correlations.csv",
+      "role": "candidate_measurement",
+      "bytes": 2756,
+      "sha256": "ecdb1c29e5dae6120f5653fa333a3e3876f9128f51bef90676925e980895de34"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_center\\bond_bond_connected.csv",
+      "role": "candidate_measurement",
+      "bytes": 1091,
+      "sha256": "594c2636c0c286dbae5c569df8fca8be1d51505b25d7c20e6af16e9ea9031eaa"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_ferro_j2\\manifest.json",
+      "role": "candidate_measurement",
+      "bytes": 4427,
+      "sha256": "85ba7d94f8af0b2b88e330013c20291144982db9e4feb4aed697399640236dba"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_ferro_j2\\metrics.csv",
+      "role": "candidate_measurement",
+      "bytes": 1829,
+      "sha256": "578b4284b08f332fd7ed3699ae8c90e01eee8652e5853d69d1cf7696512c9950"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\manifest.json",
+      "role": "baseline_raw_solver_diagnostic",
+      "bytes": 4227,
+      "sha256": "8ccec1632f1f319586843ec80e351a1d28fb2fd3c74359e86c78b5ce89705801"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\metrics.csv",
+      "role": "baseline_raw_solver_diagnostic",
+      "bytes": 1732,
+      "sha256": "9a6d6d89602c55b045fd59042f3da184b625af7ca0d6ff4c1eb6cb783f4416ce"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_ferro_j2\\entropy_profile_full.csv",
+      "role": "candidate_measurement",
+      "bytes": 4054,
+      "sha256": "28e0063fff8742e92db1377c1f5915382c5fff8cf5fcd6cc7f0f8f8414c76093"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_ferro_j2\\bond_correlations.csv",
+      "role": "candidate_measurement",
+      "bytes": 2756,
+      "sha256": "4262ced40a3c8ff439ddbe09627ff81f1aac62cb62047dcbc8f61a83150c69e5"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_ferro_j2\\bond_bond_connected.csv",
+      "role": "candidate_measurement",
+      "bytes": 1091,
+      "sha256": "171b69589d8e89e989cd102621bb524f999d2cf9f84b21c46be2c6bdc474a8e3"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260919\\closeout_stage1_joint_v2\\joint_size_evidence.csv",
+      "role": "stage1_joint_table",
+      "bytes": 5394,
+      "sha256": "4e5c19df79d4353e4ecd4dd60fa923365be8efc6a478e6448f8c7a7b6c20274d"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260919\\closeout_stage1_joint_v2\\summary.json",
+      "role": "stage1_joint_summary",
+      "bytes": 3109,
+      "sha256": "4b904bd46eedbfc8c20c9a65898ad63903df3b22b5d161b39bfd2f8c7648baac"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260919\\closeout_stage1_joint_v2\\qa.json",
+      "role": "stage1_joint_qa",
+      "bytes": 1398,
+      "sha256": "c69379d922490edd3567d515b0dbe799292f4bf8b9069610f8f2021d1f9163a8"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260919\\closeout_stage1_reanalysis_v2\\entropy_fits.csv",
+      "role": "stage1_existing_entropy_fits",
+      "bytes": 18618,
+      "sha256": "f53850c59da5a0096c01d6dbdedf44fee154ac12fe321e98424edae89e3e4463"
+    },
+    {
+      "path": "results\\autoresearch_v5_20260919\\static_krylov_controls_release_v2\\compatibility_terminal_snapshot_20260920_0945.json",
+      "role": "terminal_validation_receipt",
+      "bytes": 7521,
+      "sha256": "55de0d33e19778267617d1c46338bbb848c775b21776cf1c71c297f3b6921f31"
+    },
+    {
+      "path": "scripts\\autoresearch_v5\\analyze_static_krylov_impact.py",
+      "role": "analysis_script",
+      "bytes": 42669,
+      "sha256": "0254c7c0c1cbce5ff34193ceca8e6b667cabd6644773c45f30b81375dfd7839e"
+    },
+    {
+      "path": "scripts\\autoresearch_v5\\analyze_negative_entropy_sizes.py",
+      "role": "existing_entropy_fit_helper",
+      "bytes": 9260,
+      "sha256": "9cd570108cb599088cacd9a09d86344fd02ca96087af31a0dd0f8bdd4652ee4a"
+    },
+    {
+      "path": "scripts\\autoresearch_v5\\audit_pilot_entropy_robustness.py",
+      "role": "existing_fit_backend",
+      "bytes": 6161,
+      "sha256": "b29946cbf50ee001dfbe97e6a6f94d70c82b6706e06f7e6834d04ea48f8ff774"
+    },
+    {
+      "path": "scripts\\autoresearch_v5\\static_krylov_candidate_adapter.py",
+      "role": "candidate_audit_adapter",
+      "bytes": 29228,
+      "sha256": "859ea850e016d9d077554950276311a0b756789661290b003c7df6507098850a"
+    }
+  ],
+  "validator": {
+    "adapter": "static_krylov_candidate_adapter.audit",
+    "status": "audit_only",
+    "baseline": "baseline_verified",
+    "candidate": "candidate_verified",
+    "failures": [],
+    "comparison_records": 648,
+    "all_pass": true,
+    "terminal": {
+      "path": "results\\autoresearch_v5_20260919\\static_krylov_controls_release_v2\\compatibility_terminal_snapshot_20260920_0945.json",
+      "sha256": "55de0d33e19778267617d1c46338bbb848c775b21776cf1c71c297f3b6921f31",
+      "status": "terminal_success",
+      "completed_cells": null,
+      "checksums_exit_code": null
+    }
+  },
+  "adapter_audit": {
+    "status": "audit_only",
+    "baseline": "baseline_verified",
+    "candidate": "candidate_verified",
+    "comparison_records": 648,
+    "baseline_provenance": {
+      "inventory_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_baseline_v3",
+      "inventory_manifest_sha256": "d66b5e222c95a34a381f4d24593270639492361a12a37ddc51ae592f84f2a18c",
+      "source_records": [
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_r1\\parameter-scan.run_spec.json",
+          "role": "run_spec",
+          "sha256": "8ddd22ef9e450c20a89a044bd15a644462d5656ac058ef552006aa2b3a041455"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\manifest.json",
+          "role": "baseline_input",
+          "sha256": "536ca5a6eed77153fb3ea483e60a7fbbe5cc3140d8d04a803bcc203aaceed0d7"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\status.json",
+          "role": "baseline_input",
+          "sha256": "3db0640bd2fbeab6f3c550c6163aa2f13b07118c0b00d8d579e9b0dd15a2fcac"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\checksums.sha256",
+          "role": "baseline_input",
+          "sha256": "06bb4c7fcca1d8afacbbb0ec9b8c743c68c4587994fe312a6ec99d1d3165e09d"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\manifest.json",
+          "role": "baseline_input",
+          "sha256": "432daf64d832659acbf6d8d4d9f86ad620a9059f8a107910b0a8082251c8390a"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\status.json",
+          "role": "baseline_input",
+          "sha256": "85d4f033c2319b40e0e0673fb555a380340f20da03f6d15a6aae4dfb372a2ffe"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\checksums.sha256",
+          "role": "baseline_input",
+          "sha256": "b186f8c862d2334678fc108f2cff5e504fd146e79c3eb26396ea486a23991f5d"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\metrics.csv",
+          "role": "baseline_input",
+          "sha256": "bc04c996eb5fc7235a0d95e97d711fe89c9a0dfea628f9d4c5f589ef096018b3"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\entropy_profile_full.csv",
+          "role": "baseline_input",
+          "sha256": "b3d85aec894913011ccaec673f03d8495985914fa5ec0a8c242d23c70670cc1f"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\bond_correlations.csv",
+          "role": "baseline_input",
+          "sha256": "62cf41307a87f4810d16bf1198f675b8a9bbc2e938ff9daaed9cf7c66888c1d9"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\bond_bond_connected.csv",
+          "role": "baseline_input",
+          "sha256": "ffaa3accf8f9f9bdac6df77445ca4e5d824a188621415cda977ce1784813e412"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\sweep_history_sz0.csv",
+          "role": "baseline_input",
+          "sha256": "a2332a0d68e71f29a84880f3b53304ddc0bb5f347c58eb5a8942d8aab6294a4f"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\sweep_history_sz1.csv",
+          "role": "baseline_input",
+          "sha256": "99ee1df9db482e56cf2c77b68e6bb44ffd7354b04a418ef4e676726168d63a0c"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\manifest.json",
+          "role": "baseline_input",
+          "sha256": "45b8a960322b31f0015745c38a7c5f675f7d86f238bdba1d0bee4ab959038e6f"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\status.json",
+          "role": "baseline_input",
+          "sha256": "f9d703fde1302e47722386bebb49113b3ad576a87e56247cf4b0ab91f969f9f8"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\checksums.sha256",
+          "role": "baseline_input",
+          "sha256": "494c5e00611bfdb53d936c48a0fb86f36cd59f591bd739d3d70f2415c6ee1420"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\metrics.csv",
+          "role": "baseline_input",
+          "sha256": "bf9dfae63ea64f00ef78116e30e5244177737ee165c876cf07fa99afe5c2bb11"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\entropy_profile_full.csv",
+          "role": "baseline_input",
+          "sha256": "e5d3279549dbbf5c2a4bffc8aeb3f8f6355a3399243ddabebc64d5991a5d9f81"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\bond_correlations.csv",
+          "role": "baseline_input",
+          "sha256": "1a47a580fd94ee78a2df01f482eca9230b21c1e24e641b6b99d60fc47d8f0370"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\bond_bond_connected.csv",
+          "role": "baseline_input",
+          "sha256": "b52070eb22f329763982b2ba7512e3ab9de7a8eb1b17153ef91a76ffb7169bc6"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\sweep_history_sz0.csv",
+          "role": "baseline_input",
+          "sha256": "cfb712d71de46fa7db0821afbcda1037ac605eb21493b677464174292578557c"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\sweep_history_sz1.csv",
+          "role": "baseline_input",
+          "sha256": "99ee1df9db482e56cf2c77b68e6bb44ffd7354b04a418ef4e676726168d63a0c"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\manifest.json",
+          "role": "baseline_input",
+          "sha256": "15f2efce34332d4ab3e879fa35b3e8bbc35f3e4b8e6a7e9a83634d6a8d8162e6"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\status.json",
+          "role": "baseline_input",
+          "sha256": "3db0640bd2fbeab6f3c550c6163aa2f13b07118c0b00d8d579e9b0dd15a2fcac"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\checksums.sha256",
+          "role": "baseline_input",
+          "sha256": "0cbf84a50e177b71b5707b84af9479bd2269a2f742f68c38045a313f95829faf"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\manifest.json",
+          "role": "baseline_input",
+          "sha256": "f90cb3f17c76261aee761383d67e051ab86ed8fc9c22553bc3a84d0d83c4efd1"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\status.json",
+          "role": "baseline_input",
+          "sha256": "059e1b6903a19e0b89a5f1dc63ccdf1b0fa7ccb4059a7d9a47de3bb3ec292751"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\checksums.sha256",
+          "role": "baseline_input",
+          "sha256": "7c7b91f6e274d22f3f24d9f494911850cbc84e2b4a6679498d19b20c48602f16"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\metrics.csv",
+          "role": "baseline_input",
+          "sha256": "f464fabe2338e72e442316d317ca1fe557655ec35656269f8af4dac5fa2ec382"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\entropy_profile_full.csv",
+          "role": "baseline_input",
+          "sha256": "ed7f9349744ef9a265d7d71510b931f3f5704ed4010059026b51b88e0dcd6082"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\bond_correlations.csv",
+          "role": "baseline_input",
+          "sha256": "12f356c9c21182b62cc806a84fe4cf0b9eecd92d58bf5b3cea235619a4e11fd3"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\bond_bond_connected.csv",
+          "role": "baseline_input",
+          "sha256": "8fdda49a760c4c22f1bf8ce5c97c2ed32a70631c60c85aa08a3e379ecccb840c"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\sweep_history_sz0.csv",
+          "role": "baseline_input",
+          "sha256": "ded772838b55b5ca60d920717be6a05f8e879eebdc5027205aa8cf3ad2b76a6f"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\sweep_history_sz1.csv",
+          "role": "baseline_input",
+          "sha256": "539cd0565028e97739da760d054b21100b52700b128825129b15efd17f8b6b56"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\manifest.json",
+          "role": "baseline_input",
+          "sha256": "8ccec1632f1f319586843ec80e351a1d28fb2fd3c74359e86c78b5ce89705801"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\status.json",
+          "role": "baseline_input",
+          "sha256": "c4b0fe6d2ed406daa5ac83c8bf680f6d7da0e188cb6984109aad3089608c2ea0"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\checksums.sha256",
+          "role": "baseline_input",
+          "sha256": "5ab2ec3468a9b5b2b8516ea7b2c1443dde0cc054fa09918129e90e7e392a4a5e"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\metrics.csv",
+          "role": "baseline_input",
+          "sha256": "9a6d6d89602c55b045fd59042f3da184b625af7ca0d6ff4c1eb6cb783f4416ce"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\entropy_profile_full.csv",
+          "role": "baseline_input",
+          "sha256": "f7bf08e3f912771d02d9145c191112f6f79d8e76d083e5c954a2a5a2e71319a5"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\bond_correlations.csv",
+          "role": "baseline_input",
+          "sha256": "a1387dd4cf29d215b19750f300e3a241da3c65fbd3799d542218e1d214633908"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\bond_bond_connected.csv",
+          "role": "baseline_input",
+          "sha256": "605431185c3ff53a25eaad2588956c1fba6da2ab6ab6658944cbb992aeda968f"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\sweep_history_sz0.csv",
+          "role": "baseline_input",
+          "sha256": "bae3dc878f1c8b09c736278ab2cf753a6a7ec0f289cb4da0cd8124657b74bf05"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\sweep_history_sz1.csv",
+          "role": "baseline_input",
+          "sha256": "539cd0565028e97739da760d054b21100b52700b128825129b15efd17f8b6b56"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\autoresearch_v5\\static_krylov_control_inputs.py",
+          "role": "analysis_source",
+          "sha256": "f75e1bde5fc4124f4915a5919e9c07c65dafcb97af8755e61d2d0c058ae3eade"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\autoresearch_v5\\audit_pilot_entropy_robustness.py",
+          "role": "analysis_source",
+          "sha256": "b29946cbf50ee001dfbe97e6a6f94d70c82b6706e06f7e6834d04ea48f8ff774"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\autoresearch_v5\\closeout_negative_size_comparison.py",
+          "role": "analysis_source",
+          "sha256": "46207eb273c53d781225cb1f54b030d9a190e71ab561cf70d3cab7af7f2404ee"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\autoresearch_v5\\validate_negative_phase_run_practical_v2.py",
+          "role": "analysis_source",
+          "sha256": "677a5d3bbe89cf4623fadbbba5f46071e2ec952b371ddc487b152f8041966e94"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\autoresearch_v5\\negative_dmrg_options.py",
+          "role": "analysis_source",
+          "sha256": "78a084abe62e025497be76a36b4bab2d6aaae46699db112689d08ff15f25a999"
+        },
+        {
+          "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\autoresearch_v5\\negative_static_cell.jl",
+          "role": "analysis_source",
+          "sha256": "291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f"
+        }
+      ]
+    },
+    "candidate_provenance": {
+      "run_spec": {
+        "path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260919\\static_krylov_controls_r2\\parameter-scan.run_spec.json",
+        "sha256": "e43ff718a237010ea9ef3c78200193072bffd1c6bc14b44b7a5cc36ff7815f77"
+      },
+      "cells": {
+        "negdiag-a01000-b02500-L080-k08": {
+          "practical_v2": {
+            "status": "pass",
+            "acceptance_label": "accepted_under_practical_v2",
+            "failures": []
+          },
+          "parent": {
+            "manifest": {
+              "source_commit": "static-krylov-controls-release-v2",
+              "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+              "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+              "negative_alpha_included": true,
+              "acceptance_policy": "practical_v2",
+              "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+              "code_sha256": {
+                "scripts/autoresearch_v5/run_negative_static_cell.py": "b20773f2f03c2133e49b5cb114e8795cc5c29a09061bebe969ea2c64e94a73dc",
+                "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "c58cd4438349bdfcec4739fe17d4f21f9f2d8891d5e52d13ea5497de00ffb7eb",
+                "scripts/autoresearch_v5/negative_static_cell.jl": "291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f",
+                "scripts/autoresearch_v5/negative_dmrg_options.py": "78a084abe62e025497be76a36b4bab2d6aaae46699db112689d08ff15f25a999",
+                "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+              },
+              "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+            },
+            "artifact_hashes": {
+              "manifest.json": "93b3e2b67603b3f72ec6cdb24d86419219ffad332e916d7ca5d9553c37244754",
+              "status.json": "3db0640bd2fbeab6f3c550c6163aa2f13b07118c0b00d8d579e9b0dd15a2fcac",
+              "checksums.sha256": "0bcb2ee37e498e9f5b9f1aba690ec56b1fce8e856508165cc994279a6930c918"
+            }
+          },
+          "children": {
+            "center": {
+              "manifest": {
+                "source_commit": "static-krylov-controls-release-v2",
+                "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+                "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+                "hostname": "c104-ysu",
+                "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+                "python": "3.10.12",
+                "julia_version": "1.12.3",
+                "julia_pkg_offline": true,
+                "negative_alpha_included": true,
+                "negative_alpha_bounds": [
+                  -1.0,
+                  0.0
+                ],
+                "noise_protocol": "legacy",
+                "acceptance_policy": "practical_v2",
+                "code_sha256": {
+                  "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+                  "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+                  "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+                  "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+                  "scripts/autoresearch_v5/negative_static_cell.jl": "291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f",
+                  "scripts/autoresearch_v5/run_negative_static_cell.py": "b20773f2f03c2133e49b5cb114e8795cc5c29a09061bebe969ea2c64e94a73dc",
+                  "scripts/autoresearch_v5/negative_dmrg_options.py": "78a084abe62e025497be76a36b4bab2d6aaae46699db112689d08ff15f25a999",
+                  "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+                }
+              },
+              "artifact_hashes": {
+                "manifest.json": "6a653d6b066f01469a7f0375f5282a69b6ec18a1fac89c5143d25cabacd3561a",
+                "status.json": "1ef84e390d0d97b7a3f9295089539cb10d7310ca6b77c8c288d53626235b418d",
+                "checksums.sha256": "37580585f8981bcff2d5a82b5f1df8bcec15ce3f77dabf0c3bcf251384b04861",
+                "metrics.csv": "d87cc9f8823b4f187441937f839904b8d4b19fd927e16b0c15e505aaaddce9fe",
+                "state_sz0.jld2": "9616aac802d91a1dc75a4a4c1fe506bd3562089ee0cad198ba433151cf80a153",
+                "entropy_profile_full.csv": "a961fefb242e63aef03f20a8e70f70f5ec2e3bd43014e57b519894cf317535fe",
+                "bond_correlations.csv": "70e2f0e4d47e835738272862af8a34a460d394a0d72654114c771d54caf59fdc",
+                "bond_bond_connected.csv": "00292dc189a9d4413eed7d18e8e49d2663b9195633e2e2973ae1a90071f995f3"
+              }
+            },
+            "ferro_j2": {
+              "manifest": {
+                "source_commit": "static-krylov-controls-release-v2",
+                "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+                "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+                "hostname": "c104-ysu",
+                "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+                "python": "3.10.12",
+                "julia_version": "1.12.3",
+                "julia_pkg_offline": true,
+                "negative_alpha_included": true,
+                "negative_alpha_bounds": [
+                  -1.0,
+                  0.0
+                ],
+                "noise_protocol": "legacy",
+                "acceptance_policy": "practical_v2",
+                "code_sha256": {
+                  "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+                  "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+                  "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+                  "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+                  "scripts/autoresearch_v5/negative_static_cell.jl": "291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f",
+                  "scripts/autoresearch_v5/run_negative_static_cell.py": "b20773f2f03c2133e49b5cb114e8795cc5c29a09061bebe969ea2c64e94a73dc",
+                  "scripts/autoresearch_v5/negative_dmrg_options.py": "78a084abe62e025497be76a36b4bab2d6aaae46699db112689d08ff15f25a999",
+                  "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+                }
+              },
+              "artifact_hashes": {
+                "manifest.json": "1c0eaaaa3c6753f79387014fd74da7ac07590b4721e9b3c0fa3bee45a510be63",
+                "status.json": "a7044be3a5e3cddad4c7c5317a3e2c5e391c256775af5999e84939db81a284d1",
+                "checksums.sha256": "f6b12f6009d0c9c40e68978f0483358fdc8391c951202322fa8d483c82c3c286",
+                "metrics.csv": "fbdc89ebc1253c62228aab067aa88c9dc7035946336e5e83a74dee4d4947f945",
+                "state_sz0.jld2": "37fe1268c9572dc2a2614359cfbc12c5cf3e4717f60bcb4743bb5c80791bd962",
+                "entropy_profile_full.csv": "a44c178bac27deb03ae56350fac3abedbd5c2561481c90a9bd6d83dcfecc0c3e",
+                "bond_correlations.csv": "d361ef84a63a3c2ac8fd17e5ba4361e7cd645e6eb4c8e2601762e16055ce3fca",
+                "bond_bond_connected.csv": "1ac689a831cb040280c4a79bee509ae91ecdb7cf42f4f0ce45601b154795d3c2"
+              }
+            }
+          }
+        },
+        "negdiag-a01750-b02500-L080-k08": {
+          "practical_v2": {
+            "status": "pass",
+            "acceptance_label": "accepted_under_practical_v2",
+            "failures": []
+          },
+          "parent": {
+            "manifest": {
+              "source_commit": "static-krylov-controls-release-v2",
+              "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+              "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+              "negative_alpha_included": true,
+              "acceptance_policy": "practical_v2",
+              "dominant_ratio_boundary_rule": "q_peak=0 或 pi 时采用一侧 dq 邻点；内部峰采用两侧均值",
+              "code_sha256": {
+                "scripts/autoresearch_v5/run_negative_static_cell.py": "b20773f2f03c2133e49b5cb114e8795cc5c29a09061bebe969ea2c64e94a73dc",
+                "scripts/autoresearch_v5/run_negative_phase_structure_cell.py": "c58cd4438349bdfcec4739fe17d4f21f9f2d8891d5e52d13ea5497de00ffb7eb",
+                "scripts/autoresearch_v5/negative_static_cell.jl": "291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f",
+                "scripts/autoresearch_v5/negative_dmrg_options.py": "78a084abe62e025497be76a36b4bab2d6aaae46699db112689d08ff15f25a999",
+                "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+              },
+              "error_definition": "多初态均值；误差取半极差与10倍最大最终截断误差的较大者，幅值项另设1e-4下限"
+            },
+            "artifact_hashes": {
+              "manifest.json": "60a8c1bb43c8f089c744d7d615d72f945dea292b01ce4ea6b60df7cf7bf7477b",
+              "status.json": "3db0640bd2fbeab6f3c550c6163aa2f13b07118c0b00d8d579e9b0dd15a2fcac",
+              "checksums.sha256": "1576d59cdbf0d3d26b8433ac6e4b1e78e8eca2711e4ccd41cef8f2a76ea0f730"
+            }
+          },
+          "children": {
+            "center": {
+              "manifest": {
+                "source_commit": "static-krylov-controls-release-v2",
+                "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+                "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+                "hostname": "c104-ysu",
+                "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+                "python": "3.10.12",
+                "julia_version": "1.12.3",
+                "julia_pkg_offline": true,
+                "negative_alpha_included": true,
+                "negative_alpha_bounds": [
+                  -1.0,
+                  0.0
+                ],
+                "noise_protocol": "legacy",
+                "acceptance_policy": "practical_v2",
+                "code_sha256": {
+                  "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+                  "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+                  "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+                  "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+                  "scripts/autoresearch_v5/negative_static_cell.jl": "291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f",
+                  "scripts/autoresearch_v5/run_negative_static_cell.py": "b20773f2f03c2133e49b5cb114e8795cc5c29a09061bebe969ea2c64e94a73dc",
+                  "scripts/autoresearch_v5/negative_dmrg_options.py": "78a084abe62e025497be76a36b4bab2d6aaae46699db112689d08ff15f25a999",
+                  "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+                }
+              },
+              "artifact_hashes": {
+                "manifest.json": "ea689844c42e8d18540176bd9195c25e1380a14016b9d01fd3b89af3487d60a6",
+                "status.json": "9c7707f4d1d65b0a04d0be63d9431c8756816e4bff71bb0b11d023a059b664ca",
+                "checksums.sha256": "a91b4b76697cf23dffeecfbcc2b544924b697b4a7d65a3bc610234b53fd51d89",
+                "metrics.csv": "0db9680ef97b3c0b1d823b503765f20b416d25e6752828fb2f4cb420a6b3c42c",
+                "state_sz0.jld2": "7e3ad0d80b159105e1bea232b91b61ca5403aede777410fc75d8cbe150016a65",
+                "entropy_profile_full.csv": "4e681d64f425374b59ef30f2f6fa2262c3a21d6a17d678dbb170e87448e23148",
+                "bond_correlations.csv": "ecdb1c29e5dae6120f5653fa333a3e3876f9128f51bef90676925e980895de34",
+                "bond_bond_connected.csv": "594c2636c0c286dbae5c569df8fca8be1d51505b25d7c20e6af16e9ea9031eaa"
+              }
+            },
+            "ferro_j2": {
+              "manifest": {
+                "source_commit": "static-krylov-controls-release-v2",
+                "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+                "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+                "hostname": "c104-ysu",
+                "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+                "python": "3.10.12",
+                "julia_version": "1.12.3",
+                "julia_pkg_offline": true,
+                "negative_alpha_included": true,
+                "negative_alpha_bounds": [
+                  -1.0,
+                  0.0
+                ],
+                "noise_protocol": "legacy",
+                "acceptance_policy": "practical_v2",
+                "code_sha256": {
+                  "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+                  "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+                  "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+                  "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+                  "scripts/autoresearch_v5/negative_static_cell.jl": "291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f",
+                  "scripts/autoresearch_v5/run_negative_static_cell.py": "b20773f2f03c2133e49b5cb114e8795cc5c29a09061bebe969ea2c64e94a73dc",
+                  "scripts/autoresearch_v5/negative_dmrg_options.py": "78a084abe62e025497be76a36b4bab2d6aaae46699db112689d08ff15f25a999",
+                  "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+                }
+              },
+              "artifact_hashes": {
+                "manifest.json": "85ba7d94f8af0b2b88e330013c20291144982db9e4feb4aed697399640236dba",
+                "status.json": "5f3c411efabd94a3974e832b92923cec6623542089c00edb73851a62292c42a0",
+                "checksums.sha256": "0a6a758ad8ce5fbc542604180898be08b59919b322a4b3b28e3133f5f3d7bb6b",
+                "metrics.csv": "578b4284b08f332fd7ed3699ae8c90e01eee8652e5853d69d1cf7696512c9950",
+                "state_sz0.jld2": "3c35821aa00b7c90ad02f885a2da44016de9aeadc6aa384a08166763f6155a46",
+                "entropy_profile_full.csv": "28e0063fff8742e92db1377c1f5915382c5fff8cf5fcd6cc7f0f8f8414c76093",
+                "bond_correlations.csv": "4262ced40a3c8ff439ddbe09627ff81f1aac62cb62047dcbc8f61a83150c69e5",
+                "bond_bond_connected.csv": "171b69589d8e89e989cd102621bb524f999d2cf9f84b21c46be2c6bdc474a8e3"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

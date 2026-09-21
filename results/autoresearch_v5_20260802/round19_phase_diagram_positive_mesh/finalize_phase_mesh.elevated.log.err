@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "D:\Project\1x5_Heisenberg_Pentamer\scripts\autoresearch_v5\make_positive_mesh_summary.py", line 11, in <module>
+    import matplotlib.pyplot as plt
+ModuleNotFoundError: No module named 'matplotlib'
+summary failed
+ËùÔÚÎ»ÖÃ D:\Project\1x5_Heisenberg_Pentamer\scripts\autoresearch_v5\finalize_phase_mesh.ps1:70 ×Ö·û: 32
++     if ($LASTEXITCODE -ne 0) { throw "summary failed" }
++                                ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (summary failed:String) [], RuntimeException
+    + FullyQualifiedErrorId : summary failed
+ 

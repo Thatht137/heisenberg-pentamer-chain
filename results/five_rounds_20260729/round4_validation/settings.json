@@ -1,0 +1,15 @@
+{
+  "method": "finite_dmrg",
+  "boundary": "OBC",
+  "sector": "Sz=0",
+  "beta": 0.5,
+  "L": 80,
+  "n_units": 16,
+  "maxdim": 1200,
+  "nsweeps": 20,
+  "cutoff": 1e-10,
+  "init_mode": "neel",
+  "threads": 16,
+  "save_mps": true,
+  "offline": true
+}

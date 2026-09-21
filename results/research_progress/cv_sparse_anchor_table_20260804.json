@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "status": "constrained_sparse_table",
+  "accepted_points": 6,
+  "accepted_omega": [
+    0.2,
+    0.25,
+    0.3,
+    0.35,
+    0.55,
+    1.0
+  ],
+  "excluded_failed_points": 5,
+  "excluded_reason": "low cell max residual=1.3237623405931422e-5 > 1e-5",
+  "coverage": {
+    "omega_min": 0.2,
+    "omega_max": 1.0,
+    "tebd_peak_covered": false,
+    "major_window_0_to_1_5_covered": false
+  },
+  "source_files": [
+    {
+      "path": "results/autoresearch_v5_20260730/round3_cv_L40_probe/cell-0001-L40-qpi-w020/spectrum.csv",
+      "sha256": "3a9a4d5641c86fcd037542f60e1e55126fd9fa5a5001dc312af33b3a0dabdef8"
+    },
+    {
+      "path": "results/autoresearch_v5_20260730/round3_cv_L40_probe/cell-0001-L40-qpi-w020/manifest.json",
+      "sha256": "543f3aa7f11dc524afff46d33a1e8d5ed8b55ee067861591d1ee67a495323418"
+    },
+    {
+      "path": "results/autoresearch_v5_20260802/round21_cv_triplet_warmstart/cell-0002-L40-qpi-w025-w035/spectrum.csv",
+      "sha256": "08f1cb69c4cdedf7c7d3036d838e8abe2438d053fab29f0f57343e80154c1d34"
+    },
+    {
+      "path": "results/autoresearch_v5_20260802/round21_cv_triplet_warmstart/cell-0002-L40-qpi-w025-w035/manifest.json",
+      "sha256": "3296943dc08ea0610b4098dd1e6344964b0a88892e0d8b8ec677ffd02f079639"
+    },
+    {
+      "path": "results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804/cell-l40-qpi-high-055/spectrum.csv",
+      "sha256": "0b164f5ad838eae172e99d8e4f5d1612e618193c1abf0aea2a229e8f5f439dbc"
+    },
+    {
+      "path": "results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804/cell-l40-qpi-high-055/manifest.json",
+      "sha256": "7bbce3cf98a879a94c361320f2df1f71fa1ade507f776222200714727461832a"
+    },
+    {
+      "path": "results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804/cell-l40-qpi-high-100/spectrum.csv",
+      "sha256": "d400bec1a6e28f62ed13209957124749d2d2d3adb54eca5b82447f57ee0c7834"
+    },
+    {
+      "path": "results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804/cell-l40-qpi-high-100/manifest.json",
+      "sha256": "5f43d90192fcd5f3a40d02cfb9956397c5b1934bb047b0b8a7c5c854cb749c94"
+    },
+    {
+      "path": "results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804/cell-l40-qpi-low-000-020/spectrum.csv",
+      "sha256": "83c27ac75ffd1ad431bd13cfec8ca8a056cede87a49a456b7a011287374e71d1"
+    },
+    {
+      "path": "results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804/cell-l40-qpi-low-000-020/manifest.json",
+      "sha256": "20eff2138e311fdf1162bd5cb4004bfcb077b31b41d53f5d02c751494ec63c3e"
+    }
+  ],
+  "scope": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "L": 40,
+    "q": "pi",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "interpretation": "可用于 Fig.8 受限叠加和数据表；不关闭 CV-TEBD 交叉门，不替代 omega≈0.05 主峰或 [0,1.5] 积分窗。"
+}

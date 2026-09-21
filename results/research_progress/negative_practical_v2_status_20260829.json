@@ -1,0 +1,772 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-13T16:43:00+08:00",
+  "state": "stage_c_r1_bounded_not_evaluable",
+  "operations_notice": {
+    "server_maintenance_date": "2026-09-12",
+    "maintenance_duration": "unspecified",
+    "policy": "Do not start remote work until the server is confirmed available after maintenance. No new remote work is currently required by the conservative manuscript.",
+    "checked_at": "2026-09-13T16:40:00+08:00",
+    "ssh": "connection_closed_during_post_maintenance_check",
+    "last_confirmed_at": "2026-09-10T22:37:46+08:00",
+    "active_julia": 0,
+    "active_campaign": 0,
+    "automation": "none",
+    "risk": "none for current accepted evidence; no job was in flight and all Stage C results are already fetched and validated locally"
+  },
+  "external_feedback": {
+    "method_problem_reported": false,
+    "main_issue": "negative-alpha variance gate was unnecessarily strict and sweep escalation was excessive",
+    "recommended_response": "relax the convergence line, keep sweep budgets modest, and use a minimal response-convergence check"
+  },
+  "proposed_policy": {
+    "scope": {
+      "alpha": [
+        -1.0,
+        0.0
+      ],
+      "beta": [
+        0.0,
+        1.0
+      ],
+      "alpha_zero_separate": true,
+      "reference_fig9_excluded": true
+    },
+    "stage_b": {
+      "control": "alpha",
+      "alpha_grid": [
+        -1.0,
+        -0.75,
+        -0.5,
+        -0.35,
+        -0.25,
+        -0.1,
+        -0.05,
+        -0.025
+      ],
+      "beta_slices": [
+        0.05,
+        0.1,
+        0.25,
+        0.75,
+        0.9,
+        1.0
+      ],
+      "sizes": [
+        40,
+        60
+      ],
+      "remaining_before_r10_reuse": 78,
+      "remaining_after_r10_reuse": 77,
+      "sweeps": [
+        32,
+        64
+      ],
+      "max_new_sweeps": 64
+    },
+    "stage_c": {
+      "diagnostics": [
+        "q_peak reconstruction",
+        "dominant-ratio finite-size flow"
+      ],
+      "sigma": 2.0,
+      "target_width": 0.025,
+      "final_size_pair": [
+        60,
+        80
+      ],
+      "sweeps": 64
+    },
+    "cell_acceptance": {
+      "variance_per_site_max": 5E-08,
+      "final_truncation_error_max": 1E-09,
+      "sector_tolerance": 1E-08,
+      "spin_gap_min": -1E-08,
+      "two_initial_states": true,
+      "q_count_min": 401,
+      "checksum_and_non_clobbering_fetch": true
+    },
+    "response_convergence": {
+      "positive_region_complete": true,
+      "negative_region_after_static_phase_count": true,
+      "one_point_per_new_bulk_regime": true,
+      "dt": 0.025,
+      "one_refined_dt": 0.0125,
+      "peak_drift_max": 0.05,
+      "low_weight_relative_drift_max": 0.1
+    }
+  },
+  "threshold_audit": {
+    "input_parent_manifests": 26,
+    "physical_points": 18,
+    "strict_1e-8_accepted": 17,
+    "practical_5e-8_accepted": 18,
+    "one_e7_accepted": 18,
+    "selected_threshold": 5E-08,
+    "reason": "5e-8 releases the only unresolved historical Stage-B point; 1e-7 adds no physical point",
+    "paired_32_64_count": 3,
+    "max_q_peak_over_pi_drift": 0.0,
+    "max_dominant_ratio_drift": 0.13930225854266454
+  },
+  "local_artifacts": {
+    "standard": "docs/negative_alpha_practical_convergence_standard_20260829.md",
+    "audit_json": "results/research_progress/negative_variance_relaxation_audit_20260829.json",
+    "audit_csv": "results/research_progress/negative_variance_relaxation_audit_20260829.csv",
+    "validator": "scripts/autoresearch_v5/validate_negative_phase_run_practical_v2.py",
+    "r9_l40_validator": "pass",
+    "r9_l60_validator": "pass_under_practical_v2",
+    "negative_gap_rejection_test": "pass; rejected as required",
+    "r10_a1000_b0100_L060_validator": "pass",
+    "r10_a0750_b0100_L040_validator": "pass_under_practical_v2",
+    "accepted_practical_v2_physical_points": 89,
+    "r12_a0750_b0100_L060_validator": "pass_under_practical_v2",
+    "final_crossover_figure": "figures/negative_practical_v2_crossover_20260913/negative_alpha_crossover_summary.svg",
+    "final_crossover_source_data": "figures/negative_practical_v2_crossover_20260913/negative_alpha_crossover_points.csv; negative_alpha_crossover_evidence.csv",
+    "final_crossover_figure_qa": "figures/negative_practical_v2_crossover_20260913/negative_alpha_crossover_summary.qa.json",
+    "near_final_manuscript": "docs/near_final_manuscript_draft_20260819.md; updated 2026-09-13"
+  },
+  "remote_r10": {
+    "active_julia": 0,
+    "status": "terminal_partial_failure",
+    "remote_checksum_previews": "2/2 pass",
+    "fetch": "2/2 confirmed non-clobbering transfers; local checksum pass",
+    "practical_v2_validation": "2/2 pass",
+    "cells": [
+      "negb10-a1000-b0100-L060",
+      "negb10-a0750-b0100-L040"
+    ]
+  },
+  "remote_r11": {
+    "run_id": "stage-b-negative-coarse-r11-remaining77",
+    "batch_pid": 3775503,
+    "started_at": "2026-08-29T23:35:45+08:00",
+    "status": "terminal_variance_failure",
+    "completed_cells": 0,
+    "planned_cells": 77,
+    "current_cell": "negb11-a0750-b0100-L060",
+    "budget_counts": {
+      "32": 27,
+      "64": 50
+    },
+    "concurrency": 1,
+    "active_julia": 0,
+    "startup_cpu_percent": 105.0,
+    "startup_rss_gib": 0.86,
+    "stderr": "empty",
+    "variance_per_site_max": 5E-08,
+    "conditional_eta_hours": [
+      15,
+      26
+    ],
+    "terminal_at": "2026-08-29T23:50:53+08:00",
+    "failure": {
+      "failed_cell": "negb11-a0750-b0100-L060",
+      "budget": 32,
+      "only_failed_gate": "ferro_j2 variance_per_site_sz0",
+      "value": 5.037615456634133E-08,
+      "threshold": 5E-08,
+      "relative_excess_percent": 0.75230913268266,
+      "other_gates": "pass",
+      "remote_parent_and_child_checksums": "pass",
+      "non_clobbering_fetch": "pass",
+      "independent_validator": "failed only on the same variance gate"
+    },
+    "automation_id": "automation",
+    "prelaunch_guard_provenance": "first launch was blocked before Julia because a Windows CRLF source-hash list failed Linux sha256sum; LF bundle was regenerated, rehashed, reuploaded, and then launched"
+  },
+  "remote_r12": {
+    "run_id": "stage-b-negative-coarse-r12-remaining1",
+    "batch_pid": 3994206,
+    "started_at": "2026-08-30T08:32:45+08:00",
+    "status": "accepted",
+    "completed_cells": 1,
+    "planned_cells": 1,
+    "current_cell": "negb12-a0750-b0100-L060",
+    "budget": 64,
+    "concurrency": 1,
+    "active_julia": 0,
+    "startup_cpu_percent": 122.0,
+    "startup_rss_gib": 0.81,
+    "stderr": "empty",
+    "variance_per_site_max": 5E-08,
+    "retry_is_final": true,
+    "conditional_eta_minutes": [
+      20,
+      45
+    ],
+    "finished_at": "2026-08-30T09:01:29+08:00",
+    "remote_parent_and_child_checksums": "pass",
+    "non_clobbering_fetch": "pass",
+    "independent_validator": "pass",
+    "accepted_practical_v2_physical_points_after_ingest": 20,
+    "on_pass": "release the remaining 76 Stage B cells",
+    "on_fail": "bounded/NotEvaluable for this point; no 128-sweep retry"
+  },
+  "remote_r13": {
+    "run_id": "stage-b-negative-coarse-r13-remaining76",
+    "batch_pid": 30223,
+    "started_at": "2026-08-30T17:29:30+08:00",
+    "status": "terminal_partial_failure",
+    "completed_cells": 10,
+    "planned_cells": 76,
+    "current_cell": "negb13-a0025-b0100-L040",
+    "budget_counts": {
+      "32": 26,
+      "64": 50
+    },
+    "concurrency": 1,
+    "active_julia": 0,
+    "startup_cpu_percent": 147.0,
+    "startup_rss_gib": 0.82,
+    "stderr": "empty",
+    "variance_per_site_max": 5E-08,
+    "max_new_sweeps": 64,
+    "conditional_eta_hours": [
+      14,
+      25
+    ],
+    "next_read_window": "terminal",
+    "finished_at": "2026-08-30T20:33:00+08:00",
+    "remote_parent_and_child_checksums": "11/11 pass",
+    "non_clobbering_fetch": "11/11 pass",
+    "independent_validator": "10 pass/1 fail",
+    "accepted_practical_v2_physical_points_after_ingest": 30,
+    "failure": {
+      "failed_cell": "negb13-a0025-b0100-L040",
+      "params": {
+        "alpha": -0.025,
+        "beta": 0.1,
+        "L": 40
+      },
+      "budget": 64,
+      "failed_gate": "center nonnegative_gap",
+      "center_spin_gap": -3.400891982252574E-06,
+      "ferro_j2_spin_gap": 3.776803009181151E-05,
+      "variance_truncation_and_sz": "pass",
+      "status": "bounded/NotEvaluable",
+      "boundary_eligible": false,
+      "retry_allowed": false,
+      "reason": "already64 and failure is not variance; Practical V2 forbids128 and gate relaxation"
+    },
+    "unmaterialized_cells": 65,
+    "timestamp_note": "heartbeat current_time_iso uses UTC; server date is Asia/Shanghai and is consistent"
+  },
+  "local_r14": {
+    "run_id": "stage-b-negative-coarse-r14-remaining65",
+    "status": "terminal_partial_failure",
+    "planned_cells": 65,
+    "budget_counts": {
+      "32": 24,
+      "64": 41
+    },
+    "concurrency": 1,
+    "stop_on_first_failure": true,
+    "accepted_practical_v2_physical_points": 44,
+    "bounded_physical_points": 2,
+    "local_generator": "pass",
+    "upload_manifest_dry_run": "pass",
+    "batch_dry_run": "2/2 pass",
+    "batch_pid": 659749,
+    "julia_pid": 659767,
+    "started_at": "2026-08-31T19:50:33+08:00",
+    "current_cell": "negb14-a0050-b0250-L060",
+    "completed_cells": 14,
+    "active_julia": 0,
+    "stderr": "empty",
+    "upload_and_remote_hash": "21/21 pass",
+    "conditional_eta_hours": [
+      18,
+      32
+    ],
+    "next_read_window": "terminal",
+    "finished_at": "2026-08-31T23:06:06+08:00",
+    "remote_parent_and_child_checksums": "15/15 parent and 30/30 child pass",
+    "non_clobbering_fetch": "15/15 pass",
+    "independent_validator": "14 pass/1 fail",
+    "failure": {
+      "failed_cell": "negb14-a0050-b0250-L060",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.25,
+        "L": 60
+      },
+      "budget": 64,
+      "failed_gate": "center nonnegative_gap",
+      "center_spin_gap": -1.5307370162531697E-05,
+      "ferro_j2_spin_gap": 4.031188721853596E-05,
+      "variance_truncation_and_sz": "pass",
+      "status": "bounded/NotEvaluable",
+      "boundary_eligible": false,
+      "retry_allowed": false,
+      "reason": "already64 and failure is not variance; Practical V2 forbids128 and gap relaxation"
+    },
+    "unmaterialized_cells": 50,
+    "ssh_check": "pass at 2026-08-31T19:46:00+08:00; account=wangjieren; host=c104-ysu; project directory exists; active Julia=0",
+    "server_load_average": [
+      30.44,
+      30.27,
+      30.2
+    ],
+    "upload_authorization": "explicitly approved by user",
+    "upload_blocker": "resolved"
+  },
+  "local_r15": {
+    "run_id": "stage-b-negative-coarse-r15-remaining50",
+    "status": "terminal_partial_failure",
+    "planned_cells": 50,
+    "budget_counts": {
+      "32": 18,
+      "64": 32
+    },
+    "concurrency": 1,
+    "stop_on_first_failure": true,
+    "accepted_practical_v2_physical_points": 57,
+    "bounded_physical_points": 3,
+    "local_generator": "pass",
+    "upload_manifest_dry_run": "pass",
+    "batch_dry_run": "2/2 pass",
+    "batch_pid": 1370964,
+    "julia_pid": 1370981,
+    "started_at": "2026-09-02T07:51:35+08:00",
+    "current_cell": "negb15-a0100-b0750-L060",
+    "completed_cells": 13,
+    "active_julia": 0,
+    "startup_cpu_percent": 134.0,
+    "startup_rss_mib": 645.4,
+    "stderr": "empty",
+    "upload_and_remote_hash": "21/21 pass",
+    "conditional_eta_hours": [
+      10,
+      18
+    ],
+    "next_read_window": "terminal",
+    "finished_at": "2026-09-02T10:37:01+08:00",
+    "remote_parent_and_child_checksums": "14/14 parent and 28/28 child pass",
+    "non_clobbering_fetch": "14/14 pass",
+    "independent_validator": "13 pass/1 fail",
+    "failure": {
+      "failed_cell": "negb15-a0100-b0750-L060",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.75,
+        "L": 60
+      },
+      "budget": 64,
+      "failed_gate": "center nonnegative_gap",
+      "center_spin_gap": -1.1495200872957412E-05,
+      "ferro_j2_spin_gap": 3.758686013100032E-05,
+      "variance_truncation_and_sz": "pass",
+      "status": "bounded/NotEvaluable",
+      "boundary_eligible": false,
+      "retry_allowed": false,
+      "reason": "already64 and failure is not variance; Practical V2 forbids128 and gap relaxation"
+    },
+    "unmaterialized_cells": 36,
+    "upload_authorization": "explicitly approved by user",
+    "upload_blocker": "resolved"
+  },
+  "local_r16": {
+    "run_id": "stage-b-negative-coarse-r16-remaining36",
+    "status": "terminal_partial_failure",
+    "planned_cells": 36,
+    "budget_counts": {
+      "32": 12,
+      "64": 24
+    },
+    "concurrency": 1,
+    "stop_on_first_failure": true,
+    "accepted_practical_v2_physical_points": 57,
+    "bounded_physical_points": 4,
+    "local_generator": "pass",
+    "upload_manifest_dry_run": "pass; 21 files",
+    "batch_dry_run": "2/2 pass",
+    "conditional_eta_hours": [
+      7,
+      13
+    ],
+    "launcher_conservative_eta_hours": [
+      18,
+      32
+    ],
+    "batch_pid": 1934448,
+    "julia_pid": 1934464,
+    "started_at": "2026-09-03T13:54:55+08:00",
+    "current_cell": "negb16-a0050-b0750-L040",
+    "completed_cells": 0,
+    "active_julia": 0,
+    "startup_cpu_percent": 129.0,
+    "startup_rss_mib": 797.8,
+    "stderr": "empty",
+    "upload_and_remote_hash": "21/21 pass",
+    "next_read_window": "terminal",
+    "upload_authorization": "explicitly approved by user",
+    "upload_attempt": "pass",
+    "upload_blocker": "resolved",
+    "finished_at": "2026-09-03T14:04:55+08:00",
+    "remote_parent_and_child_checksums": "1/1 parent and 2/2 child pass",
+    "non_clobbering_fetch": "1/1 pass; 36 files, 135132 bytes",
+    "independent_validator": "0 pass/1 fail",
+    "failure": {
+      "failed_cell": "negb16-a0050-b0750-L040",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.75,
+        "L": 40
+      },
+      "budget": 64,
+      "failed_gate": "both initial states variance_per_site_sz1",
+      "variance_per_site_sz1": 5.149722710484639E-08,
+      "threshold": 5E-08,
+      "relative_excess_percent": 2.99445420969278,
+      "center_spin_gap": 0.00010996943868413211,
+      "ferro_j2_spin_gap": 0.00021917052604614184,
+      "truncation_sz_and_gap": "pass",
+      "status": "bounded/NotEvaluable",
+      "boundary_eligible": false,
+      "retry_allowed": false,
+      "reason": "already64; Practical V2 forbids128 and variance-gate relaxation"
+    },
+    "unmaterialized_cells": 35,
+    "last_monitor": {
+      "checked_at": "2026-09-04T10:03:32+08:00",
+      "status": "connection_recovered_terminal_failure",
+      "remote_state": "failed",
+      "last_confirmed_state": "terminal at 2026-09-03T14:04:55+08:00",
+      "inference": "numerical variance-gate failure; no runtime exception",
+      "additional_polling": false,
+      "next_read_window": "terminal"
+    }
+  },
+  "local_r17": {
+    "run_id": "stage-b-negative-coarse-r17-remaining35",
+    "status": "terminal_partial_failure",
+    "planned_cells": 35,
+    "budget_counts": {
+      "32": 12,
+      "64": 23
+    },
+    "concurrency": 1,
+    "stop_on_first_failure": true,
+    "accepted_practical_v2_physical_points": 71,
+    "bounded_physical_points": 5,
+    "local_generator": "pass",
+    "upload_manifest_dry_run": "pass; 21 files",
+    "batch_dry_run": "2/2 pass",
+    "conditional_eta_hours": [
+      7,
+      13
+    ],
+    "batch_pid": 3239811,
+    "julia_pid": 3239827,
+    "started_at": "2026-09-04T17:31:18+08:00",
+    "finished_at": "2026-09-04T20:38:28+08:00",
+    "current_cell": "negb17-a0100-b0900-L060",
+    "completed_cells": 14,
+    "active_julia": 0,
+    "stderr": "empty",
+    "upload_and_remote_hash": "21/21 pass",
+    "remote_parent_and_child_checksums": "15/15 parent and 30/30 child pass",
+    "non_clobbering_fetch": "15/15 pass",
+    "independent_validator": "14 pass/1 fail",
+    "failure": {
+      "failed_cell": "negb17-a0100-b0900-L060",
+      "params": {
+        "alpha": -0.1,
+        "beta": 0.9,
+        "L": 60
+      },
+      "budget": 64,
+      "failed_gate": "initial-state spin-gap sign disagreement",
+      "center_spin_gap": -2.905471427894213E-05,
+      "ferro_j2_spin_gap": 5.649902896465164E-05,
+      "variance_truncation_and_sz": "pass",
+      "q_peak_over_pi": 1.0,
+      "dominant_ratio_mean": 0.18169410867825314,
+      "dominant_ratio_half_difference": 0.020660044935798372,
+      "status": "bounded/NotEvaluable",
+      "boundary_eligible": false,
+      "retry_allowed": false,
+      "reason": "already64 and failure is non-variance; Practical V2 forbids retry"
+    },
+    "unmaterialized_cells": 20,
+    "next_read_window": "terminal",
+    "upload_authorization": "explicitly approved by user",
+    "upload_blocker": "resolved",
+    "last_monitor": {
+      "checked_at": "2026-09-05T10:14:19+08:00",
+      "status": "connection_recovered_terminal_failure",
+      "remote_state": "failed",
+      "additional_polling": false,
+      "next_read_window": "terminal"
+    }
+  },
+  "paper_modified": false,
+  "local_r18": {
+    "run_id": "stage-b-negative-coarse-r18-remaining20",
+    "status": "terminal_partial_failure",
+    "planned_cells": 20,
+    "budget_counts": {
+      "32": 6,
+      "64": 14
+    },
+    "concurrency": 1,
+    "stop_on_first_failure": true,
+    "accepted_practical_v2_physical_points": 71,
+    "bounded_physical_points": 5,
+    "local_generator": "pass",
+    "evidence_index": "15 records; 14 pass/1 bounded",
+    "upload_manifest_dry_run": "pass; 21 files",
+    "batch_dry_run": "2/2 pass",
+    "conditional_eta_hours": [
+      4,
+      8
+    ],
+    "max_new_sweeps": 64,
+    "upload_authorization": "standing campaign authorization from user; no per-round reapproval",
+    "upload_blocker": "resolved",
+    "paper_modified": false,
+    "batch_pid": 1939471,
+    "julia_pid": 1939494,
+    "started_at": "2026-09-06T09:49:27+08:00",
+    "current_cell": "negb18-a0050-b0900-L040",
+    "completed_cells": 0,
+    "active_julia": 0,
+    "startup_cpu_percent": 124.0,
+    "startup_rss_mib": 886.7,
+    "stderr": "empty",
+    "upload_and_remote_hash": "21/21 pass",
+    "next_read_window": "terminal",
+    "startup_health": "pass; one Julia, process tree consistent, run_status=running",
+    "finished_at": "2026-09-06T09:59:50+08:00",
+    "remote_parent_and_child_checksums": "1/1 parent and 2/2 child pass",
+    "non_clobbering_fetch": "1/1 pass; 36 files, 135111 bytes",
+    "independent_validator": "0 pass/1 fail",
+    "failure": {
+      "failed_cell": "negb18-a0050-b0900-L040",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.9,
+        "L": 40
+      },
+      "budget": 64,
+      "failed_gate": "both initial states variance_per_site_sz1",
+      "variance_per_site_sz1": 5.86091282173129E-08,
+      "threshold": 5E-08,
+      "relative_excess_percent": 17.2182564346258,
+      "center_spin_gap": 0.0001972301934944909,
+      "ferro_j2_spin_gap": 0.00029346727246526427,
+      "truncation_sz_and_gap": "pass",
+      "q_peak_over_pi": 1.0,
+      "dominant_ratio_mean": 0.07516251880437863,
+      "dominant_ratio_half_difference": 0.005571007280053553,
+      "status": "bounded/NotEvaluable",
+      "boundary_eligible": false,
+      "retry_allowed": false,
+      "reason": "already64; Practical V2 forbids128 and variance-gate relaxation"
+    },
+    "unmaterialized_cells": 19,
+    "last_monitor": {
+      "checked_at": "2026-09-06T20:03:06+08:00",
+      "status": "terminal_failure",
+      "remote_state": "failed",
+      "inference": "numerical variance-gate failure; no runtime exception",
+      "additional_polling": false,
+      "next_read_window": "terminal"
+    }
+  },
+  "future_campaign_upload_authorization": "standing authorization granted 2026-09-06; auto-generate, upload and launch subsequent bounded in-scope batches without requesting again",
+  "local_r19": {
+    "run_id": "stage-b-negative-coarse-r19-remaining19",
+    "status": "terminal_partial_failure",
+    "planned_cells": 19,
+    "budget_counts": {
+      "32": 6,
+      "64": 13
+    },
+    "concurrency": 1,
+    "stop_on_first_failure": true,
+    "accepted_practical_v2_physical_points": 71,
+    "bounded_physical_points": 6,
+    "local_generator": "pass",
+    "evidence_index": "1 record; 0 pass/1 bounded",
+    "upload_manifest_dry_run": "pass; 21 files",
+    "batch_dry_run": "2/2 pass",
+    "conditional_eta_hours": [
+      4,
+      8
+    ],
+    "max_new_sweeps": 64,
+    "batch_pid": 2175911,
+    "julia_pid": 2175928,
+    "started_at": "2026-09-06T20:10:11+08:00",
+    "current_cell": "negb19-a0100-b1000-L060",
+    "completed_cells": 14,
+    "active_julia": 0,
+    "startup_cpu_percent": 168.0,
+    "startup_rss_mib": 683.3,
+    "stderr": "empty",
+    "upload_and_remote_hash": "21/21 pass",
+    "next_read_window": "terminal",
+    "upload_authorization": "standing campaign authorization from user; no per-round reapproval",
+    "upload_blocker": "resolved",
+    "startup_health": "pass; one Julia, process tree consistent, run_status=running",
+    "paper_modified": false,
+    "finished_at": "2026-09-06T23:10:25+08:00",
+    "remote_parent_and_child_checksums": "15/15 parent and 30/30 child pass",
+    "non_clobbering_fetch": "15/15 pass",
+    "independent_validator": "14 pass/1 fail",
+    "failure": {
+      "failed_cell": "negb19-a0100-b1000-L060",
+      "params": {
+        "alpha": -0.1,
+        "beta": 1.0,
+        "L": 60
+      },
+      "budget": 64,
+      "failed_gate": "initial-state spin-gap sign disagreement",
+      "center_spin_gap": -4.1880202402921896E-05,
+      "ferro_j2_spin_gap": 6.533609455416922E-05,
+      "variance_truncation_and_sz": "pass",
+      "q_peak_over_pi": 1.0,
+      "dominant_ratio_mean": 0.15176006699322825,
+      "dominant_ratio_half_difference": 0.020804146632555087,
+      "status": "bounded/NotEvaluable",
+      "boundary_eligible": false,
+      "retry_allowed": false,
+      "reason": "already64 and failure is non-variance; Practical V2 forbids retry"
+    },
+    "unmaterialized_cells": 4,
+    "last_monitor": {
+      "checked_at": "2026-09-07T21:42:50+08:00",
+      "status": "terminal_failure",
+      "remote_state": "failed",
+      "inference": "numerical gap-gate failure; no runtime exception",
+      "additional_polling": false,
+      "next_read_window": "terminal"
+    }
+  },
+  "local_r20": {
+    "run_id": "stage-b-negative-coarse-r20-remaining4",
+    "status": "terminal_success",
+    "planned_cells": 4,
+    "budget_counts": {
+      "32": 0,
+      "64": 4
+    },
+    "concurrency": 1,
+    "stop_on_first_failure": true,
+    "accepted_practical_v2_physical_points": 89,
+    "bounded_physical_points": 7,
+    "local_generator": "pass",
+    "evidence_index": "15 records; 14 pass/1 bounded",
+    "upload_manifest_dry_run": "pass; 21 files",
+    "batch_dry_run": "2/2 pass",
+    "conditional_eta_hours": [
+      1,
+      3
+    ],
+    "max_new_sweeps": 64,
+    "batch_pid": 671379,
+    "julia_pid": 671396,
+    "started_at": "2026-09-07T21:53:18+08:00",
+    "current_cell": null,
+    "completed_cells": 4,
+    "active_julia": 0,
+    "startup_cpu_percent": 139.0,
+    "startup_rss_mib": 884.2,
+    "stderr": "empty",
+    "upload_and_remote_hash": "21/21 pass",
+    "next_read_window": "terminal",
+    "upload_authorization": "standing campaign authorization from user; no per-round reapproval",
+    "upload_blocker": "resolved",
+    "startup_health": "pass; one Julia, process tree consistent, run_status=running",
+    "paper_modified": false,
+    "finished_at": "2026-09-07T22:19:17+08:00",
+    "remote_parent_and_child_checksums": "4/4 parent and 8/8 child pass",
+    "non_clobbering_fetch": "4/4 pass",
+    "independent_validator": "4 pass/0 fail"
+  },
+  "stage_b_practical_v2": {
+    "status": "complete_with_bounded",
+    "grid": 96,
+    "accepted": 89,
+    "bounded": 7,
+    "pending": 0,
+    "grid_fully_resolved": true,
+    "bounded_excluded_from_boundary": true,
+    "refinement_targets": 8,
+    "stage_c_actions": 29,
+    "analysis": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_b_practical_v2_cross_slice_diagnostic_v2.json"
+  },
+  "stage_c_r1": {
+    "run_id": "stage-c-negative-refine-practical-v2-r1",
+    "status": "terminal_success_validated_boundary_unresolved",
+    "planned_cells": 29,
+    "budget_counts": {
+      "64": 29
+    },
+    "sizes": [
+      60,
+      80
+    ],
+    "concurrency": 1,
+    "stop_on_first_failure": true,
+    "max_sweeps": 64,
+    "variance_per_site_max": 5E-08,
+    "batch_pid": 1376400,
+    "julia_pid": 1376416,
+    "started_at": "2026-09-08T14:45:26+08:00",
+    "current_cell": null,
+    "completed_cells": 29,
+    "active_julia": 0,
+    "stderr": "empty; batch stderr 0 bytes",
+    "upload_and_remote_hash": "17/17 pass",
+    "local_generator": "pass",
+    "upload_manifest_dry_run": "pass; 17 files",
+    "batch_dry_run": "2/2 pass",
+    "startup_health": "pass; one Julia, run_status=running",
+    "conditional_eta_hours": [
+      0,
+      0
+    ],
+    "next_read_window": "terminal",
+    "paper_modified": false,
+    "finished_at": "2026-09-08T23:06:52+08:00",
+    "remote_parent_checksums": "29/29 pass",
+    "remote_child_checksums": "58/58 pass",
+    "non_clobbering_fetch": "29/29 pass",
+    "independent_validator": "29 pass/0 fail",
+    "boundary_result": {
+      "targets": 8,
+      "confirmed_dual_diagnostic_boundaries": 0,
+      "unresolved_targets": 8,
+      "next_compute_actions": 0,
+      "status": "bounded_not_evaluable",
+      "interpretation": "momentum reconstruction or two-sigma ratio flow is present on seven targets, but no adjacent bracket carries both diagnostics; beta=0.10 has no supported internal bracket",
+      "thresholds_relaxed": false,
+      "phase_label_assigned": false
+    },
+    "terminal_observations": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_c_practical_v2_r1_terminal_observations.json",
+    "boundary_analysis": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_c_practical_v2_r1_boundary_decision.json",
+    "boundary_result": {
+      "targets": 8,
+      "confirmed_dual_diagnostic_boundaries": 0,
+      "unresolved_targets": 8,
+      "next_actions": 0,
+      "interpretation": "L60/L80数据含清楚的动量重构或2sigma ratio信号，但没有同一相邻区间同时满足两种诊断；在既定正式门下不能宣称热力学相界。"
+    },
+    "last_monitor": {
+      "checked_at": "2026-09-09T12:45:00+08:00",
+      "status": "terminal_success_validated",
+      "completed": 29,
+      "planned": 29,
+      "elapsed_hours": 8.36,
+      "last_observed_julia_cpu_percent": 0,
+      "last_observed_julia_rss_gib": 0,
+      "stderr_bytes": 0,
+      "current_cell": null,
+      "conditional_completion_window": "terminal",
+      "additional_polling": false
+    }
+  }
+}

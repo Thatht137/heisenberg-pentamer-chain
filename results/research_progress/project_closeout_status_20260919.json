@@ -1,0 +1,815 @@
+{
+  "date": "2026-09-19",
+  "overall_status": "completed_validated_comparison_audit",
+  "historical_overall_status": "uploaded_startup_failed_compat_upload_blocked",
+  "pre_launch_status": "compatibility_uploaded_verified_launch_pending",
+  "pre_validation_status": "completed_pending_local_validation",
+  "goal_complete": false,
+  "active_goal": "Stage2 full chain pending; Stage3 numerical_done_physics_stability_not_claimed; Stage4 writing_in_progress",
+  "historical_active_goal": "Stage2 full chain pending; Stage3 compatibility upload authorization pending; Stage4 writing_in_progress",
+  "local_k8_calibration_verified": true,
+  "stage1": {
+    "status": "verified_complete",
+    "artifact": "results/autoresearch_v5_20260919/closeout_stage1_joint_v2",
+    "physical_points": 12,
+    "initial_state_records": 24,
+    "fits": 192,
+    "new_remote_compute": false,
+    "qa": {
+      "tests": 10,
+      "raw_sources_verified": 84,
+      "derived_outputs_verified": 4,
+      "exports_verified": 4,
+      "physical_csv_old_new_consistent": true
+    }
+  },
+  "stage2": {
+    "status": "controlled_local_ed_verified_pending_full_chain",
+    "artifact": "docs/near_zero_alpha_mechanism_note_20260919.md",
+    "oracle_artifact": "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2",
+    "independent_ed_validation": true,
+    "points": 47,
+    "tests": 11,
+    "validation_gate": "pass",
+    "asymptotic_gate": "pass",
+    "script_sha256": "91e007e81ffce460eee9f301b7e9492e9a99096f2dd38081dbbeaf7c484699c9",
+    "test_sha256": "7812f5825340851a8392de81690edbe1c6ea04b15fa9583d4fa7ed2a450dd292",
+    "small_alpha_relative_error_range": "0.143%-0.649%",
+    "finite_alpha_control_relative_errors": {
+      "(-0.10,0.25)": "-36.1351%",
+      "(-0.175,0.25)": "-53.8550%"
+    },
+    "limitations": [
+      "受控 8-spin 交换核对，不是完整 OBC 链 gap 或热力学相验证",
+      "full-Kronecker 与 bit-sector 是同一 Hamiltonian 的双实现，不是第二种多体方法",
+      "leading 形状因子尚未由有限-alpha 全频/绝对谱重独立验证"
+    ]
+  },
+  "stage3": {
+    "status": "numerical_done_physics_stability_not_claimed",
+    "historical_status": "uploaded_startup_failed_compat_upload_blocked",
+    "pre_launch_status": "compatibility_uploaded_verified_launch_pending",
+    "pre_terminal_status": "running_pending_validation",
+    "prior_status": "prepared_upload_blocked",
+    "artifact": "results/autoresearch_v5_20260920/static_krylov_baseline_v3",
+    "historical_artifact": "results/autoresearch_v5_20260919/static_krylov_baseline_v2",
+    "comparison_artifact": "results/autoresearch_v5_20260920/static_krylov_controls_r2_comparison_20260920/comparison.json",
+    "comparison_status": "audit_only_candidate_verified_failures_empty",
+    "preflight_artifact": "results/autoresearch_v5_20260919/static_krylov_controls_r1",
+    "preflight_artifact_scope": "历史 r1 只读 preflight；不代表新版 r2 release",
+    "physical_points": 2,
+    "initial_state_records": 4,
+    "source_hashes_verified": 18,
+    "source_hashes_verified_scope": "历史 baseline/r1 字段；当前 r2/v3 输入与回传文件另有独立 manifest/hash 证据",
+    "shared_settings_verified": 21,
+    "shared_settings_verified_scope": "历史 baseline/r1 字段；不作为新版 r2 验收",
+    "launch_ready": true,
+    "prepared_only": false,
+    "upload_hash_verification": "pass_all_73_files",
+    "release_upload_verified": true,
+    "release_upload_manifest_unchanged": true,
+    "first_launcher": {
+      "status": "failed_before_julia_start",
+      "launcher_pid": 1378242,
+      "asof": "2026-09-19T23:23:35+08:00",
+      "source_hashes_line_count": 19,
+      "failure": "POSIX sha256sum read CRLF-terminated source_hashes filename with trailing carriage return",
+      "julia_started": false,
+      "format_fix_pending": true
+    },
+    "compatibility_script": {
+      "path": "scripts/autoresearch_v5/launch_static_krylov_controls_release_v2_crlf_compat.sh",
+      "size_bytes": 7252,
+      "sha256": "359936af95676cbcf6752b2e4f808267805051a3b9eb00682e280687949752c8",
+      "local_test": "partial_pass_shell_runtime_unverified",
+      "upload_status": "rejected_outside_explicit_73_file_authorization",
+      "upload_performed": false,
+      "restart_performed": false,
+      "user_authorization_required": true,
+      "record_role": "historical_pre_authorization_block"
+    },
+    "compatibility_upload_current": {
+      "status": "uploaded_and_remote_verified",
+      "receipt": "results/autoresearch_v5_20260919/static_krylov_controls_release_v2/compatibility_upload_receipt_20260920.json",
+      "authorized_scope": "single compatibility launcher only",
+      "remote_time": "2026-09-20T07:33:04+08:00",
+      "remote_bytes": 7252,
+      "remote_sha256": "359936af95676cbcf6752b2e4f808267805051a3b9eb00682e280687949752c8",
+      "bash_n": "pass",
+      "normalized_bundle_sha256_check": "pass",
+      "awk_extract": "pass",
+      "launch_started": true,
+      "launch_transaction": "started_by_compat_execute; terminal_snapshot_verified",
+      "record_role": "current_verified_upload_then_launch"
+    },
+    "launch_receipt_current": {
+      "receipt": "results/autoresearch_v5_20260919/static_krylov_controls_release_v2/compatibility_launch_health_receipt_20260920.json",
+      "launch_time_cst": "2026-09-20T07:40:31+08:00",
+      "supervisor_pid": 294213,
+      "batch_pid": 294499,
+      "julia_pid": 294507,
+      "supervisor_timeout_seconds": 7200,
+      "term_grace_seconds": 60,
+      "julia_threads": 8,
+      "concurrency_policy": "single; stop_on_first_failure",
+      "retry_policy": "none",
+      "deadline_note": "约09:41–09:43；确切以 supervisor/session receipt 为准；不作完成时间保证",
+      "snapshot_role": "launch_receipt_not_terminal",
+      "terminal_receipt": "results/autoresearch_v5_20260919/static_krylov_controls_release_v2/compatibility_terminal_snapshot_20260920_0945.json"
+    },
+    "health_receipt_current": {
+      "receipt": "results/autoresearch_v5_20260919/static_krylov_controls_release_v2/compatibility_launch_health_receipt_20260920.json",
+      "status": "running_health_verified",
+      "checked_at_cst": "2026-09-20T07:41:37+08:00",
+      "supervisor_pid": 294213,
+      "batch_pid": 294499,
+      "julia_pid": 294507,
+      "julia_cpu_percent": 102.0,
+      "julia_rss_kib": 918492,
+      "current_cell": "negdiag-a01000-b02500-L080-k08",
+      "completed_cells": 0,
+      "second_cell_started": false,
+      "stderr_bytes": {
+        "batch": 0,
+        "compatlauncher": 0
+      },
+      "snapshot_role": "superseded_by_terminal_snapshot",
+      "terminal_receipt": "results/autoresearch_v5_20260919/static_krylov_controls_release_v2/compatibility_terminal_snapshot_20260920_0945.json"
+    },
+    "terminal_receipt_current": {
+      "receipt": "results/autoresearch_v5_20260919/static_krylov_controls_release_v2/compatibility_terminal_snapshot_20260920_0945.json",
+      "snapshot_time_cst": "2026-09-20T09:48:44+08:00",
+      "status": "terminal_success",
+      "supervisor_status": "completed",
+      "run_status": "success",
+      "returncode": 0,
+      "completed_cells": 2,
+      "child_runs": 4,
+      "all_checksums_exit_code": 0,
+      "stderr_bytes": 0,
+      "active_matching_processes": [],
+      "remote_write": false,
+      "validation_state": "local_validators_and_comparison_passed; physics_stability_not_claimed"
+    },
+    "monitoring_current": {
+      "automation_id": "l80-krylov",
+      "status": "DELETED",
+      "next_check_cst": null,
+      "purpose": "一次性健康/终态检查",
+      "deletion_confirmed": true
+    },
+    "remote_julia_started": true,
+    "remote_runtime_active": false,
+    "candidate_present": true,
+    "local_k8_calibration_verified": true,
+    "local_k8_save_enriched_verified": true,
+    "baseline_checksums_and_v2_validator": "pass",
+    "baseline_krylov": 3,
+    "candidate_krylov": 8,
+    "candidate_state": "candidate_verified",
+    "terminal_state": "terminal_success_validated",
+    "candidate_validated": true,
+    "validation_current": {
+      "status": "pass",
+      "validator_files": [
+        "results/autoresearch_v5_20260920/static_krylov_controls_r2_fetch_0945/validation_negdiag-a01000-b02500-L080-k08.json",
+        "results/autoresearch_v5_20260920/static_krylov_controls_r2_fetch_0945/validation_negdiag-a01750-b02500-L080-k08.json"
+      ],
+      "failures": [],
+      "maxvariance": [
+        1.8841461724e-11,
+        2.582183356e-11
+      ],
+      "max_truncation_error": "约9.996e-12",
+      "fetched_files": 84,
+      "fetched_bytes": 29785370,
+      "checksums": "pass"
+    },
+    "comparison_audit_current": {
+      "path": "results/autoresearch_v5_20260920/static_krylov_controls_r2_comparison_20260920/comparison.json",
+      "status": "audit_only",
+      "candidate": "candidate_verified",
+      "baseline": "results/autoresearch_v5_20260920/static_krylov_baseline_v3",
+      "points": 2,
+      "records": 648,
+      "failures": [],
+      "claim": "none",
+      "symmetric_relative_definition": "2*(new-old)/(|new|+|old|)",
+      "interpretation": "新数值门与完整性通过、初态一致性改善；不作全部观测量收敛或相结论"
+    },
+    "local_smoke": {
+      "status": "local_k8_calibration_verified",
+      "initialization_protocol": "生产基线/拟运行 L80 使用双 Sz=0 初态；本地 L=10 校准仅测 center，Sz=1 也为 center",
+      "energy_gate": "本次独立总能量 absE<=1e-8；不等同历史 Practical V2 variance/site 门",
+      "metrics_generated": true,
+      "cases": [
+        {
+          "source": "v1",
+          "cell_id": "a-0100-k3",
+          "alpha": -0.1,
+          "beta": 0.25,
+          "L": 10,
+          "krylovdim": 3,
+          "returncode": 0,
+          "timed_out": true,
+          "metrics_complete": true,
+          "energy_abs_delta": {
+            "sz0": 5.6143420579246595e-08,
+            "sz1": 1.0643028680590305e-09
+          },
+          "sweeps": {
+            "sz0": 16,
+            "sz1": 16
+          },
+          "state_norm": {
+            "sz0": 1.0,
+            "sz1": 1.0
+          },
+          "total_sz": {
+            "sz0": 0.0,
+            "sz1": 1.0
+          },
+          "comparison_passed": false,
+          "timeout_interpretation": "单独记录，不作为进程或物理数值失败"
+        },
+        {
+          "source": "v2",
+          "cell_id": "a-0100-k8",
+          "alpha": -0.1,
+          "beta": 0.25,
+          "L": 10,
+          "krylovdim": 8,
+          "returncode": 0,
+          "timed_out": false,
+          "metrics_complete": true,
+          "energy_abs_delta": {
+            "sz0": 1.2586198749886535e-10,
+            "sz1": 3.83124643121846e-11
+          },
+          "sweeps": {
+            "sz0": 16,
+            "sz1": 16
+          },
+          "state_norm": {
+            "sz0": 1.0,
+            "sz1": 1.0
+          },
+          "total_sz": {
+            "sz0": 3.122332850168802e-17,
+            "sz1": 1.0
+          },
+          "comparison_passed": true
+        },
+        {
+          "source": "v3",
+          "cell_id": "a-0175-k3",
+          "alpha": -0.175,
+          "beta": 0.25,
+          "L": 10,
+          "krylovdim": 3,
+          "returncode": 0,
+          "timed_out": false,
+          "metrics_complete": true,
+          "energy_abs_delta": {
+            "sz0": 2.2880808359104776e-11,
+            "sz1": 3.000533155272933e-11
+          },
+          "sweeps": {
+            "sz0": 16,
+            "sz1": 16
+          },
+          "state_norm": {
+            "sz0": 1.0,
+            "sz1": 1.0
+          },
+          "total_sz": {
+            "sz0": -7.112366251504909e-16,
+            "sz1": 0.9999999999999992
+          },
+          "comparison_passed": true
+        },
+        {
+          "source": "v3",
+          "cell_id": "a-0175-k8",
+          "alpha": -0.175,
+          "beta": 0.25,
+          "L": 10,
+          "krylovdim": 8,
+          "returncode": 0,
+          "timed_out": false,
+          "metrics_complete": true,
+          "energy_abs_delta": {
+            "sz0": 2.4154012123744906e-12,
+            "sz1": 3.000799608798843e-11
+          },
+          "sweeps": {
+            "sz0": 16,
+            "sz1": 16
+          },
+          "state_norm": {
+            "sz0": 1.0,
+            "sz1": 1.0
+          },
+          "total_sz": {
+            "sz0": 4.1285741101890205e-16,
+            "sz1": 0.9999999999999999
+          },
+          "comparison_passed": true
+        }
+      ],
+      "k8_gate": {
+        "passed": true,
+        "required_cases": 2,
+        "cells": [
+          "a-0100-k8",
+          "a-0175-k8"
+        ]
+      },
+      "all_cases_gate": {
+        "passed": false,
+        "required_cases": 4,
+        "v1_numeric_failure_preserved": true,
+        "v1_timeout_reported_separately": true
+      },
+      "cross_method_csv": "results/autoresearch_v5_20260919/static_krylov_smoke_v3/cross-method-check.csv",
+      "v3_manifest": "results/autoresearch_v5_20260919/static_krylov_smoke_v3/manifest.json",
+      "wall_seconds_total": 167.203,
+      "wall_plan_revision": {
+        "original_total_seconds": 180,
+        "completion_additional_case_budget_seconds": 240,
+        "actual_completion_wall_seconds": 167.203,
+        "reason": "原180s不足以覆盖四个冷启动；仅对剩余两个 .175 cell 追加 wall 安排",
+        "physical_settings_changed": false,
+        "acceptance_gates_changed": false,
+        "old_outputs_overwritten": false
+      },
+      "v4_save_enriched": {
+        "status": "pass",
+        "output_dir": "results/autoresearch_v5_20260919/static_krylov_smoke_v4",
+        "manifest": "results/autoresearch_v5_20260919/static_krylov_smoke_v4/manifest.json",
+        "cross_method_csv": "results/autoresearch_v5_20260919/static_krylov_smoke_v4/cross-method-check.csv",
+        "source_sha256": "291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f",
+        "driver_sha256": "ebbad376886767e33e42f34ef26323d57b104fab52f1530f6d7bb1f0f9fc5cba",
+        "source_change_scope": "negative_static_cell.jl 15/16-args 解析修复；v4 仅增加 SAVE_STATE=1、ENRICHED=1 产物",
+        "settings": {
+          "alpha": [
+            -0.1,
+            -0.175
+          ],
+          "beta": 0.25,
+          "L": 10,
+          "boundary": "OBC",
+          "target_sz": [
+            0,
+            1
+          ],
+          "krylovdim": 8,
+          "maxdim": 64,
+          "nsweeps": 16,
+          "cutoff": 1e-11,
+          "threads": 2,
+          "noise_profile": "legacy",
+          "save_state": true,
+          "enriched_diagnostics": true
+        },
+        "wall_seconds_total": 172.016,
+        "k8_gate": {
+          "passed": true,
+          "required_cases": 2,
+          "cells": [
+            "a-0100-k8",
+            "a-0175-k8"
+          ]
+        },
+        "all_cases_gate": {
+          "passed": true,
+          "required_cases": 2,
+          "scope": "v4 两个保存态/增强诊断 k=8 点"
+        },
+        "cases": [
+          {
+            "cell_id": "a-0100-k8",
+            "alpha": -0.1,
+            "returncode": 0,
+            "timed_out": false,
+            "wall_seconds": 85.375,
+            "energy_abs_delta": {
+              "sz0": 1.25861987498865e-10,
+              "sz1": 3.83124643121846e-11
+            },
+            "ed_residual": {
+              "sz0": 2.51143425732512e-15,
+              "sz1": 1.64852795977115e-15
+            },
+            "state_norm": {
+              "sz0": 1.0,
+              "sz1": 1.0
+            },
+            "total_sz": {
+              "sz0": 3.1223328501688e-17,
+              "sz1": 1.0
+            },
+            "sweeps": {
+              "sz0": 16,
+              "sz1": 16
+            },
+            "artifacts_complete": true
+          },
+          {
+            "cell_id": "a-0175-k8",
+            "alpha": -0.175,
+            "returncode": 0,
+            "timed_out": false,
+            "wall_seconds": 85.656,
+            "energy_abs_delta": {
+              "sz0": 2.41540121237449e-12,
+              "sz1": 3.00079960879884e-11
+            },
+            "ed_residual": {
+              "sz0": 2.39264538247163e-15,
+              "sz1": 1.61195232656397e-15
+            },
+            "state_norm": {
+              "sz0": 1.0,
+              "sz1": 1.0
+            },
+            "total_sz": {
+              "sz0": 4.12857411018902e-16,
+              "sz1": 1.0
+            },
+            "sweeps": {
+              "sz0": 16,
+              "sz1": 16
+            },
+            "artifacts_complete": true
+          }
+        ],
+        "required_artifacts": [
+          "metrics.csv",
+          "entropy_profile_full.csv",
+          "bond_correlations.csv",
+          "bond_bond_connected.csv",
+          "state_sz0.jld2"
+        ],
+        "source_hash_stable": true,
+        "old_v1_v3_hashes_stable": true
+      }
+    },
+    "tests": {
+      "negative_krylov_hook": 6,
+      "comparison_and_baseline": 17,
+      "comparison_adapter_regression": 19,
+      "ed_reference": 8,
+      "l80_preparer": 4
+    },
+    "limitations": [
+      "L80 两点 k=8 已完成 Practical V2 与独立完整性验收；comparison 仅为 audit_only",
+      "旧 k=3 gap 在 alpha=-0.10 的两初态漂移为 31.59%/43.80%，alpha=-0.175 为 2.06%/4.57%；不能据此宣称全部观测量收敛",
+      "本轮不作新相、全域单相、全局 c=1 或论文完成结论；Stage2 full chain 与 Stage4 仍 pending"
+    ]
+  },
+  "stage4": {
+    "status": "writing_in_progress",
+    "draft": "docs/near_final_manuscript_draft_20260819.md",
+    "claim_evidence_map": "docs/manuscript_claim_evidence_map_20260919.md",
+    "independent_report": "results/autoresearch_v5_20260919/manuscript_closeout_20260919_report/report.html",
+    "scientific_gates_open": true
+  },
+  "local_manuscript_progress": {
+    "status": "draft_revised_verified_citations_integrated_report_rendered",
+    "updated_at": "2026-09-19",
+    "draft": "docs/near_final_manuscript_draft_20260819.md",
+    "claim_evidence_map": "docs/manuscript_claim_evidence_map_20260919.md",
+    "independent_report": "results/autoresearch_v5_20260919/manuscript_closeout_20260919_report/report.json",
+    "nature_writing_router": {
+      "paper_type": "research",
+      "sections": [
+        "introduction",
+        "methods",
+        "discussion"
+      ],
+      "language": "en",
+      "journal": "generic",
+      "shared_core": "missing_fallback_static_fragments_used",
+      "dependency_installation": false
+    },
+    "source_audit": {
+      "mechanism_note_read": true,
+      "oracle_summary_read": true,
+      "stage1_joint_summary_read": true,
+      "stage1_reanalysis_summary_read": true,
+      "paper_sections_read_without_modification": true,
+      "paper_modified": false,
+      "verified_bibliography_read": true,
+      "citation_audit_read": true,
+      "draft_verified_citations_integrated": true,
+      "paper_level_citations_inserted": false
+    },
+    "citation_status": "draft_verified_and_integrated_paper_sync_pending",
+    "verified_bibliography": "docs/pentamer_bibliography_verified_20260919.bib",
+    "citation_audit": "docs/pentamer_citation_audit_20260919.json",
+    "verified_reference_count": 12,
+    "global_c1_established": false,
+    "second_phase_established": false,
+    "mechanism_oracle_scope": "8-spin_local_controlled_exchange_only",
+    "finite_alpha_control_error_definition": "epsilon=(gap/alpha^2-2/(9beta))/(2/(9beta))",
+    "l80_k8_status": "completed_validated_comparison_audit_physics_stability_not_claimed",
+    "historical_l80_k8_status": "uploaded_startup_failed_compat_upload_blocked_julia_not_started",
+    "candidate_present": true,
+    "candidate_validated": true,
+    "comparison_audit": "results/autoresearch_v5_20260920/static_krylov_controls_r2_comparison_20260920/comparison.json；648 records；audit_only",
+    "physics_stability_claim": false,
+    "stage4_main_status_unchanged": "writing_in_progress",
+    "main_report_updated": true,
+    "report_render_pending": false,
+    "report_render_status": "pass",
+    "report_html": "results/autoresearch_v5_20260919/manuscript_closeout_20260919_report/report.html",
+    "report_static_qa": {
+      "html_bytes": 2134300,
+      "embedded_images": 5,
+      "figure_boxes": 5,
+      "sections": 5,
+      "missing_image_notes": 0,
+      "external_src": 0,
+      "external_css": 0,
+      "external_script": 0,
+      "browser_localfile_bypass": false
+    }
+  },
+  "scope_guards": {
+    "no_new_remote_compute": false,
+    "historical_no_new_remote_compute": true,
+    "local_julia_used_this_round": true,
+    "remote_julia_started": true,
+    "paper_modified_by_this_closeout": false,
+    "current_release_state": "completed_validated_comparison_audit",
+    "pre_launch_release_state": "compatibility_uploaded_verified_launch_pending",
+    "historical_release_state": "uploaded_startup_failed_compat_upload_blocked",
+    "release_upload_hashes_verified": true,
+    "compatibility_script_upload_performed": true,
+    "compatibility_script_authorization_required": false,
+    "compatibility_upload_receipt": "results/autoresearch_v5_20260919/static_krylov_controls_release_v2/compatibility_upload_receipt_20260920.json",
+    "automatic_monitoring_scheduled": false,
+    "monitoring_automation": {
+      "automation_id": "l80-krylov",
+      "status": "DELETED",
+      "next_check_cst": null,
+      "scope": "一次性健康/终态检查",
+      "deletion_confirmed": true
+    },
+    "remote_preflight": {
+      "asof": "2026-09-19T20:46:08+08:00",
+      "allowlist_summary": "results/autoresearch_v5_20260919/ssh_health_audit_v1/health_summary.json",
+      "exact_account_julia_observed": false,
+      "disk_available_gib_approx": 216,
+      "julia_symlink_or_path_executable_confirmed": false,
+      "production_startup_requirement": "启动前对绝对 Julia 路径执行 test -x",
+      "latest_read_only_check": {
+        "asof": "2026-09-19T22:22:45+08:00",
+        "target": "wangjieren@39.96.207.180:6000",
+        "audit_summary": "results/autoresearch_v5_20260919/ssh_health_audit_v2/health_summary.json",
+        "exact_account_julia_observed": false,
+        "project_python_count": 0,
+        "user_julia_count": 0,
+        "fixed_julia": {
+          "path": "/home/wangjieren/.julia/juliaup/julia-1.12.3+0.x64.linux.gnu/bin/julia",
+          "version": "julia version 1.12.3",
+          "executable": true
+        },
+        "numpy": {
+          "status": "unavailable",
+          "error": "No module named 'numpy'"
+        },
+        "flock": "/usr/bin/flock",
+        "project_exists": true,
+        "lock_parent_exists": true,
+        "isolation_run_exists": false,
+        "memory_available": "986Gi",
+        "home_used_percent": "94%"
+      }
+    },
+    "raw_environment_dump_in_report": false,
+    "raw_environment_dump_uploaded": false
+  },
+  "dependency_preparation": {
+    "status": "uploaded_cleanup_verified",
+    "purpose": "为独立 ED 预检准备 NumPy；不等同 Julia 计算成功",
+    "wheel": {
+      "name": "numpy",
+      "version": "1.26.4",
+      "path": "results/autoresearch_v5_20260919/offline_numpy1264_cp310/numpy-1.26.4-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "size_bytes": 18240889,
+      "sha256": "ffa75af20b44f8dba823498024771d5ac50620e6915abac414251bd971b4529f",
+      "pypi_sha256_match": true,
+      "platform_tag": "cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64",
+      "zip_paths_safe": true
+    },
+    "source_evidence": "results/autoresearch_v5_20260919/offline_numpy1264_cp310/dependency_evidence.json",
+    "uploaded": true,
+    "local_install": false,
+    "local_wheel_present": false,
+    "cleanup_receipt_observed": true,
+    "retained_pending_upload_verification": false,
+    "uploaded_sha256_verified": true,
+    "delete_after_upload_and_remote_sha256_validation": true
+  },
+  "execution_upload_rejected": {
+    "status": "execution_upload_rejected",
+    "detail_status": "uploader_createprocess_rejected",
+    "intercept_reason": "require_escalated uploader 在 CreateProcess 阶段被审核拒绝：release_v2 具体源码、研究数据与离线 wheel 的外传授权未确认；PowerShell/SSH/scp 均未启动，无部分副作用。",
+    "manifest_sha256": "e0dedb571cb265817f537de63e2bd107369c23fcb12326099c008ef55392efb4",
+    "retry_performed": false,
+    "partial_side_effects": false,
+    "payload_file_count": 72,
+    "control_manifest_file_count": 1,
+    "total_file_count": 73,
+    "payload_bytes": 18882302,
+    "local_launch_preflight": {
+      "status": "pass",
+      "tests_passed": 8,
+      "tests_total": 8,
+      "supervisor_pass": 5,
+      "supervisor_windows_skip": 4,
+      "supervisor_remote_posix_executed": false,
+      "guardrail": {
+        "status": "soft",
+        "reason": "direct 模式缺少 Slurm 时间字段",
+        "hardblock": false
+      },
+      "actual_plan": {
+        "threads": 8,
+        "wall_seconds": 7200,
+        "cells": 2,
+        "order": "sequential"
+      }
+    },
+    "remote_upload_performed": false,
+    "ssh_or_scp_performed": false,
+    "remote_julia_started": false,
+    "automatic_monitoring_scheduled": false,
+    "final_result": "pending",
+    "server_compute_failure": false,
+    "wheel_retained_pending_upload_verification": true
+  },
+  "local_impact_audit": {
+    "status": "generated",
+    "claim": "audit_only",
+    "summary": "results/autoresearch_v5_20260920/static_krylov_impact_v2/summary.json",
+    "summary_sha256": "c2a36207c400aa124e2469feceb142f306f87d79ef5e8ca11d59d53308b7dc32",
+    "report_json": "results/autoresearch_v5_20260920/static_krylov_impact_v2/report.json",
+    "report_html": "results/autoresearch_v5_20260920/static_krylov_impact_v2/report.html",
+    "generated_at_utc": "2026-09-20T10:43:39.891555+00:00",
+    "goal_complete": false,
+    "raw_and_paper_unchanged": true
+  },
+  "k12_gate": {
+    "status": "terminal_accepted",
+    "accepted": true,
+    "claim": "audit_only",
+    "run_spec": "results/autoresearch_v5_20260920/static_krylov_k12_r1/parameter-scan.run_spec.json",
+    "release_manifest": "results/autoresearch_v5_20260920/static_krylov_controls_release_v3/server_upload_manifest.json",
+    "manifest_sha256": "4f0c3857fc0d6635dc4fb6bf193022b30c46dc43c1170161c40e4bfc2c2b9e30",
+    "run_spec_sha256": "0b21ac0972ed935ab4c5d824af717ee155d57d83e24c1febf25598ce920b0709",
+    "payload_file_count": 41,
+    "control_manifest_file_count": 1,
+    "total_file_count": 42,
+    "payload_bytes": 345707,
+    "parameters": {
+      "alpha": -0.1,
+      "beta": 0.25,
+      "L": 80,
+      "n_units": 16,
+      "eigsolve_krylovdim": 12,
+      "nsweeps": 64,
+      "maxdim": 1200,
+      "cutoff": 1e-11,
+      "threads": 8,
+      "q_count": 401,
+      "init_modes": ["center", "ferro_j2"],
+      "save_state": true,
+      "enriched_diagnostics": true,
+      "concurrency": 1,
+      "retry_policy": "none",
+      "warmstart": false,
+      "no_128": true
+    },
+    "local_smoke_pass": {
+      "status": "pass",
+      "artifact": "results/autoresearch_v5_20260920/static_krylov_k12_smoke_r1/a-0100-k12",
+      "julia_version": "1.11.5",
+      "role": "parser/execution evidence only",
+      "not_remote_validation": true,
+      "preflight": "results/autoresearch_v5_20260920/static_krylov_k12_r1/preflight.json",
+      "dry_run": "DRY_RUN_OK cells=1",
+      "unit_tests": "7 passed",
+      "crlf_compat_tests": "18 passed"
+    },
+    "package_ready": true,
+    "launch_ready": true,
+    "remote_julia_version_required": "1.12.3",
+    "upload_rejected_external_review": {
+      "status": "superseded_by_explicit_authorization",
+      "reason": "用户随后逐字授权42文件发布包与CRLF兼容启动器；42文件和兼容脚本均已远端哈希验证",
+      "upload_performed": true,
+      "ssh_or_scp_performed": true,
+      "partial_side_effects": false
+    },
+    "no_remote_side_effects": false,
+    "launch": {
+      "status": "completed",
+      "started_at": "2026-09-20T19:45:44+08:00",
+      "finished_at": "2026-09-20T20:34:40+08:00",
+      "elapsed_seconds": 2935.46,
+      "launcher_pid": 836006,
+      "batch_pid": 836104,
+      "julia_pid": 836112,
+      "julia_process_count": 1,
+      "julia_threads": 8,
+      "current_cell": "negdiag-a01000-b02500-L080-k12",
+      "current_init_mode": "ferro_j2",
+      "cpu_percent": 140,
+      "rss_mib": 888.3,
+      "launcher_stderr_bytes": 0,
+      "batch_stderr_bytes": 0,
+      "first_attempt": {
+        "status": "safe_pre_julia_exit",
+        "reason": "CRLF source_hashes list was rejected by Linux sha256sum",
+        "evidence_preserved": "launcher.crlf_failure.stderr.log"
+      },
+      "compat_launcher": {
+        "path": "scripts/autoresearch_v5/launch_static_krylov_k12_release_v3_crlf_compat.sh",
+        "bytes": 4744,
+        "sha256": "d62f3ffe8e30ae75d6707d1e540b69072b91bafa3cf0cff39511bdce830b499e",
+        "physics_or_budget_changed": false
+      },
+      "health_checked_at": "2026-09-20T19:46:04+08:00",
+      "expected_completion_window": "2026-09-20 20:26-20:46 CST",
+      "scheduled_check": "2026-09-20 20:50 CST",
+      "automation_id": "k12"
+    },
+    "fetch": {
+      "status": "pass",
+      "remote_checksum": "parent_and_two_children_pass",
+      "file_count": 42,
+      "total_bytes": 12868637,
+      "non_clobbering": true,
+      "destination": "results/autoresearch_v5_20260920/static_krylov_k12_fetch_2052/negdiag-a01000-b02500-L080-k12",
+      "preview": "results/autoresearch_v5_20260920/static_krylov_k12_fetch_2052/fetch.preview.json",
+      "receipt": "results/autoresearch_v5_20260920/static_krylov_k12_fetch_2052/fetch.receipt.json",
+      "parent_manifest_sha256": "2ab238b71b79acace851b6ba1a8d6ed451d11ea0351da14895f14b5682c8e6c1",
+      "parent_checksums_sha256": "3f6fca0054e80bc7219dbc5193d217d5073caa90847709a73154ec79a54e0bd3"
+    },
+    "validator": {
+      "status": "pass",
+      "acceptance_label": "accepted_under_practical_v2_k12",
+      "path": "results/autoresearch_v5_20260920/static_krylov_k12_fetch_2052/validator.pass.json",
+      "sha256": "9b7c5e3e8a82fffb53f314cdd9bf85dede7e82893b6140232e6b8d22df0807a1",
+      "center": {
+        "variance_per_site_sz0": 1.8680879065868793e-11,
+        "variance_per_site_sz1": 1.872990651463624e-11,
+        "spin_gap": 7.277204700173456e-05
+      },
+      "ferro_j2": {
+        "variance_per_site_sz0": 1.8633983245308627e-11,
+        "variance_per_site_sz1": 1.872990651463624e-11,
+        "spin_gap": 7.277205179789803e-05
+      },
+      "failures": []
+    },
+    "comparison": {
+      "status": "audit_only",
+      "gate_status": "pass",
+      "claim": "none",
+      "baseline_krylovdim": 8,
+      "candidate_krylovdim": 12,
+      "comparison_count": 172,
+      "q_peak_over_pi": {"k8": 1.0, "k12": 1.0, "max_abs_delta": 0.0},
+      "max_abs_delta": {
+        "spin_gap": 7.52109485802066e-12,
+        "dominant_ratio": 8.399395079461414e-08,
+        "entropy": 5.741204534004396e-08
+      },
+      "summary": "results/autoresearch_v5_20260920/static_krylov_k12_finalize_2057/summary.json",
+      "summary_sha256": "99ea78efdc127818ae811b71260dd7e16bc096ac221be2c4d42e487bbfe5d928",
+      "comparison_file": "results/autoresearch_v5_20260920/static_krylov_k12_finalize_2057/comparison.json",
+      "comparison_sha256": "047be5bd34527ac2dfef97481a6dfb3e887a563c6582257cd720a49be3c5cbf3",
+      "interpretation": "k8→k12在该L80单点数值稳定；仅为audit-only，不单独新增相或热力学声明"
+    },
+    "server_snapshot": {
+      "cpu_cores": 80,
+      "load_average": 8.0,
+      "memory_available_gib": 995,
+      "active_julia": false,
+      "qec_workers": 8,
+      "snapshot_role": "k12终态只读快照；Julia已自然退出"
+    },
+    "eta": {
+      "expected_wall_minutes": "40-60",
+      "timeout_seconds": 7200,
+      "concurrency": 1,
+      "threads": 8
+    },
+    "goal_complete": true,
+    "raw_and_paper_unchanged": true
+  }
+}

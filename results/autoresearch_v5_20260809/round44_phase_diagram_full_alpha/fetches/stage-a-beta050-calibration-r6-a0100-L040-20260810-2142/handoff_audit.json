@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "status": "pass_with_initial_state_sensitivity",
+  "cell_id": "nega-r6-a0100-b0500-L040",
+  "remote_checksum": {
+    "source_hashes": "pass",
+    "parent": "pass",
+    "children": {
+      "center": "pass",
+      "ferro_j2": "pass"
+    },
+    "preview_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r6-a0100-L040-20260810-2142/previews/nega-r6-a0100-b0500-L040.json",
+    "preview_sha256": "1e970de7f3d163a2ee27d48e3633bbe433a2e309fde0bf2ec4bc2521898dd64b"
+  },
+  "non_clobbering_fetch": {
+    "status": "pass",
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r6-a0100-L040-20260810-2142/receipts/nega-r6-a0100-b0500-L040.json",
+    "sha256": "572a0489d17b8f3bac0a140c8befdc5c24bfea5137788db669199a44aa535bce"
+  },
+  "local_checksum": {
+    "parent": {
+      "status": "pass",
+      "entries": 7
+    },
+    "children": {
+      "center": {
+        "status": "pass",
+        "entries": 13
+      },
+      "ferro_j2": {
+        "status": "pass",
+        "entries": 13
+      }
+    }
+  },
+  "validator": {
+    "status": "pass",
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r6-a0100-L040-20260810-2142/validation/nega-r6-a0100-b0500-L040.json",
+    "sha256": "60495568cdf56f3406347fd9e048c58c5e9010267822448b03bbb254b4a448ba"
+  },
+  "initial_state_sensitivity": {
+    "kind": "initial_state_half_difference",
+    "center_rpi": 0.2015936919618121,
+    "ferro_j2_rpi": 0.1778386068100435,
+    "absolute_difference": 0.023755085151768607,
+    "half_difference": 0.011877542575884303,
+    "reported_as_observable_error": true,
+    "numerical_gates_passed": true,
+    "systematic_caution_required": true,
+    "interpretation": "validator 通过不消除双初态差异；Rpi 半差作为系统敏感性保留"
+  },
+  "accepted_observable": {
+    "value": 0.1897161493859278,
+    "error": 0.011877542575884303,
+    "error_definition": "双初态 Rpi 半差"
+  },
+  "r5_failure_provenance": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/validation/nega-r5-a0100-b0500-L040.json",
+    "artifact_sha256": "392e1c3c886668eadf9661b6ff00e7fdf40d11a570dd73bd3b865298f7e3386d",
+    "preserved": true
+  },
+  "r7_started": false
+}

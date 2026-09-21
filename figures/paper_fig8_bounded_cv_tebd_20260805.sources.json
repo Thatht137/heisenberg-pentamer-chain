@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "figure_id": 8,
+  "status": "bounded_seven_point_overlay",
+  "backend": "Python/matplotlib",
+  "archetype": "quantitative overlay",
+  "core_conclusion": "七个 accepted CV 点与 TEBD 在共享频率上一致，但低频 residual 未通过，不能宣称完整动态交叉验收。",
+  "acceptance": {
+    "accepted_cv_points": 7,
+    "max_cv_residual": 7.483842216614274e-06,
+    "max_shared_point_relative_delta": 0.06403928715881681,
+    "shared_window_weight_relative_delta": 0.015252853703575845,
+    "low005_rejected_residual": 1.1767005759300015e-05,
+    "final_dynamic_claim_gate": false
+  },
+  "source_files": [
+    {
+      "path": "results/autoresearch_v5_20260805/round40_qpi_cv_anchor_assembly_accepted/spectrum.csv",
+      "sha256": "c6153072b260e8745c1aea62edf33e36b9cdb51adbfa788bad5de9d607847d54"
+    },
+    {
+      "path": "results/autoresearch_v5_20260805/round40_qpi_cv_anchor_assembly_accepted/manifest.json",
+      "sha256": "da34e3db8e0c77d582472cc4e30e8638bdc05368f27497e41671a1707af1aa3e"
+    },
+    {
+      "path": "results/autoresearch_v5_20260803/round26_qpi_tebd_production/cell-alpha023-qpi-dt00125-t30/spectrum.csv",
+      "sha256": "041ca821f3ace2a96a968fbe17ac2c137a0a9654f3257d887654196d112ca7e6"
+    },
+    {
+      "path": "results/autoresearch_v5_20260803/round26_qpi_tebd_production/cell-alpha023-qpi-dt00125-t30/manifest.json",
+      "sha256": "cd8263f33183c5e6ed2bac67a7c44705796e137cd3c60d351ee1180ecaced2a4"
+    },
+    {
+      "path": "results/autoresearch_v5_20260805/round40_cv_tebd_accepted7_analysis/cross-method-check.json",
+      "sha256": "1235f90bf671f1e3c954858ff016c1eb3fcace8a60c9d1e09eb2bdbc15c8fc0d"
+    },
+    {
+      "path": "results/research_progress/round41_low005_retry_validator_20260805.json",
+      "sha256": "afbbb121d0ffffaccd06ec4f64d09f75c61a94349512cd2c2ec0074499bf9b28"
+    },
+    {
+      "path": "results/research_progress/dynamic_gate_freeze_20260805.json",
+      "sha256": "9c94233d0a6f6c4104404cbc8b792fa9ccabfbef452dde33f5e82eff83ba879c"
+    },
+    {
+      "path": "results/autoresearch_v3_20260729/round1_doublet_projection/representative.csv",
+      "sha256": "4be460ca405c4e13f4c61618ec5eb6d5847cf48ae37d9b1debeef5df50c0465f"
+    },
+    {
+      "path": "results/research_progress/fig8_bounded_source_data_20260805.csv",
+      "sha256": "863bd964f40b7daa0da7153c68fce7a004c39a6268fda49aa63d936839499794"
+    }
+  ],
+  "outputs": {
+    ".svg": "407dda1bc0ececac5dc3ee95f58c6ee29024278f21ea56b82128900e993a3079",
+    ".pdf": "f78b23f1b321a96329cf1ede84e4bd7a30fd5bf10421ec1beafdbaafa5d842f4",
+    ".png": "f0d2c452d669a6327da006b824a765d5b0f633075a02e8e8e0d0a6ee3ad44fe0",
+    ".tiff": "2d87240fcfbead604729153210738be41a7c3e6351a168d7529756f45e50cf6c"
+  },
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

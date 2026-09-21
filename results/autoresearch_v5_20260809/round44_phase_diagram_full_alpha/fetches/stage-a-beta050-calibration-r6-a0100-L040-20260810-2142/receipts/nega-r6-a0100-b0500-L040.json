@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "fetched_at": "2026-08-10T13:45:36.380706+00:00",
+  "cell_id": "nega-r6-a0100-b0500-L040",
+  "source": "wangjieren@39.96.207.180:/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r6-a0100-L040/cells/nega-r6-a0100-b0500-L040",
+  "destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r6-a0100-L040-20260810-2142\\cells\\nega-r6-a0100-b0500-L040",
+  "file_count": 36,
+  "total_bytes": 133287,
+  "preview_sha256": "1e970de7f3d163a2ee27d48e3633bbe433a2e309fde0bf2ec4bc2521898dd64b",
+  "checksums_sha256": "18922b0faea30515d5d5a963b95e9f47ea123c5ad0886af9f08cc16236539b09",
+  "manifest_sha256": "b692590c27b181890509e42c05f597537c95d462c7f4d9e81e6fd186eb87a09b",
+  "non_clobbering": true
+}

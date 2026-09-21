@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "release_id": "static-krylov-controls-release-v2",
+  "status": "launcher_failed_before_batch",
+  "remote_target": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2",
+  "remote_run_dir": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2/results/autoresearch_v5_20260919/static_krylov_controls_r2",
+  "command": "ssh -p 6000 wangjieren@39.96.207.180 bash -s",
+  "launch_command": "nohup bash /home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2/scripts/autoresearch_v5/launch_static_krylov_controls_release_v2.sh > /home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_r2/launcher.stdout.log 2>&1 < /dev/null &",
+  "precheck": {
+    "utc": "2026-09-19T15:23:35Z",
+    "existing_guard_files": false,
+    "cells_nonempty": false,
+    "user_julia_present": false,
+    "result": "LAUNCH_PRECHECK_OK"
+  },
+  "attempted_start_utc": "2026-09-19T15:23:35Z",
+  "launcher_pid": 1378242,
+  "launcher_pgid": null,
+  "supervisor_pid": null,
+  "supervisor_pgid": null,
+  "batch_pid": null,
+  "batch_pgid": null,
+  "remote_result": "LAUNCH_FAILED_NO_BATCH_PID launcher_pid=1378242",
+  "failure": {
+    "phase": "launcher source-hash precheck",
+    "reason": "POSIX sha256sum -c read 19 CRLF-terminated hash paths with a trailing carriage return",
+    "crlf_entries": 19,
+    "hash_file_bytes": 1974,
+    "log_path": "results/autoresearch_v5_20260919/static_krylov_controls_r2/launcher.stdout.log",
+    "representative_stderr": "sha256sum: 'Project.toml'\\r: No such file or directory",
+    "batch_started": false,
+    "julia_started": false
+  },
+  "guard_files_after_failure": {
+    "batch.pid": false,
+    "launch-preflight.json": false,
+    "session.receipt": false,
+    "supervisor_status.json": false,
+    "supervisor-self-test.log": false,
+    "batch.timeout": false,
+    "run_status.json": false
+  },
+  "policy": {
+    "auto_restart": false,
+    "launcher_or_gate_modified_after_failure": false,
+    "slurm_used": false
+  },
+  "provenance": {
+    "launcher_sha256_from_manifest": "e4fd4fe02be8581b1f02478513bf0d793a4a7168043790e3912358a9946e7bab",
+    "julia": "/home/wangjieren/.julia/juliaup/julia-1.12.3+0.x64.linux.gnu/bin/julia",
+    "threads": 8,
+    "nice": 10,
+    "timeout_seconds": 7200,
+    "term_grace_seconds": 60
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-05T22:55:00+08:00",
+  "status": "pass",
+  "figures": [
+    {
+      "figure": "Fig. 1",
+      "manifest_status": "ready",
+      "claim": "1×5 单胞投影到有效 S=1/2 链。",
+      "caption": "通过。示意 1×5 五聚体、胞内投影系数和正 J_eff 的有效链连接；不把单胞投影扩展为完整相图。",
+      "boundary": "单胞与一阶有效理论。",
+      "boundary_label_present": true
+    },
+    {
+      "figure": "Fig. 2",
+      "manifest_status": "ready",
+      "claim": "正 alpha 单胞能级与 q=pi 选择定则。",
+      "caption": "通过。完整单胞 ED 标出总自旋、镜像宇称和可见谱权；最低双重态为 q=pi 暗通道，四重态占主要局域非弹性权重。",
+      "boundary": "单胞直接跃迁，不等同于长链色散。",
+      "boundary_label_present": true
+    },
+    {
+      "figure": "Fig. 3",
+      "manifest_status": "ready_with_boundary",
+      "claim": "正区有限尺寸结构趋势。",
+      "caption": "有边界通过。展示正 alpha、beta 区域的有限尺寸诊断和代表点趋势；图中不命名未经多证据闭环确认的相界。",
+      "boundary": "有限尺寸证据，非热力学极限相图。",
+      "boundary_label_present": true
+    },
+    {
+      "figure": "Fig. 4",
+      "manifest_status": "ready_with_boundary",
+      "claim": "纠缠结构与 matched-size c≈1 标度证据。",
+      "caption": "有边界通过。五类胞内切口与 matched-size Heisenberg oracle 的标度比较支持 c 接近 1；估计包含有限尺寸和拟合窗口边界。",
+      "boundary": "校准后的有限链证据，不作无偏热力学外推。",
+      "boundary_label_present": true
+    },
+    {
+      "figure": "Fig. 5",
+      "manifest_status": "ready",
+      "claim": "有效链传播、局域多重态和动量过滤。",
+      "caption": "通过。示意有效 S=1/2 链低能传播、局域四重态分支和宇称过滤；暗通道标签服从 Fig.2 的单胞谱权。",
+      "boundary": "机制示意，不创造未经验证的准粒子命名。",
+      "boundary_label_present": true
+    },
+    {
+      "figure": "Fig. 6",
+      "manifest_status": "exploratory_frozen",
+      "claim": "alpha=1 跨正 beta 的动力学路径。",
+      "caption": "探索性冻结。给出五个正 beta 的 raw TEBD 侦察热图，用于比较结构变化；不作为 CV/TEBD 交叉验收或生产谱。",
+      "boundary": "exploratory_frozen；生产动态门为 8/9。",
+      "boundary_label_present": true
+    },
+    {
+      "figure": "Fig. 7",
+      "manifest_status": "pilot_frozen",
+      "claim": "beta=0.5 的三条正 alpha 动力学路径。",
+      "caption": "试验性冻结。展示 alpha=0.14、0.23、0.33 的 raw TEBD pilot、q=pi 峰值、端点敏感性和积分窗权重；保留离散时间窗限制，不宣称生产交叉一致。",
+      "boundary": "pilot_frozen；不再等待追加低频计算。",
+      "boundary_label_present": true
+    },
+    {
+      "figure": "Fig. 8",
+      "manifest_status": "bounded_seven_point_overlay",
+      "claim": "七个 accepted CV 点与 TEBD 的受限交叉比较。",
+      "caption": "有边界交付。七个 accepted q=pi CV 点与 TEBD 在共享频率上的最大相对差为 6.40%，共享窗积分差为 1.53%；omega=0.05 失败点以空心叉标记且不进入 accepted 曲线。低频主峰未被包围，总体保持 NotEvaluable。",
+      "boundary": "bounded_seven_point_overlay；不是生产动态 Agreement。",
+      "boundary_label_present": true
+    }
+  ],
+  "failures": [],
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

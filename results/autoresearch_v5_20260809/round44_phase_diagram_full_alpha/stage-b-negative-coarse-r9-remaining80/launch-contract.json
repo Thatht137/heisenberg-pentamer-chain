@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "launch_ready": true,
+  "stage_a_complete": true,
+  "previous_failure_validated": true,
+  "cell_count": 80,
+  "concurrency": 1,
+  "stop_on_first_failure": true,
+  "offline": true,
+  "eta_hours": {
+    "low": 18,
+    "high": 32
+  },
+  "budget_counts": {
+    "32": 29,
+    "64": 51,
+    "128": 0
+  },
+  "run_spec_sha256": "40401c7b0ae6d17ff337c362d15f3e48c67016884942840b03969e2fb1358d55",
+  "source_hashes_sha256": "59f0325d85672e08907e815de28eb3fb17f30b116a98a7fdcb410ebdb77d003c",
+  "action_plan_sha256": "a108b8a7d7e8ac325846db4b22cd48cebdc4f5173f29c57c30715e1808b9c139",
+  "previous_terminal_summary_sha256": "9e525372f0caf7f33d6bc703a43bdf05644bc724187916f8544919bbede3d297",
+  "boundary_thresholds_relaxed": false
+}

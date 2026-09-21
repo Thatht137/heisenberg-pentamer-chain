@@ -1,0 +1,17 @@
+{
+  "cells_expected": 20,
+  "cells_usable": 20,
+  "production_cells_accepted": 10,
+  "all_checksums_ok": true,
+  "midchain_slope_times_6": {
+    "heisenberg": 1.1563798625201236,
+    "pentamer": 1.194657027065198
+  },
+  "midchain_slope_ratio_pentamer_to_oracle": 1.0331008570675522,
+  "largest_profile_estimator": {
+    "heisenberg": 0.6918701951921404,
+    "pentamer": 0.7108664771910083
+  },
+  "largest_profile_ratio_pentamer_to_oracle": 1.0274564248190983,
+  "max_entropy_D_difference": 0.00016573089344218417
+}

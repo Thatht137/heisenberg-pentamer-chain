@@ -1,0 +1,1313 @@
+{
+  "schema_version": 1,
+  "stage": "B-R5-coarse-96",
+  "canonical_action_index_mutated": false,
+  "actions": [
+    {
+      "action_id": "act-979b5cae9b1b5501a209",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.75,
+        "beta": 0.05
+      },
+      "budget": 64,
+      "observation_status": "success",
+      "accepted": true,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r5-remaining93-20260812-1812/negb5-a0750-b0050-L060/manifest.json",
+      "terminal_state": "validated"
+    },
+    {
+      "action_id": "act-1dbbe9422bee513d499b",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.5,
+        "beta": 0.05
+      },
+      "budget": 32,
+      "observation_status": "failed",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-b-negative-coarse-r5-remaining93-20260812-1812/validation/negb5-a0500-b0050-L040.json",
+      "terminal_state": "validated_failure",
+      "retry_recommendation": {
+        "next_budget": 64,
+        "thresholds_relaxed": false
+      }
+    },
+    {
+      "action_id": "act-9812edc86b5f4455a606",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.5,
+        "beta": 0.05
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0500-b0050-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-fbc1aaab3d46c7e1b4c1",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.35,
+        "beta": 0.05
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0350-b0050-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-8a2f34b7c522db7f781a",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.35,
+        "beta": 0.05
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0350-b0050-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-a431c46448d508e54969",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.25,
+        "beta": 0.05
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0250-b0050-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-5575adab924591c6dd6a",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.25,
+        "beta": 0.05
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0250-b0050-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-4825e723ee1580e5ffea",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.1,
+        "beta": 0.05
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0100-b0050-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-5ba3a266293e357c53b4",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.1,
+        "beta": 0.05
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0100-b0050-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-4a96cc93a513ac7d4986",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.05,
+        "beta": 0.05
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0050-b0050-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-c288d4c68d7639804181",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.05,
+        "beta": 0.05
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0050-b0050-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-f5a8bb1551fd4d7f74ae",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.025,
+        "beta": 0.05
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0025-b0050-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-f4c9a387484a90e9a723",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.025,
+        "beta": 0.05
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0025-b0050-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-4f8e49cabcea306302cb",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -1.0,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a1000-b0100-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-2834d2560441f871304c",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -1.0,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a1000-b0100-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-065214a6cfba4567ccfc",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.75,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0750-b0100-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-120358e1410c5faff0b1",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.75,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0750-b0100-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-198498d8716a917f82fb",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.5,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0500-b0100-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-6a90ff8479f1553f20a4",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.5,
+        "beta": 0.1
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0500-b0100-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-83f303b964e9e48dc1dc",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.35,
+        "beta": 0.1
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0350-b0100-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-3419ea37c357370cf077",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.35,
+        "beta": 0.1
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0350-b0100-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-8c7663224031e37d5d99",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.25,
+        "beta": 0.1
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0250-b0100-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-be5b2f5f7497841b29e1",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.25,
+        "beta": 0.1
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0250-b0100-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-d1921b51cb058e1e8be1",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.1,
+        "beta": 0.1
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0100-b0100-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-85e4a9c21149b9d34561",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.1,
+        "beta": 0.1
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0100-b0100-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-cd438ac0bac9f8cf2afd",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.05,
+        "beta": 0.1
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0050-b0100-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-91b24f65caa0c37cbf84",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.05,
+        "beta": 0.1
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0050-b0100-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-3c2d9a96a3f4d1238d5b",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.025,
+        "beta": 0.1
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0025-b0100-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-d6b6312d96f5aa6b6c06",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.025,
+        "beta": 0.1
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0025-b0100-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-1b339606b16e22d6b9c6",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -1.0,
+        "beta": 0.25
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a1000-b0250-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-509998af0f85f9d598bd",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -1.0,
+        "beta": 0.25
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a1000-b0250-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-adb1c4ec53473e4d5733",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.75,
+        "beta": 0.25
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0750-b0250-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-19e70110d7dc69fd8697",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.75,
+        "beta": 0.25
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0750-b0250-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-f7a5d00a5ef73d64f018",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.5,
+        "beta": 0.25
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0500-b0250-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-a3fc0d5ed88998cdabb1",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.5,
+        "beta": 0.25
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0500-b0250-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-483407a442c00b5a7b05",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.35,
+        "beta": 0.25
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0350-b0250-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-405817b8d04aa707d97e",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.35,
+        "beta": 0.25
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0350-b0250-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-194fce87bc552061e3ec",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.25,
+        "beta": 0.25
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0250-b0250-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-19a5db11cd8b97630774",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.25,
+        "beta": 0.25
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0250-b0250-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-77034a3fbcae32a0eb91",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.1,
+        "beta": 0.25
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0100-b0250-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-b59993fe43981d3b9698",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.1,
+        "beta": 0.25
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0100-b0250-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-61cc26be8a87ee52ba10",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.05,
+        "beta": 0.25
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0050-b0250-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-e0b6cd60cbdfff64b13e",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.05,
+        "beta": 0.25
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0050-b0250-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-8c25b4f5c97172f7023b",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.025,
+        "beta": 0.25
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0025-b0250-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-38ef5ef281995dcb5190",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.025,
+        "beta": 0.25
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0025-b0250-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-882865d01ad3ce865c5d",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -1.0,
+        "beta": 0.75
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a1000-b0750-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-d1e5b6966eecc6e84043",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -1.0,
+        "beta": 0.75
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a1000-b0750-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-57371f124157f4d79c24",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.75,
+        "beta": 0.75
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0750-b0750-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-18a29bd38a6cfc328fc6",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.75,
+        "beta": 0.75
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0750-b0750-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-a14de8ce6c12f12e8b9d",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.5,
+        "beta": 0.75
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0500-b0750-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-92a6c448e325f3946d43",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.5,
+        "beta": 0.75
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0500-b0750-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-d2de05fa45b3e042e33f",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.35,
+        "beta": 0.75
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0350-b0750-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-6ac4965fa06658462c13",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.35,
+        "beta": 0.75
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0350-b0750-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-183da6caad2082ed45c7",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.25,
+        "beta": 0.75
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0250-b0750-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-0f0c6657f750b8113485",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.25,
+        "beta": 0.75
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0250-b0750-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-e5cf23b5750779259b98",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.1,
+        "beta": 0.75
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0100-b0750-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-5bc2310a065479010fbe",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.1,
+        "beta": 0.75
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0100-b0750-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-57817c7d0ac0b4d309fe",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.05,
+        "beta": 0.75
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0050-b0750-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-5c650301dbc5574f2b81",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.05,
+        "beta": 0.75
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0050-b0750-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-c0c941a7639fa8fca10d",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.025,
+        "beta": 0.75
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0025-b0750-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-4e2ba5df61e264ea8778",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.025,
+        "beta": 0.75
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0025-b0750-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-38cb00e241424d334843",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -1.0,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a1000-b0900-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-0e1c35b66883028e438d",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -1.0,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a1000-b0900-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-87fc9b121665b183157b",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.75,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0750-b0900-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-94130485c1a2d50088be",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.75,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0750-b0900-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-5ae0d7e30d6dcfa00b1f",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.5,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0500-b0900-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-f09cd9d394ac403e725f",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.5,
+        "beta": 0.9
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0500-b0900-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-ca7139fc810da18959f7",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.35,
+        "beta": 0.9
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0350-b0900-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-959725baf72cb0e195ae",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.35,
+        "beta": 0.9
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0350-b0900-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-7ab137c90cec01b55526",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.25,
+        "beta": 0.9
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0250-b0900-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-3e29ff8fdb325e0ac722",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.25,
+        "beta": 0.9
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0250-b0900-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-40900f315b96aa470e0d",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.1,
+        "beta": 0.9
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0100-b0900-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-f8ac738295cc31f81160",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.1,
+        "beta": 0.9
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0100-b0900-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-0d6c0f120a4d7c164c35",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.05,
+        "beta": 0.9
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0050-b0900-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-f4efd1dfd969b8d49768",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.05,
+        "beta": 0.9
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0050-b0900-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-b55f2cbd1b3501569328",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.025,
+        "beta": 0.9
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0025-b0900-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-58e94f94a3e74a41e6f3",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.025,
+        "beta": 0.9
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0025-b0900-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-2b3bc37ec2d2de1ab69e",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -1.0,
+        "beta": 1.0
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a1000-b1000-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-5d09ba107104e41cb8df",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -1.0,
+        "beta": 1.0
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a1000-b1000-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-076e00c5edf0ce0c7622",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.75,
+        "beta": 1.0
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0750-b1000-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-a4cd3663c17110233f27",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.75,
+        "beta": 1.0
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0750-b1000-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-be9f539b7116927c3c1b",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.5,
+        "beta": 1.0
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0500-b1000-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-1dae89e9e82b80f13aaf",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.5,
+        "beta": 1.0
+      },
+      "budget": 32,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0500-b1000-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-6364ed3099057a1dce82",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.35,
+        "beta": 1.0
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0350-b1000-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-f59ecc9ff9fcb3bee4bd",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.35,
+        "beta": 1.0
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0350-b1000-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-4040b81d6052a8f9ebef",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.25,
+        "beta": 1.0
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0250-b1000-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-92f1e559ff7843e560bc",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.25,
+        "beta": 1.0
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0250-b1000-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-a8c1c7b1fb8dfb2952bd",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.1,
+        "beta": 1.0
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0100-b1000-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-5b28e4685c6f6852858d",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.1,
+        "beta": 1.0
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0100-b1000-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-6ab6d169f7be3f74a5d4",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.05,
+        "beta": 1.0
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0050-b1000-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-3227f62ca4b007b1e105",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.05,
+        "beta": 1.0
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0050-b1000-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-44c119aa4925e20d539f",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 40,
+        "alpha": -0.025,
+        "beta": 1.0
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0025-b1000-L040/manifest.json",
+      "terminal_state": "unmaterialized"
+    },
+    {
+      "action_id": "act-fc017594e4c1c726f327",
+      "lifecycle_state": "PLANNED",
+      "params": {
+        "L": 60,
+        "alpha": -0.025,
+        "beta": 1.0
+      },
+      "budget": 64,
+      "observation_status": "pending",
+      "accepted": false,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-b-negative-coarse-r5-remaining93/cells/negb5-a0025-b1000-L060/manifest.json",
+      "terminal_state": "unmaterialized"
+    }
+  ]
+}

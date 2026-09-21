@@ -1,0 +1,18 @@
+{
+  "job_type": "tebd_qpi_autocorrelation",
+  "cell_id": "api-smoke-L10",
+  "phase": "tebd",
+  "total_steps": 2,
+  "status": "success",
+  "finished_at": "2026-08-03T11:13:26.894935+00:00",
+  "accepted": true,
+  "completed_steps": 2,
+  "wall_seconds": 134.93800000000192,
+  "returncode": 0,
+  "percent": 100.0,
+  "eta_seconds": 0.0,
+  "schema_version": 1,
+  "started_at": "2026-08-03T11:11:11.945501+00:00",
+  "updated_at": "2026-08-03T11:13:26.898369+00:00",
+  "elapsed_seconds": 134.953
+}

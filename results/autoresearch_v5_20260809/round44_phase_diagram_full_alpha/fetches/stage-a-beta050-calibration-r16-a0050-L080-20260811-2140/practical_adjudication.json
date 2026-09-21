@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "decision": "accepted_practical_calibration",
+  "accepted_practical_calibration": true,
+  "boundary_eligible": false,
+  "fetch_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r16-a0050-L080-20260811-2140",
+  "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r16-a0050-L080-20260811-2140\\nega-r16-a0050-b0500-L080",
+  "run_spec": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\stage-a-beta050-calibration-r16-a0050-L080\\parameter-scan.run_spec.json",
+  "cell_id": "nega-r16-a0050-b0500-L080",
+  "checks": {
+    "identity": true,
+    "transfer": true,
+    "parent_checksums": true,
+    "child_checksums": true,
+    "core_gates": true,
+    "practical_energy_plateau": true,
+    "energy_consistency": true,
+    "parent_aggregate": true,
+    "strict_failure_provenance": true,
+    "data_files": true
+  },
+  "calibration_observable": {
+    "value": 0.22495307953817315,
+    "error": 0.004243895953047361
+  },
+  "energy_spread": {
+    "sz0": 9.872800461607767e-07,
+    "sz1": 0.0
+  },
+  "policy": {
+    "variance_per_site_max": 1e-08,
+    "final_truncation_error_max": 1e-09,
+    "sector_tolerance": 1e-08,
+    "spin_gap_min": -1e-08,
+    "q_count": 401,
+    "energy_change_max": 1e-07,
+    "energy_spread_max": 1e-06,
+    "only_energy_change_gate_relaxed": true
+  },
+  "strict_failure_provenance": {
+    "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-a-beta050-calibration-r16-a0050-L080-20260811-2140\\validation.json",
+    "sha256": "d6affb8a1de1896d570f3d555b8816df8b62e54239dd7b3005f0ff701455f0eb",
+    "status": "fail",
+    "failures": [
+      "父 manifest: settings.energy_spread_max 不匹配",
+      "子 manifest center_random: energy change sz0 超门",
+      "子 manifest center_random: energy_plateau_sz0 未通过",
+      "子 manifest center_random: 非 accepted success",
+      "子 status center_random: 非 accepted success",
+      "子 manifest ferro_j2: energy change sz0 超门",
+      "子 manifest ferro_j2: energy_plateau_sz0 未通过",
+      "子 manifest ferro_j2: 非 accepted success",
+      "子 status ferro_j2: 非 accepted success",
+      "子 manifest domain: energy change sz0 超门",
+      "子 manifest domain: energy_plateau_sz0 未通过",
+      "子 manifest domain: 非 accepted success",
+      "子 status domain: 非 accepted success",
+      "父 manifest: 缺少 independent_start_energy_spread",
+      "父 energy spread sz0: 缺少数值",
+      "父 energy spread sz1: 缺少数值",
+      "父 manifest: energy_consistency 未通过",
+      "父 manifest: children_accepted 未通过",
+      "父 manifest: 非 accepted success",
+      "父 status: 非 accepted success",
+      "父 manifest: scripts/autoresearch_v5/run_negative_phase_structure_cell.py hash 与 run spec 不一致"
+    ]
+  },
+  "failures": []
+}

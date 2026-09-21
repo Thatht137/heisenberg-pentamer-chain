@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "pre_r5_observations_sha256": "529fb103c54cc0b65ac80be9ff1e8f1a383db61f4e34deb3d5ff033b4cbed78f",
+  "input_evidence": {
+    "run_spec": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r5-remaining10/parameter-scan.run_spec.json",
+      "sha256": "11515393af99f6678db47d88761967725aaecf1d41dde46c22de2d05df05c177"
+    },
+    "validation_summary": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/validation/summary.json",
+      "sha256": "2ad6f50eff72328c202526b30c46a2f91b3786fed592d5132cb5ed33a118862a"
+    },
+    "partial_handoff": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/partial_handoff_summary.json",
+      "sha256": "0b7ffe34e5f11fc734798f6454a9834a998e34081d21ba661c1e62aa0bcc2e73"
+    },
+    "prior_ingestion_summaries": [
+      {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r1_ingestion_summary.json",
+        "sha256": "8b6369b219d096e14dff9b0c139670fe29bda2eaa45a5d7da0f9726bfdae9c38"
+      },
+      {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r2_ingestion_summary.json",
+        "sha256": "da9118db823730f736091fafc3fc3d72e509e6fdbaf8454d79ccce9f538d9d3a"
+      },
+      {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r3_partial_ingestion_summary.json",
+        "sha256": "d6d5fd5ab4e966ddd98a7271b2069884ecf6e74fa8f963b1d987b647bb7c1cb5"
+      },
+      {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r4_ingestion_summary.json",
+        "sha256": "ab7e2c32f2b8157690c06d343aaf6dc363ad7df31db1b49b9cd48842c7cec5e9"
+      }
+    ]
+  },
+  "invariants": {
+    "controller_counts": {
+      "success": 10,
+      "failed": 1,
+      "pending": 5
+    },
+    "calibration_accepted_total": 5,
+    "failed_has_no_value_error": true,
+    "previous_pending_provenance_preserved": true,
+    "r1_r2_r3_r4_evidence_preserved": true,
+    "crossing_assigned": false,
+    "phase_label_assigned": false
+  },
+  "outputs": {
+    "observations": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+    "action_index": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/action_index.json",
+    "r5_calibration": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/accepted_calibration_r5_partial.json",
+    "calibration_aggregate": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/accepted_calibration_through_r5.json"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "source_commit": "40f4179a5630039485370648edd9621f592c0449",
+  "git_dirty": true,
+  "standard_sha256": "bb19a444f786f0b18f3cbd013df56429e52b7a0d795213863b1631caffa0e8db",
+  "project_sha256": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+  "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+  "manifest_julia_version": "1.11.5",
+  "server_julia_version": "1.12.3",
+  "local_julia_version": "1.11.5",
+  "itensors_version": "0.9.27",
+  "itensormps_version": "0.4.1",
+  "jld2_version": "0.6.4",
+  "remote_target": "wangjieren@39.96.207.180:6000",
+  "server_offline_import": true,
+  "negative_alpha_excluded": true,
+  "initial_state_stability_point": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "modes": ["neel", "shifted"]
+  }
+}

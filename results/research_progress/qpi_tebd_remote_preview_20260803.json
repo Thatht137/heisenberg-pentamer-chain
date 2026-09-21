@@ -1,0 +1,88 @@
+{
+  "schema_version": 1,
+  "status": "submitted",
+  "submitted_at": "2026-08-03T19:36:34+08:00",
+  "supervisor_pid": 238557,
+  "julia_pid": 238575,
+  "target": {
+    "host": "39.96.207.180",
+    "port": 6000,
+    "account": "wangjieren",
+    "remote_root": "/home/wangjieren/code/1x5_Heisenberg_Pentamer"
+  },
+  "scope": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "validated_smoke": {
+    "L10_cross_method_tag": "Agreement",
+    "L10_peak_exact_coarse_refined": [0.15, 0.15, 0.15],
+    "L10_refined_weight_relative_error": 0.0015907767288440595,
+    "L10_dt_weight_relative_delta": 0.0000621518204031341,
+    "L10_refined_spectrum_min": 0.0034844914284170997,
+    "L20_api_smoke": "accepted",
+    "checkpoint_resume": "accepted"
+  },
+  "upload": {
+    "files": [
+      "scripts/autoresearch_v5/tebd_qpi_autocorr.jl",
+      "scripts/autoresearch_v5/run_tebd_qpi_autocorr.py",
+      "scripts/autoresearch_v5/run_qpi_tebd_production_remote.sh"
+    ],
+    "sha256": {
+      "scripts/autoresearch_v5/tebd_qpi_autocorr.jl": "2194df3002eaec46c86a83fdf30ae8448fea4bfdc1ecfa6fb5b77cbc5cbd9d0a",
+      "scripts/autoresearch_v5/run_tebd_qpi_autocorr.py": "a669dd5d160c7c7d19a51760fb46dac1be9f5ef8ab97fcd5f471126e6296f282",
+      "scripts/autoresearch_v5/run_qpi_tebd_production_remote.sh": "aad118500c8eadbde4f0e9320313e61e7d677d76fff500533bb3756d721bd68d"
+    },
+    "overwrite_policy": "若远端同名文件存在且 SHA-256 不同则拒绝；不覆盖结果目录。",
+    "server_network_required": false
+  },
+  "jobs": [
+    {
+      "cell_id": "qpi-alpha023-dt0025-t30",
+      "L": 40,
+      "dt": 0.025,
+      "steps": 1200,
+      "tmax": 30.0,
+      "eta": 0.1,
+      "dmrg_maxdim": 320,
+      "tebd_maxdim": 320,
+      "threads": 8,
+      "checkpoint_interval": 100
+    },
+    {
+      "cell_id": "qpi-alpha023-dt00125-t30",
+      "L": 40,
+      "dt": 0.0125,
+      "steps": 2400,
+      "tmax": 30.0,
+      "eta": 0.1,
+      "dmrg_maxdim": 320,
+      "tebd_maxdim": 320,
+      "threads": 8,
+      "checkpoint_interval": 100,
+      "start_condition": "coarse accepted=true"
+    }
+  ],
+  "resource_guard": {
+    "execution": "sequential",
+    "max_concurrent_julia": 1,
+    "nice": 10,
+    "threads": 8,
+    "memory_soft_limit_gib": 64,
+    "smoke_limit_minutes": 30,
+    "production_limit_hours": 24,
+    "peak_rss_capture": "/usr/bin/time -v"
+  },
+  "estimate": {
+    "basis": "远端旧 L=40 coarse 实测 TEBD 911.5 s；严格 q=pi 去掉 81-q Fourier 和逐格点测量，但动量源可能提高初始 bond dimension。",
+    "coarse_minutes": "20-35",
+    "refined_minutes": "35-65",
+    "total_hours": "1.0-1.7",
+    "conservative_upper_hours": 2.5
+  },
+  "result_root": "results/autoresearch_v5_20260803/round26_qpi_tebd_production",
+  "confirmation_required": "确认上传并启动严格 q=pi L=40 顺序任务"
+}

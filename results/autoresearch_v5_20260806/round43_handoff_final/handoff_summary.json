@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "status": "production_ready",
+  "production_ready": true,
+  "stage": "cross_method",
+  "tag": "Agreement",
+  "plan": {
+    "round43": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260806\\round43_qpi_cv_lowfreq_desc_fetch_20260806_1815\\cell-l40-qpi-lowfreq-desc",
+    "base_runs": [
+      "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round21_cv_triplet_warmstart\\cell-0002-L40-qpi-w025-w035",
+      "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803\\round31_qpi_cv_extension_completed_cells_20260804\\cell-l40-qpi-high-055",
+      "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803\\round31_qpi_cv_extension_completed_cells_20260804\\cell-l40-qpi-high-100",
+      "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260805\\round40_qpi_cv_high150_fetch\\cell-l40-qpi-high-150"
+    ],
+    "tebd": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803\\round26_qpi_tebd_production\\cell-alpha023-qpi-dt00125-t30",
+    "accepted_output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260806\\round43_handoff_final\\accepted11",
+    "crosscheck_output": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260806\\round43_handoff_final\\cross_method\\cross-method-check.json",
+    "expected_round43_omegas": [
+      0.0,
+      0.05,
+      0.1,
+      0.15,
+      0.2
+    ],
+    "scope": {
+      "negative_alpha_excluded": true,
+      "figure_9_excluded": true
+    }
+  },
+  "accepted_points": 11,
+  "coverage": {
+    "main_peak_bracketed_by_cv_grid": true,
+    "major_weight_window_covered_by_cv_grid": true
+  },
+  "checks": {
+    "peak_delta_le_budget": true,
+    "major_weight_delta_le_budget": true
+  },
+  "reason": "覆盖门与 peak/weight 门全部通过",
+  "next_figure_command": ".venv\\Scripts\\python.exe scripts\\autoresearch_v5\\plot_fig8_round43_branch.py --handoff-root results\\autoresearch_v5_20260806\\round43_handoff_final --output-base figures\\round43_fig8_final_20260806"
+}

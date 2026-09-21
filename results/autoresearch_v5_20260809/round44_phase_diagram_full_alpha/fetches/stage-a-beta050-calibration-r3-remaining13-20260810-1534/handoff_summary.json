@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "status": "partial_terminal",
+  "run_spec": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r3-remaining13/parameter-scan.run_spec.json",
+    "sha256": "27076fa714f6330ad66ee101bd657012804f1e2084e7f8879c4075f070da4bf3"
+  },
+  "remote_checksum_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r3-remaining13-20260810-1534/audit/remote_checksum_20260810_1534.txt",
+    "sha256": "f09279eaf190e11eaeedb2835c955d44e5c6520874b1461255544573f1f224e5"
+  },
+  "validation_summary": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r3-remaining13-20260810-1534/validation/summary.json",
+    "sha256": "7ab7a20d6f342f9193ab5066ef2e94ed99f5345edec41a19c7b80fa01346b322"
+  },
+  "fetched_cells": [
+    "nega-r3-a0250-b0500-L040",
+    "nega-r3-a0250-b0500-L060",
+    "nega-r3-a0350-b0500-L080"
+  ],
+  "unrun_cells": [
+    "nega-r3-a0025-b0500-L040",
+    "nega-r3-a0025-b0500-L060",
+    "nega-r3-a0025-b0500-L080",
+    "nega-r3-a0050-b0500-L040",
+    "nega-r3-a0050-b0500-L060",
+    "nega-r3-a0050-b0500-L080",
+    "nega-r3-a0100-b0500-L040",
+    "nega-r3-a0100-b0500-L060",
+    "nega-r3-a0100-b0500-L080",
+    "nega-r3-a0250-b0500-L080"
+  ],
+  "accepted_gate": {
+    "controller_accepted": [
+      "nega-r3-a0250-b0500-L040"
+    ],
+    "calibration_accepted": [
+      "nega-r3-a0350-b0500-L080"
+    ],
+    "controller_failed": [
+      "nega-r3-a0250-b0500-L060"
+    ],
+    "unrun_unchanged": true
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "accepted_artifacts": [],
+  "actions": [],
+  "checked_at": "2026-08-10T22:30:47Z",
+  "evidence": [
+    {
+      "pending_cells": 4
+    }
+  ],
+  "next_wake_at": "2026-08-10T23:00:47Z",
+  "reason": "4 registered cells remain pending",
+  "schema_version": 1,
+  "status": "WAITING"
+}

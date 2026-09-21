@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "status": "prepared_only",
+  "records": [
+    {
+      "path": "Project.toml",
+      "sha256": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "role": "code"
+    },
+    {
+      "path": "Manifest.toml",
+      "sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "role": "code"
+    },
+    {
+      "path": "docs/negative_alpha_practical_convergence_standard_20260829.md",
+      "sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+      "role": "code"
+    },
+    {
+      "path": "docs/negative_alpha_new_phase_audit_20260913.md",
+      "sha256": "17ad83328b3b8bb5db692f326b9f1803bc92960036884f71165c75b79cad7b71",
+      "role": "code"
+    },
+    {
+      "path": "src/PentamerChain.jl",
+      "sha256": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+      "role": "code"
+    },
+    {
+      "path": "src/hamiltonian.jl",
+      "sha256": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "role": "code"
+    },
+    {
+      "path": "src/order_parameters.jl",
+      "sha256": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "role": "code"
+    },
+    {
+      "path": "scripts/autoresearch_v5/progress.py",
+      "sha256": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e",
+      "role": "code"
+    },
+    {
+      "path": "scripts/autoresearch_v5/negative_dmrg_options.py",
+      "sha256": "78a084abe62e025497be76a36b4bab2d6aaae46699db112689d08ff15f25a999",
+      "role": "code"
+    },
+    {
+      "path": "scripts/autoresearch_v5/negative_static_cell.jl",
+      "sha256": "291eb369d5441b53d4abafd36d8469e107f4c1d91622ed33478912228ed3635f",
+      "role": "code"
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_static_cell.py",
+      "sha256": "b20773f2f03c2133e49b5cb114e8795cc5c29a09061bebe969ea2c64e94a73dc",
+      "role": "code"
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_phase_structure_cell.py",
+      "sha256": "c58cd4438349bdfcec4739fe17d4f21f9f2d8891d5e52d13ea5497de00ffb7eb",
+      "role": "code"
+    },
+    {
+      "path": "scripts/autoresearch_v5/run_negative_phase_structure_batch.py",
+      "sha256": "447d2c17dcb02493b8b4fbd01e506680f17f3c5df4535e0410732e7ed121fc2b",
+      "role": "code"
+    },
+    {
+      "path": "scripts/autoresearch_v5/launch_negative_phase_independent_pilot.sh",
+      "sha256": "371378af75eee0522a6aa8b2df2d892617c912b7ec06eb319c270fc968fe569b",
+      "role": "code"
+    },
+    {
+      "path": "src/utils.jl",
+      "sha256": "b434789ab9726118c682f7cdca98fe2f90e1320d3d501108539748a4d95a1cb7",
+      "role": "code"
+    },
+    {
+      "path": "src/exact_diag.jl",
+      "sha256": "e8da7c3f3012f620451fdd90b153b57acdb08f23c7c4913d8c2d7e62764cbd83",
+      "role": "code"
+    },
+    {
+      "path": "src/dmrg_solver.jl",
+      "sha256": "0b535c8be0f392a7ee827c2e66dbf422d8070bc025f14881fbc2ba501304b0eb",
+      "role": "code"
+    },
+    {
+      "path": "src/spectral.jl",
+      "sha256": "a04ad34901d44849eb7f74fb6c883a13bb7ea6d15872a64aab22fa92be7f88bf",
+      "role": "code"
+    },
+    {
+      "path": "scripts/autoresearch_v5/make_static_krylov_controls_r2.py",
+      "sha256": "f36288ee59506f5349692194ecb5d3d1e54cb8b3e328597d9ad13d5f3fd32aea",
+      "role": "code"
+    },
+    {
+      "path": "scripts/autoresearch_v5/test_negative_static_cell_args.jl",
+      "sha256": "87ad3053ea96bcca0ae17b9d01751ccfadfc46ebd28e51073c1f9b246ae5bf20",
+      "role": "validation_only"
+    },
+    {
+      "path": "results/autoresearch_v5_20260919/static_krylov_controls_r2/parameter-scan.run_spec.json",
+      "sha256": "e43ff718a237010ea9ef3c78200193072bffd1c6bc14b44b7a5cc36ff7815f77",
+      "role": "prepared_output"
+    },
+    {
+      "path": "results/autoresearch_v5_20260919/static_krylov_controls_r2/source_hashes.sha256",
+      "sha256": "152e3620c83a8fd9e6e72dc6f1aa0cb3056b3d8eaefc4223e9543130a071aabd",
+      "role": "prepared_output"
+    },
+    {
+      "path": "results/autoresearch_v5_20260919/static_krylov_controls_r2/launch-contract.json",
+      "sha256": "cab279da582ff5c297d88155cd254aeeedd122f1545c7106aaf934e423233410",
+      "role": "prepared_output"
+    }
+  ]
+}

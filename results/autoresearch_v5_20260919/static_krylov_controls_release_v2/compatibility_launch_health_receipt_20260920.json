@@ -1,0 +1,106 @@
+{
+  "schema": "static_krylov_controls_release_v2/compatibility_launch_health_receipt/v1",
+  "created_at": "2026-09-20",
+  "status": "running_health_verified",
+  "scope": "仅记录兼容 launcher 的一次授权启动与一次健康快照；不修改旧回执、manifest、主状态、HTML 或 paper",
+  "authorization": "用户明确授权上传唯一兼容 launcher 并启动原定两个顺序 Julia",
+  "target": {
+    "host": "39.96.207.180",
+    "port": 6000,
+    "account": "wangjieren",
+    "remote_release_root": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2",
+    "remote_run_dir": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2/results/autoresearch_v5_20260919/static_krylov_controls_r2",
+    "remote_compat_launcher": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2/scripts/autoresearch_v5/launch_static_krylov_controls_release_v2_crlf_compat.sh"
+  },
+  "compatibility_launcher": {
+    "bytes": 7252,
+    "sha256": "359936af95676cbcf6752b2e4f808267805051a3b9eb00682e280687949752c8",
+    "upload_action": "复用此前已上传且远端同 SHA 文件；本 agent 未重传，原 73 文件未重传",
+    "remote_checks": {
+      "bash_n": "pass",
+      "normalized_bundle_sha256_check": "pass",
+      "awk_preflight": "pass",
+      "standard_sha256": "075b709d47b8897d37eb02d7ab0e1df0d1c956b542da2f1af52b934b93ee35da",
+      "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c"
+    }
+  },
+  "launch": {
+    "launch_time_cst": "2026-09-20T07:40:31+08:00",
+    "command_summary": "nohup bash <remote_compat_launcher> > <run_dir>/compatlauncher.stdout.log 2> <run_dir>/compatlauncher.stderr.log < /dev/null &",
+    "nohup_pid_initial": 294213,
+    "supervisor_pid": 294213,
+    "batch_pid": 294499,
+    "julia_pid": 294507,
+    "supervisor_timeout_seconds": 7200,
+    "term_grace_seconds": 60,
+    "nice": 10,
+    "julia_threads": 8,
+    "concurrency_policy": "单并发；首失败停止",
+    "retry_policy": "无额外重试；未重启"
+  },
+  "health_snapshot": {
+    "checked_at_cst": "2026-09-20T07:41:37+08:00",
+    "supervisor": {
+      "pid": 294213,
+      "cpu_percent": 0.2,
+      "rss_kib": 14080,
+      "observed_command": "static_krylov_supervisor.py"
+    },
+    "batch": {
+      "pid": 294499,
+      "cpu_percent": 0.0,
+      "rss_kib": 16640,
+      "observed_command": "run_negative_phase_structure_batch.py"
+    },
+    "julia": {
+      "pid": 294507,
+      "cpu_percent": 102.0,
+      "rss_kib": 918492,
+      "observed_command": "negative_static_cell.jl"
+    },
+    "run_status": {
+      "status": "running",
+      "current_cell": "negdiag-a01000-b02500-L080-k08",
+      "completed": [],
+      "eigsolve_krylovdim": 8,
+      "eigsolve_maxiter": 1,
+      "eigsolve_tol": 1e-14
+    },
+    "progress": {
+      "first_cell_progress_json_present": true,
+      "first_cell_progress_json_bytes": 923,
+      "first_cell": "negdiag-a01000-b02500-L080-k08",
+      "second_cell_started": false,
+      "note": "快照时仅确认第一 cell 运行，未声称第二 cell 已开始"
+    },
+    "stderr": {
+      "batch_stderr_bytes": 0,
+      "compatlauncher_stderr_bytes": 0,
+      "summary": "健康快照时为空"
+    },
+    "reproducible_output_summary": [
+      "launcher_process: PID 294213，PPID 1，命令为 static_krylov_supervisor.py --timeout 7200",
+      "batch_process: PID 294499，PPID 294213，命令为 run_negative_phase_structure_batch.py",
+      "Julia process: PID 294507，PPID 294506，命令为 negative_static_cell.jl，--threads=8",
+      "run_status.json: status=running，current_cell=negdiag-a01000-b02500-L080-k08",
+      "batch.stderr.log 与 compatlauncher.stderr.log: 0 bytes"
+    ]
+  },
+  "safety": {
+    "single_compatibility_file_scope": true,
+    "original_launcher_modified": false,
+    "original_73_files_reuploaded": false,
+    "manifest_modified": false,
+    "historical_receipts_modified": false,
+    "other_qec_tasks_touched": false,
+    "remote_delete_or_overwrite": false,
+    "slurm_used": false,
+    "dependencies_downloaded": false,
+    "secrets_recorded": false
+  },
+  "command_notes": [
+    "启动前正确 release 根目录只读核验：目标 run 目录无启动 guards、cells 为空、owned Julia 为 none；磁盘可用约 216G，内存可用约 998GiB。",
+    "本 agent 的远端动作仅包括一次 Linux 兼容预检、一次受保护 nohup 启动和一次只读健康快照；未再次 scp。",
+    "健康快照输出中 batch.pid 为 supervisor receipt JSON，真实 batch PID 由 ps 命令核验为 294499。"
+  ]
+}

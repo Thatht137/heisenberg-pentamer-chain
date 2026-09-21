@@ -1,0 +1,15 @@
+{
+  "status": "pass",
+  "svg_editable_text": true,
+  "exports": {
+    ".svg": true,
+    ".pdf": true,
+    ".png": true,
+    ".tiff": true,
+    ".source.csv": true,
+    ".sources.json": true
+  },
+  "positive_scope_only": true,
+  "dense_grid": "40x60",
+  "strict_crossing_status": "NO_SIGNIFICANT_CROSSING"
+}

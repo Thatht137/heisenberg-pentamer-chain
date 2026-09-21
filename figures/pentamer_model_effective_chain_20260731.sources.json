@@ -1,0 +1,46 @@
+{
+  "backend": "Python/matplotlib",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "source_files": [
+    {
+      "path": "results/autoresearch_v3_20260729/round1_doublet_projection/projection_scan.csv",
+      "sha256": "d8c2d2548cf937e5b16b6b77c818174cf33918eb888c4bee5ccdcafb73e8df15"
+    },
+    {
+      "path": "results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/multiplet_scan.csv",
+      "sha256": "9ce8a9c56f22fd99be701e5795ecde3a9beda56c4903b74d7804072c40eecf9a"
+    },
+    {
+      "path": "results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/folded_transition_weights.csv",
+      "sha256": "e832cf02e8f01d6fc0c9f5e371141869af17f514445407d16c75ded96aa51043"
+    }
+  ],
+  "figure_contract": {
+    "model_core_conclusion": "An odd five-spin unit cell retains an effective S=1/2, and positive beta projects to an antiferromagnetic Heisenberg chain.",
+    "filter_core_conclusion": "At q=pi reflection parity suppresses the lowest excited doublet while even S=3/2 quartets carry most local inelastic weight.",
+    "archetype": "schematic-led composite",
+    "backend": "Python/matplotlib",
+    "final_width_mm": 183
+  },
+  "checks": {
+    "coefficient_sum": true,
+    "reflection_symmetry": true,
+    "antiferromagnetic_jeff": true,
+    "lowest_doublet_dark_at_qpi": true,
+    "quartets_dominate_qpi": true,
+    "sextet_rank_one_dark": true
+  },
+  "scope_boundary": "The projection and selection rules are isolated-cell or first-order statements; finite-beta branch assignment still requires production DSF.",
+  "figure": "pentamer_model_effective_chain_20260731",
+  "claim": "五聚体模型与有效链示意；只陈述单胞投影和一阶有效耦合。",
+  "exports": [
+    "figures/pentamer_model_effective_chain_20260731.svg",
+    "figures/pentamer_model_effective_chain_20260731.pdf",
+    "figures/pentamer_model_effective_chain_20260731.png",
+    "figures/pentamer_model_effective_chain_20260731.tiff"
+  ]
+}

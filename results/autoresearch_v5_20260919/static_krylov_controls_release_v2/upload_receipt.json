@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "release_id": "static-krylov-controls-release-v2",
+  "status": "uploaded_hash_verified",
+  "manifest_path": "results/autoresearch_v5_20260919/static_krylov_controls_release_v2/server_upload_manifest.json",
+  "manifest_sha256": "e0dedb571cb265817f537de63e2bd107369c23fcb12326099c008ef55392efb4",
+  "payload_file_count": 72,
+  "control_plus_payload_count": 73,
+  "payload_bytes": 18882302,
+  "remote_target": "/home/wangjieren/releases/1x5_Heisenberg_Pentamer/static_krylov_controls_release_v2",
+  "remote_account": "wangjieren@39.96.207.180:6000",
+  "local_preflight": {
+    "network_used": false,
+    "status": "prepared_only",
+    "launch_ready": true,
+    "file_count": 72,
+    "contract": {
+      "cells": 2,
+      "krylovdim": 8
+    }
+  },
+  "command": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/autoresearch_v5/upload_static_krylov_controls_release_v2.ps1 -Confirmation CONFIRM_STATIC_KRYLOV_CONTROLS_RELEASE_V2",
+  "remote_result": "UPLOAD_AND_HASH_OK files=73 cells=2 concurrency=1 isolated=true",
+  "remote_full_hash_verified": true,
+  "remote_destination_precheck": "empty_before_upload",
+  "operational_uploader_fixes": {
+    "scope": "PowerShell command-array grouping, remote receipt object, and async output suppression only",
+    "script_sha256_after_fix": "e9781c31a089ba4492d3dbd85eedf7abb5efb8077033afa3bd8cbb7e9c7db710",
+    "payload_or_science_changed": false
+  },
+  "provenance": {
+    "uploader_script": "scripts/autoresearch_v5/upload_static_krylov_controls_release_v2.ps1",
+    "target_scheduler": "none",
+    "remote_run_dir": "results/autoresearch_v5_20260919/static_krylov_controls_r2",
+    "wheel_sha256": "ffa75af20b44f8dba823498024771d5ac50620e6915abac414251bd971b4529f",
+    "wheel_bytes": 18240889,
+    "source_hashes_sha256": "152e3620c83a8fd9e6e72dc6f1aa0cb3056b3d8eaefc4223e9543130a071aabd"
+  },
+  "notes": [
+    "Two pre-scp failures were diagnosed; target was confirmed empty before the successful run.",
+    "No Slurm command was used."
+  ]
+}

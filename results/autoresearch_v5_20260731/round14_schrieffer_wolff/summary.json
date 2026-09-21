@@ -1,0 +1,45 @@
+{
+  "status": "paper_direction_candidate",
+  "claim": "二阶虚激发在全正 alpha 区域诱导反铁磁次近邻交换，形成受控但较弱的有效挫折。",
+  "effective_hamiltonian": "H_eff = sum_n [E0 + beta*J1_1*Tn.Tn1 + beta^2*(C2 + J1_2*Tn.Tn1)] + beta^2*J2_2*sum_n Tn.Tn2 + O(beta^3)",
+  "alpha_points": 100,
+  "single_cell_dimension": 32,
+  "two_cell_product_dimension": 1024,
+  "three_cell_product_dimension": 32768,
+  "low_energy_dimensions": [
+    4,
+    8
+  ],
+  "all_induced_J2_antiferromagnetic": true,
+  "J2_second_range": [
+    0.026965095590065047,
+    6.176014485868067
+  ],
+  "J2_over_second_J1_range": [
+    0.2188014158932506,
+    0.3196063143604056
+  ],
+  "controlled_edge_J2_over_J1_range": [
+    0.03953591006562963,
+    0.05189305991241839
+  ],
+  "max_two_fit_relative_residual": 2.59743446052636e-14,
+  "max_three_fit_relative_residual": 3.806642277551143e-14,
+  "max_linked_constant_error": 1.531219595563016e-12,
+  "max_linked_J1_error": 1.4317436125566019e-12,
+  "max_finite_beta_C2_relative_error": 0.012752082789706957,
+  "max_hermiticity_error": 2.8780270159990905e-15,
+  "interpretation": "三胞连通项只产生正的 J2_2；在 beta/local_gap=0.65 的受控边缘，J2/J1 仍约为几个百分点。",
+  "new_paper_assessment": "值得保留为独立文章候选：需要推广到一般奇数团簇，并用三胞以上数值或解析谱和验证系数的可迁移性。当前证据不足以单独投稿。",
+  "figure_contract": {
+    "core_conclusion": "虚激发诱导 AFM 次近邻交换，但在当前受控弱耦合区只形成弱挫折。",
+    "evidence_chain": [
+      "a: 二阶系数的正区扫描",
+      "b: 诱导 J2 相对最近邻修正",
+      "c: 固定控制比下的有效挫折比例"
+    ],
+    "archetype": "quantitative grid",
+    "backend": "Python/matplotlib",
+    "export": "183 mm；SVG/PDF；PNG 300 dpi；LZW TIFF 600 dpi"
+  }
+}

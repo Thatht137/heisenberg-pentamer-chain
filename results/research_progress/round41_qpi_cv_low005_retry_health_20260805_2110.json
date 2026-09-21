@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-05T21:10:44+08:00",
+  "status": "healthy_running",
+  "phase": "julia_linsolve",
+  "julia_pid": 401894,
+  "process_state": "RNl",
+  "elapsed": "01:01:09",
+  "elapsed_seconds": 3660.158,
+  "cpu_percent": 139,
+  "rss_kib": 1549684,
+  "completed_points": 0,
+  "total_points": 1,
+  "stderr_bytes": 0,
+  "heartbeat_fresh": true,
+  "next_readonly_check": "2026-08-05T22:10:00+08:00",
+  "decision": "不启动第二个 Julia；等待自然终态。",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

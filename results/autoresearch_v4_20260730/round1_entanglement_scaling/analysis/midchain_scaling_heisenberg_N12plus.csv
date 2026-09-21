@@ -1,0 +1,5 @@
+model,N_units,entropy,entropy_error,D_low,D_high
+heisenberg,12,0.5368332534034492,1e-08,80,400
+heisenberg,16,0.5923070331955814,1e-08,80,400
+heisenberg,20,0.634573059175493,1e-08,80,400
+heisenberg,24,0.6686178897831812,1e-08,80,400

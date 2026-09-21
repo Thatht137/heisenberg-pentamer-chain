@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_fetch_eta020_20260808_0045\\fullq-weak-eta020-dt025",
+  "cell_id": "fullq-weak-eta020-dt025",
+  "checks": {
+    "terminal_acceptance": true,
+    "checksums": true,
+    "positive_region": true,
+    "t0_included": true,
+    "variance_per_site": true,
+    "sector_sz0": true,
+    "raw_negative_weight_fraction": true,
+    "artifacts": true
+  },
+  "diagnostics": {
+    "variance_per_site": 4.790628338469105e-10,
+    "total_sz": 1.5816901657452707e-15,
+    "raw_negative_weight_fraction": 0.09511270734915603,
+    "max_negative_weight_fraction": 0.15,
+    "tstep": 0.025,
+    "tmax": 30.0
+  },
+  "failures": []
+}

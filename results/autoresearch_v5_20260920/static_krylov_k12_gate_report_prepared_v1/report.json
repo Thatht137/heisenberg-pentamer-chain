@@ -1,0 +1,351 @@
+{
+  "schema_version": 1,
+  "title": "Static Krylov k12 Gate",
+  "eyebrow": "LOCAL GATE · PREPARED ONLY · AUDIT ONLY",
+  "url": "",
+  "lede": "独立 k12 单点门禁记录；本页只呈现可追溯的准备/终态证据，不作物理结论。",
+  "generated_at_utc": "2026-09-20T11:34:06.973007+00:00",
+  "metadata": {
+    "state": "prepared-only",
+    "source": "results\\research_progress\\project_closeout_status_20260919.json",
+    "claim": "audit_only"
+  },
+  "sections": [
+    {
+      "title": "Gate 状态",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "warn",
+          "label": "PREPARED ONLY · AUDIT ONLY",
+          "why": "当前状态为 local_prepared_only；未上传、未启动远端 k12。"
+        },
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "state",
+              "prepared-only"
+            ],
+            [
+              "status",
+              "local_prepared_only"
+            ],
+            [
+              "claim",
+              "audit_only"
+            ],
+            [
+              "package_ready",
+              "是"
+            ],
+            [
+              "launch_ready",
+              "否"
+            ],
+            [
+              "goal_complete",
+              "否"
+            ],
+            [
+              "source",
+              "results\\research_progress\\project_closeout_status_20260919.json"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "运行参数",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "参数",
+            "值"
+          ],
+          "rows": [
+            [
+              "alpha",
+              "-0.1"
+            ],
+            [
+              "beta",
+              "0.25"
+            ],
+            [
+              "L",
+              "80"
+            ],
+            [
+              "n_units",
+              "16"
+            ],
+            [
+              "eigsolve_krylovdim",
+              "12"
+            ],
+            [
+              "nsweeps",
+              "64"
+            ],
+            [
+              "maxdim",
+              "1200"
+            ],
+            [
+              "cutoff",
+              "1e-11"
+            ],
+            [
+              "threads",
+              "8"
+            ],
+            [
+              "q_count",
+              "401"
+            ],
+            [
+              "init_modes",
+              "[\"center\", \"ferro_j2\"]"
+            ],
+            [
+              "save_state",
+              "是"
+            ],
+            [
+              "enriched_diagnostics",
+              "是"
+            ],
+            [
+              "concurrency",
+              "1"
+            ],
+            [
+              "retry_policy",
+              "none"
+            ],
+            [
+              "warmstart",
+              "否"
+            ],
+            [
+              "no_128",
+              "是"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "本地 smoke 与 preflight",
+      "blocks": [
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "artifact",
+              "results/autoresearch_v5_20260920/static_krylov_k12_smoke_r1/a-0100-k12"
+            ],
+            [
+              "status",
+              "pass"
+            ],
+            [
+              "Julia",
+              "1.11.5"
+            ],
+            [
+              "role",
+              "parser/execution evidence only"
+            ],
+            [
+              "not_remote_validation",
+              "是"
+            ],
+            [
+              "preflight",
+              "results/autoresearch_v5_20260920/static_krylov_k12_r1/preflight.json"
+            ],
+            [
+              "dry_run",
+              "DRY_RUN_OK cells=1"
+            ],
+            [
+              "unit_tests",
+              "7 passed"
+            ],
+            [
+              "remote Julia required",
+              "1.12.3"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "证据边界",
+          "style": "warning",
+          "text": "L10 smoke 的 Julia 1.11.5 只证明 parser/execution；不替代远端 Julia 1.12.3 验证。"
+        }
+      ]
+    },
+    {
+      "title": "Manifest / hash / provenance",
+      "blocks": [
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "release_manifest",
+              "results/autoresearch_v5_20260920/static_krylov_controls_release_v3/server_upload_manifest.json"
+            ],
+            [
+              "manifest_sha256",
+              "4f0c3857fc0d6635dc4fb6bf193022b30c46dc43c1170161c40e4bfc2c2b9e30"
+            ],
+            [
+              "run_spec",
+              "results/autoresearch_v5_20260920/static_krylov_k12_r1/parameter-scan.run_spec.json"
+            ],
+            [
+              "run_spec_sha256",
+              "0b21ac0972ed935ab4c5d824af717ee155d57d83e24c1febf25598ce920b0709"
+            ],
+            [
+              "payload files",
+              "41"
+            ],
+            [
+              "control files",
+              "1"
+            ],
+            [
+              "total files",
+              "42"
+            ],
+            [
+              "payload bytes",
+              "345707"
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Validator 与 comparison",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "validator 字段",
+            "值"
+          ],
+          "rows": [
+            [
+              "status",
+              "not_run"
+            ],
+            [
+              "detail",
+              "prepared-only：尚未执行远端 validator/comparison"
+            ]
+          ]
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "comparison 字段",
+            "值"
+          ],
+          "rows": [
+            [
+              "status",
+              "not_run"
+            ],
+            [
+              "detail",
+              "prepared-only：尚未执行远端 validator/comparison"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "解释",
+          "style": "info",
+          "text": "prepared-only 阶段的 validator/comparison 明确标为未执行；terminal 阶段仅转录未来摘要，不在本脚本中重算。"
+        }
+      ]
+    },
+    {
+      "title": "Upload / remote state",
+      "blocks": [
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "upload status",
+              "rejected_external_review"
+            ],
+            [
+              "upload performed",
+              "否"
+            ],
+            [
+              "ssh/scp performed",
+              "否"
+            ],
+            [
+              "partial side effects",
+              "否"
+            ],
+            [
+              "no remote side effects",
+              "是"
+            ],
+            [
+              "remote Julia",
+              "1.12.3"
+            ],
+            [
+              "server snapshot",
+              "{\"active_julia\": false, \"cpu_cores\": 80, \"load_average\": 8.0, \"memory_available_gib\": 995, \"qec_workers\": 8, \"snapshot_role\": \"只读服务器快照；未由本地 k12 任务触发\"}"
+            ],
+            [
+              "ETA / timeout",
+              "{\"concurrency\": 1, \"expected_wall_minutes\": \"40-60\", \"threads\": 8, \"timeout_seconds\": 7200}"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "远端边界",
+          "style": "warning",
+          "text": "本报告不会上传、SSH、启动 Julia 或修改远端状态。"
+        }
+      ]
+    },
+    {
+      "title": "Audit-only 边界与下一门",
+      "blocks": [
+        {
+          "kind": "list",
+          "title": "本报告不声称",
+          "items": [
+            "不引入新相，不宣称全域单相。",
+            "不宣称热力学 c=1 或全局收敛。",
+            "不替代论文/原始数据验收，也不改变 goal_complete=false。"
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "下一门",
+          "items": [
+            "取得明确外传授权后，执行非覆盖 upload 与远端 preflight；本地报告不执行该动作。",
+            "远端仅运行单点 L80/k12；回收后先过逐文件 hash、validator 与 comparison，再决定是否进入下一门。",
+            "在独立验证完成前，不把 k12 gate 转写为新相、热力学 c=1 或论文结论。"
+          ]
+        }
+      ]
+    }
+  ]
+}

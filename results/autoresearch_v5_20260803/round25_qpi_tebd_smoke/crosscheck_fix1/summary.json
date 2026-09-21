@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "tag": "Agreement",
+  "instance": "alpha=0.23,beta=0.5,L=10,q/pi=1,eta=0.1,OBC,Sz=0",
+  "methods": [
+    "exact_diagonalization",
+    "finite_dmrg_tebd_qpi_autocorrelation"
+  ],
+  "observable": "Szz(q=pi,omega)",
+  "budgets": {
+    "ed_peak_omega": 0.0,
+    "ed_integrated_weight": 0.0,
+    "tebd_peak_omega": 0.1,
+    "tebd_integrated_weight_relative": 0.15,
+    "dt_peak_omega": 0.05,
+    "dt_integrated_weight_relative": 0.05
+  },
+  "checks": {
+    "coarse_checksum": true,
+    "refined_checksum": true,
+    "coarse_source_sum_rule": true,
+    "refined_source_sum_rule": true,
+    "coarse_nonnegative": true,
+    "refined_nonnegative": true,
+    "coarse_peak_vs_ed": true,
+    "refined_peak_vs_ed": true,
+    "coarse_weight_vs_ed": true,
+    "refined_weight_vs_ed": true,
+    "dt_peak_convergence": true,
+    "dt_weight_convergence": true
+  },
+  "diagnostics": {
+    "exact_peak_omega": 0.15000000000000002,
+    "coarse_peak_omega": 0.15,
+    "refined_peak_omega": 0.15,
+    "exact_integrated_weight": 0.6144464512649274,
+    "coarse_integrated_weight": 0.6154621480963244,
+    "refined_integrated_weight": 0.6154238983807204,
+    "coarse_weight_relative_error": 0.0016530274189167462,
+    "refined_weight_relative_error": 0.0015907767288440595,
+    "dt_weight_relative_delta": 6.21518204031341e-05,
+    "coarse_spectrum_relative_l2": 0.04446267576345709,
+    "refined_spectrum_relative_l2": 0.044465222243426694,
+    "exact_source_norm_squared": 0.7282718352523129,
+    "coarse_source_norm_squared": 0.728271822384176,
+    "refined_source_norm_squared": 0.728271822384176,
+    "coarse_source_norm_relative_error": 1.766941445007235e-08,
+    "refined_source_norm_relative_error": 1.766941445007235e-08,
+    "coarse_spectrum_min": 0.003492479432393983,
+    "refined_spectrum_min": 0.0034844914284170997
+  },
+  "normalization": {
+    "source": "O_q=(1/sqrt(L))*sum_j exp(i*pi*j)Sz_j",
+    "correlation": "C_q(t)=<O_q GS|exp(-iHt)|O_q GS>*exp(iE0t)",
+    "fourier": "Re integral_0^tmax exp((i*omega-eta)t)C_q(t)dt/pi",
+    "quadrature": "trapezoid including t=0"
+  },
+  "evidence": {
+    "exact_spectrum_sha256": "9e52bd05dd2d3f5b5d05b775bdbf8318d6826139150c4694263b0e98ba1169ea",
+    "coarse_manifest_sha256": "252776debb70be6edbfbfe4c16b1db149b74d08c3035c28c040083104b632f75",
+    "refined_manifest_sha256": "17483379848c4dab9bffbee46a8c3caa9fba805ccb543696b4e228767a083364",
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  }
+}

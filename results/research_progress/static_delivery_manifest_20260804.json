@@ -1,0 +1,213 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-04T10:40:00+08:00",
+  "status": "ready_static_only",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "included_figures": [
+    "Fig. 1",
+    "Fig. 2",
+    "Fig. 3",
+    "Fig. 4",
+    "Fig. 5"
+  ],
+  "excluded_pending": [
+    "Fig. 6",
+    "Fig. 7",
+    "Fig. 8",
+    "Fig. 9",
+    "negative alpha"
+  ],
+  "files": [
+    {
+      "path": "docs/pentamer_reproduction_standard.md",
+      "bytes": 21939,
+      "sha256": "4f00f333eaf810b2853a46e4e258e192db7ef554c7800d35df2ebe27adee4b46"
+    },
+    {
+      "path": "docs/claim_evidence_matrix.md",
+      "bytes": 4908,
+      "sha256": "3812152f1d76f99020582269c9a200d37f15ce1458f292d8e2412bc44fcbdad0"
+    },
+    {
+      "path": "docs/figure_plan.md",
+      "bytes": 5556,
+      "sha256": "25478ea376ee97440a74a2a2403ccdd8ad04e6ebeb40d9ec2eee7163b32e2464"
+    },
+    {
+      "path": "docs/delivery_plan_to_20260810.md",
+      "bytes": 16231,
+      "sha256": "23ae281418e0226ae2397adca454b245f40464a63dfb3a24e91edc5deee587c1"
+    },
+    {
+      "path": "figures/reference_aligned_fig1_pentamer_20260803.svg",
+      "bytes": 39968,
+      "sha256": "ee84f682840c557f72b3d6b100cb2eca545e5fc49e8a8c5d1074e0f8d8e53615"
+    },
+    {
+      "path": "figures/reference_aligned_fig1_pentamer_20260803.pdf",
+      "bytes": 55245,
+      "sha256": "0e54cce632eae2cad55f22ce23237cb4126dfd5dda4cbea50e69ecd94f815f56"
+    },
+    {
+      "path": "figures/reference_aligned_fig1_pentamer_20260803.png",
+      "bytes": 205745,
+      "sha256": "8b235df507ff2fda8e5e1933195c4548cf857a982922da5a7f00214a7c7d19b6"
+    },
+    {
+      "path": "figures/reference_aligned_fig1_pentamer_20260803.tiff",
+      "bytes": 30156702,
+      "sha256": "ed8e7cc9b4fc4acb02dd7a584555d2940d1f430fbc4d901ad00707f0432f05f1"
+    },
+    {
+      "path": "figures/reference_aligned_fig2_pentamer_positive_20260803.svg",
+      "bytes": 63768,
+      "sha256": "25c30191512e5f0d9b6647fb8002c023a54e49c723895465e74084695232e2c7"
+    },
+    {
+      "path": "figures/reference_aligned_fig2_pentamer_positive_20260803.pdf",
+      "bytes": 63603,
+      "sha256": "7881eb9e9c689dcfc20c83f0b055d9e396041cad33248358fb60c231c84e5006"
+    },
+    {
+      "path": "figures/reference_aligned_fig2_pentamer_positive_20260803.png",
+      "bytes": 269775,
+      "sha256": "a3ad76f84602d068f6a101dc4504cb0cad78d45034e0d5589918eebc5061ed53"
+    },
+    {
+      "path": "figures/reference_aligned_fig2_pentamer_positive_20260803.tiff",
+      "bytes": 32523974,
+      "sha256": "a2453ad0ffbd31281ed13d0039afcde912d60b8024293061908d946762447627"
+    },
+    {
+      "path": "figures/reference_aligned_fig3_pentamer_positive_20260803.svg",
+      "bytes": 65054,
+      "sha256": "32f7c1cd7e514ca21791e1b5f60a66d314d1962ee6f27048f69bb1e5c90e0378"
+    },
+    {
+      "path": "figures/reference_aligned_fig3_pentamer_positive_20260803.pdf",
+      "bytes": 59994,
+      "sha256": "56b0cdc94b55bfb338ed4d7ff53a0b3eca245e42582c9220b2a1a7ebf2536724"
+    },
+    {
+      "path": "figures/reference_aligned_fig3_pentamer_positive_20260803.png",
+      "bytes": 405032,
+      "sha256": "c0d6b75c446665e0eb9887fbe614089563f1e41f08f69bfe358f78c8e3004d60"
+    },
+    {
+      "path": "figures/reference_aligned_fig3_pentamer_positive_20260803.tiff",
+      "bytes": 47831346,
+      "sha256": "f5b00651f3bbf656225dc2fd8858999e4ddcd6c7dd546f6c14999ba0df07f1f9"
+    },
+    {
+      "path": "figures/reference_aligned_fig4_pentamer_positive_20260803.svg",
+      "bytes": 107254,
+      "sha256": "dbd9ef27d70b3e0a9e26c036645753b02d664456e783cecfb4043096ff18c30d"
+    },
+    {
+      "path": "figures/reference_aligned_fig4_pentamer_positive_20260803.pdf",
+      "bytes": 57263,
+      "sha256": "de16a755d266965411343fc661064c97d0406c1d8e8643695338a0a2d8dda334"
+    },
+    {
+      "path": "figures/reference_aligned_fig4_pentamer_positive_20260803.png",
+      "bytes": 200507,
+      "sha256": "78d85abd9ecd7c105da40940dfd0e01d5f3fc02af9feea5f6dc13cb3ddd570d6"
+    },
+    {
+      "path": "figures/reference_aligned_fig4_pentamer_positive_20260803.tiff",
+      "bytes": 42597726,
+      "sha256": "0cf95780da6fd4e46e608811f4ea916c56d2e3ab47622089747796a897fa667f"
+    },
+    {
+      "path": "figures/pentamer_model_effective_chain_20260731.svg",
+      "bytes": 50021,
+      "sha256": "1601bc9d0edb0622e0b903990807854a80532d9eef3f46295837b7f9de73a949"
+    },
+    {
+      "path": "figures/pentamer_model_effective_chain_20260731.pdf",
+      "bytes": 59850,
+      "sha256": "109033e31733fc69b9d5e7889dca4f1590043d2b0e7f19e98148c524813db098"
+    },
+    {
+      "path": "figures/pentamer_model_effective_chain_20260731.png",
+      "bytes": 308994,
+      "sha256": "ae0ff91632730efac9260da02a98dafbec1d3089a91f1e3a2a465a64eb5e0ce3"
+    },
+    {
+      "path": "figures/pentamer_model_effective_chain_20260731.tiff",
+      "bytes": 897588,
+      "sha256": "3cb7ba0ca066fc7377029ef8acab0c5f9a50a3ce7450e8cda2bdd7571f5672bf"
+    },
+    {
+      "path": "figures/pentamer_momentum_filter_20260731.svg",
+      "bytes": 45660,
+      "sha256": "1a3c30f178ea550ebd31d08dd1c52867e51ffd1216f730dda2fe5e91c0ba5e51"
+    },
+    {
+      "path": "figures/pentamer_momentum_filter_20260731.pdf",
+      "bytes": 53784,
+      "sha256": "fd0bd78768012ed894c23263047222aed7875e7cfa21c3276adcbc126402f275"
+    },
+    {
+      "path": "figures/pentamer_momentum_filter_20260731.png",
+      "bytes": 377019,
+      "sha256": "198bc4d8a4404de00e8f7962a367039b8a5e2793c2475ccf3297340ee4f438d4"
+    },
+    {
+      "path": "figures/pentamer_momentum_filter_20260731.tiff",
+      "bytes": 990058,
+      "sha256": "ca8e5fa6e9d3a81ba5c3787b5ac1c522f6fbf48bf41db11ed2b368fd41e19df8"
+    },
+    {
+      "path": "figures/reference_aligned_figures_20260803.sources.json",
+      "bytes": 1549,
+      "sha256": "66858d88dc9cd51f42825718ef709b4686822a76e2982ccf0a469781d1397a03"
+    },
+    {
+      "path": "figures/reference_aligned_fig3_pentamer_positive_20260803.sources.json",
+      "bytes": 646,
+      "sha256": "6af4e486f2c896ab3c9971c979aff790224ccf3b36a93f8bc7d921b0fd45066a"
+    },
+    {
+      "path": "figures/reference_aligned_fig4_pentamer_positive_20260803.sources.json",
+      "bytes": 1029,
+      "sha256": "0678aadf0b22f30452e8d49dfa4d9d538bf29973e2de29dc529e3678f7a1fa0d"
+    },
+    {
+      "path": "figures/pentamer_model_effective_chain_20260731.sources.json",
+      "bytes": 2060,
+      "sha256": "798f8f4c5e927e6c34bd5c91f8015117d067c2277cda0626dc1cb70128f1f7ab"
+    },
+    {
+      "path": "figures/pentamer_momentum_filter_20260731.sources.json",
+      "bytes": 2032,
+      "sha256": "0452b9b3bcaa7bc7eb4c4526d3c0d72ada608a981e6042dc535f0aaef80a9de2"
+    },
+    {
+      "path": "results/research_progress/figure_claim_matrix_audit_20260804.json",
+      "bytes": 1880,
+      "sha256": "92001fc3457d4dbf21c2d3c0a176ff0e26e4568a1f18852b44146c5c46f11b64"
+    },
+    {
+      "path": "results/research_progress/figure_caption_claim_audit_20260804.json",
+      "bytes": 3609,
+      "sha256": "a232cd70832bf3bf214b015619dbd6d4b82ade495a5d3c7e8f5ffd597e101b5a"
+    }
+  ],
+  "report_artifact": {
+    "path": "results/research_progress/report.html",
+    "self_referential_hash_excluded": true,
+    "reason": "报告包含本 manifest 的链接，不能纳入自身哈希闭环"
+  },
+  "missing": [],
+  "checks": {
+    "all_files_present": true,
+    "all_hashes_recorded": true,
+    "dynamic_gate_closed": false
+  },
+  "delivery_boundary": "可作为静态机制、有限尺寸和纠缠证据包；不包含生产 CV/TEBD 动态结论。"
+}

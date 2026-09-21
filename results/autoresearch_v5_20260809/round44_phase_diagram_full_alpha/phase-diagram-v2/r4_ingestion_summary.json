@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "accepted",
+  "cell_id": "nega-r4-a0250-b0500-L060",
+  "accepted_key": {
+    "alpha": -0.25,
+    "beta": 0.5,
+    "L": 60
+  },
+  "counts": {
+    "validator_pass": 1,
+    "controller_accepted": 1,
+    "controller_failed": 0,
+    "controller_success_total": 10,
+    "controller_failed_total": 0,
+    "controller_pending_total": 6
+  },
+  "validation_summary": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r4-a0250-L060-20260810-1822/validation/summary.json",
+    "sha256": "25ba1829cb26f7e6382a8d2de258e2a7702c7e7da6a0485c4f21860fc91ce3bc"
+  },
+  "handoff_summary": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r4-a0250-L060-20260810-1822/handoff_summary.json",
+    "sha256": "8c44e7d0ae5b0c2fa8489de09c2e02c4183f21a45517e5f8235e66441665155d"
+  },
+  "r3_failure": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r3-remaining13-20260810-1534/validation/nega-r3-a0250-b0500-L060.json",
+    "artifact_sha256": "f811ca27c68ab72855fc3c8e08380a742d960e273641844eda0a3111c8958642",
+    "preserved_in_observation": true
+  },
+  "r4_receipt": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r4-a0250-L060-20260810-1822/receipts/nega-r4-a0250-b0500-L060.json",
+    "sha256": "12544be80c6b1e0ccafc3e2d14d67fc244754f6a3995a9a6bde80ebbfce99aaf"
+  },
+  "controller": {
+    "status": "WAITING",
+    "reason": "6 registered cells remain pending",
+    "report": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/report.json",
+    "report_sha256": "8379b304b60719faba674a6f683229f1cfab255ca5e6b8347def78537498e4a8",
+    "phase_boundary_ready": false,
+    "phase_label": "not_assigned"
+  },
+  "interpretation": "仅更新 accepted-only observation；未运行项保持 pending，不伪造 crossing 或相名"
+}

@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-08-03T23:33:22+08:00",
+  "host": "39.96.207.180",
+  "ssh_port": 6000,
+  "ssh_result": "connection_refused",
+  "icmp_result": "reachable",
+  "last_authoritative_state": {
+    "checked_at": "2026-08-03T23:23:46+08:00",
+    "cell": "cell-l40-qpi-low-000-020",
+    "status": "running",
+    "completed_points": 1,
+    "total_points": 5,
+    "manifest_present": false
+  },
+  "action": "no_download_no_restart_no_second_julia",
+  "scope": {
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

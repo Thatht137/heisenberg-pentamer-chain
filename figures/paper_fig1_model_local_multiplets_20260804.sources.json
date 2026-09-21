@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "figure": "Fig. 1",
+  "backend": "Python/matplotlib",
+  "core_conclusion": "A five-spin unit cell retains a low-energy spin-1/2 doublet and supports an antiferromagnetic projected chain.",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "boundary": "Local multiplets and first-order projection only; no finite-beta branch assignment.",
+  "source_sha256": {
+    "results\\autoresearch_v4_20260730\\round2_local_spectral_channels_v4\\multiplet_scan.csv": "9ce8a9c56f22fd99be701e5795ecde3a9beda56c4903b74d7804072c40eecf9a"
+  },
+  "outputs": {
+    "figures\\paper_fig1_model_local_multiplets_20260804.svg": "d11ea45853b3caddef51004e2a4c63a79961ca2806570f2335934b0907629e54",
+    "figures\\paper_fig1_model_local_multiplets_20260804.pdf": "7bb3082afb8fcfacf9e8f4ecbaae81221dc7e28682d50de744a77f6fddbda109",
+    "figures\\paper_fig1_model_local_multiplets_20260804.png": "7188fca4ffe8f5e2f65a89bd0f83f3307386692d9b192d2032a9d5942523d9e3",
+    "figures\\paper_fig1_model_local_multiplets_20260804.tiff": "73a0388167196fb985dcf6bdda1e9193791e75b68773e112016518820ab75fa1"
+  }
+}

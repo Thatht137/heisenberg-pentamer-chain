@@ -1,0 +1,64 @@
+{
+  "status": "tentative",
+  "claim": "五条投影受控曲线近似 matched-size Heisenberg oracle，但尚未达到严格数值塌缩；投影失控点明显偏离。",
+  "uncertainty_proxy": "每个扇区取 max(sqrt(L*variance_per_site), abs(final_energy_change))，能隙误差取两扇区之和。",
+  "bootstrap_interpretation": "误差代理不是统计抽样误差；bootstrap 区间仅表示对该数值误差模型的敏感性。",
+  "controlled_definition": "beta/local_gap < 1",
+  "controlled_series": 5,
+  "total_series": 6,
+  "controlled_mean_abs_deviation_range": [
+    0.010958824499792469,
+    0.047896326030797354
+  ],
+  "controlled_deviation_monotonic": false,
+  "oracle_endpoint_effective_slope_N8_to_N16": 0.8406459844325077,
+  "fit": {
+    "A": {
+      "value": 2.4479402404201687,
+      "ci_lo": 2.374417622838822,
+      "ci_hi": 2.525401424635053
+    },
+    "alpha": {
+      "value": 0.8638717958557497,
+      "ci_lo": 0.8498753841492634,
+      "ci_hi": 0.8774513152848485
+    },
+    "chi2_per_dof": {
+      "value": 5.29765175590075,
+      "ci_lo": null,
+      "ci_hi": null
+    },
+    "failed_resamples": {
+      "value": 0.0,
+      "ci_lo": null,
+      "ci_hi": null
+    }
+  },
+  "smallest_control_ratio": {
+    "alpha": 0.23,
+    "beta": 0.02,
+    "control_ratio": 0.1290378641204073,
+    "mean_abs_relative_deviation": 0.02942197979373307,
+    "max_abs_relative_deviation": 0.030986172977433838,
+    "controlled": true
+  },
+  "largest_control_ratio": {
+    "alpha": 0.23,
+    "beta": 0.2,
+    "control_ratio": 1.290378641204073,
+    "mean_abs_relative_deviation": 0.26996852498156215,
+    "max_abs_relative_deviation": 0.29303696251854816,
+    "controlled": false
+  },
+  "scaling_invocation": "D:\\Project\\1x5_Heisenberg_Pentamer\\.venv\\Scripts\\python.exe C:\\Users\\hh250\\code\\quantum.harness\\scripts\\scaling_fit.py D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260731\\round12_effective_gap_scaling\\controlled_scaling_input.csv --form power-law --size-col N_units --obs-col obs --err-col err --bootstrap 1000 --seed 20260731 --out-csv D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260731\\round12_effective_gap_scaling\\scaling-fit.csv --out-png D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260731\\round12_effective_gap_scaling\\scaling-fit.png",
+  "figure_contract": {
+    "core_conclusion": "受控曲线近似 oracle，但偏差不随 beta/local_gap 单调变化；失控点明显破坏对应，不能宣称已完成普适塌缩。",
+    "evidence_chain": [
+      "a: 六条有限尺寸曲线与 matched-size oracle",
+      "b: 每条曲线的平均绝对偏差随控制比变化"
+    ],
+    "archetype": "quantitative grid",
+    "backend": "Python/matplotlib",
+    "export": "183 mm；SVG/PDF 可编辑文字；PNG 300 dpi；LZW TIFF 600 dpi"
+  }
+}

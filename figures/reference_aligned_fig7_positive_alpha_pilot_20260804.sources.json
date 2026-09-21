@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "figure": "reference_aligned_fig7_positive_alpha_pilot_20260804",
+  "backend": "Python/matplotlib",
+  "reference_mapping": "Fig. 7: beta=0.5 positive alpha path with q=pi cuts",
+  "scope": {
+    "alphas": [
+      0.14,
+      0.23,
+      0.33
+    ],
+    "beta": 0.5,
+    "L": 40,
+    "tmax": 15,
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "status": "pilot_exploratory_not_production",
+  "display": {
+    "raw_data": true,
+    "smoothing": false,
+    "clip": false,
+    "omega_max_display": 1.5,
+    "vmin": 0.0,
+    "vmax": 4.918141873014595
+  },
+  "source_files": [
+    {
+      "path": "data/Sqw_tebd_pentamer_alpha=0.14_beta=0.5_L40_t15.csv",
+      "sha256": "ef5ecf22b324518d616dcbd8efa810e0695f66a214c4dd42f4fb1cd29dcebaa2"
+    },
+    {
+      "path": "data/Sqw_tebd_pentamer_alpha=0.23_beta=0.5_L40_t15.csv",
+      "sha256": "cb294d9c75fa9a6b73853b36024227cd1775963ff5aa3f09d15000beac245695"
+    },
+    {
+      "path": "data/Sqw_tebd_pentamer_alpha=0.33_beta=0.5_L40_t15.csv",
+      "sha256": "4e25beaabe946be662349def55e59610285966ba96ff25b7d0c2c5c2cdf3babf"
+    }
+  ],
+  "outputs": [
+    "figures/reference_aligned_fig7_positive_alpha_pilot_20260804.svg",
+    "figures/reference_aligned_fig7_positive_alpha_pilot_20260804.pdf",
+    "figures/reference_aligned_fig7_positive_alpha_pilot_20260804.png",
+    "figures/reference_aligned_fig7_positive_alpha_pilot_20260804.tiff"
+  ],
+  "interpretation": "只复刻参考图 Fig. 7 的正区路径和切片角色；pilot 不用于关闭 TEBD/CV 动态门。"
+}

@@ -1,0 +1,18 @@
+After sweep 1 energy=-11.105898432299993  maxlinkdim=4 maxerr=8.47E-16 time=32.158
+After sweep 2 energy=-11.141827457121844  maxlinkdim=16 maxerr=9.73E-11 time=0.825
+After sweep 3 energy=-11.145894500874919  maxlinkdim=44 maxerr=9.94E-11 time=0.481
+After sweep 4 energy=-11.14693620875502  maxlinkdim=55 maxerr=9.97E-11 time=0.566
+After sweep 5 energy=-11.147086510232182  maxlinkdim=58 maxerr=9.88E-11 time=0.593
+After sweep 6 energy=-11.147100246133446  maxlinkdim=59 maxerr=9.95E-11 time=0.577
+After sweep 7 energy=-11.147101017732767  maxlinkdim=61 maxerr=9.95E-11 time=0.574
+After sweep 8 energy=-11.147101023176551  maxlinkdim=55 maxerr=9.96E-11 time=0.564
+After sweep 9 energy=-11.1471010237305  maxlinkdim=55 maxerr=9.99E-11 time=0.570
+After sweep 10 energy=-11.147101023661772  maxlinkdim=55 maxerr=1.00E-10 time=0.551
+After sweep 11 energy=-11.147101023772766  maxlinkdim=55 maxerr=1.00E-10 time=0.548
+After sweep 12 energy=-11.147101023772988  maxlinkdim=55 maxerr=1.00E-10 time=0.547
+After sweep 13 energy=-11.147101023773102  maxlinkdim=55 maxerr=1.00E-10 time=0.561
+After sweep 14 energy=-11.147101023773107  maxlinkdim=55 maxerr=1.00E-10 time=0.538
+After sweep 15 energy=-11.147101023773125  maxlinkdim=55 maxerr=1.00E-10 time=0.538
+After sweep 16 energy=-11.147101023773127  maxlinkdim=55 maxerr=1.00E-10 time=0.539
+omega 1.0000 (1/1): S=7.58048447e-02 residual=1.959e-06 D=600
+CV_DSF_CELL_SUCCESS outdir=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round31_qpi_cv_extension/cell-l40-qpi-high-100

@@ -1,0 +1,1370 @@
+{
+  "schema_version": 1,
+  "records": [
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0001\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.0,
+        "beta": 0.1,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.007581918892883066
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0002\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.0,
+        "beta": 0.1,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.0032193651605752494
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0003\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.125,
+        "beta": 0.1,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.38182879182590473
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0004\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.125,
+        "beta": 0.1,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3406211479798694
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0005\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.25,
+        "beta": 0.1,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.36785522125850606
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0006\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.25,
+        "beta": 0.1,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3227116107495814
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0007\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.5,
+        "beta": 0.1,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.36782076779996065
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0008\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.5,
+        "beta": 0.1,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.32466137773793174
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0009\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 1.0,
+        "beta": 0.1,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.370989853613824
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0010\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 1.0,
+        "beta": 0.1,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3378077341610173
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0011\\manifest.json",
+      "budget": 32,
+      "error": 0.004578165486346042,
+      "params": {
+        "L": 40,
+        "alpha": 0.0,
+        "beta": 0.5,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.0029718843799110273
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0012\\manifest.json",
+      "budget": 32,
+      "error": 0.0002420606967692973,
+      "params": {
+        "L": 60,
+        "alpha": 0.0,
+        "beta": 0.5,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.0034614258573517076
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0013\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.125,
+        "beta": 0.5,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3464318815567713
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0014\\manifest.json",
+      "budget": 32,
+      "error": 0.0004672974348011172,
+      "params": {
+        "L": 60,
+        "alpha": 0.125,
+        "beta": 0.5,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3333203977613084
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0015\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.25,
+        "beta": 0.5,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3788254041760783
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0016\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.25,
+        "beta": 0.5,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3531166596058889
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0017\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.5,
+        "beta": 0.5,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3870665001402939
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0018\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.5,
+        "beta": 0.5,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3518911878512978
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0019\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 1.0,
+        "beta": 0.5,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.38056654468798784
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0020\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 1.0,
+        "beta": 0.5,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3486347234113601
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0021\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.0,
+        "beta": 0.9,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.007557230110296187
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0022\\manifest.json",
+      "budget": 32,
+      "error": 0.004912461228708864,
+      "params": {
+        "L": 60,
+        "alpha": 0.0,
+        "beta": 0.9,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.008131826389281727
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0023\\manifest.json",
+      "budget": 32,
+      "error": 0.0004577580798481584,
+      "params": {
+        "L": 40,
+        "alpha": 0.125,
+        "beta": 0.9,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3201846743296497
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0024\\manifest.json",
+      "budget": 64,
+      "error": 0.00011841369401005553,
+      "params": {
+        "L": 60,
+        "alpha": 0.125,
+        "beta": 0.9,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.31757172469596423
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0025\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.25,
+        "beta": 0.9,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.35087437083692774
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0026\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.25,
+        "beta": 0.9,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3366012079262892
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0027\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.5,
+        "beta": 0.9,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3812225791429815
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0028\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.5,
+        "beta": 0.9,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.35464987381864005
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0029\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 1.0,
+        "beta": 0.9,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3835128601423627
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round17_phase_diagram_positive\\cells\\cell-0030\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 1.0,
+        "beta": 0.9,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3531687740842353
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0001\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.0,
+        "beta": 0.1,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.0018518630859560847
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0002\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.125,
+        "beta": 0.1,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.32693840837431815
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0003\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.25,
+        "beta": 0.1,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.31679244390429906
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0004\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.5,
+        "beta": 0.1,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.31961882877101283
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0005\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 1.0,
+        "beta": 0.1,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.32732103082026953
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0006\\manifest.json",
+      "budget": 32,
+      "error": 0.0003212578910665176,
+      "params": {
+        "L": 80,
+        "alpha": 0.0,
+        "beta": 0.5,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.0021659831431796173
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0007\\manifest.json",
+      "budget": 32,
+      "error": 0.0016634630493430058,
+      "params": {
+        "L": 80,
+        "alpha": 0.125,
+        "beta": 0.5,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.29837591553377935
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0008\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.25,
+        "beta": 0.5,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.3263045052807626
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0009\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.5,
+        "beta": 0.5,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.33379615791584477
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0010\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 1.0,
+        "beta": 0.5,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.33549313004868353
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0011\\manifest.json",
+      "budget": 32,
+      "error": 0.00027857764823041586,
+      "params": {
+        "L": 80,
+        "alpha": 0.0,
+        "beta": 0.9,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.0021233029003442927
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0012-r64\\manifest.json",
+      "budget": 64,
+      "error": 0.0012635183848825338,
+      "params": {
+        "L": 80,
+        "alpha": 0.125,
+        "beta": 0.9,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.28467958291171575
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0013\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.25,
+        "beta": 0.9,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.30636089711804626
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0014\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.5,
+        "beta": 0.9,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.32904563089939914
+    },
+    {
+      "artifact": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\cells\\l80-cell-0015-final\\manifest.json",
+      "budget": 64,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 1.0,
+        "beta": 0.9,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.335821065803437
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0001\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.0,
+        "beta": 0.05,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.007550049871287767
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0002\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.0,
+        "beta": 0.05,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.003219365160582466
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0003\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.0,
+        "beta": 0.05,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.0018837450939078737
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0004\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.125,
+        "beta": 0.05,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3635808434115202
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0005\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.125,
+        "beta": 0.05,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.316832551068208
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0006\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.125,
+        "beta": 0.05,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.31195383441688285
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0007\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.25,
+        "beta": 0.05,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.356365663932297
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0008\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.25,
+        "beta": 0.05,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3087981020695113
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0009\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.25,
+        "beta": 0.05,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.306883035790303
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0010\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.5,
+        "beta": 0.05,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.36312167897758024
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0011\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.5,
+        "beta": 0.05,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3189405455206591
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0012\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.5,
+        "beta": 0.05,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.3151026708292055
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0013\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 1.0,
+        "beta": 0.05,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.36890863117261596
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0014\\manifest.json",
+      "budget": 32,
+      "error": 0.002070151949521537,
+      "params": {
+        "L": 60,
+        "alpha": 1.0,
+        "beta": 0.05,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.33345664526316754
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0015\\manifest.json",
+      "budget": 32,
+      "error": 0.0006579276009429091,
+      "params": {
+        "L": 80,
+        "alpha": 1.0,
+        "beta": 0.05,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.3201799954120536
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0016\\manifest.json",
+      "budget": 32,
+      "error": 0.0015247326345602108,
+      "params": {
+        "L": 40,
+        "alpha": 0.0,
+        "beta": 0.25,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.006025317231692862
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0017\\manifest.json",
+      "budget": 32,
+      "error": 0.0009803931293886903,
+      "params": {
+        "L": 60,
+        "alpha": 0.0,
+        "beta": 0.25,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.004199758289969879
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0018\\manifest.json",
+      "budget": 32,
+      "error": 0.0001758374558017417,
+      "params": {
+        "L": 80,
+        "alpha": 0.0,
+        "beta": 0.25,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.00202056270791362
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0019\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.125,
+        "beta": 0.25,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3792935530222175
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0020\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.125,
+        "beta": 0.25,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3531620095994475
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0021\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.125,
+        "beta": 0.25,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.3263593188059437
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0022\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.25,
+        "beta": 0.25,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3869522392430813
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0023\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.25,
+        "beta": 0.25,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3494834558833021
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0024\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.25,
+        "beta": 0.25,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.33186273319540366
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0025\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.5,
+        "beta": 0.25,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3783777261385164
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0026\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.5,
+        "beta": 0.25,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3381039015153182
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0027\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.5,
+        "beta": 0.25,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.328188627924232
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0028\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 1.0,
+        "beta": 0.25,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.37583233695006124
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0029\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 1.0,
+        "beta": 0.25,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.34309130273330274
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0030\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 1.0,
+        "beta": 0.25,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.33186235733031205
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0031\\manifest.json",
+      "budget": 32,
+      "error": 0.00045515906915705173,
+      "params": {
+        "L": 40,
+        "alpha": 0.0,
+        "beta": 0.75,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.008005208935415342
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0032\\manifest.json",
+      "budget": 32,
+      "error": 0.0002371510204307592,
+      "params": {
+        "L": 60,
+        "alpha": 0.0,
+        "beta": 0.75,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.0034565161810146128
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0033\\manifest.json",
+      "budget": 32,
+      "error": 0.00046224965212265934,
+      "params": {
+        "L": 80,
+        "alpha": 0.0,
+        "beta": 0.75,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.0023069749042185506
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0034\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.125,
+        "beta": 0.75,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.32888383888620193
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0035\\manifest.json",
+      "budget": 64,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.125,
+        "beta": 0.75,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3220912696041899
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0036\\manifest.json",
+      "budget": 64,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.125,
+        "beta": 0.75,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.29069596853438295
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0037\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.25,
+        "beta": 0.75,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3601107097627703
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0038\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.25,
+        "beta": 0.75,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3424829960740749
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0039\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.25,
+        "beta": 0.75,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.31294643174564796
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0040\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.5,
+        "beta": 0.75,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3854941083359372
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0041\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.5,
+        "beta": 0.75,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3558272027978612
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0042\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.5,
+        "beta": 0.75,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.3322983811478186
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0043\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 1.0,
+        "beta": 0.75,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3828643988279216
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0044\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 1.0,
+        "beta": 0.75,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3518260874517653
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0045\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 1.0,
+        "beta": 0.75,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.3361089904270943
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0046\\manifest.json",
+      "budget": 32,
+      "error": 0.000461021243782056,
+      "params": {
+        "L": 40,
+        "alpha": 0.0,
+        "beta": 1.0,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.008011071110034684
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0047\\manifest.json",
+      "budget": 32,
+      "error": 0.0006464379575658596,
+      "params": {
+        "L": 60,
+        "alpha": 0.0,
+        "beta": 1.0,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.003865803118148048
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0048\\manifest.json",
+      "budget": 32,
+      "error": 0.00015875008305155092,
+      "params": {
+        "L": 80,
+        "alpha": 0.0,
+        "beta": 1.0,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.002003475335151439
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0049\\manifest.json",
+      "budget": 64,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.125,
+        "beta": 1.0,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.319236493663064
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0050\\manifest.json",
+      "budget": 64,
+      "error": 0.002580248442271893,
+      "params": {
+        "L": 60,
+        "alpha": 0.125,
+        "beta": 1.0,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3127258527094319
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0051\\manifest.json",
+      "budget": 64,
+      "error": 0.006048843767877066,
+      "params": {
+        "L": 80,
+        "alpha": 0.125,
+        "beta": 1.0,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.2734933061096009
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0052\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.25,
+        "beta": 1.0,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.34570017202169645
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0053\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.25,
+        "beta": 1.0,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.33321662154650383
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0054\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.25,
+        "beta": 1.0,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.3026638050335429
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0055\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 0.5,
+        "beta": 1.0,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3777008468474896
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0056\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 0.5,
+        "beta": 1.0,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.35304136125778696
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0057\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 0.5,
+        "beta": 1.0,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.32641098049477024
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0058\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 40,
+        "alpha": 1.0,
+        "beta": 1.0,
+        "n_units": 8
+      },
+      "status": "success",
+      "value": 0.3836845275954194
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0059\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 60,
+        "alpha": 1.0,
+        "beta": 1.0,
+        "n_units": 12
+      },
+      "status": "success",
+      "value": 0.3538903854409219
+    },
+    {
+      "artifact": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0060\\manifest.json",
+      "budget": 32,
+      "error": 0.0001,
+      "params": {
+        "L": 80,
+        "alpha": 1.0,
+        "beta": 1.0,
+        "n_units": 16
+      },
+      "status": "success",
+      "value": 0.33548434691768064
+    }
+  ]
+}

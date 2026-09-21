@@ -1,0 +1,40 @@
+{
+  "run_id": "pentamer-r4-validation-20260729",
+  "run_dir": "results\\five_rounds_20260729\\round4_validation",
+  "axes": {
+    "alpha": [
+      0.14,
+      0.23,
+      0.33
+    ]
+  },
+  "cells": [
+    {
+      "cell_id": "cell-0001",
+      "params": {
+        "alpha": 0.14
+      }
+    },
+    {
+      "cell_id": "cell-0002",
+      "params": {
+        "alpha": 0.23
+      }
+    },
+    {
+      "cell_id": "cell-0003",
+      "params": {
+        "alpha": 0.33
+      }
+    },
+    {
+      "cell_id": "cell-0004",
+      "params": {
+        "alpha": 0.23
+      },
+      "settings": {
+        "init_mode": "shifted"
+      }
+    }
+  ]
+}

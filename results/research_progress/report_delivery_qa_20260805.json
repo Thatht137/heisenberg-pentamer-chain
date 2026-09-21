@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-05T20:28:00+08:00",
+  "current_report": {
+    "path": "results/research_progress/report.html",
+    "sections": 10,
+    "embedded_images": 5,
+    "external_resource_tags": 0,
+    "status": "pass"
+  },
+  "history_report": {
+    "path": "results/research_progress/report_history.html",
+    "sections": 157,
+    "embedded_images": 47,
+    "external_resource_tags": 0,
+    "status": "pass"
+  },
+  "scope": "0 <= alpha,beta <= 1；排除负 alpha 和 Fig. 9",
+  "note": "retry 终态验收尚未开始；本记录只覆盖离线 HTML 交付完整性。"
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "goal_id": "pentamer-negative-internal-boundaries-20260809",
+  "pattern": "finite_size_crossing",
+  "axes": {
+    "control": {
+      "name": "alpha",
+      "bounds": [-1.0, -0.025],
+      "initial_points": [-1.0, -0.5, -0.35, -0.25, -0.125, -0.05, -0.025]
+    },
+    "size": {
+      "name": "L",
+      "values": [40, 60, 80],
+      "initial_count": 2
+    },
+    "slice": {
+      "name": "beta",
+      "values": [0.05, 0.1, 0.25, 0.5, 0.75, 0.9, 1.0]
+    }
+  },
+  "observable": {
+    "name": "dominant_structure_factor_ratio",
+    "value_field": "observables.dominant_structure_factor_ratio.value",
+    "error_field": "observables.dominant_structure_factor_ratio.error",
+    "budget_field": "settings.budget"
+  },
+  "criteria": {
+    "sigma": 2.0,
+    "target_width": 0.025,
+    "max_statistics_multiplier": 4,
+    "final_pair_required": true
+  },
+  "execution": {
+    "controller": "local",
+    "runner": "uv",
+    "base_budget": 32,
+    "poll_seconds": 1800,
+    "max_actions": 240
+  }
+}

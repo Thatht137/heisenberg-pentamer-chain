@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "cell_id": "negb7-a0100-b0050-L060-ferro_j2",
+  "status": "success",
+  "accepted": true,
+  "params": {
+    "path_id": "negb7-a0100-b0050-L060",
+    "group": 0,
+    "role": "ridge",
+    "alpha": -0.1,
+    "beta": 0.05,
+    "L": 60,
+    "n_units": 12
+  },
+  "settings": {
+    "method": "finite_dmrg",
+    "boundary": "OBC",
+    "sectors": [
+      "Sz=0",
+      "Sz=1"
+    ],
+    "maxdim": 1000,
+    "nsweeps": 64,
+    "cutoff": 1e-11,
+    "threads": 8,
+    "init_mode_sz0": "ferro_j2",
+    "init_mode_sz1": "center",
+    "q_count": 401,
+    "noise_profile": "legacy",
+    "random_seed": 20260811
+  },
+  "observables": {
+    "energy_sz0": -12.684940078976258,
+    "energy_sz1": -12.68480229952515,
+    "spin_gap": 0.0001377794511068231,
+    "structure_factor_ratio": 0.0422070767793018,
+    "structure_factor_pi": 0.3960895945894389,
+    "structure_factor_q1": 0.3793718106591199,
+    "structure_factor_window_sites": 48.0,
+    "structure_factor_peak_q": 1.8928095737878503,
+    "structure_factor_peak_q_over_pi": 0.6025,
+    "structure_factor_peak": 0.619917076415306,
+    "dominant_structure_factor_ratio": 0.3743096538706219,
+    "structure_factor_peak_ratio": 0.3743096538706219,
+    "dominant_structure_factor_ratio_mode": "symmetric"
+  },
+  "diagnostics": {
+    "variance_per_site_sz0": 2.3720796586227758e-09,
+    "variance_per_site_sz1": 1.4840395579085452e-11,
+    "actual_maxdim_sz0": 239.0,
+    "actual_maxdim_sz1": 230.0,
+    "max_truncation_error_sz0": 9.999233219519837e-12,
+    "max_truncation_error_sz1": 9.999925492772896e-12,
+    "final_truncation_error_sz0": 9.993007509868431e-12,
+    "final_truncation_error_sz1": 9.829109115316311e-12,
+    "final_energy_change_sz0": 1.2404547842237434e-06,
+    "final_energy_change_sz1": 2.4868995751603507e-14,
+    "total_sz0": -4.191091917959966e-15,
+    "total_sz1": 1.0,
+    "algorithm_seconds_sz0": 177.22433710098267,
+    "algorithm_seconds_sz1": 122.75951790809631,
+    "measurement_seconds": 9.405840873718262,
+    "initial_seed_sz0": 20262138.0,
+    "initial_seed_sz1": -1.0,
+    "peak_rss_kb": 1272216
+  },
+  "acceptance": {
+    "execution_success": true,
+    "variance_sz0_per_site_le_1e-8": true,
+    "variance_sz1_per_site_le_1e-8": true,
+    "truncation_sz0_le_1e-9": true,
+    "truncation_sz1_le_1e-9": true,
+    "sz0_sector": true,
+    "sz1_sector": true,
+    "nonnegative_gap": true,
+    "all_sweeps_completed": true,
+    "fullq_file": true,
+    "fullq_count": true,
+    "measurement_files": true
+  },
+  "provenance": {
+    "source_commit": "uploaded-stage-b-negative-coarse-r7-remaining91-20260812",
+    "standard_sha256": "e0b83c639a8e0a8f992c51ccade05b83944c9c34e39a87c191383bad3c967a4b",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "hostname": "c104-ysu",
+    "platform": "Linux-6.8.0-57-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "julia_version": "1.12.3",
+    "julia_pkg_offline": true,
+    "negative_alpha_included": true,
+    "negative_alpha_bounds": [
+      -1.0,
+      0.0
+    ],
+    "noise_protocol": "legacy",
+    "code_sha256": {
+      "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+      "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+      "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+      "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+      "scripts/autoresearch_v5/negative_static_cell.jl": "c4c3a334a62f5940882848a71050095d201a9c5af58f6728c38de4f06d04bce3",
+      "scripts/autoresearch_v5/run_negative_static_cell.py": "70cb7aeec60340c9275e927a40d1728372e84f891379ba751f1c3dbc9110a2e2",
+      "scripts/autoresearch_v5/progress.py": "807cf897627bec8ce016f7cfe304d70324addc25f2effa2219faf286551e774e"
+    }
+  },
+  "timing": {
+    "started_at": "2026-08-12T13:52:39.113394+00:00",
+    "finished_at": "2026-08-12T13:59:25.018953+00:00"
+  },
+  "returncode": 0
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "fetched_at": "2026-08-05T22:14:00+08:00",
+  "source": "wangjieren@39.96.207.180:/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260805/round41_qpi_cv_low005_retry_20260805_2003/cell-l40-qpi-retry-005",
+  "destination": "D:/Project/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260805/round41_qpi_cv_low005_retry_fetch_20260805_2212/cell-l40-qpi-retry-005",
+  "non_clobbering": true,
+  "destination_absent_before_fetch": true,
+  "remote_checksum": "pass",
+  "local_checksum": "pass",
+  "file_count": 11,
+  "total_bytes": 17063,
+  "checksums_sha256": "4101b8950e555c1b52f28b389b3b327d946e59137ae44d9ce64015b8645b353e",
+  "manifest_sha256": "ce955f885f770e2e6d035aaaa3e993fcba2b1c3fa1c454e30c5782ff7d1fe246",
+  "spectrum_sha256": "878fcb866b9872122efbe99d2a9d999529c37b98bca4014d61cb64da54724639",
+  "validator": "results/research_progress/round41_low005_retry_validator_20260805.json",
+  "result_grade": "rejected_residual_audit_only",
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

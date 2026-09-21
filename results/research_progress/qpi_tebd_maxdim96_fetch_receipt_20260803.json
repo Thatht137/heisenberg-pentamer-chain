@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "fetched_at": "2026-08-03T14:07:23.633468+00:00",
+  "source": "wangjieren@39.96.207.180:/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round28_qpi_maxdim96",
+  "destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803\\round28_qpi_maxdim96",
+  "file_count": 13,
+  "total_bytes": 313232,
+  "overall_status_sha256": "97c13b1118eb9db1d5d41db63067b732060e7b2545a06fe7908f0fdfb6c35af4",
+  "cells": {
+    "cell-alpha023-maxdim096-dt00125-t30": {
+      "status": "pass",
+      "checksums_sha256": "3125983cb15b926c9e503e1aab217ac923077e66bd6bafa8577cd0b9c5db0474",
+      "manifest_sha256": "70d4e79970fcc28cb02dc64ad268472904bde97e915aa0d65e6943a929036d64"
+    }
+  },
+  "preview_sha256": "49a58b3f21d2d26ab2bfe9d74418b00b5e3e5ee197a4c94cbdb1ede09da405f9",
+  "non_clobbering": true,
+  "user_confirmed": true
+}

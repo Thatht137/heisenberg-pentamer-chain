@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "checks": {
+    "all_exports": true,
+    "editable_svg_text": true,
+    "nonblank_png": true,
+    "minimum_font_pt": true,
+    "source_data": true,
+    "scope": true,
+    "branch_guard": true
+  },
+  "min_font_pt": 5.2,
+  "png_std": 0.12683770060539246
+}

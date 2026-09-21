@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "reason": "Windows CRLF blocked remote sha256sum -c",
+  "launch_attempt_started_julia": false,
+  "physics_or_acceptance_changed": false,
+  "source_hashes_old_sha256": "e307faa0ae79ff7fc2d4a7c073d2a1c5e6d24715c477f4046f28a4c726c81e74",
+  "source_hashes_new_sha256": "b5f81e44e0975992e6cfd21dbfb379e98a245c97a6b6619cb609238da00794a6",
+  "contract_sha256": "fac1679b0ee57b99d36d6b5ca4eafefae1d58e5eba3c79cca0ca94ab3b91f543",
+  "upload_manifest_sha256": "656d4aa214a217cbf722f81f80599ed2aad1effcad02bccdd6cde10c6da414e2"
+}

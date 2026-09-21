@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "kind": "static_krylov_baseline_inventory",
+  "status": "baseline_verified_candidate_missing",
+  "audit_only": true,
+  "candidate_present": false,
+  "baseline_inventory": {
+    "name": "baseline_inventory.json",
+    "sha256": "f0b4475c01fc4493829e9a488fd0a227b234aa2dd7dedabe5b3cfe534e0a5141"
+  },
+  "measurement_files": [
+    {
+      "name": "gap_records.csv",
+      "sha256": "b635f2e4fecc32bf8e1d6a8f2d0397eed1f7977d863d5bf84026e03cd173749b"
+    },
+    {
+      "name": "entropy_records.csv",
+      "sha256": "ba32983a5e4f1aee0cdb5679e6592b5a5258689e17f7d8badf06ec83b4e0d29b"
+    },
+    {
+      "name": "entropy_fits.csv",
+      "sha256": "12fab54d57a5f33c013e76172932bc4eaf8dc34abd45a60b26bcb308ebecf9c4"
+    },
+    {
+      "name": "bond_correlations.csv",
+      "sha256": "1d6dc718d30312e6f940b4a0c0e60147cb33c51d93cbba6b924ab910e7f60044"
+    },
+    {
+      "name": "connected_quarter.csv",
+      "sha256": "ba16a86601e4c31fd36fba6247fecebf16bfc3ea49351f12296131e3c69a7397"
+    },
+    {
+      "name": "dimer_rms.csv",
+      "sha256": "3e5fde01142ccd8a472cf872fe8952c7d2f0275f3ba4bf1e8066da9003c2cbb6"
+    }
+  ],
+  "source_hashes": {
+    "name": "source_hashes.json",
+    "sha256": "3a21b7df47586b1c83e9716bf5e0f28ffd60e5b52333b5b5b5bd5d38cafdef12"
+  }
+}

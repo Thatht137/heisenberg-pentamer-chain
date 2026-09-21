@@ -1,0 +1,28 @@
+{
+  "schema_version": 1,
+  "status": "fail",
+  "acceptance_label": "rejected_under_practical_v2_k12",
+  "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_fetch_2052\\negdiag-a01000-b02500-L080-k12",
+  "run_spec": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_k12_r1\\parameter-scan.run_spec.json",
+  "cell_id": null,
+  "krylov_contract": {
+    "expected": 12,
+    "observed": {
+      "expected_krylovdim": 12,
+      "run_spec": 12,
+      "parent": null,
+      "children": {}
+    }
+  },
+  "practical_v2": {
+    "status": "fail",
+    "acceptance_label": "practical_v2_error",
+    "failures": [
+      "Practical V2 异常：[Errno 13] Permission denied: 'D:\\\\Project\\\\1x5_Heisenberg_Pentamer\\\\results\\\\autoresearch_v5_20260920\\\\static_krylov_k12_fetch_2052\\\\negdiag-a01000-b02500-L080-k12\\\\manifest.json'"
+    ]
+  },
+  "failures": [
+    "Practical V2 异常：[Errno 13] Permission denied: 'D:\\\\Project\\\\1x5_Heisenberg_Pentamer\\\\results\\\\autoresearch_v5_20260920\\\\static_krylov_k12_fetch_2052\\\\negdiag-a01000-b02500-L080-k12\\\\manifest.json'",
+    "父 manifest 不可读：[Errno 13] Permission denied: 'D:\\\\Project\\\\1x5_Heisenberg_Pentamer\\\\results\\\\autoresearch_v5_20260920\\\\static_krylov_k12_fetch_2052\\\\negdiag-a01000-b02500-L080-k12\\\\manifest.json'"
+  ]
+}

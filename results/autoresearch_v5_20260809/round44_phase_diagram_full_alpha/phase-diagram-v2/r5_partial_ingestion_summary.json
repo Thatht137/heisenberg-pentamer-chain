@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "status": "blocked_by_validation_failure",
+  "counts": {
+    "controller_success_total": 10,
+    "controller_failed_total": 1,
+    "controller_pending_total": 5,
+    "calibration_accepted_total": 5,
+    "r5_materialized": 2,
+    "r5_unmaterialized": 8
+  },
+  "accepted_calibration_key": {
+    "alpha": -0.25,
+    "beta": 0.5,
+    "L": 80
+  },
+  "failed_controller_key": {
+    "alpha": -0.1,
+    "beta": 0.5,
+    "L": 40
+  },
+  "failed_evidence": {
+    "validator_status": "fail",
+    "validator_artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/validation/nega-r5-a0100-b0500-L040.json",
+    "validator_sha256": "392e1c3c886668eadf9661b6ff00e7fdf40d11a570dd73bd3b865298f7e3386d",
+    "checks": {
+      "unique_run_spec_cell": true,
+      "terminal_acceptance": false,
+      "negative_alpha_range": true,
+      "beta_range": true,
+      "parent_checksums": true,
+      "children": true
+    },
+    "failures": [
+      "父 manifest: 非 accepted success",
+      "父 status: 非 accepted success",
+      "父 manifest: children_accepted 未通过",
+      "子 manifest center: 非 accepted success",
+      "子 status center: 非 accepted success",
+      "子 manifest center: variance/site sz0 超门",
+      "子 manifest center: variance_sz0_per_site_le_1e-8 未通过",
+      "子 manifest center: variance/site sz1 超门",
+      "子 manifest center: variance_sz1_per_site_le_1e-8 未通过",
+      "子 manifest ferro_j2: 非 accepted success",
+      "子 status ferro_j2: 非 accepted success",
+      "子 manifest ferro_j2: variance/site sz0 超门",
+      "子 manifest ferro_j2: variance_sz0_per_site_le_1e-8 未通过",
+      "子 manifest ferro_j2: variance/site sz1 超门",
+      "子 manifest ferro_j2: variance_sz1_per_site_le_1e-8 未通过"
+    ],
+    "receipt": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/receipts/nega-r5-a0100-b0500-L040.json",
+    "receipt_sha256": "16314936d37b0faf26c84e79eb27b010f742b28806518fa151a03593c8386344",
+    "manifest": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/cells/nega-r5-a0100-b0500-L040/manifest.json",
+    "manifest_sha256": "467cba33a9359d8e754a34568d12ad92056ed1a1cf33d25476212fd5b3d45596",
+    "checksums_sha256": "1de782430b1212fd4d02c7f75bad2fa48663e20b4b7e848f04d33105971e41e4",
+    "preview_sha256": "a09162b384bf0eddbb862c033154cc36e20238f0282e2456b5bd53c9d5d3ec35",
+    "diagnostics": {
+      "center": {
+        "variance_per_site_sz0": 3.7521125406669854e-08,
+        "variance_per_site_sz1": 4.256882135678097e-08,
+        "final_truncation_error_sz0": 9.965164980011925e-12,
+        "final_truncation_error_sz1": 9.987299602142405e-12,
+        "total_sz0": -7.216449660063518e-16,
+        "total_sz1": 1.0000000000000027
+      },
+      "ferro_j2": {
+        "variance_per_site_sz0": 2.1211983636248986e-08,
+        "variance_per_site_sz1": 4.256882135678097e-08,
+        "final_truncation_error_sz0": 9.987457775439249e-12,
+        "final_truncation_error_sz1": 9.987299602142405e-12,
+        "total_sz0": -1.27675647831893e-15,
+        "total_sz1": 1.0000000000000027
+      }
+    },
+    "thresholds": {
+      "variance_per_site_max": 1e-08,
+      "final_truncation_error_max": 1e-09,
+      "sector_tolerance": 1e-08
+    }
+  },
+  "audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r5_partial_ingestion_audit.json",
+    "sha256": "ac294dfc4eada9f4bee4c8a47c748b2007123a533d80ef2438cc933065a005ec"
+  },
+  "observations": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+    "sha256": "81dc8b1665690771e4ebc7c30d6f7e4468392fc53823a156fd2c0190c88afd92"
+  },
+  "action_index": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/action_index.json",
+    "sha256": "1af6008f62256f2d12203a392e3bf9fa38123ddb12d985e9be3db020d73523f4"
+  },
+  "calibration_aggregate": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/accepted_calibration_through_r5.json",
+    "sha256": "2588c76b36f8217a6844c3362b5df147c55d64c3b4c00aecb7316db8614413e6"
+  },
+  "controller": {
+    "status": "WAITING",
+    "reason": "5 registered cells remain pending",
+    "report": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/report.json",
+    "report_sha256": "4fc0c522d6ff334de6c0ea969804afbed8e7eef0f981643c2668840b76183424",
+    "state": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/state.json",
+    "state_sha256": "7bf781ed151369252afb6c5aafc9aab39dac59eaa6534e575e8b620bcd968f14",
+    "phase_boundary_ready": false,
+    "crossing": "not_assigned",
+    "phase_label": "not_assigned"
+  },
+  "interpretation": "R5 仅接入严格终态；失败项无 value/error，其余 action 保持 pending，不赋 crossing 或相名"
+}

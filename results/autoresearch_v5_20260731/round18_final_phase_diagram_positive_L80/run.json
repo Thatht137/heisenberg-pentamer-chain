@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "run_id": "pentamer-positive-phase-diagram-20260802-L80-final",
+  "cell_count": 15,
+  "accepted": true,
+  "negative_alpha_excluded": true,
+  "source_runs": [
+    "round18_phase_diagram_positive",
+    "round18b_phase_diagram_positive_L80_recovery",
+    "round18d_phase_diagram_positive_L80_retry0015_final"
+  ]
+}

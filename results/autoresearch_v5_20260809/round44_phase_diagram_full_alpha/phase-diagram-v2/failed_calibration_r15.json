@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "status": "failed_calibration",
+  "cell_id": "nega-r15-a0050-b0500-L080",
+  "params": {
+    "alpha": -0.05,
+    "beta": 0.5,
+    "L": 80
+  },
+  "budget": 128,
+  "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r15-a0050-L080-20260811-1734/validation.json",
+  "manifest": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r15-a0050-L080-20260811-1734/nega-r15-a0050-b0500-L080/manifest.json",
+  "receipt": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r15-a0050-L080-20260811-1734/fetch-receipt.json",
+  "strict_numerical_diagnostics": {
+    "center": {
+      "variance_per_site_sz0": 1.6967270255463518e-09,
+      "variance_per_site_sz1": 1.2517325842509309e-09,
+      "final_truncation_error_sz0": 9.980608372950924e-12,
+      "final_truncation_error_sz1": 9.984292049529481e-12,
+      "total_sz0": -1.7763568394002505e-15,
+      "total_sz1": 1.0000000000000027,
+      "spin_gap": -6.0939721144848136e-06
+    },
+    "ferro_j2": {
+      "variance_per_site_sz0": 1.4985275242906938e-10,
+      "variance_per_site_sz1": 1.2517325842509309e-09,
+      "final_truncation_error_sz0": 9.993641077777968e-12,
+      "final_truncation_error_sz1": 9.984292049529481e-12,
+      "total_sz0": -2.7755575615628914e-16,
+      "total_sz1": 1.0000000000000027,
+      "spin_gap": 2.6127803177899978e-05
+    }
+  },
+  "child_acceptance": {
+    "center": false,
+    "ferro_j2": true
+  },
+  "accepted_only_eligible": false,
+  "r14_failure_provenance": {
+    "record": {
+      "schema_version": 1,
+      "status": "failed_calibration",
+      "cell_id": "nega-r14-a0050-b0500-L080",
+      "params": {
+        "alpha": -0.05,
+        "beta": 0.5,
+        "L": 80
+      },
+      "budget": 64,
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r14-remaining4-20260811-1556/validation.json",
+      "manifest": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r14-remaining4-20260811-1556/nega-r14-a0050-b0500-L080/manifest.json",
+      "receipt": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r14-remaining4-20260811-1556/fetch-receipt.json",
+      "failed_gates": {
+        "center": [
+          "variance_sz1_per_site_le_1e-8"
+        ],
+        "ferro_j2": [
+          "variance_sz0_per_site_le_1e-8",
+          "variance_sz1_per_site_le_1e-8"
+        ]
+      },
+      "strict_numerical_diagnostics": {
+        "center": {
+          "variance_per_site_sz0": 7.161091275520448e-09,
+          "variance_per_site_sz1": 1.4322603902883202e-08,
+          "final_truncation_error_sz0": 9.979367927421334e-12,
+          "final_truncation_error_sz1": 9.975548709092927e-12,
+          "total_sz0": -4.191091917959966e-15,
+          "total_sz1": 1.0000000000000013,
+          "spin_gap": 0.0003844362576543858
+        },
+        "ferro_j2": {
+          "variance_per_site_sz0": 1.0457971200139583e-08,
+          "variance_per_site_sz1": 1.4322603902883202e-08,
+          "final_truncation_error_sz0": 9.981035885458928e-12,
+          "final_truncation_error_sz1": 9.975548709092927e-12,
+          "total_sz0": -6.328271240363392e-15,
+          "total_sz1": 1.0000000000000013,
+          "spin_gap": 0.0005180552523889048
+        }
+      },
+      "accepted_only_eligible": false,
+      "validation_summary": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r14-remaining4-20260811-1556/validation/summary.json",
+        "sha256": "1a04298a6829f3885d48c7dcdf3c6afd8bde5376419d75433984950970cafdc9"
+      },
+      "handoff_audit": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r14-remaining4-20260811-1556/handoff_audit.json",
+        "sha256": "fb19837b112e7a789ae7dc22eec0eeca25c998c0ca2c1c2ac7bece112f0ec1fa"
+      },
+      "r13_and_earlier_provenance_preserved": true,
+      "r6_half_difference": 0.011877542575884303,
+      "thresholds_relaxed": false,
+      "failure_handoff": {
+        "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r14-remaining4-20260811-1556/failure_handoff_summary.json",
+        "sha256": "c536e40cefbd0d92693d0153780dc586b9e06069ed52d591b9c6165a5a1bc94c"
+      }
+    },
+    "sha256": "f8b1d6bf94b153eaa190a06c756d99a5eb27e9d6ecab0a32477128587b975d1e",
+    "preserved": true
+  },
+  "thresholds_relaxed": false
+}

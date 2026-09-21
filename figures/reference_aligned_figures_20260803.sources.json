@@ -1,0 +1,28 @@
+{
+  "backend": "Python/matplotlib",
+  "archetype": "quantitative grid",
+  "reference_mapping": {
+    "Fig. 1": "chain + local multiplets",
+    "Fig. 2": "level flow + q=pi channel weights"
+  },
+  "scope": {
+    "alpha_min": 0.0,
+    "alpha_max": 1.0,
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "alpha_representative": 0.23,
+  "source_data": "results\\autoresearch_v4_20260730\\round2_local_spectral_channels_v4\\multiplet_scan.csv",
+  "source_sha256": "9ce8a9c56f22fd99be701e5795ecde3a9beda56c4903b74d7804072c40eecf9a",
+  "outputs": [
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\figures\\reference_aligned_fig1_pentamer_20260803.svg",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\figures\\reference_aligned_fig1_pentamer_20260803.pdf",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\figures\\reference_aligned_fig1_pentamer_20260803.png",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\figures\\reference_aligned_fig1_pentamer_20260803.tiff",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\figures\\reference_aligned_fig2_pentamer_positive_20260803.svg",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\figures\\reference_aligned_fig2_pentamer_positive_20260803.pdf",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\figures\\reference_aligned_fig2_pentamer_positive_20260803.png",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\figures\\reference_aligned_fig2_pentamer_positive_20260803.tiff"
+  ],
+  "interpretation": "仅复刻参考文献的证据组织和面板角色，不移植四聚体相名或激发命名。"
+}

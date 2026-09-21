@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "status": "accepted_with_initial_state_sensitivity",
+  "cell_id": "nega-r6-a0100-b0500-L040",
+  "accepted_key": {
+    "alpha": -0.1,
+    "beta": 0.5,
+    "L": 40
+  },
+  "counts": {
+    "validator_pass": 1,
+    "controller_success_total": 11,
+    "controller_failed_total": 0,
+    "controller_pending_total": 5,
+    "calibration_accepted_total": 5
+  },
+  "observable": {
+    "value": 0.1897161493859278,
+    "error": 0.011877542575884303
+  },
+  "initial_state_sensitivity": {
+    "kind": "initial_state_half_difference",
+    "center_rpi": 0.2015936919618121,
+    "ferro_j2_rpi": 0.1778386068100435,
+    "absolute_difference": 0.023755085151768607,
+    "half_difference": 0.011877542575884303,
+    "reported_as_observable_error": true,
+    "numerical_gates_passed": true,
+    "systematic_caution_required": true,
+    "interpretation": "validator 通过不消除双初态差异；Rpi 半差作为系统敏感性保留"
+  },
+  "handoff_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r6-a0100-L040-20260810-2142/handoff_audit.json",
+    "sha256": "2eb06e2ece97800380c7622b3510f499c5d237ec783b3b918ca520dee4b24386"
+  },
+  "ingestion_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r6_ingestion_audit.json",
+    "sha256": "dc1baaf44ffd51cc50d4de17f39a035763f5abd707ea1500e0d8a98803295c25"
+  },
+  "observations": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+    "sha256": "41d954a59a405407a17d2b695e50132bce695d8b95033440b7f6ff73ac9f61e4"
+  },
+  "action_index": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/action_index.json",
+    "sha256": "d1abcec372aeb6199575f37c9813e2ae4b4d694cf008d9228d6f8d75fee3470d"
+  },
+  "r5_failure": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r5-remaining10-20260810-2048/validation/nega-r5-a0100-b0500-L040.json",
+    "artifact_sha256": "392e1c3c886668eadf9661b6ff00e7fdf40d11a570dd73bd3b865298f7e3386d",
+    "preserved_in_observation": true
+  },
+  "controller": {
+    "status": "NOT_REEVALUATED",
+    "phase_boundary_ready": false,
+    "crossing": "not_assigned",
+    "phase_label": "not_assigned"
+  },
+  "r7_started": false,
+  "interpretation": "R6 仅替换 R5 failed observation；validator 通过但双初态 Rpi 半差作为系统敏感性保留，不据此赋 crossing 或相名"
+}

@@ -1,0 +1,48 @@
+{
+  "method": "finite_dmrg",
+  "boundary": "OBC",
+  "sectors": [
+    "Sz=0",
+    "Sz=1"
+  ],
+  "maxdim_by_L": {
+    "40": 800,
+    "60": 1000,
+    "80": 1200
+  },
+  "nsweeps": 32,
+  "cutoff": 1e-11,
+  "threads": 8,
+  "init_mode_sz0_default": "center",
+  "init_mode_sz1": "center",
+  "initialization_modes_by_role": {
+    "left": [
+      "center"
+    ],
+    "ridge": [
+      "center",
+      "domain"
+    ],
+    "right": [
+      "center"
+    ]
+  },
+  "string_margin": 3,
+  "schmidt_levels": 16,
+  "save_state_rule": "ridge_L80_center_only",
+  "offline": true,
+  "execution": "sequential_nice_10",
+  "acceptance": {
+    "variance_per_site_max": 1e-08,
+    "max_truncation_error": 1e-09,
+    "sector_tolerance": 1e-08,
+    "minimum_spin_gap": -1e-08
+  },
+  "initialization_validation": {
+    "energy_density_abs_max": 1e-10,
+    "spin_gap_abs_max": 1e-08,
+    "string_profile_abs_max": 1e-05,
+    "bond_correlation_abs_max": 1e-05,
+    "schmidt_probability_l1_max": 0.0001
+  }
+}

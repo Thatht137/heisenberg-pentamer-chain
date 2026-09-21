@@ -1,0 +1,5 @@
+method,observable,value,uncertainty,instance,tag
+tebd_dt,peak_omega,0.05,0.05,"alpha=0.23,beta=0.5,L=40,q/pi=1,eta=0.1,OBC,Sz=0",Agreement
+tebd_dt2,peak_omega,0.05,0.05,"alpha=0.23,beta=0.5,L=40,q/pi=1,eta=0.1,OBC,Sz=0",Agreement
+correction_vector_dmrg,peak_omega,0.2,0.1,"alpha=0.23,beta=0.5,L=40,q/pi=1,eta=0.1,OBC,Sz=0",NotEvaluable
+finite_dmrg_tebd_qpi,peak_omega,0.05,0.1,"alpha=0.23,beta=0.5,L=40,q/pi=1,eta=0.1,OBC,Sz=0",NotEvaluable

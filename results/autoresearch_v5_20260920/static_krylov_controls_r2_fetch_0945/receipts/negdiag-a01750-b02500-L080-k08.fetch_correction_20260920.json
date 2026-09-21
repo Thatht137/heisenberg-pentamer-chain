@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "status": "corrected_pass",
+  "cell_id": "negdiag-a01750-b02500-L080-k08",
+  "correction": {
+    "previous_local_assessment": "failed_no_success_artifact",
+    "corrected_assessment": "fetch_pass_and_validator_pass",
+    "reason": "此前本地存在性检查/状态判断有误；成功 receipt 记录 09:55:37，failure 记录 09:57:28；没有捕获足以定位竞态或传输失败的证据。后续核对 receipt、目录和 checksum 均通过。",
+    "old_failure_receipt_preserved": "receipts/negdiag-a01750-b02500-L080-k08.fetch_failure.json"
+  },
+  "fetch_receipt": {
+    "path": "receipts/negdiag-a01750-b02500-L080-k08.fetch.json",
+    "status": "pass",
+    "fetched_at_utc": "2026-09-20T01:55:37.302613+00:00",
+    "destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08",
+    "file_count": 42,
+    "total_bytes": 16921086,
+    "preview_sha256": "73400fe524669b56a130c52ccd68a176476a46e8ba9cedbe19735a6675e2a706",
+    "checksums_sha256": "1576d59cdbf0d3d26b8433ac6e4b1e78e8eca2711e4ccd41cef8f2a76ea0f730",
+    "manifest_sha256": "60a8c1bb43c8f089c744d7d615d72f945dea292b01ce4ea6b60df7cf7bf7477b",
+    "non_clobbering": true
+  },
+  "local_validation": {
+    "validator": "scripts/autoresearch_v5/validate_negative_phase_run_practical_v2.py",
+    "validation_path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\validation_negdiag-a01750-b02500-L080-k08.json",
+    "status": "pass",
+    "failures": [],
+    "child_checksums": [
+      {
+        "child": "start_center",
+        "entries": 16,
+        "failures": 0,
+        "result": "pass"
+      },
+      {
+        "child": "start_ferro_j2",
+        "entries": 16,
+        "failures": 0,
+        "result": "pass"
+      }
+    ]
+  },
+  "remote_write": false,
+  "retransferred": false
+}

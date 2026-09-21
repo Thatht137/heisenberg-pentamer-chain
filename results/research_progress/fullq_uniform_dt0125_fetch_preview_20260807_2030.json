@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "created_at": "2026-08-07T12:33:31.899398+00:00",
+  "cell_id": "fullq-uniform-dt0125",
+  "remote": "wangjieren@39.96.207.180",
+  "remote_dir": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260807/minimal_fullq_campaign/fullq-uniform-dt0125",
+  "local_destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_fetch_20260807_2030\\fullq-uniform-dt0125",
+  "destination_exists": false,
+  "file_count": 14,
+  "total_bytes": 6233034,
+  "remote_checksum_status": "pass",
+  "hashes": {
+    "checksums.sha256": "d11495b041047626141a8a51d4680b8fbb8e14222cb07e01856b069bc05cfda7",
+    "manifest.json": "1fdc64d03e8d4e61a8062bdc8fdd137c49517e9cd94e25156af3877a1aa24468",
+    "status.json": "73c3d8ea0b1f157753a945eb58d07948d683f6194719082c0695f18b8f807bab"
+  }
+}

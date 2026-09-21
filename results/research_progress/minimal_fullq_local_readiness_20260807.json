@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-07T22:53:16+08:00",
+  "status": "pass",
+  "checks": {
+    "required_files": true,
+    "six_pre_registered_cells": true,
+    "positive_scope_only": true,
+    "source_inventory": true,
+    "documents_current": true,
+    "synthetic_e2e_tests": true
+  },
+  "test_python": "D:\\Project\\1x5_Heisenberg_Pentamer\\.venv\\Scripts\\python.exe",
+  "test_summary": [
+    "----------------------------------------------------------------------",
+    "Ran 6 tests in 16.206s",
+    "",
+    "OK"
+  ],
+  "local_work_complete": true,
+  "compute_dependent_remaining": [
+    "六个生产 full-q run 的终态数据",
+    "三组真实 dt/dt2 交叉验收",
+    "基于真实数据导出最终 Fig.6/7"
+  ],
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  }
+}

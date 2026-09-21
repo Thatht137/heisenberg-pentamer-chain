@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "figure_contract": {
+    "core_conclusion": "L=10 严格 q=pi TEBD 在时域跟随 ED，频域 Agreement 不是偶然峰位重合。",
+    "archetype": "quantitative grid with dominant time-domain panel",
+    "backend": "Python/matplotlib",
+    "final_size_mm": [
+      183,
+      105
+    ],
+    "panel_map": {
+      "a": "复相关函数实部主面板",
+      "b": "复相关函数虚部",
+      "c": "逐时刻复误差",
+      "d": "eta=0.1 频谱叠加"
+    },
+    "reviewer_risk": "时域误差无预声明门槛，只作实现诊断。"
+  },
+  "source_sha256": {
+    "results\\autoresearch_v5_20260803\\round25_qpi_tebd_smoke\\time_domain_crosscheck\\coarse_time_domain.csv": "b01ee997406afec8e7cb68d73d960c2cb3b9fe3b91280b0fc4d479bcb45e8d26",
+    "results\\autoresearch_v5_20260803\\round25_qpi_tebd_smoke\\time_domain_crosscheck\\refined_time_domain.csv": "f2ba520813779433531926ef4e986590dd242421a92073eaff1747b9fb9a19f2",
+    "results\\autoresearch_v5_20260803\\round25_qpi_tebd_smoke\\time_domain_crosscheck\\summary.json": "cf2f7fcf4f7d028fbaa87a732d1c9839ea640ceab18a2e57ae660091b810e47e",
+    "results\\autoresearch_v5_20260730\\round1_cv_oracle\\cell-0001-exact\\exact_spectrum.csv": "9e52bd05dd2d3f5b5d05b775bdbf8318d6826139150c4694263b0e98ba1169ea",
+    "results\\autoresearch_v5_20260803\\round25_qpi_tebd_smoke\\L10-qpi-dt005-t30\\spectrum.csv": "3f71a66ffcf350307a19ed43d6dd413a1dac0d7068f87643379de67f9a9d2fb0",
+    "results\\autoresearch_v5_20260803\\round25_qpi_tebd_smoke\\L10-qpi-dt0025-t30\\spectrum.csv": "c95d60fff690312c40e274277c0a2ad458c527109a8b39cfa2a2f8ae324ed767",
+    "scripts\\autoresearch_v5\\plot_qpi_tebd_time_domain.py": "a152ed5defb51afab172704fa8b67aaa9143acff75c3d8f6831d3977fd4d5218"
+  },
+  "exports": [
+    "figures\\qpi_tebd_ed_diagnostic_20260803.svg",
+    "figures\\qpi_tebd_ed_diagnostic_20260803.pdf",
+    "figures\\qpi_tebd_ed_diagnostic_20260803.tiff",
+    "figures\\qpi_tebd_ed_diagnostic_20260803.png"
+  ],
+  "output_sha256": {
+    "figures\\qpi_tebd_ed_diagnostic_20260803.svg": "903f335ccaeb3d8600ff626d9c72f0392501f5b05f5604c79ccc7daaff36fd23",
+    "figures\\qpi_tebd_ed_diagnostic_20260803.pdf": "6f49e8f8cfe05e60f5fbdbd2f9d9d63fe4b020f37c0068c4580b702907e51b7f",
+    "figures\\qpi_tebd_ed_diagnostic_20260803.tiff": "3d76bf8d46d6cc12feb965c4734325c5d20b1b7634a6e99a9451e56ce81a8432",
+    "figures\\qpi_tebd_ed_diagnostic_20260803.png": "570281e4085215cc8c21c1ab313699b5e25284ae3aeebec3b71453aa5f1231a8"
+  },
+  "statistics": "确定性 ED/TEBD 数值比较；无采样误差或统计检验。",
+  "image_integrity": "无裁剪数据、平滑、插值或局部图像调整；仅坐标范围限制频谱主峰视图。"
+}

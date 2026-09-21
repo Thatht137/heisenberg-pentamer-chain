@@ -1,0 +1,14 @@
+{
+  "schema_version": 1,
+  "status": "armed",
+  "target_time_beijing": "2026-08-04T10:30:00+08:00",
+  "target_time_utc": "2026-08-04T02:30:00Z",
+  "process_id": 36184,
+  "script": "scripts/autoresearch_v5/schedule_round31_check_once_1030_20260804.ps1",
+  "action": "one read-only check; no loop, no remote write, no second Julia",
+  "scope": {
+    "fig9_excluded": true,
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true
+  }
+}

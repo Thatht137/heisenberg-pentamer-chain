@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-08-03T12:29:57+08:00",
+  "host": "39.96.207.180:6000",
+  "user": "wangjieren",
+  "hostname": "c104-ysu",
+  "resources": {
+    "logical_cpus": 80,
+    "memory_total_gib": 251,
+    "memory_used_gib": 9.7,
+    "memory_available_gib": 240,
+    "swap_used_mib": 2,
+    "load_average": [16.08, 14.07, 15.62],
+    "home_free_gib": 702
+  },
+  "anchor": {
+    "pid": 3745217,
+    "status": "running",
+    "elapsed": "15:35:52",
+    "cpu_percent": 1622,
+    "threads_observed": 24,
+    "stderr_empty": true,
+    "points_present": 0
+  },
+  "supervisor": {
+    "status": "waiting_for_anchor",
+    "tebd_production_files_present": false
+  },
+  "decision": {
+    "server_parallel_julia": "blocked_until_anchor_terminal",
+    "reason": "supervisor detects any other Julia process and aborts automatic TEBD handoff",
+    "safe_parallel_work": ["read-only diagnostics", "Python/local regression", "offline report rendering"]
+  },
+  "scope": {
+    "alpha_min": 0.0,
+    "alpha_max": 1.0,
+    "beta_min": 0.0,
+    "beta_max": 1.0,
+    "negative_alpha_excluded": true,
+    "reference_fig9_excluded": true
+  }
+}

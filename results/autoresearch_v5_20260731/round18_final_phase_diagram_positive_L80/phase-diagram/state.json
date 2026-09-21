@@ -1,0 +1,26 @@
+{
+  "actions": [],
+  "control_state": "HUMAN_REQUIRED",
+  "events": [
+    {
+      "at": "2026-08-01T20:08:50Z",
+      "kind": "INITIALIZED"
+    },
+    {
+      "at": "2026-08-01T20:09:12Z",
+      "kind": "REPORT_INGESTED",
+      "status": "HUMAN_REQUIRED"
+    }
+  ],
+  "goal_id": "pentamer-positive-structure-ratio-crossing-20260731",
+  "latest_report": {
+    "accepted_artifacts": [],
+    "authorized_action_ids": [],
+    "checked_at": "2026-08-01T20:09:01Z",
+    "path": "results\\autoresearch_v5_20260731\\round18_final_phase_diagram_positive_L80\\phase-diagram\\report.json",
+    "reason": "no significant crossing bracket exists inside the fixed bounds",
+    "status": "HUMAN_REQUIRED"
+  },
+  "next_wake_at": null,
+  "schema_version": 1
+}

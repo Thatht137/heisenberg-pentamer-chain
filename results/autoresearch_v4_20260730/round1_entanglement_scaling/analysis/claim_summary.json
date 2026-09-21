@@ -1,0 +1,32 @@
+{
+  "verdict": "c1_supported_with_matched_oracle",
+  "claim": "五聚体链与同尺寸 c=1 Heisenberg oracle 的纠缠标度在 3.3% 内一致",
+  "calibrated_c_range": [
+    1.0240221003381988,
+    1.0331008570675515
+  ],
+  "maximum_calibrated_deviation": 0.033100857067551503,
+  "max_relative_entropy_D_change": 0.00024000771293612177,
+  "largest_profile_rms_after_offset": 0.0020481428273882176,
+  "raw_c_estimates": {
+    "heisenberg_full": 1.156379862520124,
+    "pentamer_full": 1.1946570270651975,
+    "heisenberg_N12plus": 1.1411768511863996,
+    "pentamer_N12plus": 1.168590316009229
+  },
+  "raw_fit_chi2_per_dof": {
+    "heisenberg_full": 10566855916.675354,
+    "pentamer_full": 1728.7962377261472,
+    "heisenberg_N12plus": 2497029076.5970917,
+    "pentamer_N12plus": 96.58128167676388
+  },
+  "gates": {
+    "all_checksums": true,
+    "production_cells": true,
+    "entropy_D_convergence_2pct": true,
+    "matched_oracle_10pct": true,
+    "estimator_spread_5pct": true,
+    "raw_log_fit_quality": false
+  },
+  "scope": "校准后的 c=1 一致性成立；未校准绝对 log-L 拟合因有限尺寸修正不通过质量门槛"
+}

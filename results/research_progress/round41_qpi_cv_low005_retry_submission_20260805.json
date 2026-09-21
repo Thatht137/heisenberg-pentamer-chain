@@ -1,0 +1,116 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-08-05T20:33:36+08:00",
+  "status": "failed_acceptance",
+  "job_type": "qpi_cv_low005_residual_retry",
+  "cell_id": "cell-l40-qpi-retry-005",
+  "remote": {
+    "host": "c104-ysu",
+    "user": "wangjieren",
+    "project_root": "/home/wangjieren/code/1x5_Heisenberg_Pentamer",
+    "run_root": "results/autoresearch_v5_20260805/round41_qpi_cv_low005_retry_20260805_2003",
+    "run_dir": "results/autoresearch_v5_20260805/round41_qpi_cv_low005_retry_20260805_2003/cell-l40-qpi-retry-005",
+    "launcher_pid": 401884,
+    "python_pid": 401884,
+    "julia_pid": 401894,
+    "julia_threads": 4,
+    "julia_version": "1.12.3"
+  },
+  "parameters": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "n_units": 8,
+    "L": 40,
+    "q_over_pi": 1.0,
+    "eta": 0.1,
+    "omega_min": 0.05,
+    "omega_max": 0.05,
+    "omega_step": 0.05,
+    "dmrg_maxdim": 320,
+    "cv_maxdim": 800,
+    "nsweeps": 20,
+    "dmrg_cutoff": 1e-10,
+    "cv_cutoff": 1e-14,
+    "max_cv_residual": 1e-05,
+    "threads": 4
+  },
+  "resource_policy": {
+    "nice": 15,
+    "OPENBLAS_NUM_THREADS": 1,
+    "OMP_NUM_THREADS": 1,
+    "MKL_NUM_THREADS": 1,
+    "JULIA_NUM_THREADS": 4,
+    "JULIA_PKG_OFFLINE": true,
+    "no_dependency_download": true,
+    "expected_wall_minutes": [
+      30,
+      60
+    ],
+    "single_julia": true
+  },
+  "preflight": {
+    "high150_terminal": {
+      "status": "success",
+      "acceptance": "pass",
+      "omega": 1.5,
+      "max_cv_residual": 5.540316e-06,
+      "stderr_bytes": 0,
+      "remote_checksums": "pass"
+    },
+    "existing_julia_before_launch": 0,
+    "existing_cv_runner_before_launch": 0,
+    "old_runs_preserved": true,
+    "scope_guard": "0<=alpha,beta<=1; negative alpha and Fig.9 excluded",
+    "code_backup": "results/autoresearch_v5_20260805/code_backup_retry_20260805"
+  },
+  "post_launch_verification": {
+    "verified_at": "2026-08-05T20:09:38+08:00",
+    "status_json": "present",
+    "progress_json": "present",
+    "phase": "julia_linsolve",
+    "completed_points": 0,
+    "total_points": 1,
+    "stderr_bytes": 0,
+    "acceptance_status": "pending"
+  },
+  "health_check": {
+    "checked_at": "2026-08-05T20:33:36+08:00",
+    "julia_pid": 401894,
+    "state": "RNl",
+    "elapsed_seconds": 1440.063,
+    "cpu_percent": 136,
+    "rss_kib": 1537880,
+    "stderr_bytes": 0,
+    "phase": "julia_linsolve",
+    "completed_points": 0,
+    "total_points": 1,
+    "progress_updated_at": "2026-08-05T12:33:36.182720+00:00"
+  },
+  "acceptance_order": [
+    "natural termination",
+    "remote checksums",
+    "non-overwriting download",
+    "local checksums",
+    "validate_cv_run.py",
+    "accepted-only assembly only on pass",
+    "CV-TEBD reanalysis",
+    "report.html"
+  ],
+  "eta_note": "已运行 24:04；条件 ETA 约 10-40 分钟。若仍未终态，21:10 再做一次只读检查。",
+  "next_readonly_check": "2026-08-05T21:10:00+08:00",
+  "scope": {
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "terminal": {
+    "finished_at": "2026-08-05T21:28:11+08:00",
+    "returncode": 0,
+    "accepted": false,
+    "elapsed_seconds": 4715.091,
+    "max_cv_residual": 1.1767005759300015e-05,
+    "threshold": 1e-05,
+    "remote_checksums": "pass",
+    "local_checksums": "pass",
+    "validator": "fail"
+  }
+}

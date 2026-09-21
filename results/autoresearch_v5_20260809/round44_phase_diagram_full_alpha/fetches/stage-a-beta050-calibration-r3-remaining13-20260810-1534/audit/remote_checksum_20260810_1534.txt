@@ -1,0 +1,22 @@
+R3 远端 checksum 审计
+时间：2026-08-10 15:34 +08:00
+对象：stage-a-beta050-calibration-r3-remaining13
+方式：自动发现每个 cell 下的 checksums.sha256，并在所在目录执行 sha256sum -c
+
+nega-r3-a0350-b0500-L080
+- parent: rc=0，7/7 成功
+- start_center: rc=0，13/13 成功
+- start_ferro_j2: rc=0，13/13 成功
+
+nega-r3-a0250-b0500-L040
+- parent: rc=0，7/7 成功
+- start_center: rc=0，13/13 成功
+- start_ferro_j2: rc=0，13/13 成功
+
+nega-r3-a0250-b0500-L060
+- parent: rc=0，7/7 成功
+- start_center: rc=0，13/13 成功
+- start_ferro_j2: rc=0，13/13 成功
+
+汇总：9 个 checksum 目录，失败 0。
+注意：首次以 center/ferro_j2 为目录名的探测未找到目录；实际目录名为 start_center/start_ferro_j2。该探测未执行 checksum，也未改变远端状态。随后自动发现目录的审计严格通过。

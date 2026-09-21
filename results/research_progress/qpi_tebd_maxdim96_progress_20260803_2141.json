@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-08-03T21:41:03+08:00",
+  "target": "wangjieren@39.96.207.180:6000",
+  "run_root": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round28_qpi_maxdim96",
+  "cell_id": "qpi-alpha023-maxdim096-dt00125-t30",
+  "status": "running",
+  "phase": "tebd",
+  "completed_steps": 240,
+  "total_steps": 2400,
+  "percent": 10.0,
+  "elapsed_seconds": 270.012,
+  "eta_seconds": 728.9,
+  "updated_at_remote": "2026-08-03T13:41:03.140450+00:00",
+  "processes": {
+    "supervisor_pid": 268497,
+    "driver_pid": 268502,
+    "julia_pid": 268509,
+    "julia_count": 1
+  },
+  "negative_alpha_excluded": true,
+  "figure_9_excluded": true,
+  "next": "等待终态，不启动第二个 Julia。"
+}

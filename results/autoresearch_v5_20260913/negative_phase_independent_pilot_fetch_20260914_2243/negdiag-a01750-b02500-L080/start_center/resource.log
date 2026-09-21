@@ -1,0 +1,23 @@
+	Command being timed: "/home/wangjieren/.juliaup/bin/julia +release --threads=8 --project=. /home/wangjieren/code/1x5_Heisenberg_Pentamer/scripts/autoresearch_v5/negative_static_cell.jl /home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260913/negative_phase_independent_pilot_r1/cells/negdiag-a01750-b02500-L080/start_center -0.175 0.25 16 1200 64 1e-11 center 3 16 401 1 legacy 20260811 1"
+	User time (seconds): 6937.39
+	System time (seconds): 7.75
+	Percent of CPU this job got: 1302%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 8:53.35
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 1319180
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 42
+	Minor (reclaiming a frame) page faults: 2105144
+	Voluntary context switches: 253077
+	Involuntary context switches: 10306
+	Swaps: 0
+	File system inputs: 0
+	File system outputs: 16584
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

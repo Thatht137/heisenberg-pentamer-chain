@@ -1,0 +1,33 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-08T10:13:46+08:00",
+  "cell_id": "fullq-weak-eta020-dt0125",
+  "scope": "只读性能审计；不重启、不改变物理参数",
+  "remote": "wangjieren@39.96.207.180:6000",
+  "observed": {
+    "julia_threads_requested": 16,
+    "julia_environment": "JULIA_NUM_THREADS=16",
+    "os_threads": 73,
+    "threads_active_above_1_percent": 17,
+    "summed_thread_cpu_percent": 215.4,
+    "julia_process_cpu_snapshot": "约 135%--215%（采样时刻不同）",
+    "rss": "约 0.9--1.0 GiB",
+    "cpu_affinity": "0-79（80 个 CPU，全节点可见）",
+    "nice": 0,
+    "load_average": "39.18, 36.58, 34.62",
+    "stderr": "empty"
+  },
+  "code_facts": {
+    "thread_cap": "run_tebd_production.py 将 --threads 限制在 1..16；本任务实际传入 16",
+    "julia_launch": "--threads=16；未设置 nice；未设置 cpuset",
+    "tebd_structure": "05_tebd_pentamer_server.jl 在每个时间步顺序执行 apply(gates, sp_psi)，门序列不是跨步并行",
+    "blas_env": "未发现 OPENBLAS_NUM_THREADS、MKL_NUM_THREADS 或 OMP_NUM_THREADS 覆盖设置"
+  },
+  "verdict": {
+    "hard_resource_lock": false,
+    "process_healthy": true,
+    "underutilization_explanation": "算法的时间步/门序列依赖与量子数块稀疏收缩限制了可并行度；16 Julia threads 是资源保护上限，不等于每一步会占满 16 核",
+    "action_now": "不重启当前任务；保留可复现设置，等待终态",
+    "future_optimization": "若需提速，应先做独立小规模 benchmark，再评估增加 BLAS/Julia 线程或改写门并行；不能在当前 cell 中热修改"
+  }
+}

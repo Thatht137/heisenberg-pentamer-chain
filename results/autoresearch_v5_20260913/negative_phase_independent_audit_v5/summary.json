@@ -1,0 +1,142 @@
+{
+  "verdict": "new_thermodynamic_phase_not_confirmed",
+  "working_interpretation": "the strong-negative-alpha bulk supports a c≈1 half-integer effective-spin regime; the weak-|alpha| strip near alpha=0 is a momentum-reconstruction and algorithmically sensitive crossover candidate, not yet a distinct thermodynamic phase",
+  "dmrg_unique_points": 118,
+  "dmrg_sizes": [
+    40,
+    60,
+    80
+  ],
+  "single_pentamer_ground_spins": [
+    1.5
+  ],
+  "single_pentamer_alpha_interval": [
+    -1.0,
+    -0.001
+  ],
+  "single_pentamer_max_residual": 2.013809992004261e-15,
+  "negative_quartet_projection": {
+    "coefficient_sum_max_error": 8.881784197001252e-16,
+    "reflection_max_error": 3.0531133177191805e-16,
+    "minimum_jeff_over_beta": 0.10751475007841073,
+    "maximum_jeff_over_beta": 0.11111110288797126,
+    "jeff_antiferromagnetic_everywhere": true,
+    "dominant_folded_momenta": [
+      0.6
+    ]
+  },
+  "two_pentamer_min_spin_gap": 3.3274733192367734e-05,
+  "two_pentamer_ground_sector_crossing": false,
+  "two_pentamer_max_residual": 2.971870032581875e-12,
+  "three_pentamer_selected": {
+    "points": 6,
+    "minimum_spin_sector_gap": -7.105427357601002e-15,
+    "ground_sector_crossing": false,
+    "maximum_residual": 2.883706210142921e-12
+  },
+  "matched_L80_over_L60_dimer_rms": {
+    "count": 20,
+    "median": 0.920852809604494,
+    "maximum": 0.9498474288645274
+  },
+  "finite_size_diagnostics": {
+    "complete_L40_L60_L80_triplets": 13,
+    "positive_dimer_decay_exponents": 13,
+    "median_dimer_decay_exponent": 0.20966965295577245,
+    "stable_strong_negative_points": 5,
+    "stable_strong_negative_c_effective_range": [
+      0.9449476199491578,
+      1.070740260718758
+    ],
+    "stable_strong_negative_c_effective_median": 1.00176227765847,
+    "near_zero_initial_state_sensitive_triplets": 5
+  },
+  "beta_slice_summary": [
+    {
+      "beta": 0.05,
+      "q_reconstruction_present": true,
+      "minimum_accepted_spin_gap": 2.5486168453880964e-05,
+      "accepted_spin_sector_crossing": false
+    },
+    {
+      "beta": 0.1,
+      "q_reconstruction_present": true,
+      "minimum_accepted_spin_gap": 3.167059946918016e-05,
+      "accepted_spin_sector_crossing": false
+    },
+    {
+      "beta": 0.25,
+      "q_reconstruction_present": true,
+      "minimum_accepted_spin_gap": 3.295138491665739e-05,
+      "accepted_spin_sector_crossing": false
+    },
+    {
+      "beta": 0.5,
+      "q_reconstruction_present": true,
+      "minimum_accepted_spin_gap": 0.0001952958991253695,
+      "accepted_spin_sector_crossing": false
+    },
+    {
+      "beta": 0.75,
+      "q_reconstruction_present": true,
+      "minimum_accepted_spin_gap": 5.3659596765953665e-05,
+      "accepted_spin_sector_crossing": false
+    },
+    {
+      "beta": 0.9,
+      "q_reconstruction_present": true,
+      "minimum_accepted_spin_gap": 4.193867833812703e-05,
+      "accepted_spin_sector_crossing": false
+    },
+    {
+      "beta": 1.0,
+      "q_reconstruction_present": true,
+      "minimum_accepted_spin_gap": 3.537640266770836e-05,
+      "accepted_spin_sector_crossing": false
+    }
+  ],
+  "two_pentamer_fidelity_peaks": [
+    {
+      "beta": 0.05,
+      "alpha": -0.025,
+      "chi_f": 18.553625907160345
+    },
+    {
+      "beta": 0.1,
+      "alpha": -0.025,
+      "chi_f": 10.390411451693602
+    },
+    {
+      "beta": 0.25,
+      "alpha": -0.025,
+      "chi_f": 3.0380647839525103
+    },
+    {
+      "beta": 0.5,
+      "alpha": -0.025,
+      "chi_f": 1.0313793372656441
+    },
+    {
+      "beta": 0.75,
+      "alpha": -0.025,
+      "chi_f": 0.5552857259527125
+    },
+    {
+      "beta": 0.9,
+      "alpha": -0.025,
+      "chi_f": 0.4268843265037943
+    },
+    {
+      "beta": 1.0,
+      "alpha": -0.025,
+      "chi_f": 0.3690499410740942
+    }
+  ],
+  "diagnostic_status": {
+    "momentum_reconstruction": "present",
+    "spin_sector_crossing": "absent in accepted DMRG and two-pentamer ED",
+    "local_multiplet_change_inside_negative_alpha": "absent; isolated pentamer ground spin remains S=3/2",
+    "spontaneous_period_doubling": "evaluate from finite-size dimer columns; nonzero OBC signal alone is not phase proof",
+    "entanglement_or_energy_nonanalyticity": "strong-negative stable triplets are compatible with c≈1; near alpha=0 remains initial-state sensitive and no thermodynamic singularity is established"
+  }
+}

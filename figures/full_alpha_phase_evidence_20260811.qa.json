@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "backend": "python-matplotlib-only",
+  "archetype": "quantitative grid",
+  "final_width_mm": 183,
+  "editable_svg_text_nodes": 79,
+  "record_counts": {
+    "negative_controller": 14,
+    "negative_L80_calibration": 6,
+    "positive_phase_controller": 60,
+    "positive_all_accepted": 105,
+    "r16_starts": 3
+  },
+  "exports_bytes": {
+    "svg": 62646,
+    "pdf": 67401,
+    "png": 423835,
+    "tiff": 60989750
+  },
+  "review_risks": [
+    "negative 2D region remains unscanned",
+    "momentum shift may be crossover",
+    "R16 practical calibration is boundary-ineligible"
+  ]
+}

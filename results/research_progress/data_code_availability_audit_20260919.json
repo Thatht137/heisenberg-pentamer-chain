@@ -1,0 +1,178 @@
+{
+  "schema": "data_code_availability_audit/v1",
+  "created_at": "2026-09-19",
+  "status": "local_not_public_not_submission_ready",
+  "scope": {
+    "coverage": "partial_family_level",
+    "repository_relative_paths_only": true,
+    "public_deposit_executed": false,
+    "repository_route": "proposed_public_repository_to_be_selected_by_authors",
+    "target_journal": "unresolved",
+    "legacy_scope_warning": "static_delivery_manifest_20260804.json and source_data_inventory_20260804.json are historical positive-only indexes; negative alpha, Fig.9 and full-repository closure are not implied",
+    "not_rechecked": ["Stage B/C", "complete saved-state publication mapping", "full repository coverage", "complete figure-panel mapping"]
+  },
+  "inventory_counts": {
+    "static_delivery_manifest_files": 35,
+    "figure_source_sidecars_observed": 35,
+    "observed_directory_file_counts": {
+      "results/autoresearch_v3_20260729/round1_doublet_projection": 6,
+      "results/autoresearch_v4_20260730/round2_local_spectral_channels_v4": 12,
+      "results/autoresearch_v4_20260730/round1_entanglement_scaling": 206,
+      "results/autoresearch_v5_20260730/round3_cv_L40_probe": 12,
+      "results/autoresearch_v5_20260802/round21_cv_triplet_warmstart": 23,
+      "results/autoresearch_v5_20260803/round26_qpi_tebd_production": 26,
+      "results/autoresearch_v5_20260803/round31_qpi_cv_extension_completed_cells_20260804": 33,
+      "results/autoresearch_v5_20260805/round40_qpi_cv_anchor_assembly_accepted": 3,
+      "results/autoresearch_v5_20260919/static_krylov_baseline_v2": 9,
+      "results/autoresearch_v5_20260919/static_krylov_smoke_v4": 32,
+      "results/autoresearch_v5_20260919/static_krylov_controls_r2": 11
+    },
+    "interpretation": "bounded observed counts, not full-repository acceptance"
+  },
+  "families": [
+    {
+      "id": "local_ed_projection_spectra",
+      "paths": [
+        "results/autoresearch_v3_20260729/round1_doublet_projection/projection_scan.csv",
+        "results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/multiplet_scan.csv",
+        "results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/folded_transition_weights.csv",
+        "results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/checksums.sha256",
+        "figures/paper_fig1_model_local_multiplets_20260804.sources.json",
+        "figures/paper_fig2_level_flow_qpi_filter_20260804.sources.json",
+        "figures/paper_fig5_effective_chain_selection_rules_20260804.sources.json"
+      ],
+      "role": "generated ED/projection outputs; processed CSV; figure source sidecars",
+      "raw_processed_figure": "generated_numerical_and_processed; figures are products",
+      "access": "local-only / not published",
+      "proposed_public_route": "public research repository, not selected",
+      "check_level": "paths, sidecars and checksums entry inspected; no new numerical recomputation; panel mapping partial",
+      "sha256": null
+    },
+    {
+      "id": "positive_static_entanglement",
+      "paths": [
+        "results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/phase-diagram/observations_merged.json",
+        "results/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/calibrated_estimators.csv",
+        "results/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/claim_summary.json",
+        "data/entanglement_spectrum/spectrum_a0.14_b0.50_L080.csv",
+        "data/entanglement_spectrum/spectrum_a0.33_b0.50_L080.csv",
+        "figures/paper_fig3_positive_groundstate_diagnostics_20260804.sources.json",
+        "figures/paper_fig4_entanglement_spectrum_20260804.sources.json"
+      ],
+      "role": "generated spectra and processed finite-size/entanglement analysis",
+      "raw_processed_figure": "generated_spectrum_and_processed_analysis; figures are products",
+      "access": "local-only / not published",
+      "proposed_public_route": "public research repository, not selected",
+      "check_level": "paths and figure sidecars inspected; historical positive-only scope retained; no new recomputation",
+      "sha256": null
+    },
+    {
+      "id": "cv_accepted_dynamic_overlay",
+      "paths": [
+        "results/autoresearch_v5_20260805/round40_qpi_cv_anchor_assembly_accepted/manifest.json",
+        "results/autoresearch_v5_20260805/round40_qpi_cv_anchor_assembly_accepted/checksums.sha256",
+        "results/autoresearch_v5_20260805/round40_qpi_cv_anchor_assembly_accepted/spectrum.csv",
+        "results/autoresearch_v5_20260806/round43_handoff_final_v2/handoff_summary.json",
+        "results/autoresearch_v5_20260806/round43_handoff_final_v2/cross_method/cross-method-check.json",
+        "results/autoresearch_v5_20260806/round43_handoff_final_v2/accepted11/manifest.json",
+        "results/autoresearch_v5_20260806/round43_handoff_final_v2/accepted11/checksums.sha256",
+        "figures/round43_fig8_final_20260806_v2.source.csv",
+        "figures/round43_fig8_final_20260806_v2.sources.json"
+      ],
+      "role": "generated CV spectra and final_v2 accepted11 production_agreement evidence",
+      "raw_processed_figure": "generated_spectra_and_processed_overlay; final_v2 production-agreement figure, restricted to the stated q=pi comparison; round40 files are historical",
+      "access": "local-only / not published",
+      "proposed_public_route": "public research repository, not selected",
+      "check_level": "manifest/checksum and figure-source entry points inspected; final_v2 accepted11 status is recorded; round40 accepted7 is historical; no claim of full dynamic closure or panel-complete mapping",
+      "sha256": null
+    },
+    {
+      "id": "tebd_qpi_fullq_handoff",
+      "paths": [
+        "results/autoresearch_v5_20260803/round26_qpi_tebd_production/",
+        "results/autoresearch_v5_20260807/minimal_fullq_handoff_eta020_20260808_1533/handoff_summary.json",
+        "results/autoresearch_v5_20260807/minimal_fullq_handoff_eta020_20260808_1533/checksums.sha256",
+        "figures/fullq_minimal_eta020_20260808.source.csv",
+        "figures/fullq_minimal_eta020_20260808.sources.json"
+      ],
+      "role": "generated q=pi correlations/spectra and limited full-q handoff",
+      "raw_processed_figure": "generated_correlation_spectrum_and_processed_handoff; figure is product",
+      "access": "local-only / not published",
+      "proposed_public_route": "public research repository, not selected",
+      "check_level": "directory, handoff, checksum and sidecar entry points inspected; bounded scope only",
+      "sha256": null
+    },
+    {
+      "id": "stage1_joint_v2",
+      "paths": [
+        "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/joint_size_evidence.csv",
+        "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/qa.json",
+        "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/summary.json"
+      ],
+      "role": "Stage1 joint evidence and QA summary",
+      "raw_processed_figure": "processed_evidence_and_QA",
+      "access": "local-only / not published",
+      "proposed_public_route": "public research repository, not selected",
+      "check_level": "three paths confirmed by project state; no manifest exists; scientific pass not inferred from existence",
+      "sha256": null
+    },
+    {
+      "id": "near_zero_alpha_oracle_v2",
+      "paths": [
+        "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/summary.json",
+        "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/oracle_points.csv",
+        "results/autoresearch_v5_20260919/near_zero_alpha_oracle_v2/checksums.sha256"
+      ],
+      "role": "registered near-zero-alpha oracle result",
+      "raw_processed_figure": "processed_oracle_points_and_summary",
+      "access": "local-only / not published",
+      "proposed_public_route": "public research repository, not selected",
+      "check_level": "registered in existing project state; not numerically re-verified in this audit",
+      "sha256": null
+    },
+    {
+      "id": "stage3_static_baseline",
+      "paths": [
+        "results/autoresearch_v5_20260919/static_krylov_baseline_v2/baseline_inventory.json",
+        "results/autoresearch_v5_20260919/static_krylov_baseline_v2/manifest.json",
+        "results/autoresearch_v5_20260919/static_krylov_baseline_v2/source_hashes.json",
+        "results/autoresearch_v5_20260919/static_krylov_baseline_v2/gap_records.csv",
+        "results/autoresearch_v5_20260919/static_krylov_baseline_v2/entropy_records.csv",
+        "results/autoresearch_v5_20260919/static_krylov_baseline_v2/entropy_fits.csv",
+        "results/autoresearch_v5_20260919/static_krylov_baseline_v2/bond_correlations.csv",
+        "results/autoresearch_v5_20260919/static_krylov_baseline_v2/connected_quarter.csv",
+        "results/autoresearch_v5_20260919/static_krylov_baseline_v2/dimer_rms.csv"
+      ],
+      "role": "processed static-observable extraction and audit provenance",
+      "raw_processed_figure": "processed_measurements; not a figure source by itself",
+      "access": "local-only / not published",
+      "proposed_public_route": "public research repository, not selected",
+      "check_level": "directory and existing manifest inspected; candidate/Stage B/C/saved-state publication mapping not rechecked",
+      "sha256": null
+    }
+  ],
+  "code_environment": {
+    "paths": ["Project.toml", "Manifest.toml", "src/PentamerChain.jl", "src/hamiltonian.jl", "src/order_parameters.jl", "src/utils.jl", "src/exact_diag.jl", "src/dmrg_solver.jl", "src/spectral.jl", "scripts/02_dmrg_chain.jl", "scripts/05_tebd_pentamer_server.jl"],
+    "role": "selected code/environment entry points, not full closure",
+    "access": "local-only / not published",
+    "check_level": "paths and local environment audit entry inspected; no full source rehash in this audit",
+    "sha256": null
+  },
+  "exclusions": [
+    {"path": "references/", "reason": "third-party PDF/code; no redistribution without permission"},
+    {"path": "paper/", "reason": "manuscript/user content; not part of this package"},
+    {"path": "SSH/PID/credentials/user paths/environment dumps/remote logs", "reason": "operational data; only sanitized failure provenance could later be considered"},
+    {"path": "launcher and release payloads", "reason": "operational, not public scientific data"}
+  ],
+  "fair_audit": {
+    "findable": false,
+    "accessible_outside_workspace": false,
+    "interoperable": "partial_csv_json_julia_python",
+    "reusable": "incomplete_until_author_repository_license_readme_dictionary_and_mapping_are_resolved",
+    "checksum_coverage": "selected manifests/checksums only; no full public closure"
+  },
+  "english_current_statement": "The data and analysis outputs listed in this local audit remain in the project workspace and are not currently deposited in a public repository. No DOI, accession, or repository URL has been assigned for the proposed deposit, and the deposit licence remains unresolved. This bounded family-level inventory is not a claim that all raw checkpoints, processed files, figures, saved states, or manuscript claims have been released.",
+  "english_submission_template": "Data and code will be deposited at [UNRESOLVED: repository and public URL] under [UNRESOLVED: licence], with [UNRESOLVED: DOI/accession]. The release will include a README, data dictionary, checksums, versioned figure-to-source mapping, and environment information. Code will be released at [UNRESOLVED: code URL and commit/tag]. Author, data-owner, permission, and panel-mapping details are [UNRESOLVED]. This template is not submission-ready.",
+  "chinese_summary": "本轮未执行 public deposit；作者、仓库、许可证、DOI/accession、数据负责人、代码版本和逐图 source mapping 待确认。目标期刊未定，不声称具体期刊合规。",
+  "unresolved_author_fields": ["authors_and_affiliations", "data_owner_and_raw_data_permission", "public_repository", "licence", "DOI_or_accession", "code_release_url_and_commit", "complete_figure_panel_mapping", "README_and_data_dictionary", "target_journal_policy"]
+}

@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "status": "running",
+  "cell_id": "fullq-weak-eta020-dt025",
+  "scope": "0<=alpha,beta<=1；负 alpha 与 Fig.9 排除",
+  "params": {
+    "alpha": 1.0,
+    "beta": 0.1,
+    "L": 40,
+    "n_units": 8,
+    "tstep": 0.025,
+    "tmax": 30.0,
+    "q_points": 121,
+    "omega_points": 301,
+    "omega_max": 3.0,
+    "time_window": "exponential",
+    "window_eta": 0.20,
+    "threads": 16,
+    "max_negative_weight_fraction": 0.15
+  },
+  "remote": {
+    "target": "wangjieren@39.96.207.180:6000",
+    "project": "/home/wangjieren/code/1x5_Heisenberg_Pentamer",
+    "campaign_dir": "results/autoresearch_v5_20260807/minimal_fullq_replan_eta020",
+    "run_dir": "results/autoresearch_v5_20260807/minimal_fullq_replan_eta020/fullq-weak-eta020-dt025",
+    "launcher_pid": 528981,
+    "python_pid": 528983,
+    "launcher": "results/autoresearch_v5_20260807/minimal_fullq_replan_eta020/launch_weak_eta020_dt025.sh",
+    "launcher_sha256": "b5324bbd112257acefe21e921c3d917e70a64c7f76c4ef48bda4b06a5fea0bf5",
+    "log": "results/autoresearch_v5_20260807/minimal_fullq_replan_eta020/launcher_weak_eta020_dt025_202607_2325.log",
+    "pid_file": "results/autoresearch_v5_20260807/minimal_fullq_replan_eta020/launcher_weak_eta020_dt025_202607_2325.pid"
+  },
+  "started_at": "2026-08-07T23:26:02+08:00",
+  "initial_health": {
+    "status": "running",
+    "tebd_steps": "0/1200",
+    "stderr": "empty",
+    "other_fullq_julia": false
+  },
+  "eta": "0.7-1.2 h",
+  "next_check": "2026-08-08 00:45 +08:00",
+  "acceptance": "strict single-run gates and no threshold relaxation"
+}

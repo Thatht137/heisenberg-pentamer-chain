@@ -1,0 +1,166 @@
+{
+  "schema_version": 1,
+  "status": "blocked_by_validation_failure",
+  "run_id": "pentamer-negative-phase-stage-a-r7-remaining8-20260810",
+  "counts": {
+    "planned": 8,
+    "materialized": 1,
+    "validator_pass": 0,
+    "validator_fail": 1,
+    "unmaterialized": 7
+  },
+  "failure_record": {
+    "params": {
+      "alpha": -0.1,
+      "beta": 0.5,
+      "L": 60
+    },
+    "status": "failed",
+    "budget": 32,
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r7-remaining8-20260811-0616/validation/nega-r7-a0100-b0500-L060.json",
+    "controller_action_id": "act-6a4963c3064243f17ed8",
+    "failure_evidence": {
+      "validator_status": "fail",
+      "validator_checks": {
+        "unique_run_spec_cell": true,
+        "terminal_acceptance": false,
+        "negative_alpha_range": true,
+        "beta_range": true,
+        "parent_checksums": true,
+        "children": true
+      },
+      "validator_failures": [
+        "父 manifest: 非 accepted success",
+        "父 status: 非 accepted success",
+        "父 manifest: children_accepted 未通过",
+        "子 manifest center: 非 accepted success",
+        "子 status center: 非 accepted success",
+        "子 manifest center: variance/site sz0 超门",
+        "子 manifest center: variance_sz0_per_site_le_1e-8 未通过",
+        "子 manifest center: variance/site sz1 超门",
+        "子 manifest center: variance_sz1_per_site_le_1e-8 未通过",
+        "子 manifest ferro_j2: 非 accepted success",
+        "子 status ferro_j2: 非 accepted success",
+        "子 manifest ferro_j2: variance/site sz0 超门",
+        "子 manifest ferro_j2: variance_sz0_per_site_le_1e-8 未通过",
+        "子 manifest ferro_j2: variance/site sz1 超门",
+        "子 manifest ferro_j2: variance_sz1_per_site_le_1e-8 未通过"
+      ],
+      "thresholds": {
+        "variance_per_site_max": 1e-08,
+        "final_truncation_error_max": 1e-09,
+        "sector_tolerance": 1e-08
+      },
+      "children": {
+        "center": {
+          "status": "failed_acceptance",
+          "accepted": false,
+          "false_acceptance_flags": [
+            "nonnegative_gap",
+            "variance_sz0_per_site_le_1e-8",
+            "variance_sz1_per_site_le_1e-8"
+          ],
+          "energy_sz0": -16.22245715058653,
+          "energy_sz1": -16.222543839002327,
+          "spin_gap": -8.668841579861919e-05,
+          "dominant_rpi": 0.11932456462131469,
+          "q_peak_over_pi": 1.0,
+          "structure_factor_peak": 0.5996917972583266,
+          "variance_per_site_sz0": 2.534237826997317e-08,
+          "variance_per_site_sz1": 7.035126069846834e-08,
+          "final_truncation_error_sz0": 9.966956231192657e-12,
+          "final_truncation_error_sz1": 9.983836363039065e-12,
+          "total_sz0": -3.0253577421035516e-15,
+          "total_sz1": 1.0000000000000033,
+          "actual_maxdim_sz0": 71,
+          "actual_maxdim_sz1": 72,
+          "requested_sweeps": 32,
+          "q_count": 401,
+          "threshold_comparison": {
+            "variance_sz0_ratio_to_limit": 2.534237826997317,
+            "variance_sz1_ratio_to_limit": 7.035126069846834,
+            "truncation_sz0_ratio_to_limit": 0.009966956231192656,
+            "truncation_sz1_ratio_to_limit": 0.009983836363039063
+          }
+        },
+        "ferro_j2": {
+          "status": "failed_acceptance",
+          "accepted": false,
+          "false_acceptance_flags": [
+            "variance_sz0_per_site_le_1e-8",
+            "variance_sz1_per_site_le_1e-8"
+          ],
+          "energy_sz0": -16.22271293535117,
+          "energy_sz1": -16.222543839002327,
+          "spin_gap": 0.00016909634884143543,
+          "dominant_rpi": 0.0911261564161322,
+          "q_peak_over_pi": 1.0,
+          "structure_factor_peak": 0.5566270530828472,
+          "variance_per_site_sz0": 2.3748604386734464e-08,
+          "variance_per_site_sz1": 7.035126069846834e-08,
+          "final_truncation_error_sz0": 9.985531236610967e-12,
+          "final_truncation_error_sz1": 9.983836363039065e-12,
+          "total_sz0": -6.994405055138486e-15,
+          "total_sz1": 1.0000000000000033,
+          "actual_maxdim_sz0": 54,
+          "actual_maxdim_sz1": 72,
+          "requested_sweeps": 32,
+          "q_count": 401,
+          "threshold_comparison": {
+            "variance_sz0_ratio_to_limit": 2.3748604386734464,
+            "variance_sz1_ratio_to_limit": 7.035126069846834,
+            "truncation_sz0_ratio_to_limit": 0.009985531236610966,
+            "truncation_sz1_ratio_to_limit": 0.009983836363039063
+          }
+        }
+      },
+      "initial_state_differences": {
+        "dominant_rpi_absolute_difference": 0.02819840820518249,
+        "dominant_rpi_half_difference": 0.014099204102591245,
+        "energy_sz0_absolute_difference": 0.0002557847646400546,
+        "energy_sz1_absolute_difference": 0.0,
+        "spin_gap_absolute_difference": 0.0002557847646400546,
+        "structure_factor_peak_absolute_difference": 0.04306474417547934,
+        "q_peak_over_pi_absolute_difference": 0.0,
+        "systematic_caution_required": true,
+        "interpretation": "数值门失败时双初态差异仅作为失败诊断，不得形成accepted observable"
+      },
+      "parent_failed_diagnostics_only": {
+        "reported_rpi_mean": 0.10522536051872344,
+        "reported_rpi_uncertainty": 0.014099204102591245,
+        "reported_q_peak_over_pi": 1.0,
+        "reported_structure_factor_peak": 0.5781594251705868
+      },
+      "checksum_receipt": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r7-remaining8-20260811-0616/receipts/nega-r7-a0100-b0500-L060.json",
+      "checksum_receipt_sha256": "4023d9223d67a72d3e73197a24481f2f4fa3f9c6fd1f2548c2f7b5d4edf09b3c",
+      "manifest": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r7-remaining8-20260811-0616/cells/nega-r7-a0100-b0500-L060/manifest.json",
+      "manifest_sha256": "d8b113108f42e1d4f7059546993ea0b610c765de4b6a1424e3ce847b39223e74"
+    },
+    "accepted_only_eligible": false,
+    "controller_written": false
+  },
+  "unmaterialized_cells": [
+    "nega-r7-a0100-b0500-L080",
+    "nega-r7-a0050-b0500-L040",
+    "nega-r7-a0050-b0500-L060",
+    "nega-r7-a0050-b0500-L080",
+    "nega-r7-a0025-b0500-L040",
+    "nega-r7-a0025-b0500-L060",
+    "nega-r7-a0025-b0500-L080"
+  ],
+  "validation_summary": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r7-remaining8-20260811-0616/validation/summary.json",
+    "sha256": "6b6c77defbc27cfb1b8a3a8f3a6c37587bcf22fd79d04b3fab0dc603035276ca"
+  },
+  "handoff_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r7-remaining8-20260811-0616/handoff_audit.json",
+    "sha256": "673c50f730b8a656c6479f0ec3aef8f2850c403b78d8c1aa5badc24abe44ddc9"
+  },
+  "run_spec": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r7-remaining8/parameter-scan.run_spec.json",
+    "sha256": "ba1faf376298eaeed0857a40dc8f79a1f9f691ce73ede751e7046b4e62715406"
+  },
+  "controller_written": false,
+  "retry_started": false,
+  "interpretation": "R7唯一materialized cell未通过方差门；双初态数值仅作失败诊断，不得写入value/error或accepted-only"
+}

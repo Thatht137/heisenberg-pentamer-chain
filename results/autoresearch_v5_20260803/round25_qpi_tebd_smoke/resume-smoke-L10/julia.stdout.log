@@ -1,0 +1,12 @@
+After sweep 1 energy=-2.6342946239449043  maxlinkdim=4 maxerr=8.47E-16 time=19.656
+After sweep 2 energy=-2.6453519844293374  maxlinkdim=16 maxerr=6.16E-11 time=0.181
+After sweep 3 energy=-2.6453544910366613  maxlinkdim=16 maxerr=9.24E-11 time=0.030
+After sweep 4 energy=-2.6453544910413758  maxlinkdim=16 maxerr=2.81E-11 time=0.032
+step 1/4 (25.0%) t=0.050000 linkdim=24 elapsed=4.0s ETA=11.9s
+step 2/4 (50.0%) t=0.100000 linkdim=24 elapsed=4.2s ETA=4.2s
+checkpoint step=2
+controlled stop step=2
+resume checkpoint step=2
+step 3/4 (75.0%) t=0.150000 linkdim=24 elapsed=14.3s ETA=14.3s
+step 4/4 (100.0%) t=0.200000 linkdim=24 elapsed=14.6s ETA=0.0s
+TEBD_QPI_AUTOCORR_SUCCESS outdir=D:\Project\1x5_Heisenberg_Pentamer\results\autoresearch_v5_20260803\round25_qpi_tebd_smoke\resume-smoke-L10

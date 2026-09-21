@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-08-03",
+  "scope": {
+    "alpha_min": 0.0,
+    "beta_min": 0.0,
+    "negative_alpha_included": false
+  },
+  "guard": {
+    "status": "NO_SIGNIFICANT_CROSSING",
+    "sigma": 2.0,
+    "size_pair": [
+      60,
+      80
+    ],
+    "slices": [
+      {
+        "beta": 0.05,
+        "size_pair": [
+          60,
+          80
+        ],
+        "internal_count": 4,
+        "internal_signs": {
+          "-1": 4
+        },
+        "edge_signs": {
+          "-1": 1
+        },
+        "status": "NO_SIGNIFICANT_CROSSING"
+      },
+      {
+        "beta": 0.1,
+        "size_pair": [
+          60,
+          80
+        ],
+        "internal_count": 4,
+        "internal_signs": {
+          "-1": 4
+        },
+        "edge_signs": {
+          "-1": 1
+        },
+        "status": "NO_SIGNIFICANT_CROSSING"
+      },
+      {
+        "beta": 0.25,
+        "size_pair": [
+          60,
+          80
+        ],
+        "internal_count": 4,
+        "internal_signs": {
+          "-1": 4
+        },
+        "edge_signs": {
+          "-1": 1
+        },
+        "status": "NO_SIGNIFICANT_CROSSING"
+      },
+      {
+        "beta": 0.5,
+        "size_pair": [
+          60,
+          80
+        ],
+        "internal_count": 4,
+        "internal_signs": {
+          "-1": 4
+        },
+        "edge_signs": {
+          "-1": 1
+        },
+        "status": "NO_SIGNIFICANT_CROSSING"
+      },
+      {
+        "beta": 0.75,
+        "size_pair": [
+          60,
+          80
+        ],
+        "internal_count": 4,
+        "internal_signs": {
+          "-1": 4
+        },
+        "edge_signs": {
+          "-1": 1
+        },
+        "status": "NO_SIGNIFICANT_CROSSING"
+      },
+      {
+        "beta": 0.9,
+        "size_pair": [
+          60,
+          80
+        ],
+        "internal_count": 4,
+        "internal_signs": {
+          "-1": 4
+        },
+        "edge_signs": {
+          "0": 1
+        },
+        "status": "NO_SIGNIFICANT_CROSSING"
+      },
+      {
+        "beta": 1.0,
+        "size_pair": [
+          60,
+          80
+        ],
+        "internal_count": 4,
+        "internal_signs": {
+          "-1": 4
+        },
+        "edge_signs": {
+          "-1": 1
+        },
+        "status": "NO_SIGNIFICANT_CROSSING"
+      }
+    ]
+  },
+  "records": {
+    "merged_total": 105,
+    "merged_success": 105,
+    "merged_unique_keys": 105,
+    "mesh_difference_rows": 70,
+    "internal_difference_rows": 56,
+    "internal_difference_not_significant": 0,
+    "internal_delta_min": -0.04756756186278571,
+    "internal_delta_max": -0.0019150662792082884
+  },
+  "high_error_cells": [
+    {
+      "cell": "mesh-cell-0051",
+      "path": "results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0051\\manifest.json",
+      "alpha": 0.125,
+      "beta": 1.0,
+      "L": 80,
+      "error": 0.006048843767877066,
+      "status": "success",
+      "accepted": true
+    },
+    {
+      "cell": "mesh-cell-0050",
+      "path": "results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0050\\manifest.json",
+      "alpha": 0.125,
+      "beta": 1.0,
+      "L": 60,
+      "error": 0.002580248442271893,
+      "status": "success",
+      "accepted": true
+    },
+    {
+      "cell": "mesh-cell-0014",
+      "path": "results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0014\\manifest.json",
+      "alpha": 1.0,
+      "beta": 0.05,
+      "L": 60,
+      "error": 0.002070151949521537,
+      "status": "success",
+      "accepted": true
+    },
+    {
+      "cell": "mesh-cell-0016",
+      "path": "results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0016\\manifest.json",
+      "alpha": 0.0,
+      "beta": 0.25,
+      "L": 40,
+      "error": 0.0015247326345602108,
+      "status": "success",
+      "accepted": true
+    },
+    {
+      "cell": "mesh-cell-0017",
+      "path": "results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\cells\\mesh-cell-0017\\manifest.json",
+      "alpha": 0.0,
+      "beta": 0.25,
+      "L": 60,
+      "error": 0.0009803931293886903,
+      "status": "success",
+      "accepted": true
+    }
+  ],
+  "high_error_pair_evidence": {
+    "control": 0.125,
+    "delta": -0.039232546599831,
+    "error": 0.006576183768115955,
+    "sign": -1,
+    "absolute_sigma": 5.965853142676233
+  },
+  "interpretation": "在固定正区和最终 60/80 尺寸对上，alpha>0 的全部内部尺寸差显著为负；这支持‘当前数据未见可验收内部 crossing’，但不证明热力学极限单相。cell-0051 单独保留为高误差复核对象。",
+  "source_sha256": {
+    "results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\phase-diagram\\observations_merged.json": "7276ea8c8680082134bdb6463683005e9da3f0181333a303568608046ee93842",
+    "temp\\positive_phase_guard_recheck_20260803.json": "221f1006b176fb6f53e626f98b8682498f76872d038eac838fe68d5db2a416af",
+    "results\\autoresearch_v5_20260802\\round19_phase_diagram_positive_mesh\\phase-diagram\\phase-size-differences.csv": "ddb67f9daefb870c5df9cebe68f187e266372710a38cdd49a64464c05ec78171"
+  }
+}

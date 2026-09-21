@@ -1,0 +1,74 @@
+After sweep 1 energy=-2.634294623944907  maxlinkdim=4 maxerr=0.00E+00 time=32.873
+After sweep 2 energy=-2.6453519659213773  maxlinkdim=16 maxerr=0.00E+00 time=0.763
+After sweep 3 energy=-2.6453544911254605  maxlinkdim=30 maxerr=2.38E-15 time=0.084
+After sweep 4 energy=-2.645354491128436  maxlinkdim=32 maxerr=0.00E+00 time=0.065
+After sweep 5 energy=-2.645354491128435  maxlinkdim=32 maxerr=0.00E+00 time=0.083
+After sweep 6 energy=-2.645354491128434  maxlinkdim=32 maxerr=0.00E+00 time=0.050
+After sweep 7 energy=-2.6453544911284372  maxlinkdim=32 maxerr=0.00E+00 time=0.050
+After sweep 8 energy=-2.645354491128436  maxlinkdim=32 maxerr=0.00E+00 time=0.036
+After sweep 9 energy=-2.6453544911284355  maxlinkdim=32 maxerr=0.00E+00 time=0.038
+After sweep 10 energy=-2.645354491128434  maxlinkdim=32 maxerr=0.00E+00 time=0.049
+After sweep 11 energy=-2.6453544911284372  maxlinkdim=32 maxerr=0.00E+00 time=0.036
+After sweep 12 energy=-2.645354491128435  maxlinkdim=32 maxerr=0.00E+00 time=0.053
+omega 0.0000 (1/61): S=5.20297517e-01 residual=4.939e-08 D=32
+omega 0.0500 (2/61): S=8.44121804e-01 residual=0.000e+00 D=32
+omega 0.1000 (3/61): S=1.32221803e+00 residual=5.823e-07 D=32
+omega 0.1500 (4/61): S=1.55750260e+00 residual=8.817e-08 D=32
+omega 0.2000 (5/61): S=1.19567166e+00 residual=0.000e+00 D=32
+omega 0.2500 (6/61): S=7.68754968e-01 residual=0.000e+00 D=32
+omega 0.3000 (7/61): S=5.14077946e-01 residual=2.316e-07 D=32
+omega 0.3500 (8/61): S=3.76333809e-01 residual=9.878e-08 D=32
+omega 0.4000 (9/61): S=3.14604714e-01 residual=1.711e-07 D=32
+omega 0.4500 (10/61): S=3.06177225e-01 residual=1.638e-07 D=32
+omega 0.5000 (11/61): S=2.99127470e-01 residual=1.522e-07 D=32
+omega 0.5500 (12/61): S=2.60725665e-01 residual=0.000e+00 D=32
+omega 0.6000 (13/61): S=2.40779550e-01 residual=0.000e+00 D=32
+omega 0.6500 (14/61): S=2.38437185e-01 residual=9.878e-08 D=32
+omega 0.7000 (15/61): S=2.03140585e-01 residual=0.000e+00 D=32
+omega 0.7500 (16/61): S=1.51465754e-01 residual=0.000e+00 D=32
+omega 0.8000 (17/61): S=1.11212787e-01 residual=6.049e-08 D=32
+omega 0.8500 (18/61): S=8.55745431e-02 residual=0.000e+00 D=32
+omega 0.9000 (19/61): S=7.01056155e-02 residual=3.492e-08 D=32
+omega 0.9500 (20/61): S=6.10438455e-02 residual=6.533e-08 D=32
+omega 1.0000 (21/61): S=5.65056685e-02 residual=7.809e-08 D=32
+omega 1.0500 (22/61): S=5.56987945e-02 residual=0.000e+00 D=32
+omega 1.1000 (23/61): S=5.74529817e-02 residual=0.000e+00 D=32
+omega 1.1500 (24/61): S=5.91171902e-02 residual=0.000e+00 D=32
+omega 1.2000 (25/61): S=6.22997747e-02 residual=0.000e+00 D=32
+omega 1.2500 (26/61): S=7.06834853e-02 residual=4.620e-08 D=32
+omega 1.3000 (27/61): S=8.67502456e-02 residual=5.238e-08 D=32
+omega 1.3500 (28/61): S=1.16034076e-01 residual=0.000e+00 D=32
+omega 1.4000 (29/61): S=1.69920413e-01 residual=2.469e-08 D=32
+omega 1.4500 (30/61): S=2.59447591e-01 residual=8.903e-08 D=32
+omega 1.5000 (31/61): S=3.45096351e-01 residual=0.000e+00 D=32
+omega 1.5500 (32/61): S=3.40812048e-01 residual=3.492e-08 D=32
+omega 1.6000 (33/61): S=3.09145182e-01 residual=0.000e+00 D=32
+omega 1.6500 (34/61): S=2.74484794e-01 residual=0.000e+00 D=32
+omega 1.7000 (35/61): S=2.04919951e-01 residual=9.240e-08 D=32
+omega 1.7500 (36/61): S=1.37297546e-01 residual=6.533e-08 D=32
+omega 1.8000 (37/61): S=9.30739260e-02 residual=2.469e-08 D=32
+omega 1.8500 (38/61): S=6.63864978e-02 residual=0.000e+00 D=32
+omega 1.9000 (39/61): S=5.00127008e-02 residual=0.000e+00 D=32
+omega 1.9500 (40/61): S=3.98448707e-02 residual=3.492e-08 D=32
+omega 2.0000 (41/61): S=3.33757804e-02 residual=2.469e-08 D=32
+omega 2.0500 (42/61): S=2.83272764e-02 residual=0.000e+00 D=32
+omega 2.1000 (43/61): S=2.37043238e-02 residual=0.000e+00 D=32
+omega 2.1500 (44/61): S=2.00214218e-02 residual=2.469e-08 D=32
+omega 2.2000 (45/61): S=1.72199551e-02 residual=0.000e+00 D=32
+omega 2.2500 (46/61): S=1.50539055e-02 residual=0.000e+00 D=32
+omega 2.3000 (47/61): S=1.33346631e-02 residual=0.000e+00 D=32
+omega 2.3500 (48/61): S=1.19454659e-02 residual=0.000e+00 D=32
+omega 2.4000 (49/61): S=1.08010281e-02 residual=1.746e-08 D=32
+omega 2.4500 (50/61): S=9.84121362e-03 residual=0.000e+00 D=32
+omega 2.5000 (51/61): S=9.02447305e-03 residual=0.000e+00 D=32
+omega 2.5500 (52/61): S=8.32110034e-03 residual=1.746e-08 D=32
+omega 2.6000 (53/61): S=7.70807627e-03 residual=1.746e-08 D=32
+omega 2.6500 (54/61): S=7.16778336e-03 residual=3.024e-08 D=32
+omega 2.7000 (55/61): S=6.68880504e-03 residual=0.000e+00 D=32
+omega 2.7500 (56/61): S=6.26207931e-03 residual=0.000e+00 D=32
+omega 2.8000 (57/61): S=5.87990467e-03 residual=0.000e+00 D=32
+omega 2.8500 (58/61): S=5.53577223e-03 residual=0.000e+00 D=32
+omega 2.9000 (59/61): S=5.22438581e-03 residual=0.000e+00 D=32
+omega 2.9500 (60/61): S=4.94140881e-03 residual=0.000e+00 D=32
+omega 3.0000 (61/61): S=4.68319966e-03 residual=0.000e+00 D=32
+CV_DSF_CELL_SUCCESS outdir=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260730/round1_cv_oracle/cell-0001-cv-fix4

@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-08-03T11:43:14+08:00",
+  "host": "39.96.207.180:6000",
+  "user": "wangjieren",
+  "hostname": "c104-ysu",
+  "resources": {
+    "logical_cpus": 80,
+    "memory_total_gib": 251,
+    "memory_available_gib": 240,
+    "swap_used_mib": 2,
+    "load_average": [10.92, 16.53, 17.28],
+    "home_free_gib": 702
+  },
+  "anchor": {
+    "pid": 3745217,
+    "driver_pid": 3745209,
+    "status": "running",
+    "cpu_percent": 1626,
+    "dmrg_sweeps_logged": 16,
+    "cv_points_present": 0,
+    "stderr_empty": true
+  },
+  "supervisor": {
+    "pid": 3862840,
+    "status": "waiting_for_anchor",
+    "parallel_julia_guard": true
+  },
+  "local_regression": {
+    "py_compile": "passed",
+    "test_progress": "2/2",
+    "test_resumable_wrapper": "5/5",
+    "test_resume_oracle_analyzer": "2/2",
+    "test_positive_static_pipeline": "10/10",
+    "total": "19/19"
+  },
+  "decision": "不启动新的服务器 Julia 任务；保留余量给 anchor 结束后的 TEBD 自动接续。",
+  "scope": {
+    "alpha_min": 0.0,
+    "alpha_max": 1.0,
+    "beta_min": 0.0,
+    "beta_max": 1.0,
+    "negative_alpha_excluded": true,
+    "reference_fig9_excluded": true
+  }
+}

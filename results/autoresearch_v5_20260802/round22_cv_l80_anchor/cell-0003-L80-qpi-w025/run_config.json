@@ -1,0 +1,29 @@
+{
+  "schema_version": 2,
+  "cell_id": "cell-0003-L80-qpi-w025",
+  "alpha": 0.23,
+  "beta": 0.5,
+  "n_units": 16,
+  "q_over_pi": 1.0,
+  "eta": 0.1,
+  "omega_min": 0.25,
+  "omega_max": 0.25,
+  "omega_step": 0.05,
+  "dmrg_maxdim": 400,
+  "cv_maxdim": 800,
+  "nsweeps": 16,
+  "dmrg_cutoff": 1e-10,
+  "cv_cutoff": 1e-14,
+  "max_cv_residual": 1e-05,
+  "threads": 8,
+  "julia_version": "1.12.3",
+  "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+  "code_sha256": {
+    "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+    "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+    "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+    "scripts/autoresearch_v5/cv_dsf_resumable.jl": "bf1a848d271738821286827a69b601c85d12e99dee3c2a9adea2c1e720bb272e",
+    "scripts/autoresearch_v5/run_cv_dsf_resumable.py": "6de1386b5692462c3cea1731354c8409a0979de529d616ede0ee5e139837e3e1"
+  }
+}

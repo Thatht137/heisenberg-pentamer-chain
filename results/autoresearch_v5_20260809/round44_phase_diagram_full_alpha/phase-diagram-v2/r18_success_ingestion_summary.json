@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "status": "accepted",
+  "cell_id": "nega-r18-a0025-b0500-L040",
+  "accepted_key": {
+    "alpha": -0.025,
+    "beta": 0.5,
+    "L": 40
+  },
+  "counts": {
+    "controller_success_total": 15,
+    "controller_failed_total": 0,
+    "controller_pending_total": 1,
+    "calibration_accepted_total": 7
+  },
+  "observable": {
+    "value": 0.11523279357304228,
+    "error": 0.006419352058196437,
+    "definition": "中心峰用双侧邻点，q_peak=0/pi 时用单侧邻点；dq=2pi/M"
+  },
+  "ingestion_audit": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r18_success_ingestion_audit.json",
+    "sha256": "970cdbee2e3ff4b38993d32fe92f6138bf67425f079c18b56cf58017cb7965b5"
+  },
+  "observations": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+    "sha256": "5bde228766a44ea6a783a0a19c00b6ac3539d8f1e023d25feb5257c745917c4f"
+  },
+  "action_index": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/action_index.json",
+    "sha256": "b1d65257135c45ab3c9da17b03cfae549e128fceb13310cea15a357e153b3016"
+  },
+  "accepted_calibration": {
+    "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/accepted_calibration_through_r16.json",
+    "sha256": "31f5fa29d79c555df61a7f0b3588c13976e8a80c9366263e8757b933d657f13e"
+  },
+  "r17_failure_provenance_preserved": true,
+  "controller": {
+    "status": "WAITING_FOR_L60",
+    "crossing": "not_assigned",
+    "phase_label": "not_assigned"
+  },
+  "thresholds_relaxed": false
+}

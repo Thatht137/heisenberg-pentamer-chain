@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-08-05T20:53:33+08:00",
+  "mode": "read_only",
+  "remote": {
+    "host": "c104-ysu",
+    "address": "39.96.207.180:6000",
+    "cell": "results/autoresearch_v5_20260803/round31_qpi_cv_extension/cell-l40-qpi-high-150"
+  },
+  "process": {
+    "historical_julia_pid": 324653,
+    "present_at_check": false,
+    "interpretation": "终态后进程已退出，非宕机。"
+  },
+  "terminal": {
+    "status": "success",
+    "accepted": true,
+    "returncode": 0,
+    "phase": "finished",
+    "completed_points": 1,
+    "total_points": 1,
+    "elapsed_seconds": 77962.877,
+    "started_at": "2026-08-04T07:07:28.311722+00:00",
+    "finished_at": "2026-08-05T04:46:51.187878+00:00",
+    "stderr_bytes": 0,
+    "stdout_success_marker": "CV_DSF_CELL_SUCCESS"
+  },
+  "diagnostics": {
+    "omega": 1.5,
+    "max_cv_relative_residual": 5.540316362540025e-06,
+    "variance_per_site": 2.611944438513092e-10,
+    "max_dmrg_truncation": 9.99645287244195e-11,
+    "max_solution_dim": 600,
+    "resource_cpu_percent": 1607,
+    "resource_wall_time": "21:39:22",
+    "resource_max_rss_kib": 4131312,
+    "resource_exit_status": 0
+  },
+  "integrity": {
+    "remote_sha256sum_c": "pass",
+    "verified_files": [
+      "manifest.json",
+      "metrics.csv",
+      "progress.json",
+      "resource.log",
+      "spectrum.csv",
+      "spectrum.jld2",
+      "status.json",
+      "stderr.log",
+      "stdout.log",
+      "sweep_history.csv"
+    ]
+  },
+  "server_concurrency": {
+    "high150_julia_running": false,
+    "observed_retry_julia_pid": 401894,
+    "observed_retry_threads": 4,
+    "decision": "不启动第二个 Julia；仅保留已存在的 low-005 retry。"
+  },
+  "scope": {
+    "alpha_beta": "[0,1]",
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "raw_command_evidence": {
+    "process_probe": "pgrep 未返回 high-150/cv_dsf_cell 匹配进程；julia 列表仅见 retry-005 PID 401894。",
+    "status_json": "status=success; accepted=true; returncode=0",
+    "progress_json": "phase=finished; completed_points=1/1; elapsed_seconds=77962.877",
+    "stderr": "0 bytes",
+    "checksum": "sha256sum -c 对 10 个文件全部成功"
+  }
+}

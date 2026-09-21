@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "status": "running",
+  "cell_id": "fullq-agreement-eta020-dt0125",
+  "scope": "0<=alpha,beta<=1；排除负 alpha 与 Fig.9",
+  "parameters": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "L": 40,
+    "tstep": 0.0125,
+    "tmax": 30.0,
+    "q_points": 121,
+    "omega_points": 301,
+    "window": "exponential eta=0.20",
+    "threads": 16
+  },
+  "remote": {
+    "host": "wangjieren@39.96.207.180:6000",
+    "project": "/home/wangjieren/code/1x5_Heisenberg_Pentamer",
+    "run_dir": "results/autoresearch_v5_20260807/minimal_fullq_replan_eta020/fullq-agreement-eta020-dt0125",
+    "launcher": "results/autoresearch_v5_20260807/minimal_fullq_replan_eta020/launch_agreement_eta020_dt0125.sh",
+    "launcher_sha256": "d9ce32d7753d895e758b47ce37469f0a8bc1ba0e23bf80d849dc78001ba5b318",
+    "launcher_pid": 563670,
+    "python_pid": 563671,
+    "julia_pid": 563678,
+    "log": "results/autoresearch_v5_20260807/minimal_fullq_replan_eta020/launcher_agreement_eta020_dt0125_20260808_1305.log",
+    "pid_file": "results/autoresearch_v5_20260807/minimal_fullq_replan_eta020/launcher_agreement_eta020_dt0125_20260808_1305.pid"
+  },
+  "started_at": "2026-08-08T13:04:51+08:00",
+  "initial_health": {
+    "status": "running",
+    "phase": "tebd",
+    "tebd_completed": 0,
+    "tebd_total": 2400,
+    "stderr": "empty",
+    "guard": "unique output directory and no prior full-q Julia"
+  },
+  "prior_coarse": {
+    "cell_id": "fullq-agreement-eta020-dt025",
+    "validator": "pass",
+    "raw_negative_weight_fraction": 0.09178226098844636,
+    "variance_per_site": 2.608913973745075e-10,
+    "total_sz": -6.48353805736283e-16
+  },
+  "eta": "约 1.5-2.5 h；一次性检查约 2026-08-08 15:30 +08:00",
+  "acceptance": "远端 checksum -> 非覆盖 fetch -> 本地 validator；t0、variance/site<=1e-8、Sz=0、raw negative fraction<=0.15；通过后运行 agreement dt/dt2 crosscheck"
+}

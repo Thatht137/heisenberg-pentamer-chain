@@ -1,0 +1,55 @@
+{
+  "schema_version": 2,
+  "status": "pass",
+  "acceptance_label": "accepted_under_practical_v2",
+  "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-b-negative-coarse-r17-remaining35-20260905-1005\\negb17-a0025-b0750-L060",
+  "cell_id": "negb17-a0025-b0750-L060",
+  "params": {
+    "alpha": -0.025,
+    "beta": 0.75,
+    "L": 60,
+    "n_units": 12
+  },
+  "settings": {
+    "nsweeps": 64,
+    "maxdim": 1000,
+    "q_count": 401
+  },
+  "thresholds": {
+    "variance_per_site_max": 5e-08,
+    "final_truncation_error_max": 1e-09,
+    "sector_tolerance": 1e-08,
+    "spin_gap_min": -1e-08
+  },
+  "legacy_parent_accepted": true,
+  "legacy_parent_status": "success",
+  "children": [
+    {
+      "mode": "center",
+      "variance_per_site_sz0": 6.3652909905916506e-09,
+      "final_truncation_error_sz0": 9.994714709892901e-12,
+      "variance_per_site_sz1": 4.395065881605357e-09,
+      "final_truncation_error_sz1": 9.793667557227938e-12,
+      "total_sz0": 1.7763568394002505e-15,
+      "total_sz1": 0.9999999999999998,
+      "spin_gap": 0.00016863293584279404
+    },
+    {
+      "mode": "ferro_j2",
+      "variance_per_site_sz0": 5.071531935148717e-09,
+      "final_truncation_error_sz0": 9.998619523048566e-12,
+      "variance_per_site_sz1": 4.395065881605357e-09,
+      "final_truncation_error_sz1": 9.793667557227938e-12,
+      "total_sz0": -3.858025010572419e-15,
+      "total_sz1": 0.9999999999999998,
+      "spin_gap": 9.863539600019067e-05
+    }
+  ],
+  "failures": [],
+  "provenance": {
+    "policy": "docs/negative_alpha_practical_convergence_standard_20260829.md",
+    "original_manifest_sha256": "3f615fa34fd63c956005096f8422ffeaa0dbf819afc11e61757a080713fd0c55",
+    "original_run_spec_sha256": "2ea9a7d63f5353ea29581c243a565dd5060f3c721a92ef2cb39e135ec0a75023",
+    "original_files_unchanged": true
+  }
+}

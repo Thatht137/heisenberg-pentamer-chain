@@ -1,0 +1,9 @@
+target,beta,alpha_left,alpha_right,momentum_reconstruction,two_sigma_ratio_sign,width_le_0p025,dual_diagnostic,status
+1,0.05,-0.05,-0.025,1,0,1,0,single_diagnostic_or_not_evaluable
+2,0.1,-0.1,-0.05,0,0,0,0,no_supported_internal_boundary
+3,0.25,-0.25,-0.1,0,1,0,0,single_diagnostic_or_not_evaluable
+4,0.5,-0.35,-0.25,0,1,0,0,single_diagnostic_or_not_evaluable
+5,0.75,-0.75,-0.5,0,1,0,0,single_diagnostic_or_not_evaluable
+6,0.75,-0.5,-0.35,0,1,0,0,single_diagnostic_or_not_evaluable
+7,0.9,-0.75,-0.5,1,0,0,0,single_diagnostic_or_not_evaluable
+8,1.0,-0.75,-0.5,0,1,0,0,single_diagnostic_or_not_evaluable

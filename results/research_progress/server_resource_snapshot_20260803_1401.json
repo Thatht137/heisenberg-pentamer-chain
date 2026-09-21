@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "timestamp": "2026-08-03T14:01:13+08:00",
+  "host": "39.96.207.180:6000",
+  "user": "wangjieren",
+  "anchor": {
+    "driver_pid": 3745209,
+    "julia_pid": 3745217,
+    "status": "running",
+    "status_file": "results/autoresearch_v5_20260802/round22_cv_l80_anchor/cell-0003-L80-qpi-w025/status.json",
+    "elapsed": "17:07:07",
+    "cpu_percent": 1622,
+    "requested_julia_threads": 8,
+    "os_threads": 57,
+    "points_completed": 0,
+    "stderr_empty": true,
+    "last_dmrg_sweep": 16,
+    "energy": -22.487137396523156,
+    "output_files": [
+      "attempt-0001.json",
+      "ground_state.jld2",
+      "source_state.jld2",
+      "run_config.json",
+      "status.json",
+      "stderr.log",
+      "stdout.log"
+    ]
+  },
+  "server": {
+    "cpu_cores": 80,
+    "memory_total_gib": 251,
+    "memory_available_gib": 239,
+    "load_average": [14.56, 16.37, 17.22],
+    "home_free_gib": 701,
+    "home_used_percent": 80,
+    "uptime_days": 93
+  },
+  "supervisor": {
+    "status": "waiting_for_anchor",
+    "last_log": "2026-08-03T14:00:21+08:00 anchor still running",
+    "tebd_status_json_present": false,
+    "parallel_julia_guard": true
+  },
+  "local_checks": {
+    "python_unittest": "21/21 passed",
+    "python_compileall": "pass",
+    "heartbeat_plot": "pass",
+    "julia_project_test": "blocked_by_windows_acl",
+    "plot_backend": "D:/program/Anaconda3_2025.06/python.exe"
+  },
+  "decision": "约64核空闲但不启动第二个Julia；直连服务器的supervisor检测到其他Julia会放弃自动TEBD。继续本机回归、离线分析和报告渲染，anchor终态后再按顺序接TEBD。",
+  "scope": {
+    "negative_alpha_excluded": true,
+    "reference_fig9_excluded": true
+  }
+}

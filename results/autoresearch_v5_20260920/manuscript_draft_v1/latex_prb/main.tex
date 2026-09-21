@@ -1,0 +1,93 @@
+\documentclass[
+  aps,
+  prb,
+  reprint,
+  amsmath,
+  amssymb,
+  superscriptaddress,
+  longbibliography,
+  nofootinbib,
+  floatfix,
+  showkeys
+]{revtex4-2}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{booktabs}
+\usepackage{siunitx}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage{hyperref}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!50!black,
+  citecolor=green!35!black,
+  urlcolor=blue!60!black
+}
+
+\graphicspath{{figures/}}
+\sisetup{separate-uncertainty=true}
+
+\newcommand{\Heff}{H_{\mathrm{eff}}}
+\newcommand{\Jeff}{J_{\mathrm{eff}}}
+\newcommand{\ceff}{c_{\mathrm{eff}}}
+\newcommand{\qpeak}{q_{\mathrm{peak}}}
+\newcommand{\Szz}{S^{zz}(q,\omega)}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+
+\begin{document}
+
+\title{Local multiplets, effective-chain dynamics, and momentum reconstruction in a spin-\texorpdfstring{$1/2$}{1/2} Heisenberg pentamer chain}
+
+\author{Author Name}
+\email{corresponding.author@example.edu}
+\affiliation{Department and Institution, City, Postal Code, Country}
+
+\date{\today}
+
+\begin{abstract}
+Clusterized quantum spin chains connect local few-spin multiplets to extended many-body excitations.
+We investigate a spin-$1/2$ Heisenberg chain with a five-site unit cell using exact diagonalization, low-energy projection, finite-size density-matrix renormalization group calculations, entanglement diagnostics, correction-vector spectra, and real-time matrix-product-state dynamics.
+For positive intra-cell and inter-cell couplings, the isolated pentamer retains an even-reflection-parity spin-$1/2$ ground-state doublet.
+Projecting the inter-cell exchange onto this doublet gives an antiferromagnetic effective Heisenberg chain, and the leading correction to the projected energy is quadratic in the inter-cell coupling.
+Matched-size entanglement estimates, small finite-size spin gaps, algebraic correlations, and a dominant response at $q=\pi$ are consistent with a $c=1$ effective-chain description at the tested positive-coupling points.
+Reflection parity suppresses the lowest excited doublet at $q=\pi$, whereas spin-$3/2$ multiplets carry $84.1\%$--$97.6\%$ of the isolated-pentamer inelastic weight.
+Correction-vector and time-evolution calculations connect these local selection rules to the collective spectrum.
+In the negative-$\alpha$ region, 96 parameter--size records at 48 coupling points were evaluated, with 89 accepted and seven retained as bounded records.
+A further 29 $L=60,80$ refinement cells passed the complete numerical and provenance chain.
+The dominant finite-size momentum reconstructs from approximately $0.60\pi$ to $\pi$, but none of eight candidate intervals satisfies the predeclared momentum and finite-size-flow criteria simultaneously.
+A final $k=8\rightarrow12$ Krylov-subspace control leaves $\qpeak/\pi=1$ unchanged at the most solver-sensitive $L=80$ point.
+We therefore identify a robust finite-size momentum reconstruction, retain crossover as the working interpretation, and withhold a separate thermodynamic phase label.
+\end{abstract}
+
+\keywords{Heisenberg chain, pentamer, matrix-product states, dynamical structure factor, finite-size scaling}
+
+\maketitle
+
+\input{sections/introduction}
+\input{sections/model_methods}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\section*{Data and code availability}
+All quantitative claims are linked to source-data manifests, SHA-256 records, non-overwriting transfer receipts, and independent validator outputs in the project archive.
+The final submission will replace this internal statement with a public repository or archival DOI and an exact release identifier.
+
+\begin{acknowledgments}
+[Add funding, computing resources, institutional support, and individual acknowledgments.]
+\end{acknowledgments}
+
+\section*{Author contributions}
+[Add a CRediT author-contribution statement.]
+
+\section*{Competing interests}
+The authors declare no competing interests. [Confirm before submission.]
+
+\clearpage
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,25 @@
+After sweep 1 energy=-2.6716579159353384  maxlinkdim=35 maxerr=9.79E-13 time=26.799
+After sweep 2 energy=-2.672353599204751  maxlinkdim=29 maxerr=8.98E-13 time=0.090
+After sweep 3 energy=-2.6723536034785926  maxlinkdim=25 maxerr=8.60E-13 time=0.031
+After sweep 4 energy=-2.6723536034785935  maxlinkdim=25 maxerr=8.53E-13 time=5.534
+After sweep 5 energy=-2.6723536034785993  maxlinkdim=25 maxerr=8.53E-13 time=0.035
+After sweep 6 energy=-2.6723536034785953  maxlinkdim=25 maxerr=8.53E-13 time=0.023
+After sweep 7 energy=-2.672353603478596  maxlinkdim=25 maxerr=8.53E-13 time=0.034
+After sweep 8 energy=-2.672353603478593  maxlinkdim=25 maxerr=8.53E-13 time=0.026
+After sweep 9 energy=-2.672353603478594  maxlinkdim=25 maxerr=8.53E-13 time=0.025
+After sweep 10 energy=-2.6723536034785926  maxlinkdim=25 maxerr=8.53E-13 time=0.025
+After sweep 11 energy=-2.6723536034785944  maxlinkdim=25 maxerr=8.53E-13 time=0.026
+After sweep 12 energy=-2.672353603478594  maxlinkdim=25 maxerr=8.53E-13 time=0.025
+After sweep 1 energy=-2.5112689205244028  maxlinkdim=30 maxerr=8.74E-13 time=0.044
+After sweep 2 energy=-2.5181396547685444  maxlinkdim=26 maxerr=8.34E-13 time=0.040
+After sweep 3 energy=-2.5196885714232424  maxlinkdim=25 maxerr=9.94E-13 time=0.028
+After sweep 4 energy=-2.5197615419044213  maxlinkdim=21 maxerr=5.50E-13 time=0.061
+After sweep 5 energy=-2.5197630364118426  maxlinkdim=21 maxerr=6.01E-13 time=0.175
+After sweep 6 energy=-2.5197630806150433  maxlinkdim=20 maxerr=5.39E-13 time=0.019
+After sweep 7 energy=-2.519763081032264  maxlinkdim=20 maxerr=1.19E-13 time=0.029
+After sweep 8 energy=-2.5197630810356006  maxlinkdim=20 maxerr=5.76E-14 time=0.037
+After sweep 9 energy=-2.5197630810356255  maxlinkdim=20 maxerr=3.76E-14 time=0.046
+After sweep 10 energy=-2.519763081035623  maxlinkdim=20 maxerr=3.75E-14 time=0.022
+After sweep 11 energy=-2.519763081035623  maxlinkdim=20 maxerr=3.75E-14 time=0.025
+After sweep 12 energy=-2.5197630810356224  maxlinkdim=20 maxerr=3.75E-14 time=0.027
+POSITIVE_STATIC_SUCCESS outdir=D:\Project\1x5_Heisenberg_Pentamer\results\autoresearch_v5_20260731\round17_phase_diagram_positive\local_structure_ratio_smoke

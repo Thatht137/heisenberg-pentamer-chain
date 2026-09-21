@@ -1,0 +1,16 @@
+{
+  "job_type": "negative_static_cell",
+  "cell_id": "negb19-a1000-b1000-L060-ferro_j2",
+  "phase": "finished",
+  "requested_sweeps": 32,
+  "status": "success",
+  "finished_at": "2026-09-06T13:07:58.717194+00:00",
+  "accepted": true,
+  "returncode": 0,
+  "last_sweep": 32,
+  "stdout_bytes": 5616,
+  "schema_version": 1,
+  "started_at": "2026-09-06T13:00:13.792050+00:00",
+  "updated_at": "2026-09-06T13:07:58.718825+00:00",
+  "elapsed_seconds": 464.927
+}

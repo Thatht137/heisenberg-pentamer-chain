@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "status": "fail",
+  "acceptance_label": "rejected_under_practical_v2",
+  "run_dir": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260809\\round44_phase_diagram_full_alpha\\fetches\\stage-b-negative-coarse-r7-remaining91-20260813-restore\\negb7-a0025-b0050-L060",
+  "cell_id": "negb7-a0025-b0050-L060",
+  "params": {
+    "alpha": -0.025,
+    "beta": 0.05,
+    "L": 60,
+    "n_units": 12
+  },
+  "settings": {
+    "nsweeps": 64,
+    "maxdim": 1000,
+    "q_count": 401
+  },
+  "thresholds": {
+    "variance_per_site_max": 5e-08,
+    "final_truncation_error_max": 1e-09,
+    "sector_tolerance": 1e-08,
+    "spin_gap_min": -1e-08
+  },
+  "legacy_parent_accepted": false,
+  "legacy_parent_status": "failed",
+  "children": [
+    {
+      "mode": "center",
+      "variance_per_site_sz0": 5.208337938711338e-09,
+      "final_truncation_error_sz0": 9.953928971561043e-12,
+      "variance_per_site_sz1": 1.8606584717417717e-09,
+      "final_truncation_error_sz1": 9.997582910464038e-12,
+      "total_sz0": -9.71445146547012e-16,
+      "total_sz1": 1.0000000000000036,
+      "spin_gap": -3.8119234844202765e-06
+    },
+    {
+      "mode": "ferro_j2",
+      "variance_per_site_sz0": 1.1591993616851444e-08,
+      "final_truncation_error_sz0": 9.982834947596618e-12,
+      "variance_per_site_sz1": 1.8606584717417717e-09,
+      "final_truncation_error_sz1": 9.997582910464038e-12,
+      "total_sz0": -4.0245584642661925e-15,
+      "total_sz1": 1.0000000000000036,
+      "spin_gap": -6.870022349936278e-05
+    }
+  ],
+  "failures": [
+    "negb7-a0025-b0050-L060:center: 原非方差门 nonnegative_gap 未通过",
+    "negb7-a0025-b0050-L060:center: 负 gap 超门",
+    "negb7-a0025-b0050-L060:ferro_j2: 原非方差门 nonnegative_gap 未通过",
+    "negb7-a0025-b0050-L060:ferro_j2: 负 gap 超门"
+  ],
+  "provenance": {
+    "policy": "docs/negative_alpha_practical_convergence_standard_20260829.md",
+    "original_manifest_sha256": "3924d8a1932db554868d786eab0040e5abb32ad0aea5433c45097da51b57669c",
+    "original_run_spec_sha256": "5e32a13f957322a5703d1e625115c70ab442f6a3f8fa2ded5f229c4836e45860",
+    "original_files_unchanged": true
+  }
+}

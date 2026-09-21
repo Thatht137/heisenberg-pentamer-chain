@@ -1,0 +1,49 @@
+{
+  "schema_version": 1,
+  "status": "running",
+  "cell_id": "fullq-weak-dt025",
+  "scope": {
+    "alpha": 1.0,
+    "beta": 0.1,
+    "L": 40,
+    "tstep": 0.025,
+    "tmax": 30.0,
+    "q_points": 121,
+    "omega_points": 301,
+    "threads": 16,
+    "negative_alpha_excluded": true,
+    "figure_9_excluded": true
+  },
+  "remote": {
+    "target": "wangjieren@39.96.207.180:6000",
+    "project": "/home/wangjieren/code/1x5_Heisenberg_Pentamer",
+    "launcher_pid": 520554,
+    "julia_pid": 520562,
+    "started_at": "2026-08-07T20:36:29+08:00",
+    "outdir": "results/autoresearch_v5_20260807/minimal_fullq_campaign/fullq-weak-dt025",
+    "launcher_log": "results/autoresearch_v5_20260807/minimal_fullq_campaign/launcher_fullq_weak_dt025_20260807_2030.log",
+    "launcher_pid_file": "results/autoresearch_v5_20260807/minimal_fullq_campaign/launcher_fullq_weak_dt025_20260807_2030.pid",
+    "julia_pkg_offline": true
+  },
+  "initial_health": {
+    "status": "running",
+    "phase": "tebd",
+    "tebd_steps": "0/1200",
+    "stderr_empty": true,
+    "no_parallel_fullq_julia": true
+  },
+  "eta": "约 2-4 h；下一次只读检查 2026-08-07 22:45 +08:00",
+  "gates": {
+    "single_run": [
+      "t0 included",
+      "variance/site <= 1e-8",
+      "Sz=0",
+      "raw negative weight fraction <= 0.15"
+    ],
+    "pair": [
+      "dt/2",
+      "global and q=pi peak drift <= 0.05 J1",
+      "low-window weight drift <= 5%"
+    ]
+  }
+}

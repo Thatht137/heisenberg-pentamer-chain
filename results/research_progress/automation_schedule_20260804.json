@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "recorded_at": "2026-08-04T22:54:01+08:00",
+  "status": "high150_timer_updated",
+  "policy": {
+    "sol": "只负责决策和验收",
+    "luna_5_6": "负责文件、命令、服务器、回传和报告操作",
+    "scope": "0 <= alpha,beta <= 1；排除负 alpha 与参考 Fig.9",
+    "no_high_frequency_polling": true,
+    "no_additional_julia_while_running": true
+  },
+  "required_schedule": [
+    {
+      "name": "round41 low005 一次性只读检查",
+      "requested_time_cst": "2026-08-04T23:36:00+08:00",
+      "target": "round41_qpi_cv_low005_smoke/cell-l40-qpi-low-005-highbudget",
+      "read_only_fields": [
+        "status.json",
+        "progress.json",
+        "PID",
+        "resource",
+        "stderr",
+        "manifest",
+        "checksum"
+      ],
+      "terminal_chain": [
+        "checksum",
+        "non-overwriting download",
+        "validate_cv_run.py",
+        "accepted-only assembly",
+        "CV-TEBD reanalysis",
+        "HTML"
+      ],
+      "running_action": "只记录资源和条件 ETA；不启动其他 Julia",
+      "automation_id": null,
+      "creation_result": "not_created"
+    },
+    {
+      "name": "round31 high-150 一次性只读检查",
+      "requested_time_cst": "2026-08-05T02:05:00+08:00",
+      "target": "round31_qpi_cv_extension/cell-l40-qpi-high-150",
+      "read_only_fields": [
+        "status.json",
+        "progress.json",
+        "PID",
+        "resource",
+        "stderr",
+        "manifest",
+        "checksum",
+        "supervisor"
+      ],
+      "terminal_chain": [
+        "checksum",
+        "non-overwriting download",
+        "validate_cv_run.py",
+        "accepted-only assembly",
+        "CV-TEBD reanalysis",
+        "HTML"
+      ],
+      "running_action": "只记录资源和条件 ETA；不启动其他 Julia",
+      "existing_automation_id": "round31-high-150",
+      "existing_automation_schedule": "2026-08-05T00:30:00+08:00",
+      "automation_id": null,
+      "creation_result": "not_updated"
+    }
+  ],
+  "automation_api_attempts": [
+    {
+      "operation": "update",
+      "automation_id": "round31-high-150",
+      "result": "timeout after more than 120 seconds; local automation.toml unchanged"
+    },
+    {
+      "operation": "view",
+      "automation_id": "round31-high-150",
+      "result": "timeout after more than 60 seconds; service unavailable"
+    }
+  ],
+  "fallback": "未写入 automation.toml，未创建脚本计时器，未伪造 automation id。",
+  "latest_update": {
+    "round41": "terminal_rejected_residual",
+    "high150": "running",
+    "high150_next_read": "2026-08-05T15:07:00+08:00",
+    "automation_effective": true,
+    "automation_id": "round31-high-150",
+    "automation_update_result": "updated",
+    "automation_name": "检查 round31 high-150 24小时边界"
+  }
+}

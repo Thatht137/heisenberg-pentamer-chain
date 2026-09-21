@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "created_at": "2026-08-08T05:02:32.604899+00:00",
+  "cell_id": "fullq-agreement-eta020-dt025",
+  "remote": "wangjieren@39.96.207.180",
+  "remote_dir": "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260807/minimal_fullq_replan_eta020/fullq-agreement-eta020-dt025",
+  "local_destination": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260807\\minimal_fullq_fetch_eta020_20260808_1301\\fullq-agreement-eta020-dt025",
+  "destination_exists": false,
+  "file_count": 14,
+  "total_bytes": 4164367,
+  "remote_checksum_status": "pass",
+  "hashes": {
+    "checksums.sha256": "736d5fffd801ad2e3224e8a5d4ce47244fe85448588da86cb6d6fb282b478539",
+    "manifest.json": "0b075dc3a898d357e5ba9504ecbda4f64c7750514cd8b4e2eaa17c25d4843dc2",
+    "status.json": "cec80839445dc62e2aacf1666642eac3d9baa6e71e7e49e0241f8ee77fc2ff78"
+  }
+}

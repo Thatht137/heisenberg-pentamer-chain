@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "status": "pass_with_initial_state_sensitivity",
+  "pre_r6_observations_sha256": "81dc8b1665690771e4ebc7c30d6f7e4468392fc53823a156fd2c0190c88afd92",
+  "post_r6_observations_sha256": "41d954a59a405407a17d2b695e50132bce695d8b95033440b7f6ff73ac9f61e4",
+  "input_evidence": {
+    "run_spec": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r6-a0100-L040/parameter-scan.run_spec.json",
+      "sha256": "32ad828f35ea1088d10fdbded93014f4e7d08b899ab623b30f15fb7178bf1c81"
+    },
+    "validation_summary": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r6-a0100-L040-20260810-2142/validation/summary.json",
+      "sha256": "30090841bcedb990330d0155ed7f20b561a1082b556adf6602f0946324426a0a"
+    },
+    "handoff_audit": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/fetches/stage-a-beta050-calibration-r6-a0100-L040-20260810-2142/handoff_audit.json",
+      "sha256": "2eb06e2ece97800380c7622b3510f499c5d237ec783b3b918ca520dee4b24386"
+    },
+    "r5_ingestion_summary": {
+      "artifact": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/r5_partial_ingestion_summary.json",
+      "sha256": "7c8933ae9e3e73361fcab683e4e9f6a59760bd18fa238dcda013437b42ae8351"
+    }
+  },
+  "invariants": {
+    "controller_counts": {
+      "success": 11,
+      "failed": 0,
+      "pending": 5
+    },
+    "calibration_accepted_total": 5,
+    "r5_failure_provenance_preserved": true,
+    "initial_state_sensitivity_explicit": true,
+    "crossing_assigned": false,
+    "phase_label_assigned": false,
+    "r7_started": false
+  },
+  "initial_state_sensitivity": {
+    "kind": "initial_state_half_difference",
+    "center_rpi": 0.2015936919618121,
+    "ferro_j2_rpi": 0.1778386068100435,
+    "absolute_difference": 0.023755085151768607,
+    "half_difference": 0.011877542575884303,
+    "reported_as_observable_error": true,
+    "numerical_gates_passed": true,
+    "systematic_caution_required": true,
+    "interpretation": "validator 通过不消除双初态差异；Rpi 半差作为系统敏感性保留"
+  },
+  "outputs": {
+    "observations": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/observations.json",
+    "action_index": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/action_index.json"
+  }
+}
