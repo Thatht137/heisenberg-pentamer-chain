@@ -96,8 +96,9 @@ The $k=12$ run passed the remote and local checksum chain and the Practical V2 v
 Its variance per site was $1.86$--$1.87\times10^{-11}$, and the two sector gaps were $7.2772047002\times10^{-5}$ and $7.2772051798\times10^{-5}$.
 Across 172 matched records, the $k=8\rightarrow12$ differences were bounded by $7.5211\times10^{-12}$ for the spin gap, $8.3994\times10^{-8}$ for the dominant ratio, and $5.7413\times10^{-8}$ for the entropy.
 The value $\qpeak/\pi=1$ was unchanged.
+The bond dimensions actually retained at this size were well below the configured cap and nearly insensitive to the solver change: the largest link dimension was 264--265 in the $S^z=0$ sector and 186--190 in $S^z=1$, against a configured maximum of 1200.
 
 Two disclosures bound how these controls may be combined.
-First, the $k=3\rightarrow8$ comparison is a solver-control audit, not a convergence proof: $k$ is the Krylov dimension and no bond-dimension series was performed.
+First, the $k=3\rightarrow8$ comparison is a solver-control audit, not a convergence proof, and the observed link dimensions are not a convergence statement: $k$ is the Krylov dimension, the retained bond dimension is $\chi$, and no $\chi$ series was performed.
 Second, the historical negative-$\alpha$ records, including the $L=40$ and $L=60$ entries of the size comparison in Sec.~\ref{sec:results}, were produced with the earlier Krylov configuration; only the $L=80$ endpoint carries a $k=8$ control.
 Records with different solver settings are therefore not combined into a finite-size scaling series, and no thermodynamic extrapolation is drawn from them.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.4)  21 SEP 2026 10:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.9.4)  21 SEP 2026 10:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -700,30 +700,30 @@ Package pdftex.def Info: figures/fig2_multiplet_parity.png  used on input line
 16.
 (pdftex.def)             Requested size: 510.0pt x 203.3395pt.
  [3 <./figures/fig1_model_projection.png>]
-<figures/fig3_positive_static.png, id=183, 513.117pt x 359.78415pt>
+<figures/fig3_positive_static.png, id=182, 513.117pt x 359.78415pt>
 File: figures/fig3_positive_static.png Graphic file (type png)
 <use figures/fig3_positive_static.png>
 Package pdftex.def Info: figures/fig3_positive_static.png  used on input line 3
 6.
 (pdftex.def)             Requested size: 499.79782pt x 350.45598pt.
-<figures/fig4_entanglement.png, id=184, 520.344pt x 338.5448pt>
+<figures/fig4_entanglement.png, id=183, 520.344pt x 338.5448pt>
 File: figures/fig4_entanglement.png Graphic file (type png)
 <use figures/fig4_entanglement.png>
 Package pdftex.def Info: figures/fig4_entanglement.png  used on input line 44.
 (pdftex.def)             Requested size: 479.40125pt x 311.92473pt.
-<figures/fig5_selection_rules.png, id=185, 525.965pt x 429.7656pt>
+<figures/fig5_selection_rules.png, id=184, 525.965pt x 429.7656pt>
 File: figures/fig5_selection_rules.png Graphic file (type png)
 <use figures/fig5_selection_rules.png>
 Package pdftex.def Info: figures/fig5_selection_rules.png  used on input line 5
 9.
 (pdftex.def)             Requested size: 469.19907pt x 383.39513pt.
-<figures/fig6_fullq_dynamics.png, id=186, 494.3268pt x 351.0716pt>
+<figures/fig6_fullq_dynamics.png, id=185, 494.3268pt x 351.0716pt>
 File: figures/fig6_fullq_dynamics.png Graphic file (type png)
 <use figures/fig6_fullq_dynamics.png>
 Package pdftex.def Info: figures/fig6_fullq_dynamics.png  used on input line 79
 .
 (pdftex.def)             Requested size: 494.70062pt x 351.34392pt.
-<figures/fig7_cv_tebd.png, id=187, 261.2962pt x 264.8294pt>
+<figures/fig7_cv_tebd.png, id=186, 261.2962pt x 264.8294pt>
 File: figures/fig7_cv_tebd.png Graphic file (type png)
 <use figures/fig7_cv_tebd.png>
 Package pdftex.def Info: figures/fig7_cv_tebd.png  used on input line 87.
@@ -747,10 +747,10 @@ Package pdftex.def Info: figures/fig9_negative_size_evidence.png  used on input
 g5_selection_rules.png>]) (sections/conclusion.tex [8 <./figures/fig6_fullq_dyn
 amics.png>]
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 9.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1.
 
 
-LaTeX Warning: A float is stuck (cannot be placed) on input line 9.
+LaTeX Warning: A float is stuck (cannot be placed) on input line 1.
 
 
 Class revtex4-2 Warning: Deferred float stuck during \clearpage processing.
@@ -770,10 +770,10 @@ Package rerunfilecheck Info: File `manuscript.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  19210 strings out of 467872
- 361961 string characters out of 5418392
+ 361963 string characters out of 5418392
  797562 words of memory out of 5000000
- 47483 multiletter control sequences out of 15000+600000
- 723078 words of font info for 255 fonts, out of 8000000 for 9000
+ 47481 multiletter control sequences out of 15000+600000
+ 723161 words of font info for 256 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,9n,80p,1003b,1109s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/hh250/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pf
@@ -798,7 +798,7 @@ h250/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri9.pfb><C:/Users/hh
 0/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy9.pfb><C:/Users/hh250
 /AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.pfb>
 Output written on D:\Project\1x5_Heisenberg_Pentamer\results\autoresearch_v5_20
-260920\manuscript_draft_v1\latex_prb\build\manuscript.pdf (11 pages, 2568193 by
+260920\manuscript_draft_v1\latex_prb\build\manuscript.pdf (11 pages, 2568705 by
 tes).
 PDF statistics:
  392 PDF objects out of 1000 (max. 8388607)
