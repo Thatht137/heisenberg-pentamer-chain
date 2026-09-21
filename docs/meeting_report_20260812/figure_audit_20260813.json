@@ -1,0 +1,45 @@
+{
+  "date": "2026-08-13",
+  "figures": {
+    "Fig. 1": {
+      "alignment": "同类诊断",
+      "status": "论文风格重绘",
+      "note": "修正末端 J2=alpha 键，并使用参考图的能级线与灰色局域态语言。"
+    },
+    "Fig. 2": {
+      "alignment": "同类诊断",
+      "status": "论文风格重绘",
+      "note": "使用蓝色细线覆盖 alpha=-1..1；q=pi 权重仅限正 alpha 分类数据。"
+    },
+    "Fig. 3": {
+      "alignment": "同类诊断",
+      "status": "论文风格重绘",
+      "note": "使用 jet 热图与右侧三联诊断；40x60 纹理和严格有限尺寸证据分开解释。"
+    },
+    "Fig. 4": {
+      "alignment": "同类诊断",
+      "status": "论文风格重绘",
+      "note": "采用参考图的黑色短线/圆点语言展示五切口 Schmidt 谱；不是论文的 alpha/beta 权重扫描。"
+    },
+    "Fig. 5": {
+      "alignment": "机制替代",
+      "status": "论文风格重绘",
+      "note": "采用灰色单胞、红蓝箭头和时序网格展示有效自由度与选择定则。"
+    },
+    "Fig. 6": {
+      "alignment": "参数直接对齐",
+      "status": "探索性",
+      "note": "alpha=+/-1 与 beta=1.0/0.7/0.4/0.1 路径一致，但未完成全参数收敛。"
+    },
+    "Fig. 7": {
+      "alignment": "角色对应",
+      "status": "pilot",
+      "note": "本项目固定 beta 扫正 alpha，和论文固定负 alpha 扫 beta 不是同一路径。"
+    },
+    "Fig. 8": {
+      "alignment": "方法替代",
+      "status": "代表点通过",
+      "note": "是 q=pi 的 CV-TEBD 验收，不是完整 q 分辨解析色散叠加。"
+    }
+  }
+}

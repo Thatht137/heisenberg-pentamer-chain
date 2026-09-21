@@ -11,6 +11,27 @@
 - 小规模脚本 `scripts/01_single_pentamer.jl` 已成功运行并写出数据。
 - 主要依赖是 `ITensors`、`ITensorMPS`、`JLD2`、`KrylovKit`，适合在 CPU 服务器上跑 DMRG 和谱函数计算。
 
+### 当前实际服务器配置（2026-08-03）
+
+- SSH：`wangjieren@39.96.207.180`，端口 `6000`；实际节点 `c104-ysu`。
+- Julia：服务器 `1.12.3`，已通过 ITensor smoke；本地 `1.11.5` 不作为服务器生产环境依据。
+- 依赖：`Project.toml`/`Manifest.toml` 哈希已核对；服务器断网时只使用既有 depot，不执行 `Pkg.add`、`Pkg.update` 或 `Pkg.instantiate`。
+- 运行纪律：一次只运行一个重任务；结果必须保存 `run_config.json`、`manifest.json`、`status.json` 和 `checksums.sha256`。
+- 当前项目脚本使用直连服务器和离线环境变量，不依赖本指南后文的 SLURM 示例。
+- 本地 Windows Julia 的 `Pkg.activate`/预编译可能受用户目录 ACL 阻断；这类权限错误不作为模型失败，生产验收以服务器 Julia `1.12.3` 的 `54/54` 测试和 smoke 为准。
+
+### SSH 中断时的恢复纪律
+
+当 `:6000` 返回 `Connection refused` 时，只能说明专用 SSH 服务或端口转发暂不可用，不能据此判断 Julia 任务成功或失败。恢复后先读取 `status.json`、`progress.json` 和 `manifest.json`，确认终态后再做远端 checksum、回传和本地 validator。
+
+客户端必须使用私钥 `~/.ssh/id_ed25519`；`.pub` 文件是公钥，不能作为 `-i` 参数。推荐只读诊断命令：
+
+```bash
+ssh -o BatchMode=yes -o ConnectTimeout=15 -p 6000 -i ~/.ssh/id_ed25519 wangjieren@39.96.207.180 'date; pgrep -af "julia|run_cv_dsf_cell" || true'
+```
+
+若 6000 端口拒绝连接，不重启、不取消、不并行启动新 Julia；保留最后可信快照，并等待端口恢复或由管理员修复转发/认证。默认 22 端口即使可达，也不能绕过专用端口的任务状态保护。
+
 正式上服务器前，不建议直接把最大规模任务一次性提交。先跑小任务，确认环境、路径、输出和耗时。
 
 ## 你需要知道的基本概念
@@ -38,9 +59,9 @@ squeue -u $USER
 tail -f logs/phase_diagram_%j.out
 ```
 
-## 推荐 Julia 版本
+## Julia 版本
 
-本项目的 `Manifest.toml` 是用 Julia `1.11.5` 生成的，服务器上优先使用 Julia 1.11.x。
+本项目的 `Manifest.toml` 虽在本地 Julia `1.11.5` 环境生成，但当前服务器已审计通过 Julia `1.12.3`。生产任务必须固定使用已审计的服务器版本，不在断网服务器上切换版本或重新解析依赖。
 
 检查版本：
 
@@ -192,6 +213,14 @@ scancel 任务号
 - `phase_diagram.jld2`
 - `dsf_spectrum.jld2`
 
+新生产入口还必须在每个 run 目录原子更新 `progress.json`（默认每 30 秒）：
+
+- DMRG/CV：当前阶段、sweep 或已完成频点、最近日志时间；
+- TEBD/Fourier：step、百分比、ETA 和当前 Fourier 动量；
+- 终态：`completed`、`failed` 或 `stopped`，并与 `status.json`、checksum 一起留档。
+
+该文件只用于运行可观测性，不替代方差、残差、非负性和 checksum 验收。
+
 如果服务器通过 FRP 转接，SSH/SCP 端口是 6000，可以在本地 Windows PowerShell 下载结果：
 
 ```powershell
@@ -246,10 +275,11 @@ module avail julia
 
 ## 上服务器前检查清单
 
-- `julia --version` 是 1.11.x。
-- `julia --project=. -e 'using Pkg; Pkg.instantiate()'` 成功。
+- `julia --version` 是已审计的 1.12.3。
+- 断网服务器不执行 `Pkg.add`、`Pkg.update` 或 `Pkg.instantiate`；只使用已核对的 Manifest 和 depot。
 - `julia --project=. test/runtests.jl` 通过。
 - `logs/` 目录存在。
 - `data/` 目录有写权限。
 - 小任务能正常输出结果。
-- 长任务通过调度系统提交，而不是在登录节点硬跑。
+- 长任务通过受控后台脚本或调度系统提交，不在登录节点前台运行。
+- 新生产任务目录能生成并持续更新 `progress.json`。

@@ -3,9 +3,6 @@
 参数从 PENTAMER_* 环境变量读取。
 """
 
-using Pkg
-Pkg.activate(dirname(@__DIR__))
-
 using JLD2
 using LinearAlgebra
 using DelimitedFiles
@@ -21,6 +18,8 @@ const Q_MAX = 2π
 const OMEGA_MIN = 0.0
 const OMEGA_MAX = parse(Float64, get(ENV, "PENTAMER_OMEGA_MAX", "3.0"))
 const SPACE_WINDOW = parse(Int, get(ENV, "PENTAMER_SPACE_WINDOW", "30"))
+const TIME_WINDOW = lowercase(strip(get(ENV, "PENTAMER_TIME_WINDOW", "sin2")))
+const WINDOW_ETA = parse(Float64, get(ENV, "PENTAMER_WINDOW_ETA", "0.1"))
 const MAP_U0 = 5.0
 const OUTPUT_TAG = replace(
     strip(get(ENV, "PENTAMER_OUTPUT_TAG", "")),
@@ -37,8 +36,14 @@ function default_input_file()
     )
 end
 
-function time_window(time::Real, tmax::Real)
-    return sin(π * time / tmax)^2
+function time_window(time::Real, tmax::Real; kind::AbstractString=TIME_WINDOW, eta::Real=WINDOW_ETA)
+    if kind == "sin2"
+        return sin(π * time / tmax)^2
+    elseif kind == "exponential"
+        eta > 0 || error("指数时间窗要求 eta > 0")
+        return exp(-eta * time)
+    end
+    error("不支持的时间窗：$(kind)")
 end
 
 function map_intensity(spectrum::AbstractArray; u0::Real=MAP_U0)
@@ -65,6 +70,8 @@ function fourier_transform_tebd(;
     omega_min::Real=OMEGA_MIN,
     omega_max::Real=OMEGA_MAX,
     space_window::Int=SPACE_WINDOW,
+    window_kind::AbstractString=TIME_WINDOW,
+    window_eta::Real=WINDOW_ETA,
     map_u0::Real=MAP_U0,
 )
     if !isfile(input_file)
@@ -86,6 +93,7 @@ function fourier_transform_tebd(;
         corr = data[3, :] .+ im .* data[4, :]
     end
     tuniq = sort(unique(tlist))
+    first(tuniq) == 0.0 || error("关联数据缺少 t=0，不能执行生产傅里叶变换")
     dt = tuniq[2] - tuniq[1]
     tmax = maximum(tuniq)
 
@@ -98,6 +106,7 @@ function fourier_transform_tebd(;
     println("L = ", total_sites, ", center = ", center)
     println("dt = ", dt, ", tmax = ", tmax)
     println("Using spatial window: ", sites)
+    println("Time window = ", window_kind, ", eta = ", window_eta)
 
     qvals = collect(range(q_min, q_max; length=q_points))
     omegavals = collect(range(omega_min, omega_max; length=omega_points))
@@ -121,14 +130,17 @@ function fourier_transform_tebd(;
                 time = tlist[idx]
                 distance = rlist[idx]
                 phase = exp(im * (omega * time - q * distance))
-                acc += phase * corr[idx] * time_window(time, tmax) * dt
+                edge_weight = time == first(tuniq) || time == last(tuniq) ? 0.5 : 1.0
+                acc += edge_weight * phase * corr[idx] *
+                       time_window(time, tmax; kind=window_kind, eta=window_eta) * dt
             end
 
             spectrum[iq, iw] = real(acc)
         end
     end
 
-    spectrum .= max.(spectrum, 0.0)
+    raw_spectrum = copy(spectrum)
+    spectrum .= max.(raw_spectrum, 0.0)
     mapped = map_intensity(spectrum; u0=map_u0)
 
     data_dir = joinpath(dirname(@__DIR__), "data")
@@ -142,22 +154,33 @@ function fourier_transform_tebd(;
         data_dir,
         "Sqw_tebd_pentamer_alpha=$(ALPHA)_beta=$(BETA)$(OUTPUT_SUFFIX).csv",
     )
+    raw_csv_file = joinpath(
+        data_dir,
+        "Sqw_tebd_pentamer_alpha=$(ALPHA)_beta=$(BETA)_raw$(OUTPUT_SUFFIX).csv",
+    )
 
     jldsave(output_file;
         spectrum,
+        raw_spectrum,
         mapped,
         qvals,
         omegavals,
         input_file,
         space_window,
+        window_kind,
+        window_eta,
+        t0_included=true,
+        time_integration="trapezoid",
         map_u0,
         output_tag=OUTPUT_TAG,
     )
     writedlm(csv_file, mapped, ',')
+    writedlm(raw_csv_file, raw_spectrum, ',')
 
     println("Fourier transform finished.")
     println("Spectrum saved to ", output_file)
     println("Mapped CSV saved to ", csv_file)
+    println("Raw CSV saved to ", raw_csv_file)
 
     return output_file
 end

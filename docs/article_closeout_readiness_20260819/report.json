@@ -1,0 +1,474 @@
+{
+  "title": "1×5 Heisenberg 五聚体：文章收尾与负 α 实用收敛报告",
+  "eyebrow": "Evidence-locked closeout · updated 2026-09-13",
+  "lede": "正耦合机制、静态有限尺寸证据和生产动力学已经闭合。负 α Practical V2 也完成了96点粗扫和29点大尺寸精修：全部精修数据通过完整验收，但8个候选区间没有一个在同一相邻区间同时满足主波矢重构与2σ dominant-ratio换号。因此数值任务已完成，强 crossover 信号真实存在，新的热力学相界尚不能按预设双诊断标准确认。",
+  "sections": [
+    {
+      "title": "结论先行",
+      "note": "这份页面区分已经可写的科学结论、正在运行的负区补算和计算结束后的最小收尾动作。",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "good",
+          "label": "保守范围已经可写",
+          "why": "以正 α 的奇单胞有效自旋、c=1 有限尺寸证据、宇称选择定则和生产动力学为主线，文章论证已经闭合。"
+        },
+        {
+          "kind": "verdict",
+          "status": "warn",
+          "label": "负 α 数值计算已闭合，正式相界未闭合",
+          "why": "Stage C 的29/29个L60/L80精修点全部验收通过；动量重构或显著有限尺寸流出现在7/8个目标中，但两者没有落在同一相邻区间，不能据此宣布新的热力学相。"
+        },
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "当前中心论点",
+              "五站点奇单胞保留 S=1/2 双重态，正胞间耦合产生 gapless 反铁磁有效链；局域反射宇称决定 q=π 的可见激发"
+            ],
+            [
+              "已完成主图",
+              "Fig.1–5 静态/机制图；Fig.6–7 三点全动量 TEBD；Fig.8 q=π CV–TEBD Agreement"
+            ],
+            [
+              "参考作者回复",
+              "方法没有问题；负 α 区无需把方差压得过严，sweeps 也不宜过大；响应函数做必要的收敛对照即可"
+            ],
+            [
+              "当前服务器任务",
+              "Stage C已自然结束：29/29点通过远端/本地checksum、非覆盖回传和独立validator；当前没有待运行的Julia任务。"
+            ],
+            [
+              "9月12日服务器维护",
+              "维护前已确认无Julia任务；9月13日首次恢复核验被远端主动关闭，未重复连接。所有已验收证据均已回传本机，因此不影响当前写作与出图。"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "准确回答",
+          "style": "info",
+          "text": "方法学疑问和数值收敛问题都已解除，但结果本身没有通过预设的双诊断相界门。文章可以立即采用保守表述：负 α 出现尺寸依赖的主波矢重构与强 crossover，不把它命名为已证实的新相。"
+        }
+      ]
+    },
+    {
+      "title": "参考回复已经落实为 Practical V2",
+      "note": "不是口头降低要求，而是用历史数据选择能够解决阻塞的最小放宽值，并保留所有物理一致性门。",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "项目",
+            "原严格标准",
+            "Practical V2",
+            "理由"
+          ],
+          "widths": [
+            "20%",
+            "20%",
+            "24%",
+            "36%"
+          ],
+          "rows": [
+            [
+              "variance/site",
+              "≤1×10⁻⁸",
+              "≤5×10⁻⁸",
+              "18 个独立历史点由 17/18 提升为 18/18；放宽到 10⁻⁷ 不再增加可用点"
+            ],
+            [
+              "Stage B 粗扫",
+              "32→64→128",
+              "优先32，困难点最多64",
+              "32/64 匹配点的 q_peak/π 最大漂移为 0，足够定位候选区"
+            ],
+            [
+              "Stage C 边界",
+              "最高可到128",
+              "L60/L80固定64",
+              "dominant ratio 对 sweeps 更敏感，不能用 32-sweep 粗扫值作为最终边界"
+            ],
+            [
+              "其他数值门",
+              "既定门槛",
+              "全部保留",
+              "截断、Sz、非负自旋 gap、双初态、checksum 和非覆盖回传均不放宽"
+            ],
+            [
+              "响应函数",
+              "可能全域高精度",
+              "每个新 bulk regime 1 个代表点；最困难点做 dt/dt/2",
+              "用峰位和低频积分权稳定性证明结论，不重复正 α 已完成的生产计算"
+            ]
+          ]
+        },
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "本地审计",
+              "26 份 parent manifests，18 个独立物理点；5×10⁻⁸ 是当前数据支持的最小有效放宽"
+            ],
+            [
+              "新 validator",
+              "独立标记 accepted_under_practical_v2，不改写旧 manifest，也不伪装成 strict_v1 通过"
+            ],
+            [
+              "失败保护",
+              "负 spin gap、错误扇区、checksum、截断误差或 Sz 不合格仍会被拒绝"
+            ],
+            [
+              "重算原则",
+              "Practical V2最终89个accepted、7个bounded；bounded点保留证据且不进入相界。Stage C只用L60/L80与64 sweeps。"
+            ]
+          ]
+        },
+        {
+          "kind": "note",
+          "label": "科学解释",
+          "style": "info",
+          "text": "这个变化解决的是数值验收尺度，不会预先规定相的数量。是否存在新相，仍由 q_peak 与 dominant-ratio 两个诊断、有限尺寸趋势和宽度≤0.025 的边界共同决定。"
+        }
+      ]
+    },
+    {
+      "title": "已经完成的物理内容",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "模块",
+            "完成情况",
+            "可写结论",
+            "边界"
+          ],
+          "widths": [
+            "19%",
+            "19%",
+            "38%",
+            "24%"
+          ],
+          "rows": [
+            [
+              "孤立五聚体与投影",
+              "100 点 ED；多重态/宇称已解析",
+              "正 α 下基态为偶宇称 S=1/2 双重态，J_eff>0",
+              "只决定低能机制，不等价于完整相图"
+            ],
+            [
+              "有效链误差",
+              "两单胞 ED + N=8,12,16 DMRG",
+              "首个系统修正为 O(β²)",
+              "一阶投影只在 β/Δ_loc 较小时受控"
+            ],
+            [
+              "正区静态",
+              "105 条 accepted；L=40,60,80",
+              "未发现可验收内部 crossing",
+              "有限尺寸否定结果，不是热力学单相证明"
+            ],
+            [
+              "纠缠与关联",
+              "matched-size oracle、gap、关联、S(q)",
+              "与 gapless c=1 AF effective chain 一致",
+              "c 值是校准估计，不是无偏热力学外推"
+            ],
+            [
+              "局域谱权",
+              "完整多重态投影",
+              "最低双重态在 q=π 变暗；S=3/2 占 84.1%–97.6% 权重",
+              "局域选择定则不是有限 β 长链色散命名"
+            ],
+            [
+              "生产动力学",
+              "6 runs + 3 dt/dt/2 + CV–TEBD",
+              "三点全 q 谱与代表点 q=π Agreement 均通过",
+              "只覆盖给定点、L=40 和规定窗口"
+            ]
+          ]
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "fig1_model.png",
+              "caption": "已验收机制图。五站点单胞保留低能 S=1/2 双重态，正 β 投影为 J_eff=βc₁c₅>0 的反铁磁有效链；右侧展示 α=0.23 的局域多重态与 q=π 权重。"
+            },
+            {
+              "src": "fig3_positive.png",
+              "caption": "有边界的正区静态结论。左侧 40×60 热图只作探索；正式证据来自 105 条 accepted 记录，L=40/60/80 crossing diagnostic 没有给出内部 bracket。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "生产动力学已经闭合",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "旧稿曾写“全动量谱仍待计算”，现在已经过时。三组代表点 (1,1)、(1,0.1)、(0.23,0.5) 均完成 L=40、tmax=30、Δt=0.025/0.0125 的成对计算。六个单次 validator 和三组时间步长交叉门全部通过。"
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "参数点",
+            "峰位漂移",
+            "低频积分权漂移",
+            "结论"
+          ],
+          "numeric": [
+            false,
+            true,
+            true,
+            false
+          ],
+          "rows": [
+            [
+              "α=1, β=1",
+              "0",
+              "4.32×10⁻⁵",
+              "pass"
+            ],
+            [
+              "α=1, β=0.1",
+              "0",
+              "2.74×10⁻⁵",
+              "pass"
+            ],
+            [
+              "α=0.23, β=0.5",
+              "0.01 J₁",
+              "1.97×10⁻⁵",
+              "pass"
+            ]
+          ]
+        },
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "fullq_production.png",
+              "caption": "Production full-q spectra。上排保留 raw 负振铃并标出负权比例；下排给出 q=π 的 Δt 与 Δt/2 叠加。三点均通过峰位、低频权和 raw negative-weight 门。"
+            },
+            {
+              "src": "qpi_agreement.png",
+              "caption": "Production Agreement。$(α,β,L,q)=(0.23,0.5,40,π)$ 的 11 个 accepted correction-vector 频点覆盖低频主峰，并通过与 TEBD 的峰位和积分权重验收。"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "负 α：发现了什么，卡在哪里",
+      "blocks": [
+        {
+          "kind": "figures",
+          "items": [
+            {
+              "src": "../../figures/negative_practical_v2_crossover_20260913/negative_alpha_crossover_summary.png",
+              "caption": "验收终态。29个Stage C大尺寸点全部通过数值与证据链检查。上图只显示实际采样点，红叉标记L60/L80主波矢不一致；下图比较dominant-ratio尺寸流与预设边界门。8个目标均未同时通过双诊断，因此本图支持强crossover，不作为正式相图。"
+            }
+          ]
+        },
+        {
+          "kind": "table",
+          "columns": [
+            "事实",
+            "当前证据",
+            "能否写成定论"
+          ],
+          "widths": [
+            "28%",
+            "46%",
+            "26%"
+          ],
+          "rows": [
+            [
+              "β=0.5 出现主波矢重构",
+              "q_peak 从约 0.60π 变为 π；Stage C 的L60/L80结果仍显示明显尺寸敏感性",
+              "可写成强 crossover / candidate reconstruction"
+            ],
+            [
+              "存在新的热力学相",
+              "Stage C覆盖8个候选目标，但没有相邻区间同时满足动量重构与2σ ratio换号；正式边界为0/8",
+              "不能确认"
+            ],
+            [
+              "失败是否说明没有新相",
+              "否。Stage C已经29/29通过数值验收；当前限制来自两个物理诊断不重合，而不是不收敛",
+              "不能确认新相，也不能把它误写成数值失败"
+            ],
+            [
+              "Stage B 完成度",
+              "96个网格点已全部解析：89个accepted、7个NotEvaluable；Stage C的29个精修点全部通过。",
+              "计算完成；固定双诊断门下8个目标均为NotEvaluable"
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "回复解决了什么",
+          "items": [
+            "参考作者确认当前 DMRG/MPS 方法路线本身没有错误。",
+            "负 α 的高频失败主要是人为设置的 variance/site≤10⁻⁸ 过严，不应解释成不存在新相。",
+            "sweeps 不是越大越好：粗扫只需稳定识别主波矢，最终边界已用64 sweeps的大尺寸点检查。",
+            "Stage C全部通过验收，证明不确认新相不是收敛失败造成，而是两种有限尺寸诊断没有在同一区间会合。"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "计算期间已经完成的文章工作",
+      "blocks": [
+        {
+          "kind": "verdict",
+          "status": "good",
+          "label": "近终稿底稿已建立",
+          "why": "标题、中心论点、英文摘要、引言、方法、五段结果、讨论、结论、主图顺序和占位更新点已经写入独立文档，没有触碰 paper/。"
+        },
+        {
+          "kind": "kv",
+          "pairs": [
+            [
+              "草稿文件",
+              "docs/near_final_manuscript_draft_20260819.md"
+            ],
+            [
+              "收尾清单",
+              "docs/article_closeout_checklist_20260819.md"
+            ],
+            [
+              "建议题目",
+              "Odd-unit-cell criticality and momentum-selective excitations in a spin-1/2 Heisenberg pentamer chain"
+            ],
+            [
+              "文章主线",
+              "odd unit-cell → effective S=1/2 chain → c=1 finite-size evidence → parity-selected dynamics → provisional negative-α reconstruction"
+            ]
+          ]
+        },
+        {
+          "kind": "heading",
+          "level": 3,
+          "text": "摘要中的核心句"
+        },
+        {
+          "kind": "text",
+          "text": "A five-spin unit cell retains an effective spin-1/2 doublet, so positive inter-cell exchange generates a gapless antiferromagnetic effective chain rather than the gapped cluster phases familiar from even-site tetramers; local reflection parity selects the visible dynamical channels, while negative intra-cell exchange produces a provisional momentum reconstruction whose two-dimensional boundary remains to be validated."
+        },
+        {
+          "kind": "note",
+          "label": "还缺的非计算项",
+          "style": "pending",
+          "text": "完整参考文献元数据和文献比较仍需补齐；作者、单位、致谢、目标期刊格式和 Data/Code Availability 需要作者本人最终确认。"
+        }
+      ]
+    },
+    {
+      "title": "接下来的最短计算路径",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "阶段",
+            "先做什么",
+            "随后怎样收尾"
+          ],
+          "widths": [
+            "22%",
+            "40%",
+            "38%"
+          ],
+          "rows": [
+            [
+              "存档重验",
+              "R10–R20均完成checksum、非覆盖回传和Practical V2 validator证据链",
+              "Stage B终态为89 accepted、7 bounded、0 pending"
+            ],
+            [
+              "Stage B 粗扫",
+              "96/96物理网格点均已解析",
+              "accepted-only分析识别8个候选区间，不在粗网格上命名新相"
+            ],
+            [
+              "Stage C 边界",
+              "29/29点完成且全部通过validator",
+              "8个候选目标中0个通过双诊断；当前规则下没有合理的自动二分动作"
+            ],
+            [
+              "最小响应验证",
+              "只有在决定把负区重构作为独立物理主张后才需要",
+              "保守稿不依赖新增响应计算；扩展稿需先重新定义可辩护的相界诊断"
+            ],
+            [
+              "文章收尾",
+              "以正区机制为主线，负区写成强 crossover 与有限尺寸不确定性",
+              "补引用、作者信息、期刊格式和人工通读即可"
+            ]
+          ]
+        },
+        {
+          "kind": "list",
+          "title": "固定验收顺序",
+          "items": [
+            "远端 checksum。",
+            "非覆盖回传到新目录。",
+            "本地 checksum 与独立 validator。",
+            "accepted-only 合并；失败数据保留但不进入拟合。",
+            "双诊断、2σ、边界宽度≤0.025 和最终 L60/L80、64-sweep 检查。",
+            "更新 source manifest、图件和文章占位段。"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "时间与收尾判断",
+      "blocks": [
+        {
+          "kind": "table",
+          "columns": [
+            "目标",
+            "从现在起还缺什么",
+            "条件时间"
+          ],
+          "widths": [
+            "25%",
+            "47%",
+            "28%"
+          ],
+          "rows": [
+            [
+              "正区机制稿",
+              "补引用、作者信息、期刊格式和人工通读",
+              "约 1–2 个工作日"
+            ],
+            [
+              "包含负区候选截面的稿件",
+              "在正区稿上加入 bounded β=0.5 结果和失败审计",
+              "约 2–3 个工作日"
+            ],
+            [
+              "完整负 α 二维相图稿",
+              "若坚持命名负区新相，需先更换或补充相界诊断，再决定是否计算",
+              "目前无法诚实给出固定天数；保守稿不受此项阻塞"
+            ]
+          ]
+        },
+        {
+          "kind": "verdict",
+          "status": "good",
+          "label": "外部方法阻塞已经解除",
+          "why": "Stage B/C数值链已完成且无需继续轮询；正区机制稿可进入人工收尾，负区按强crossover和未确认相界写入讨论。"
+        },
+        {
+          "kind": "note",
+          "label": "最终判断",
+          "style": "info",
+          "text": "结果在数值质量上理想，在“发现已确认新相”这一目标上不理想。保守文章现在可以收尾；若坚持完整负 α 新相图，需要先决定采用何种额外物理诊断，不能靠继续同类二分自动解决。"
+        }
+      ]
+    }
+  ]
+}

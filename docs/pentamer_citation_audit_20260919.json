@@ -1,0 +1,298 @@
+{
+  "schema": "pentamer_citation_audit/v1",
+  "audit_date": "2026-09-19",
+  "scope": "五聚体链机制、局域团簇激发、DMRG/MPS、纠缠标度、TEBD 与修正向量方法的公开文献核验",
+  "workflow": [
+    "multi-source-search",
+    "citation-verification",
+    "citation-file-mgmt",
+    "reference-mgmt"
+  ],
+  "source_policy": {
+    "primary": "出版社页面、DOI 解析页或 arXiv 元数据",
+    "verification_rule": "DOI 可解析，且题名、作者、期刊与年份相互一致才记为 verified",
+    "coverage_rule": "full_text 仅用于实际读到出版社全文或本地全文抽取；否则为 abstract_metadata，不把摘要当全文",
+    "retrieval_date": "2026-09-19"
+  },
+  "local_dedup": {
+    "checked_files": [
+      "paper/bibliography.bib",
+      "references/Li 等 - 2026 - Spin order and spin excitation spectra of spin-12 tetramer chains.pdf",
+      "tmp_tetramer_2026.txt"
+    ],
+    "existing_bib_keys": ["li2026tetramer", "descloizeaux1962"],
+    "existing_doi_overlap": ["10.1103/PhysRev.128.2131"],
+    "new_key_strategy": "对已有临时 key 使用 _verified 后缀；新文件内部 key 唯一，不覆盖 paper/bibliography.bib",
+    "duplicate_new_doi": false
+  },
+  "summary": {
+    "total": 12,
+    "verified": 12,
+    "mismatch": 0,
+    "not_found": 0,
+    "suspicious": 0,
+    "manual_needed": 0,
+    "full_text": 2,
+    "abstract_metadata": 10,
+    "metadata_only": 0,
+    "note": "所有条目均有公开 DOI/元数据核验；只有 Li 2026 与 Cheng 2022 记为实际全文层，其余不宣称已读全文。"
+  },
+  "records": [
+    {
+      "key": "li2026tetramer_verified",
+      "doi": "10.1038/s41535-026-00855-x",
+      "title": "Spin order and spin excitation spectra of spin-1/2 tetramer chains",
+      "authors": ["Junli Li", "Jun-Qing Cheng", "Trinanjan Datta", "Dao-Xin Yao"],
+      "journal": "npj Quantum Materials",
+      "year": 2026,
+      "volume": "11",
+      "pages_or_article": "37",
+      "status": "verified",
+      "coverage": "full_text",
+      "sources": [
+        {"url": "https://www.nature.com/articles/s41535-026-00855-x", "layer": "publisher HTML and abstract"},
+        {"url": "https://doi.org/10.1038/s41535-026-00855-x", "layer": "DOI metadata"},
+        {"url": "https://arxiv.org/abs/2504.00095", "layer": "preprint metadata"},
+        {"url": "local:tmp_tetramer_2026.txt", "layer": "local full-text extraction"}
+      ],
+      "supports": [
+        "四聚体链的单胞多重态、字符串序与 DMRG/DSF 研究可作为直接比较背景",
+        "说明四聚体的整数型/Haldane-like 叙事不能直接移植到奇数自旋单胞"
+      ],
+      "does_not_support": ["不能作为本五聚体链相图、相界或激发谱的直接证据"],
+      "limits": "该文研究四聚体，不是本项目 1x5 五聚体几何；其相名与激发命名不能机械复用。"
+    },
+    {
+      "key": "haraldsen2011",
+      "doi": "10.1103/PhysRevLett.107.037205",
+      "title": "Heisenberg Pentamer: Insights into Inelastic Neutron Scattering on Magnetic Clusters",
+      "authors": ["J. T. Haraldsen"],
+      "journal": "Physical Review Letters",
+      "year": 2011,
+      "volume": "107",
+      "pages_or_article": "037205",
+      "status": "verified",
+      "coverage": "abstract_metadata",
+      "sources": [
+        {"url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.107.037205", "layer": "APS metadata and abstract"},
+        {"url": "https://doi.org/10.1103/PhysRevLett.107.037205", "layer": "DOI metadata"},
+        {"url": "https://pubmed.ncbi.nlm.nih.gov/21838400/", "layer": "PubMed official index and abstract"}
+      ],
+      "supports": [
+        "一般 S-S' 对称五聚体框架，以及特殊 1-1/2 pentamer 的精确能级与 INS 选择规则可作为局域团簇参照",
+        "提醒谱权受对称性与被激发分量限制"
+      ],
+      "does_not_support": ["不能仅凭标题认定与本项目胞内/胞间耦合模型相同", "不能支持完整五聚体链的相结论"],
+      "limits": "PubMed/APS 可读层表明该文先讨论一般 S-S' 对称五聚体、再计算特殊 1-1/2 mixed-spin pentamer；本项目是 all-spin-1/2、开放边界线性键模型。未取得全文几何图，不能声称两者键拓扑已完成逐项比对。"
+    },
+    {
+      "key": "cheng2022trimer",
+      "doi": "10.1038/s41535-021-00416-4",
+      "title": "Fractional and composite excitations of antiferromagnetic quantum spin trimer chains",
+      "authors": ["Jun-Qing Cheng", "Jun Li", "Zijian Xiong", "Han-Qing Wu", "Anders W. Sandvik", "Dao-Xin Yao"],
+      "journal": "npj Quantum Materials",
+      "year": 2022,
+      "volume": "7",
+      "pages_or_article": "3",
+      "status": "verified",
+      "coverage": "full_text",
+      "sources": [
+        {"url": "https://www.nature.com/articles/s41535-021-00416-4", "layer": "publisher full HTML, methods and abstract"},
+        {"url": "https://doi.org/10.1038/s41535-021-00416-4", "layer": "DOI metadata"}
+      ],
+      "supports": [
+        "三聚体双重态投影为有效自旋 1/2 链的最近邻类比",
+        "低能 spinon 连续体与高能局域 doublon/quarton 分支共存的机制背景",
+        "ED、QMC-SAC 与微扰分析相互配合的比较范式"
+      ],
+      "does_not_support": ["不能把三聚体的有效耦合、分支名称或阈值直接转写为五聚体结果"],
+      "limits": "该文是 1x3 线性三聚体链；本项目 1x5 具有不同反射结构、局域权重与胞内层级。"
+    },
+    {
+      "key": "lieb1961",
+      "doi": "10.1016/0003-4916(61)90115-4",
+      "title": "Two soluble models of an antiferromagnetic chain",
+      "authors": ["Elliott H. Lieb", "Theodore Schultz", "Daniel C. Mattis"],
+      "journal": "Annals of Physics",
+      "year": 1961,
+      "volume": "16",
+      "issue": "3",
+      "pages_or_article": "407-466",
+      "status": "verified",
+      "coverage": "abstract_metadata",
+      "sources": [
+        {"url": "https://collaborate.princeton.edu/en/publications/two-soluble-models-of-an-antiferromagnetic-chain/", "layer": "institutional metadata and abstract"},
+        {"url": "https://doi.org/10.1016/0003-4916(61)90115-4", "layer": "DOI metadata"}
+      ],
+      "supports": ["半奇整数、短程反铁磁链的 LSM 型无隙/低激发约束背景"],
+      "does_not_support": ["不单独证明本项目有限 OBC 数据的热力学极限", "不替代本项目的 DMRG 收敛与尺度分析"],
+      "limits": "原文公开核验为摘要与元数据层；应用到五聚体链仍需明确平移单胞、对称性和极限顺序。"
+    },
+    {
+      "key": "ogata2019",
+      "doi": "10.1007/s00220-019-03343-5",
+      "title": "Lieb-Schultz-Mattis Type Theorems for Quantum Spin Chains Without Continuous Symmetry",
+      "authors": ["Yoshiko Ogata", "Hal Tasaki"],
+      "journal": "Communications in Mathematical Physics",
+      "year": 2019,
+      "volume": "372",
+      "issue": "3",
+      "pages_or_article": "951-962",
+      "status": "verified",
+      "coverage": "abstract_metadata",
+      "sources": [
+        {"url": "https://arxiv.org/abs/1808.08740", "layer": "arXiv abstract and metadata"},
+        {"url": "https://doi.org/10.1007/s00220-019-03343-5", "layer": "DOI metadata"}
+      ],
+      "supports": ["在短程、平移不变且满足指定离散对称性时，半奇整数链不能有唯一有隙基态的现代约束表述"],
+      "does_not_support": ["不直接给出本项目模型的相图、中心荷或有限尺寸 gap"],
+      "limits": "仅作为 LSM 约束的补充背景；本项目的 SU(2) 模型满足更强对称性，但有限 OBC 结论不能直接等同于定理的无限链表述。"
+    },
+    {
+      "key": "calabrese2004",
+      "doi": "10.1088/1742-5468/2004/06/P06002",
+      "title": "Entanglement entropy and quantum field theory",
+      "authors": ["Pasquale Calabrese", "John L. Cardy"],
+      "journal": "Journal of Statistical Mechanics: Theory and Experiment",
+      "year": 2004,
+      "issue": "06",
+      "pages_or_article": "P06002",
+      "status": "verified",
+      "coverage": "abstract_metadata",
+      "sources": [
+        {"url": "https://arxiv.org/abs/hep-th/0405152", "layer": "arXiv abstract and metadata"},
+        {"url": "https://doi.org/10.1088/1742-5468/2004/06/P06002", "layer": "DOI metadata"}
+      ],
+      "supports": ["1+1 维临界系统纠缠熵与中心荷的 CFT 标度公式，作为本项目 entropy fit 的理论来源"],
+      "does_not_support": ["不替代 matched-size Heisenberg oracle、有限尺寸残差或 DMRG 收敛检查"],
+      "limits": "使用 CFT 公式需要临界、边界和有限尺寸假设；本项目只将其作为拟合框架，不把裸拟合自动当作精确热力学外推。"
+    },
+    {
+      "key": "white1992",
+      "doi": "10.1103/PhysRevLett.69.2863",
+      "title": "Density matrix formulation for quantum renormalization groups",
+      "authors": ["Steven R. White"],
+      "journal": "Physical Review Letters",
+      "year": 1992,
+      "volume": "69",
+      "issue": "19",
+      "pages_or_article": "2863-2866",
+      "status": "verified",
+      "coverage": "abstract_metadata",
+      "sources": [
+        {"url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.69.2863", "layer": "APS metadata and abstract"},
+        {"url": "https://doi.org/10.1103/PhysRevLett.69.2863", "layer": "DOI metadata"}
+      ],
+      "supports": ["DMRG 的原始方法出处，以及其对 Heisenberg 链计算的历史方法背景"],
+      "does_not_support": ["不证明本项目当前实现的阈值、初态独立性或观测量收敛"],
+      "limits": "方法奠基文献；具体 Julia/ITensor 实现和本项目验收门需由本地代码与数据单独证明。"
+    },
+    {
+      "key": "schollwoeck2011",
+      "doi": "10.1016/j.aop.2010.09.012",
+      "title": "The density-matrix renormalization group in the age of matrix product states",
+      "authors": ["Ulrich Schollwöck"],
+      "journal": "Annals of Physics",
+      "year": 2011,
+      "volume": "326",
+      "issue": "1",
+      "pages_or_article": "96-192",
+      "status": "verified",
+      "coverage": "abstract_metadata",
+      "sources": [
+        {"url": "https://arxiv.org/abs/1008.3477", "layer": "arXiv abstract and metadata"},
+        {"url": "https://doi.org/10.1016/j.aop.2010.09.012", "layer": "DOI metadata"}
+      ],
+      "supports": ["DMRG 与 MPS 的关系、有限链静态/动力学计算和误差来源的综述背景"],
+      "does_not_support": ["不为本项目具体 finite-size scaling、方差门或相名提供证据"],
+      "limits": "综述级方法来源；项目结论仍须引用实际数据和 validator。"
+    },
+    {
+      "key": "vidal2004",
+      "doi": "10.1103/PhysRevLett.93.040502",
+      "title": "Efficient simulation of one-dimensional quantum many-body systems",
+      "authors": ["Guifré Vidal"],
+      "journal": "Physical Review Letters",
+      "year": 2004,
+      "volume": "93",
+      "issue": "4",
+      "pages_or_article": "040502",
+      "status": "verified",
+      "coverage": "abstract_metadata",
+      "sources": [
+        {"url": "https://arxiv.org/abs/quant-ph/0310089", "layer": "arXiv abstract and metadata"},
+        {"url": "https://doi.org/10.1103/PhysRevLett.93.040502", "layer": "DOI metadata"}
+      ],
+      "supports": ["TEBD/一维局域哈密顿量时间演化的原始方法出处，作为本项目 TEBD 交叉检查的算法引用"],
+      "does_not_support": ["不证明本项目某个 dt、时间窗、键维或 CV-TEBD agreement 门"],
+      "limits": "方法论文而非本模型结果；项目必须独立报告 dt/dt2、截断和谱权收敛。"
+    },
+    {
+      "key": "kuehner1999",
+      "doi": "10.1103/PhysRevB.60.335",
+      "title": "Dynamical correlation functions using the density matrix renormalization group",
+      "authors": ["Till D. Kühner", "Steven R. White"],
+      "journal": "Physical Review B",
+      "year": 1999,
+      "volume": "60",
+      "issue": "1",
+      "pages_or_article": "335-343",
+      "status": "verified",
+      "coverage": "abstract_metadata",
+      "sources": [
+        {"url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.60.335", "layer": "APS metadata and abstract"},
+        {"url": "https://doi.org/10.1103/PhysRevB.60.335", "layer": "DOI metadata"},
+        {"url": "https://arxiv.org/abs/cond-mat/9812372", "layer": "arXiv metadata"}
+      ],
+      "supports": ["修正向量 DMRG、频率逐点求解和 OBC 动量滤波的直接方法来源；与 src/spectral.jl 的 correction-vector 路线相符"],
+      "does_not_support": ["不证明本项目 L=10 oracle 或 L=80 production 的数值正确性"],
+      "limits": "公开核验为摘要/元数据层；本地实现仍需小系统 exact oracle 和 residual 门。"
+    },
+    {
+      "key": "fishman2022",
+      "doi": "10.21468/SciPostPhysCodeb.4",
+      "title": "The ITensor Software Library for Tensor Network Calculations",
+      "authors": ["Matthew Fishman", "Steven R. White", "E. Miles Stoudenmire"],
+      "journal": "SciPost Physics Codebases",
+      "year": 2022,
+      "pages_or_article": "4",
+      "status": "verified",
+      "coverage": "abstract_metadata",
+      "sources": [
+        {"url": "https://scipost.org/10.21468/SciPostPhysCodeb.4", "layer": "SciPost metadata and abstract"},
+        {"url": "https://doi.org/10.21468/SciPostPhysCodeb.4", "layer": "DOI metadata"},
+        {"url": "https://arxiv.org/abs/2007.14822", "layer": "arXiv metadata"}
+      ],
+      "supports": ["ITensor/ITensorMPS 的 MPS、MPO 与守恒量张量实现的软件引用"],
+      "does_not_support": ["软件论文不等于本项目物理结果、收敛门或独立方法验证"],
+      "limits": "仅作实现来源与软件引用；本项目声明使用 ITensorMPS 仍需保留版本与环境记录。"
+    },
+    {
+      "key": "descloizeaux1962_verified",
+      "doi": "10.1103/PhysRev.128.2131",
+      "title": "Spin-Wave Spectrum of the Antiferromagnetic Linear Chain",
+      "authors": ["Jacques des Cloizeaux", "J. J. Pearson"],
+      "journal": "Physical Review",
+      "year": 1962,
+      "volume": "128",
+      "issue": "5",
+      "pages_or_article": "2131-2135",
+      "status": "verified",
+      "coverage": "abstract_metadata",
+      "sources": [
+        {"url": "https://journals.aps.org/pr/abstract/10.1103/PhysRev.128.2131", "layer": "APS metadata and abstract"},
+        {"url": "https://doi.org/10.1103/PhysRev.128.2131", "layer": "DOI metadata"}
+      ],
+      "supports": ["均匀自旋 1/2 Heisenberg 链低能谱边界的经典 oracle 参照"],
+      "does_not_support": ["不直接证明五聚体链的折叠形状因子、有限 beta 修正或完整 DSF"],
+      "limits": "只描述均匀线性链的已知谱；本项目应把它作为有效链/对照基线而非五聚体结果。"
+    }
+  ],
+  "unresolved_items": [],
+  "interpretation_guardrails": [
+    "Haraldsen 2011 的 pentamer 仅作为一般 S-S' / 特殊 1-1/2 孤立团簇 INS 对照；本项目 all-spin-1/2 开放线性键与其是否同拓扑未完成全文级比对，不凭标题宣称同模型。",
+    "Cheng 2022 已有 trimer 有效 S=1/2 链与高能局域激发框架；五聚体的具体反射选择规则和胞内权重仍需独立证据。",
+    "现有局部 8-spin/三聚体投影核验不能替代完整五聚体链验证，也不能单独证明新相或全域单相。",
+    "文献核验不改变项目数值门、source hash 或计算结论。"
+  ]
+}

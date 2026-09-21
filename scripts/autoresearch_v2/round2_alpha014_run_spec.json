@@ -1,0 +1,35 @@
+{
+  "run_id": "pentamer-autoresearch-v2-alpha014-20260729",
+  "run_dir": "results/autoresearch_v2_20260729/round2_alpha014_refinement",
+  "settings": {
+    "method": "finite_dmrg",
+    "boundary": "OBC",
+    "sector": "Sz=0",
+    "alpha": 0.14,
+    "beta": 0.5,
+    "L": 80,
+    "n_units": 16,
+    "maxdim": 1500,
+    "nsweeps": 40,
+    "cutoff": 1e-11,
+    "init_mode": "neel",
+    "threads": 16,
+    "save_mps": true,
+    "offline": true
+  },
+  "provenance": {
+    "source_commit": "40f4179a5630039485370648edd9621f592c0449",
+    "git_dirty": true,
+    "standard_sha256": "bb19a444f786f0b18f3cbd013df56429e52b7a0d795213863b1631caffa0e8db",
+    "project_sha256": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "server_julia_version": "1.12.3",
+    "remote_target": "wangjieren@39.96.207.180:6000",
+    "negative_alpha_excluded": true,
+    "repeat_reason": "上一轮 alpha=0.14 的 variance/L 仅边界通过，且末 sweep 能量变化为 9.70e-6"
+  },
+  "cells": [
+    {"cell_id": "cell-0001", "settings": {"init_mode": "neel"}},
+    {"cell_id": "cell-0002", "settings": {"init_mode": "shifted"}}
+  ]
+}

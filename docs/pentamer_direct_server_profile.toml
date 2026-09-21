@@ -1,0 +1,65 @@
+[identity]
+name = "pentamer-direct"
+purpose = "1x5 Heisenberg 五聚体链复现计算"
+maintainer = "wangjieren"
+
+[connection]
+repo_path_remote = "/home/wangjieren/code/1x5_Heisenberg_Pentamer"
+
+[connection.ssh]
+alias = "39.96.207.180"
+host = "39.96.207.180"
+user = "wangjieren"
+identity_file = "~/.ssh/id_ed25519"
+port = 6000
+
+[scheduler]
+type = "none"
+default_partition = "direct"
+
+[[partitions]]
+name = "direct"
+class = "default-cpu"
+cores = 80
+memory = "251G"
+max_wall = "infinite"
+gpu = ""
+
+[filesystem]
+home = "/home/wangjieren"
+scratch = "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results"
+project = "/home/wangjieren/code/1x5_Heisenberg_Pentamer"
+quota = "无用户 quota；/home 探测时已使用 80%"
+
+[network]
+internet_from_login = false
+internet_from_compute = false
+
+[region]
+region = "mainland_china"
+
+[limits.hard]
+max_walltime = "24:00:00"
+max_nodes = 1
+max_cpus = 40
+max_array_size = 1
+
+[limits.soft]
+warn_walltime = "04:00:00"
+warn_cpus = 16
+unusual_partitions = []
+
+[limits.paths]
+allowed_roots = [
+  "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results",
+  "/home/wangjieren/code/1x5_Heisenberg_Pentamer/data",
+]
+
+[commands]
+squeue = ""
+sacct = ""
+sinfo = ""
+quota_command = "df -h /home"
+
+[notes]
+text = "共享直连服务器，无调度器。默认单重任务、nice=10、JULIA_NUM_THREADS<=16；按断网环境部署，禁止远端 Pkg.add/update。"

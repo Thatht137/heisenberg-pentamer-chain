@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "figure_id": 8,
+  "status": "blocked_template_not_production",
+  "scope": {
+    "alpha": 0.23,
+    "beta": 0.5,
+    "negative_alpha_excluded": true,
+    "fig9_excluded": true
+  },
+  "acceptance": {
+    "cv_residual_pass": false,
+    "tebd_convergence_pass": true,
+    "peak_bracketed": false,
+    "major_window_covered": false,
+    "cross_method_gate_pass": false
+  },
+  "panels": [],
+  "note": "复制为生产契约后填写真实路径和 SHA-256；本模板自身必须被绘图脚本拒绝。"
+}

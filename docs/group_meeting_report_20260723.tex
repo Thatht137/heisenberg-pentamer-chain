@@ -1,0 +1,52 @@
+\documentclass[UTF8,zihao=-4]{ctexart}
+
+\usepackage[a4paper,margin=2.1cm]{geometry}
+\usepackage{amsmath,amssymb,bm}
+\usepackage{graphicx}
+\usepackage{booktabs,longtable,tabularx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage[
+  pipeTables,
+  texMathDollars,
+  contentBlocks,
+  html
+]{markdown}
+\usepackage[
+  colorlinks=true,
+  linkcolor=blue!55!black,
+  urlcolor=blue!60!black
+]{hyperref}
+
+\setstretch{1.18}
+\setlength{\parindent}{2em}
+\setlength{\parskip}{0.25em}
+\setkeys{Gin}{
+  width=0.92\linewidth,
+  height=0.66\textheight,
+  keepaspectratio
+}
+
+\ctexset{
+  section={
+    format=\Large\bfseries
+  }
+}
+
+\markdownSetup{
+  rendererPrototypes={
+    headingOne={
+      \begin{center}
+        \LARGE\bfseries #1
+      \end{center}
+      \vspace{0.8em}
+    },
+    headingTwo={\section{#1}},
+    headingThree={\subsection{#1}}
+  }
+}
+
+\begin{document}
+\markdownInput{group_meeting_report_20260723.md}
+\end{document}

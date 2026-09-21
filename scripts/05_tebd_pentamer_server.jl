@@ -3,9 +3,6 @@
 参数从 PENTAMER_* 环境变量读取，便于服务器上不改代码跑多组参数。
 """
 
-using Pkg
-Pkg.activate(dirname(@__DIR__))
-
 include(joinpath(dirname(@__DIR__), "src", "PentamerChain.jl"))
 using .PentamerChain
 using ITensors
@@ -106,7 +103,7 @@ function calculate_dynamics_pentamer(;
     println("tstep = ", tstep, ", n_steps = ", n_steps)
     flush(stdout)
 
-    energy, psi_gs, sites, _ = compute_ground_state(;
+    energy, psi_gs, sites, hamiltonian = compute_ground_state(;
         N_units=n_units,
         alpha,
         beta,
@@ -116,7 +113,12 @@ function calculate_dynamics_pentamer(;
     )
 
     @printf("\nGround state energy = %.12f\n", energy)
-    println("Total Sz = ", sum(expect(psi_gs, "Sz")))
+    total_sz = sum(real.(expect(psi_gs, "Sz")))
+    energy_squared = real(inner(hamiltonian, psi_gs, hamiltonian, psi_gs))
+    variance_per_site = max(energy_squared - energy^2, 0.0) / total_sites
+    dmrg_actual_maxdim = maximum(linkdims(psi_gs))
+    println("Total Sz = ", total_sz)
+    println("Variance per site = ", variance_per_site)
     flush(stdout)
 
     gates = pentamer_tebd_gates(sites, n_units; alpha, beta, tstep)
@@ -126,8 +128,13 @@ function calculate_dynamics_pentamer(;
     sp_psi = noprime(apply(sz_center, psi0))
 
     sz_ops = [local_sz_mpo(sites, site) for site in 1:total_sites]
-    data = Matrix{Float64}(undef, 5, n_steps * total_sites)
-    col = 1
+    data = Matrix{Float64}(undef, 5, (n_steps + 1) * total_sites)
+    for site in 1:total_sites
+        distance = site - center
+        corr = inner(psi0', sz_ops[site], sp_psi)
+        data[:, site] .= (0.0, site, distance, real(corr), imag(corr))
+    end
+    col = total_sites + 1
 
     data_dir = joinpath(dirname(@__DIR__), "data")
     mkpath(data_dir)
@@ -146,7 +153,8 @@ function calculate_dynamics_pentamer(;
             ckpt["n_steps"] == n_steps &&
             get(ckpt, "tstep", NaN) == tstep &&
             get(ckpt, "tebd_maxdim", -1) == tebd_maxdim &&
-            get(ckpt, "tebd_cutoff", NaN) == tebd_cutoff
+            get(ckpt, "tebd_cutoff", NaN) == tebd_cutoff &&
+            get(ckpt, "t0_included", false) == true
         if parameters_match
             saved_step = ckpt["last_step"]
             saved_data = ckpt["data"]
@@ -157,8 +165,9 @@ function calculate_dynamics_pentamer(;
                     @printf("  快进 step %d/%d\n", step, saved_step)
                 end
             end
-            data[:, 1:saved_step*total_sites] .= saved_data[:, 1:saved_step*total_sites]
-            col = saved_step * total_sites + 1
+            saved_columns = (saved_step + 1) * total_sites
+            data[:, 1:saved_columns] .= saved_data[:, 1:saved_columns]
+            col = saved_columns + 1
             start_step = saved_step + 1
             println("恢复完成，从 step $(start_step) 继续。")
         else
@@ -206,6 +215,7 @@ function calculate_dynamics_pentamer(;
                 tstep,
                 tebd_maxdim,
                 tebd_cutoff,
+                t0_included=true,
             )
             @printf("  [checkpoint saved at step %d]\n", step)
             flush(stdout)
@@ -233,10 +243,24 @@ function calculate_dynamics_pentamer(;
         dmrg_cutoff,
         tebd_cutoff,
         nsweeps,
+        t0_included=true,
+        variance_per_site,
+        total_sz,
+        dmrg_actual_maxdim,
         output_tag=OUTPUT_TAG,
     )
 
+    metrics_file = replace(filename, ".jld2" => "_metrics.csv")
+    open(metrics_file, "w") do file
+        println(file, "metric,value")
+        println(file, "variance_per_site,$(variance_per_site)")
+        println(file, "total_sz,$(total_sz)")
+        println(file, "dmrg_actual_maxdim,$(dmrg_actual_maxdim)")
+        println(file, "t0_included,true")
+    end
+
     println("\nData saved to ", filename)
+    println("Metrics saved to ", metrics_file)
     isfile(checkpoint_file) && rm(checkpoint_file)
     return filename
 end

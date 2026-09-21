@@ -1,0 +1,36 @@
+{
+  "run_id": "pentamer-effective-chain-weak-fix-domain-20260729",
+  "run_dir": "results/autoresearch_v3_20260729/round2_effective_weak_fix_domain",
+  "settings": {
+    "method": "finite_dmrg",
+    "boundary": "OBC",
+    "init_mode": "domain",
+    "offline": true,
+    "maxdim": 800,
+    "nsweeps": 64,
+    "cutoff": 1e-12,
+    "threads": 16
+  },
+  "provenance": {
+    "manifest_sha256": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c",
+    "server_julia_version": "1.12.3",
+    "negative_alpha_excluded": true,
+    "hypothesis": "first-order doublet projection to an AFM spin-1/2 Heisenberg chain"
+  },
+  "cells": [
+    {
+      "cell_id": "cell-0001",
+      "alpha": 0.23,
+      "beta": 0.02,
+      "N_units": 12,
+      "target_sz": 0
+    },
+    {
+      "cell_id": "cell-0002",
+      "alpha": 0.23,
+      "beta": 0.02,
+      "N_units": 16,
+      "target_sz": 0
+    }
+  ]
+}
