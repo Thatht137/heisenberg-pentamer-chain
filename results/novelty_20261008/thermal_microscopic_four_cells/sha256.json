@@ -1,0 +1,16 @@
+{
+  "scripts\\submission_20261002\\validate_thermal_four_cells.py": "c1051931669ddb886de2f791ba26848e525e0d46760a3ac7a5de2b20fa1b3b62",
+  "scripts\\submission_20261002\\check_thermal_compensation.py": "e70bf76cbf957e1869c852d77e859786eecc150adb323c5327335f6403577ed7",
+  "scripts\\submission_20261002\\validate_dark_multicell.py": "e26a78bbbdfd150682c04ee63b19ff0367682b6ccfb5f35376bd05711c16633b",
+  "scripts\\submission_20261002\\validate_thermal_two_cells.py": "601a0279f25901b86f4bde771cae8361cd135c974a6ded29e019b8fd77d2e015",
+  "scripts\\autoresearch_v5\\analyze_negative_phase_independent_observables.py": "ab97d27176317a45b1d554a614fae5e6188ccfc814b81dfb629cb92e32145b93",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\activation_lines.csv": "21b6e9552180b2141def15d6c583778012fc88a4d6a196872f3cefcf2012bdb5",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\benchmark_L10.json": "cfe8c484e0dba6ca8212fad445874e79947a96c308ce97f4b9978431b4e162d3",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\comparisons.csv": "cd79eb6047962ecc098c03ca4d60fa16baf249ebecdd6fc8dcffcb21f6a29423",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\low_band_g0.0006250.npz": "3a9c83fa4f774e7b28b423ea3eeaaa40bd6fefe3865a9bb50a7643dc47cb317d",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\low_band_g0.0012500.npz": "9b49436190752b7c9a29f2576db7d4fe90f55535bda0a0ba3d76f1894aac1ff1",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\low_band_g0.0025000.npz": "7af6f8a97efc9b531ef2ea7946f4ecba572f67b4e78d8b62bbbe618ee9c5f86e",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\numerical_checks.json": "37133bcdf6e6008fcc949a4b7cac9694e37eb50f43f186f6c6220eebaa38a97b",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\protocol.json": "44f65851d8c1a14466ff0524bb406dace6b0429188e140c683896e0df565765e",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\summary.json": "742f6e745d8dec857b58b5de8212fe2f3cec4b0c8cd484d132faf2fe8943022e"
+}

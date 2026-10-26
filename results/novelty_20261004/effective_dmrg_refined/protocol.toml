@@ -1,0 +1,17 @@
+total_sz = 0
+cells = [20, 40]
+max_abs_local_sz_gate = 0.0001
+ITensors = "0.9.27"
+boundary = "OBC"
+cutoff = 1.0e-13
+threads = 1
+sweeps = [24, 16, 16]
+reason = "first D=64,128 run failed variance, energy and local-spin gates; preserve failures"
+energy_per_cell_change_gate = 1.0e-8
+Wmin_relative_change_gate = 0.01
+scope = "effective model only; no thermodynamic extrapolation"
+ITensorMPS = "0.4.1"
+wall_limit_seconds = 1200
+variance_per_cell_gate = 1.0e-8
+warm_start = "do not reduce maxdim when refining the previous state"
+maxdims = [128, 192, 256]

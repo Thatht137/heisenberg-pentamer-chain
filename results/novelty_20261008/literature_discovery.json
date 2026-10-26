@@ -1,0 +1,757 @@
+{
+  "retrieval_date": "2026-10-08",
+  "source": "SciSpace discovery; metadata and dates not authoritative until primary-source verification",
+  "queries": [
+    {
+      "key": "lit20261008_scispace",
+      "search_question": "What research has shown that tuning a destructive-interference zero of the neutron scattering form factor in an isotropic coupled spin-cluster Heisenberg chain suppresses the one-spin response but leaves a composite quadrupole-spin response, and how does this differ between local spin-1/2 doublets and spin-3/2 quartets?",
+      "papers": [
+        {
+          "title": "Fractional and composite excitations of antiferromagnetic quantum spin trimer chains",
+          "doi": null,
+          "index_date": "2020-11-04T00:00:00Z",
+          "unique_id": "bz388c5bvg",
+          "authors": [
+            "Jun-Qing Cheng",
+            "Jun Li",
+            "Zijian Xiong",
+            "Han-Qing Wu",
+            "Anders W. Sandvik",
+            "Dao-Xin Yao"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://arxiv.org/abs/2011.02448",
+              "https://ui.adsabs.harvard.edu/abs/2020arXiv201102448C/abstract"
+            ],
+            "Pdf": [
+              "http://export.arxiv.org/pdf/2011.02448"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Hybridized quadrupolar excitations in the spin-anisotropic frustrated magnet FeI2",
+          "doi": "10.1038/S41567-020-01110-1",
+          "index_date": "2020-04-12T00:00:00Z",
+          "unique_id": "1pkw0m5636",
+          "authors": [
+            "Xiaojian Bai",
+            "Xiaojian Bai",
+            "Shang-Shun Zhang",
+            "Zhiling Dun",
+            "Hao Zhang",
+            "Hao Zhang",
+            "Qing Huang",
+            "Haidong Zhou",
+            "Matthew B. Stone",
+            "Alexander I. Kolesnikov",
+            "Feng Ye",
+            "Cristian D. Batista",
+            "Martin Mourigal"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://arxiv.org/abs/2004.05623"
+            ],
+            "Pdf": [
+              "http://export.arxiv.org/pdf/2004.05623"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Nonuniform quadrupolar orders in the spin-3/2 generalized Heisenberg chain",
+          "doi": "10.48550/arxiv.2311.08099",
+          "index_date": "2023-01-01T00:00:00Z",
+          "unique_id": "1f3odpu22k",
+          "authors": [
+            "Jie Chen",
+            "Sheng Hu",
+            "Lei Pan",
+            "Xiaoqun Wang"
+          ],
+          "discovery_only": true
+        },
+        {
+          "title": "Spinon Excitations in 99.9% Deuterated Single Crystals of Tomonaga–Luttinger Liquid [Cu(μ-C<sub>2</sub>O<sub>4</sub>)(4-Aminopyridine)<sub>2</sub>(H<sub>2</sub>O)]<sub><i>n</i></sub>",
+          "doi": "10.1021/acsomega.4c08525",
+          "index_date": "2025-01-17T00:00:00Z",
+          "unique_id": "6as7d8qolpfb",
+          "authors": [
+            "S. Athira",
+            "Sushma Lakshmi R",
+            "Goreti Rajendar",
+            "Alex P. Andrews",
+            "Probal Nag",
+            "Sharath Kumar Channarayappa",
+            "Sivaranjana Reddy Vennapusa",
+            "Richard A. Mole",
+            "Anil Jain",
+            "D. Jaiswal‐Nagar"
+          ],
+          "discovery_only": true
+        },
+        {
+          "title": "Unconventional phases of the alternating-spin Heisenberg chain with extra three-body exchange terms",
+          "doi": "10.1088/1742-6596/558/1/012015",
+          "index_date": "2014-12-03T00:00:00Z",
+          "unique_id": "2vov13t5gd",
+          "authors": [
+            "Nedko B. Ivanov",
+            "Nedko B. Ivanov",
+            "Jürgen Schnack"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://ui.adsabs.harvard.edu/abs/2014JPhCS.558a2015I/abstract",
+              "https://inspirehep.net/literature/1402719"
+            ],
+            "Others": [
+              "https://inspirehep.net/record/1402719"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Cluster-based Haldane state in edge-shared tetrahedral spin-cluster chain: Fedotovite K$_2$Cu$_3$O(SO$_4$)$_3$",
+          "doi": "10.48550/arxiv.1709.06405",
+          "index_date": "2022-03-03T00:00:00Z",
+          "unique_id": "ramf3qvc2s2c",
+          "authors": [
+            "Sugimoto, T.",
+            "Yano, S.",
+            "Sagayama, H.",
+            "Murakami, Y.",
+            "Tomiyasu, K.",
+            "Matsuo, A.",
+            "Kindo, K."
+          ],
+          "discovery_only": true
+        },
+        {
+          "title": "Magnetic order in spin-1 and spin-3/2 interpolating square-triangle Heisenberg antiferromagnets",
+          "doi": "10.1140/EPJB/E2011-20766-8",
+          "index_date": "2012-01-18T00:00:00Z",
+          "unique_id": "53i5bv42tr",
+          "authors": [
+            "P. H. Y. Li",
+            "Raymond F. Bishop"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://link.springer.com/article/10.1140/epjb/e2011-20766-8",
+              "http://ui.adsabs.harvard.edu/abs/2012EPJB...85...25L/abstract"
+            ],
+            "Others": [
+              "http://dx.doi.org/10.1140/epjb/e2011-20766-8",
+              "https://link.springer.com/content/pdf/10.1140/epjb/e2011-20766-8"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Nearly Deconfined Spinon Excitations in the Square-Lattice Spin- 1 / 2 Heisenberg Antiferromagnet",
+          "doi": "10.1103/PHYSREVX.7.041072",
+          "index_date": "2017-12-28T00:00:00Z",
+          "unique_id": "4j2c8wp7n1",
+          "authors": [
+            "Hui Shao",
+            "Yan Qi Qin",
+            "Sylvain Capponi",
+            "Sylvain Capponi",
+            "Stefano Chesi",
+            "Zi Yang Meng",
+            "Anders W. Sandvik"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://link.aps.org/doi/10.1103/PhysRevX.7.041072",
+              "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.7.041072"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Magnetic order in spin-1 and spin-3/2 interpolating square-triangle Heisenberg antiferromagnets",
+          "doi": "10.1140/EPJB/E2011-20766-8",
+          "index_date": "2011-11-30T00:00:00Z",
+          "unique_id": "c635dqqey8",
+          "authors": [
+            "P. H. Y. Li",
+            "Raymond F. Bishop"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://arxiv.org/abs/1111.7237v1"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Symmetry-Induced Universal Momentum-Transfer Dependencies for Inelastic Neutron Scattering on Anisotropic Spin Clusters",
+          "doi": "10.48550/arxiv.2105.04853",
+          "index_date": "2022-02-21T00:00:00Z",
+          "unique_id": "4yz2ec9tvtwn",
+          "authors": [
+            "Tabrizi Shadan Ghassemi"
+          ],
+          "discovery_only": true
+        }
+      ],
+      "extraction_available": true
+    },
+    {
+      "key": "lit20261008_scispace2",
+      "search_question": "How have destructive interference or momentum-dependent structure-factor zeros been used to suppress leading spin correlations and isolate subleading multipolar or multi-spin excitations in Heisenberg chains or weakly coupled magnetic clusters?",
+      "papers": [
+        {
+          "title": "Revealing Quadrupolar Excitations with Non-Linear Spectroscopy",
+          "doi": "10.48550/arxiv.2405.14954",
+          "index_date": "2024-05-23T00:00:00Z",
+          "unique_id": "5cs5clfnp2",
+          "authors": [
+            "Yoshito Watanabe",
+            "Simon Trebst",
+            "Ciarán Hickey"
+          ],
+          "primary_urls": {
+            "Pdf": [
+              "https://arxiv.org/pdf/2405.14954"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Nearly deconfined spinon excitations in the square-lattice spin-1/2 Heisenberg antiferromagnet",
+          "doi": "10.48550/arxiv.1708.03232",
+          "index_date": "2022-03-04T00:00:00Z",
+          "unique_id": "1o6auroc1u40",
+          "authors": [
+            "Shao Hui",
+            "Qin Yan-qi",
+            "Capponi, Sylvain",
+            "Chesi, Stefano",
+            "Meng, Zi Yang",
+            "Sandvik, Anders W."
+          ],
+          "discovery_only": true
+        },
+        {
+          "title": "Nearly deconfined spinon excitations in the square-lattice spin-1/2 Heisenberg antiferromagnet",
+          "doi": "10.1103/PHYSREVX.7.041072",
+          "index_date": "2017-08-10T00:00:00Z",
+          "unique_id": "59d3vy5p6m",
+          "authors": [
+            "Hui Shao",
+            "Yan Qi Qin",
+            "Sylvain Capponi",
+            "Sylvain Capponi",
+            "Stefano Chesi",
+            "Zi Yang Meng",
+            "Anders W. Sandvik"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://arxiv.org/abs/1708.03232"
+            ],
+            "Pdf": [
+              "http://export.arxiv.org/pdf/1708.03232"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Absent pinch points and emergent clusters: further neighbour interactions in the pyrochlore Heisenberg antiferromagnet",
+          "doi": "10.48550/arxiv.1003.4176",
+          "index_date": "2022-03-15T00:00:00Z",
+          "unique_id": "wcy8s41cd9q9",
+          "authors": [
+            "Chalker J T"
+          ],
+          "discovery_only": true
+        },
+        {
+          "title": "Probing multi-spinon excitations outside of the two-spinon continuum in the antiferromagnetic spin chain cuprate Sr 2 CuO 3",
+          "doi": "10.1038/S41467-018-07838-Y",
+          "index_date": "2018-12-19T00:00:00Z",
+          "unique_id": "4dkrm1jzoc",
+          "authors": [
+            "J. Schlappa",
+            "Umesh Kumar",
+            "K. J. Zhou",
+            "Surjeet Singh",
+            "Martin Mourigal",
+            "Vladimir N. Strocov",
+            "A. Revcolevschi",
+            "L. Patthey",
+            "Henrik M. Rønnow",
+            "Steven Johnston",
+            "Thorsten Schmitt"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://www.nature.com/articles/s41467-018-07838-y",
+              "https://pubmed.ncbi.nlm.nih.gov/30568161/"
+            ],
+            "Others": [
+              "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6300594",
+              "https://www.nature.com/articles/s41467-018-07838-y.pdf"
+            ],
+            "Pdf": [
+              "https://www.dora.lib4ri.ch/psi/islandora/object/psi%3A4957/datastream/PDF/Schlappa-2018-Probing_multi-spinon_excitations_outside_of-%28published_version%29.pdf"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Destructive quantum interference in spin tunneling problems",
+          "doi": "10.48550/arxiv.cond-mat/9208011",
+          "index_date": "2022-03-21T00:00:00Z",
+          "unique_id": "bnhs31c5jxe6",
+          "authors": [
+            "von Delft Jan",
+            "Henley, Christopher L."
+          ],
+          "discovery_only": true
+        },
+        {
+          "title": "Destructive quantum interference in spin tunneling problems.",
+          "doi": "10.1103/PHYSREVLETT.69.3236",
+          "index_date": "1992-11-30T00:00:00Z",
+          "unique_id": "529r3xkmkq",
+          "authors": [
+            "Jan von Delft",
+            "Christopher L. Henley"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://link.aps.org/doi/10.1103/PhysRevLett.69.3236",
+              "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.69.3236"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Magnetic cluster excitations",
+          "doi": "10.1088/1742-6596/325/1/012001",
+          "index_date": "2011-10-21T00:00:00Z",
+          "unique_id": "2xf0wk8ovg",
+          "authors": [
+            "Albert Furrer"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://ui.adsabs.harvard.edu/abs/2011JPhCS.325a2001F/abstract",
+              "https://www.arxiv-vanity.com/papers/1211.4688/"
+            ],
+            "Pdf": [
+              "http://iopscience.iop.org/article/10.1088/1742-6596/325/1/012001/pdf"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Magnetic excitations in weakly coupled spin dimers and chains material Cu2Fe2Ge4O13",
+          "doi": "10.48550/arxiv.cond-mat/0506070",
+          "index_date": "2022-03-21T00:00:00Z",
+          "unique_id": "i6rxvjnh72un",
+          "authors": [
+            "Masuda T.",
+            "Zheludev, A.",
+            "Sales, B.",
+            "Imai S",
+            "Park, S."
+          ],
+          "discovery_only": true
+        },
+        {
+          "title": "Inhomogeneous spin excitations in weakly coupled spin-1/2 chains",
+          "doi": "10.48550/arxiv.1909.03146",
+          "index_date": "2022-02-27T00:00:00Z",
+          "unique_id": "hzm4qlbyk7zd",
+          "authors": [
+            "Shen L",
+            "Campillo, E.",
+            "Zaharko, O.",
+            "Steffens, P.",
+            "Boehm, M.",
+            "Beauvois, K.",
+            "Ouladdiaf, B.",
+            "He Z",
+            "Prabhakaran D",
+            "Boothroyd, A. T.",
+            "Blackburn, E."
+          ],
+          "discovery_only": true
+        }
+      ],
+      "extraction_available": true
+    },
+    {
+      "key": "lit20261008_thermal",
+      "search_question": "Which papers study the temperature dependence of accidental destructive-interference zeros in inelastic neutron scattering from weakly coupled Heisenberg spin clusters, including retuning exchange parameters to minimize the whole low-energy spectral weight at each temperature?",
+      "papers": [
+        {
+          "title": "Finite temperature dynamics of the spin-half Heisenberg chain",
+          "doi": "10.1016/S0921-4526(97)00645-5",
+          "index_date": "1997-12-01T00:00:00Z",
+          "unique_id": "y7ubbpuomo",
+          "authors": [
+            "Oleg A. Starykh",
+            "Anders W. Sandvik",
+            "Rajiv R. P. Singh"
+          ],
+          "primary_urls": {
+            "Html": [
+              "http://ui.adsabs.harvard.edu/abs/1997PhyB..241..563S/abstract",
+              "https://www.sciencedirect.com/science/article/abs/pii/S0921452697006455"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Finite-temperature dynamics and the role of disorder in nearly critical Ni (Cl 1 -x Br x ) 2 .4 SC (NH 2 )2",
+          "doi": "10.1103/PHYSREVB.102.224405",
+          "index_date": "2020-12-03T00:00:00Z",
+          "unique_id": "ckru4xgtel",
+          "authors": [
+            "L. Facheris",
+            "Dominic Blosser",
+            "K. Yu. Povarov",
+            "R. I. Bewley",
+            "Severian Gvasaliya",
+            "Andrey Zheludev"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://link.aps.org/doi/10.1103/PhysRevB.102.224405",
+              "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.102.224405"
+            ],
+            "Pdf": [
+              "https://arxiv.org/pdf/2008.04037v2",
+              "http://export.arxiv.org/pdf/2008.04037"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Vertex corrections in the dynamic structure factor in spin ladders",
+          "doi": "10.48550/arxiv.1010.2459",
+          "index_date": "2022-03-14T00:00:00Z",
+          "unique_id": "ec6p7mpq5mjf",
+          "authors": [
+            "Schmidt, K. P.",
+            "Lake, B.",
+            "Tennant, D. A.",
+            "Uhrig, G. S."
+          ],
+          "discovery_only": true
+        },
+        {
+          "title": "Quantum and classical spin dynamics across temperature scales in the S =\n  1/2 Heisenberg antiferromagnet",
+          "doi": "10.48550/arxiv.2405.08897",
+          "index_date": "2024-05-14T00:00:00Z",
+          "unique_id": "3cgi9ige15",
+          "discovery_only": true
+        },
+        {
+          "title": "Dzyaloshinsky-Moriya interaction and long life time of the spin state in the Cu$_3$ triangular spin cluster by inelastic neutron scattering measurements",
+          "doi": "10.48550/arxiv.1005.3975",
+          "index_date": "2022-03-14T00:00:00Z",
+          "unique_id": "m7orb0swrjy5",
+          "authors": [
+            "Iida, Kazuki",
+            "Qiu, Yiming",
+            "Sato Taku J"
+          ],
+          "discovery_only": true
+        },
+        {
+          "title": "Vertex corrections in the dynamic structure factor in spin ladders",
+          "doi": "10.1103/PHYSREVB.82.214410",
+          "index_date": "2010-12-07T00:00:00Z",
+          "unique_id": "435px817fj",
+          "authors": [
+            "I. Exius",
+            "Kai Phillip Schmidt",
+            "Bella Lake",
+            "Bella Lake",
+            "David Tennant",
+            "David Tennant",
+            "Götz S. Uhrig"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://link.aps.org/doi/10.1103/PhysRevB.82.214410",
+              "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.82.214410"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Inelastic neutron scattering on a d1-d1-2 mixed-valence trimer cluster",
+          "doi": "10.1007/BF01299008",
+          "index_date": "1989-05-01T00:00:00Z",
+          "unique_id": "53q568gybd",
+          "authors": [
+            "A. V. Palii",
+            "M. I. Belinskii",
+            "Boris Tsukerblat"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://link.springer.com/article/10.1007/BF01299008"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Multi-triplet bound states and finite-temperature dynamics in highly frustrated quantum spin ladders",
+          "doi": "10.1103/PHYSREVB.94.094402",
+          "index_date": "2016-09-02T00:00:00Z",
+          "unique_id": "1n5xr3yktr",
+          "authors": [
+            "Andreas Honecker",
+            "Frédéric Mila",
+            "B. Normand"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://arxiv.org/abs/1605.09392",
+              "http://ui.adsabs.harvard.edu/abs/2016PhRvB..94i4402H/abstract"
+            ],
+            "Pdf": [
+              "https://arxiv.org/pdf/1605.09392.pdf"
+            ],
+            "Others": [
+              "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.94.094402",
+              "https://link.aps.org/doi/10.1103/PhysRevB.94.094402"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Symmetry-Induced Universal Momentum-Transfer Dependencies for Inelastic Neutron Scattering on Anisotropic Spin Clusters",
+          "doi": "10.48550/arxiv.2105.04853",
+          "index_date": "2022-02-21T00:00:00Z",
+          "unique_id": "4yz2ec9tvtwn",
+          "authors": [
+            "Tabrizi Shadan Ghassemi"
+          ],
+          "discovery_only": true
+        },
+        {
+          "title": "Dynamics of the antiferromagnetic Heisenberg spin 1=2 chain",
+          "doi": null,
+          "index_date": "2008-01-01T00:00:00Z",
+          "unique_id": "1z8iqmx9cz",
+          "authors": [
+            "Jorn Mossel"
+          ],
+          "discovery_only": true
+        }
+      ],
+      "extraction_available": true
+    },
+    {
+      "key": "lit20261008_nogo",
+      "search_question": "Have interference zeros in the dynamical spin structure factor of weakly coupled magnetic clusters been classified by whether physical exchange retuning cancels the entire effective scattering operator or only ground-state transitions, with a finite-temperature no-go result for spin-3/2 cluster multiplets compared with spin-1/2 doublets?",
+      "papers": [
+        {
+          "title": "Diffuse spin waves, zero modes and cluster excitations in the spin-3/2 kagom\\'e antiferromagnet chromium jarosite, KCr3(OD)6(SO4)2",
+          "doi": null,
+          "index_date": "2022-06-15T00:00:00Z",
+          "unique_id": "3uwem25s",
+          "authors": [
+            "Sofie Holm-Janas",
+            "Sidse L. Lolk",
+            "Richard A. Andersen",
+            "Tatiana Guidi",
+            "D. J. Voneshen",
+            "Ivica Živković",
+            "Ulla Gro Nielsen",
+            "Kim Lefmann"
+          ],
+          "discovery_only": true
+        },
+        {
+          "title": "Excitations and dynamical structure factor of <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:mrow><mml:msub><mml:mi>J</mml:mi><mml:mn>1</mml:mn></mml:msub><mml:mtext>−</mml:mtext><mml:msub><mml:mi>J</mml:mi><mml:mn>2</mml:mn></mml:msub></mml:mrow></mml:math> spin- <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:mfrac><mml:mn>3</mml:mn><mml:mn>2</mml:mn></mml:mfrac></mml:math> and spin- <mml:math xmlns:mml=\"http://www.w3.org/1998/Math/MathML\"><mml:mfrac><mml:mn>5</…",
+          "doi": "10.1103/pddz-42x9",
+          "index_date": "2025-09-02T00:00:00Z",
+          "unique_id": "xwu5muuhe9hr",
+          "authors": [
+            "Aman Sharma",
+            "Mithilesh Nayak",
+            "Natalia Chepiga",
+            "Frédéric Mila"
+          ],
+          "primary_urls": {
+            "Pdf": [
+              "https://export.arxiv.org/pdf/2506.13431v1.pdf"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Exact eigenstates of highly frustrated spin lattices probed in high fields",
+          "doi": "10.48550/arxiv.cond-mat/0606401",
+          "index_date": "2022-03-17T00:00:00Z",
+          "unique_id": "uwko5txynrse",
+          "authors": [
+            "Schnack, J.",
+            "Schmidt H J",
+            "Honecker, A.",
+            "Richter, J."
+          ],
+          "discovery_only": true
+        },
+        {
+          "title": "Cluster-based Haldane phases, bound magnon crystals and quantum spin liquids of a mixed spin-1 and spin-1/2 Heisenberg octahedral chain",
+          "doi": "10.1103/PHYSREVB.100.094405",
+          "index_date": "2019-09-04T00:00:00Z",
+          "unique_id": "2trtiblcay",
+          "authors": [
+            "Katarina Karlova",
+            "Jozef Strečka",
+            "Taras Verkholyak"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://link.aps.org/doi/10.1103/PhysRevB.100.094405",
+              "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.100.094405"
+            ],
+            "Pdf": [
+              "http://export.arxiv.org/pdf/1904.02889"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Quantum Phase Interference and Parity Effects in Magnetic Molecular Clusters",
+          "doi": "10.1126/SCIENCE.284.5411.133",
+          "index_date": "1999-04-02T00:00:00Z",
+          "unique_id": "j4q5b64n11",
+          "authors": [
+            "Wolfgang Wernsdorfer",
+            "Roberta Sessoli"
+          ],
+          "primary_urls": {
+            "Others": [
+              "https://science.sciencemag.org/content/284/5411/133",
+              "http://europepmc.org/abstract/MED/10102810"
+            ],
+            "Html": [
+              "https://www.science.org/doi/10.1126/science.284.5411.133",
+              "https://flore.unifi.it/handle/2158/223672"
+            ],
+            "Unknown": [
+              "https://core.ac.uk/display/106219269"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Low-Energy Magnetic Excitations of the Mn 12 -Acetate Spin Cluster Observed by Neutron Scattering",
+          "doi": "10.1103/PHYSREVLETT.83.628",
+          "index_date": "1999-07-19T00:00:00Z",
+          "unique_id": "59fftb4732",
+          "authors": [
+            "Isabelle Mirebeau",
+            "M. Hennion",
+            "H. Casalta",
+            "H. Andres",
+            "Hans U. Güdel",
+            "A. V. Irodova",
+            "Andrea Caneschi"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.83.628",
+              "https://link.aps.org/doi/10.1103/PhysRevLett.83.628"
+            ],
+            "Pdf": [
+              "http://export.arxiv.org/pdf/cond-mat/9903281"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Exact eigenstates of highly frustrated spin lattices probed in high fields",
+          "doi": "10.1088/1742-6596/51/1/007",
+          "index_date": "2006-11-01T00:00:00Z",
+          "unique_id": "1jo6feblpt",
+          "authors": [
+            "Jürgen Schnack",
+            "Heinz-Jürgen Schmidt",
+            "Andreas Honecker",
+            "Jörg Schulenburg",
+            "Johannes Richter"
+          ],
+          "primary_urls": {
+            "Html": [
+              "http://ui.adsabs.harvard.edu/abs/2006JPhCS..51...43S/abstract",
+              "https://iopscience.iop.org/article/10.1088/1742-6596/51/1/007"
+            ],
+            "Pdf": [
+              "http://iopscience.iop.org/article/10.1088/1742-6596/51/1/007/pdf",
+              "https://obelix.physik.uni-bielefeld.de/~schnack/talks/v-200608-sendai.p4.pdf"
+            ]
+          },
+          "discovery_only": true
+        },
+        {
+          "title": "Multi-triplet bound states and finite-temperature dynamics in highly frustrated quantum spin ladders",
+          "doi": "10.48550/arxiv.1605.09392",
+          "index_date": "2022-03-07T00:00:00Z",
+          "unique_id": "osgey4e08zjg",
+          "authors": [
+            "Honecker, Andreas",
+            "Mila Frederic",
+            "Normand, B."
+          ],
+          "discovery_only": true
+        },
+        {
+          "title": "Dynamical structure factor of triangular-lattice antiferromagnet",
+          "doi": "10.48550/arxiv.1306.1231",
+          "index_date": "2022-03-21T00:00:00Z",
+          "unique_id": "aic3tvea6l97",
+          "authors": [
+            "Mourigal, M.",
+            "Fuhrman, W. T.",
+            "Chernyshev, A. L.",
+            "Zhitomirsky, M. E."
+          ],
+          "discovery_only": true
+        },
+        {
+          "title": "Multi-triplet bound states and finite-temperature dynamics in highly frustrated quantum spin ladders",
+          "doi": "10.1103/PHYSREVB.94.094402",
+          "index_date": "2016-09-02T00:00:00Z",
+          "unique_id": "1n5xr3yktr",
+          "authors": [
+            "Andreas Honecker",
+            "Frédéric Mila",
+            "B. Normand"
+          ],
+          "primary_urls": {
+            "Html": [
+              "https://arxiv.org/abs/1605.09392",
+              "http://ui.adsabs.harvard.edu/abs/2016PhRvB..94i4402H/abstract"
+            ],
+            "Pdf": [
+              "https://arxiv.org/pdf/1605.09392.pdf"
+            ],
+            "Others": [
+              "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.94.094402",
+              "https://link.aps.org/doi/10.1103/PhysRevB.94.094402"
+            ]
+          },
+          "discovery_only": true
+        }
+      ],
+      "extraction_available": true
+    }
+  ]
+}

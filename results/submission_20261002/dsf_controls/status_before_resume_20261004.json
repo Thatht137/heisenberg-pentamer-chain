@@ -1,0 +1,92 @@
+{
+  "completed": [
+    {
+      "name": "positive_chi",
+      "pid": 47868,
+      "command": [
+        "D:\\program\\Julia-1.11.5\\bin\\julia.exe",
+        "--startup-file=no",
+        "--project=D:\\Project\\1x5_Heisenberg_Pentamer",
+        "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\compute_fullq_dsf.jl",
+        "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\positive_chi",
+        "0.5",
+        "8",
+        "0.05",
+        "60",
+        "256",
+        "3",
+        "256"
+      ],
+      "started_epoch": 1790957012.9552102,
+      "status": "complete",
+      "elapsed_seconds": 2413.2029999999995,
+      "exit_code": 0
+    },
+    {
+      "name": "positive_dt",
+      "pid": 36188,
+      "command": [
+        "D:\\program\\Julia-1.11.5\\bin\\julia.exe",
+        "--startup-file=no",
+        "--project=D:\\Project\\1x5_Heisenberg_Pentamer",
+        "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\compute_fullq_dsf.jl",
+        "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\positive_dt",
+        "0.5",
+        "8",
+        "0.025",
+        "60",
+        "256",
+        "3",
+        "256"
+      ],
+      "started_epoch": 1790957013.6862693,
+      "status": "complete",
+      "elapsed_seconds": 3734.281000000001,
+      "exit_code": 0
+    }
+  ],
+  "running": [
+    {
+      "name": "negative_chi",
+      "pid": 46532,
+      "command": [
+        "D:\\program\\Julia-1.11.5\\bin\\julia.exe",
+        "--startup-file=no",
+        "--project=D:\\Project\\1x5_Heisenberg_Pentamer",
+        "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\compute_fullq_dsf.jl",
+        "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\negative_chi",
+        "-0.5",
+        "8",
+        "0.05",
+        "60",
+        "256",
+        "3",
+        "256"
+      ],
+      "started_epoch": 1790959436.6941543,
+      "status": "running"
+    },
+    {
+      "name": "negative_dt",
+      "pid": 28580,
+      "command": [
+        "D:\\program\\Julia-1.11.5\\bin\\julia.exe",
+        "--startup-file=no",
+        "--project=D:\\Project\\1x5_Heisenberg_Pentamer",
+        "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\compute_fullq_dsf.jl",
+        "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\negative_dt",
+        "-0.5",
+        "8",
+        "0.025",
+        "60",
+        "256",
+        "3",
+        "256"
+      ],
+      "started_epoch": 1790960758.4290638,
+      "status": "running"
+    }
+  ],
+  "pending": [],
+  "failure": false
+}

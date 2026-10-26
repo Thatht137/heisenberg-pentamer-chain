@@ -1,0 +1,8 @@
+{
+  "scripts\\submission_20261002\\prove_general_spin_obstruction.py": "32fe1f6c688000bc2982f126c279d21baaaa68639458f1cb3698af479f9392d3",
+  "scripts\\submission_20261002\\prove_thermal_operator_obstruction.py": "341bb97fd97d84fb0c5fb5cf0b662282f197585e876c24a9f7951dc2f45a1180",
+  "scripts\\submission_20261002\\prove_thermal_activation_exact.py": "70e71a691caaf6426802e58c251ff4bdc4254314f58fb110228df8def12e18dd",
+  "results\\novelty_20261008\\general_spin_obstruction\\polynomial_coefficients.json": "e3a59885c834feeae8d6ce6f941cb63d9d46889a14a7ff7dbc9900005cc1b15b",
+  "results\\novelty_20261008\\general_spin_obstruction\\protocol.json": "6c549470c5aa1b160831dc17d064f5fbdc3120f9d5875a61df105b7940764bf3",
+  "results\\novelty_20261008\\general_spin_obstruction\\summary.json": "6c5319a013040364e9f14b41604b7cd9dabdaefecba2150ab284dca63838e1a6"
+}

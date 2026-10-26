@@ -29,7 +29,6 @@ def load_spectrum(alpha):
         f"alpha={alpha_label(alpha)}_beta={BETA:g}_{TAG}.csv"
     )
     spectrum = np.loadtxt(path, delimiter=",")
-    spectrum = 0.5 * (spectrum + spectrum[::-1, :])
     qvals = np.linspace(0.0, 2.0 * np.pi, spectrum.shape[0])
     omegavals = np.linspace(0.0, OMEGA_MAX, spectrum.shape[1])
     return spectrum, qvals, omegavals

@@ -265,7 +265,9 @@ def plot_fig6() -> None:
     for i, a in enumerate(alphas):
         for j, b in enumerate(betas):
             arr = arrays[(a, b)]
-            image = axes[i, j].imshow(arr.T, origin="lower", aspect="auto", extent=(0, 2 * np.pi, 0, 3), cmap="jet", vmin=0, vmax=vmax, interpolation="bilinear")
+            q = np.linspace(0, 2 * np.pi, arr.shape[0])
+            omega = np.linspace(0, 3, arr.shape[1])
+            image = axes[i, j].pcolormesh(q, omega, arr.T, shading="nearest", cmap="jet", vmin=0, vmax=vmax, rasterized=True)
             axes[i, j].text(0.05, 0.91, rf"$({chr(97+i*4+j)})$", transform=axes[i, j].transAxes, color="white", fontsize=9)
             axes[i, j].text(0.95, 0.91, rf"$\alpha={a:g},\beta={b:g}$", transform=axes[i, j].transAxes, ha="right", color="white", fontsize=6.5)
             axes[i, j].set_xticks([0, np.pi, 2 * np.pi], [r"$0$", r"$\pi$", r"$2\pi$"])
@@ -285,8 +287,10 @@ def plot_fig7() -> None:
     fig, axes = plt.subplots(1, 3, figsize=(6.15, 2.15), sharex=True, sharey=True, gridspec_kw={"wspace": 0.10})
     image = None
     for index, (ax, alpha, arr) in enumerate(zip(axes, alphas, arrays)):
-        count = min(arr.shape[1], int(round(arr.shape[1] * 0.5)))
-        image = ax.imshow(arr[:, :count].T, origin="lower", aspect="auto", extent=(0, 2 * np.pi, 0, 1.5), cmap="jet", vmin=0, vmax=vmax, interpolation="bilinear")
+        q = np.linspace(0, 2 * np.pi, arr.shape[0])
+        omega = np.linspace(0, 3, arr.shape[1])
+        image = ax.pcolormesh(q, omega, arr.T, shading="nearest", cmap="jet", vmin=0, vmax=vmax, rasterized=True)
+        ax.set_ylim(0, 1.5)
         ax.text(0.05, 0.90, rf"$({chr(97+index)})$", transform=ax.transAxes, color="white", fontsize=9)
         ax.text(0.95, 0.90, rf"$\alpha={alpha:.2f}$", transform=ax.transAxes, ha="right", color="white", fontsize=7)
         ax.set_xticks([0, np.pi, 2 * np.pi], [r"$0$", r"$\pi$", r"$2\pi$"])

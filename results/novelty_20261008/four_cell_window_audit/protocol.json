@@ -1,0 +1,14 @@
+{
+  "posthoc_diagnostic": true,
+  "motivation": "raw run found frequency-threshold sensitivity at tau=1.6 and a low-T background",
+  "original_protocol_unchanged": true,
+  "resolved_frequency_cutoffs_over_Jeff": [
+    0.02,
+    0.05,
+    0.1
+  ],
+  "figure_cutoff_over_Jeff": 0.05,
+  "raw_positive_threshold": 1e-10,
+  "no_new_eigensolves": true,
+  "interpretation": "C from the leading effective Hamiltonian describes finite scaled frequency, not automatically all finite-beta omega>0 weight"
+}

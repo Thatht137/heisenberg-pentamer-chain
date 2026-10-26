@@ -1,0 +1,32 @@
+{
+  "all_gates_pass": true,
+  "slopes": [
+    {
+      "spin": 1.5,
+      "T_over_Jeff": 0.4,
+      "slope": 2.0708858841700795,
+      "pass": true
+    },
+    {
+      "spin": 1.5,
+      "T_over_Jeff": 1.6,
+      "slope": 2.0254933774174657,
+      "pass": true
+    },
+    {
+      "spin": 0.5,
+      "T_over_Jeff": 0.4,
+      "slope": 4.001853564208952,
+      "pass": true
+    },
+    {
+      "spin": 0.5,
+      "T_over_Jeff": 1.6,
+      "slope": 4.0018865571396205,
+      "pass": true
+    }
+  ],
+  "weakest_prediction_pass": true,
+  "elapsed_seconds": 0.6029655,
+  "microscopic_four_cell_thermal_claim": false
+}

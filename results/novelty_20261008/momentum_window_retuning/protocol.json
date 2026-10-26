@@ -1,0 +1,35 @@
+{
+  "question": "Can optimizing exchange for a finite q window remove its background?",
+  "L": 10,
+  "cells": 2,
+  "boundary": "PBC; two distinct intercell bonds",
+  "all_Sz_sectors": true,
+  "full_dimension": 1024,
+  "largest_block": 252,
+  "g_values": [
+    0.00125,
+    0.0025,
+    0.005,
+    0.01
+  ],
+  "T_over_Jeff": 1.6,
+  "quartet_widths": "delta = rho * sqrt(beta), rho = 0, 0.25, 0.5, 1",
+  "doublet_widths": "delta = rho * beta^2, rho = 0, 1, 2, 4",
+  "temperature": "Fixed tau*beta*c1(root)^2 while alpha is optimized",
+  "window": "Normalized uniform average over q0 +/- delta, no smoothing",
+  "band_and_partition": "Both states below E0+Delta_root/2; full 1024-state partition",
+  "optimizer": "Nine-point local bracket then Brent; no global optimum claim",
+  "quartet_control": "alpha = root + x*beta; bracket kappa_prediction +/- 2",
+  "doublet_control": "alpha = root + kappa0*beta + x*beta^2; bracket -32 to 32",
+  "quadrature": "16 nodes; 32-node final check",
+  "numerical_gates": {
+    "eigen_residual": 1e-10,
+    "quadrature_relative": 1e-07,
+    "band_count": "16 quartet or 4 doublet",
+    "interior_minimum": true
+  },
+  "physics_prediction_not_a_numerical_gate": true,
+  "threads": 1,
+  "wall_limit_seconds": 180,
+  "scope": "Fixed finite ring and shrinking-window weak-coupling limit, not instrument resolution"
+}

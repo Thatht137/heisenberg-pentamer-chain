@@ -1,0 +1,14 @@
+{
+  "pdf_sha256": "3273e5b80711a2bcd972d8c120852b134b490fd6b82221c4f6f3306a2efd18ab",
+  "status": "passed visual layout review; not a scientific peer review",
+  "overview": "12-page contact sheet inspected",
+  "detailed_pages": [1, 3, 5, 6, 8, 11, 12],
+  "final_change_recheck": [11, 12],
+  "new_figure": "standalone activation PNG and embedded page 6 inspected",
+  "observations": [
+    "No visible clipping or overlap in the inspected pages",
+    "New two-panel figure legends do not cross data traces",
+    "User-selected full spectra retain their original appearance and lack lower-left parameter footers",
+    "Author and affiliation placeholders are intentionally retained by user request"
+  ]
+}

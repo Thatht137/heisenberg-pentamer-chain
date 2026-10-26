@@ -1,0 +1,139 @@
+{
+  "numerical_checks_pass": true,
+  "cases": [
+    {
+      "spin": 1.5,
+      "root": -0.7742918851774333,
+      "gap": 0.16622154752454188,
+      "c1_squared": 0.10855197721304166,
+      "A_alpha": 0.10026088071157789,
+      "A_q": 2.6155738949762856e-16,
+      "A_qq": -2.1357781662413604,
+      "kappa0": 1.1585318285605632,
+      "D_positive_weight": 0.3764138207586462,
+      "C_min": 0.017094238397613804,
+      "effective_checks": [
+        {
+          "dimension": 1,
+          "eigen_residual": 0.0,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 2,
+          "eigen_residual": 1.4043333874306804e-16,
+          "D_trace_error": 8.326672684688674e-17,
+          "K_trace_error": 5.551115123125783e-17
+        },
+        {
+          "dimension": 3,
+          "eigen_residual": 1.7746139488048654e-15,
+          "D_trace_error": 2.220446049250313e-16,
+          "K_trace_error": 2.7755575615628914e-17
+        },
+        {
+          "dimension": 4,
+          "eigen_residual": 2.7432030733975138e-15,
+          "D_trace_error": 6.661338147750939e-16,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 3,
+          "eigen_residual": 2.03552621064799e-15,
+          "D_trace_error": 0.0,
+          "K_trace_error": 8.326672684688674e-17
+        },
+        {
+          "dimension": 2,
+          "eigen_residual": 1.621584518530163e-16,
+          "D_trace_error": 8.326672684688674e-17,
+          "K_trace_error": 4.163336342344337e-17
+        },
+        {
+          "dimension": 1,
+          "eigen_residual": 0.0,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        }
+      ]
+    },
+    {
+      "spin": 0.5,
+      "root": 1.097551427678205,
+      "gap": 0.8004164568857004,
+      "c1_squared": 0.23743635549645134,
+      "A_alpha": 0.7975852165303942,
+      "A_q": 1.6999849322585816,
+      "A_qq": 2.973592202719203,
+      "kappa0": 0.16874093668001258,
+      "D_positive_weight": 0.053777481102890747,
+      "C_min": 1.702976053364541e-31,
+      "effective_checks": [
+        {
+          "dimension": 1,
+          "eigen_residual": 0.0,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 2,
+          "eigen_residual": 7.850462293418868e-17,
+          "D_trace_error": 8.326672684688674e-17,
+          "K_trace_error": 1.3010426069826053e-18
+        },
+        {
+          "dimension": 1,
+          "eigen_residual": 0.0,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        }
+      ]
+    }
+  ],
+  "slopes": [
+    {
+      "spin": 1.5,
+      "rho": 0.0,
+      "slope": 2.0096807411290714
+    },
+    {
+      "spin": 1.5,
+      "rho": 0.25,
+      "slope": 2.0099004563169913
+    },
+    {
+      "spin": 1.5,
+      "rho": 0.5,
+      "slope": 2.009538347338681
+    },
+    {
+      "spin": 1.5,
+      "rho": 1.0,
+      "slope": 2.0030740446672564
+    },
+    {
+      "spin": 0.5,
+      "rho": 0.0,
+      "slope": null
+    },
+    {
+      "spin": 0.5,
+      "rho": 1.0,
+      "slope": 4.001800364177355
+    },
+    {
+      "spin": 0.5,
+      "rho": 2.0,
+      "slope": 4.001800342374677
+    },
+    {
+      "spin": 0.5,
+      "rho": 4.0,
+      "slope": 4.001800255213169
+    }
+  ],
+  "elapsed_seconds": 36.314218499999996,
+  "interpretation": "Window reoptimization removes the mean form-factor shift, not its variance.",
+  "general_second_order_doublet_theorem": false,
+  "finite_size_instrument_claim": false
+}

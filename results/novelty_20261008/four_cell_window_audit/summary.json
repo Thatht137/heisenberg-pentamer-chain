@@ -1,0 +1,73 @@
+{
+  "ground_background_slope_tau0p1": 4.001480655757995,
+  "resolved_cutoff_relative_spread_max": 0.0,
+  "weakest_resolved_errors": [
+    {
+      "g": 0.000625,
+      "tau": 0.1,
+      "W_raw": 9.613024228732448e-15,
+      "W_resolved": 9.613024228732448e-15,
+      "C_resolved": 8.906875045927032e-07,
+      "C_predicted": 7.074827024736415e-07,
+      "resolved_relative_error": 0.25895304786746687,
+      "W_quasielastic_above_raw_threshold": 0.0,
+      "quasielastic_fraction_raw": 0.0,
+      "ground_fraction_raw": 0.20965723090589314,
+      "resolved_cutoff_relative_spread": 0.0
+    },
+    {
+      "g": 0.000625,
+      "tau": 0.2,
+      "W_raw": 1.10952176554684e-12,
+      "W_resolved": 1.109521765546833e-12,
+      "C_resolved": 0.00010280190178783163,
+      "C_predicted": 0.00010296685655472033,
+      "resolved_relative_error": 0.0016020180901709091,
+      "W_quasielastic_above_raw_threshold": 6.866245319043687e-27,
+      "quasielastic_fraction_raw": 6.217248937900877e-15,
+      "ground_fraction_raw": 0.0017807987214852512,
+      "resolved_cutoff_relative_spread": 0.0
+    },
+    {
+      "g": 0.000625,
+      "tau": 0.4,
+      "W_raw": 1.1616647633365902e-11,
+      "W_resolved": 1.16166449270624e-11,
+      "C_resolved": 0.0010763314681865729,
+      "C_predicted": 0.0010787970217723646,
+      "resolved_relative_error": 0.002285465695614386,
+      "W_quasielastic_above_raw_threshold": 2.706303502336008e-18,
+      "quasielastic_fraction_raw": 2.3296768458802575e-07,
+      "ground_fraction_raw": 0.00013891596652160275,
+      "resolved_cutoff_relative_spread": 0.0
+    },
+    {
+      "g": 0.000625,
+      "tau": 1.6,
+      "W_raw": 1.613419060671837e-10,
+      "W_resolved": 1.5862372169917947e-10,
+      "C_resolved": 0.014697161214590948,
+      "C_predicted": 0.014703246346511963,
+      "resolved_relative_error": 0.0004138631549527316,
+      "W_quasielastic_above_raw_threshold": 2.7181843680042308e-12,
+      "quasielastic_fraction_raw": 0.01684735500070489,
+      "ground_fraction_raw": 2.7381065508693153e-06,
+      "resolved_cutoff_relative_spread": 0.0
+    }
+  ],
+  "diagnostics": [
+    {
+      "g": 0.000625,
+      "max_leading_energy_integer_label_error": 0.0035300268067182117
+    },
+    {
+      "g": 0.00125,
+      "max_leading_energy_integer_label_error": 0.0070601155249931935
+    },
+    {
+      "g": 0.0025,
+      "max_leading_energy_integer_label_error": 0.014120433072175587
+    }
+  ],
+  "original_numerical_pass_not_equal_to_complete_physics_validation": true
+}

@@ -1,0 +1,265 @@
+\section{Local spin and momentum-dependent visibility}
+\label{sec:results}
+\label{sec:doublet}
+
+\subsection{Projection onto a cell spin}
+
+The isolated cell retains a half-integer spin for either sign of the outer
+bonds. All 100 sampled points with $0<\alpha\le1$ have an even-parity
+spin-$1/2$ ground doublet; all 201 sampled points with
+$-1\le\alpha\le-0.001$ have a spin-$3/2$ ground quartet.
+The different local spins provide two realizations of an antiferromagnetically
+coupled cluster chain, with different internal spin distributions.
+
+Let $P$ project onto one isolated ground multiplet of spin $s$.
+Within this subspace rotational symmetry gives
+\begin{equation}
+ P\bm S_{n,a}P=c_a\bm T_n,\qquad \sum_{a=1}^5c_a=1,
+ \label{eq:projection}
+\end{equation}
+where $\bm T_n$ is a spin-$s$ operator.
+The coefficients $c_a$ specify where the retained spin resides within a cell;
+negative coefficients indicate a local moment antiparallel to the cell spin.
+Reflection implies $c_a=c_{6-a}$ for either reflection parity, because the
+parity phases of the bra and ket cancel.
+Consequently the first-order Hamiltonian is
+\begin{align}
+ \Heff&=NE_5+\Jeff\sum_n\bm T_n\!\cdot\!\bm T_{n+1},\notag\\
+ \Jeff&=\beta c_1c_5=\beta c_1^2>0.
+ \label{eq:effective}
+\end{align}
+Here $E_5$ is the cell ground-state energy; corrections are of order
+$\beta^2/\Delta_{\mathrm{loc}}$ at fixed cell parameters, where
+$\Delta_{\mathrm{loc}}$ is the gap above the entire ground multiplet.
+The controlled limit is $g=\beta/\Delta_{\mathrm{loc}}\ll1$.
+
+Projecting the probe, rather than only the Hamiltonian, reveals the observable
+consequence. Its intra-cell amplitude is
+$f(q)=\sum_ac_ae^{iqa}$ and its shape factor is
+\begin{equation}
+ F(q)=|f(q)|^2.
+ \label{eq:shape}
+\end{equation}
+With the physical and effective probes normalized by $1/\sqrt L$ and
+$1/\sqrt N$, respectively,
+\begin{equation}
+ S^{zz}_{\mathrm{phys}}(q,\omega)\simeq
+ \frac{F(q)}5 S^{zz}_{\mathrm{eff}}(Q,\omega),
+ \quad Q=5q\pmod{2\pi}.
+ \label{eq:folded-response}
+\end{equation}
+The factor $1/5$ is fixed by normalization, not fitted.
+Thus replicas at the same $Q$ have a common collective response but unequal
+visibility set by $F(q)$.
+
+Table~\ref{tab:projection} makes this contrast quantitative at
+$\alpha=\pm0.5$.
+For positive $\alpha$ the $q=\pi$ replica is brightest; for negative $\alpha$
+it is suppressed by almost three orders of magnitude relative to $0.60\pi$.
+The latter is the largest of the three folded antiferromagnetic replicas,
+not the global maximum of $F(q)$: $F(0)=(\sum_ac_a)^2=1$.
+The location of a peak in the full spectrum depends on the product in
+Eq.~\eqref{eq:folded-response}, not on $F$ alone.
+
+\begin{table}[!htbp]
+ \caption{Isolated-cell projection at the two representative couplings.
+ Reflection fixes $c_5=c_1$ and $c_4=c_2$. The last three rows compare
+ physical momenta with the same cell momentum $Q=\pi$.}
+ \label{tab:projection}
+ \begin{ruledtabular}
+ \begin{tabular}{lrr}
+ & $\alpha=0.5$ & $\alpha=-0.5$\\
+ $s$ & $1/2$ & $3/2$\\
+ $\Delta_{\mathrm{loc}}/J_1$ & 0.342371 & 0.126397\\
+ $c_1$ & 0.622839 & 0.331329\\
+ $c_2$ & $-0.277350$ & 0.242242\\
+ $c_3$ & 0.309022 & $-0.147142$\\
+ $\Jeff/\beta$ & 0.387928 & 0.109779\\
+ $F(0.20\pi)$ & 0.060121 & 0.202128\\
+ $F(0.60\pi)$ & 0.278088 & 0.693819\\
+ $F(\pi)$ & 4.449570 & 0.000963\\
+ \end{tabular}
+ \end{ruledtabular}
+\end{table}
+
+\subsection{An absolute two-cell spectral-weight test}
+\label{sec:projection-benchmark}
+
+A two-cell chain provides a direct test of both the projected energy scale
+and the probe normalization, without assumptions about a thermodynamic line
+shape. Two antiferromagnetically coupled spins $s$ form a singlet, with
+$\langle(T_1^z)^2\rangle=s(s+1)/3$ and
+$\langle T_1^zT_2^z\rangle=-s(s+1)/3$.
+Their projected physical probe is
+$f(q)[T_1^z+e^{i5q}T_2^z]/\sqrt{10}$.
+Its norm and the singlet--triplet splitting therefore predict
+\begin{align}
+ W_{\mathrm{low}}^{(1)}(q)
+ &=\frac{F(q)s(s+1)}{15}[1-\cos(5q)],
+ \label{eq:two-cell-weight}\\
+ \Delta_{10}^{(1)}&=\beta c_1c_5.
+ \label{eq:two-cell-gap}
+\end{align}
+There is no adjustable amplitude or independent normalization at each momentum.
+
+We compare these expressions with complete exact diagonalization in the
+$S^z=0$ sector (dimension 252) of two full pentamers and the lowest energy in
+$S^z=1$ (dimension 210).
+Before diagonalization, the low band is defined as
+$0<\omega<\Delta_{\mathrm{loc}}/2$.
+The calculation uses $g=0.0025,0.005,0.01,0.02,0.04$ at each sign of $\alpha$;
+$g\le0.01$ is the predefined weak domain.
+Both the spectral completeness sum rule and the Fourier-averaged local moment
+are checked to absolute error below $10^{-11}$.
+
+Figure~\ref{fig:projection-benchmark} shows that Eq.~\eqref{eq:two-cell-weight}
+reproduces the dominant momentum pattern and its suppressed replicas.
+Across the six weak-domain cases the largest gap error is
+$0.5574\%$ and the largest relative $L_2$ error of the low-weight vector is
+$0.2643\%$, below the predefined $2\%$ and $3\%$ tolerances.
+At $g=0.01$, the positive and negative weight errors are $0.2643\%$ and
+$0.0884\%$, respectively.
+The vector error is not a uniform pointwise bound: relative errors can be
+larger where destructive interference makes the predicted intensity tiny.
+This test verifies absolute low-band weights as well as the effective energy
+scale; the reversal of replica brightness is not a consequence of independently
+rescaling the spectra.
+
+\begin{figure*}[t]
+ \centering
+ \includegraphics[width=0.96\textwidth]{fig_projection_ed_benchmark.pdf}
+ \caption{Absolute low-energy projection test for two pentamers ($L=10$).
+ (a,b) Low-band connected weights at $g=0.01$ for $\alpha=0.5$ and $-0.5$.
+ Circles are exact-diagonalization values at 41 momenta; lines join
+ Eq.~\eqref{eq:two-cell-weight} at the same momenta, without a fitted amplitude.
+ The band $0<\omega<\Delta_{\mathrm{loc}}/2$ is fixed before the calculation.
+ (c,d) Gap error $|\Delta_{\mathrm{ED}}/\Delta_{10}^{(1)}-1|$ and weight error
+ $\|\mathbf W_{\mathrm{ED}}-\mathbf W^{(1)}\|_2/\|\mathbf W^{(1)}\|_2$.
+ Shading marks the predefined domain $g\le0.01$; segments connect only the
+ five sampled couplings. This small-system test does not establish
+ thermodynamic convergence. All symbols
+ and lines are rendered from the calculated data and analytical prediction.}
+ \label{fig:projection-benchmark}
+\end{figure*}
+
+\subsection{A distinct parity filter for local excitations}
+\label{sec:parity}
+
+The low-band interference above and the selection of excited local multiplets
+are different effects.
+At $q=\pi$, the alternating signs within a five-site cell are invariant under
+$a\mapsto6-a$. The local spin probe is therefore reflection-even and cannot
+connect states of opposite parity.
+For positive $\alpha$ the ground doublet is even and the lowest excited
+doublet is odd. This excited doublet is dark, although it is the lowest local
+excitation in energy.
+At $\alpha=0.14,0.23,0.33$, its multiplet-summed weight is below $10^{-25}$,
+whereas spin-$3/2$ multiplets carry $84\%$--$98\%$ of the local inelastic
+weight (Appendix~\ref{sec:local-details}).
+Reflection selects which local states can be reached; it does not alone
+identify a dispersive band after the cells are strongly coupled.
+
+\section{Finite-coupling spectra and momentum reconstruction}
+\label{sec:dynamics}
+
+\subsection{Full-momentum response at fixed resolution}
+
+Figure~\ref{fig:fullq} compares the connected spectra at
+$(\alpha,\beta)=(0.5,0.5)$ and $(-0.5,0.5)$ for $L=40$.
+At positive $\alpha$, low-energy weight is prominent near $q=\pi$ and coexists
+with higher-energy bands. At negative $\alpha$, the low-energy response shifts
+toward other momenta and the higher-energy pattern also changes.
+All 41 momentum sources are independently calculated, and their reflection
+deviations are only $2.87\times10^{-6}$ and $4.49\times10^{-6}$ in relative
+root-mean-square norm. The symmetry is thus a numerical check, not imposed
+by averaging the left and right halves.
+
+These spectra extend the comparison to substantial inter-cell coupling, but
+do not extend the quantitative validity of the weak-coupling formula.
+Here $g=1.4604$ and $3.9558$ for the two signs.
+Two-cell diagonalization at the same $\beta=0.5$ fails the predefined
+low-band separation criterion for both signs; the first-order gap errors
+increase to approximately $10\%$ and $84\%$.
+The weak-limit replica weights therefore provide a reference for reading the
+redistribution, not a quantitative fit or a unique assignment of these bands.
+
+The energy resolution is $0.09277J_1$.
+Independent sector calculations give open-chain gaps $0.05562J_1$ and
+$0.001092J_1$, both narrower than this width.
+The maps can compare weight distributions on the displayed energy scale,
+but do not establish that either gap is resolved from zero frequency.
+Weak stripes enhanced by the common color scale must likewise not be counted
+as additional excitations on their appearance alone.
+
+\begin{figure*}[t]
+ \centering
+ \includegraphics[width=0.49\textwidth]{fig6_fullq_positive.pdf}\hfill
+ \includegraphics[width=0.49\textwidth]{fig6_fullq_negative.pdf}
+ \caption{Complete connected $S_T^{zz}(q,\omega)$ for $L=40$ open chains at
+ $J_2/J_1=0.5$ (left) and $-0.5$ (right), with $J_3/J_1=0.5$.
+ The physical momentum spans $0\le q\le2\pi$ and energies are in units of $J_1$.
+ The triangular time window at $TJ_1=60$ has width $0.09277J_1$;
+ production settings are $\Delta tJ_1=0.05$ and $\chi=192$.
+ Both panels use the same blue-to-red color coordinate
+ $u(s)=\operatorname{asinh}(s/0.02)/\operatorname{asinh}(6/0.02)$ for
+ $s=J_1S_T^{zz}\in[0,6]$.
+ This uniform nonlinear display enhances weak weight without changing the
+ spectral values or their energy resolution. No Gaussian smoothing,
+ momentum interpolation, or reflection averaging is used.
+ The panels render the calculated
+ spectral arrays.}
+ \label{fig:fullq}
+\end{figure*}
+
+\subsection{Finite-size reconstruction on the ferromagnetic side}
+\label{sec:negative}
+
+The static data ask a complementary question: as $\alpha$ approaches zero from
+below at fixed $\beta$, does the dominant response retain the $0.60\pi$
+momentum favored among the weak-limit antiferromagnetic replicas?
+The negative-$\alpha$ scan instead finds a movement toward $q=\pi$.
+Figure~\ref{fig:negative-reconstruction} displays the converged $L=80$
+samples and their $L=60$ comparison, without interpolating a phase surface.
+
+To test whether this movement locates a common boundary, we require an adjacent
+coupling interval to show both a change in $\qpeak$ and a sign change of
+$\Delta R$, with $|\Delta R|\ge2\epsilon$ at both endpoints.
+Here $\epsilon$ is a deterministic numerical tolerance, built from the
+initial-state spread, truncation error, and a $10^{-4}$ floor; it is not a
+statistical standard deviation.
+Of eight candidate intervals across seven $\beta$ slices, seven retain at
+least one signature, but none has both. Only the $\beta=0.05$ momentum
+interval reaches the target width $0.025$.
+The $\beta=0.10$ slice supplies no supported internal interval at the final
+size pair.
+
+The dominant momentum is therefore changing in these finite chains, while the
+two boundary diagnostics do not coincide.
+This establishes a finite-size reconstruction rather than a separate
+thermodynamic phase. A broad crossover, slow convergence of an incommensurate
+regime, and residual finite-size effects remain possible interpretations.
+An apparent entropy suppression near $(\alpha,\beta)=(-0.10,0.25)$ also fails
+an eigensolver control: the fitted coefficient changes from about $0.53$ to
+$0.93$ at $L=80$ (Appendix~\ref{sec:krylov}).
+It therefore supplies no independent evidence for a new low-entropy phase.
+
+\begin{figure*}[t]
+ \centering
+ \includegraphics[width=0.96\textwidth]{fig8_finite_size_reconstruction.pdf}
+ \caption{Finite-size momentum reconstruction for negative $\alpha$.
+ (a) Dominant momentum at the 22 sampled $L=80$ couplings; crosses mark
+ disagreement of the momentum classification between $L=60$ and 80.
+ Gray segments connect sampled points only.
+ (b) Peak-sharpness flow $\Delta R=R_{80}-R_{60}$.
+ Bars show $\epsilon=(\epsilon_{80}^2+\epsilon_{60}^2)^{1/2}$, where each
+ size-specific tolerance is the larger of the initial-state half-range,
+ ten times the maximum final truncation error, and $10^{-4}$.
+ These are not statistical confidence intervals.
+ (c) Eight candidate intervals tested for a momentum change, a sign change
+ satisfying $|\Delta R|\ge2\epsilon$ at both endpoints, width at most $0.025$,
+ and the joint momentum/size-flow criterion. No target satisfies the joint
+ criterion; this operational test neither establishes nor rules out a
+ thermodynamic transition. The symbols
+ and decisions are taken from the recorded numerical analysis.}
+ \label{fig:negative-reconstruction}
+\end{figure*}

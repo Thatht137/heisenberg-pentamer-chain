@@ -1,0 +1,126 @@
+\section{Introduction}
+
+Weak intensity in a spin spectrum need not mean an absence of excitations.
+In a system with several magnetic sites per unit cell, destructive interference
+can suppress the matrix element of the physical probe while the collective
+mode remains present. Cluster interference and symmetry-constrained
+momentum dependences are established tools in magnetic
+scattering~\cite{waldmann2003interference,haraldsen2011pentamer,tabrizi2021selection,tabrizi2021anisotropic}.
+Effective chains of cluster spins likewise provide a familiar route to
+low-energy modes and folded spectra, including trimer and tetramer
+chains~\cite{cheng2022trimer,li2026tetramer}.
+
+The projected form factor is only the leading approximation to a scattering
+amplitude. Perturbative corrections to dimer structure factors already show
+that interactions can modify this momentum dependence~\cite{mueller2003structure}.
+Waldmann and G\"udel constructed effective scattering operators beyond simple
+spin projection and analyzed tensor corrections caused by anisotropy-induced
+mixing of cluster multiplets~\cite{waldmann2005manyspin}.
+More recently, systematic extinctions have been distinguished from zeros that
+depend on Hamiltonian parameters~\cite{tabrizi2026extinctions}.
+Neither a form-factor zero nor the use of a corrected effective observable is
+therefore the question addressed here.
+
+The failure of symmetry to fix an intensity is also established.
+For isotropic clusters, Ghassemi Tabrizi derives a universal momentum
+dependence when a unique transition-operator irrep mediates a transition
+and occurs once in the site-spin operator representation.
+When the irrep occurs repeatedly, Eq.~(16) of
+Ref.~\onlinecite{tabrizi2021selection} instead retains independent reduced
+matrix elements and their interference. Symmetry therefore need not fix
+their ratio. This does not decide whether the ratios for all thermally
+accessible transitions can be adjusted together by physical exchange
+controls. That simultaneous cancellation is the issue addressed below.
+
+Temperature makes the interpretation of a dark point more demanding.
+Effective-observable vertex corrections already describe conditional
+excitations and thermal changes of spectral weight in spin
+ladders~\cite{exius2010vertex}. Thermally activated multiparticle
+transitions and spectral-weight transfer have also been analyzed in
+frustrated ladders~\cite{honecker2016thermal}. Thermal lifting of an
+accidental intensity cancellation has also been observed for interfering
+nuclear and magnetovibrational phonon amplitudes~\cite{raymond2018interference}.
+The appearance of additional lines on heating is therefore not itself a
+new mechanism. The question
+here is whether an exchange parameter can be retuned to cancel all those
+transitions together, rather than only the ground-state response.
+
+The Heisenberg pentamer chain provides doublet and quartet local ground
+multiplets without changing the microscopic spin length or bond topology.
+We show that their retuned zeros have different thermal stability. A
+doublet permits cancellation of the entire first-order probe, whereas a
+quartet produces a composite vector whose bond-spin channels cannot all be
+canceled by the same real retuning. A local commutator argument establishes
+this obstruction at nonzero scaled temperature for every finite even
+periodic chain in the specified effective model. An exact second-moment
+sum rule extends the algebraic obstruction to other local spins,
+conditional on the same dipole--composite probe structure. Combined with
+locality, it gives a size-independent lower bound on finite-frequency
+weight in the uniform-trace limit. Allowing independent first-order
+SU(2)-invariant retunings within each cell does not lower the optimal
+response below uniform retuning: additional operator momenta contribute
+nonnegative spectral weight. A four-cell ring is dark
+at zero temperature but acquires an exactly calculable activated response.
+Microscopic spectra test the weak-coupling powers and the four-cell activated
+line groups. Finite-coupling backgrounds and finite momentum
+acceptance limit the use of this distinction
+as an experimental diagnostic.
+
+\section{Model and low-energy observable}
+
+Each cell contains five spin-$1/2$ sites at unit spacing. With $J_1=1$,
+$\alpha=J_2/J_1$, and $\beta=J_3/J_1>0$, the Hamiltonian is
+\begin{align}
+ H_0&=\sum_{n=0}^{N-1}\big[
+ \alpha(\bm S_{n,1}\!\cdot\!\bm S_{n,2}
+       +\bm S_{n,4}\!\cdot\!\bm S_{n,5})\notag\\
+ &\hspace{29mm}+\bm S_{n,2}\!\cdot\!\bm S_{n,3}
+       +\bm S_{n,3}\!\cdot\!\bm S_{n,4}\big],\\
+ H&=H_0+\beta V,\qquad
+ V=\sum_{\langle n,n+1\rangle}\bm S_{n,5}\!\cdot\!\bm S_{n+1,1}.
+ \label{eq:rank-ham}
+\end{align}
+The bond sum is specified as open or periodic in each calculation, and the
+microscopic length is $L=5N$. We assume that the isolated cell has a single
+ground multiplet of spin $s$, separated from all other multiplets by
+$\Dloc>0$. The numerical examples below have $s=1/2$ or $3/2$.
+
+Rotational symmetry within this irrep fixes the local projection,
+\begin{equation}
+ P_n\bm S_{n,a}P_n=c_a\bm T_n,\qquad
+ c_a=c_{6-a},\qquad \sum_a c_a=1.
+ \label{eq:rank-projection}
+\end{equation}
+Here $\bm T_n$ is a spin-$s$ operator. The leading Hamiltonian is an
+antiferromagnetic effective chain with exchange $\beta c_1^2$.
+This standard reduction does not by itself determine a suppressed intensity.
+
+It is convenient to center the intra-cell Fourier phase:
+\begin{align}
+ B_n^z(q)&=\sum_{a=1}^5 e^{iq(a-3)}S_{n,a}^z,\\
+ O_q&=\frac{1}{\sqrt{5N}}\sum_n e^{iQn}B_n^z(q),
+ \quad Q=5q\pmod{2\pi}.
+\end{align}
+Changing the coordinate origin adds only a global phase to $O_q$ and does not
+change a spectral weight. Equation~\eqref{eq:rank-projection} gives
+\begin{align}
+ P O_qP&=A(q,\alpha)D_Q,\notag\\
+ A(q,\alpha)&=\sum_a c_a\cos[q(a-3)],\\
+ D_Q&=\frac{1}{\sqrt{5N}}\sum_n e^{iQn}T_n^z.
+ \label{eq:rank-amplitude}
+\end{align}
+The normalization of $D_Q$ is inherited from the microscopic probe, not
+chosen independently for each curve.
+
+Our observable is the integrated inelastic low-band weight
+\begin{equation}
+ \Wlow=\frac{1}{n_G}\sum_{r=1}^{n_G}
+ \sum_{0<E_m-E_G<\Dloc/2}|\langle m|O_q|G_r\rangle|^2.
+ \label{eq:rank-weight}
+\end{equation}
+All transitions within the ground eigenspace are excluded.
+The gap $\Dloc$ in this cutoff and in $g=\beta/\Dloc$ is evaluated at the
+unshifted local root. For each tested finite system we check that the cutoff
+contains the complete retained low band. This is a fixed-size,
+weak-coupling construction, not a claim of a uniformly isolated many-body
+band as $N$ tends to infinity.

@@ -1,0 +1,9 @@
+{
+  "all_gates_pass": true,
+  "slopes_first_three": {
+    "fixed": 1.9687470028777316,
+    "retuned": 3.997811969837417
+  },
+  "elapsed_seconds": 69.77113990000001,
+  "bulk_claim": false
+}

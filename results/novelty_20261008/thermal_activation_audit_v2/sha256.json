@@ -1,0 +1,7 @@
+{
+  "scripts\\submission_20261002\\audit_thermal_activation.py": "e4360a1c58b2039b77df2b131596388be386103d0f7b10a39c6b11a325532e15",
+  "scripts\\submission_20261002\\check_thermal_compensation.py": "e70bf76cbf957e1869c852d77e859786eecc150adb323c5327335f6403577ed7",
+  "results\\novelty_20261008\\thermal_compensation\\summary.json": "4175c81e3c21f334b19e772846ca51af95f7f2fec183b00d17386012105dcf63",
+  "results\\novelty_20261008\\thermal_activation_audit_v2\\activation_checks.csv": "2499ad3761fb22fe7aac0beb76fc82d1a07836f4f7dafbd16b5cac14c49cfbc4",
+  "results\\novelty_20261008\\thermal_activation_audit_v2\\summary.json": "34509c1673fb2d20392975e204a711ebd6b1eed2df2404270480e3e3dc927c25"
+}

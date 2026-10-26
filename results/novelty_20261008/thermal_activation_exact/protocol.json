@@ -1,0 +1,10 @@
+{
+  "arithmetic": "Python Fraction, exact rational",
+  "cells": 4,
+  "spin": "3/2",
+  "boundary": "PBC",
+  "normalization_squared": 20,
+  "probe_residual": "b*(Y+3*D_unnormalized)/sqrt(20)",
+  "wall_limit_seconds": 120,
+  "finite_beta_claim": false
+}

@@ -1,0 +1,37 @@
+smoke_pass = true
+L = 10
+accepted_under_1e_minus5 = true
+julia_version = "1.11.5"
+relative_residual_no_truncation = 3.68887040298071e-14
+peak_rss_bytes = 1230901248
+relative_intensity_error = 3.13049889427995e-15
+elapsed_seconds = 92.67400002479553
+blas_threads = 1
+new_correction_vector_solve = false
+no_truncation_residual_maxdim = 64
+source_norm = 0.8533884433552581
+julia_threads = 1
+no_truncation_apply_maxdim = 160
+script_sha256 = "191637a445105529a0a270ef1a4cd701cf77e53bede2b3387c3f1f3b2fa033ce"
+hamiltonian_sha256 = "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb"
+dense_relative_residual = 4.0200261970134805e-15
+norm_method = "explicit direct-sum residual; QR gauge; center-tensor Frobenius norm"
+
+[[truncation_checks]]
+cutoff = 1.0e-12
+relative_residual = 1.8494372717867277e-5
+sum_relative_error = 1.0288035638646894e-13
+apply_relative_error = 1.8494372717868395e-5
+maxdim = 128
+triangle_error_bound = 1.8494372820748753e-5
+actual_relative_error = 1.8494372717867982e-5
+elapsed_seconds = 0.3959999084472656
+[[truncation_checks]]
+cutoff = 1.0e-16
+relative_residual = 1.0036830369179083e-13
+sum_relative_error = 3.742118793239783e-14
+apply_relative_error = 9.519072483799826e-14
+maxdim = 128
+triangle_error_bound = 1.326119127703961e-13
+actual_relative_error = 1.042020494370687e-13
+elapsed_seconds = 0.026000022888183594

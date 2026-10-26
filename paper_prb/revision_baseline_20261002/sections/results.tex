@@ -1,0 +1,318 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{Low-energy spin doublet of the odd pentamer}
+\label{sec:doublet}
+
+At all 100 sampled points with $0<\alpha\le1$, the isolated-pentamer ground state
+is an even-reflection-parity spin-$1/2$ doublet.
+The lowest excited doublet is odd under reflection, whereas the lowest
+spin-$3/2$ multiplet is even.
+The five-spin unit therefore retains an active half-integer degree of freedom
+instead of forming a fully quenched singlet cluster, in contrast to the
+integer-spin and singlet cell sectors that organize the tetramer
+problem~\cite{li2026tetramer,gong2008tetramer}.
+How this cell-level doublet shapes the extended chain is the subject of the
+following subsections.
+
+At $\alpha=0.14$, 0.23, and 0.33, the projected coupling of
+Eq.~\eqref{eq:effective} satisfies $\Jeff/\beta=c_1^2=0.440$, 0.432, and 0.419,
+respectively.
+As anticipated from the even parity of the doublet, positive $\beta$ generates an
+antiferromagnetic effective spin-$1/2$ chain.
+The residual between the projected and exact ground-state energies scales with
+powers $1.97$--$1.99$ for two coupled pentamers and $1.948$--$1.950$ for
+complete chains with $N=8,12,16$ cells.
+The leading correction is thus the $O(\beta^2)$ term of
+Eq.~\eqref{eq:effective}, and the agreement between the two-pentamer and
+finite-chain exponents shows that it persists beyond two coupled cells.
+The level flow and the reflection-parity decomposition across the positive
+$\alpha$ range are shown in Fig.~\ref{fig:multiplets}.
+
+\begin{figure*}[t]
+  \includegraphics[width=\textwidth]{fig2_multiplet_parity.png}
+  \caption{Multiplet flow and the $q=\pi$ parity filter for positive $\alpha$.
+  Panel~rows show the total spin and reflection parity of the isolated-pentamer
+  levels together with their projector-resolved $q=\pi$ spectral weights.
+  The lowest excited doublet is dark, whereas even-parity spin-$3/2$ multiplets
+  dominate the local inelastic response.}
+  \label{fig:multiplets}
+\end{figure*}
+
+\subsection{A single resolved effective-chain regime at positive couplings}
+\label{sec:positive-regime}
+
+The strict positive-region mesh contains 105 converged calculations.
+We test for a boundary with the sharpness of the $q=\pi$ structure-factor peak,
+$R=1-S(\pi-\delta)/S(\pi)$, the one-sided form of Eq.~\eqref{eq:ratio} at
+$\qpeak=\pi$.
+A boundary along a slice of fixed $\beta$ would appear as a crossing of the
+$L=40$, 60, and 80 curves of $R(\alpha)$, that is, as a sign change of their size
+differences.
+No such crossing occurs on any of the seven $\beta$ slices: the interior size
+differences keep one sign at the $2\sigma$ level, also when any single
+calculation is left out and when the least-converged points are examined
+separately.
+The data thus resolve no internal boundary in $0\le\alpha,\beta\le1$ at the
+mesh resolution.
+
+The absence of a boundary leaves open what the single regime is; the low-energy
+observables answer this.
+The entanglement entropy measures the central charge, but in a five-site cell its
+absolute $\ln L$ dependence carries boundary and unit-cell corrections.
+We therefore fit the pentamer chain and a uniform spin-$1/2$ Heisenberg chain,
+which has $c=1$, on the same open lengths and with the same window, and quote the
+ratio of the two fitted slopes, in which these corrections largely cancel.
+At $\alpha=0.23$ and weak inter-cell coupling, this matched-size ratio gives
+$\ceff=1.02$--$1.03$ for open chains of $N=8$--$24$ pentamers ($L=40$--$120$), and
+the bond entropy is stable against a doubling of the retained bond dimension (largest
+relative change $2\times10^{-4}$).
+Finite-size spin gaps extrapolate close to zero, the correlation envelope has
+exponents $0.95$--$0.98$, and the static structure factor is dominated by
+$q=\pi$.
+Together these observables identify a gapless antiferromagnetic effective chain
+at the tested points~\cite{descloizeaux1962,calabrese2004}.
+The exploratory phase map and the converged finite-size mesh are contrasted in
+Fig.~\ref{fig:positive-static}, and the entanglement calibration is detailed in
+Fig.~\ref{fig:entanglement}.
+
+\begin{figure*}[t]
+  \includegraphics[width=0.98\textwidth]{fig3_positive_static.png}
+  \caption{Positive-region ground-state diagnostics.
+  The dense exploratory map is shown separately from the strict 105-calculation
+  $L=40,60,80$ mesh that supplies the crossing test.
+  No stable internal bracket is resolved by these data.}
+  \label{fig:positive-static}
+\end{figure*}
+
+\begin{figure*}[t]
+  \includegraphics[width=0.94\textwidth]{fig4_entanglement.png}
+  \caption{Entanglement and finite-size low-energy diagnostics.
+  Five inequivalent bond classes are calibrated against a uniform $c=1$
+  Heisenberg chain of the same length.}
+  \label{fig:entanglement}
+\end{figure*}
+
+\subsection{Reflection parity and the visible local excitation}
+\label{sec:parity}
+
+The isolated cell already determines which excitations a $q=\pi$ spin probe can
+reach.
+Within one cell, $S^z_{q=\pi}$ weights the five sites with alternating signs, a
+pattern symmetric under the reflection $a\to6-a$; the operator is therefore even
+and cannot connect the even ground doublet to an odd state.
+The lowest excited doublet is odd, so it is not the lowest visible excitation:
+its projector-resolved weight is below $10^{-25}$ at the three representative
+positive-$\alpha$ points, a symmetry selection rule rather than a small numerical
+residue.
+The lowest even-parity spin-$3/2$ multiplet carries weight $0.33$, and
+all spin-$3/2$ multiplets together account for $84\%$--$98\%$ of the
+isolated-pentamer inelastic response.
+The result identifies which local sector can contribute when collective states
+form, and it provides a concrete spectral analogue of the
+momentum-selective weight reported for related cluster
+magnets~\cite{gao2024srv3o9,schlappa2018}.
+
+Once cells couple, the question is whether these bright local states fall inside
+the low-energy continuum of the effective chain, where they would mix with it, or
+remain above it.
+In the weak-coupling regime the effective-chain two-spinon continuum is bounded by the des Cloizeaux--Pearson lower edge
+$\omega_{\mathrm L}(q)=\pi\Jeff|\sin q|/2$~\cite{descloizeaux1962} and the
+standard upper edge $\omega_{\mathrm U}(q)=\pi\Jeff|\sin(q/2)|$.
+Setting the upper edge at $q=\pi$ equal to the lowest local quartet gap defines a
+formal embedding threshold at $\beta=0.104$, $0.176$, and $0.265$ for
+$\alpha=0.14$, 0.23, and 0.33.
+Measured in units of the isolated-cell gap $\Delta_{1/2}$ to the lowest excited
+doublet, the scale against which the first-order projection is controlled, these
+are $g=\beta/\Delta_{1/2}=1.11$, $1.14$, and $1.18$.
+They lie outside the range $g\le0.65$ in which finite-chain gaps agree with the
+first-order effective chain to within about $5\%$, and at the edge of that
+range the continuum upper edge reaches only $55\%$--$59\%$ of the local
+quartet gap.
+The weak-coupling effective theory therefore predicts a finite energy separation
+between the low-energy continuum and the local quartet, not a controlled
+hybridization.
+The three dynamical representative points at $\beta=0.5$ have $g=2.24$--$5.32$,
+well beyond the range where first-order continuum edges apply.
+The energy comparison between the continuum bounds and the local quartet is shown
+in Fig.~\ref{fig:selection} together with the projector-resolved weights.
+
+\begin{figure*}[t]
+  \includegraphics[width=0.92\textwidth]{fig5_selection_rules.png}
+  \caption{Effective-chain continuum and local selection rules.
+  The continuum bounds describe the weak-coupling effective chain, while the
+  isolated-pentamer weights identify bright local spin-$3/2$ channels.}
+  \label{fig:selection}
+\end{figure*}
+
+\subsection{Collective dynamics}
+\label{sec:dynamics}
+
+The selection rules above are statements about one cell.
+Whether the collective spectrum keeps this organization once the cells hybridize
+requires many-body spectra, which we compute by the two routes of
+Sec.~\ref{sec:dsf}: correction vectors resolve the $q=\pi$ line shape frequency by
+frequency, and real-time evolution gives all momenta at once.
+Their agreement at a common point anchors the full-momentum maps.
+
+At $(\alpha,\beta,L,q)=(0.23,0.5,40,\pi)$ and $\eta=0.1$, eleven
+correction-vector frequencies cover $0\le\omega/J_1\le1.5$, the window that holds
+the principal weight, and bracket the main peak at $\omega=0.05J_1$.
+The independently converged time-evolution spectrum places the peak at the same
+frequency, and at the eleven shared frequencies the two methods differ by at most
+$6.4\%$ pointwise and by $1.0\%$ in summed weight, well inside the acceptance
+tolerances of $0.1J_1$ in peak position and $15\%$ in integrated weight.
+
+Full-momentum time evolution was then carried out at three points: the uniform
+chain $(\alpha,\beta)=(1,1)$, a weakly coupled chain $(1,0.1)$, and the comparison
+point $(0.23,0.5)$.
+All six runs and all three $\Delta t$ versus $\Delta t/2$ pairs met their
+tolerance criteria, which require peak shifts below $0.05J_1$ and low-frequency
+weight changes below $5\%$.
+Halving the time step moves the global and $q=\pi$ peaks by $0$, $0$, and
+$0.01J_1$ at the three points and changes the low-frequency integrated weight by
+$4\times10^{-5}$, $3\times10^{-5}$, and $2\times10^{-5}$.
+The full-$q$ maps use $\eta=0.1$ at the uniform point and $\eta=0.2$ at the other
+two, with a spatial window of 18 sites throughout, so the panels are compared by
+their spectral organization; linewidths are compared only at equal broadening.
+
+The three maps show how the response reorganizes as the cell structure develops.
+In the uniform chain the $q=\pi$ weight is concentrated at low frequency inside
+the two-spinon bounds.
+In the two cluster chains the $q=\pi$ slice keeps a low-frequency peak but
+acquires a second, well-separated maximum at finite frequency, the collective
+counterpart of the bright local sectors identified above.
+The full-momentum spectra are displayed in Fig.~\ref{fig:fullq}, and the
+pointwise correction-vector comparison is shown separately in
+Fig.~\ref{fig:cv-tebd}.
+
+\begin{figure*}[t]
+  \includegraphics[width=0.97\textwidth]{fig6_fullq_dynamics.png}
+  \caption{Raw full-momentum $\Szz$ and paired $q=\pi$ time-step slices at three
+  representative positive-coupling points.
+  Negative Fourier ringing from the finite time window is shown rather than
+  clipped.
+  All six runs and all three $\Delta t$ versus $\Delta t/2$ pairs meet the
+  tolerance criteria.}
+  \label{fig:fullq}
+\end{figure*}
+
+\begin{figure*}[!tb]
+  \includegraphics[width=0.62\textwidth]{fig7_cv_tebd.png}
+  \caption{Pointwise correction-vector and time-evolution comparison at
+  $\alpha=0.23$, $\beta=0.5$, $L=40$, and $q=\pi$.
+  Eleven correction-vector frequencies bracket the principal feature and
+  cover $0\le\omega/J_1\le1.5$.}
+  \label{fig:cv-tebd}
+\end{figure*}
+
+\subsection{Finite-size momentum reconstruction at negative intra-cell exchange}
+\label{sec:negative}
+
+The negative-$\alpha$ data show a reproducible change of the dominant
+structure-factor momentum.
+Deep in the scanned region $\qpeak\simeq0.60\pi$, whereas closer to $\alpha=0$ the
+maximum locks to $q=\pi$.
+
+As for positive $\alpha$, the natural first question is what the isolated cell
+predicts.
+At all 201 sampled points with $-1\le\alpha\le-0.001$, the isolated pentamer has a
+spin-$3/2$ ground multiplet rather than the spin-$1/2$ doublet found for
+$\alpha>0$.
+Projecting the intra-cell couplings onto that quartet and evaluating the
+shape factor of Eq.~\eqref{eq:shape} at $q=0.20\pi$, $0.60\pi$, and $\pi$ gives a
+positive
+effective exchange $\Jeff/\beta=0.108$--$0.111$, with the $q=0.60\pi$ weight in
+the range $0.62$--$0.73$, while the $q=\pi$ weight never exceeds
+$10^{-2}$ on the same scale.
+The projector identities are satisfied to machine precision, and the $0.60\pi$
+weight is the largest of the three at every sampled point.
+The deep-region momentum scale is therefore already selected by the isolated
+quartet, and the question for the chain is how the response moves from this local
+value to the $q=\pi$ of the positive side.
+
+A phase boundary would show up as an interval in which $\qpeak$ changes and the
+finite-size trend of the dominant ratio, $\Delta R=R_{80}-R_{60}$, changes sign
+together (Sec.~\ref{sec:diagnostics}).
+The chain scan searched for such intervals in two stages.
+The first stage evaluated 96 calculations at 48 coupling points; 89
+satisfied the convergence criteria of Sec.~\ref{sec:convergence}, while seven
+non-boundary cases remained marginal and were excluded.
+The converged calculations identified eight candidate intervals across seven
+$\beta$ slices.
+The second stage then evaluated these intervals with 29 additional $L=60,80$
+calculations at 64 sweeps, all of which satisfied the convergence criteria of
+Sec.~\ref{sec:convergence}.
+Seven of the eight targets retain either a momentum reconstruction or a sign
+change in $\Delta R$ larger than twice its uncertainty.
+No adjacent interval carries both signatures, only the $\beta=0.05$
+momentum interval reaches the target width $0.025$, and the $\beta=0.10$ slice
+supplies no supported internal interval at the final size pair.
+
+The data therefore establish a finite-size momentum reconstruction whose two
+diagnostics select different intervals, the signature of a broad crossover, a
+slowly converging incommensurate regime, or residual finite-size effects rather
+than of a single thermodynamic boundary.
+The converged momentum samples and the two diagnostics are shown in
+Fig.~\ref{fig:negative-reconstruction}.
+
+\begin{figure*}[!tb]
+  \includegraphics[width=\textwidth]{fig8_negative_reconstruction.png}
+  \caption{Negative-$\alpha$ momentum reconstruction from converged calculations.
+  Large-size data move from $\qpeak\simeq0.60\pi$ to $\pi$, but the momentum and
+  dominant-ratio diagnostics do not select the same adjacent interval.}
+  \label{fig:negative-reconstruction}
+\end{figure*}
+
+\subsection{Entropy coefficient near \texorpdfstring{$\alpha=-0.10$}{alpha=-0.10}}
+\label{sec:saved-state}
+
+Inside the reconstruction, at $(\alpha,\beta)=(-0.10,0.25)$, an earlier $L=80$
+analysis gave $\ceff=0.467$--$0.605$, well below the values near unity found at
+neighboring couplings.
+A genuinely reduced entropy coefficient would point to a distinct regime inside
+the crossover, so we tested this point against the initial state, the system
+size, and the eigensolver.
+
+Six points were recomputed at $L=80$ with the ground-state wavefunctions saved,
+using two $S^z=0$ initial states and 64 sweeps per initial state:
+$\alpha=-0.25,-0.175,-0.10$ at $\beta=0.25$ and $\alpha=-0.625,-0.50,-0.425$ at
+$\beta=0.75$.
+All runs satisfied the convergence criteria of Sec.~\ref{sec:convergence}, with a
+largest variance per site of $1.3\times10^{-9}$.
+At $\beta=0.25$ the coefficient ranges were $0.467$--$0.605$ at $\alpha=-0.10$,
+$0.886$--$0.971$ at $\alpha=-0.175$, and $0.981$--$1.049$ at $\alpha=-0.25$; the
+three $\beta=0.75$ points gave ranges within $0.905$--$0.976$.
+These ranges measure sensitivity to the fitting window and to the initial state.
+
+A size comparison at $L=40,60,80$ for $\alpha=-0.175,-0.150,-0.125,-0.100$ with
+$\beta=0.25$ made the low value look like a trend.
+At $\alpha=-0.10$ the coefficients from fits with period-10 bond classes
+($b\bmod10$) span
+$0.970$--$1.340$, $0.625$--$0.959$, and $0.467$--$0.605$ with increasing length, and
+at fixed window $f=0.20$ the mean over the two initial states decreases from
+$0.988$ to $0.695$ and $0.533$.
+Increasing the Krylov dimension of the eigensolver shows that this decrease is
+numerical.
+An earlier increase of the Krylov dimension from $k=3$ to $k=8$ revised the
+entropy slopes at this point strongly: at $L=80$ the period-10, $f=0.20$
+coefficient moves from $0.58$ to $0.93$ for one N\'eel-type initial state and from
+$0.48$ to $0.93$ for the other, after which the two initial states agree to
+$3\times10^{-8}$.
+The further step to $k=12$ changes the observables only by the small amounts
+reported in Sec.~\ref{sec:krylov} and leaves $\qpeak=\pi$ unchanged.
+The controlled value $\ceff\simeq0.93$ lies within the range $0.886$--$1.049$
+found at $\alpha=-0.175$ and $-0.25$, so the suppression of $\ceff$ at
+$\alpha=-0.10$ does not survive and no distinct regime is indicated there.
+Figure~\ref{fig:negative-size} collects the entropy coefficients, bond-class
+variation, connected correlations, and sector gaps behind this assessment.
+
+\begin{figure*}[!tb]
+  \includegraphics[width=\textwidth]{fig9_negative_size_evidence.png}
+  \caption{Joint finite-size evidence near $\alpha=-0.10$, $\beta=0.25$.
+  Entropy coefficients, bond-class variation, connected correlations, and sector
+  gaps are shown together to expose size and initialization sensitivity.
+  Data use the earlier Krylov setting; the controlled $L=80$, $\alpha=-0.10$ value
+  is discussed in the text.}
+  \label{fig:negative-size}
+\end{figure*}

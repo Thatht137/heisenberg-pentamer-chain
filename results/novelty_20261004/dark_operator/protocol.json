@@ -1,0 +1,16 @@
+{
+  "model": "unchanged pentamer chain",
+  "alpha": -0.7742918851774317,
+  "effective_cells": [
+    2,
+    4,
+    6
+  ],
+  "boundaries": "OBC all; PBC N=4,6",
+  "operator": "-P O R V P - P V R O P, R=Q/(H0-E0)",
+  "purpose": "test scalar renormalization versus composite probe, not bulk extrapolation",
+  "threads": 1,
+  "wall_limit_seconds": 300,
+  "source_residual_gate": 1e-10,
+  "exploratory": true
+}

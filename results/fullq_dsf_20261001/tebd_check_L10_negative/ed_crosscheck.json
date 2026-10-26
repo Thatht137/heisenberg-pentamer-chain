@@ -1,0 +1,9 @@
+{
+  "alpha": -0.5,
+  "L": 10,
+  "relative_spectrum_error": 3.58691897515697e-05,
+  "max_relative_correlation_error": 8.51481419841336e-05,
+  "inversion_relative_rms": 7.268444681510592e-14,
+  "q0_max": 1.4840642069019818e-33,
+  "passed": true
+}

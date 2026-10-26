@@ -1,0 +1,408 @@
+{
+  "numerical_gates_pass": true,
+  "cases": [
+    {
+      "spin": 1.5,
+      "cells": 4,
+      "alpha": -0.7742918851774333,
+      "zero_T": {
+        "T_over_Jeff": 0.0,
+        "C_fixed_root": 0.013181802943733974,
+        "C_min": 9.355941330312451e-32,
+        "C_fixed_zeroT_retuning": 9.355941330312451e-32,
+        "D_positive_weight": 0.8000000000000007,
+        "lambda": -0.12836375531927793,
+        "detailed_balance_error": 0.0,
+        "partition_shifted": 1.0
+      },
+      "T_over_Jeff_1p6": {
+        "T_over_Jeff": 1.6,
+        "C_fixed_root": 0.010301835528275795,
+        "C_min": 0.009910778616909347,
+        "C_fixed_zeroT_retuning": 0.014703246346511894,
+        "D_positive_weight": 0.4807536752217464,
+        "lambda": -0.02852060122852335,
+        "detailed_balance_error": 4.336808689942018e-19,
+        "partition_shifted": 4.564125203342534,
+        "spin": 1.5,
+        "cells": 4,
+        "alpha": -0.7742918851774333,
+        "q_over_pi": 1.0,
+        "c1_squared": 0.10855197721304166,
+        "local_gap": 0.16622154752454188,
+        "kappa": 0.2844639008365489
+      },
+      "numerical_checks": [
+        {
+          "dimension": 1,
+          "eigen_residual": 0.0,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 4,
+          "eigen_residual": 4.873487572684996e-16,
+          "D_trace_error": 2.7755575615628914e-17,
+          "K_trace_error": 1.3877787807814457e-17
+        },
+        {
+          "dimension": 10,
+          "eigen_residual": 1.3949378311892821e-15,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 20,
+          "eigen_residual": 3.4761148034326934e-15,
+          "D_trace_error": 8.881784197001252e-16,
+          "K_trace_error": 3.3306690738754696e-16
+        },
+        {
+          "dimension": 31,
+          "eigen_residual": 3.583237163416429e-15,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 40,
+          "eigen_residual": 3.5452243606845e-15,
+          "D_trace_error": 3.552713678800501e-15,
+          "K_trace_error": 2.220446049250313e-16
+        },
+        {
+          "dimension": 44,
+          "eigen_residual": 3.4972291028763533e-15,
+          "D_trace_error": 5.329070518200751e-15,
+          "K_trace_error": 4.440892098500626e-16
+        },
+        {
+          "dimension": 40,
+          "eigen_residual": 2.9908372454880142e-15,
+          "D_trace_error": 3.552713678800501e-15,
+          "K_trace_error": 2.220446049250313e-16
+        },
+        {
+          "dimension": 31,
+          "eigen_residual": 3.762295107735349e-15,
+          "D_trace_error": 0.0,
+          "K_trace_error": 2.220446049250313e-16
+        },
+        {
+          "dimension": 20,
+          "eigen_residual": 3.6397680842350076e-15,
+          "D_trace_error": 2.6645352591003757e-15,
+          "K_trace_error": 5.551115123125783e-16
+        },
+        {
+          "dimension": 10,
+          "eigen_residual": 1.7115653761168028e-15,
+          "D_trace_error": 2.220446049250313e-16,
+          "K_trace_error": 5.551115123125783e-17
+        },
+        {
+          "dimension": 4,
+          "eigen_residual": 5.517950366262827e-16,
+          "D_trace_error": 2.7755575615628914e-17,
+          "K_trace_error": 1.3877787807814457e-17
+        },
+        {
+          "dimension": 1,
+          "eigen_residual": 0.0,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        }
+      ]
+    },
+    {
+      "spin": 1.5,
+      "cells": 6,
+      "alpha": -0.7742918851774333,
+      "zero_T": {
+        "T_over_Jeff": 0.0,
+        "C_fixed_root": 0.013913205946385114,
+        "C_min": 0.0004432996590990313,
+        "C_fixed_zeroT_retuning": 0.0004432996590990313,
+        "D_positive_weight": 1.042750208607056,
+        "lambda": -0.11365594163471601,
+        "detailed_balance_error": 0.0,
+        "partition_shifted": 1.0
+      },
+      "T_over_Jeff_1p6": {
+        "T_over_Jeff": 1.6,
+        "C_fixed_root": 0.009774650917597832,
+        "C_min": 0.009682117390810206,
+        "C_fixed_zeroT_retuning": 0.015445449554754236,
+        "D_positive_weight": 0.5663880391856587,
+        "lambda": -0.012781814804433475,
+        "detailed_balance_error": 4.336808689942018e-19,
+        "partition_shifted": 10.034692635922655,
+        "spin": 1.5,
+        "cells": 6,
+        "alpha": -0.7742918851774333,
+        "q_over_pi": 1.0,
+        "c1_squared": 0.10855197721304166,
+        "local_gap": 0.16622154752454188,
+        "kappa": 0.1274855628009406
+      },
+      "numerical_checks": [
+        {
+          "dimension": 1,
+          "eigen_residual": 0.0,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 6,
+          "eigen_residual": 2.7948408681266506e-16,
+          "D_trace_error": 5.551115123125783e-17,
+          "K_trace_error": 6.938893903907228e-17
+        },
+        {
+          "dimension": 21,
+          "eigen_residual": 1.1620419355212693e-15,
+          "D_trace_error": 2.220446049250313e-16,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 56,
+          "eigen_residual": 1.802086399148509e-15,
+          "D_trace_error": 0.0,
+          "K_trace_error": 2.220446049250313e-16
+        },
+        {
+          "dimension": 120,
+          "eigen_residual": 2.7062003566669136e-15,
+          "D_trace_error": 0.0,
+          "K_trace_error": 1.7763568394002505e-15
+        },
+        {
+          "dimension": 216,
+          "eigen_residual": 3.326416934434661e-15,
+          "D_trace_error": 1.4210854715202004e-14,
+          "K_trace_error": 8.881784197001252e-16
+        },
+        {
+          "dimension": 336,
+          "eigen_residual": 3.5397255685277974e-15,
+          "D_trace_error": 1.4210854715202004e-14,
+          "K_trace_error": 7.105427357601002e-15
+        },
+        {
+          "dimension": 456,
+          "eigen_residual": 3.819916843999143e-15,
+          "D_trace_error": 2.842170943040401e-14,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 546,
+          "eigen_residual": 3.727010976528655e-15,
+          "D_trace_error": 5.684341886080802e-14,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 580,
+          "eigen_residual": 3.631669092399799e-15,
+          "D_trace_error": 5.684341886080802e-14,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 546,
+          "eigen_residual": 3.7493013579544586e-15,
+          "D_trace_error": 1.4210854715202004e-13,
+          "K_trace_error": 3.552713678800501e-15
+        },
+        {
+          "dimension": 456,
+          "eigen_residual": 3.6370193259302526e-15,
+          "D_trace_error": 4.263256414560601e-14,
+          "K_trace_error": 3.552713678800501e-15
+        },
+        {
+          "dimension": 336,
+          "eigen_residual": 3.58459645220927e-15,
+          "D_trace_error": 1.4210854715202004e-14,
+          "K_trace_error": 1.7763568394002505e-15
+        },
+        {
+          "dimension": 216,
+          "eigen_residual": 3.2079336485775865e-15,
+          "D_trace_error": 2.1316282072803006e-14,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 120,
+          "eigen_residual": 2.6736017665735456e-15,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 56,
+          "eigen_residual": 1.9189868125016304e-15,
+          "D_trace_error": 0.0,
+          "K_trace_error": 6.661338147750939e-16
+        },
+        {
+          "dimension": 21,
+          "eigen_residual": 1.3238563631237194e-15,
+          "D_trace_error": 2.220446049250313e-16,
+          "K_trace_error": 2.220446049250313e-16
+        },
+        {
+          "dimension": 6,
+          "eigen_residual": 3.8209401949634163e-16,
+          "D_trace_error": 5.551115123125783e-17,
+          "K_trace_error": 1.3877787807814457e-17
+        },
+        {
+          "dimension": 1,
+          "eigen_residual": 0.0,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        }
+      ]
+    },
+    {
+      "spin": 0.5,
+      "cells": 4,
+      "alpha": 1.097551427678205,
+      "zero_T": {
+        "T_over_Jeff": 0.0,
+        "C_fixed_root": 0.002415092887442936,
+        "C_min": 4.262145693271592e-31,
+        "C_fixed_zeroT_retuning": 4.262145693271592e-31,
+        "D_positive_weight": 0.1333333333333333,
+        "lambda": -0.13458527651946933,
+        "detailed_balance_error": 0.0,
+        "partition_shifted": 1.0
+      },
+      "T_over_Jeff_1p6": {
+        "T_over_Jeff": 1.6,
+        "C_fixed_root": 0.0007495176636250834,
+        "C_min": 1.3306320096834973e-31,
+        "C_fixed_zeroT_retuning": 1.3300822225891142e-31,
+        "D_positive_weight": 0.04137964589393281,
+        "lambda": -0.13458527651946936,
+        "detailed_balance_error": 1.6811243252181257e-35,
+        "partition_shifted": 5.3780926978029475,
+        "spin": 0.5,
+        "cells": 4,
+        "alpha": 1.097551427678205,
+        "q_over_pi": 0.6,
+        "c1_squared": 0.23743635549645134,
+        "local_gap": 0.8004164568857004,
+        "kappa": 0.16874093668001258
+      },
+      "numerical_checks": [
+        {
+          "dimension": 1,
+          "eigen_residual": 0.0,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 4,
+          "eigen_residual": 1.8551139969286414e-15,
+          "D_trace_error": 2.7755575615628914e-17,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 6,
+          "eigen_residual": 1.654835800082249e-15,
+          "D_trace_error": 5.551115123125783e-17,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 4,
+          "eigen_residual": 1.8286079452400775e-15,
+          "D_trace_error": 2.7755575615628914e-17,
+          "K_trace_error": 4.336808689942018e-19
+        },
+        {
+          "dimension": 1,
+          "eigen_residual": 0.0,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        }
+      ]
+    },
+    {
+      "spin": 0.5,
+      "cells": 6,
+      "alpha": 1.097551427678205,
+      "zero_T": {
+        "T_over_Jeff": 0.0,
+        "C_fixed_root": 0.002816059039507261,
+        "C_min": 5.150999087167048e-31,
+        "C_fixed_zeroT_retuning": 5.150999087167048e-31,
+        "D_positive_weight": 0.15547001962252266,
+        "lambda": -0.1345852765194693,
+        "detailed_balance_error": 0.0,
+        "partition_shifted": 1.0
+      },
+      "T_over_Jeff_1p6": {
+        "T_over_Jeff": 1.6,
+        "C_fixed_root": 0.0008448317323100045,
+        "C_min": 1.6521475681880745e-31,
+        "C_fixed_zeroT_retuning": 1.6521475681880745e-31,
+        "D_positive_weight": 0.04664177993333138,
+        "lambda": -0.1345852765194693,
+        "detailed_balance_error": 1.5948063710597636e-35,
+        "partition_shifted": 14.067243624544451,
+        "spin": 0.5,
+        "cells": 6,
+        "alpha": 1.097551427678205,
+        "q_over_pi": 0.6,
+        "c1_squared": 0.23743635549645134,
+        "local_gap": 0.8004164568857004,
+        "kappa": 0.1687409366800125
+      },
+      "numerical_checks": [
+        {
+          "dimension": 1,
+          "eigen_residual": 0.0,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 6,
+          "eigen_residual": 1.3735242346957617e-15,
+          "D_trace_error": 0.0,
+          "K_trace_error": 4.336808689942018e-19
+        },
+        {
+          "dimension": 15,
+          "eigen_residual": 2.868268650251744e-15,
+          "D_trace_error": 2.220446049250313e-16,
+          "K_trace_error": 0.0
+        },
+        {
+          "dimension": 20,
+          "eigen_residual": 2.6304012821296445e-15,
+          "D_trace_error": 0.0,
+          "K_trace_error": 6.938893903907228e-18
+        },
+        {
+          "dimension": 15,
+          "eigen_residual": 2.774064177821558e-15,
+          "D_trace_error": 0.0,
+          "K_trace_error": 3.469446951953614e-18
+        },
+        {
+          "dimension": 6,
+          "eigen_residual": 1.6890956030733926e-15,
+          "D_trace_error": 0.0,
+          "K_trace_error": 8.673617379884035e-19
+        },
+        {
+          "dimension": 1,
+          "eigen_residual": 0.0,
+          "D_trace_error": 0.0,
+          "K_trace_error": 0.0
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 3.1896362,
+  "finite_temperature_microscopic_validation": false,
+  "thermodynamic_limit_claim": false
+}

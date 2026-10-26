@@ -1,0 +1,114 @@
+\section{Introduction}
+
+Destructive interference can make a collective spin excitation invisible
+to a scattering probe. In cluster magnets, amplitudes from sites within
+a unit cell combine into a momentum-dependent form factor.
+Its zeros suppress intensity even when the corresponding excitation
+remains in the spectrum~\cite{waldmann2003interference,haraldsen2011pentamer,tabrizi2021selection,tabrizi2021anisotropic}.
+Weakly coupled clusters provide a useful setting for studying this
+separation between excitation energies and their visibility.
+Their local ground multiplets form effective spin chains, while
+intracell interference organizes the folded spectral
+weight~\cite{cheng2022trimer,li2026tetramer}.
+
+Near a form-factor zero, corrections to the scattering operator become
+essential. Such corrections modify dimer structure
+factors~\cite{mueller2003structure} and introduce tensor contributions
+when cluster multiplets mix~\cite{waldmann2005manyspin}.
+Symmetry constrains these amplitudes but can leave their relative
+strengths dependent on the Hamiltonian.
+For isotropic clusters, repeated occurrences of a transition-operator
+irrep permit independent reduced matrix elements and their
+interference~\cite{tabrizi2021selection}.
+This distinction also underlies the separation between systematic
+extinctions and parameter-dependent zeros~\cite{tabrizi2026extinctions}.
+An exchange parameter that cancels one amplitude therefore need not
+cancel every transition involving the same symmetry labels.
+
+Thermal occupation adds a further constraint on cancellation.
+Excited initial states contribute additional
+transitions, as described by effective-observable corrections and
+thermal spectral-weight transfer in spin
+ladders~\cite{exius2010vertex,honecker2016thermal}.
+Thermal lifting of accidental zeros also occurs in magnetovibrational
+interference~\cite{raymond2018interference}.
+Here we ask whether exchange retuning can compensate the additional
+amplitudes and keep the entire low-energy thermal response dark.
+The answer requires both the corrected probe and the space of
+amplitudes that physical controls can adjust.
+
+We address this question in a Heisenberg pentamer chain whose local
+ground multiplet can be a doublet or a quartet.
+The doublet permits cancellation of the entire first-order probe on a
+uniform reflection-symmetric periodic chain.
+At a specified quartet root, a composite vector instead produces
+bond-spin amplitudes that remain incompatible with simultaneous
+thermal cancellation.
+We establish this obstruction for every finite even ring with at least
+four cells, including independent first-order SU(2)-invariant controls
+inside each cell.
+A four-cell ring makes the physical consequence explicit: its leading
+ground-state response can vanish, while thermal occupation restores
+two calculable groups of spectral lines.
+Microscopic spectra test these predictions, and momentum-window
+averaging identifies the background that accompanies finite acceptance.
+
+\section{Model and low-energy observable}
+
+Each cell contains five spin-$1/2$ sites at unit spacing. With $J_1=1$,
+$\alpha=J_2/J_1$, and $\beta=J_3/J_1>0$, the Hamiltonian is
+\begin{align}
+ H_0&=\sum_{n=0}^{N-1}\big[
+ \alpha(\bm S_{n,1}\!\cdot\!\bm S_{n,2}
+       +\bm S_{n,4}\!\cdot\!\bm S_{n,5})\notag\\
+ &\hspace{29mm}+\bm S_{n,2}\!\cdot\!\bm S_{n,3}
+       +\bm S_{n,3}\!\cdot\!\bm S_{n,4}\big],\\
+ H&=H_0+\beta V,\qquad
+ V=\sum_{\langle n,n+1\rangle}\bm S_{n,5}\!\cdot\!\bm S_{n+1,1}.
+ \label{eq:rank-ham}
+\end{align}
+The bond sum is specified as open or periodic in each calculation, and the
+microscopic length is $L=5N$. We assume that the isolated cell has a single
+ground multiplet of spin $s$, separated from all other multiplets by
+$\Dloc>0$. The numerical examples below have $s=1/2$ or $3/2$.
+
+Rotational symmetry within this irrep fixes the local projection,
+\begin{equation}
+ P_n\bm S_{n,a}P_n=c_a\bm T_n,\qquad
+ c_a=c_{6-a},\qquad \sum_a c_a=1.
+ \label{eq:rank-projection}
+\end{equation}
+Here $\bm T_n$ is a spin-$s$ operator. The leading Hamiltonian is an
+antiferromagnetic effective chain with exchange $\beta c_1^2$.
+The scattering intensity additionally depends on how the microscopic
+probe projects into this effective spin space.
+
+It is convenient to center the intra-cell Fourier phase:
+\begin{align}
+ B_n^z(q)&=\sum_{a=1}^5 e^{iq(a-3)}S_{n,a}^z,\\
+ O_q&=\frac{1}{\sqrt{5N}}\sum_n e^{iQn}B_n^z(q),
+ \quad Q=5q\pmod{2\pi}.
+\end{align}
+Changing the coordinate origin adds only a global phase to $O_q$ and does not
+change a spectral weight. Equation~\eqref{eq:rank-projection} gives
+\begin{align}
+ P O_qP&=A(q,\alpha)D_Q,\notag\\
+ A(q,\alpha)&=\sum_a c_a\cos[q(a-3)],\\
+ D_Q&=\frac{1}{\sqrt{5N}}\sum_n e^{iQn}T_n^z.
+ \label{eq:rank-amplitude}
+\end{align}
+The normalization of $D_Q$ is fixed by the microscopic probe and is
+kept identical across all comparisons.
+
+At zero temperature, we use the integrated inelastic low-band weight
+\begin{equation}
+ \Wlow=\frac{1}{n_G}\sum_{r=1}^{n_G}
+ \sum_{0<E_m-E_G<\Dloc/2}|\langle m|O_q|G_r\rangle|^2.
+ \label{eq:rank-weight}
+\end{equation}
+All transitions within the ground eigenspace are excluded.
+The gap $\Dloc$ in this cutoff and in $g=\beta/\Dloc$ is evaluated at the
+unshifted local root. For each finite system, the cutoff contains the
+complete retained low band in the weak-coupling regime used below.
+The microscopic expansion is taken at fixed $N$; band isolation is
+checked separately for each numerical calculation.

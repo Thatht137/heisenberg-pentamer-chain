@@ -22,6 +22,8 @@
 
 本项目用于研究 1x5 五聚体 Heisenberg 自旋链的基态性质、弦序参量、动力学结构因子和有限温 TEBD 谱函数。
 
+2026-10-26 收尾归档：[资料入口与下载说明](docs/archive_20261026.md)。代码、稿件和文档可直接浏览；完整数据、图表与历史资料见 [GitHub Release](https://github.com/Thatht137/heisenberg-pentamer-chain/releases/tag/archive-2026-10-26)。
+
 当前结果主要用于流程验证和论文图表准备。正式物理结论仍建议使用更大体系、更密网格和充分的有限尺寸分析。
 
 ## 模型

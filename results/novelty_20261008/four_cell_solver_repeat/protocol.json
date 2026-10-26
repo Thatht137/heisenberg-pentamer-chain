@@ -1,0 +1,11 @@
+{
+  "g": 0.000625,
+  "seed": 20261009,
+  "ncv": 220,
+  "tol": 5e-14,
+  "wall_limit_seconds": 180,
+  "threads": 1,
+  "relative_weight_gate": 0.0001,
+  "scope": "solver sensitivity, not an independent numerical method",
+  "original_source_unchanged": true
+}

@@ -1,0 +1,101 @@
+{
+  "hash_entries_checked": 125,
+  "hash_failures": [],
+  "original_manuscript_unchanged": true,
+  "original_pdf_sha256": "e6d68fc15391e990d9b1d73289e5378f8224e312cfd4a50de1bb419fcf412766",
+  "selected_original_figures_unchanged": true,
+  "pages": [
+    {
+      "page": 1,
+      "text_chars": 5361,
+      "has_thermal_figure_caption": false
+    },
+    {
+      "page": 2,
+      "text_chars": 3660,
+      "has_thermal_figure_caption": false
+    },
+    {
+      "page": 3,
+      "text_chars": 3873,
+      "has_thermal_figure_caption": false
+    },
+    {
+      "page": 4,
+      "text_chars": 5060,
+      "has_thermal_figure_caption": false
+    },
+    {
+      "page": 5,
+      "text_chars": 5233,
+      "has_thermal_figure_caption": false
+    },
+    {
+      "page": 6,
+      "text_chars": 4350,
+      "has_thermal_figure_caption": true
+    },
+    {
+      "page": 7,
+      "text_chars": 3778,
+      "has_thermal_figure_caption": false
+    },
+    {
+      "page": 8,
+      "text_chars": 5569,
+      "has_thermal_figure_caption": false
+    },
+    {
+      "page": 9,
+      "text_chars": 4114,
+      "has_thermal_figure_caption": false
+    },
+    {
+      "page": 10,
+      "text_chars": 4674,
+      "has_thermal_figure_caption": false
+    },
+    {
+      "page": 11,
+      "text_chars": 5431,
+      "has_thermal_figure_caption": false
+    },
+    {
+      "page": 12,
+      "text_chars": 2868,
+      "has_thermal_figure_caption": false
+    },
+    {
+      "page": 13,
+      "text_chars": 3278,
+      "has_thermal_figure_caption": false
+    },
+    {
+      "page": 14,
+      "text_chars": 3844,
+      "has_thermal_figure_caption": false
+    },
+    {
+      "page": 15,
+      "text_chars": 5691,
+      "has_thermal_figure_caption": false
+    },
+    {
+      "page": 16,
+      "text_chars": 3483,
+      "has_thermal_figure_caption": false
+    }
+  ],
+  "text_outside_page": [],
+  "layout_or_reference_warnings": [],
+  "thermal_figure_svg_text_nodes": 39,
+  "thermal_figure_pdf_text_chars": 253,
+  "four_cell_figure_svg_text_nodes": 30,
+  "four_cell_figure_pdf_text_chars": 223,
+  "new_title_present": true,
+  "exact_activation_prefactor": "51/50",
+  "commutator_lower_bound": "9/2",
+  "visual_review": "passed within stated visual inspection scope",
+  "visual_review_matches_pdf": true,
+  "scientific_completion_claim": false
+}

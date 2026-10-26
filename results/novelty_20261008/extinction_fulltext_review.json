@@ -1,0 +1,56 @@
+{
+  "date": "2026-10-08",
+  "scope": "Additional closest-literature comparison; no new computation or manuscript/figure edits.",
+  "review_document": "docs/extinction_prior_art_review_20261008.md",
+  "target_2021_fulltext_obtained": false,
+  "target_doi": "10.1103/PhysRevB.103.214422",
+  "additional_target_checks": {
+    "publisher": "Authorization Required remains visible on the official article page.",
+    "searches": [
+      "\"10.1103/PhysRevB.103.214422\" pdf",
+      "\"Point-group selection rules and universal momentum-transfer dependencies\" -site:researchgate.net -site:aps.org",
+      "\"214422\" \"Tabrizi\" filetype:pdf",
+      "site:arxiv.org \"Point-group selection rules\" \"Tabrizi\"",
+      "\"Tabrizi\" \"214422\" repository OR preprint OR accepted"
+    ],
+    "result": "No verified public full-text copy of the target obtained. Negative search is not evidence of nonexistence."
+  },
+  "additional_primary_sources": [
+    {
+      "url": "https://arxiv.org/pdf/2608.13795v1",
+      "path": "results/novelty_20261008/Tabrizi_arxiv2608_13795v1.pdf",
+      "bytes": 8393307,
+      "pages": 16,
+      "sha256": "03ea1e7f4063451fd7d0c611b091777e3d42a8d3a1cf46975e64e85942927c50",
+      "read_scope": "Theory II.A-E; alternating-ring discussion III.D; concluding qualifications and relevant references. Not an assertion of a new line-by-line reading of all worked geometries.",
+      "status": "Downloaded official arXiv preprint; title, author, PDF parsing and page count checked.",
+      "not_a_substitute_for": "10.1103/PhysRevB.103.214422"
+    },
+    {
+      "url": "https://arxiv.org/src/2608.13795v1/anc/INS_extinctions_ghassemi_SI.pdf",
+      "path": "results/novelty_20261008/Tabrizi_arxiv2608_13795v1_supplement.pdf",
+      "bytes": 1826919,
+      "pages": 4,
+      "sha256": "0352be8b126944e88d28e7b2dec4f2369a16e223c6f4b9c4164bac334d75784c",
+      "read_scope": "Section S2 A-E, equations S2-S4 and Figure S2 caption, pages 2-4; S1 not used to assess the present contribution.",
+      "status": "Downloaded from the ancillary link on the official arXiv abstract page; identity and PDF parsing checked."
+    }
+  ],
+  "unchanged_manuscript": {
+    "path": "paper_prb/rank_candidate/build/rank_manuscript.pdf",
+    "pages": 16,
+    "sha256": "273023594260444c177cb6a29cb1727eae7488f68f1e46a6af48bbf8d74dac2b"
+  },
+  "scope_guard": {
+    "power_law_variable_distinction": "The reference discusses momentum displacement; the manuscript also studies intercell-coupling powers. Equal exponents do not imply equal variables or mechanisms.",
+    "operator_vs_transition_distinction_claimed_new": false,
+    "momentum_power_law_claimed_new": false,
+    "global_priority_established": false,
+    "major_general_breakthrough_established": false,
+    "external_independent_review": false,
+    "paywall_bypass": false,
+    "author_contact_sent": false,
+    "purchase_made": false,
+    "manuscript_or_data_uploaded": false
+  }
+}

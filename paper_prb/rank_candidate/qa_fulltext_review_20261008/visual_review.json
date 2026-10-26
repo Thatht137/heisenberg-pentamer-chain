@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-08",
+  "pdf_sha256": "fee6a1a83d2193244cb04357f66c476f8cfbaced6d4a28f18812a0b07a6d93fb",
+  "status": "passed within the recorded visual-review scope",
+  "pages": 16,
+  "scope": {
+    "all_pages": "检查最终版 16 页总览，确认图像、分栏与章节排布完整。",
+    "full_size_pages": [1, 4, 8, 16],
+    "focused_checks": [
+      "摘要明确四胞基态完全消光只属于领先阶探针。",
+      "引言与热响应节对 PRB 103, 214422 式 (16) 的引用指向参考文献 3。",
+      "新增讨论没有文字重叠、裁切或公式越栏。",
+      "参考文献 7 的起始页码和 16 的文章编号正常显示。"
+    ],
+    "limit": "没有在本轮逐字复查全部未改动页面；目视检查不代表科学同行评议。"
+  },
+  "defects_found": [],
+  "original_selected_figures": "由文件指纹确认未改变；不添加参数页脚、不平滑、不反演平均。",
+  "known_nonfatal_build_messages": "存在少量 Underfull 排版提示及 MiKTeX 更新提醒；没有未定义引用、Overfull 或页外文字。"
+}

@@ -1,0 +1,152 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Contrast with the tetramer chain}
+
+The main contrast with the tetramer chain follows from unit-cell parity.
+Four spin-$1/2$ degrees of freedom can form an integer-spin or singlet cluster
+sector, which is why the tetramer problem admits gapped tetramer and Haldane-like
+phases separated by a gapless intermediate
+region~\cite{li2026tetramer,gong2008tetramer}.
+Five spins leave a half-integer degree of freedom unless translation symmetry is
+broken or the ground state is degenerate, and the Lieb--Schultz--Mattis-type
+constraints~\cite{lieb1961,ogata2019,affleck1987} then exclude a unique
+symmetry-preserving gapped ground state under the stated assumptions.
+At the tested positive-$\alpha$ points, the surviving doublet converts the
+inter-cell exchange into an antiferromagnetic interaction between effective spins.
+The finite-size observables accordingly point to a critical effective chain, and
+the pentamer has to be classified on its own terms rather than through the
+tetramer phase names and their triplon, quarton, or quinton labels.
+
+The spectral comparison sharpens this distinction.
+The pentamer's odd-parity excited doublet is dark at $q=\pi$, while higher
+even-parity spin-$3/2$ sectors remain bright.
+In the chain, that local hierarchy coexists with a dispersive low-energy continuum
+and with five-site folding or high-energy structure.
+The multiplet analysis predicts visibility, whereas the many-body calculation
+determines whether the weight forms a continuum, a broadened branch, or a more
+complex folded response.
+A qualitatively similar separation between momentum-selective local weight and a
+collective continuum has been discussed for other cluster and chain
+magnets~\cite{keselman2020,gao2024srv3o9,bruognolo2016}, in line with the
+interpretation given here.
+
+The odd-cell constraint excludes a unique symmetric gapped ground state while
+leaving open gapped symmetry-broken phases, degenerate ground states, and gapless
+phases of other origin.
+Among these, the finite-size evidence at the tested points selects the $c=1$
+effective chain.
+String-order and entanglement-spectrum
+diagnostics~\cite{guwen2009,pollmann2010,pollmann2012,han2017bcfg} would be the
+natural tools for probing hidden order in the same framework.
+
+\subsection{Controlled interpretation near \texorpdfstring{$\alpha=0$}{alpha=0}}
+
+Both sides of the coupling plane meet at $\alpha=0$, where the end bonds of each
+cell vanish.
+Sites 2--4 then form a trimer with a spin-$1/2$ ground doublet, while site 5 of
+one cell and site 1 of the next are joined only by $J_3$ into a singlet dimer.
+For $|\alpha|\ll\min(1,\beta)$ the weak end bonds let neighboring trimer doublets
+interact through a virtual triplet excitation of the dimer, which costs an energy
+of order $\beta$.
+Once the end spins are bound into these dimers, the trimer doublets are the
+low-energy degrees of freedom for either sign of $\alpha$, even though the isolated
+cell, which lacks the inter-cell bond, has a quartet ground state for $\alpha<0$.
+Projecting onto the trimer doublets and eliminating the dimer triplet gives
+\begin{equation}
+\Jeff=\frac{2\alpha^2}{9\beta}>0 .
+\label{eq:near-zero}
+\end{equation}
+Exact diagonalization of an eight-spin trimer--dimer--trimer cluster at 47 points
+supports this
+local $\alpha^2/\beta$ scaling in its asymptotic domain, consistent with the
+effective-spin logic established for trimer
+chains~\cite{cheng2022trimer,cheng2024trimerfield}.
+The finite-$\alpha$ controls at $(-0.10,0.25)$ and $(-0.175,0.25)$ deviate from the
+leading term by $-36.1\%$ and $-53.9\%$, respectively.
+These are signed deviations of the local approximation itself, defined as
+$\epsilon=(\Delta_8/\alpha^2-2/(9\beta))/(2/(9\beta))$, where $\Delta_8$ is the
+singlet--triplet gap of the eight-spin cluster, which for two coupled effective
+spins equals $\Jeff$; the deviations grow as
+$\alpha$ leaves the asymptotic domain, as expected for a leading-order result.
+The decomposition thus supplies the mechanism near $\alpha=0$: it explains why the
+effective exchange is antiferromagnetic and why it scales as $\alpha^2/\beta$.
+It also explains why the near-zero strip is the most delicate region numerically:
+the many-body energy scale vanishes quadratically as $\alpha\to0$, so finite-size
+and solver effects compete with a very small exchange there.
+
+\subsection{Meaning and boundary of the negative-\texorpdfstring{$\alpha$}{alpha} result}
+\label{sec:negative-boundary}
+
+The negative-$\alpha$ scan establishes a reproducible result: the dominant
+finite-size momentum changes across the coupling plane.
+In the thermodynamic limit such a reconstruction could sharpen into a Lifshitz
+transition, spread into a broad incommensurate regime, or remain a crossover
+driven by the competing-momentum mechanism known from frustrated and dimerized
+chains~\cite{hida1992,chitra1995,hakobyan2001,white2008s1}; the mismatch between
+the two diagnostics favors the last.
+The local quartet analysis supplies a candidate origin for the deep-region value:
+the isolated spin-$3/2$ cell responds most strongly at $0.60\pi$ throughout the
+negative region, matching the measured $\qpeak$ there, while the
+$\alpha>0$ doublet projects onto $q=\pi$ instead.
+The local shape factor fixes the momentum scale; whether the extended chain
+develops a singularity at that scale is a separate, many-body question, and the
+near-zero strip is the region most sensitive to initialization and fitting window.
+The correspondence therefore makes a falsifiable prediction: a controlled
+larger-size calculation of the deep-region momentum should
+converge to the local value if the reconstruction is set by the single-cell
+multiplet.
+
+The phase question turns on physics rather than numerics.
+The refinement calculations converge, and the most sensitive endpoint passes the
+$k=8\rightarrow12$ solver control, so the disagreement between the two
+diagnostics is not a convergence failure.
+Momentum reconstruction and finite-size flow are distinct observables, and at the
+available sizes and coupling resolution they select different intervals.
+What the data establish is a finite-size momentum reconstruction; naming a
+separate thermodynamic phase would require those two signatures to coincide, and
+they do not.
+
+\subsection{Outlook}
+\label{sec:remaining-tests}
+
+The negative-$\alpha$ result sets up a sharp test of the phase question.
+An observable with a controlled large-size singularity or crossing that tracks the
+momentum reconstruction would turn the finite-size statement into a boundary, and a
+negative-$\alpha$ dynamical calculation would show whether the momentum
+reorganization carries a qualitative spectral transfer.
+
+Two further extensions would connect the present results to the wider literature
+on one-dimensional spin dynamics.
+First, the momentum-resolved line shapes could be compared with the quasiparticle
+interaction signatures and spinon hydrodynamics that have been analysed in
+related chains~\cite{keselman2020,balents2020,wang2022hydro}, and with the
+dynamical signatures used to distinguish symmetry-broken from liquid
+phases~\cite{drescher2023,li2023dqcpsteer}.
+Second, the entanglement analysis could be extended beyond the single-scalar
+$c_{\mathrm{eff}}$ reported here to the full entanglement spectrum and its
+dependence on microscopic anisotropy~\cite{kargarian2008}, and the momentum-space
+continuum could be analysed with the same tools that have been applied to
+honeycomb and square-lattice
+antiferromagnets~\cite{gu2022honeycomb,wu2022j1j3}.
+
+\subsection{Relation to experiment}
+
+The local selection rule has a direct experimental consequence.
+Because reflection parity removes the lowest excited doublet from the $q=\pi$
+single-spin channel, an inelastic neutron scattering or $L$-edge RIXS measurement
+of a pentamer-chain material would not observe the lowest local excitation as a
+sharp $q=\pi$ feature.
+Instead, weight would appear in higher-lying even-parity spin-$3/2$ sectors and in
+the collective continuum, in the same spectral hierarchy that has been used to
+identify composite excitations in trimer and tetramer
+compounds~\cite{cheng2022trimer,li2025rixstrimer,li2026tetramer,prabhakar2025trimer}.
+The prediction concerns the single-spin response, which is the channel measured
+by neutrons and $L$-edge RIXS.
+Because the Hamiltonian is SU(2) symmetric and the finite-chain ground state at
+the calculated points is a spin singlet, $S^{zz}(q,\omega)$ fixes the unpolarized
+neutron response up to a factor of three.
+Two-particle channels probed by $K$-edge RIXS, and their relation to the
+multi-spinon continuum observed in one-dimensional
+cuprates~\cite{schlappa2018,ishii2025kedge,kumar2020,forte2011}, are a natural
+extension of the same framework.

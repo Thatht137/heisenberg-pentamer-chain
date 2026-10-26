@@ -459,7 +459,6 @@ def analyze(output: Path) -> dict[str, object]:
         "status": "completed",
         "completed_at_utc": completed_at,
         "host": platform.node(),
-        "operator": "Codex",
         "git_commit": git_output("rev-parse", "HEAD"),
         "git_status_short": git_output("status", "--short"),
         "python_version": sys.version.split()[0],

@@ -1,0 +1,96 @@
+{
+  "passed": true,
+  "energy_exact": "-sqrt(7)/3 - 5/12",
+  "highest_weight_basis_one_down_sites_0_to_4": [
+    "1",
+    "2 + sqrt(7)",
+    "-6 - 2*sqrt(7)",
+    "2 + sqrt(7)",
+    "1"
+  ],
+  "highest_weight_norm": "32*sqrt(7) + 88",
+  "c1_exact": "sqrt(7)/27 + 25/108",
+  "scalar_local_tensor": "-361001/180792 + 80795*sqrt(7)/90396",
+  "quadrupole_local_tensor": "169277/45198 - 35195*sqrt(7)/22599",
+  "a_exact": "4500505/19525536 - 1297873*sqrt(7)/9762768",
+  "b_exact": "-2261005/4881384 + 541321*sqrt(7)/2440692",
+  "a_float": -0.12123576954254504,
+  "b_float": 0.123611764801456,
+  "strict_b_positive_lower_bound": "20086103/162712800",
+  "strict_local_gap_lower_bound": "1/8",
+  "gap_certificate": [
+    {
+      "down_spins": 0,
+      "dimension": 1,
+      "ldl_positive_lower_bounds": [
+        "1029/800"
+      ]
+    },
+    {
+      "down_spins": 1,
+      "dimension": 5,
+      "ldl_positive_lower_bounds": [
+        "16127/9600",
+        "2525327/2039600",
+        "4127489/3761600",
+        "355531751/278315520",
+        "220571788/139837525"
+      ]
+    },
+    {
+      "down_spins": 2,
+      "dimension": 10,
+      "ldl_positive_lower_bounds": [
+        "219/256",
+        "9755431/13180800",
+        "436470037/361959200",
+        "11515354729/7863655200",
+        "623645899/595898060",
+        "10309183063/9928003584",
+        "1539746874966083/776500478082720",
+        "17174559243442763/12137899301224750",
+        "22675987876170425759/53748625852479325600",
+        "10303811818216467141/44041784364750502450"
+      ]
+    },
+    {
+      "down_spins": 3,
+      "dimension": 10,
+      "ldl_positive_lower_bounds": [
+        "219/256",
+        "9755431/13180800",
+        "795233093/542938800",
+        "30986190219/15602295200",
+        "121577763421/100905498450",
+        "185922377569/177700514760",
+        "12630197754374957/8873854795369600",
+        "6479007759181332911/6279815383597046400",
+        "22675987876170425759/53748625852479325600",
+        "10303811818216467141/44041784364750502450"
+      ]
+    },
+    {
+      "down_spins": 4,
+      "dimension": 5,
+      "ldl_positive_lower_bounds": [
+        "16127/9600",
+        "2525327/2039600",
+        "4127489/3761600",
+        "355531751/278315520",
+        "220571788/139837525"
+      ]
+    },
+    {
+      "down_spins": 5,
+      "dimension": 1,
+      "ldl_positive_lower_bounds": [
+        "1029/800"
+      ]
+    }
+  ],
+  "full_tensor_identities": "Both endpoints; z, plus, minus components, full four-dimensional irrep.",
+  "numeric_comparison_max_absolute_error": 2.914335439641036e-16,
+  "existing_two_cell_tensor_fit_error": 4.4694844287485765e-15,
+  "independence_scope": "Exact bit-basis one-cell construction vs existing floating-point two-cell resolvent; same perturbative formula, not a different physical approximation.",
+  "elapsed_seconds": 19.1791884
+}

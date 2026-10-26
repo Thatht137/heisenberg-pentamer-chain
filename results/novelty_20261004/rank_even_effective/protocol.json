@@ -1,0 +1,15 @@
+{
+  "cells": [
+    3,
+    6
+  ],
+  "boundary": "PBC",
+  "same_parameters_as_microscopic_three_cell_test": true,
+  "complex_fourier_probe_preserved": true,
+  "n3_cross_check_gate": 1e-09,
+  "eigen_residual_gate": 1e-10,
+  "doublet_zero_gate": 1e-20,
+  "threads": 1,
+  "wall_limit_seconds": 60,
+  "scope": "effective models, not microscopic L=30 ED"
+}

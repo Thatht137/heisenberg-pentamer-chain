@@ -1,0 +1,18 @@
+{
+  "threads": 12,
+  "pid": 44764,
+  "start": "2026-10-01T19:22:28.6196172+08:00",
+  "arguments": [
+    "--startup-file=no",
+    "--project=D:\\Project\\1x5_Heisenberg_Pentamer",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\compute_fullq_dsf.jl",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_negative_local",
+    "-0.5",
+    8,
+    "0.05",
+    60,
+    192,
+    41,
+    256
+  ]
+}

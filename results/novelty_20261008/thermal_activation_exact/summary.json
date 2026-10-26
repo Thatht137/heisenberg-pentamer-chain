@@ -1,0 +1,38 @@
+{
+  "all_gates_pass": true,
+  "exact_arithmetic": true,
+  "ground_residual_exactly_zero": true,
+  "first_triplet_energy": -11,
+  "ground_energy": -12,
+  "thermal_gap_over_Jeff": 1,
+  "line_coefficients_divided_by_b_squared": {
+    "omega_2": "27/50",
+    "omega_7_A3_B1": "6/25",
+    "omega_7_A1_B3": "6/25"
+  },
+  "total_prefactor_divided_by_b_squared": "51/50",
+  "M_resolved": [
+    {
+      "M": 1,
+      "omega_2": "81/500",
+      "omega_7_A3_B1": "9/125",
+      "omega_7_A1_B3": "9/125"
+    },
+    {
+      "M": 0,
+      "omega_2": "27/125",
+      "omega_7_A3_B1": "12/125",
+      "omega_7_A1_B3": "12/125"
+    },
+    {
+      "M": -1,
+      "omega_2": "81/500",
+      "omega_7_A3_B1": "9/125",
+      "omega_7_A1_B3": "9/125"
+    }
+  ],
+  "float_ED_relative_error": 2.9976021664879227e-15,
+  "law": "Cmin(tau) = (51/50)*b^2*exp(-1/tau) + o(exp(-1/tau))",
+  "scope": "leading effective N=4 PBC quartet at Q=pi only",
+  "elapsed_seconds": 0.1539751
+}

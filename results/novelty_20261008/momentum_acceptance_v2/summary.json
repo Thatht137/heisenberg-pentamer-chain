@@ -1,0 +1,225 @@
+{
+  "numerical_checks_pass": true,
+  "cases": [
+    {
+      "spin": 1.5,
+      "g": 0.005,
+      "T_over_Jeff": 0.4,
+      "center_relative_error": 1.1824985435282542e-12,
+      "weight_doubles_at_half_width_over_pi": 0.002541542091777801,
+      "A_q_at_local_root": 2.6155738949762856e-16,
+      "A_qq_at_local_root": -2.1357781662413604,
+      "ratio_at_half_width_0p001pi": 1.0359738267323728
+    },
+    {
+      "spin": 1.5,
+      "g": 0.01,
+      "T_over_Jeff": 0.4,
+      "center_relative_error": 3.055555808373356e-12,
+      "weight_doubles_at_half_width_over_pi": 0.0035335446476554874,
+      "A_q_at_local_root": 2.6155738949762856e-16,
+      "A_qq_at_local_root": -2.1357781662413604,
+      "ratio_at_half_width_0p001pi": 1.0191827494010066
+    },
+    {
+      "spin": 1.5,
+      "g": 0.02,
+      "T_over_Jeff": 0.4,
+      "center_relative_error": 6.561418075534675e-14,
+      "weight_doubles_at_half_width_over_pi": 0.004870164231074069,
+      "A_q_at_local_root": 2.6155738949762856e-16,
+      "A_qq_at_local_root": -2.1357781662413604,
+      "ratio_at_half_width_0p001pi": 1.0141946348318012
+    },
+    {
+      "spin": 1.5,
+      "g": 0.005,
+      "T_over_Jeff": 1.6,
+      "center_relative_error": 1.244448988302338e-12,
+      "weight_doubles_at_half_width_over_pi": 0.006136376221746184,
+      "A_q_at_local_root": 2.6155738949762856e-16,
+      "A_qq_at_local_root": -2.1357781662413604,
+      "ratio_at_half_width_0p001pi": 1.0009383082322936
+    },
+    {
+      "spin": 1.5,
+      "g": 0.01,
+      "T_over_Jeff": 1.6,
+      "center_relative_error": 3.9324099532223045e-13,
+      "weight_doubles_at_half_width_over_pi": 0.008687753023205649,
+      "A_q_at_local_root": 2.6155738949762856e-16,
+      "A_qq_at_local_root": -2.1357781662413604,
+      "ratio_at_half_width_0p001pi": 1.0004081730049346
+    },
+    {
+      "spin": 1.5,
+      "g": 0.02,
+      "T_over_Jeff": 1.6,
+      "center_relative_error": 6.838973831690964e-14,
+      "weight_doubles_at_half_width_over_pi": 0.0123154652262542,
+      "A_q_at_local_root": 2.6155738949762856e-16,
+      "A_qq_at_local_root": -2.1357781662413604,
+      "ratio_at_half_width_0p001pi": 1.000271472086861
+    },
+    {
+      "spin": 0.5,
+      "g": 0.005,
+      "T_over_Jeff": 0.4,
+      "center_relative_error": 7.321543371574535e-11,
+      "weight_doubles_at_half_width_over_pi": 5.843386494794834e-07,
+      "A_q_at_local_root": 1.6999849322585816,
+      "A_qq_at_local_root": 2.973592202719203,
+      "ratio_at_half_width_0p001pi": 2928560.6642824076
+    },
+    {
+      "spin": 0.5,
+      "g": 0.01,
+      "T_over_Jeff": 0.4,
+      "center_relative_error": 1.0511769232834922e-10,
+      "weight_doubles_at_half_width_over_pi": 2.3358622522361856e-06,
+      "A_q_at_local_root": 1.6999849322585816,
+      "A_qq_at_local_root": 2.973592202719203,
+      "ratio_at_half_width_0p001pi": 183269.9299888734
+    },
+    {
+      "spin": 0.5,
+      "g": 0.02,
+      "T_over_Jeff": 0.4,
+      "center_relative_error": 2.2171597890974226e-11,
+      "weight_doubles_at_half_width_over_pi": 9.331299491011963e-06,
+      "A_q_at_local_root": 1.6999849322585816,
+      "A_qq_at_local_root": 2.973592202719203,
+      "ratio_at_half_width_0p001pi": 11485.154953557567
+    },
+    {
+      "spin": 0.5,
+      "g": 0.005,
+      "T_over_Jeff": 1.6,
+      "center_relative_error": 1.0162060082308244e-10,
+      "weight_doubles_at_half_width_over_pi": 5.843386494754892e-07,
+      "A_q_at_local_root": 1.6999849322585816,
+      "A_qq_at_local_root": 2.973592202719203,
+      "ratio_at_half_width_0p001pi": 2928560.6643656045
+    },
+    {
+      "spin": 0.5,
+      "g": 0.01,
+      "T_over_Jeff": 1.6,
+      "center_relative_error": 1.1383360920547148e-10,
+      "weight_doubles_at_half_width_over_pi": 2.33586225227066e-06,
+      "A_q_at_local_root": 1.6999849322585816,
+      "A_qq_at_local_root": 2.973592202719203,
+      "ratio_at_half_width_0p001pi": 183269.92998727775
+    },
+    {
+      "spin": 0.5,
+      "g": 0.02,
+      "T_over_Jeff": 1.6,
+      "center_relative_error": 2.2721380332768604e-11,
+      "weight_doubles_at_half_width_over_pi": 9.33129949100172e-06,
+      "A_q_at_local_root": 1.6999849322585816,
+      "A_qq_at_local_root": 2.973592202719203,
+      "ratio_at_half_width_0p001pi": 11485.154953551226
+    }
+  ],
+  "finite_window_slopes": [
+    {
+      "spin": 0.5,
+      "T_over_Jeff": 0.4,
+      "half_width_over_pi": 0.0,
+      "slope": 4.001853564277763
+    },
+    {
+      "spin": 0.5,
+      "T_over_Jeff": 0.4,
+      "half_width_over_pi": 0.0001,
+      "slope": 0.010881366181516187
+    },
+    {
+      "spin": 0.5,
+      "T_over_Jeff": 0.4,
+      "half_width_over_pi": 0.001,
+      "slope": 0.004714740091303041
+    },
+    {
+      "spin": 0.5,
+      "T_over_Jeff": 0.4,
+      "half_width_over_pi": 0.01,
+      "slope": 0.004652333149042536
+    },
+    {
+      "spin": 0.5,
+      "T_over_Jeff": 1.6,
+      "half_width_over_pi": 0.0,
+      "slope": 4.001886557229326
+    },
+    {
+      "spin": 0.5,
+      "T_over_Jeff": 1.6,
+      "half_width_over_pi": 0.0001,
+      "slope": 0.010914359112274829
+    },
+    {
+      "spin": 0.5,
+      "T_over_Jeff": 1.6,
+      "half_width_over_pi": 0.001,
+      "slope": 0.004747733021971925
+    },
+    {
+      "spin": 0.5,
+      "T_over_Jeff": 1.6,
+      "half_width_over_pi": 0.01,
+      "slope": 0.00468532607971744
+    },
+    {
+      "spin": 1.5,
+      "T_over_Jeff": 0.4,
+      "half_width_over_pi": 0.0,
+      "slope": 2.0708858841708846
+    },
+    {
+      "spin": 1.5,
+      "T_over_Jeff": 0.4,
+      "half_width_over_pi": 0.0001,
+      "slope": 2.070875479649654
+    },
+    {
+      "spin": 1.5,
+      "T_over_Jeff": 0.4,
+      "half_width_over_pi": 0.001,
+      "slope": 2.0555593806324453
+    },
+    {
+      "spin": 1.5,
+      "T_over_Jeff": 0.4,
+      "half_width_over_pi": 0.01,
+      "slope": 0.11515543990922997
+    },
+    {
+      "spin": 1.5,
+      "T_over_Jeff": 1.6,
+      "half_width_over_pi": 0.0,
+      "slope": 2.0254933774184147
+    },
+    {
+      "spin": 1.5,
+      "T_over_Jeff": 1.6,
+      "half_width_over_pi": 0.0001,
+      "slope": 2.025493265775719
+    },
+    {
+      "spin": 1.5,
+      "T_over_Jeff": 1.6,
+      "half_width_over_pi": 0.001,
+      "slope": 2.0250126475892998
+    },
+    {
+      "spin": 1.5,
+      "T_over_Jeff": 1.6,
+      "half_width_over_pi": 0.01,
+      "slope": 0.791080064329023
+    }
+  ],
+  "scope": "finite two-cell microscopic illustration, not an instrument resolution forecast",
+  "elapsed_seconds": 0.7394280000000001
+}

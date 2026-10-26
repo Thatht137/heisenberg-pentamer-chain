@@ -1,0 +1,238 @@
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.49\textwidth]{fig6_fullq_positive.pdf}\hfill
+\includegraphics[width=0.49\textwidth]{fig6_fullq_negative.pdf}
+\caption{Previously calculated complete connected spectra for $L=40$ open
+chains, retained without changing the two selected panels.
+$J_2/J_1=0.5$ (left), $-0.5$ (right), and $J_3/J_1=0.5$.
+The triangular time window at $TJ_1=60$ has width $0.09277J_1$;
+the production time step and bond dimension are $\Delta tJ_1=0.05$ and 192.
+Both use the same display coordinate
+$u(s)=\operatorname{asinh}(s/0.02)/\operatorname{asinh}(6/0.02)$ for
+$s=J_1S_T^{zz}\in[0,6]$. This monotonic display does not change the spectral
+arrays or their resolution. No Gaussian smoothing, momentum interpolation,
+or reflection averaging is applied. The 41 momenta were independently
+calculated. These finite-coupling maps are contextual, not quantitative
+evidence for the weak-coupling retuned residual.}
+\label{fig:rank-original}
+\end{figure*}
+
+\section{Local root and numerical protocols}
+
+For the quartet root at $q=\pi$, the highest-weight $M=3/2$ state has
+single-down-spin amplitudes $(u,v,w,v,u)$, with $w=-2(u+v)$ from the
+highest-weight condition. The zero of the projected alternating probe gives
+$v^2=1/8$ after normalization. The relevant eigenvector ratio is
+$x=u/v=(\sqrt7-2)/3$, with
+$\alpha=-x(3+2x)/(1-x^2)$, giving Eq.~\eqref{eq:rank-exact-root}.
+All local gaps and resolvents were also obtained from direct diagonalization
+of the 32-dimensional pentamer Hamiltonian. No reduced transition amplitudes
+were fitted to the microscopic spectra.
+
+Microscopic Hamiltonians were built in fixed-$S^z$ bases. The three-cell
+comparison used a real symmetric sparse eigensolver with tolerance
+$10^{-13}$, at least 50 Krylov vectors, and four extra eigenpairs above the
+expected retained band. The numerical acceptance tests required two ground
+states in the chosen sector, a complete retained band, and eigen-residuals
+below $10^{-10}$. The anticipated small-coupling slope intervals were
+$[1.8,2.2]$ and $[3.7,4.3]$; the quartet's weakest-coupling coefficient was
+required to agree within $5\%$. These are deterministic validation tests,
+not uncertainty intervals. All passed. The parameter and momentum search
+used to choose the roots was exploratory; the subsequent microscopic tests
+used those fixed predictions.
+The restart check used tolerance $10^{-14}$, 120 Krylov vectors, a different
+seed, and six extra eigenpairs above the retained count at $g=0.005,0.01$.
+It used the same Hamiltonian assembly and is a numerical-sensitivity check,
+not an independent computational method.
+
+For the four-cell quartet test, the $S^z=0$ microscopic basis has 184756
+states. We obtained 45 eigenpairs, including all 44 retained-sector states
+(the ground state and 43 excited states), with tolerance $10^{-13}$.
+The two smallest couplings used 140 Krylov vectors; a repeat at
+$g=0.000625$ used 180 and a different random starting vector. The line-vector
+error compares weights in increasing-energy order, including a zero
+ground-state entry, after division by $\beta^2$. It is not a test of a
+broadened line shape. The strongest-coupling points were diagnostic tests,
+not part of the weak-domain acceptance claim.
+
+Effective-chain ED used the $S^z=0$ sector, whose dimension reaches 116304
+for ten spin-$3/2$ sites. The norm and overlap in
+Eq.~\eqref{eq:rank-minimum} were evaluated directly on the ground-state
+sources, without summing an incomplete set of excited states. The lowest
+line and the energy moment were checked separately. The periodic scalar
+source and the sum of the open-chain decomposition supplied internal
+operator checks.
+
+The longer open effective chains were computed by DMRG~\cite{white1992,schollwoeck2011}
+using ITensors/ITensorMPS~\cite{fishman2022}
+with conserved $S^z$, explicit spin-$3/2$ local operators, and MPO contractions
+of $D^\dagger D$, $K^\dagger K$, and $D^\dagger K$. Thus there is no additional
+truncation from constructing an applied source MPS. Refinement used bond
+dimensions $128,192,256$, with 24, 16, and 16 sweeps, cutoff $10^{-13}$,
+and eigensolver tolerance $10^{-13}$. Larger-bond runs started from the
+previous state without decreasing its bond dimension. Acceptance required
+relative change of $\Cmin$ below $1\%$, energy change per cell below
+$10^{-8}$, energy variance per cell below $10^{-8}$, and maximum local
+$|\langle T_n^z\rangle|<10^{-4}$. The final $N=20$ variance was
+$1.21\times10^{-9}$ and its maximum local moment was $1.17\times10^{-9}$.
+The earlier unconverged runs and the failed $N=40$ refinement are retained
+with their original criteria.
+
+Periodic DMRG used the same operators with the closing bond included in the
+MPO. The $N=6$ source norm was cross-checked against ED. Bond dimensions
+$128,256,384$ were followed by 512 for $N=12$, with cutoff $10^{-13}$ and
+16 warm-start sweeps at each refinement. In addition to the preceding
+energy and weight criteria, acceptance required
+$|\langle\bm T_{\mathrm{tot}}^2\rangle|<10^{-4}$, bond-energy spread below
+$10^{-5}$, and scalar-removal and energy-reconstruction identities within
+$10^{-10}$. The first $N=12$ batch failed the energy-change test at 384;
+the subsequent 512 calculation passed without changing that threshold.
+All sizes here count effective spin-$3/2$ sites, not microscopic spins.
+The bounded refinement also tested $N=16$ at dimensions $256,512,768$;
+the last run failed the unchanged energy-change threshold and no larger
+periodic calculation was started.
+
+For the $Q=2\pi/3$ quartet check, the same periodic ground states can be
+reused: changing the local root multiplies the leading uniform Heisenberg
+Hamiltonian by the positive scalar $c_1(\alpha)^2$ without changing its
+eigenvectors. The probe coefficients were recomputed at the new root,
+including their complex Fourier phases. Connected norms use
+$\langle D^\dagger K\rangle-\langle D\rangle^*\langle K\rangle$,
+and the exchange retuning remains real. The six-cell MPO result reproduced
+ED to relative error $4.5\times10^{-15}$. The twelve-cell weight passed the
+$1\%$ bond-dimension-change test, and the imaginary part of the normalized
+source overlap was below $10^{-8}$. This is an effective-model measurement,
+not microscopic sixty-spin diagonalization.
+
+\section{Thermal traces and exact local checks}
+\label{app:exact-local-check}
+
+The four- and six-cell thermal effective calculations included every
+$S^z$ sector, with total dimensions $4^N$ or $2^N$. For six quartet
+cells the largest block had dimension 580. Real and imaginary operator
+components were transformed into the complete energy bases, and all
+transitions with $|\epsilon_f-\epsilon_i|<10^{-9}$ were treated as
+equal-energy transitions. Checks included Hermiticity, trace sum rules,
+eigen-residuals below $10^{-11}$, detailed balance, and agreement between
+direct residual norms and the thermal least-squares expression. A separate
+256-dimensional tensor-product assembly reproduced the four-cell result.
+Random unitary changes within each degenerate eigenspace left the thermal
+weights invariant. Both floating-point assemblies used the same dense
+diagonalization library; they are not independent solution methods.
+
+\paragraph*{Exact microscopic prefactors.}
+At the quartet root, an unnormalized highest-weight cell state in the
+one-down-spin basis, ordered by the position of that spin, is
+\begin{equation}
+ v=(1,\ 2+\sqrt7,\ -6-2\sqrt7,\ 2+\sqrt7,\ 1)^{\mathsf T}.
+\end{equation}
+Its squared norm is $88+32\sqrt7$ and its energy is
+$E_5=-(5+4\sqrt7)/12$. Total-spin lowering constructs the quartet
+projector $P_{\rm cell}$. We evaluated the reduced resolvent
+$G=(H_{\rm cell}-E_5+P_{\rm cell})^{-1}-P_{\rm cell}$ separately in all
+six magnetization blocks, using exact arithmetic in $\mathbb Q(\sqrt7)$.
+An exact $LDL^{\mathsf T}$ factorization of
+$H_{\rm cell}-E_5-\tfrac18(1-P_{\rm cell})+P_{\rm cell}$
+has strictly positive diagonal pivots in every block. This certifies
+that the quartet is the ground multiplet and that $\Dloc>1/8$.
+The projected tensor in Eq.~\eqref{eq:rank-local-tensor} is
+$s_0\delta_{z\mu}I+t_0Q^{z\mu}$, with
+\begin{align}
+ s_0&=\frac{161590\sqrt7-361001}{180792},\notag\\
+ t_0&=\frac{169277-70390\sqrt7}{45198}.
+\end{align}
+Both endpoint choices and all $z,+,-$ components satisfy this identity
+exactly. Multiplication by $-c_1$ gives $a,b$ in
+Eq.~\eqref{eq:exact-local-coefficients}. The elementary bounds
+$2.645<\sqrt7<2.646$ certify $b>20086103/162712800>0$.
+Comparison with the separately assembled floating-point two-cell
+resolvent gives an absolute coefficient difference below
+$3.0\times10^{-16}$. This is a check of the same perturbative formula,
+not a distinct many-body approximation.
+
+The other exact checks used rational arithmetic in the unnormalized local basis
+$|k\rangle=(T^-)^k|s,s\rangle$, where
+$T^+|k\rangle=k(2s-k+1)|k-1\rangle$ and
+$\langle k|k\rangle=k!(2s)!/(2s-k)!$.
+This gives exact zero tests for the partial traces in
+Eq.~\eqref{eq:thermal-bound}, with no numerical threshold.
+For the four-cell activation calculation, the two sublattice spins were
+coupled from $j_A=j_B=3$. In an unnormalized product basis, a highest-weight
+total-spin-$J$ state has coefficients $c_k$ at sublattice lowering degrees
+$(k,6-J-k)$, obeying
+\begin{equation}
+ \frac{c_{k+1}}{c_k}
+ =-\frac{(6-J-k)(J+1+k)}{(k+1)(6-k)}.
+\end{equation}
+This recurrence, followed by total-spin lowering, constructs the ground
+singlet and first triplet without a floating-point eigensolver.
+Acting with $Y+3\widetilde D$ annihilates the singlet. On the triplet,
+the residual separates into final eigenvalues $-9$ and $-4$ of $h$;
+projection by $\bm A^2$ resolves the two $-4$ channels. Their exact norms
+give Eq.~\eqref{eq:thermal-activation}.
+
+The ten-spin microscopic thermal calculation used all 11 $S^z$ blocks,
+whose largest dimension is 252. The full partition function was retained.
+Both initial and final states in $W_+$ were restricted to
+$E-E_0<\Dloc/2$; there were 16 retained quartet or 4 retained doublet
+states, as required. Eigen-residuals were below $3.4\times10^{-15}$,
+and omitted-band thermal populations were below $1.1\times10^{-57}$
+for the tested parameters. The temperature was
+$T=\tau\beta c_1(\alpha_*)^2$, including on the retuned trajectory.
+
+For the finite momentum interval we formed the low-band matrix elements
+of each microscopic $S_j^z$. At each quadrature point the complex Fourier
+amplitudes were combined before taking their absolute squares; this
+avoids subtracting nearly equal contributions to a tiny central intensity.
+Uniform-window integrations with 16 and 32 Gauss--Legendre nodes agreed
+within $10^{-7}$ relatively. Zero-width values reproduced the separate
+microscopic calculation within $1.2\times10^{-10}$. This is integration
+over a specified momentum acceptance, not Gaussian broadening or an
+image-processing operation.
+
+For twenty microscopic spins, the sparse $S^z=0$ Hamiltonian has dimension
+184756. We computed 48 lowest eigenpairs and verified that precisely 44
+lie below $E_0+\Dloc/2$. Within this low band, diagonalization of
+$(S^+V)^\dagger(S^+V)$ resolves total spin. Rediagonalizing the Hamiltonian
+within each spin sector and applying normalized total-spin raising gives
+all positive-$S^z$ states; spin reversal supplies the negative sectors.
+The multiplicities of $J=0,\ldots,6$ are $4,9,11,10,6,3,1$,
+giving 256 states. Every raised sector was checked against an independently
+assembled microscopic Hamiltonian. Residuals were below $10^{-12}$ and
+orthogonality errors below $10^{-11}$. The same procedure at ten spins
+reproduced the full-spectrum thermal weight to relative error below
+$10^{-7}$ before the twenty-spin run.
+At the weakest coupling, an independent restart with a different random
+vector, a larger Krylov space (220 instead of 180), and tighter tolerance
+changed the total, ground-initial, and excited-initial weights by at most
+$8.0\times10^{-8}$ relatively across the tested temperatures and both
+frequency definitions. This is solver sensitivity testing, not a distinct
+many-body method.
+
+The omitted states have a rigorous thermal bound. Relative to uncoupled
+cells at $\alpha_*$, the perturbation norm is at most
+$v=(3/4)[N|\beta|+2N|\alpha-\alpha_*|]$.
+The verified condition $4v<\Dloc$ isolates the retained band and places
+it below the chosen cutoff. Weyl bounds put every omitted state at least
+$\Dloc-2v$ above the true ground energy. With the retained partition
+function shifted by that energy,
+\begin{equation}
+ \frac{Z_{\rm out}}{Z_{\rm low}}
+ \le \frac{(2^{5N}-4^N)e^{-(\Dloc-2v)/T}}{Z_{\rm low}}.
+\end{equation}
+The logarithm of this bound is below $-2167$ in all tested thermal cases;
+the tail was bounded, not set to zero by numerical underflow.
+The raw positive-frequency cutoff was $10^{-10}$ in $J_1$ units.
+An audit at $10^{-11}$ and $10^{-9}$ exposed the quasielastic contribution
+at $\tau=1.6$. The subsequent fixed scaled windows are reported separately
+and do not replace the initial protocol or its data.
+
+\section{Relation to the original full spectra}
+
+The original $L=40$ maps in Fig.~\ref{fig:rank-original} have
+$\beta/\Dloc\simeq1.46$ and $3.96$, outside the validated perturbative
+range, and finite-time resolution broader than the separately calculated
+open-chain gaps. They neither establish the weak-coupling powers in
+Fig.~\ref{fig:rank-evidence} nor resolve the tiny retuned weights; they
+are retained as context, not validation of the composite-probe expansion.
+

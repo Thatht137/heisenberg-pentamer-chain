@@ -1,0 +1,12 @@
+{
+  "scripts\\submission_20261002\\check_window_retuning.py": "da8046a0ca512a690de2fdf6ec157b2730371acfe6cf4f4a19e8def9a20b033d",
+  "scripts\\submission_20261002\\check_momentum_acceptance.py": "6ede145d772135dc82b22798084f3fe017afb4ca7b420f93c4e44d85d66085e3",
+  "scripts\\submission_20261002\\validate_thermal_two_cells.py": "601a0279f25901b86f4bde771cae8361cd135c974a6ded29e019b8fd77d2e015",
+  "scripts\\submission_20261002\\check_thermal_compensation.py": "e70bf76cbf957e1869c852d77e859786eecc150adb323c5327335f6403577ed7",
+  "scripts\\submission_20261002\\probe_rank_geometry.py": "64b4987dc6c29578644c0261118fe89b0ebb5994d693e5e5ebee95a3f898b1d9",
+  "scripts\\submission_20261002\\local_projection_checks.py": "1470aab021ef1a9caeacc80a4e82f29cb30796379d2449aa0b9624537ea729ad",
+  "scripts\\submission_20261002\\validate_dark_multicell.py": "e26a78bbbdfd150682c04ee63b19ff0367682b6ccfb5f35376bd05711c16633b",
+  "results\\novelty_20261008\\momentum_window_retuning\\comparisons.csv": "d5bad2775569f5af4b0df7fdb388118a91381f8837162cf0b893c2b8881ba4b9",
+  "results\\novelty_20261008\\momentum_window_retuning\\protocol.json": "6feaf0144de0d83ffa34827bdf2d03302729de79f764492131e20bd3c4fd2f2f",
+  "results\\novelty_20261008\\momentum_window_retuning\\summary.json": "c6be0d467953cec205c142e74a0d2dde857bddf94d4bc4a3ac860df9c786897d"
+}

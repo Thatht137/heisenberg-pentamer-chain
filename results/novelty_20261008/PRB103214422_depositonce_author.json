@@ -1,0 +1,1156 @@
+{
+  "id" : null,
+  "scope" : null,
+  "query" : "Shadan",
+  "appliedFilters" : null,
+  "sort" : null,
+  "configuration" : null,
+  "type" : "discover",
+  "_links" : {
+    "self" : {
+      "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=Shadan"
+    }
+  },
+  "_embedded" : {
+    "searchResult" : {
+      "_embedded" : {
+        "objects" : [ {
+          "hitHighlights" : {
+            "dc.contributor.author" : [ "Ghassemi Tabrizi, <em>Shadan</em>" ]
+          },
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1d1b4215-5d7c-445f-aa48-695c96a30745"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "1d1b4215-5d7c-445f-aa48-695c96a30745",
+              "uuid" : "1d1b4215-5d7c-445f-aa48-695c96a30745",
+              "name" : "Theoretische Untersuchung der spektroskopischen Eigenschaften biologischer und synthetischer molekularer Spincluster",
+              "handle" : "11303/6695",
+              "metadata" : {
+                "bua.department" : [ {
+                  "value" : "Fak. 2 Mathematik und Naturwissenschaften",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "bua.department.institute" : [ {
+                  "value" : "Inst. Chemie",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.contributor.advisor" : [ {
+                  "value" : "Kaupp, Martin",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.contributor.author" : [ {
+                  "value" : "Ghassemi Tabrizi, Shadan",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.contributor.grantor" : [ {
+                  "value" : "Technische Universität Berlin",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.contributor.referee" : [ {
+                  "value" : "Kaupp, Martin",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Schnack, Jürgen",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.date.accepted" : [ {
+                  "value" : "2017-05-11",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2017-09-06T15:01:54Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2017-09-06T15:01:54Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2017",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.abstract" : [ {
+                  "value" : "Molekulare Spincluster aus zwei bis acht austauschgekoppelten Übergangsmetallzentren erfüllen in Metalloproteinen vielfältige Funktionen, vor allem beim Elektronentransfer und in der biochemischen Katalyse; Eisen-Schwefel-Cluster finden sich in allen bekannten Lebensformen. Von einem grundlegenden Verständnis der intrinsisch quantenmechanischen Eigenschaften solcher Systeme verspricht man sich nicht zuletzt Inspiration für die Entwicklung effizienter neuer Katalysatoren, mit potentiell weitreichendem technologischem Nutzen.\r\nWährend die Synthese und Charakterisierung von Spinclustern nach wie vor häufig auf ein besseres Verstehen der komplizierten biologischen Vorbilder abzielt, eröffnete die Entdeckung magnetischer Hysterese in einem Kristall isolierter Mn12-Spincluster vor gut zwei Jahrzehnten das seither höchst aktive Forschungsfeld des molekularen Magnetismus. Die raschen Fortschritte werden vor allem von der theoretischen Möglichkeit der Datenspeicherung oder des Quantum-Computing mit magnetischen Molekülen motiviert.\r\nVerschiedene Formen der Spektroskopie liefern wertvolle komplementäre Information über die Elektronenstruktur von Spinclustern. Um experimentelle Daten aber in ein direktes Verhältnis zum jeweiligen System zu setzen, sind verschiedene Ebenen der theoretischen Beschreibung durch Spin-Hamiltonoperatoren erforderlich, die letztendlich explizit auf die Wechselwirkung zwischen Elektronen und Atomkernen zurückgeführt werden sollten. In einer integrativen Untersuchung der vielfältigen spektroskopischen Eigenschaften von biologischen und synthetischen Spinclustern führen wir in der vorliegenden Arbeit quantenchemische Rechnungen auf Grundlage der Dichtefunktionaltheorie durch, die unmittelbar, oder über Umwege (Spinprojektion, Diagonalisierung von Spin-Hamiltonoperatoren) mit verfügbaren experimentellen Daten verglichen werden können. Die Spinprojektion stellt dabei ein übergreifendes Thema dar und wird in verschiedenen Grenzfällen eingehend besprochen. Für einen ungewöhnlichen [4Fe-3S]-Cluster, der vermutlich für die Sauerstofftoleranz Membran-gebundener Hydrogenasen verantwortlich ist, und den [4Fe-Ni-4S]-C-Cluster, das Aktivzentrum von NiFe-Kohlenmonoxid-Dehydrogenasen, liefert der Vergleich zwischen berechneten und experimentellen Mößbauer- und ENDOR-Parametern detaillierte Einblicke in die elektronische und molekulare Struktur, die Wertigkeit der Fe-Spinzentren und ihre Spinkopplung. Die im zweiten Teil der Arbeit behandelten Einzelmolekülmagnete sind durch ihre hohe Molekülsymmetrie gekennzeichnet. Aufgrund der häufig relativ schwachen isotropen Austauschkopplung zwischen offenschaligen Metallionen werden Spinmultipletts durch die Spin-Bahn-Kopplung effektiv gemischt. Für Spinprojektion, die diesem Effekt in der dritten Ordnung der Störungstheorie Rechnung trägt, leiten wir eine analytische Gleichung her, mit deren Hilfe experimentelle Resultate für das Fe3Cr-Molekül revidiert werden. Außerdem schlagen wir eine Vereinfachung der Anpassung von EPR-Spektren vor. Wenn eine störungstheoretische Behandlung aufgrund schwacher Kopplung nicht mehr gültig ist, kann eine effektive Beschreibung einer kleinen Gruppe von Energieniveaus als Pseudospin-System sinnvoll sein. Mit einigen Aspekten dieses Problems beschäftigt sich diese Arbeit im Zusammenhang mit austauschgekoppelten Clustern zum ersten Mal. Das Interesse von experimenteller und theoretischer Seite am zuerst entdeckten und meistuntersuchten Einzelmolekülmagneten Mn12 ist ungebrochen. Unsere hier berechneten Austauschkopplungen und Nullfeldtensoren der einzelnen Mn-Spinzentren gestatten es – erstmals im Zusammenhang mit Elektronenstruktur-Rechnungen – die magnetische Suszeptibilität korrekt zu beschreiben. Wir gelangen auch zu einem detaillierten Verständnis der spektroskopisch beobachteten Übergänge zu angeregten Spinmultipletts. Störungstheoretische Spinprojektion gestattet schließlich mikroskopische Einblicke in die Ursache der transversalen magnetischen Anisotropie von Mn12.",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Molecular spin-clusters comprising between two and eight exchange-coupled transition metal centers fulfill various purposes in metallo-proteins, particularly in electron transfer and biochemical catalysis; iron-sulfur clusters can be found in all known life-forms. A basic understanding of the intrinsically quantum-mechanical properties of such systems may inspire the development of efficient novel catalysts of potentially far-reaching industrial and technological use.\r\nWhile the synthesis and characterization of spin clusters continues to aim at a better understanding of the complicated biological examples, the discovery of magnetic hysteresis in a crystal of mutually isolated Mn12 spin clusters, opened up the field of molecular magnetism, which has been gaining momentum over the past 25 years. Quick progress is motivated by the theoretical prospect of high-density information storage and the possibility of quantum-computing on the level of magnetic molecules.\r\nDifferent types of spectroscopy yield invaluable complementary information on the electronic structure of spin clusters. Often, a theoretical description by a spin Hamiltonian is sought to relate experimental data to a specific system. Ultimately, parameters entering the spin Hamiltonian ought to be traced explicitly to the interactions between electrons and atomic nuclei. In this thesis, we present an integrative study of diverse spectroscopic properties of biological and synthetic spin clusters, based on quantum-chemical calculations in the frame of density-functional theory. The comparison to available experimental data requires indirect procedures, based on spin-projection techniques and the numerical diagonalization of spin Hamiltonians. Indeed, spin-projection techniques represent a global theme, and are investigated in different parameter regimes.\r\nFor an unusual [4Fe-3S] cluster of oxygen-tolerant membrane-bound hydrogenases, and the C-cluster active site of NiFe carbon-monoxide dehydrogenases, a comparison between calculated and experimental Mössbauer and ENDOR parameters provides detailed insights into the electronic and molecular structure, the valences of Fe spin centers, and spin coupling. The single-molecule magnets addressed in the second part of the thesis are characterized by high molecular symmetry. When isotropic exchange coupling between open-shell metal ions is rather weak, spin multiplets get mixed by the spin-orbit interaction. Analytical spin-projection equations accounting for this effect in the third order of perturbation theory are derived and subsequently applied to revise recent experimental results for an Fe3Cr complex. Besides, we propose a scheme to simplify the fitting of respective EPR spectra. When perturbation theory breaks down due to weak coupling, a small number of energy levels may still be described in terms of a pseudo-spin Hamiltonian. In the context of exchange-coupled clusters, some aspects of this problem are here addressed for the first time. Mn12, the first discovered and best investigated single-molecule magnet, continues to draw substantial interest from experimentalists and theoreticians. Our calculated exchange-coupling constants and zero-field splitting tensors for individual Mn spin centers allow for a highly satisfactory description of the temperature-dependent magnetic susceptibility, marking a considerable improvement over previous results from electronic-structure calculations. Furthermore, we gain a clear understanding of spectroscopically observed transitions to excited spin multiplets. Perturbational spin projection ultimately uncovers a mechanism for the generation of transverse anisotropy in Mn12.",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://depositonce.tu-berlin.de/handle/11303/6695",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "http://dx.doi.org/10.14279/depositonce-6136",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "de",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.uri" : [ {
+                  "value" : "http://rightsstatements.org/vocab/InC/1.0/",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject.ddc" : [ {
+                  "value" : "541 Physikalische Chemie",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject.other" : [ {
+                  "value" : "molekularer Magnetismus",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "austauschgekoppelte Spincluster",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "Dichtefunktionaltheorie",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "Mössbauer-Spektroskopie",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "Elektronenspinresonanz",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "molecular magnetism",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                }, {
+                  "value" : "exchange-coupled spin clusters",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 6
+                }, {
+                  "value" : "density functional theory",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 7
+                }, {
+                  "value" : "Mössbauer spectroscopy",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 8
+                }, {
+                  "value" : "electron paramagnetic resonance",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 9
+                } ],
+                "dc.title" : [ {
+                  "value" : "Theoretische Untersuchung der spektroskopischen Eigenschaften biologischer und synthetischer molekularer Spincluster",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.title.translated" : [ {
+                  "value" : "Theoretical investigation of the spectroscopic properties of biological and synthetic molecular spin clusters",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Doctoral Thesis",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type.version" : [ {
+                  "value" : "acceptedVersion",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.accessrights.dnb" : [ {
+                  "value" : "free",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.affiliation" : [ {
+                  "value" : "Fak. 2 Mathematik und Naturwissenschaften::Inst. Chemie",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.affiliation.faculty" : [ {
+                  "value" : "Fak. 2 Mathematik und Naturwissenschaften",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.affiliation.group" : [ {
+                  "value" : "FG Technische Chemie",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.affiliation.institute" : [ {
+                  "value" : "Inst. Chemie",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.publisher.universityorinstitution" : [ {
+                  "value" : "Technische Universität Berlin",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2026-03-18T16:28:09.470Z",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1d1b4215-5d7c-445f-aa48-695c96a30745/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1d1b4215-5d7c-445f-aa48-695c96a30745/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1d1b4215-5d7c-445f-aa48-695c96a30745/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1d1b4215-5d7c-445f-aa48-695c96a30745/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1d1b4215-5d7c-445f-aa48-695c96a30745/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1d1b4215-5d7c-445f-aa48-695c96a30745/relationships"
+                },
+                "version" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1d1b4215-5d7c-445f-aa48-695c96a30745/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1d1b4215-5d7c-445f-aa48-695c96a30745/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1d1b4215-5d7c-445f-aa48-695c96a30745/thumbnail"
+                },
+                "submitter" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1d1b4215-5d7c-445f-aa48-695c96a30745/submitter"
+                },
+                "self" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1d1b4215-5d7c-445f-aa48-695c96a30745"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : null,
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/a39a397b-fa1d-437b-aabc-558768fd3378"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "a39a397b-fa1d-437b-aabc-558768fd3378",
+              "uuid" : "a39a397b-fa1d-437b-aabc-558768fd3378",
+              "name" : "Gas-phase activation of CO2 and CH4 by selected transition-metal complexes: ligand effects and the role of the metal",
+              "handle" : "11303/7485",
+              "metadata" : {
+                "bua.department" : [ {
+                  "value" : "Fak. 2 Mathematik und Naturwissenschaften",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "bua.department.institute" : [ {
+                  "value" : "Inst. Chemie",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.contributor.advisor" : [ {
+                  "value" : "Kaupp, Martin",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Schwarz, Helmut",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.contributor.author" : [ {
+                  "value" : "Firouzbakht, Marjan",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.contributor.grantor" : [ {
+                  "value" : "Technische Universität Berlin",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.contributor.referee" : [ {
+                  "value" : "Roithová, Jana",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Kaupp, Martin",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.date.accepted" : [ {
+                  "value" : "2018-01-09",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2018-03-02T11:16:37Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2018-03-02T11:16:37Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2018",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.abstract" : [ {
+                  "value" : "Die vorliegende Arbeit behandelt die Übergangsmetall-vermittelten Aktivierungen von CO2 und CH4, die mittels massenspektrometrischer Methoden und quantenchemischer Rechnungen untersucht wurden. Die Kationen der jeweiligen Übergangsmetalle wurden durch Elektrosprayionisation (ESI) erzeugt und anschließend mit der Tandem-Massenspektrometrie unter Quadrupol-Hexapol-Quadrupol Anordnung charakterisiert. Die quantenchemischen Rechnungen basieren sowohl auf der Dichtefunktionaltheorie (DFT) als auch auf ab initio Methoden.\r\nDie Arbeit gliedert sich in drei Bereiche: i) O–CO Bindungsaktivierung durch Übergangsmetallkomplexe mit ausgewählten Liganden ([Y(C6D5)]+ und [CoX]+ (X = CN, F, Cl, Br, O und OH)), ii) Details der C–H Bindungsaktivierung von CH4 durch [OMoH]+ und [NiL]+ (L= (C6D5), (NC5D4), (CN)), und iii) die gleichzeitige Aktivierung von CO2 und CH4 unter Verwendung der Niob- und Tantalkomplexe [OMH]+ und [M(OH)]+ (M = Nb, Ta) sowie durch die Rheniumcarbonylkomplexe [Re(CO)x]+ (x = 0–3).\r\nDie Studien zur O-CO Bindungsaktivierung belegen, dass [Y(C6D5)]+ zur Aktivierung von Kohlendioxid befähigt ist. Hierbei erfolgt entweder die Knüpfung einer C–C-Bindung unter Bildung eines Yttriumbenzoat-Komplexes, oder es wird die Übertragung eines Sauerstoffatoms beobachtet, für die die hohe Sauerstoffaffinität des frühen Übergangsmetalls die treibende Kraft darstellt. Auch [Co(CN)]+ aktiviert CO2 unter Bildung des flüchtigen Cyanoformations [NC CO2Co]+ in der Gasphase, während die Komplexe [CoX]+ (X = F, Cl, Br, O, and OH) wegen zu hoher kinetischer Barrieren, die überhalb des Eintrittskanals liegen, inert sind. Bei der thermischen Aktivierung von Methan konnte durch die Reaktivität von [OMoH]+ im Vergleich zum unreaktiven Verhalten von [MoH]+ ein bemerkenswerter Ligandeneffekt identifiziert werden. Während die thermischen Reaktionen von [OMoH]+ mit Methan einige Gemeinsamkeiten mit [OMH]+ aufweisen (M = Ti, V, Ta), existieren grundlegende Unterschiede im Hinblick auf die jeweiligen Reaktionsmechanismen. Ein weiteres Beispiel für einen Ligandeneffekt zeigt sich anhand der Reaktivität von [Ni(C6H5)]+ und [Ni(CN)]+ mit Methan im Vergleich zum unreaktiven [Ni(NC5H4)]+. Auch bei der simultanen Aktivierung von CO2 und CH4 durch [OMH]+ (M = Nb,Ta) und [M(OH)]+ (M = Ta) wurden neue Erkenntnisse über die zugrundeliegenden Mechanismen gewonnen. Die Aktivierung von Methan verläuft in beiden Fällen unter H2-Eliminierung, und bei der Aktivierung von CO2 wird die Bildung von [OM(OH)]+ (M = Nb, Ta) unter Abspaltung von CO beobachtet. Darüber hinaus stellen die Reaktionen von [Re(CO)x]+ (x = 0-3) mit CO2 und CH4 ein Beispiel dafür dar, dass die Anzahl der Liganden ebenfalls von Bedeutung für den Aktivierungsprozess ist. Während die Komplexe [Re(CO)x]+ (x = 0, 1, 3) unter thermischen Bedingungen gegenüber CO2 unreaktiv sind, abstrahiert [Re(CO)2]+ ein Sauerstoffatom aus diesem Substrat. Der dabei erzeugte Oxokomplex [ORe(CO)2]+ reagiert mit CH4 und bildet [ORe(CO)(CH2)(H)2]+.",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "The present Thesis presents studies on the transition metal-mediated CO2 and CH4 activation by means of mass spectrometric experiments in conjunction with quantum-chemical calculations. The transition metal cations were generated by electrospray ionization (ESI) and the subsequent investigations were performed by means of tandem mass spectrometry using a quadrupole-hexapole quadrupole arrangement. The quantum-chemical calculations were carried out using density functional theory (DFT) as well as ab initio methods.\r\nThe work is divided into three areas: i) O–CO bond activation by selected-ligated transition-metal cations i.e. [Y(C6D5)]+ and [CoX]+ (X = CN, F, Cl, Br, O, and OH), ii) fundamental details concerning C–H bond activation of CH4 by [OMoH]+ and [NiL]+ (L= (C6D5), (NC5D4), (CN)), and iii) the ability of [OMH]+ (M = Nb, Ta), [M(OH)]+ (M = Nb, Ta), and rhenium carbonyl cations [Re(CO)x]+ (x = 0–3) with respect to the simultaneous activations of both CO2 and CH4.\r\nIn the O–CO bond activation studies, [Y(C6D5)]+ showed the potency of carbon dioxide activation under carbon-carbon bond formation to generate an yttrium benzoate complex, as well as under O-atom transfer by taking the advantage of the high oxophilicity of early transition metals. Further, while [Co(CN)]+ activates carbon dioxide to form the elusive cyanoformate ion [NC–CO2Co]+ in the gas phase, [CoX]+ (X = F, Cl, Br, O, and OH) are inert toward CO2 due to kinetic barriers located above the entrance asymptote. In the thermal activation of methane, the reactivity of [OMoH]+ versus the inertness of [MoH]+ reveals a remarkable ligand effect. While the thermal reactions of [OMoH]+ with methane have some features in common with [OMH]+ (M=Ti,V,Ta), fundamental mechanistic differences exist. Another example of a ligand effect is presented in case of the reactivity of [Ni(C6D5)]+ and [Ni(CN)]+ toward methane versus the inertness of [Ni(NC5D4)]+. For the simultaneous activations of both CO2 and CH4 by [OMH]+ (M = Nb, Ta) and [M(OH)]+ (M = Ta), interesting insights into the underlying mechanisms have been gained and are discussed in detail. In both cases, the activation of methane proceeds by H2 elimination, and the activation of CO2 is observed to proceed via the formation of [OM(OH)]+ (M = Nb, Ta) under the elimination of CO. Moreover, the reactions of [Re(CO)x]+ (x = 0-3) with CO2 and CH4 represent an example that the number of ligands also matters in the activation process. While the complexes [Re(CO)x]+ (x = 0, 1, 3) are thermally unreactive toward CO2, [Re(CO)2]+ abstracts one oxygen atom from this substrate. The oxo complex [ORe(CO)2]+ reacts further with CH4 to produce [ORe(CO)(CH2)(H)2]+.",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://depositonce.tu-berlin.de/handle/11303/7485",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "http://dx.doi.org/10.14279/depositonce-6708",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "en",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.uri" : [ {
+                  "value" : "http://rightsstatements.org/vocab/InC/1.0/",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject.ddc" : [ {
+                  "value" : "541 Physikalische Chemie",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject.other" : [ {
+                  "value" : "gas-phase",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "methane",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "carbon dioxide",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "mass spectrometry",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "Gasphase",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "Methan",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                }, {
+                  "value" : "Kohlendioxid",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 6
+                }, {
+                  "value" : "Massenspektrometer",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 7
+                } ],
+                "dc.title" : [ {
+                  "value" : "Gas-phase activation of CO2 and CH4 by selected transition-metal complexes: ligand effects and the role of the metal",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.title.translated" : [ {
+                  "value" : "Aktivierung von CO2 und CH4 durch ausgewählte Übergangsmetallkomplexe in der Gasphase: Ligandeneffekte und die Rolle des Metalls",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Doctoral Thesis",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type.version" : [ {
+                  "value" : "acceptedVersion",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.accessrights.dnb" : [ {
+                  "value" : "domain",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.affiliation" : [ {
+                  "value" : "Fak. 2 Mathematik und Naturwissenschaften::Inst. Chemie",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.affiliation.faculty" : [ {
+                  "value" : "Fak. 2 Mathematik und Naturwissenschaften",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.affiliation.group" : [ {
+                  "value" : "FG Theoretische Chemie - Quantenchemie",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.affiliation.institute" : [ {
+                  "value" : "Inst. Chemie",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.publisher.universityorinstitution" : [ {
+                  "value" : "Technische Universität Berlin",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2026-03-18T17:27:51.963Z",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/a39a397b-fa1d-437b-aabc-558768fd3378/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/a39a397b-fa1d-437b-aabc-558768fd3378/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/a39a397b-fa1d-437b-aabc-558768fd3378/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/a39a397b-fa1d-437b-aabc-558768fd3378/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/a39a397b-fa1d-437b-aabc-558768fd3378/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/a39a397b-fa1d-437b-aabc-558768fd3378/relationships"
+                },
+                "version" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/a39a397b-fa1d-437b-aabc-558768fd3378/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/a39a397b-fa1d-437b-aabc-558768fd3378/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/a39a397b-fa1d-437b-aabc-558768fd3378/thumbnail"
+                },
+                "submitter" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/a39a397b-fa1d-437b-aabc-558768fd3378/submitter"
+                },
+                "self" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/a39a397b-fa1d-437b-aabc-558768fd3378"
+                }
+              }
+            }
+          }
+        }, {
+          "hitHighlights" : null,
+          "type" : "discover",
+          "_links" : {
+            "indexableObject" : {
+              "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1f2525b1-9a85-4fd2-a5dd-5887b639869d"
+            }
+          },
+          "_embedded" : {
+            "indexableObject" : {
+              "id" : "1f2525b1-9a85-4fd2-a5dd-5887b639869d",
+              "uuid" : "1f2525b1-9a85-4fd2-a5dd-5887b639869d",
+              "name" : "Fully relativistic calculations of EPR and paramagnetic NMR parameters for heavy atom compounds",
+              "handle" : "11303/7397",
+              "metadata" : {
+                "bua.department" : [ {
+                  "value" : "Fak. 2 Mathematik und Naturwissenschaften",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "bua.department.institute" : [ {
+                  "value" : "Inst. Chemie",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.contributor.advisor" : [ {
+                  "value" : "Kaupp, Martin",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.contributor.author" : [ {
+                  "value" : "Gohr, Sebastian",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.contributor.grantor" : [ {
+                  "value" : "Technische Universität Berlin",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.contributor.referee" : [ {
+                  "value" : "Kaupp, Martin",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "Reiher, Markus",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.date.accepted" : [ {
+                  "value" : "2017-12-15",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.accessioned" : [ {
+                  "value" : "2018-02-01T17:41:21Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.available" : [ {
+                  "value" : "2018-02-01T17:41:21Z",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.date.issued" : [ {
+                  "value" : "2018",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.description.abstract" : [ {
+                  "value" : "In the thesis at hand, a 4-component relativistic density functional theory (DFT) approach is applied within the ReSpect program package to calculations of magnetic resonance parameters for various open-shell systems containing heavy 4d and 5d transition metals. Such calculations represent a relatively uncharted territory. Therefore, the present work starts with a comprehensive benchmark study on the calculation of electron paramagnetic resonance (EPR) parameters, more precisely g-tensors and hyperfine coupling constants (HFCCs), for 17 small 4d¹ and 5d¹ transition metal complexes (S = 1/2). This study emphasizes the importance to use a 4-component framework for the inclusion of effects that are attributable to special relativity. Moreover, a recommended computational protocol is provided based on thorough examination of different functionals with varying amounts of exact-exchange (EXX) admixture and basis-set combinations. The protocol is afterwards validated on six medium- to large-scale iridium and platinum complexes with 43 to 133 atoms. \r\nThe benchmark progress is then extended to systems containing tungsten-sulfur bonds to fine-tune the protocol for its subsequent application to the active-site structure of tungstoenzymes. Tungsten is the heaviest known element that plays a well-defined role in nature and even though several investigations have been performed to elucidate the EPR-active W(V) intermediate state with its variety of available structure proposals, the true structure is still up to debate. A set of 13 different structure proposals is thus investigated in the present work. Distinct statements on the nature of the W(V) state are presented based on comparisons of calculated and experimental EPR spectra.\r\nFinally, the hitherto gained knowledge and insight is successfully applied to the calculation of nuclear magnetic resonance (NMR) chemical shifts for open-shell systems (pNMR). Three S = 1/2 systems are assessed before zero-field splitting (ZFS) is included for three (di-)ruthenium complexes (S = 1 and S = 3/2). This is the first time that the 4-component matrix Dirac-Kohn-Sham (mDKS) approach is tested for such cases.",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "In der vorliegenden Arbeit wird ein relativistischer 4-Komponenten Matrix-Dirac-Kohn-Sham Dichtefunktionaltheorie-Ansatz (mDKS-DFT) im Rahmen des Programmpakets ReSpect auf die Berechnung von Magnetresonanzparametern für offenschalige 4d und 5d Übergangsmetallsysteme angewendet. Da solche Berechnungen noch durchaus als Neuland bezeichnet werden können, beginnt diese Arbeit mit einer umfassenden Benchmarkstudie zur Berechnung von Parametern der Elektronenspinresonanz (ESR) für 17 kleine 4d¹ und 5d¹ Übergangsmetallkomplexe (S = 1/2). Die Studie hebt die Notwendigkeit der adäquaten Berücksichtigung von Effekten, die aus der speziellen Relativitästheorie folgen, hervor. Basierend auf einer detaillierten Auswertung der Anwendung von verschiedenen Funktionalen sowie Basissatz-Kombinationen wird ein standardisiertes Protokoll für die Berechnung von ESR Parametern empfohlen. In der Folge wird das Protokoll bei der Anwendung auf sechs größere Iridium- und Platinkomplexe (43 bis 133 Atome) überprüft.\r\nDie so erzielten Fortschritte werden anschließend auf Systeme erweitert, die Wolfram-Schwefel Bindungen beinhalten, um das vorgeschlagene Protokoll speziell für die Anwendung auf Wolframenzyme zu optimieren. Als schwerstes Element in natürlich vorkommenden Enzymen nimmt Wolfram im Ökosystem eine gesonderte Stellung ein. Obwohl große Anstrengungen unternommen wurden, um die Struktur im aktiven Zentrum des ESR-aktiven W(V) Intermediats aufzuklären, konnte sie bis heute nicht eindeutig bestimmt werden. Daher wurden 13 der (experimentell) vorgeschlagenen Strukturen im Rahmen dieser Arbeit genauer untersucht. Ein Vergleich der berechneten ESR-Spektren mit den experimentell verfügbaren Daten ermöglicht so Aussagen über spezifische Eigenschaften des W(V) Zustands.\r\nIm letzten Projekt werden die bisher gewonnenen Erkenntnisse gebündelt und die ESR Berechnungen auf chemische Verschiebungen in Kernspinresonanzspektren (NMR) für offenschalige Systeme ausgeweitet (pNMR). Zunächst werden dazu drei S = 1/2 Verbindungen analysiert und die bisherigen Methoden nochmals überprüft und validiert. Abschließend wird die 4-Komponenten mDKS-DFT Methode erstmals auch auf drei (Di-)Rutheniumkomplexe angewendet (S = 1 und S = 3/2), bei denen zusätzlich Nullfeldaufspaltungen (ZFS) zu berücksichtigen sind.",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.identifier.uri" : [ {
+                  "value" : "https://depositonce.tu-berlin.de/handle/11303/7397",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "http://dx.doi.org/10.14279/depositonce-6647",
+                  "language" : null,
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                } ],
+                "dc.language.iso" : [ {
+                  "value" : "en",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.rights.uri" : [ {
+                  "value" : "http://rightsstatements.org/vocab/InC/1.0/",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject.ddc" : [ {
+                  "value" : "540 Chemie und zugeordnete Wissenschaften",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.subject.other" : [ {
+                  "value" : "4-component relativistic quantum chemistry",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                }, {
+                  "value" : "electron paramagnetic resonance (EPR)",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 1
+                }, {
+                  "value" : "nuclear magnetic resonance (NMR)",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 2
+                }, {
+                  "value" : "spin-orbit coupling",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 3
+                }, {
+                  "value" : "tungstoenzyme",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 4
+                }, {
+                  "value" : "relativistische Quantenchemie",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 5
+                }, {
+                  "value" : "Elektronenspinresonanz (ESR)",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 6
+                }, {
+                  "value" : "Kernspinresonanz (NMR)",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 7
+                }, {
+                  "value" : "Spin-Bahn-Kopplung",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 8
+                }, {
+                  "value" : "Wolframenzym",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 9
+                } ],
+                "dc.title" : [ {
+                  "value" : "Fully relativistic calculations of EPR and paramagnetic NMR parameters for heavy atom compounds",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.title.translated" : [ {
+                  "value" : "Vollrelativistische Berechnungen von EPR und paramagnetischen NMR Parametern für Verbindungen schwerer Elemente",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type" : [ {
+                  "value" : "Doctoral Thesis",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "dc.type.version" : [ {
+                  "value" : "acceptedVersion",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.accessrights.dnb" : [ {
+                  "value" : "domain",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.affiliation" : [ {
+                  "value" : "Fak. 2 Mathematik und Naturwissenschaften::Inst. Chemie",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.affiliation.faculty" : [ {
+                  "value" : "Fak. 2 Mathematik und Naturwissenschaften",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.affiliation.group" : [ {
+                  "value" : "FG Theoretische Chemie",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.affiliation.institute" : [ {
+                  "value" : "Inst. Chemie",
+                  "language" : "de",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ],
+                "tub.publisher.universityorinstitution" : [ {
+                  "value" : "Technische Universität Berlin",
+                  "language" : "en",
+                  "authority" : null,
+                  "confidence" : -1,
+                  "place" : 0
+                } ]
+              },
+              "inArchive" : true,
+              "discoverable" : true,
+              "withdrawn" : false,
+              "lastModified" : "2026-03-18T16:28:49.761Z",
+              "entityType" : null,
+              "type" : "item",
+              "_links" : {
+                "accessStatus" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1f2525b1-9a85-4fd2-a5dd-5887b639869d/accessStatus"
+                },
+                "bundles" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1f2525b1-9a85-4fd2-a5dd-5887b639869d/bundles"
+                },
+                "identifiers" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1f2525b1-9a85-4fd2-a5dd-5887b639869d/identifiers"
+                },
+                "mappedCollections" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1f2525b1-9a85-4fd2-a5dd-5887b639869d/mappedCollections"
+                },
+                "owningCollection" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1f2525b1-9a85-4fd2-a5dd-5887b639869d/owningCollection"
+                },
+                "relationships" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1f2525b1-9a85-4fd2-a5dd-5887b639869d/relationships"
+                },
+                "version" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1f2525b1-9a85-4fd2-a5dd-5887b639869d/version"
+                },
+                "templateItemOf" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1f2525b1-9a85-4fd2-a5dd-5887b639869d/templateItemOf"
+                },
+                "thumbnail" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1f2525b1-9a85-4fd2-a5dd-5887b639869d/thumbnail"
+                },
+                "submitter" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1f2525b1-9a85-4fd2-a5dd-5887b639869d/submitter"
+                },
+                "self" : {
+                  "href" : "https://api-depositonce.tu-berlin.de/server/api/core/items/1f2525b1-9a85-4fd2-a5dd-5887b639869d"
+                }
+              }
+            }
+          }
+        } ]
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 50,
+        "totalPages" : 1,
+        "totalElements" : 3
+      },
+      "_links" : {
+        "self" : {
+          "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=Shadan&size=50"
+        }
+      }
+    },
+    "facets" : [ {
+      "name" : "author",
+      "facetType" : "text",
+      "facetLimit" : 5,
+      "minValue" : "Aall, Carlo",
+      "maxValue" : "Zywicki, Britta",
+      "openByDefault" : true,
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_links" : {
+        "self" : {
+          "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/facets/author?query=Shadan&size=5"
+        }
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Firouzbakht, Marjan",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=Shadan&f.author=Firouzbakht,%20Marjan,equals"
+            }
+          }
+        }, {
+          "label" : "Ghassemi Tabrizi, Shadan",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=Shadan&f.author=Ghassemi%20Tabrizi,%20Shadan,equals"
+            }
+          }
+        }, {
+          "label" : "Gohr, Sebastian",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=Shadan&f.author=Gohr,%20Sebastian,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "subject",
+      "facetType" : "hierarchical",
+      "facetLimit" : 5,
+      "openByDefault" : false,
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_links" : {
+        "next" : {
+          "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/facets/subject?query=Shadan&page=1&size=5"
+        },
+        "self" : {
+          "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/facets/subject?query=Shadan&size=5"
+        }
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "541 Physikalische Chemie",
+          "count" : 2,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=Shadan&f.subject=541%20Physikalische%20Chemie,equals"
+            }
+          }
+        }, {
+          "label" : "4-component relativistic quantum chemistry",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=Shadan&f.subject=4-component%20relativistic%20quantum%20chemistry,equals"
+            }
+          }
+        }, {
+          "label" : "540 Chemie und zugeordnete Wissenschaften",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=Shadan&f.subject=540%20Chemie%20und%20zugeordnete%20Wissenschaften,equals"
+            }
+          }
+        }, {
+          "label" : "austauschgekoppelte Spincluster",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=Shadan&f.subject=austauschgekoppelte%20Spincluster,equals"
+            }
+          }
+        }, {
+          "label" : "carbon dioxide",
+          "count" : 1,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=Shadan&f.subject=carbon%20dioxide,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "dateIssued",
+      "facetType" : "date",
+      "facetLimit" : 5,
+      "minValue" : "1971-12-16",
+      "maxValue" : "2026-11-25",
+      "openByDefault" : false,
+      "page" : {
+        "number" : 0,
+        "size" : 5
+      },
+      "_links" : {
+        "self" : {
+          "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/facets/dateIssued?query=Shadan&size=5"
+        }
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "2000 - 2019",
+          "count" : 3,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=Shadan&f.dateIssued=%5B2000%20TO%202019%5D,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "itemtype",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "openByDefault" : false,
+      "page" : {
+        "number" : 0,
+        "size" : 10
+      },
+      "_links" : {
+        "self" : {
+          "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/facets/itemtype?query=Shadan&size=10"
+        }
+      },
+      "_embedded" : {
+        "values" : [ {
+          "label" : "Doctoral Thesis",
+          "count" : 3,
+          "authorityKey" : null,
+          "type" : "discover",
+          "_links" : {
+            "search" : {
+              "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=Shadan&f.itemtype=Doctoral%20Thesis,equals"
+            }
+          }
+        } ]
+      }
+    }, {
+      "name" : "entityType",
+      "facetType" : "text",
+      "facetLimit" : 5,
+      "openByDefault" : false,
+      "_links" : {
+        "self" : {
+          "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/facets/entityType?query=Shadan"
+        }
+      },
+      "_embedded" : {
+        "values" : [ ]
+      }
+    } ]
+  }
+}

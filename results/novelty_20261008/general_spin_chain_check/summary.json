@@ -1,0 +1,163 @@
+{
+  "passed": true,
+  "results": [
+    {
+      "spin": 0.5,
+      "N": 4,
+      "dimension": 16,
+      "optimum_u_over_b": -0.0,
+      "minimum_M2_times_ell_over_b2": 0.0,
+      "prediction": 0.0,
+      "absolute_error": 0.0,
+      "quadratic_checks": [
+        {
+          "u_over_b": -2.0,
+          "M2_times_ell_over_b2": 2.0,
+          "prediction": 2.0
+        },
+        {
+          "u_over_b": 0.5,
+          "M2_times_ell_over_b2": 0.125,
+          "prediction": 0.125
+        },
+        {
+          "u_over_b": 3.0,
+          "M2_times_ell_over_b2": 4.5,
+          "prediction": 4.5
+        }
+      ]
+    },
+    {
+      "spin": 0.5,
+      "N": 6,
+      "dimension": 64,
+      "optimum_u_over_b": -0.0,
+      "minimum_M2_times_ell_over_b2": 0.0,
+      "prediction": 0.0,
+      "absolute_error": 0.0,
+      "quadratic_checks": [
+        {
+          "u_over_b": -2.0,
+          "M2_times_ell_over_b2": 2.0,
+          "prediction": 2.0
+        },
+        {
+          "u_over_b": 0.5,
+          "M2_times_ell_over_b2": 0.125,
+          "prediction": 0.125
+        },
+        {
+          "u_over_b": 3.0,
+          "M2_times_ell_over_b2": 4.5,
+          "prediction": 4.5
+        }
+      ]
+    },
+    {
+      "spin": 1.0,
+      "N": 4,
+      "dimension": 81,
+      "optimum_u_over_b": -0.4166666666666666,
+      "minimum_M2_times_ell_over_b2": 3.5802469135802495,
+      "prediction": 3.580246913580247,
+      "absolute_error": 2.6645352591003757e-15,
+      "quadratic_checks": [
+        {
+          "u_over_b": -2.0,
+          "M2_times_ell_over_b2": 12.493827160493835,
+          "prediction": 12.493827160493826
+        },
+        {
+          "u_over_b": 0.5,
+          "M2_times_ell_over_b2": 6.567901234567905,
+          "prediction": 6.567901234567902
+        },
+        {
+          "u_over_b": 3.0,
+          "M2_times_ell_over_b2": 45.08641975308644,
+          "prediction": 45.08641975308642
+        }
+      ]
+    },
+    {
+      "spin": 1.0,
+      "N": 6,
+      "dimension": 729,
+      "optimum_u_over_b": -0.4166666666666666,
+      "minimum_M2_times_ell_over_b2": 3.5802469135802495,
+      "prediction": 3.580246913580247,
+      "absolute_error": 2.6645352591003757e-15,
+      "quadratic_checks": [
+        {
+          "u_over_b": -2.0,
+          "M2_times_ell_over_b2": 12.493827160493835,
+          "prediction": 12.493827160493826
+        },
+        {
+          "u_over_b": 0.5,
+          "M2_times_ell_over_b2": 6.567901234567905,
+          "prediction": 6.567901234567902
+        },
+        {
+          "u_over_b": 3.0,
+          "M2_times_ell_over_b2": 45.08641975308644,
+          "prediction": 45.08641975308642
+        }
+      ]
+    },
+    {
+      "spin": 1.5,
+      "N": 4,
+      "dimension": 256,
+      "optimum_u_over_b": -1.0,
+      "minimum_M2_times_ell_over_b2": 61.5625,
+      "prediction": 61.5625,
+      "absolute_error": 0.0,
+      "quadratic_checks": [
+        {
+          "u_over_b": -2.0,
+          "M2_times_ell_over_b2": 74.0625,
+          "prediction": 74.0625
+        },
+        {
+          "u_over_b": 0.5,
+          "M2_times_ell_over_b2": 89.6875,
+          "prediction": 89.6875
+        },
+        {
+          "u_over_b": 3.0,
+          "M2_times_ell_over_b2": 261.5625,
+          "prediction": 261.5625
+        }
+      ]
+    },
+    {
+      "spin": 1.5,
+      "N": 6,
+      "dimension": 4096,
+      "optimum_u_over_b": -1.0,
+      "minimum_M2_times_ell_over_b2": 61.5625,
+      "prediction": 61.5625,
+      "absolute_error": 0.0,
+      "quadratic_checks": [
+        {
+          "u_over_b": -2.0,
+          "M2_times_ell_over_b2": 74.0625,
+          "prediction": 74.0625
+        },
+        {
+          "u_over_b": 0.5,
+          "M2_times_ell_over_b2": 89.6875,
+          "prediction": 89.6875
+        },
+        {
+          "u_over_b": 3.0,
+          "M2_times_ell_over_b2": 261.5625,
+          "prediction": 261.5625
+        }
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.31082669999999996,
+  "scope": "numerical assembly check, not a replacement for the all-spin algebraic proof"
+}

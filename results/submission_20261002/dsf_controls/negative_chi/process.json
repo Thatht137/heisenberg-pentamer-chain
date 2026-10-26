@@ -1,0 +1,22 @@
+{
+  "name": "negative_chi",
+  "pid": 16556,
+  "command": [
+    "D:\\program\\Julia-1.11.5\\bin\\julia.exe",
+    "--startup-file=no",
+    "--project=D:\\Project\\1x5_Heisenberg_Pentamer",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\compute_fullq_dsf.jl",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\negative_chi",
+    "-0.5",
+    "8",
+    "0.05",
+    "60",
+    "256",
+    "3",
+    "256"
+  ],
+  "started_epoch": 1791106425.7467678,
+  "status": "complete",
+  "elapsed_seconds": 1252.063000000002,
+  "exit_code": 0
+}

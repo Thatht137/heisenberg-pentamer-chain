@@ -1,0 +1,37 @@
+{
+  "L": 10,
+  "cells": 2,
+  "boundary": "PBC; two distinct microscopic intercell bonds",
+  "all_sectors": true,
+  "total_dimension": 1024,
+  "largest_block": 252,
+  "g_values": [
+    0.005,
+    0.01,
+    0.02
+  ],
+  "T_over_Jeff_values": [
+    0.4,
+    1.6
+  ],
+  "retuning": "alpha_root + kappa(T/Jeff)*beta from the effective two-cell model",
+  "temperature_definition": "T=tau*beta*c1(alpha_root)^2; kB=1",
+  "band_cutoff": "both initial and final energies below E0+Delta_root/2",
+  "partition_function": "all 1024 microscopic states",
+  "eigen_residual_gate": 1e-10,
+  "band_population_leakage_gate": 1e-08,
+  "quartet_weakest_coefficient_relative_gate": 0.05,
+  "slope_windows": {
+    "quartet": [
+      1.8,
+      2.2
+    ],
+    "doublet": [
+      3.7,
+      4.3
+    ]
+  },
+  "threads": 1,
+  "wall_limit_seconds": 180,
+  "scope": "finite microscopic two-cell check, not long-chain validation"
+}

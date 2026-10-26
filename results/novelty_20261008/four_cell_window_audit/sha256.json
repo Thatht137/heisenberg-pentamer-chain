@@ -1,0 +1,23 @@
+{
+  "scripts\\submission_20261002\\audit_four_cell_thermal_window.py": "6371765f1ebc960234ecd975fdf75595109cd752fa5acbdd2bb40e9a60e42c79",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\activation_lines.csv": "21b6e9552180b2141def15d6c583778012fc88a4d6a196872f3cefcf2012bdb5",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\benchmark_L10.json": "cfe8c484e0dba6ca8212fad445874e79947a96c308ce97f4b9978431b4e162d3",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\comparisons.csv": "cd79eb6047962ecc098c03ca4d60fa16baf249ebecdd6fc8dcffcb21f6a29423",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\low_band_g0.0006250.npz": "3a9c83fa4f774e7b28b423ea3eeaaa40bd6fefe3865a9bb50a7643dc47cb317d",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\low_band_g0.0012500.npz": "9b49436190752b7c9a29f2576db7d4fe90f55535bda0a0ba3d76f1894aac1ff1",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\low_band_g0.0025000.npz": "7af6f8a97efc9b531ef2ea7946f4ecba572f67b4e78d8b62bbbe618ee9c5f86e",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\numerical_checks.json": "37133bcdf6e6008fcc949a4b7cac9694e37eb50f43f186f6c6220eebaa38a97b",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\protocol.json": "44f65851d8c1a14466ff0524bb406dace6b0429188e140c683896e0df565765e",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\sha256.json": "58306f06772082a8d401fa76a12d46374d3e5e417ff4974ca6cea9b2b3eadd9e",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\summary.json": "742f6e745d8dec857b58b5de8212fe2f3cec4b0c8cd484d132faf2fe8943022e",
+  "results\\novelty_20261008\\four_cell_window_audit\\figure_contract.json": "905acb79c238742442393638b4e75d5524ee1a8536c10a488a62c63ad48de08e",
+  "results\\novelty_20261008\\four_cell_window_audit\\four_cell_activation.pdf": "a75c94747c9408af1f24da0a3491d506c643031a838024a01cdda99321ae7014",
+  "results\\novelty_20261008\\four_cell_window_audit\\four_cell_activation.png": "8d5e6ec2aa13d50bbd50da9d1f6c54253f9cbdc6dc25ea6394f8a0631009f89f",
+  "results\\novelty_20261008\\four_cell_window_audit\\four_cell_activation.svg": "a4def57065c34eba9eeb3d5db7a044ff7268315a5ce40a52c3b02a4818fa629e",
+  "results\\novelty_20261008\\four_cell_window_audit\\four_cell_activation.tiff": "3de274b69dd1d0e901c93aff6b4eded0dfe0bbebb96b4ae0c6a42839f57d8fef",
+  "results\\novelty_20261008\\four_cell_window_audit\\protocol.json": "0a777c487d374110170783687673a73e0de3323519d72e8c3c8d6d5f3e429b54",
+  "results\\novelty_20261008\\four_cell_window_audit\\qa.json": "755394bdddb1ffd1b80316c7b4fc771ee0b0b69a43951c768cbb36d84df1b515",
+  "results\\novelty_20261008\\four_cell_window_audit\\summary.json": "1091cd16a582f651f2638e4a3c9dab5cadc44dd90e8da5b2508ce8d59ffae7e2",
+  "results\\novelty_20261008\\four_cell_window_audit\\temperature_curves.csv": "0c6551acba846a074ea8723f851d70584297a006c866840b6b1d6b4f8ff300b4",
+  "results\\novelty_20261008\\four_cell_window_audit\\window_comparison.csv": "82edb334bfd55cb9630acfc41faac4d75bb59bd4541b29ecc8f5d22af11b075c"
+}

@@ -1,0 +1,54 @@
+{
+  "max_relative_weight_change": 7.978027838362323e-08,
+  "checks": {
+    "sectors": [
+      {
+        "M": 0,
+        "states": 44,
+        "max_residual": 8.498357239071552e-14,
+        "orthogonality": 1.7364679140388956e-13
+      },
+      {
+        "M": 1,
+        "states": 40,
+        "max_residual": 8.350561657265664e-14,
+        "orthogonality": 1.4640351197468356e-13
+      },
+      {
+        "M": 2,
+        "states": 31,
+        "max_residual": 8.322433814706697e-14,
+        "orthogonality": 1.4713955959959212e-13
+      },
+      {
+        "M": 3,
+        "states": 20,
+        "max_residual": 8.314841720506658e-14,
+        "orthogonality": 1.5924579917883013e-13
+      },
+      {
+        "M": 4,
+        "states": 10,
+        "max_residual": 8.320163144185643e-14,
+        "orthogonality": 1.8058135016598148e-13
+      },
+      {
+        "M": 5,
+        "states": 4,
+        "max_residual": 8.346778582552664e-14,
+        "orthogonality": 6.621567280629296e-14
+      },
+      {
+        "M": 6,
+        "states": 1,
+        "max_residual": 7.320669670268192e-14,
+        "orthogonality": 4.6407322429331543e-14
+      }
+    ],
+    "spin_quantization_error": 2.0321522242738865e-12,
+    "retained_states": 256,
+    "next_state_M0": 0.16625905359800086
+  },
+  "passed": true,
+  "elapsed_seconds": 85.7293368
+}

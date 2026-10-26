@@ -1,0 +1,10 @@
+{
+  "scripts\\submission_20261002\\validate_thermal_two_cells.py": "601a0279f25901b86f4bde771cae8361cd135c974a6ded29e019b8fd77d2e015",
+  "scripts\\submission_20261002\\validate_dark_multicell.py": "e26a78bbbdfd150682c04ee63b19ff0367682b6ccfb5f35376bd05711c16633b",
+  "scripts\\submission_20261002\\check_thermal_compensation.py": "e70bf76cbf957e1869c852d77e859786eecc150adb323c5327335f6403577ed7",
+  "scripts\\submission_20261002\\probe_rank_geometry.py": "64b4987dc6c29578644c0261118fe89b0ebb5994d693e5e5ebee95a3f898b1d9",
+  "scripts\\autoresearch_v5\\analyze_negative_phase_independent_observables.py": "ab97d27176317a45b1d554a614fae5e6188ccfc814b81dfb629cb92e32145b93",
+  "results\\novelty_20261008\\thermal_microscopic_two_cells\\comparisons.csv": "0321e5c872951d086a0f3a2bb07e3cc9021f54d855b0cd41feeb86578cd108aa",
+  "results\\novelty_20261008\\thermal_microscopic_two_cells\\protocol.json": "a69c5a1a42b866a5b9567c9a66a97e320c195bf0ba01a7989090a283d1c0c413",
+  "results\\novelty_20261008\\thermal_microscopic_two_cells\\summary.json": "a5e40b9dd7b027b0eda0139a97eee21a50a0b06a528915274fe764126a96e2fd"
+}

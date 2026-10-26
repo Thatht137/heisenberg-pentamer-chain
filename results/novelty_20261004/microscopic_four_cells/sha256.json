@@ -1,0 +1,11 @@
+{
+  "scripts\\submission_20261002\\validate_dark_multicell.py": "e26a78bbbdfd150682c04ee63b19ff0367682b6ccfb5f35376bd05711c16633b",
+  "scripts\\submission_20261002\\dark_operator_expansion.py": "b67351f67524a26c7224423281bc34361190e9b2431226a9fd529a2220e27f0a",
+  "scripts\\submission_20261002\\local_projection_checks.py": "1470aab021ef1a9caeacc80a4e82f29cb30796379d2449aa0b9624537ea729ad",
+  "scripts\\autoresearch_v5\\analyze_negative_phase_independent_observables.py": "ab97d27176317a45b1d554a614fae5e6188ccfc814b81dfb629cb92e32145b93",
+  "results\\novelty_20261004\\microscopic_four_cells\\comparisons.csv": "96a460bee96205bdb6e0f3a9a49a80c8b4c3d561613281eb3d386a58deccd110",
+  "results\\novelty_20261004\\microscopic_four_cells\\predicted_spectra.csv": "9118a7da606b5a3bc2c9ea27ffbdc9ceb184cb73da609bf62f686dcbbced6bfb",
+  "results\\novelty_20261004\\microscopic_four_cells\\protocol.json": "3f9289a69acf0c305c09562b7c50eb3614376b1f7656f1635d1feb875c3359b7",
+  "results\\novelty_20261004\\microscopic_four_cells\\spectral_lines.csv": "21de02e8727f8834ddfac0a1f6c7c95a8f672329cddd59b7013ced2f065329e2",
+  "results\\novelty_20261004\\microscopic_four_cells\\summary.json": "74f676f9b9294076bde21484fe4f3bc1c01e454da3de174f237280a980cd51f0"
+}

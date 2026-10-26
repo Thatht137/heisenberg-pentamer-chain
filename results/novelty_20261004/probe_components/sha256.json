@@ -1,0 +1,9 @@
+{
+  "scripts\\submission_20261002\\analyze_probe_components.py": "86877467d005b8106ae82bce9183ab41ac328f076d9a9a297ea351d0ae705542",
+  "scripts\\submission_20261002\\extend_dark_effective.py": "47967a345a28ec882ce88e74e2e4acd7548e926d5e2f1ae6f9cafff1d06024e1",
+  "scripts\\submission_20261002\\dark_operator_expansion.py": "b67351f67524a26c7224423281bc34361190e9b2431226a9fd529a2220e27f0a",
+  "scripts\\submission_20261002\\local_projection_checks.py": "1470aab021ef1a9caeacc80a4e82f29cb30796379d2449aa0b9624537ea729ad",
+  "results\\novelty_20261004\\probe_components\\decomposition.csv": "c03c16d77d0d620a9acd392ee3eac1306eb6e32f4a7a9f14c5fb121d347d6aff",
+  "results\\novelty_20261004\\probe_components\\protocol.json": "ff5429509679b9e530db798e46d274e700bb2c1873d2543e2cddbe9bc0cf7666",
+  "results\\novelty_20261004\\probe_components\\summary.json": "748d8f2768c0d5db47701996613db246e53344a292fd6da87a78ca5973e7740b"
+}

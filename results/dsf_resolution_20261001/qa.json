@@ -1,0 +1,54 @@
+{
+  "smoothing": false,
+  "interpolation": false,
+  "mirror_average": false,
+  "data_clipping_by_this_script": false,
+  "stored_input_preclipped": true,
+  "color_limits": "shared absolute maximum across all panels, no saturation",
+  "full_omega_range": [
+    0,
+    3
+  ],
+  "low_omega_range": [
+    0,
+    0.6
+  ],
+  "legacy_transform": "Re sum dt exp(i(omega*t-q*r)) C(r,t) sin(pi*t/T)^2",
+  "normalization": "legacy one-sided transform; no added factor of 2 or pi",
+  "all_legacy_spectra_reproduced": true,
+  "production_validated": false,
+  "missing_requested_alpha": [
+    0.5
+  ],
+  "t0_missing": true,
+  "generated_source_sha256": {
+    "a-0.05_correlation.csv": "cb4cf131dfc44d0d8a6212e32354042eda895be06366d9c1ce07a9b07f9d22da",
+    "a-0.05_omega.csv": "9b7fa5952f8a87b8ed320ecd9b164716a9f5731a19ecbeb5a0915627d9dff574",
+    "a-0.05_q.csv": "58b8f20d2a3810a5880bf57a140d7616e064ce2f65025be420a93516a007ae27",
+    "a-0.05_signed.csv": "70e81a38af8cc514261f4418ff864f3131af9c9d152a597817c88bdd160fe4b3",
+    "a-0.05_stored.csv": "de80612f275ffbcd75c0b999dc57202a683503d26bb11d8aa75a05838bbe8188",
+    "a-0.5_correlation.csv": "d70d72f40b8fb1e179137dc36bdd45d099193c8c652e7202da52412329f8888d",
+    "a-0.5_omega.csv": "9b7fa5952f8a87b8ed320ecd9b164716a9f5731a19ecbeb5a0915627d9dff574",
+    "a-0.5_q.csv": "58b8f20d2a3810a5880bf57a140d7616e064ce2f65025be420a93516a007ae27",
+    "a-0.5_signed.csv": "a5fe903a52b021717164827c109410db7dbb5e7cb259f137c0e73e53819abc79",
+    "a-0.5_stored.csv": "c0239e5bcc00f7ebd0c63f1ab72e2bd387c739bc085db70c73da4dbe8b7d6cc1",
+    "a0.14_correlation.csv": "da8808132ca4d52218f5a4c2b6663ea123e814ae7b686e6b6b301aa4216d988a",
+    "a0.14_omega.csv": "9b7fa5952f8a87b8ed320ecd9b164716a9f5731a19ecbeb5a0915627d9dff574",
+    "a0.14_q.csv": "58b8f20d2a3810a5880bf57a140d7616e064ce2f65025be420a93516a007ae27",
+    "a0.14_signed.csv": "afd4606c72540ccf1fa06c84cfa982bcb4a1beb4677142131c0738df1e95904c",
+    "a0.14_stored.csv": "ef5ecf22b324518d616dcbd8efa810e0695f66a214c4dd42f4fb1cd29dcebaa2",
+    "a0.23_correlation.csv": "034aca75d4dd1aa7827363f654a5fcf752e32f836172b373e325187ab52d1241",
+    "a0.23_omega.csv": "9b7fa5952f8a87b8ed320ecd9b164716a9f5731a19ecbeb5a0915627d9dff574",
+    "a0.23_q.csv": "58b8f20d2a3810a5880bf57a140d7616e064ce2f65025be420a93516a007ae27",
+    "a0.23_signed.csv": "2457ce3a3037beb8fc424253d506749e1de552f02518219cd67e9e2ec11d9a78",
+    "a0.23_stored.csv": "cb294d9c75fa9a6b73853b36024227cd1775963ff5aa3f09d15000beac245695",
+    "a0.33_correlation.csv": "33e736405b3a35cdfbe8d6c1df937d6c881bfbd1731410bc9e51665da33ceb12",
+    "a0.33_omega.csv": "9b7fa5952f8a87b8ed320ecd9b164716a9f5731a19ecbeb5a0915627d9dff574",
+    "a0.33_q.csv": "58b8f20d2a3810a5880bf57a140d7616e064ce2f65025be420a93516a007ae27",
+    "a0.33_signed.csv": "930aaa92a4e74c343c268d7b1dfaf27fef634cc2a57f0e46a888105efc36a072",
+    "a0.33_stored.csv": "4e25beaabe946be662349def55e59610285966ba96ff25b7d0c2c5c2cdf3babf",
+    "audit_metrics.csv": "bc7941ead8259fa19625df4254b49456fadcb52d25042cba62545cb4ce8dff78",
+    "metadata.csv": "3bde73a54bc6aae64660e5913d08bcabb66c18229d1867458dc805927073e65c",
+    "time_window_metrics.csv": "28ff5ec2dfaca16ca06ac24241b818d0ef2bec510295dd5287e8ae0354148bad"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-10-01T15:22:47.7504501Z",
+  "archive": "source_final_20261001.tar",
+  "archive_sha256": "9ff2e8df89ba504c116d5c7f880a3b58634a3f08b077f45ce6dfbbbca9c530e5",
+  "files_sha256": {
+    "Project.toml": "39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e",
+    "src/dmrg_solver.jl": "0b535c8be0f392a7ee827c2e66dbf422d8070bc025f14881fbc2ba501304b0eb",
+    "src/exact_diag.jl": "e8da7c3f3012f620451fdd90b153b57acdb08f23c7c4913d8c2d7e62764cbd83",
+    "src/hamiltonian.jl": "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb",
+    "src/order_parameters.jl": "324923cb48219eb65cb37fff7f7237f232828ed9bae64fe3f4b41162ce94be05",
+    "src/PentamerChain.jl": "e887408010f53c2ef2d932f58ae237f60ec12077dafded4dec963e4c95b3a22e",
+    "src/spectral.jl": "a04ad34901d44849eb7f74fb6c883a13bb7ea6d15872a64aab22fa92be7f88bf",
+    "src/utils.jl": "b434789ab9726118c682f7cdca98fe2f90e1320d3d501108539748a4d95a1cb7",
+    "scripts/compute_fullq_dsf.jl": "2e7d42a861ee941c716ac1b3b3e3a06f174f51ebc56fef988fb063df920d10e8",
+    "scripts/compute_spin_gap_20261001.jl": "5bd16a03dabaf5abf8a96021249e3d3d78df537031db3f48dc854f89a00ffd22",
+    "scripts/export_fullq_partial.jl": "1d1e2d86c06e9e36f4daf9d8b2a54766d8899410414de9af686d928b775f8cce",
+    "scripts/check_fullq_dsf_ed.py": "6f24ed16023baa75802b0f23e58702d131ebe4da84be1f177292c36f3a125239",
+    "scripts/autoresearch_v5/static_krylov_ed_reference.py": "172a00088fdbe0e06806a4b0d3da4b5d334f805d2205a91598cc262cab3e00cb",
+    "scripts/audit_fullq_dsf.py": "bb6ab6868af72ad3ea275bf218bb5d81e2ed4588f4c46beeb9243930edeedb9f",
+    "scripts/plot_dsf_screenshot_style.py": "8da162f10e9f2eb3f8799ecffc63fa2b5ad53c51fd5ceda88dac56f9e06f531e",
+    "scripts/test_fullq_dsf_pipeline.py": "9d3f13f713ff796febe39fdeb524861d6646411f3bdbc80543bdfecb95073dad",
+    "scripts/inspect_fullq_dsf.jl": "d1bca3a28eefd0390e097dad4d69ce22563b160df63cbfec26a0b9d906353b9b",
+    "scripts/run_fullq_dsf_20261001.ps1": "e60e6fe7dda44cd676983c4dac18db1eca3f6eac0e58673803cb7c59771ec70e",
+    "scripts/run_fullq_negative_remote.sh": "a46f21c1310e7faef1d4fd089432a5707add13673941f2094832034d7bdc8ca1",
+    "docs/fullq_dsf_protocol_20261001.md": "7c08f2c50139274c6839985bea762dd6f7b0ee4aabca0651b9a3c46e1c43d57a",
+    "Manifest.toml": "37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c"
+  }
+}

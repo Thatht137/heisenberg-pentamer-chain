@@ -1,0 +1,22 @@
+{
+  "claim": "microscopic thermal activation and line strengths converge, with a finite-beta low-T background",
+  "panels": [
+    "Arrhenius response including ground-state background",
+    "two line-strength convergence checks"
+  ],
+  "backend": "existing Python/matplotlib workflow",
+  "archetype": "quantitative grid",
+  "size_inches": [
+    7.2,
+    2.85
+  ],
+  "smoothing": "none",
+  "data": "saved microscopic low-band eigenvalues and probe matrices",
+  "error_bars": "deterministic calculation, no statistical error bars",
+  "exports": [
+    "pdf",
+    "svg",
+    "png",
+    "tiff"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "restored": {
+    "W_positive_low": 5.592350989317447e-09,
+    "W_ground_initial": 5.369019060819659e-09,
+    "W_excited_initial": 2.2333192849778837e-10,
+    "partition_low": 1.0200632951495716,
+    "detailed_balance_error": 2.44276774644566e-24
+  },
+  "full": {
+    "W_positive_low": 5.5923509893078724e-09,
+    "thermal_population_outside_band": 0.0,
+    "retained_states_all_sectors": 16,
+    "band_top": 0.0010835355216083364,
+    "next_state": 0.16643816638017794,
+    "max_eigen_residual": 3.1921960763066724e-15,
+    "detailed_balance_error": 8.045623926785308e-24
+  },
+  "checks": {
+    "sectors": [
+      {
+        "M": 0,
+        "states": 4,
+        "max_residual": 2.958780919173469e-15,
+        "orthogonality": 1.681721359431079e-15
+      },
+      {
+        "M": 1,
+        "states": 3,
+        "max_residual": 3.699430752641464e-15,
+        "orthogonality": 1.6148701004097936e-15
+      },
+      {
+        "M": 2,
+        "states": 2,
+        "max_residual": 3.2101449081431587e-15,
+        "orthogonality": 4.272772701403076e-15
+      },
+      {
+        "M": 3,
+        "states": 1,
+        "max_residual": 2.4594785996286644e-15,
+        "orthogonality": 2.220446049250313e-16
+      }
+    ],
+    "spin_quantization_error": 2.3092638912203256e-14,
+    "retained_states": 16,
+    "next_state_M0": 0.1664381663801784
+  },
+  "relative_weight_error": 1.7121859485769164e-12
+}

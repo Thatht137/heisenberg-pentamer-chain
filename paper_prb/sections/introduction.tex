@@ -1,0 +1,74 @@
+\section{Introduction}
+\label{sec:introduction}
+
+A spin cluster carries more information than its total spin. The distribution
+of that spin over the sites determines how neighboring clusters interact and
+how a momentum-resolved probe couples to their collective motion. In a chain
+of clusters, several physical momenta can describe the same effective-chain
+momentum, yet their scattering intensities need not be comparable. This makes
+spectral weight, rather than the excitation energy alone, a useful probe of
+the internal structure of a composite spin.
+
+Trimer chains provide an established example: their ground-state doublets form
+an effective spin-$1/2$ chain, while perturbative and numerical spectra connect
+higher-energy features to internal trimer excitations~\cite{cheng2022trimer}.
+Studies of tetramer chains similarly combine cluster states, effective
+descriptions, and dynamical structure factors to distinguish collective and
+local excitations~\cite{li2026tetramer}.
+The relation between cluster symmetry and the visibility of a transition is
+also known for isolated pentamers~\cite{haraldsen2011pentamer}.
+These results motivate a specific question for a chain whose cluster spin can
+change: how does that change redistribute low-energy intensity among the
+physical momenta representing the same collective fluctuation?
+
+We address this question in a linear spin-$1/2$ Heisenberg chain with the
+five-bond pattern $J_2$--$J_1$--$J_1$--$J_2$--$J_3$.
+The first four bonds define a reflection-symmetric pentamer, and $J_3>0$
+couples neighboring cells. We set $J_1=1$ and write
+$\alpha=J_2/J_1$ and $\beta=J_3/J_1$.
+In the isolated-cell ranges studied, positive $\alpha$ gives a spin-$1/2$
+ground doublet, whereas negative $\alpha$ gives a spin-$3/2$ quartet.
+Both are half-integer degrees of freedom; the distinction is not the
+integer--half-integer contrast between an even and an odd cell.
+The Lieb--Schultz--Mattis constraint rules out a unique, symmetry-preserving
+gapped bulk ground state for a half-integer spin per translation cell under
+its stated symmetry assumptions~\cite{lieb1961,ogata2019}, but it does not fix
+the momentum dependence of the response or establish a particular critical
+theory throughout this model's coupling plane.
+
+Projecting the five site spins onto the cell ground multiplet gives
+$P\bm S_aP=c_a\bm T$. The coefficients $c_a$ determine both the leading
+exchange $\Jeff=\beta c_1c_5$ and the interference factor
+$F(q)=|\sum_a c_a e^{iqa}|^2$ seen by the probe.
+Because the cell momentum is $Q=5q\pmod{2\pi}$, the physical momenta
+$q=0.2\pi$, $0.6\pi$, and $\pi$, together with their reflection partners,
+all represent $Q=\pi$.
+For $\alpha=0.5$ the cell factor strongly favors $q=\pi$, whereas for
+$\alpha=-0.5$ it favors $q=0.6\pi$ and nearly cancels at $q=\pi$.
+We derive the absolute low-energy spectral weight of two coupled cells and
+test it by exact diagonalization over a fixed weak-coupling sequence.
+This establishes a quantitative relation between the cell's internal spin
+distribution and the relative visibility of folded responses, with an
+explicitly tested range of validity.
+
+Reflection provides a second, distinct constraint on the spectrum.
+The isolated positive-$\alpha$ cell has an odd-parity lowest excited doublet
+that an even $q=\pi$ spin operator cannot reach. Thus the first excited local
+level need not be the first visible one.
+We compare these local predictions with ground-state and dynamical
+matrix-product-state calculations~\cite{white1992,schollwoeck2011,paeckel2019}.
+The positive-coupling static data support an effective antiferromagnetic chain
+at the tested points. Negative couplings produce a finite-size reconstruction
+of the dominant static momentum, and complete connected $L=40$ spectra at
+$(\alpha,\beta)=(\pm0.5,0.5)$ compare the two responses at a common
+finite-time resolution. These latter points lie outside the tested
+weak-coupling regime; they show how spectral weight is organized at finite
+coupling, rather than verifying the projected weights there or establishing
+a new thermodynamic phase.
+
+Section~\ref{sec:methods} defines the model and numerical observables.
+Section~\ref{sec:results} derives and tests the projected spectral weights;
+Sec.~\ref{sec:dynamics} presents the finite-coupling chain results.
+Section~\ref{sec:discussion} explains the relation between the two local-spin
+descriptions and the reconstruction near $\alpha=0$, and identifies the
+spectroscopic consequences that follow within the controlled limits.

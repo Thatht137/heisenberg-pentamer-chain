@@ -1,0 +1,16 @@
+{
+  "question": "Are the microscopic quartet coefficients exactly nonzero, rather than a floating-point tensor-fit residual?",
+  "model": "Five spin-1/2 sites with bonds (alpha,1,1,alpha); alpha=-(2+sqrt(7))/6; q=pi.",
+  "arithmetic": "Exact QQ(sqrt(7)); no reconstruction from floating-point coefficients.",
+  "method": "Magnetization-block reduced resolvent; unnormalized SU(2) descendants and their exact dual basis.",
+  "gates": [
+    "rank-four eigenprojector",
+    "strict local gap > 1/8 by exact LDL pivots",
+    "P B P = 0",
+    "full projected tensor identities",
+    "comparison to existing two-cell floating-point construction"
+  ],
+  "limits": "One isolated cell only; this check does not establish literature priority or higher-order/thermodynamic claims.",
+  "wall_limit_seconds": 180,
+  "sympy_version": "1.14.0"
+}

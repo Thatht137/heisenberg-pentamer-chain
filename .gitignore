@@ -5,6 +5,11 @@ logs/
 gcm-diagnose.log
 .julia_depot/
 
+# 投稿整理隔离区：只存本地，永不入库
+# （内含运维回执、邮件草稿、交付 zip 等不宜进入版本历史的内容；
+#   同时根锚定的 temp/ logs/ tmp/ 规则在这里不再生效，需整目录屏蔽）
+_archive/
+
 *.jl.cov
 *.jl.*.cov
 *.jl.mem
@@ -42,3 +47,31 @@ paper/*.out
 paper/*.run.xml
 paper/*.synctex.gz
 paper/*.toc
+
+paper_prb/build/
+paper_prb/*.aux
+paper_prb/*.bbl
+paper_prb/*.bcf
+paper_prb/*.blg
+paper_prb/*.fdb_latexmk
+paper_prb/*.fls
+paper_prb/*.log
+paper_prb/*.out
+paper_prb/*.run.xml
+paper_prb/*.synctex.gz
+paper_prb/*.toc
+
+# 投稿发布包（由整理流程生成，不入库）
+submission_package_*.zip
+
+# 项目归档分包上传至 Release
+/archive_release_20261026/
+/AGENTS.md
+
+*.zip
+**/paper_prb/**/build/
+**/paper_prb/**/qa*/**/*.png
+**/paper_prb/**/qa*/**/*.jpg
+
+results/submission_20261002/submission_package_release/
+results/submission_20261002/submission_package_buildcheck_20261004/

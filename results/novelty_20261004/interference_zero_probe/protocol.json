@@ -1,0 +1,28 @@
+{
+  "contract_sha256": "2fe68e29ff5223933684a5c27715c07fbbca88ad75d607558e82ab2acd03bdac",
+  "alpha_bracket": [
+    -4.0,
+    -0.02
+  ],
+  "alpha_points": 121,
+  "g_values": [
+    0.00125,
+    0.0025,
+    0.005,
+    0.01,
+    0.02,
+    0.04
+  ],
+  "root_offsets": [
+    -0.02,
+    0.0,
+    0.02
+  ],
+  "fit_g_count": 4,
+  "L": 10,
+  "boundary": "OBC",
+  "low_band": "0 < omega < Delta_local/2",
+  "threads": 1,
+  "wall_limit_seconds": 300,
+  "exploratory": true
+}

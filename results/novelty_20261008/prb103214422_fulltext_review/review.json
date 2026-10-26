@@ -1,0 +1,86 @@
+{
+  "date": "2026-10-08",
+  "request": "用户提供关键全文并明确要求继续原研究目标。",
+  "source": {
+    "provided_path": "D:/PhysRevB.103.214422.pdf",
+    "project_copy": "results/novelty_20261008/prb103214422_fulltext_review/PhysRevB.103.214422.pdf",
+    "sha256": "2fa477da01185fea73944af04f690f67f3cebce8607e8cae4a629a43c81e28fd",
+    "bytes": 15287010,
+    "pages": 18,
+    "doi": "10.1103/PhysRevB.103.214422",
+    "title": "Point-group selection rules and universal momentum-transfer dependencies for inelastic neutron scattering on molecular spin clusters",
+    "author": "Shadan Ghassemi Tabrizi",
+    "version": "出版社发表版；题名页、DOI、元数据和期刊页码匹配",
+    "local_research_only": true,
+    "redistribution_authorized": false
+  },
+  "read_scope": {
+    "text": "通读第 1--17 页正文、各节例子与图表说明，并检查第 17--18 页参考文献；重点逐式核读第 2--4 页理论。",
+    "visual": "第 4 页完整渲染，核对式 (13)--(16)、表示重数条件及双栏正文。",
+    "limits": "没有独立重推全部多面体表格或复现全部强度图。阅读全文不等于独立验证该文所有代数。"
+  },
+  "claim_comparisons": [
+    {
+      "location": "第 2 页，式 (4)--(5)",
+      "prior_result": "散射截面包括所有初末态和 Boltzmann 权重。",
+      "decision": "不能把有限温度加权或热初态存在本身当成新贡献。"
+    },
+    {
+      "location": "第 3--4 页，式 (8)--(15)",
+      "prior_result": "在等价位点、唯一介导表示以及表示在位点自旋算符空间中只出现一次等条件下，给出对称性决定的动量强度函数。",
+      "decision": "选择定则、形状因子以及几何与动力学因子分离属于已有工作。"
+    },
+    {
+      "location": "第 4 页，式 (16)",
+      "prior_result": "同一表示多次出现时，强度保留多个独立约化矩阵元和交叉项；两个副本时至少需要一个动力学矩阵元比值。",
+      "decision": "多个同对称性算符及其动力学干涉不是新结论；本稿必须证明可达物理控制无法使所有非等能矩阵元共同相消。"
+    },
+    {
+      "location": "第 6--7 页，式 (21)--(22)；第 10--12 页对称性降低例子",
+      "prior_result": "讨论多组非等价位点、总自旋与交错探针，以及对称性降低后仍保留的部分普适形状。",
+      "decision": "不能以采用非等价团簇、交错探针或降低对称性直接宣称创新。"
+    },
+    {
+      "location": "全文第 II--IV 节，尤其第 16--17 页结论",
+      "prior_result": "给出点群选择定则及动量强度函数，区分几何固定信息和动力学信息。",
+      "our_comparison": "未给出本稿弱耦合五聚体链局域交换控制优化后的全热初态非抵消定理、其精确最小谱矩或四胞激活系数与 9:8 线比。此判断来自全文对照，不来自关键词缺失。",
+      "limit": "针对这篇文章的比较，不是全球优先权证明。"
+    }
+  ],
+  "important_distinctions": [
+    "文献的三维散射向量 Q 不应与本稿约化链动量 Q=5q 直接等同。",
+    "文献中位点自旋表示的重数，不等于本稿有效多体算符空间的维数；不声称 D/Y 正好就是其 h=2 示例。",
+    "有效探针线性独立不保证所有非等能跃迁线性独立；差值可能仅作用于等能块，本稿通过严格正的最小对易子范数排除此情况。",
+    "本稿全热初态结论限于规定的有限偶数周期链、弱耦合领先阶和局域 SU(2) 控制空间。"
+  ],
+  "decision": {
+    "previous_fulltext_blocker_resolved": true,
+    "supersedes_current_status_of": "results/novelty_20261008/publication_decision_checkpoint.json",
+    "topic": "交换重调后五聚体链干涉零点的热稳定性",
+    "assessment": "已核对近邻文献之外存在明确的受限理论增量，建议按专业凝聚态理论论文成稿和送审。",
+    "not_claimed": "全球绝无先例、重大跨学科突破、期刊录用保证、已提交论文。",
+    "need_more_calculation_for_this_decision": false,
+    "author_metadata": "按用户要求继续保留占位"
+  },
+  "changes": {
+    "manuscript": ["摘要", "引言", "热响应与表示重数关系", "讨论"],
+    "bibliography": "补齐两条已有引用的页码或文章编号；第二条位于共用文献库，原稿 PDF 未重编译。",
+    "data_changed": false,
+    "original_spectra_changed": false,
+    "new_numerical_runs": false,
+    "prior_pdf_sha256": "fc1bc0a7b606a80afba91ea8df0b181f570b74f895333f48e12052c924ef2c22"
+  },
+  "bibliography_metadata_checks": [
+    {
+      "doi": "10.1088/0953-8984/15/49/025",
+      "source": "https://api.crossref.org/works/10.1088%2F0953-8984%2F15%2F49%2F025",
+      "verified_fields": {"volume": "15", "issue": "49", "page": "8513-8526"}
+    },
+    {
+      "doi": "10.21468/SciPostPhysCodeb.4",
+      "source": "https://api.crossref.org/works/10.21468%2FSciPostPhysCodeb.4",
+      "verified_fields": {"article-number": "4", "journal": "SciPost Physics Codebases"}
+    }
+  ],
+  "review_document": "docs/novelty_boundary_review_20261008.md"
+}

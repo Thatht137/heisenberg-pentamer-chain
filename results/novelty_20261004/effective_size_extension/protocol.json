@@ -1,0 +1,21 @@
+{
+  "effective_spin": 1.5,
+  "cells": [
+    4,
+    6,
+    8,
+    10
+  ],
+  "boundaries": [
+    "OBC",
+    "PBC"
+  ],
+  "cross_check": "N4,N6 against full tensor-product embedding, before larger chains",
+  "alpha": -0.7742918851774317,
+  "threads": 1,
+  "wall_limit_seconds": 600,
+  "cross_check_tolerance": 1e-09,
+  "eigen_residual_gate": 1e-10,
+  "microscopic_calculation": false,
+  "thermodynamic_extrapolation": false
+}

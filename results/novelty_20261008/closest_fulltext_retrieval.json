@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-08",
+  "request": "Independently retrieve the two closest papers through lawful sources; previous VPN wait superseded.",
+  "fulltext_novelty_review_complete": false,
+  "manuscript_changed": false,
+  "figures_changed": false,
+  "papers": [
+    {
+      "doi": "10.1103/PhysRevLett.107.037205",
+      "title": "Heisenberg Pentamer: Insights into Inelastic Neutron Scattering on Magnetic Clusters",
+      "author": "J. T. Haraldsen",
+      "status": "accepted_manuscript_downloaded_and_read",
+      "source_url": "https://link.aps.org/accepted/10.1103/PhysRevLett.107.037205",
+      "source_type": "APS-hosted CHORUS accepted manuscript, not a publisher-version replacement",
+      "path": "results/novelty_20261008/Haraldsen_PRL107_037205_2011_accepted.pdf",
+      "bytes": 393133,
+      "pages_including_cover": 5,
+      "sha256": "a1800bb2de9cb5194315dbfd71055d3437134c480e8c6bdba6312b20e269e8ef",
+      "identity_checks": ["Cover title, author, journal and DOI", "Five pages parse successfully", "Model figure and Table I visually inspected"],
+      "read_scope": "All four manuscript pages; equations (1)-(5), Table I and Figures 1-3.",
+      "comparison": "Isolated mixed-spin cluster INS selection rules are prior art. The retrieved paper does not address the present weakly coupled chain's exchange-retuning problem over all thermally occupied low-band initial states. This comparison alone does not establish novelty."
+    },
+    {
+      "doi": "10.1103/PhysRevB.103.214422",
+      "title": "Point-group selection rules and universal momentum-transfer dependencies for inelastic neutron scattering on molecular spin clusters",
+      "author": "Shadan Ghassemi Tabrizi",
+      "status": "fulltext_not_obtained",
+      "read_scope": "Publisher abstract and public bibliographic/access metadata only.",
+      "publisher_url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.103.214422",
+      "checks": [
+        {"route": "APS publisher", "result": "Authorization Required; no open accepted-manuscript link on article page."},
+        {"route": "https://link.aps.org/accepted/10.1103/PhysRevB.103.214422", "result": "HTTP 404."},
+        {"route": "Semantic Scholar Graph API DOI lookup", "result": "Matching title; openAccessPdf URL empty."},
+        {"route": "OpenAIRE DOI lookup", "result": "One matching record; CLOSED, isgreen false; only DOI location.", "saved_response": "results/novelty_20261008/PRB103214422_openaire.json"},
+        {"route": "TU Berlin DepositOnce public REST DOI search", "result": "Zero records.", "saved_response": "results/novelty_20261008/PRB103214422_depositonce_doi.json"},
+        {"route": "TU Berlin DepositOnce public REST author-name search: Shadan", "result": "Three records, none the target. Author's dissertation is from 2017.", "saved_response": "results/novelty_20261008/PRB103214422_depositonce_author.json"},
+        {"route": "ResearchGate target record", "result": "No full text; request-copy option only; no request sent."},
+        {"route": "Bielefeld Molecular Magnetism highlights and exact DOI/title web searches", "result": "Metadata, abstract and publisher links; no verified public full-text copy obtained."},
+        {"route": "HZDR author page / TU Berlin group page", "result": "Robots denial / HTTP 403; no bypass attempted."}
+      ],
+      "limitations": "Negative searches do not prove that no lawful public copy exists. No claim about absence of a theorem inside the unread full text is made."
+    }
+  ],
+  "excluded_substitute": {
+    "arxiv": "2105.04853v1",
+    "doi": "10.1103/PhysRevB.104.014416",
+    "title": "Symmetry-induced universal momentum-transfer dependencies for inelastic neutron scattering on anisotropic spin clusters",
+    "reason": "A different article. A discovery-service record merged target-paper metadata with this DOI/arXiv. Publisher and arXiv identities checked; not counted as the target full text."
+  },
+  "access_boundaries": {"paywall_bypass": false, "certificate_verification_disabled": false, "author_contact_sent": false, "purchase_made": false},
+  "comparison_document": "docs/novelty_boundary_review_20261008.md"
+}

@@ -1,0 +1,9 @@
+{
+  "spectral_vector_relative_error_by_sorted_low_energy_level": 0.04972890702631788,
+  "max_energy_difference_over_beta": 0.0009743401921062933,
+  "sum_ed": 0.0006825698820280946,
+  "sum_prediction": 0.0006781393455386427,
+  "matching": "sorted first 44 Sz0 levels; finite four-cell OBC, g=.0025, not bulk",
+  "smoothing": false,
+  "rescaling_each_line": false
+}

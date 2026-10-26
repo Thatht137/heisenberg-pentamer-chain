@@ -1,0 +1,47 @@
+{
+  "L": 20,
+  "cells": 4,
+  "boundary": "PBC",
+  "q_over_pi": 1,
+  "g_values": [
+    0.000625,
+    0.00125,
+    0.0025
+  ],
+  "T_over_Jeff_values": [
+    0.1,
+    0.2,
+    0.4,
+    1.6
+  ],
+  "retuning": "fixed leading N=4 zero-T optimum; not reoptimized at each T",
+  "temperature": "T=tau*beta*c1(alpha_root)^2",
+  "solver": "existing scipy sparse sector Hamiltonian; M0 eigenpairs plus exact SU2 raising",
+  "M0_dimension": 184756,
+  "M0_eigenpairs": 48,
+  "ncv": 180,
+  "M0_low_states": 44,
+  "all_M_low_states": 256,
+  "numerical_gates": {
+    "residual": 1e-09,
+    "orthogonality": 1e-08,
+    "S2": 1e-07
+  },
+  "physical_gates_at_weakest_g": {
+    "total_C_tau_at_least_0p2_relative": 0.05,
+    "two_line_strength_relative": 0.05,
+    "two_line_frequency_relative": 0.05
+  },
+  "tau0p1": "diagnostic including finite-beta ground-state background; not an agreement gate",
+  "positive_frequency_threshold": 1e-10,
+  "threshold_checks": [
+    1e-11,
+    1e-09
+  ],
+  "benchmark": "L10 reconstructed band vs all-sector full-spectrum oracle",
+  "tail_bound": "Zoutside/Zlow <= (2^L-4^N)*exp[-(Delta-2*vnorm)/T]/Zlow",
+  "vnorm": "(3/4)*(N*abs(beta)+2*N*abs(alpha-alpha_root))",
+  "threads": 1,
+  "wall_limit_seconds": 900,
+  "thermodynamic_limit_claim": false
+}

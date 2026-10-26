@@ -1,0 +1,31 @@
+julia_version = "1.11.5"
+method = "sector DMRG, joint bond-dimension and cutoff comparison"
+thermodynamic_extrapolation = false
+rigorous_error_bound = false
+
+[[cases]]
+gap_smaller_than_window_fwhm = true
+energy_sz0 = -12.492579071317346
+variance_sz0 = 5.520917056855979e-13
+alpha = 0.5
+L = 40
+beta = 0.5
+gap512 = 0.05562244067674982
+budget_drift = 6.441069899665308e-12
+energy_sz1 = -12.436956630634155
+variance_sz1 = 6.046718681318452e-13
+window_fwhm_T60 = 0.09277049188333333
+gap768 = 0.05562244068319089
+[[cases]]
+gap_smaller_than_window_fwhm = true
+energy_sz0 = -11.482138302904806
+variance_sz0 = 6.188827228470472e-13
+alpha = -0.5
+L = 40
+beta = 0.5
+gap512 = 0.0010924444716007287
+budget_drift = 2.0250467969162855e-13
+energy_sz1 = -11.481045858433003
+variance_sz1 = 5.272227099339944e-13
+window_fwhm_T60 = 0.09277049188333333
+gap768 = 0.0010924444718032333

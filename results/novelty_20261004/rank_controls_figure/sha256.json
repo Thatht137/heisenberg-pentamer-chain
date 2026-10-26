@@ -1,0 +1,13 @@
+{
+  "scripts\\submission_20261002\\plot_rank_controls.py": "d222eb86e1b2b3e9b6ae05c7427db948829cb37c2a39c7f8d57682647bfc901d",
+  "results\\novelty_20261004\\compensation_family\\roots.csv": "cab09623f37c206e09e10eb94cfdd3149bfe8e9543b634f5e85d1508cab09b20",
+  "results\\novelty_20261004\\effective_size_extension\\size_checks.csv": "3c164d5e183b13292d96876a63e8115d80bdde2400514204e5e2e693bedfc4f7",
+  "results\\novelty_20261004\\effective_periodic_refined\\results.toml": "a8b703fe3031ac9987a30c2bd26c7929660a00365e34b05a0e75ba1bc1df91b2",
+  "results\\novelty_20261004\\rank_folded_mps\\results.toml": "b459931f2aba61baa4b30a38025946bac92c8e92740934e6855f7b9942cac99e",
+  "results\\novelty_20261004\\rank_folded_mps\\summary.toml": "f2142e55a918959a67fcdaa755c596c02104fd5c9fe4d9df4e35d970cc0ea058",
+  "results\\novelty_20261004\\rank_even_effective\\comparisons.csv": "76b65f6610ee66b70a1e54dd981d35b33de0953c180be1bea66313adacde0416",
+  "results\\novelty_20261004\\bond_spin_channels_v2\\summary.json": "b2b95fd11ccf661ea98353a1cc954cdf9c00d7febd6b2a4ad321b227e1b8fb7a",
+  "results\\novelty_20261004\\rank_controls_figure\\rank_controls.pdf": "fca4e2739c44b0758ec6a5b0b51d7bf21352abd77693644e7f6f80d8f5589f2c",
+  "results\\novelty_20261004\\rank_controls_figure\\rank_controls.png": "87d211256ba1a12a9ec6abfaa695d2e0ed74b1f32e69ba4af8c9a23cef72adb2",
+  "results\\novelty_20261004\\rank_controls_figure\\rank_controls.svg": "120160e36d732c8ac827cbb18e8107f1324bfab59c2f031456759e4daafd9283"
+}

@@ -1,0 +1,18 @@
+{
+  "start": "2026-10-01T17:53:32.9963608+08:00",
+  "arguments": [
+    "--startup-file=no",
+    "--project=D:\\Project\\1x5_Heisenberg_Pentamer",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\compute_fullq_dsf.jl",
+    "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_positive",
+    "0.5",
+    8,
+    "0.05",
+    60,
+    192,
+    41,
+    256
+  ],
+  "threads": 16,
+  "pid": 32072
+}

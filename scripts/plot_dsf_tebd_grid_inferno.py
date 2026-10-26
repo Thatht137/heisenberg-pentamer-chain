@@ -1,5 +1,5 @@
 """批量画 10 组 DSF：2 行（α=1.0, -1.0）× 5 列（β 从大到小），inferno 配色 + 无平滑版本。
-跟 plot_dsf_tebd_grid.py（jet + 高斯平滑，更接近文献 Fig. 6 风格的尝试）并存，按需各自跑。
+直接显示保存的网格，不平滑、不做镜像平均。
 """
 
 import numpy as np
@@ -39,8 +39,6 @@ for i, alpha in enumerate(ALPHAS):
             continue
 
         q_points, omega_points = spectrum.shape
-        # 强制 inversion symmetry: S(q) = S(2π-q)，消除 TEBD 数值噪声，保持全范围
-        spectrum = 0.5 * (spectrum + spectrum[::-1, :])
         qvals = np.linspace(0, 2 * np.pi, q_points)
         omegavals = np.linspace(0, 3.0, omega_points)
 
@@ -74,6 +72,6 @@ if last_im is not None:
     cbar = fig.colorbar(last_im, cax=cax)
     cbar.set_label(r"$S^{zz}(q,\omega)$ (mapped)")
 
-fig.savefig("figures/Sqw_tebd_grid_inferno_sym.pdf")
-fig.savefig("figures/Sqw_tebd_grid_inferno_sym.png", dpi=300)
-print("Saved figures/Sqw_tebd_grid_inferno_sym.{pdf,png}")
+fig.savefig("figures/Sqw_tebd_grid_inferno_raw.pdf")
+fig.savefig("figures/Sqw_tebd_grid_inferno_raw.png", dpi=300)
+print("Saved figures/Sqw_tebd_grid_inferno_raw.{pdf,png}")

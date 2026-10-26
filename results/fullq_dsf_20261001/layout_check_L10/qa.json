@@ -1,0 +1,80 @@
+{
+  "smoothing": false,
+  "spatial_interpolation": false,
+  "inversion_averaging": false,
+  "source_clipping": false,
+  "display_saturation_only": true,
+  "style": "user reference screenshot",
+  "results": [
+    {
+      "directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\tebd_check_L10_negative",
+      "metadata": {
+        "tmax": 2.0,
+        "window_fwhm": 2.7831147565,
+        "itensors_version": "0.9.27",
+        "q_points": 9,
+        "dt": 0.05,
+        "energy": -2.6595692648837677,
+        "L": 10,
+        "n_units": 2,
+        "cutoff": 1e-10,
+        "nsweeps": 20,
+        "julia_version": "1.11.5",
+        "variance_per_site": 1.0969891661716246e-12,
+        "itensormps_version": "0.4.1",
+        "alpha": -0.5,
+        "dmrg_maxdim": 96,
+        "operator": "connected full momentum Sz / sqrt(L)",
+        "clipping": false,
+        "static_reflection_relative_rms": 6.748220420643702e-10,
+        "beta": 0.5,
+        "ground_maxdim_used": 31,
+        "time_window": "triangular",
+        "tebd_maxdim": 96,
+        "inversion_averaging": false
+      },
+      "quality": {
+        "inversion_relative_rms": 7.268444681510592e-14,
+        "max_absolute_inversion_difference": 1.0536710393083126e-14,
+        "negative_absolute_weight_fraction": -0.0,
+        "minimum_spectrum": 6.181649488614982e-35,
+        "maximum_spectrum": 0.09745632535488888,
+        "maximum_relative_norm_drift": 2.6435154279136992e-09,
+        "maximum_relative_source_norm_error": 4.087247439812014e-15,
+        "q0_maximum": 1.4840642069019818e-33,
+        "q0_pass": true,
+        "inversion_pass": true,
+        "baseline_pass": true
+      },
+      "refinement": null,
+      "time_resolution_check": [
+        {
+          "q_over_pi": 0.5,
+          "short_time": 1.0,
+          "short_peak": 0.6,
+          "full_peak": 0.6,
+          "peak_drift": 0.0
+        },
+        {
+          "q_over_pi": 0.75,
+          "short_time": 1.0,
+          "short_peak": 0.6,
+          "full_peak": 0.6,
+          "peak_drift": 0.0
+        },
+        {
+          "q_over_pi": 1.0,
+          "short_time": 1.0,
+          "short_peak": 0.6,
+          "full_peak": 0.6,
+          "peak_drift": 0.0
+        }
+      ],
+      "status": "symmetry_checked_draft",
+      "vmin": 0,
+      "vmax": 3.0,
+      "display_saturation_fraction": 0.0,
+      "spectrum_sha256": "d129d627f378d25f282f6fd11bdcdf7235c37981c312ca9e9ea36bd2f94c347f"
+    }
+  ]
+}

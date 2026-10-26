@@ -1,0 +1,10 @@
+{
+  "numerical_gates_pass": true,
+  "physical_agreement_gates_pass": true,
+  "elapsed_seconds": 188.0744607,
+  "kappa": 1.280297504166811,
+  "b": 0.1236117648014558,
+  "scope": "finite N4 microscopic low-band thermal response at fixed zero-T retuning",
+  "outside_band_is_bounded_not_computed": true,
+  "partition_function": "complete retained band plus rigorous tail bound"
+}

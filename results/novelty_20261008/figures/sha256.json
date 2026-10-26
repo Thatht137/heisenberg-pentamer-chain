@@ -1,0 +1,13 @@
+{
+  "scripts\\submission_20261002\\plot_thermal_evidence.py": "95a6021d3d33efb1acb2d00650f6a9c5caaebc9c8fd5200349384e38e2dc3825",
+  "results\\novelty_20261008\\thermal_compensation\\thermal_weights.csv": "8b7b427153152127c83b18edaad0e3967c1a20d3f677d7d51c7762cd5a88bb25",
+  "results\\novelty_20261008\\thermal_microscopic_two_cells\\comparisons.csv": "0321e5c872951d086a0f3a2bb07e3cc9021f54d855b0cd41feeb86578cd108aa",
+  "results\\novelty_20261008\\momentum_acceptance_v2\\acceptance_weights.csv": "1eb5d9cf96074b622d727bf7e9e87b369b94fe6516c13fc9ae7a5f8ed0d4c66a",
+  "results\\novelty_20261008\\figures\\figure_contract.json": "9b98694dc07fa4d06547d7c1254c0b68f2b65f34e0bab3341d04a42ec15040cd",
+  "results\\novelty_20261008\\figures\\qa.json": "7590cf16c85fd1a41d6869edbe0f781a2b782e68b0588cc398e0decb3dcdeb12",
+  "results\\novelty_20261008\\figures\\README.md": "d802020f985206912aec9bf703bc94d5ad9ffa7a4f16aba83fa31dfa76c38396",
+  "results\\novelty_20261008\\figures\\thermal_evidence.pdf": "d90f41250e7344b25c9bee33210d1e06ba21da36d817faccece1378b86b224df",
+  "results\\novelty_20261008\\figures\\thermal_evidence.png": "e6407a2c31891b1101cacf35449528be0573524bf0fdf263cb97afbb6526aa74",
+  "results\\novelty_20261008\\figures\\thermal_evidence.svg": "2040e3c474d5b9d5c4e4353891c048a50a4c74d43c29b2656576dc6ce16ff3ef",
+  "results\\novelty_20261008\\figures\\thermal_evidence.tiff": "36851e5a935d3a46dd79bb9fc3aa324f999eb27b5ee3a425b5e8e2c5f3215248"
+}

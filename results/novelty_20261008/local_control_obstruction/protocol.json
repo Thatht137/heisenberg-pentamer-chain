@@ -1,0 +1,35 @@
+{
+  "question": "Do arbitrary cellwise one-spin controls outperform the uniform control at the Q=pi composite source?",
+  "scope": "leading uniform effective Hamiltonian; translation-invariant Gibbs state; cell-local SU(2) perturbations of order beta",
+  "cases": [
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      4
+    ]
+  ],
+  "extra_moment_cases": [
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "microscopic_tangents": "all ten pairwise Heisenberg bonds within one pentamer at the quartet root",
+  "control_samples_per_observable": 12,
+  "seed": 20261008,
+  "wall_limit_seconds": 120,
+  "acceptance": "spectral projection identity and optimized equality 1e-10; tangent nondipole norm 1e-10; finite-difference derivative error 2e-6",
+  "not_claimed": [
+    "anisotropic controls",
+    "order-one changes along the local root manifold",
+    "nonuniform leading intercell exchange",
+    "finite-beta exact protection"
+  ]
+}

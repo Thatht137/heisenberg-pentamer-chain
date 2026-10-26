@@ -1,0 +1,78 @@
+\section{Extension to independent cell-local controls}
+\label{app:local-controls}
+
+Cell-local exchange changes enlarge the adjustable dipole space while
+leaving the leading composite vector fixed. To show this, add
+$\delta H_{\rm loc}=\beta\sum_i W_i$, where each bounded Hermitian $W_i$
+is an SU(2) scalar confined to cell $i$. The reference ground multiplet is
+an isolated single spin-$s$ irrep. Schur's lemma gives
+$P_iW_iP_i=w_iP_i$, a constant rather than an effective spin interaction.
+The first-order derivative of the local vector probe is again a vector.
+Because rank one occurs once in the operator space of a single spin-$s$
+irrep, its projection must be a multiple of $T_i^z$. At $q=\pi$ the
+probe is Hermitian, so this multiple is real. Changes in the projected
+end-spin coefficients enter $\beta V$ only at order $\beta^2$;
+likewise, the change of $b$ affects the physical first-order source only
+at order $\beta^2$. The leading Hamiltonian is consequently still the
+same uniform $h$, and all such controls are contained in the real
+one-spin space of Eq.~\eqref{eq:local-control-probe}. Cell reflection
+symmetry need not be preserved by $W_i$.
+The construction concerns bounded first-order perturbations about the
+uniform reference root, with its isolated irrep unchanged.
+
+Let $U$ translate by one effective site. For eigenstates of $h$, define
+the positive semidefinite sesquilinear form
+\begin{equation}
+ (A,B)_{\tau,\nu}=\sum_{\epsilon_f-\epsilon_i>\nu}
+ p_i A_{fi}^*B_{fi},\qquad \nu\ge0,
+ \label{eq:window-inner-product}
+\end{equation}
+where $p_i$ are Gibbs weights or $1/d^N$. All degeneracies are included
+as complete blocks. Since $[U,h]=0$, conjugation by $U$ is an isometry
+of this form. Distinct operator momenta are orthogonal even when the
+form has a null space. The $\pi$-momentum projection is
+\begin{equation}
+ \Pi_\pi A=\frac1N\sum_{m=0}^{N-1}(-1)^mU^m A U^{-m}.
+\end{equation}
+For even $N$, it obeys
+$\Pi_\pi R_{\{u_i\}}=R_{\bar u}$. Pythagoras in
+Eq.~\eqref{eq:window-inner-product} gives
+Eq.~\eqref{eq:local-control-projection}, and hence
+\begin{equation}
+ \min_{\{u_i\}\in\mathbb R^N}F(R_{\{u_i\}})
+ =\min_{u\in\mathbb R}F(R_u).
+ \label{eq:local-control-optimum}
+\end{equation}
+The equality uses the availability of uniform controls in the enlarged
+space. Any more restricted microscopic control set still satisfies the
+same lower bound. The nonzero derivative $A'$ makes the uniform direction
+accessible in the pentamer example. This argument applies at every
+positive scaled temperature and to the uniform-trace window bound;
+it does not require a nondegenerate spectrum.
+
+The second moment provides an additional explicit check. On bond
+$(i,i+1)$ the dipole commutator coefficient becomes
+$(u_i+u_{i+1})/2$. Repeating the support-orthogonality calculation of
+Appendix~\ref{app:general-moment} gives
+\begin{align}
+ M_2(\{u_i\})={}&M_{2,\min}+\frac{(d^2-1)^2}{18\ell N}\notag\\
+ &\times\sum_i\left[\frac{u_i+u_{i+1}}2+
+              \frac{b(d^2-4)}{12}\right]^2.
+ \label{eq:nonuniform-moment}
+\end{align}
+An alternating component of $u_i$ adds a conserved total $T^z$ to the
+probe and leaves this moment unchanged, although it changes $M_0$.
+For nonuniform controls, the finite-frequency lower bound therefore
+follows from the operator-momentum decomposition rather than the
+uniform-control $M_2/M_0$ inequality.
+
+For all ten pairwise exchange directions inside the isolated pentamer,
+the derivative $-P(W_iGB+BGW_i)P$, with
+$G=Q(H_{\rm cell}-E_0)^{-1}Q$, has a non-dipole Frobenius norm below
+$2.4\times10^{-15}$. Central differences at step $5\times10^{-5}$
+agree within $2.8\times10^{-10}$. Full four-site spectra for $s=1,3/2$
+at $\tau=0.2,1.6$ and uniform trace verify
+Eq.~\eqref{eq:local-control-optimum} for $\nu=0$ and
+$\sqrt{3s(s+1)/4}$, with maximum difference $1.7\times10^{-16}$ at
+$b=1$. Full-chain matrices at $N=4,6$ verify
+Eq.~\eqref{eq:nonuniform-moment} within $1.5\times10^{-14}$.

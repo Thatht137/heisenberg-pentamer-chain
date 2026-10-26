@@ -1,0 +1,73 @@
+{
+  "schema_version": 1,
+  "scope": "fixed L40 and T60, not thermodynamic convergence",
+  "max_concurrent_jobs": 2,
+  "threads_per_job": 3,
+  "blas_threads": 1,
+  "job_timeout_seconds": 7200,
+  "total_timeout_seconds": 21600,
+  "minimum_available_memory_bytes": 1610612736,
+  "driver_sha256": "2e7d42a861ee941c716ac1b3b3e3a06f174f51ebc56fef988fb063df920d10e8",
+  "jobs": [
+    {
+      "name": "positive_chi",
+      "alpha": "0.5",
+      "dt": "0.05",
+      "q_over_pi": "0.2,0.6,1.0",
+      "chi": 256,
+      "seed": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_positive\\ground.jld2",
+      "seed_sha256": "703ff8fff499b6c8a806dac9d5f7cbe2fb7da6a8f71e5594e7222fcb1b29edb0"
+    },
+    {
+      "name": "positive_dt",
+      "alpha": "0.5",
+      "dt": "0.025",
+      "q_over_pi": "0.2,0.6",
+      "chi": 256,
+      "seed": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_positive\\ground.jld2",
+      "seed_sha256": "703ff8fff499b6c8a806dac9d5f7cbe2fb7da6a8f71e5594e7222fcb1b29edb0"
+    },
+    {
+      "name": "negative_chi",
+      "alpha": "-0.5",
+      "dt": "0.05",
+      "q_over_pi": "0.2,0.6,1.0",
+      "chi": 256,
+      "seed": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\spin_gap_L40\\negative_seed.jld2",
+      "seed_sha256": "3c6d089290d4efd2f2d3f54026bb05aecf6ae4305fcf42ed8dbcce2ee906ab2e"
+    },
+    {
+      "name": "negative_dt",
+      "alpha": "-0.5",
+      "dt": "0.025",
+      "q_over_pi": "0.2,0.6",
+      "chi": 256,
+      "seed": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\spin_gap_L40\\negative_seed.jld2",
+      "seed_sha256": "3c6d089290d4efd2f2d3f54026bb05aecf6ae4305fcf42ed8dbcce2ee906ab2e"
+    }
+  ],
+  "qpi_dt_reference": "Existing same-ground dt0.025 chi256 check at q/pi=1",
+  "thresholds": {
+    "spectrum_relative_l2": 0.03,
+    "low_spectrum_relative_l2": 0.05,
+    "band_weight_relative": 0.05,
+    "band_absolute_floor_C0": 0.001,
+    "main_peak_shift_J1": 0.015,
+    "norm_drift": 0.01
+  },
+  "bands_J1": [
+    [
+      0,
+      0.6
+    ],
+    [
+      0.6,
+      2.5
+    ],
+    [
+      2.5,
+      4.0
+    ]
+  ],
+  "threshold_note": "Frozen before new results; failures are retained and reported."
+}

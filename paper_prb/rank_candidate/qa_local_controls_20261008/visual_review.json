@@ -1,0 +1,14 @@
+{
+  "pdf_sha256": "88882e3cc0e7f8baae243c3ae1fd92ab2bb5f82284693d51119ea146f0cc4253",
+  "status": "passed for the stated visual scope; not scientific peer review",
+  "reviewer": "assistant visual inspection",
+  "page_count": 15,
+  "scope": "All-page contact sheet plus full-size pages 5, 9, 10, 15",
+  "observations": [
+    "The local-control argument and spectral projection identity fit the main-text column.",
+    "The new proof appendix and wrapped nonuniform moment equation have no visible overlaps.",
+    "The last page contains a regular two-column reference block without orphaned overflow references.",
+    "Existing figures remain visible and the original selected spectra are unchanged."
+  ],
+  "limits": "Visual inspection and numerical checks do not establish novelty or replace author scientific approval."
+}

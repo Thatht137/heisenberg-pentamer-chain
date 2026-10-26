@@ -1,0 +1,16 @@
+{
+  "operator_check": "full retained Hilbert space, not just ground-state sources",
+  "doublet_operator_relative_residual_gate": 1e-10,
+  "g_values": [
+    0.005,
+    0.01
+  ],
+  "repeat_seed": 773119,
+  "repeat_ncv": 120,
+  "repeat_eigsh_tolerance": 1e-14,
+  "repeat_weight_relative_gate": 0.001,
+  "eigen_residual_gate": 1e-11,
+  "threads": 1,
+  "wall_limit_seconds": 180,
+  "scope": "same Hamiltonian assembly, independent numerical restart; not an independent method"
+}

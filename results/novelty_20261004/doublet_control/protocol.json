@@ -1,0 +1,38 @@
+{
+  "model": "unchanged pentamer chain; expand positive alpha beyond old plotting interval",
+  "root_bracket": [
+    1.0,
+    1.5
+  ],
+  "alpha": 1.0975514276781977,
+  "q_over_pi": 0.6,
+  "effective_q_over_pi": 3.0,
+  "L": 20,
+  "cells": 4,
+  "boundary": "PBC",
+  "eigenpairs": 7,
+  "expected_low_excitations": 5,
+  "g_values": [
+    0.01,
+    0.02,
+    0.04,
+    0.08
+  ],
+  "g_definition": "beta/Delta at isolated doublet zero",
+  "kappa": 0.16874093668588497,
+  "amplitude_derivative": 0.7975852165026386,
+  "hypothesis": "doublet has no rank-2 tensor; first-order probe is scalar D and removable",
+  "finite_path_prediction": "fixed root W=O(beta^2); linear retuning W=O(beta^4) or smaller",
+  "first_three_fixed_slope_range": [
+    1.8,
+    2.2
+  ],
+  "first_three_retuned_slope_range": [
+    3.7,
+    4.3
+  ],
+  "numeric_residual_gate": 1e-09,
+  "threads": 1,
+  "wall_limit_seconds": 1200,
+  "scope": "operator algebra plus finite-chain exponent; no universal nonzero fourth-order coefficient"
+}

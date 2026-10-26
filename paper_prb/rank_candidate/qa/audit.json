@@ -1,0 +1,62 @@
+{
+  "hash_entries_checked": 185,
+  "hash_failures": [],
+  "original_manuscript_unchanged": true,
+  "original_pdf_sha256": "e6d68fc15391e990d9b1d73289e5378f8224e312cfd4a50de1bb419fcf412766",
+  "pages": [
+    {
+      "page": 1,
+      "text_chars": 4719,
+      "width": 612.0,
+      "height": 792.0
+    },
+    {
+      "page": 2,
+      "text_chars": 3824,
+      "width": 612.0,
+      "height": 792.0
+    },
+    {
+      "page": 3,
+      "text_chars": 4219,
+      "width": 612.0,
+      "height": 792.0
+    },
+    {
+      "page": 4,
+      "text_chars": 5451,
+      "width": 612.0,
+      "height": 792.0
+    },
+    {
+      "page": 5,
+      "text_chars": 3047,
+      "width": 612.0,
+      "height": 792.0
+    },
+    {
+      "page": 6,
+      "text_chars": 3053,
+      "width": 612.0,
+      "height": 792.0
+    },
+    {
+      "page": 7,
+      "text_chars": 5577,
+      "width": 612.0,
+      "height": 792.0
+    },
+    {
+      "page": 8,
+      "text_chars": 2966,
+      "width": 612.0,
+      "height": 792.0
+    }
+  ],
+  "layout_or_reference_warnings": [],
+  "figure_svg_text_nodes": 64,
+  "figure_pdf_text_chars": 604,
+  "control_svg_text_nodes": 67,
+  "control_pdf_text_chars": 592,
+  "visual_review": "pending; rendered pages require inspection"
+}

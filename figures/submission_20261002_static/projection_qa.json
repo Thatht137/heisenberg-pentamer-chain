@@ -1,0 +1,66 @@
+{
+  "status": "rendered_for_visual_review",
+  "backend": "Python/matplotlib",
+  "core_conclusion": "The two-pentamer weak-coupling projection predicts absolute low-band weights and the gap at predefined weak points; it is not a validation of the production beta=0.5 spectra.",
+  "L": 10,
+  "q_points_per_panel": 41,
+  "coupling_points_per_panel": 5,
+  "q_panel_g": 0.01,
+  "predefined_weak_g_max": 0.01,
+  "production_beta_in_plot": false,
+  "parameter_footer": false,
+  "source_data_changed": false,
+  "new_computation_by_plotter": false,
+  "statistical_error_bars": false,
+  "interpolation": false,
+  "smoothing": false,
+  "source_sha256": {
+    "protocol.json": "ad131448173755c9e3c9a8e3e2f096c7a6e92a700d1016e2e77bccb5d3870680",
+    "summary.json": "fb51c794f6583e6b37885b93cbb2e4555d6549ef377b6b14582f42a1b3e321f5",
+    "coupling_checks.csv": "4d62fa4349e26963774c2244429c22d0a905f6081b45ba59e2b960a482949691",
+    "q_resolved_weights.csv": "48781f4499306f48ce6efcc18e1d033ab2cc7415779cb9d41d5b9c9653eedd69",
+    "folded_prediction.csv": "a61fe34d6f630e0c2348c308b70a9de301ab37b21ec5a161b7c6bb97fe2dbf5f"
+  },
+  "script_sha256": "f6084158cbc3606b6be7abc49759c346847cce9bc58ed674265d4e00c6cf3c69",
+  "export_helper_sha256": "ce3de020e5d1eb464383df538ce26b3d725e7099538fe2ab7eea84d98eedf602",
+  "data": [
+    {
+      "alpha": 0.5,
+      "g": 0.01,
+      "gap_relative_error": 0.0030398178890578276,
+      "weight_relative_error": 0.002643138750095112,
+      "outside_domain_g": 1.4604048132409322,
+      "outside_domain_band_separated": false
+    },
+    {
+      "alpha": -0.5,
+      "g": 0.01,
+      "gap_relative_error": 0.005573818782262929,
+      "weight_relative_error": 0.0008841546449472926,
+      "outside_domain_g": 3.9557790636304118,
+      "outside_domain_band_separated": false
+    }
+  ],
+  "exports": {
+    "nonwhite_fraction": 0.19764411589008363,
+    "text_outside_canvas": [],
+    "outputs": {
+      "fig_projection_ed_benchmark.pdf": {
+        "sha256": "c0b4855670f7fb9fb8b51ddab03a4f2b006d2e76b9292cc1eb41679285845235",
+        "bytes": 54425
+      },
+      "fig_projection_ed_benchmark.svg": {
+        "sha256": "2c2aa5e912412352c6e570d8d90845ca0731bf870d612fdc508c458a68439b71",
+        "bytes": 44030
+      },
+      "fig_projection_ed_benchmark.png": {
+        "sha256": "2da8dcc96aa0f39c48b6f49ede2ef2418deb5dd8103a00b21f8768e22d6328b5",
+        "bytes": 275163
+      }
+    }
+  },
+  "plot_source_sha256": {
+    "projection_plotted_coupling_errors.csv": "29f25ac84375bad406dc41c11e2eb0f250253259a37cd1a88f71730677e4a5cc",
+    "projection_plotted_q_weights.csv": "bd4b2cd4e52d57197abd0eefd1f1d7cca17319a9a2e59a252da9752964fcee37"
+  }
+}

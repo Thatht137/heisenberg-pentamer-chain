@@ -1,0 +1,19 @@
+{
+  "conclusion": "ideal retuned thermal responses differ, but momentum averaging can mask the doublet scaling",
+  "panels": [
+    "effective N=4,6 thermal minimum",
+    "microscopic two-cell weak-coupling scaling",
+    "microscopic finite momentum acceptance limitation"
+  ],
+  "backend": "existing project Python/matplotlib workflow",
+  "archetype": "quantitative grid",
+  "dimensions_inches": [
+    7.2,
+    2.7
+  ],
+  "smoothing": "none",
+  "interpolation": "straight segments between computed points only",
+  "log_axes": "explicitly labelled; no change to source data",
+  "error_bars": "deterministic finite-size ED; no statistical error bars",
+  "scope": "not a thermodynamic-limit or instrument-feasibility figure"
+}

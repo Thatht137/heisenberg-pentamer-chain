@@ -1,0 +1,62 @@
+{
+  "operator_checks": [
+    {
+      "spin": 1.5,
+      "full_dimension": 64,
+      "retuned_operator_relative_norm": 0.7953062469981146,
+      "best_complex_operator_fit_residual": 0.7458245534837198,
+      "doublet_gate": null
+    },
+    {
+      "spin": 0.5,
+      "full_dimension": 8,
+      "retuned_operator_relative_norm": 4.315293829558997e-15,
+      "best_complex_operator_fit_residual": 1.7514647571549323e-15,
+      "doublet_gate": true
+    }
+  ],
+  "repeats": [
+    {
+      "spin": 1.5,
+      "g": 0.005,
+      "W_repeat": 3.7641016699213824e-08,
+      "relative_weight_difference": 3.448530350169676e-11,
+      "eigen_residual": 2.3226126817502595e-14,
+      "ground_count": 2,
+      "low_excitations": 10,
+      "pass": true
+    },
+    {
+      "spin": 1.5,
+      "g": 0.01,
+      "W_repeat": 1.4952685955974095e-07,
+      "relative_weight_difference": 1.946243166628392e-11,
+      "eigen_residual": 4.091864593335675e-14,
+      "ground_count": 2,
+      "low_excitations": 10,
+      "pass": true
+    },
+    {
+      "spin": 0.5,
+      "g": 0.005,
+      "W_repeat": 9.969023940982775e-14,
+      "relative_weight_difference": 1.2152840955792499e-09,
+      "eigen_residual": 2.2743263515085626e-14,
+      "ground_count": 2,
+      "low_excitations": 1,
+      "pass": true
+    },
+    {
+      "spin": 0.5,
+      "g": 0.01,
+      "W_repeat": 1.607405182390101e-12,
+      "relative_weight_difference": 4.6617931737102936e-11,
+      "eigen_residual": 3.6026305733278746e-14,
+      "ground_count": 2,
+      "low_excitations": 1,
+      "pass": true
+    }
+  ],
+  "all_gates_pass": true,
+  "elapsed_seconds": 7.088955799999999
+}

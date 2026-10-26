@@ -1,0 +1,9 @@
+{
+  "scripts\\submission_20261002\\repeat_four_cell_thermal.py": "8c8a50c39b1a54c5bd9991449c5d5ee7079e901293d63eabf71e270e7b2c2606",
+  "scripts\\submission_20261002\\validate_thermal_four_cells.py": "c1051931669ddb886de2f791ba26848e525e0d46760a3ac7a5de2b20fa1b3b62",
+  "scripts\\submission_20261002\\audit_four_cell_thermal_window.py": "6371765f1ebc960234ecd975fdf75595109cd752fa5acbdd2bb40e9a60e42c79",
+  "results\\novelty_20261008\\four_cell_solver_repeat\\comparisons.csv": "cc6b944af52f72b8bca6bf27f23009cd0bd8719cbe7e967bda70fe3eddc679bd",
+  "results\\novelty_20261008\\four_cell_solver_repeat\\low_band_repeat.npz": "26fa6e9ec46bb0302a017673dd1c3ce3d1f9ecd532db05ee371b034994764c5f",
+  "results\\novelty_20261008\\four_cell_solver_repeat\\protocol.json": "48f97156d1601a4b41ece512cabac8e3a94ad95824dd5ebaf133e501a94965fe",
+  "results\\novelty_20261008\\four_cell_solver_repeat\\summary.json": "51b7f47b58f860b2131aa2362fc2258730120d0629575fd414348b888005b683"
+}

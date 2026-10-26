@@ -1,0 +1,152 @@
+[
+  {
+    "g": 0.000625,
+    "sectors": [
+      {
+        "M": 0,
+        "states": 44,
+        "max_residual": 8.050999985403795e-14,
+        "orthogonality": 1.619637123062598e-13
+      },
+      {
+        "M": 1,
+        "states": 40,
+        "max_residual": 7.998441960364685e-14,
+        "orthogonality": 1.4751578408451097e-13
+      },
+      {
+        "M": 2,
+        "states": 31,
+        "max_residual": 8.059495380772404e-14,
+        "orthogonality": 1.4497413010728732e-13
+      },
+      {
+        "M": 3,
+        "states": 20,
+        "max_residual": 8.429439509467595e-14,
+        "orthogonality": 1.4167948750548546e-13
+      },
+      {
+        "M": 4,
+        "states": 10,
+        "max_residual": 6.97431342632754e-14,
+        "orthogonality": 1.4393193079393142e-13
+      },
+      {
+        "M": 5,
+        "states": 4,
+        "max_residual": 3.7817432747619735e-14,
+        "orthogonality": 5.3366566064694524e-14
+      },
+      {
+        "M": 6,
+        "states": 1,
+        "max_residual": 2.4192446783408192e-14,
+        "orthogonality": 3.3084646133829665e-14
+      }
+    ],
+    "spin_quantization_error": 1.3713474800169934e-12,
+    "retained_states": 256,
+    "next_state_M0": 0.16625905359807103
+  },
+  {
+    "g": 0.00125,
+    "sectors": [
+      {
+        "M": 0,
+        "states": 44,
+        "max_residual": 7.837448471092976e-14,
+        "orthogonality": 7.354641413827265e-14
+      },
+      {
+        "M": 1,
+        "states": 40,
+        "max_residual": 7.707368069367686e-14,
+        "orthogonality": 6.332311000482024e-14
+      },
+      {
+        "M": 2,
+        "states": 31,
+        "max_residual": 8.612895585435544e-14,
+        "orthogonality": 6.318791907500695e-14
+      },
+      {
+        "M": 3,
+        "states": 20,
+        "max_residual": 7.728974529677501e-14,
+        "orthogonality": 5.80732225373397e-14
+      },
+      {
+        "M": 4,
+        "states": 10,
+        "max_residual": 7.99604880275547e-14,
+        "orthogonality": 5.391820994084e-14
+      },
+      {
+        "M": 5,
+        "states": 4,
+        "max_residual": 4.237870959535042e-14,
+        "orthogonality": 4.2683058612988487e-14
+      },
+      {
+        "M": 6,
+        "states": 1,
+        "max_residual": 4.1873019665388316e-14,
+        "orthogonality": 1.2878587085651816e-14
+      }
+    ],
+    "spin_quantization_error": 4.831690603168681e-13,
+    "retained_states": 256,
+    "next_state_M0": 0.16629662409821222
+  },
+  {
+    "g": 0.0025,
+    "sectors": [
+      {
+        "M": 0,
+        "states": 44,
+        "max_residual": 7.505842695691683e-14,
+        "orthogonality": 8.981374651222342e-14
+      },
+      {
+        "M": 1,
+        "states": 40,
+        "max_residual": 7.392206777972183e-14,
+        "orthogonality": 8.076096009702547e-14
+      },
+      {
+        "M": 2,
+        "states": 31,
+        "max_residual": 7.496036817792996e-14,
+        "orthogonality": 8.358442716686856e-14
+      },
+      {
+        "M": 3,
+        "states": 20,
+        "max_residual": 8.026797924618533e-14,
+        "orthogonality": 8.945171644803391e-14
+      },
+      {
+        "M": 4,
+        "states": 10,
+        "max_residual": 7.07468556157977e-14,
+        "orthogonality": 7.85549598948787e-14
+      },
+      {
+        "M": 5,
+        "states": 4,
+        "max_residual": 3.299642809304238e-14,
+        "orthogonality": 2.108797091975448e-14
+      },
+      {
+        "M": 6,
+        "states": 1,
+        "max_residual": 4.459608715683659e-15,
+        "orthogonality": 2.6645352591003757e-15
+      }
+    ],
+    "spin_quantization_error": 2.7711166694643907e-13,
+    "retained_states": 256,
+    "next_state_M0": 0.16637195849610986
+  }
+]

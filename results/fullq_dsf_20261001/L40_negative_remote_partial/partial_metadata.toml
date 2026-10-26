@@ -1,0 +1,118 @@
+variance_per_site = 5.360334398574196e-12
+tmax = 60.0
+alpha = -0.5
+q_points = 41
+dmrg_maxdim = 256
+dt = 0.05
+energy = -11.482138302837113
+L = 40
+n_units = 8
+beta = 0.5
+cutoff = 1.0e-10
+nsweeps = 20
+julia_version = "1.12.3"
+tebd_maxdim = 192
+partial_only = true
+
+[[cells]]
+checkpoint_sha256 = "f2542fe62cdec1abf96a940b6499dba5cd8bf80c073a2838c665eab3e8ea66db"
+name = "q001"
+t_reached = 60.0
+q = 0.0
+source_file = "q001.jld2"
+[[cells]]
+checkpoint_sha256 = "cf881bb45482498f070dcdb252c97caada373392c0986c495f4f25eb3ebb732e"
+name = "q002"
+t_reached = 30.0
+q = 0.15707963267948966
+source_file = "q002.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "384c69ee95265847893357113ef1bcf639356459ad8aaad456c89d5a3e63be62"
+name = "q004"
+t_reached = 30.0
+q = 0.47123889803846897
+source_file = "q004.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "84b5d69c6430ebf6447febc0158a38fc2b666a3c905302d298e3ee651fc8ffd5"
+name = "q007"
+t_reached = 20.0
+q = 0.9424777960769379
+source_file = "q007.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "d910468328300d12499eff48ab7dd6e9d5394ea676ffb0f87fff1f496fe1cfab"
+name = "q010"
+t_reached = 20.0
+q = 1.413716694115407
+source_file = "q010.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "001ad2f1ac444e2646cc9fdda458c977f7927ce480d6f6c21627465a78e05baf"
+name = "q013"
+t_reached = 20.0
+q = 1.8849555921538759
+source_file = "q013.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "2c4dec963e9ecbadf518048a2053d7fad166b959cc56f919bc1b520e9dcea608"
+name = "q016"
+t_reached = 20.0
+q = 2.356194490192345
+source_file = "q016.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "bda4d09a39ce33ddcc6bc3f27da80e7f931cbaa86fb3fbd8b7dca5bde9c514bf"
+name = "q019"
+t_reached = 20.0
+q = 2.827433388230814
+source_file = "q019.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "b2fa693da9c5da5053ed571e299e6776cd840ed9c578e80284059ed9cb0e3350"
+name = "q022"
+t_reached = 20.0
+q = 3.2986722862692828
+source_file = "q022.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "bf4bbf2f5a56f7ad5b54ad1ed1e9c16a6644ce31339d6955922464811c320cb5"
+name = "q025"
+t_reached = 20.0
+q = 3.7699111843077517
+source_file = "q025.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "7d3b1b32e956b196f30e33de53b6a4150651e9623d39519ca4abad7b2e9399c2"
+name = "q028"
+t_reached = 20.0
+q = 4.241150082346221
+source_file = "q028.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "972345717b9bbf8c4ee89a7b48858d94705a82c3b6c457dd5c2df9cb0101cc98"
+name = "q030"
+t_reached = 20.0
+q = 4.5553093477052
+source_file = "q030.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "0dc503412e205c85e5a7941c2db7ec3ae2bfda43643290ecb894c1a64e23fa26"
+name = "q032"
+t_reached = 20.0
+q = 4.869468613064179
+source_file = "q032.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "f36b7039322261835ed75565e91ef932ecb9c4aab034e614ced00d54f3ef9298"
+name = "q034"
+t_reached = 20.0
+q = 5.183627878423159
+source_file = "q034.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "195492fda1e2060f564496291610be7291b3fe0afeb7cd0bb82c815df470c9f0"
+name = "q036"
+t_reached = 20.0
+q = 5.497787143782138
+source_file = "q036.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "6cb10405810fde799eb714527ec263678cd7db3a5a5f30c3dd77eb777d078cd4"
+name = "q038"
+t_reached = 30.0
+q = 5.811946409141117
+source_file = "q038.jld2.checkpoint"
+[[cells]]
+checkpoint_sha256 = "b3f3ef93ffdaae4d9eb3b2e055b0c9c4e28f89069788a76d89704b251430ef4b"
+name = "q040"
+t_reached = 30.0
+q = 6.126105674500097
+source_file = "q040.jld2.checkpoint"

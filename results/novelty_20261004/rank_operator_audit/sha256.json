@@ -1,0 +1,9 @@
+{
+  "scripts\\submission_20261002\\audit_rank_operator.py": "642f5fcf0fbff8a5ca68ebbeda2cb37cfaa33e49874aa61818f536c108d070ab",
+  "scripts\\submission_20261002\\probe_rank_geometry.py": "64b4987dc6c29578644c0261118fe89b0ebb5994d693e5e5ebee95a3f898b1d9",
+  "scripts\\submission_20261002\\validate_dark_multicell.py": "e26a78bbbdfd150682c04ee63b19ff0367682b6ccfb5f35376bd05711c16633b",
+  "results\\novelty_20261004\\rank_geometry_probe\\summary.json": "d4d65b138b764dc8baf20b85561036b9f24ffe99876e2926f8d4d368362a63a2",
+  "results\\novelty_20261004\\same_ring_microscopic\\comparisons.csv": "0f06ceea15cc571c9e8b0e1dc5ad13299d5585e3822c48efb3b4bb4fa0125dca",
+  "results\\novelty_20261004\\rank_operator_audit\\protocol.json": "5a65c8aaf71efdd35660b4e80bcd775a4e370e6c5d4f1a76da799b877d1bc95f",
+  "results\\novelty_20261004\\rank_operator_audit\\summary.json": "1e17e007c8885779a0aa5e8ad9989d766db60fc677e539f6784bec822d11ff59"
+}

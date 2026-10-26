@@ -1,0 +1,86 @@
+{
+  "passed": true,
+  "symbolic_polynomial_proof": true,
+  "direct_matrix_checks": [
+    {
+      "spin": "1/2",
+      "d": 2,
+      "dd": "2",
+      "dx": "0",
+      "xx": "0",
+      "minimum": "0",
+      "bound_times_ell_over_b2": "0",
+      "bond_identity_exact": true,
+      "partial_traces_exact": true
+    },
+    {
+      "spin": "1",
+      "d": 3,
+      "dd": "32",
+      "dx": "40/3",
+      "xx": "140/9",
+      "minimum": "10",
+      "bound_times_ell_over_b2": "10/9",
+      "bond_identity_exact": true,
+      "partial_traces_exact": true
+    },
+    {
+      "spin": "3/2",
+      "d": 4,
+      "dd": "200",
+      "dx": "200",
+      "xx": "560",
+      "minimum": "360",
+      "bound_times_ell_over_b2": "45/2",
+      "bond_identity_exact": true,
+      "partial_traces_exact": true
+    },
+    {
+      "spin": "2",
+      "d": 5,
+      "dd": "800",
+      "dx": "1400",
+      "xx": "6860",
+      "minimum": "4410",
+      "bound_times_ell_over_b2": "882/5",
+      "bond_identity_exact": true,
+      "partial_traces_exact": true
+    },
+    {
+      "spin": "5/2",
+      "d": 6,
+      "dd": "2450",
+      "dx": "19600/3",
+      "xx": "439040/9",
+      "minimum": "31360",
+      "bound_times_ell_over_b2": "7840/9",
+      "bond_identity_exact": true,
+      "partial_traces_exact": true
+    },
+    {
+      "spin": "3",
+      "d": 7,
+      "dd": "6272",
+      "dx": "23520",
+      "xx": "246960",
+      "minimum": "158760",
+      "bound_times_ell_over_b2": "3240",
+      "bond_identity_exact": true,
+      "partial_traces_exact": true
+    }
+  ],
+  "Gdd": "d^2*(d^2-1)^2/18",
+  "Gdx_over_Gdd": "(d^2-4)/12",
+  "Gxx_over_Gdd": "7*(d^2-4)^2/360",
+  "bond_minimum": "d^2*(d^2-1)^2*(d^2-4)^2/1440",
+  "chain_lower_bound": "b^2*(d^2-1)^2*(d^2-4)^2/(1440*ell)",
+  "doublet_bound": "0",
+  "quartet_ell5_bound_over_b2": "9/2",
+  "meaning": "positive for s>=1 conditional on b!=0 and stated probe form; not a universal bound for arbitrary spin chains",
+  "not_claimed": [
+    "arbitrary momentum",
+    "thermodynamic finite-T intensity floor",
+    "all higher-spin clusters have nonzero b"
+  ],
+  "elapsed_seconds": 0.483388
+}

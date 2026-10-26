@@ -1,0 +1,87 @@
+\section{Introduction}
+\label{sec:introduction}
+
+Clusterized quantum magnets provide a direct route from the spectrum of a
+few-spin unit to the collective behavior of a quantum many-body system.
+Their local multiplets can survive as low-energy degrees of freedom, become
+dispersive, or be removed from an experimental response by symmetry.
+Clusterized chains therefore separate three questions that are often mixed
+together in a conventional phase diagram: which local state remains active, how
+neighboring units couple, and which resulting excitations are visible.
+
+The spin-$1/2$ tetramer chain is a well-studied reference of this type, because
+spin order, entanglement structure, and excitation spectra have been organized
+within a common coupling diagram~\cite{li2026tetramer,gong2008tetramer}.
+Experimentally, the tetramer compound CuInVO$_5$ has been characterized as a
+multimerized magnet with a singlet unit-cell ground state, and its magnetic
+spectrum has been discussed in terms of both local multiplet and spinon
+excitations~\cite{hase2016cuinvo5,reja2019cuinvo5,singhania2018}.
+Trimer chains, by contrast, host a doublet unit cell and support fractionalized
+and composite excitations that have been resolved in
+RIXS~\cite{cheng2022trimer,cheng2024trimerfield,li2025rixstrimer,prabhakar2025trimer,bera2022trimer}.
+Beyond the spectrum, the dimerized and tetramerized limits are classified by
+nonlocal string order and symmetry-protected
+topology~\cite{guwen2009,pollmann2010,pollmann2012,han2017bcfg,ma2023aspt},
+diagnosed by order parameters and entanglement measures that do not rely on a
+local multiplet picture~\cite{hung2015,lu2020,scheie2021}.
+Related one-dimensional models further show that an intermediate deconfined
+critical state can separate two gapped cluster
+phases~\cite{jiang2019dqcp,roberts2019dqcp,huang2019dqcp,yang2021dqcp}, a
+possibility that has to be tested explicitly for an odd unit cell.
+Even in the molecular limit, the collective spin dynamics of a closed cluster is
+not simply a sum of local transitions~\cite{ummethum2012}.
+
+Replacing four spins by five is not a minor geometric modification.
+A unit cell with an odd number of half-integer spins retains a half-integer
+degree of freedom unless symmetry breaking or ground-state degeneracy
+intervenes.
+Lieb--Schultz--Mattis-type results therefore rule out a unique
+symmetry-preserving gapped ground state under the relevant translation and
+spin-rotation assumptions~\cite{lieb1961,ogata2019,affleck1987}, in close analogy
+with the Haldane conjecture for integer-spin chains~\cite{haldane1983} and the
+dimerized-chain crossovers studied earlier~\cite{hida1992,chitra1995}.
+The odd cell thus changes the question.
+It is no longer which gapped cluster phase forms, but which cell state carries the
+low-energy physics, whether the resulting chain is the natural $c=1$ Luttinger
+liquid~\cite{giamarchi2003,calabrese2004}, and which of its excitations a spin
+probe can reach.
+
+Here we study a linear Heisenberg pentamer chain with two intra-cell exchanges,
+$J_1$ and $J_2$, and an inter-cell exchange $J_3$.
+We set $J_1=1$ and define $\alpha=J_2/J_1$ and $\beta=J_3/J_1$.
+The geometry differs from previously studied mixed-spin or differently connected
+pentamers~\cite{haraldsen2011pentamer}.
+The isolated cell is the natural starting point: its ground multiplet fixes the
+effective degree of freedom of the chain, and its reflection parity fixes which
+local excitations a spin probe can excite.
+We therefore determine the complete isolated-cell spectrum, construct the
+projected low-energy chain, and test this picture against static and dynamical
+many-body calculations.
+
+Three results organize this work.
+First, throughout the sampled positive-$\alpha$ region, the pentamer ground
+state is an even-parity spin-$1/2$ doublet and positive $\beta$ generates an
+antiferromagnetic effective chain.
+Second, reflection parity makes the lowest excited doublet essentially dark at
+$q=\pi$ and concentrates the local inelastic weight in spin-$3/2$ multiplets, in
+parallel with the momentum-selective response discussed for related clusterized
+chains~\cite{gao2024srv3o9,schlappa2018,ishii2025kedge}.
+Third, negative $\alpha$ switches the isolated cell to a spin-$3/2$ quartet whose
+folded shape factor peaks at $0.60\pi$, and finite chains develop a momentum
+reconstruction from that value toward $\pi$.
+Two independent diagnostics of this reconstruction select different coupling
+intervals, so it is best described as a finite-size crossover rather than a phase
+boundary.
+These results rest on the standard methodology of one-dimensional magnetism: matrix-product-state
+DMRG~\cite{white1992,schollwoeck2005,schollwoeck2011} combined with
+correction-vector and real-time spectral
+techniques~\cite{kuehner1999,jeckelmann2002,vidal2004,paeckel2019}, supported by
+finite-temperature and entanglement-based
+diagnostics~\cite{barthel2009,fishman2022,keselman2020}.
+
+Section~\ref{sec:methods} defines the model, the projection, and the numerical
+criteria.
+Section~\ref{sec:results} follows the positive-coupling chain from the isolated
+cell to the collective spectrum and then turns to negative $\alpha$.
+Section~\ref{sec:discussion} compares the results with the tetramer chain and
+states their consequences for scattering experiments.

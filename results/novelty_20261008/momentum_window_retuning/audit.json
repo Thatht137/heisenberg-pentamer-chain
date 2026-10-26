@@ -1,0 +1,53 @@
+{
+  "source_hashes_checked": 10,
+  "hash_failures": [],
+  "direct_transition_checks": [
+    {
+      "spin": 1.5,
+      "g": 0.00125,
+      "W_direct": 2.3873837950049297e-09,
+      "relative_error": 1.9393375794152234e-12,
+      "max_eigen_residual": 3.2260117209415755e-15,
+      "max_detailed_balance_error": 3.9828746494428283e-22,
+      "max_omitted_population": 0.0
+    },
+    {
+      "spin": 1.5,
+      "g": 0.01,
+      "W_direct": 1.537875317270566e-07,
+      "relative_error": 9.681144774731365e-14,
+      "max_eigen_residual": 3.1814974341264085e-15,
+      "max_detailed_balance_error": 2.0381730293306602e-21,
+      "max_omitted_population": 6.32901580088222e-250
+    },
+    {
+      "spin": 0.5,
+      "g": 0.00125,
+      "W_direct": 5.1940843635664026e-14,
+      "relative_error": 1.4361012379282556e-10,
+      "max_eigen_residual": 2.8339473300166926e-15,
+      "max_detailed_balance_error": 1.368875618950192e-24,
+      "max_omitted_population": 0.0
+    },
+    {
+      "spin": 0.5,
+      "g": 0.01,
+      "W_direct": 2.1355926582957858e-10,
+      "relative_error": 4.863665026277886e-12,
+      "max_eigen_residual": 2.8434894235375312e-15,
+      "max_detailed_balance_error": 1.6618575494073172e-22,
+      "max_omitted_population": 7.345046788059844e-115
+    }
+  ],
+  "shared_hamiltonian_and_eigensolver": true,
+  "independent_method_claim": false,
+  "doublet_optimized_center_weight_upper_bound": 1e-28,
+  "doublet_center_passes_upper_bound": true,
+  "weakest_limit_max_relative_error": {
+    "1.5": 0.002982158436157123,
+    "0.5": 0.0005425539458838724
+  },
+  "quadrature_max_relative_error": 1.6451603822842812e-10,
+  "elapsed_seconds": 2.6413572,
+  "no_general_doublet_fourth_order_floor_claim": true
+}

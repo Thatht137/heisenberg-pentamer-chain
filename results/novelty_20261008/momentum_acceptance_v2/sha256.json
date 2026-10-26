@@ -1,0 +1,8 @@
+{
+  "scripts\\submission_20261002\\check_momentum_acceptance.py": "6ede145d772135dc82b22798084f3fe017afb4ca7b420f93c4e44d85d66085e3",
+  "scripts\\submission_20261002\\validate_thermal_two_cells.py": "601a0279f25901b86f4bde771cae8361cd135c974a6ded29e019b8fd77d2e015",
+  "results\\novelty_20261008\\thermal_microscopic_two_cells\\comparisons.csv": "0321e5c872951d086a0f3a2bb07e3cc9021f54d855b0cd41feeb86578cd108aa",
+  "results\\novelty_20261008\\momentum_acceptance_v2\\acceptance_weights.csv": "1eb5d9cf96074b622d727bf7e9e87b369b94fe6516c13fc9ae7a5f8ed0d4c66a",
+  "results\\novelty_20261008\\momentum_acceptance_v2\\protocol.json": "4c74124ff8eec72663f46a1031f8b6bd11dc1f389e3a38fe1dd2e1acb51cc056",
+  "results\\novelty_20261008\\momentum_acceptance_v2\\summary.json": "284440e257fa7c5ce7d24ca43f112e7e24d3485a242c07f6590ab53b94f91ec8"
+}

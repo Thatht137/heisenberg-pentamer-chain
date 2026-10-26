@@ -1,0 +1,11 @@
+{
+  "scripts\\submission_20261002\\probe_doublet_extinction.py": "696d801793276d32b72d3ffde3bebbff25a9aa019024ecacd38a895c0e8dae74",
+  "scripts\\submission_20261002\\validate_dark_multicell.py": "e26a78bbbdfd150682c04ee63b19ff0367682b6ccfb5f35376bd05711c16633b",
+  "scripts\\submission_20261002\\local_projection_checks.py": "1470aab021ef1a9caeacc80a4e82f29cb30796379d2449aa0b9624537ea729ad",
+  "scripts\\autoresearch_v5\\analyze_negative_phase_independent_observables.py": "ab97d27176317a45b1d554a614fae5e6188ccfc814b81dfb629cb92e32145b93",
+  "results\\novelty_20261004\\doublet_control\\comparisons.csv": "3e63f6fe4f1088b97eb3b02ae02d244765ca1b7f06e5262ef6657b425d2d9b61",
+  "results\\novelty_20261004\\doublet_control\\local_theory.json": "4e96cc52fd5b44f34b687ea0afecfae614af428f32521bda44b310c88aa1b436",
+  "results\\novelty_20261004\\doublet_control\\protocol.json": "a7438aaed6f57e3976a39a36a0f16a68a27cce4d3dac9be686a42235cf327846",
+  "results\\novelty_20261004\\doublet_control\\spectral_lines.csv": "6122875ae4f8346bfbfa10863d96198e614fc681da05d1ce10d63283133df09e",
+  "results\\novelty_20261004\\doublet_control\\summary.json": "30b305fa5e6ca2cac40a8a3e3b93824ae8051a7e0eb29b12922b75505821691b"
+}

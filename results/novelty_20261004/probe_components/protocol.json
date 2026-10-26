@@ -1,0 +1,22 @@
+{
+  "effective_cells": [
+    4,
+    6,
+    8,
+    10
+  ],
+  "boundaries": [
+    "OBC",
+    "PBC"
+  ],
+  "purpose": "separate boundary one-spin term from quadrupole-spin term; compare modewise cancellation",
+  "decomposition": "K=K_linear+K_composite, each projected orthogonal to D|0>",
+  "tests": [
+    "sum of components",
+    "PBC scalar source has zero perpendicular part",
+    "prior Wmin agreement"
+  ],
+  "threads": 1,
+  "wall_limit_seconds": 600,
+  "bulk_claim": false
+}

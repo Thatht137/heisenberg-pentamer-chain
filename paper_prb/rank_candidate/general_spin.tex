@@ -1,0 +1,196 @@
+\section{Exact second moment for the dipole--composite probe}
+\label{app:general-moment}
+
+The commutator moment tests simultaneous cancellation by summing the
+squared inelastic amplitudes with their squared frequencies.
+Consider a uniform spin-$s$ nearest-neighbor periodic chain with even
+$N\ge4$ and $s\ge1/2$. Let
+$R=(bY+u\widetilde D)/\sqrt{\ell N}$, with the operators defined in
+Sec.~\ref{sec:thermal} and normalization $\ell=5$ for the pentamer.
+Set $c=s(s+1)$ and $d=2s+1$. We derive
+\begin{align}
+ M_2(u)&=\frac{1}{d^N}\operatorname{Tr}[h,R]^\dagger[h,R]\notag\\
+ &=M_{2,\min}+\frac{(d^2-1)^2}{18\ell}
+       \left[u+\frac{b(d^2-4)}{12}\right]^2,\\
+ M_{2,\min}&=\frac{b^2c^2(4c-3)(86c-27)}{810\ell}.
+ \label{eq:general-moment}
+\end{align}
+For $s=1/2$ the quadrupole vanishes, giving a zero minimum.
+For $s\ge1$ and nonzero $b$, the minimum is positive.
+The result applies to this dipole--composite probe; its coefficient $b$
+must be determined from the microscopic cluster.
+
+The derivation separates same-bond and adjacent-bond commutators.
+Their different operator supports make their contributions orthogonal
+in the uniform trace.
+On one bond, the quadrupole--spin vector obeys
+\begin{equation}
+ X_{ij}=\tfrac12\{h_{ij},D_{ij}\}+\tfrac{c}{3}D_{ij},
+ \qquad D_{ij}=T_i^z-T_j^z.
+\end{equation}
+In the $J-1\to J$ channel its coefficient relative to $D_{ij}$ is
+$r_J=J^2/2-2c/3$. The squared $D^z$ matrix elements summed over magnetic
+components are $J(d^2-J^2)/3$, and the corresponding energy difference is
+$J$. Including both transition directions, define
+$w_J=2J^3(d^2-J^2)/3$ for $1\le J\le d-1$. Thus the Gram entries of
+$C_D=[h_{ij},D_{ij}]$ and $C_X=[h_{ij},X_{ij}]$ are sums of
+$w_J$, $w_Jr_J$, and $w_Jr_J^2$:
+\begin{align}
+ G_{DD}&=\frac{d^2(d^2-1)^2}{18},\notag\\
+ \frac{G_{DX}}{G_{DD}}&=\frac{d^2-4}{12},\qquad
+ \frac{G_{XX}}{G_{DD}}=\frac{7(d^2-4)^2}{360}.
+ \label{eq:general-bond-gram}
+\end{align}
+Evaluation of these finite power sums gives the minimized bond norm
+$d^2(d^2-1)^2(d^2-4)^2/1440$.
+For $s=3/2$, the Gram matrix is
+\begin{equation}
+ \begin{pmatrix}G_{DD}&G_{DX}\\G_{DX}&G_{XX}\end{pmatrix}
+ =\begin{pmatrix}200&200\\200&560\end{pmatrix},
+ \label{eq:thermal-gram}
+\end{equation}
+with minimized bond norm $360$.
+
+The adjacent-bond contribution on sites $0,1,2$ is
+\begin{equation}
+ Z_{012}=[h_{12},X_{01}]-[h_{01},X_{12}].
+\end{equation}
+With repeated Cartesian indices summed, its explicit decomposition is
+\begin{align}
+ Z_{012}/i={}&\epsilon_{abc}
+  (Q_0^{zb}T_1^cT_2^a+T_0^aT_1^cQ_2^{zb})\notag\\
+ &-T_0^a(\epsilon_{bzc}Q_1^{ca}
+                  +\epsilon_{azc}Q_1^{cb})T_2^b.
+ \label{eq:three-site-commutator}
+\end{align}
+The three terms have local tensor-rank patterns $QTT$, $TTQ$, and
+$TQT$, respectively. They are mutually orthogonal because
+$\operatorname{tr}(T^aQ^{bc})=0$. Rotational invariance and the traces of
+$(T^z)^2$ and $(T^z)^4$ give
+\begin{align}
+ \operatorname{tr}(T^aT^b)&=t\delta_{ab},\quad t=dc/3,\notag\\
+ \operatorname{tr}(Q^{ab}Q^{ef})&=v(\delta_{ae}\delta_{bf}
+ +\delta_{af}\delta_{be}-\tfrac23\delta_{ab}\delta_{ef}),\notag\\
+ v&=dc(4c-3)/60.
+\end{align}
+Contracting the Levi-Civita symbols in
+Eq.~\eqref{eq:three-site-commutator} gives $20/3$, $20/3$, and $20$
+times $vt^2$ for those three patterns. Therefore
+\begin{equation}
+ \|Z_{012}\|_{\rm HS}^2=\frac{100}{3}vt^2
+                      =\frac{5}{81}d^3c^3(4c-3).
+ \label{eq:three-site-norm}
+\end{equation}
+
+All one-site partial traces of $C_D,C_X$ and all two-site partial traces
+of $Z$ vanish. Distinct two-site and three-site supports are consequently
+orthogonal in the full uniform trace. For a periodic chain with $N\ge4$,
+there are $N$ distinct supports of each type. The alternating signs give
+\begin{equation}
+ M_2(u)=\frac{\|bC_X+uC_D\|_{\rm HS}^2}{\ell d^2}
+       +\frac{b^2\|Z\|_{\rm HS}^2}{\ell d^3}.
+\end{equation}
+Completing the square with Eqs.~\eqref{eq:general-bond-gram} and
+\eqref{eq:three-site-norm} yields Eq.~\eqref{eq:general-moment}.
+The adjacent-bond contribution is independent of $u$.
+Keeping only the same-bond contribution gives the quartet bound
+\begin{equation}
+ \min_u\frac{\|[h,R]\|_{\rm HS}^2}{4^N}
+ \ge\frac{360b^2}{5\times16}=\frac92b^2,
+ \label{eq:thermal-bound}
+\end{equation}
+which the exact result sharpens to $(197/16)b^2$.
+
+The local identities and partial traces were checked with
+exact rational matrices for $s=1/2,1,3/2,2,5/2,3$. Separate orthonormal
+Cartesian-spin Kronecker matrices on the full $N=4,6$ chains verify the
+whole quadratic for $s=1/2,1,3/2$ to floating-point accuracy.
+
+The trace in Eq.~\eqref{eq:general-moment} includes both frequency signs;
+the positive-only moment is half as large. At the four-cell ground-state
+retuning $u=3b$, it gives $M_2=(837/16)b^2=0.79932812$.
+The twenty-spin low-band transition sum, divided by
+$\beta^2J_{\rm eff}^2$ with uniform initial weights, yields $0.79967945$
+at $g=0.000625$, a $0.044\%$ deviation.
+The deviations increase to $0.088\%$ and $0.177\%$ at the next two
+couplings. The frequency-squared factor suppresses quasielastic
+contributions in this leading limit, allowing the complete transition
+sum to be used without a frequency cutoff.
+
+\subsection{A size-uniform positive-frequency weight bound}
+\label{app:weight-bound}
+
+Use the normalized Hilbert--Schmidt norm on each operator's support,
+$\|O\|_2^2=d^{-|\operatorname{supp}O|}\operatorname{Tr}O^\dagger O$.
+The full uniform-trace spectral measure of $R$ is symmetric in frequency.
+Define its moments $M_{2k}$ including both frequency signs; $M_0$ also
+includes equal-energy matrix elements. Local tensor orthogonality gives
+\begin{equation}
+ M_0=\frac{1}{\ell}\left[\frac{c}{3}u^2
+          +\frac{c^2(4c-3)}{27}b^2\right].
+ \label{eq:uniform-M0}
+\end{equation}
+For $s\ge1$, comparison with Eq.~\eqref{eq:general-moment} yields
+$M_2\ge(3c/2)M_0$. To see positivity without optimizing an irrational
+eigenvalue, rescale $b,u$ by the square roots of their coefficients in
+$\ell M_0$. The matrix for $\ell[M_2-(3c/2)M_0]$ in these coordinates has
+diagonal entries $(61c-42)/30$ and $7c/6$, and determinant
+$c(107c-54)/180$. All are positive for $c\ge2$.
+
+For the fourth moment write
+\begin{align}
+ [h,R]&=\frac{1}{\sqrt{\ell N}}\sum_i(-1)^i B_i,\notag\\
+ B_i&=bC_{X,i}+uC_{D,i}+bZ_{i,i+1,i+2}.
+\end{align}
+The two-site and three-site terms are orthogonal as above, giving
+$\|B_i\|_2^2=\ell M_2$. Only the four bonds meeting sites $i,i+1,i+2$
+contribute to $G_i=[h,B_i]$. Since $\|h_{ij}\|_{\rm op}=c$,
+$\|G_i\|_2\le8c\|B_i\|_2$. Each traceless $G_i$ is supported within
+the five-site interval from $i-1$ to $i+3$. Two disjoint intervals have
+zero uniform-trace inner product. At most nine translated intervals,
+including itself, overlap a given interval; for $N=4,6,8$ the number is
+even smaller. Bounding the remaining inner products by their norms gives
+\begin{equation}
+ M_4\le\frac{9}{\ell}\|G_i\|_2^2
+      \le576c^2M_2.
+ \label{eq:uniform-M4-bound}
+\end{equation}
+The constants depend on local spin and support size, independently of $N$.
+
+Separate the spectral measure into $|\omega|\le\nu$ and
+$|\omega|>\nu$. The low-frequency contribution to $M_2$ is at most
+$\nu^2M_0$. Cauchy--Schwarz for the remaining measure therefore gives
+\begin{equation}
+ C^{\rm tr}_{>\nu}\ge
+ \frac{[M_2-\nu^2M_0]_+^2}{2M_4},
+ \label{eq:window-moment-inequality}
+\end{equation}
+where $[x]_+=\max(x,0)$ and the factor two accounts for the two frequency
+signs. Taking $\nu=\sqrt{3c/4}$ and using the preceding inequalities,
+\begin{align}
+ C^{\rm tr}_{>\sqrt{3c/4}}
+ &\ge\frac{M_2}{4608c^2}\notag\\
+ &\ge\frac{b^2(4c-3)(86c-27)}{3732480\ell}>0
+ \quad(s\ge1,\ b\ne0).
+ \label{eq:general-window-bound}
+\end{align}
+For the pentamer quartet, this becomes
+\begin{equation}
+ C^{\rm tr}_{>\sqrt{45}/4}\ge\frac{197}{1036800}b^2>0
+ \qquad(N\ge4\text{ even}).
+ \label{eq:quartet-window-bound}
+\end{equation}
+The bound holds for every real $u$, with the effective uniform-trace
+limit taken before increasing $N$. It prevents all of the optimized
+weight from vanishing or moving towards zero frequency in this limit.
+At fixed positive $\tau$, Eq.~\eqref{eq:thermal-criterion} establishes
+nonvanishing weight for each finite chain; a size-uniform bound at that
+temperature requires a separate argument.
+
+Full-chain matrices at $s=1,3/2$ and $N=4,6$ verify the zeroth-, second-,
+and fourth-moment inequalities. Complete four-site diagonalization also
+checks Eq.~\eqref{eq:window-moment-inequality} from actual transition
+weights. Minimizing the quartet window weight gives $0.350008b^2$,
+about 1842 times the lower bound. The bound consequently establishes
+size-uniform nonvanishing weight while allowing substantially larger
+model-specific intensities.

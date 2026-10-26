@@ -1,0 +1,200 @@
+\section{Microscopic tests and finite-chain controls}
+\label{app:ground-controls}
+
+Zero-temperature spectra test the state dependence of exchange
+cancellation and separate the composite response from endpoint effects.
+The comparisons below combine microscopic exact diagonalization with
+effective-chain calculations at matched local roots.
+
+\subsection{Different powers on the same periodic geometry}
+
+Local diagonalization found simple roots at each of 16 sampled values
+of $Q/\pi$ from $0.55$ to $1$, using $q=(Q+4\pi)/5$ for the quartet
+and $q=(Q+2\pi)/5$ for the doublet [Fig.~\ref{fig:rank-controls}(a)].
+All sampled local gaps were positive, with minimum $0.04263$.
+The quartet coefficient $b$ was nonzero throughout this sample,
+whereas the doublet quadrupole vanished identically.
+These local roots provide candidate interference settings; a nonzero
+many-body residual must be established separately at each setting.
+
+The microscopic comparison uses the same $N=3$, $L=15$ periodic
+geometry for both local spins. Table~\ref{tab:rank-roots} specifies simple
+roots at different physical momenta but the same effective momentum
+$Q=2\pi/3$. Both roots belong to the Hamiltonian in
+Eq.~\eqref{eq:rank-ham}.
+The odd periodic geometry is frustrated, so this comparison tests the
+finite-system mechanism rather than an infinite unfrustrated chain.
+
+\begin{table}[!t]
+\caption{Local roots and predictions for the microscopic three-cell comparison.
+The local gap is evaluated at the root. $C_0=\|k\|^2$ and $\Cmin$ are
+effective predictions for the coefficient of $\beta^2$, not fits to the
+microscopic weights.}
+\label{tab:rank-roots}
+\begin{ruledtabular}
+\begin{tabular}{lrr}
+ & Quartet & Doublet\\
+$s$ & $3/2$ & $1/2$\\
+$q/\pi$ & $14/15$ & $8/15$\\
+$\alpha_*$ & $-0.38103454$ & $1.45352917$\\
+$\Dloc$ & $0.10336638$ & $1.10511693$\\
+$\kappa_{\mathrm{opt}}$ & $-9.45913710$ & $-0.17229706$\\
+$C_0$ & $0.54511625$ & $0.000474008$\\
+$\Cmin$ & $0.14202789$ & $<10^{-30}$\\
+\end{tabular}
+\end{ruledtabular}
+\end{table}
+
+We diagonalized the microscopic $S^z=1/2$ sector of dimension 6435 at
+$g=0.005,0.01,0.02,0.04$, both at the fixed local root and with its
+predicted linear retuning. There are two degenerate ground states in this
+sector; their equal average excludes the entire ground eigenspace from the
+inelastic weight. All ten quartet or one doublet low-band excited states
+in this sector were included, with additional states above the cutoff used
+to check band completeness. The largest eigen-residual was below
+$3.1\times10^{-13}$.
+
+The retuned quartet weight remained quadratic at weak coupling
+[Fig.~\ref{fig:rank-evidence}(a)]. At the smallest $g$, its coefficient
+$\Wlow/\beta^2=0.14091678$ differs from the independent prediction
+$0.14202789$ by $0.7823\%$. A log--log fit over the three smallest couplings
+gave a slope $1.9869$. For the doublet the corresponding slope was $4.0167$
+[Fig.~\ref{fig:rank-evidence}(b)]. Its $\Wlow/\beta^4$ varied from
+$1.0694\times10^{-4}$ to $1.1290\times10^{-4}$ across all four couplings.
+These finite-interval slopes test perturbative orders along the specified
+retuning trajectories. The doublet result supports
+Eq.~\eqref{eq:rank-doublet}; further retuning may suppress its weight
+below fourth order.
+
+The cancellation was also checked at the operator level. In the full
+eight-dimensional retained doublet space, the relative norm of
+$K_q+\kappa_{\mathrm{opt}}A'D_Q$ was $4.32\times10^{-15}$.
+The analogous quartet operator did not vanish in its full 64-dimensional
+space. A restart with a different random vector, larger Krylov space, and
+tighter tolerance reproduced the two weakest doublet weights to relative
+differences below $1.3\times10^{-9}$.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.98\textwidth]{rank_compensation.pdf}
+\caption{Retuned-weight comparison and validation limits.
+(a,b) Absolute microscopic low-band weights on the same three-cell periodic
+geometry, at the parameters in Table~\ref{tab:rank-roots}. Dashed curves keep
+$\alpha=\alpha_*$; solid curves use $\alpha_*+\kappa_{\mathrm{opt}}\beta$.
+The vertical ranges differ, but no independent intensity normalization is
+applied. Points are calculated values; segments only connect them.
+(c) Leading quartet minimum $\Cmin$ at the exact $q=\pi$ root for even
+effective chains. ED denotes exact diagonalization, OBC/PBC denote open/periodic
+boundaries. The accepted DMRG point is an effective $N=20$ open chain;
+the $N=40$ cross failed the preset energy-convergence criterion and is not
+used as converged evidence. No thermodynamic fit is drawn.
+(d) Microscopic $L=20$ open-chain comparison of the retuned leading probe
+with the line-weight vector and integrated weight. The errors at larger
+$g$ reveal failure of the leading theory. All panels use calculated data
+without smoothing; logarithmic axes in (a,b,d) change only the display.}
+\label{fig:rank-evidence}
+\end{figure*}
+
+\subsection{Even periodic chains and the open-end contribution}
+
+The six-cell effective ring uses the same local roots and effective
+momentum $Q=2\pi/3$ as Table~\ref{tab:rank-roots}.
+The quartet effective minimum was $0.06641159$, while the doublet minimum
+was below $4\times10^{-32}$. The quartet's optimum changed to
+$\kappa=-5.56848$, reflecting its dependence on the many-body ground state;
+the doublet's operator-level optimum remained $-0.17229706$.
+Thus the contrast also occurs without odd-ring frustration in the effective
+model. This is not a microscopic thirty-spin calculation.
+At the same quartet root, the accepted $N=12$ periodic MPS gives
+$\Cmin=0.08315075$ and $\kappa_{\mathrm{opt}}=-5.67393$
+[Fig.~\ref{fig:rank-controls}(d)]. Increasing its bond dimension from
+384 to 512 changes this weight by only $6.15\times10^{-7}$ relatively.
+Its scalar contribution is removed to within $1.4\times10^{-17}$ in
+the residual norm squared, again identifying a composite rather than
+endpoint source. These size-dependent coefficients are not extrapolated.
+
+For periodic effective chains at the exact quartet root in
+Eq.~\eqref{eq:rank-exact-root}, the sizes $N=6,8,10$ gave
+$\Cmin=0.000443300,0.000649072,0.000751090$, respectively.
+However, $N=4$ gave zero to numerical precision
+[Fig.~\ref{fig:rank-evidence}(c)]. This exception rules out attributing an
+unavoidable nonzero residual to the local spin alone.
+
+Periodic DMRG extends this test to $N=12$, where bond dimension 512 gives
+$\Cmin=0.00080811794$. Relative to bond dimension 384, the coefficient
+changes by $3.52\times10^{-5}$ and the energy per cell by
+$2.97\times10^{-9}$, passing the original convergence thresholds.
+The energy variance per cell is $6.73\times10^{-10}$, and the bond-energy
+spread is $1.41\times10^{-8}$. These periodic results exclude an endpoint
+origin for this finite-chain residual without establishing a thermodynamic
+lower bound.
+The $N=16$ calculation at bond dimension 768 had a stable weight but an
+energy change per cell of $1.304\times10^{-8}$, above the preset
+$10^{-8}$ gate. It is marked unaccepted in Fig.~\ref{fig:rank-controls}(c)
+and is not used to extend the convergence claim.
+
+To distinguish bulk-link physics from endpoints, we separated $K_q$ into the
+one-spin and quadrupole-times-spin pieces of Eq.~\eqref{eq:rank-link} before
+projecting each perpendicular to $d$. For all periodic cases, the perpendicular
+one-spin norm squared was below $2\times10^{-30}$. The nonzero residuals are
+therefore due to the composite source. Open chains do not share this property.
+At $N=10$ OBC, the one-spin, composite, and interference contributions to
+$\Cmin$ were $0.000286554$, $0.001244067$, and $-0.000513469$.
+Their sum is $0.001017151$. Calling this whole open-chain residual a pure
+composite response would be incorrect.
+
+Retuning also changed which excitations dominated the remaining effective
+weight. For $N=10$ PBC, the lowest-line share decreased from $0.94007$ at the
+fixed root to $1.04\times10^{-5}$ at the integrated-weight optimum. The mean
+energy of the residual, in units of $\beta$, rose from $0.09456$ to $0.85896$.
+These numbers describe an effective finite chain. They do not imply a bulk
+continuum, and the integrated optimum is not exactly the value that cancels
+the lowest line alone.
+
+An independent MPS calculation reproduced the $N=10$ open-chain ED minimum
+to relative error $2.4\times10^{-6}$ at bond dimension 128. Refinement to
+bond dimension 256 gave an accepted $N=20$ minimum $0.00100937976$.
+The $N=40$ weight appeared stable but its energy change per cell,
+$1.0814\times10^{-8}$, remained above the preset $10^{-8}$ threshold.
+It is reported as unaccepted, not used to infer a nonzero thermodynamic limit.
+
+\subsection{Microscopic validity at the exact quartet root}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.98\textwidth]{rank_controls.pdf}
+\caption{Local mechanism and periodic-chain controls.
+(a) Simple local roots at 16 common effective momenta, with
+$q=(Q+4\pi)/5$ for quartets and $q=(Q+2\pi)/5$ for doublets. Segments connect
+calculated roots; this is not a many-body phase diagram.
+(b) Exact channel coefficient $r_J$ in Eq.~\eqref{eq:bond-channel}, not a
+spectral intensity. Different quartet channels cannot all be compensated by
+the same scalar shift at the link-operator level.
+(c) Quartet $\Cmin$ at $q=\pi$ on even periodic effective chains.
+The $N=12$ DMRG point passed the original convergence tests; the $N=16$
+cross did not and is not converged evidence. No bulk fit is drawn.
+(d) Effective chains at the same roots and $Q=2\pi/3$ as
+Table~\ref{tab:rank-roots}; the quartet optimum is recomputed for each size.
+The doublet dashed line is the first-order operator-cancellation result,
+with ED dots at $N=3,6$, not a microscopic finite-$\beta$ zero.
+Panels (c,d) retain the normalization $1/\sqrt{5N}$ but use different physical
+momenta and local roots; they are not one common size series.
+All weights are computed without smoothing or reflection averaging.}
+\label{fig:rank-controls}
+\end{figure*}
+
+Four open pentamers provide a second microscopic test at $q=\pi$, without
+the frustration of the three-cell ring. The effective prediction for their
+retuned coefficient is $\Cmin=0.00067813935$.
+At $g=0.000625$, microscopic diagonalization gave $0.00067904306$, an
+integrated-weight error of $0.1333\%$. The relative Euclidean error of the
+sorted low-band line-weight vector was $1.2254\%$.
+Doubling $g$ to $0.00125$ approximately doubled that line error to
+$2.4625\%$; an independent solver restart at the smaller $g$ agreed to
+relative line error $3.56\times10^{-9}$.
+
+The agreement is restricted to weak coupling. At $g=0.02$ and $0.04$, the
+line-vector errors were $46\%$ and $109\%$, and the integrated-weight errors
+were $14\%$ and $50\%$ [Fig.~\ref{fig:rank-evidence}(d)]. These results
+prevent extending the leading composite-probe interpretation quantitatively
+to the much stronger couplings of the original full $L=40$ spectra.

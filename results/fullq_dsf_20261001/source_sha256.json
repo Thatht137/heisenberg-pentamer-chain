@@ -1,0 +1,86 @@
+[
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\Project.toml",
+    "Hash": "39E917D3CA9615132999B4AE6A9731E8B592454267E38B5779423E76A8D2DD7E"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\compute_fullq_dsf.jl",
+    "Hash": "2E7D42A861EE941C716AC1B3B3E3A06F174F51EBC56FEF988FB063DF920D10E8"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\compute_spin_gap_20261001.jl",
+    "Hash": "5BD16A03DABAF5ABF8A96021249E3D3D78DF537031DB3F48DC854F89A00FFD22"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\export_fullq_partial.jl",
+    "Hash": "1D1E2D86C06E9E36F4DAF9D8B2A54766D8899410414DE9AF686D928B775F8CCE"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\check_fullq_dsf_ed.py",
+    "Hash": "6F24ED16023BAA75802B0F23E58702D131EBE4DA84BE1F177292C36F3A125239"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\autoresearch_v5\\static_krylov_ed_reference.py",
+    "Hash": "172A00088FDBE0E06806A4B0D3DA4B5D334F805D2205A91598CC262CAB3E00CB"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\audit_fullq_dsf.py",
+    "Hash": "272D01AF7F4A2F2616BB6664624CF6737D7F287A54D3FA02BFE3D16B5CBA2EE1"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\plot_dsf_screenshot_style.py",
+    "Hash": "8DA162F10E9F2EB3F8799ECFFC63FA2B5AD53C51FD5CEDA88DAC56F9E06F531E"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\test_fullq_dsf_pipeline.py",
+    "Hash": "C79D1B67C61FE0F0D84B353F7AFDFB0B31D5E944D54B7B9A3BEE6809078A1337"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\inspect_fullq_dsf.jl",
+    "Hash": "D1BCA3A28EEFD0390E097DAD4D69CE22563B160DF63CBFEC26A0B9D906353B9B"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\run_fullq_dsf_20261001.ps1",
+    "Hash": "E60E6FE7DDA44CD676983C4DAC18DB1ECA3F6EAC0E58673803CB7C59771EC70E"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\scripts\\run_fullq_negative_remote.sh",
+    "Hash": "A46F21C1310E7FAEF1D4FD089432A5707ADD13673941F2094832034D7BDC8CA1"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\docs\\fullq_dsf_protocol_20261001.md",
+    "Hash": "E2EB0D51FA882686EEC28A55F05D2E0892A9F92FAF3FC52254133DFB0A3CCCC6"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\Manifest.toml",
+    "Hash": "37A53FFD73DB57B9DB9C4CE11F6265A9A41AC2035DC421B01F9A633D893BA12C"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\src\\dmrg_solver.jl",
+    "Hash": "0B535C8BE0F392A7EE827C2E66DBF422D8070BC025F14881FBC2BA501304B0EB"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\src\\exact_diag.jl",
+    "Hash": "E8DA7C3F3012F620451FDD90B153B57ACDB08F23C7C4913D8C2D7E62764CBD83"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\src\\hamiltonian.jl",
+    "Hash": "DFA67842CF76C52B73DD7C86BB77C05C5C1FAA98518FDFF733DD3F79032A41FB"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\src\\order_parameters.jl",
+    "Hash": "324923CB48219EB65CB37FFF7F7237F232828ED9BAE64FE3F4B41162CE94BE05"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\src\\PentamerChain.jl",
+    "Hash": "E887408010F53C2EF2D932F58AE237F60EC12077DAFDED4DEC963E4C95B3A22E"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\src\\spectral.jl",
+    "Hash": "A04AD34901D44849EB7F74FB6C883A13BB7EA6D15872A64AAB22FA92BE7F88BF"
+  },
+  {
+    "Path": "D:\\Project\\1x5_Heisenberg_Pentamer\\src\\utils.jl",
+    "Hash": "B434789AB9726118C682F7CDCA98FE2F90E1320D3D501108539748A4D95A1CB7"
+  }
+]

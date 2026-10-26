@@ -1,0 +1,202 @@
+\section{Model and numerical methods}
+\label{sec:methods}
+
+\subsection{Hamiltonian and isolated-cell projection}
+
+The Hamiltonian of the pentamer chain is
+\begin{align}
+H={}&J_1\sum_n\left(\bm S_{n,2}\!\cdot\!\bm S_{n,3}
+ +\bm S_{n,3}\!\cdot\!\bm S_{n,4}\right) \notag\\
+&+J_2\sum_n\left(\bm S_{n,1}\!\cdot\!\bm S_{n,2}
+ +\bm S_{n,4}\!\cdot\!\bm S_{n,5}\right) \notag\\
+&+J_3\sum_n\bm S_{n,5}\!\cdot\!\bm S_{n+1,1},
+\label{eq:hamiltonian}
+\end{align}
+where $n$ labels the five-site unit cells and $\bm S_{n,a}$ is the spin-$1/2$
+operator at site $a$ of cell $n$.
+The intra-cell bonds are the two outermost bonds at $J_2$ and the two central
+bonds at $J_1$; a single bond $J_3$ connects neighboring cells.
+We work in units of $J_1$ and set $\alpha=J_2/J_1$ and $\beta=J_3/J_1$ throughout.
+
+The isolated pentamer has a 32-dimensional Hilbert space.
+We diagonalize it completely and resolve each degenerate energy subspace by total
+spin $S$ and by reflection parity about the cell center.
+Spectral weights are evaluated with projectors onto complete multiplets rather
+than with individual eigenvectors, whose orientation inside a degenerate subspace
+is arbitrary.
+This matters here because the multiplet structure, not merely the energy
+ordering, controls the dynamical selection rules derived below.
+
+If $P$ projects onto the ground-state doublet, the local spin operators act
+within that subspace as
+\begin{equation}
+P\bm S_{n,a}P=c_a\bm T_n,
+\label{eq:projection}
+\end{equation}
+where $\bm T_n$ is an effective spin-$1/2$ operator and the $c_a$ are
+cell-dependent projection coefficients.
+To leading order in the inter-cell coupling the chain is then described by
+\begin{equation}
+\Heff=NE_5+\Jeff\sum_n\bm T_n\!\cdot\!\bm T_{n+1}+O(\beta^2),
+\qquad \Jeff=\beta c_1c_5,
+\label{eq:effective}
+\end{equation}
+with $N$ the number of cells and $E_5$ the isolated-cell ground-state energy.
+Only the end sites $a=1$ and $5$ enter $\Jeff$, because they are the sites touched
+by the inter-cell bond.
+Reflection about the cell center maps site 1 onto site 5 and leaves an even
+doublet invariant, so $c_5=c_1$ and $\Jeff=\beta c_1^2>0$: an even ground doublet
+always produces an antiferromagnetic effective chain.
+The parity of the cell ground state thus fixes the sign of the effective coupling,
+and its size is set by how much of the doublet's spin resides on the cell ends.
+The same coefficients determine what a scattering probe sees.
+Because each effective spin is spread over the cell with amplitudes $c_a$, a
+probe at physical momentum $q$ couples to it with the cell shape factor
+\begin{equation}
+F(q)=\Bigl|\sum_{a=1}^{5}c_a e^{iqa}\Bigr|^2,
+\label{eq:shape}
+\end{equation}
+which folds the effective-chain response back into the physical Brillouin zone
+and fixes the momenta at which it appears.
+We test the projection in two ways.
+Exact diagonalization of two coupled pentamers measures the departure of the
+exact ground-state energy from the projected form, and finite-chain calculations
+with $N=8,12,16$ cells test whether the same leading power persists in the
+extended system.
+Figure~\ref{fig:model} summarizes the geometry, the isolated-cell multiplet
+structure, and the projection that defines the effective chain.
+
+\begin{figure*}[t]
+  \includegraphics[width=\textwidth]{fig1_model_projection.png}
+  \caption{Model and low-energy projection.
+  The five-site unit cell defines the couplings $J_1$, $J_2$, and $J_3$.
+  Isolated-pentamer multiplets are resolved by total spin and reflection parity,
+  and the even-parity ground-state doublet is projected onto an effective
+  spin-$1/2$ degree of freedom that mediates the inter-cell exchange.}
+  \label{fig:model}
+\end{figure*}
+
+\subsection{Finite-chain calculations and convergence criteria}
+\label{sec:convergence}
+
+Finite chains use open boundaries and $L=5N$ physical spins.
+Ground states are obtained in fixed total-$S^z$ sectors with density-matrix
+renormalization group calculations in a matrix-product-state
+representation~\cite{white1992,schollwoeck2005,schollwoeck2011}.
+Sector-specific initial states are used rather than assuming that a single
+initialization samples every low-energy solution.
+
+The positive-region data set contains 105 converged calculations at
+$L=40,60,80$.
+For negative $\alpha$, we initialize the $S^z=0$ sector from one of two distinct
+N\'eel-type product states, and the $S^z=1$ sector from a single fixed product
+state.
+A calculation is retained only if the variance per site satisfies
+$\mathrm{Var}(H)/L\le5\times10^{-8}$, the final truncation error satisfies
+$\epsilon_{\mathrm{trunc}}\le10^{-9}$, the measured magnetization satisfies
+$|S^z-S^z_{\mathrm{target}}|\le10^{-8}$, and the sector gap
+$E_0(S^z=1)-E_0(S^z=0)$ is no smaller than $-10^{-8}$, so that the $S^z=0$ sector
+holds the ground state; each calculation uses at most 64 sweeps.
+The two $S^z=0$ initializations probe sensitivity to the starting state.
+
+Every calculation was re-evaluated before use, and only calculations that pass
+these criteria enter the analysis below.
+These criteria test the variational state at a given solver setting; the
+sensitivity to the eigensolver itself is examined separately in
+Sec.~\ref{sec:krylov}.
+
+\subsection{Entanglement, correlation, and momentum diagnostics}
+\label{sec:diagnostics}
+
+For an open critical chain the bond entropy is compared with the conformal form
+\begin{equation}
+S(b)=a_\nu+\frac{\ceff}{6}
+\ln\left[\frac{2L}{\pi}\sin\left(\frac{\pi b}{L}\right)\right],
+\label{eq:entropy}
+\end{equation}
+where the intercept $a_\nu$ depends on the bond class $\nu=b\bmod 5$ or $b\bmod 10$
+and a common slope defines the descriptive coefficient $\ceff$.
+Fits use central windows $fL\le b\le(1-f)L$ with $f=0.10$, 0.15, 0.20, and 0.25.
+Equation~\eqref{eq:entropy} is the standard conformal result for the entanglement
+entropy of an open critical
+chain~\cite{calabrese2004,giamarchi2003}; because the five-site unit cell makes
+bond positions inequivalent, we treat the intercept as bond-class dependent and
+refer to the common slope as the effective entropy coefficient.
+
+Correlation envelopes, finite-size sector gaps, the static structure factor, and
+connected bond--bond correlations provide complementary diagnostics.
+Momentum-resolved information is obtained from the static structure factor
+$S(q)=\sum_{r}e^{iqr}\avg{\bm S_0\!\cdot\!\bm S_r}$ and from the dynamical
+structure factor defined in Sec.~\ref{sec:dsf}.
+
+The negative-$\alpha$ scan tracks the momentum $\qpeak$ at which $S(q)$ is
+largest and the sharpness of that peak,
+\begin{equation}
+R_L=1-\frac{S(\qpeak-\delta)+S(\qpeak+\delta)}{2S(\qpeak)},
+\label{eq:ratio}
+\end{equation}
+where $\delta$ is the momentum resolution $2\pi$ divided by the number of sites
+in the central window.
+A peak that sharpens with length, $\Delta R=R_{80}-R_{60}>0$, signals a developing
+singularity, whereas a peak that broadens points away from one.
+A candidate boundary is retained only when an adjacent coupling interval shows
+both a momentum reconstruction and a sign change of $\Delta R$.
+A momentum change without the corresponding $\Delta R$ condition is reported as
+a finite-size reconstruction, not as a phase boundary.
+
+\subsection{Dynamical structure factor}
+\label{sec:dsf}
+
+We compute the dynamical structure factor
+\begin{equation}
+S^{zz}(q,\omega)=\sum_{m}\left|\avg{m|S^z_q|0}\right|^2
+\delta\!\left(\omega-E_m+E_0\right)
+\label{eq:dsf}
+\end{equation}
+by two independent matrix-product-state routes.
+Correction-vector DMRG gives a fixed-frequency spectrum at $q=\pi$ by solving the
+linear system associated with the resolvent of $H$ at complex frequency
+$\omega+\mathrm{i}\eta$~\cite{kuehner1999,jeckelmann2002,nocera2016,nocera2018rixs}.
+Real-time evolution followed by Fourier transformation provides the full momentum
+dependence and an independent line-shape check~\cite{vidal2004,paeckel2019}.
+As a validation of the Hamiltonian, the momentum source, the broadening, and the
+spectral normalization, the correction-vector implementation reproduces the
+complete $L=10$ exact spectrum with a relative $L_2$ error of $9\times10^{-12}$.
+
+The production full-momentum calculations use $L=40$, $t_{\max}=30$, 121 momentum
+points, 301 frequency points, and paired time steps $\Delta t=0.025$ and
+$0.0125$.
+The raw Fourier matrices, including negative ringing from the finite time window,
+are retained and tested rather than clipped, so that the convergence assessment
+rests on the full spectral weight.
+
+\subsection{Krylov-subspace stability control}
+\label{sec:krylov}
+
+At $(\alpha,\beta)=(-0.10,0.25)$ an earlier $L=80$ analysis gave an entropy
+coefficient well below the values near unity found elsewhere
+(Sec.~\ref{sec:saved-state}).
+Because this point was also the most sensitive to the eigensolver configuration,
+we performed a final $L=80$ control in which all physical and DMRG settings were held fixed while the
+Krylov dimension was increased from $k=8$ to $k=12$.
+Both initializations used 64 sweeps, a configured maximum bond dimension of 1200,
+a cutoff of $10^{-11}$, and the same 401-point momentum grid.
+Here $k$ is the Krylov-subspace dimension, distinct from the MPS bond dimension
+$\chi$.
+
+The $k=12$ calculation satisfied the same convergence criteria listed in
+Sec.~\ref{sec:convergence}.
+Its variance per site was $1.9\times10^{-11}$, and the two sector gaps were
+$7.2772\times10^{-5}$, agreeing to five significant figures.
+Across 172 matched observables, the $k=8\rightarrow12$ differences were bounded by
+$7.5\times10^{-12}$ for the spin gap, $8.4\times10^{-8}$ for the dominant
+ratio, and $5.7\times10^{-8}$ for the entropy, while $\qpeak/\pi=1$ was
+unchanged.
+The largest retained link dimension was $264$--$265$ in the $S^z=0$ sector and
+$186$--$190$ in $S^z=1$, nearly insensitive to the solver change and well below
+the configured maximum of 1200, so truncation at this point is set by the
+$10^{-11}$ cutoff rather than by the bond-dimension cap.
+
+The $L=40$ and $L=60$ members of the negative-$\alpha$ size sequence in
+Sec.~\ref{sec:saved-state} were obtained with the earlier setting $k=3$; the
+quantitative statements there rest on the controlled $L=80$ endpoint.

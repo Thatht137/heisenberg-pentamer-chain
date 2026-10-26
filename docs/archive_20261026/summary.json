@@ -1,0 +1,2969 @@
+{
+  "date": "2026-10-26",
+  "file_count": 19523,
+  "uncompressed_bytes": 3946608411,
+  "packages": [
+    {
+      "name": "pentamer-code-01-20261026.zip",
+      "bytes": 1855502,
+      "sha256": "6f00b664655e6290dd82bb6337cd1f18732403d2a29e0244521ae4800d35a5dc"
+    },
+    {
+      "name": "pentamer-data-01-20261026.zip",
+      "bytes": 1024303641,
+      "sha256": "70226e148b72c55ace566edcaa6b473c1950e62b2bb872f15db65b2fee602794"
+    },
+    {
+      "name": "pentamer-data-02-20261026.zip",
+      "bytes": 265963410,
+      "sha256": "9b07a33d6a5422fabb499deaf3da4855ce7711e6e491c7f2fc8b3f9a7702f785"
+    },
+    {
+      "name": "pentamer-documents-01-20261026.zip",
+      "bytes": 168029483,
+      "sha256": "6463cb4fc4965794fe402216228c5d6c0953baf3cc7bbf023da2de0a53ab60e0"
+    },
+    {
+      "name": "pentamer-figures-01-20261026.zip",
+      "bytes": 59418227,
+      "sha256": "d54d9ca10f33240631de88a0eaed3563c0274fd56322a2ffe4b9635f6e7fd58e"
+    },
+    {
+      "name": "pentamer-history-01-20261026.zip",
+      "bytes": 295753630,
+      "sha256": "9fa0b0e69e252a31eba0bff434d38ea5496152c4f563be19845aaace1e7124b1"
+    },
+    {
+      "name": "pentamer-references-01-20261026.zip",
+      "bytes": 4513039,
+      "sha256": "8c008312ae132dcfc09f3883ac4716aa318db131605ac71ef2b0829a756d036d"
+    }
+  ],
+  "updated_archive_members": [
+    {
+      "path": "results/submission_20261002/submission_package_release/manuscript.zip!paper_prb/build/manuscript.pdf",
+      "action": "updated",
+      "sha256": "fcec4f4d2d8575f498c420f03b4dca52cd62a011cd6e6633bc2ce9586efaa169"
+    },
+    {
+      "path": "results/submission_20261002/submission_package_release/manuscript.zip!paper_prb/cover_letter.txt",
+      "action": "updated",
+      "sha256": "a40d0772463cf3068560f001447fdae3b05eab838892544a890d8f063bae6a54"
+    },
+    {
+      "path": "results/submission_20261002/submission_package_release/manuscript.zip!paper_prb/main.tex",
+      "action": "updated",
+      "sha256": "adb0037c3cf87c96b344c2973a517de28045dc634742c849c0d6c0ff68e7fbd5"
+    },
+    {
+      "path": "results/submission_20261002/submission_package_release/manuscript.zip!paper_prb/README.md",
+      "action": "updated",
+      "sha256": "526e684d28522321a94d9701f877f5924863ba023ef2e8b79b4ec6a22179d816"
+    },
+    {
+      "path": "results/submission_20261002/submission_package_release/manuscript.zip!paper_prb/sections/appendices.tex",
+      "action": "updated",
+      "sha256": "4130ec996df56058240eb4cc880d84482466d8b6fca5f5b522490698214b0baa"
+    },
+    {
+      "path": "results/submission_20261002/submission_package_release/manuscript.zip!paper_prb/sections/model_methods.tex",
+      "action": "updated",
+      "sha256": "4dd2128b549e915adde8c22aaff0a42153beae84e0c496b473789de8c7ed275a"
+    },
+    {
+      "path": "results/submission_20261002/submission_package_release/manuscript.zip!paper_prb/sections/results.tex",
+      "action": "updated",
+      "sha256": "51808c4cb590428bd05feb6e23d3c7eaf5ce0f9b8e9f1c86fec92c94910e0730"
+    },
+    {
+      "path": "results/submission_20261002/submission_package_release/manuscript.zip!paper_prb/VALIDATION_20261004.md",
+      "action": "updated",
+      "sha256": "2c8faef062f883113a2b1894429fa3fc497ae6a56fa49d9edb626d72b134e7e9"
+    },
+    {
+      "path": "results/submission_20261002/submission_package_release/source_data.zip!scripts/autoresearch_v4/analyze_positive_local_spectral_channels.py",
+      "action": "updated",
+      "sha256": "85ee3c145d61186e31605c34c8fc34d28367c8c303e23a15e29ca9d52ddfad9f"
+    },
+    {
+      "path": "submission_package_20260924.zip!submission_package_20260924/data/results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/run.json",
+      "action": "updated",
+      "sha256": "1d662ec54029cf1c532e759c784b38e42d47dc5ad873deb5fff875390c3f2c37"
+    },
+    {
+      "path": "submission_package_20261002.zip!submission_package_20261002/data/results/autoresearch_v4_20260730/round2_local_spectral_channels_v4/run.json",
+      "action": "updated",
+      "sha256": "1d662ec54029cf1c532e759c784b38e42d47dc5ad873deb5fff875390c3f2c37"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!docs/manuscript_claim_evidence_map_20260919.md",
+      "action": "updated",
+      "sha256": "ddcf1c98b3647e31ff873bd035af82c2a492d58df04f00f9044e7f24c0045311"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v2/__pycache__/analyze_round2.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v2/__pycache__/analyze_round2.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v2/__pycache__/audit_positive_scope.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v2/__pycache__/audit_positive_scope.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v2/__pycache__/build_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v2/__pycache__/build_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v2/__pycache__/finalize_checksums.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v2/__pycache__/finalize_checksums.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v2/__pycache__/pentamer_transitions.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v2/__pycache__/pentamer_transitions.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/analyze_effective_scan.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/analyze_effective_scan.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/analyze_entanglement_scaling.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/analyze_entanglement_scaling.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/analyze_entanglement_scaling.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/effective_heisenberg_ed.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/effective_heisenberg_ed.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/finalize_entanglement_claim.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/finalize_entanglement_claim.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/make_effective_scan_spec.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/make_effective_scan_spec.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/make_entanglement_scan_spec.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/make_entanglement_scan_spec.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/make_entanglement_scan_spec.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/project_doublet.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/project_doublet.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/run_effective_scan.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/run_effective_scan.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/run_effective_sector_cell.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/run_effective_sector_cell.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/run_entanglement_cell.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/run_entanglement_cell.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/run_entanglement_cell.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/run_entanglement_scan.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/run_entanglement_scan.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/run_entanglement_scan.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/two_pentamer_effective_ed.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v3/__pycache__/two_pentamer_effective_ed.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v4/analyze_positive_local_spectral_channels.py",
+      "action": "updated",
+      "sha256": "85ee3c145d61186e31605c34c8fc34d28367c8c303e23a15e29ca9d52ddfad9f"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v4/__pycache__/analyze_positive_local_spectral_channels.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v4/__pycache__/analyze_positive_local_spectral_channels.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v4/__pycache__/analyze_positive_local_spectral_channels.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/adjudicate_negative_phase_r16_practical.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_cv_cost_probe.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_cv_cost_probe.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_cv_length_probe.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_cv_length_probe.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_cv_resume_oracle.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_cv_resume_oracle.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_cv_tebd_crosscheck.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_cv_tebd_crosscheck.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_effective_continuum_overlap.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_effective_continuum_overlap.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_effective_gap_scaling.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_effective_gap_scaling.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_fig7_pilot_quantitative_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_fullq_effective_branches.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_negative_entropy_sizes.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_negative_phase_independent_observables.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_negative_phase_independent_pilot.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_negative_phase_stage_a.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_negative_phase_stage_b_practical_v2.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_negative_phase_stage_b.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_negative_phase_stage_b.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_negative_phase_stage_c_practical_v2_round.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_negative_phase_stage_c_round.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_phase_guard_robustness_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_phase_guard_weakest_points_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_positive_static_multistart.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_positive_static_multistart.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_positive_static_multistart.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_qpi_tebd_production.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_qpi_tebd_production.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_qpi_tebd_production.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_qpi_tebd_smoke.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_qpi_tebd_smoke.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_qpi_tebd_smoke.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_qpi_tebd_time_domain.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_qpi_tebd_time_domain.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_second_order_schrieffer_wolff.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_second_order_schrieffer_wolff.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_static_krylov_impact.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_tebd_crosscheck.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/analyze_tebd_crosscheck.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/assemble_cv_accepted_anchors.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/assemble_cv_sparse_anchor_table_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/assemble_l80_phase_results.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/assemble_l80_phase_results.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/assemble_qpi_cv_anchors.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/assemble_qpi_cv_anchors.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_bounded_delivery_20260805.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_cv_high100_runtime_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_cv_tebd_status_consistency_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_delivery_readiness_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_delivery_readiness_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_figure_assets_pixel_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_figure_captions_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_figure_claim_matrix_20260804.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_figure_claim_matrix_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_figure_provenance_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_figure_provenance_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_fullq_negative_weight.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_local_integrity_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_local_integrity_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_minimal_fullq_local_readiness.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_negative_variance_relaxation.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_pilot_entropy_robustness.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_positive_string_distance.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_positive_string_distance.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_qpi_cv_low_residual_diagnosis_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_reproducibility_commands_20260805.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_scope_exclusions_20260804.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_scope_exclusions_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_tebd_handoff_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_tebd_handoff_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_tebd_preflight_recheck_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_tebd_preflight_recheck_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_tebd_terminal_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/audit_tebd_terminal_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/build_source_data_inventory_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/check_negative_entropy_size_coverage.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/check_qpi_cv_active_diagnostics_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/check_qpi_cv_extension_remote_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/check_qpi_tebd_remote_status.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/check_qpi_tebd_remote_status.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/compare_cv_exact.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/compare_cv_exact.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/compare_local_positive_static_multistart.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/compare_local_positive_static_multistart.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/compare_static_krylov_k8_k12.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/derive_next_action_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/exact_dsf_oracle.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/exact_dsf_oracle.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/exact_static_sector_oracle.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/exact_static_sector_oracle.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/fetch_completed_qpi_cv_cells_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/fetch_fullq_tebd_run.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/fetch_negative_phase_run.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/fetch_qpi_cv_extension_results.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/fetch_qpi_cv_extension_results.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/fetch_qpi_tebd_results.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/fetch_qpi_tebd_results.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/finalize_full_alpha_phase_diagram.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/finalize_minimal_fullq_handoff.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/finalize_negative_phase_stage_b_practical_v2_r20.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/finalize_round31_high150_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/finalize_round43_handoff.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/finalize_static_krylov_k12_gate.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/generate_fig5_sidecars_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/handoff_round41_low005.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r1.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r10_failure.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r11_success.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r12_failure.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r13_success.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r14_calibration_failure.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r15_terminal.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r16_practical.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r16_terminal.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r17_failure.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r17_success.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r18_success.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r19_success.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r2.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r3_partial.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r4.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r5_partial.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r6.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r6.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r7_failure.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r8.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/ingest_negative_phase_r9_partial.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_independent_pilot.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r1_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r10_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r11_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r12_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r13_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r14_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r15_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r16_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r2_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r3_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r4_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r5_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r6_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r7_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_r9_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r1.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r10.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r11.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r12.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r13.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r14.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r15.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r16.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r17.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r18.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r19.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r2.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r3.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r4.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r5.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r6.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r7.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a_r9.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_a.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_next.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_practical_v2_after_bounded_r14.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_practical_v2_after_bounded_r15.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_practical_v2_after_bounded_r16.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_practical_v2_after_bounded_r17.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_practical_v2_after_bounded_r18.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_practical_v2_after_bounded_r19.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_practical_v2_after_bounded.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_practical_v2_after_retry.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_practical_v2_resume.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_practical_v2_retry.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_r1.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_r2.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_r3.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_b_r4.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_c_next.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_c_practical_v2_r1.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_stage_c_r1.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_negative_phase_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_phase_diagram_run_spec.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_phase_diagram_run_spec.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_phase_l80_run_spec.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_phase_l80_run_spec.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_phase_mesh_upload_manifest.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_phase_mesh_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_phase_positive_mesh_run_spec.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_phase_positive_mesh_run_spec.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_phase_server_upload_manifest.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_phase_server_upload_manifest.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_phase_summary.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_phase_summary.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_positive_mesh_summary.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_positive_mesh_summary.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_positive_static_multistart_scan_inputs.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_positive_static_multistart_scan_inputs.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_positive_static_scan_inputs.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_positive_static_scan_inputs.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_qpi_maxdim96_preview_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_qpi_maxdim96_preview_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_static_krylov_controls_r2.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/make_static_krylov_k12_gate.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/materialize_phase_diagram_actions.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/materialize_phase_diagram_actions.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/merge_phase_observations.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/merge_phase_observations.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/merge_positive_mesh_observations.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/merge_positive_mesh_observations.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/negative_dmrg_options.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/phase_diagram_windows_controller.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/phase_diagram_windows_controller.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_anchor_heartbeat_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_anchor_heartbeat_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_c11_candidate_trends_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_cv_anchor_size_comparison_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_cv_continuum_overlay_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_cv_continuum_overlay_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_cv_tebd_gate_coverage_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_dynamic_figures_production.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_fig3_positive_refined_20260808.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_fig8_bounded_seven_point_20260805.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_fig8_round43_branch.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_final_full_alpha_phase_diagram.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_final_full_alpha_phase_diagram.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_full_alpha_phase_evidence_20260811.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_full_alpha_tentative_phase_diagram_20260811.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_full_alpha_working_phase_diagram_20260812.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_minimal_fullq_campaign.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_model_excitation_mechanism.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_model_excitation_mechanism.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_negative_practical_v2_crossover_summary.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_paper_static_figures_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_positive_phase_delta_summary_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_qpi_cv_extension_residual_cost_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_qpi_tebd_production.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_qpi_tebd_production.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_qpi_tebd_production.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_qpi_tebd_time_domain.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_qpi_tebd_time_domain.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_reference_aligned_fig3_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_reference_aligned_fig3_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_reference_aligned_fig4_pentamer_positive_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_reference_aligned_fig4_pentamer_positive_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_reference_aligned_fig6_positive_beta_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_reference_aligned_fig6_positive_beta_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_reference_aligned_fig7_positive_alpha_20260804.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_reference_aligned_fig7_positive_alpha_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_reference_aligned_figures_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_reference_aligned_figures_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/plot_round31_progress_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/positive_phase_guard.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/positive_phase_guard.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/prepare_c11_candidate_matrix_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/prepare_minimal_fullq_campaign.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/prepare_qpi_cv_recovery_handoff_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/prepare_static_delivery_manifest_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/preview_qpi_cv_extension_fetch.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/preview_qpi_cv_extension_fetch.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/preview_qpi_tebd_fetch.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/preview_qpi_tebd_fetch.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/progress.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/progress.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/progress.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/record_adaptive_retry_terminal_note_20260805.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/record_high150_terminal_check_20260805.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/record_low000_conditional_plan_20260805.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/record_remote_check_1030_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/record_round41_terminal_and_high150_status_20260805.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/render_bounded_manuscript_20260805.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/render_research_progress.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/render_research_progress.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/reorder_qpi_cv_report_sections_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/repair_negative_phase_r18_package.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_cv_dsf_cell.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_cv_dsf_cell.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_cv_dsf_resumable.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_cv_dsf_resumable.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_cv_dsf_resumable.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_negative_phase_structure_batch.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_negative_phase_structure_cell.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_negative_static_cell.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_phase_structure_batch.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_phase_structure_batch.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_phase_structure_ratio_cell.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_phase_structure_ratio_cell.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_positive_static_cell.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_positive_static_cell.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_positive_static_scan.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_positive_static_scan.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_qpi_tebd_local_handoff.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_qpi_tebd_local_handoff.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_tebd_production.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_tebd_production.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_tebd_qpi_autocorr.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_tebd_qpi_autocorr.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/run_tebd_qpi_autocorr.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/scan_second_order_virtual_correction.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/scan_second_order_virtual_correction.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/seed_cv_dsf_extension.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/seed_cv_dsf_extension.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/select_positive_static_validation_points.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/select_positive_static_validation_points.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/smoke_static_krylov_completion.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/smoke_static_krylov.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/stage_fullq_eta020_campaign.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/stage_negative_phase_stage_b_terminal.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/stage_negative_phase_stage_b_terminal.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/stage_negative_phase_stage_c_practical_v2_terminal.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/stage_negative_phase_stage_c_terminal.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/static_krylov_candidate_adapter.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/static_krylov_ed_reference.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/static_krylov_k12_preflight.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/static_krylov_launch_preflight_v2.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/static_krylov_launch_preflight.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/summarize_negative_phase_r10_failure.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/summarize_negative_phase_r11_success.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/summarize_negative_phase_r12_failure.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/summarize_negative_phase_r13_success.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/summarize_negative_phase_r5_partial.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/summarize_negative_phase_r7_single.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/summarize_negative_phase_r9_partial.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_analyze_negative_phase_stage_b.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_analyze_negative_phase_stage_c_round.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_analyze_static_krylov_impact.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_compare_static_krylov_k8_k12.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_cv_runtime_contract.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_cv_tebd_crosscheck_analyzer.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_cv_tebd_crosscheck_analyzer.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_cv_tebd_crosscheck_analyzer.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_finalize_full_alpha_phase_diagram.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_finalize_round31_high150_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_finalize_round43_handoff.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_finalize_static_krylov_k12_gate.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_handoff_round41_low005.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_make_negative_phase_stage_c_next.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_make_static_krylov_controls_r2.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_minimal_fullq_campaign.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_near_zero_alpha_oracle.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_negative_phase_handoff.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_negative_phase_r16_practical.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_negative_phase_r16_protocol.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_negative_phase_r18_success.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_negative_phase_r19_success.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_negative_phase_stage_b_terminal.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_negative_phase_stage_c_terminal.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_plot_fig8_round43_branch.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_plot_final_full_alpha_phase_diagram.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_plot_final_full_alpha_phase_diagram.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_positive_static_pipeline.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_positive_static_pipeline.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_positive_static_pipeline.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_progress.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_progress.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_progress.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_qpi_tebd_pipeline.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_qpi_tebd_pipeline.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_qpi_tebd_pipeline.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_qpi_tebd_plot.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_qpi_tebd_plot.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_qpi_tebd_plot.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_qpi_tebd_production_analysis.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_qpi_tebd_production_analysis.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_qpi_tebd_production_analysis.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_resumable_wrapper.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_resumable_wrapper.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_resumable_wrapper.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_resume_oracle_analyzer.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_resume_oracle_analyzer.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_resume_oracle_analyzer.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_round42_launcher_contract.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_round43_launchers.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_static_krylov_candidate_adapter.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_static_krylov_crlf_compat.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_static_krylov_ed_reference.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_static_krylov_launch_preflight_v2.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_tebd_crosscheck_analyzer.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_tebd_crosscheck_analyzer.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_tebd_crosscheck_analyzer.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/test_validate_static_krylov_k12_run.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_anchor_fetch_audit_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_anchor_fetch_audit_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_anchor_heartbeat_1304_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_anchor_heartbeat_1304_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_anchor_heartbeat_1314_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_anchor_heartbeat_1314_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_anchor_heartbeat_1351_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_anchor_heartbeat_1351_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_anchor_heartbeat_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_anchor_heartbeat_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_completion_dashboard_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_cv_program_static_audit_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_cv_smoke_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_cv_smoke_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_cv_tebd_local_diagnostic_20260804_0021.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_cv_tebd_local_diagnostic_20260804_0021.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_cv_triplet_cost_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_cv_triplet_cost_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_cv_triplet_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_cv_triplet_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_cv_validator_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_cv_validator_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_delivery_plan_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_delivery_plan_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_delivery_readiness_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_delivery_readiness_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_dynamic_handoff_tooling_20260805.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_effective_gap_scaling_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_effective_gap_scaling_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_fig7_pilot_quantitative_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_figure_export_fix_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_figure_provenance_report_20260803_2335.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_figure_provenance_report_20260803_2335.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_full_research_report_negative_campaign.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_high150_health_report_20260805_0751.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_high150_local_acceptance_20260805.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_julia_environment_recheck_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_l80_anchor_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_l80_anchor_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_l80_anchor_terminal_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_l80_anchor_terminal_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_l80_terminal_current_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_l80_terminal_current_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_local_figure_regression_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_local_figure_regression_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_local_integrity_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_local_integrity_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_local_julia_acl_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_local_julia_acl_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_local_qpi_reanalysis_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_local_validator_recheck_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_local_validator_recheck_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_local_work_queue_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_low005_terminal_failure_20260805.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_manuscript_draft_report_20260807.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_manuscript_draft_report_20260811.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_mesh_cell_0051_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_mesh_cell_0051_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_minimal_fullq_campaign_report_20260807.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_model_mechanism_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_model_mechanism_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_phase_diagram_protocol_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_phase_diagram_protocol_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_phase_diagram_results_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_phase_diagram_results_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_phase_diagram_skill_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_phase_diagram_skill_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_phase_guard_robustness_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_phase_guard_weakest_points_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_phase_promotion_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_phase_promotion_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_positive_mesh_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_positive_mesh_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_positive_phase_leave_one_out_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_positive_static_multistart_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_positive_static_multistart_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_positive_static_pipeline_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_positive_static_pipeline_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_progress_monitoring_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_progress_monitoring_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_python_regression_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_budget_gates_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_budget_gates_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_confirmation_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_confirmation_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_cv_active_diagnostics_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_cv_completed_cells_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_cv_connection_check_20260804.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_cv_connection_check_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_cv_extension_checker_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_cv_extension_morning_status_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_cv_extension_progress_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_cv_extension_progress_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_cv_extension_status_20260803_2323.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_cv_extension_status_20260803_2323.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_cv_extension_submission_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_cv_extension_submission_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_cv_retry_proposal_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_cv_retry_smoke_plan_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_handoff_tooling_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_handoff_tooling_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_maxdim96_preview_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_maxdim96_preview_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_maxdim96_progress_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_maxdim96_progress_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_maxdim96_submission_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_maxdim96_submission_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_maxdim96_terminal_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_maxdim96_terminal_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_reanalysis_recheck_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_tebd_production_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_tebd_production_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_tebd_smoke_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_tebd_smoke_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_tebd_submission_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_tebd_submission_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_tebd_terminal_preview_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_tebd_terminal_preview_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_tebd_time_domain_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_tebd_time_domain_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_terminal_readiness_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_qpi_terminal_readiness_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_reference_aligned_fig4_8_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_reference_aligned_fig4_8_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_reference_aligned_figures_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_reference_aligned_figures_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_reference_fig6_exploratory_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_reference_fig6_exploratory_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_reference_fig7_positive_report_20260804.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_reference_fig7_positive_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_reference_figure_alignment_audit_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_reference_figure_alignment_audit_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_reference_figure_visual_qa_20260804_0026.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_reference_figure_visual_qa_20260804_0026.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_reference_figures_manifest_20260804.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_reference_figures_manifest_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_remaining_claim_closure_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_research_progress_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_research_progress_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_resource_local_tests_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_resource_local_tests_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_round31_acceptance_sheet_20260804.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_round31_acceptance_sheet_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_round38_and_round31_status_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_round39_cv_tebd_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_round41_low005_submission_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_round41_retry_health_20260805.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_round41_retry_submission_report_20260805.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_scheduled_check_1030_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_scheduled_check_armed_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_scheduled_check_result_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_scheduled_terminal_recheck_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_scheduled_terminal_recheck_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_second_order_frustration_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_second_order_frustration_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_server_audit_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_server_audit_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_server_connection_snapshot_20260803_2333.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_server_connection_snapshot_20260803_2333.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_server_connection_snapshot_20260803_2341.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_server_connection_snapshot_20260803_2341.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_server_connection_snapshot_20260804_0009.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_server_connection_snapshot_20260804_0009.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_server_preflight_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_server_preflight_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_server_recovery_standard_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_server_recovery_standard_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_server_resource_snapshot_1401_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_server_resource_snapshot_1401_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_ssh_key_access_report_20260804.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_static_krylov_impact_report.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_static_krylov_k12_gate_report.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_tebd_crosscheck_report.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_tebd_crosscheck_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_tebd_crosscheck_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_tebd_estimator_diagnosis_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_tebd_estimator_diagnosis_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_tebd_eta01_coarse_terminal_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_tebd_eta01_coarse_terminal_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_tebd_eta01_progress_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_tebd_eta01_progress_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_tebd_preflight_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_tebd_preflight_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_tebd_terminal_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_tebd_terminal_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_waiting_audit_report_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/update_waiting_audit_report_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/validate_cv_run.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/validate_cv_run.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/validate_fullq_tebd_run.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/validate_near_zero_alpha_oracle.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/validate_negative_phase_r16_run.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/validate_negative_phase_run_practical_v2.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/validate_negative_phase_run.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/validate_static_krylov_k12_run.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/validate_three_cell_schrieffer_wolff.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/autoresearch_v5/__pycache__/validate_three_cell_schrieffer_wolff.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/five_rounds/__pycache__/analyze_results.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/five_rounds/__pycache__/analyze_results.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/five_rounds/__pycache__/audit_existing.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/five_rounds/__pycache__/audit_existing.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/five_rounds/__pycache__/build_report.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/five_rounds/__pycache__/build_report.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/five_rounds/__pycache__/compare_ed_dmrg.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/five_rounds/__pycache__/compare_ed_dmrg.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/five_rounds/__pycache__/dense_ed_crosscheck.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/five_rounds/__pycache__/dense_ed_crosscheck.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/five_rounds/__pycache__/run_dmrg_cell.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/five_rounds/__pycache__/run_dmrg_cell.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/five_rounds/__pycache__/run_round.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/five_rounds/__pycache__/run_round.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/report/__pycache__/build_comparison_assets_20260812.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/report/__pycache__/plot_literature_style_comparisons_20260813.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/report/__pycache__/prepare_teacher_report_20260813.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/report/__pycache__/update_meeting_report_comparison_20260812.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/_map_tuning_compare.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/_map_tuning_compare.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/analyze_beta_half_dsf_pilot.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/analyze_beta_half_dsf_pilot.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/analyze_negative_correlation_continuation.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/analyze_negative_correlation_continuation.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/analyze_negative_string_continuation.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/analyze_negative_string_continuation.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/analyze_single_pentamer_multiplets.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/analyze_single_pentamer_multiplets.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/audit_positive_phase_results_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/audit_positive_phase_results_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/audit_tebd_readiness_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/audit_tebd_readiness_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/fit_entanglement_profile_cft.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/fit_entanglement_profile_cft.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/fit_spin_correlation_scaling.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/fit_spin_correlation_scaling.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_beta_half_phase_diagnostics.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_beta_half_phase_diagnostics.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_bond_correlations.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_bond_correlations.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_cv_triplet_cost_quality_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_cv_triplet_cost_quality_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_dsf_tebd_grid_inferno.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_dsf_tebd_grid_inferno.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_dsf_tebd_grid.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_dsf_tebd_grid.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_dsf_tebd.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_dsf_tebd.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_edge_magnetization.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_edge_magnetization.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_effective_central_charge.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_effective_central_charge.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_energy_levels.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_energy_levels.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_entanglement_profile.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_entanglement_profile.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_entanglement_S_L2.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_entanglement_S_L2.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_entanglement_scaling.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_entanglement_scaling.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_entanglement_spectrum.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_entanglement_spectrum.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_finite_size_dOstr.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_finite_size_dOstr.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_hires_vs_std.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_hires_vs_std.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_near_zero_continuation.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_near_zero_continuation.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_near_zero_multistart.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_near_zero_multistart.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_phase_diagram_dense.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_phase_diagram_dense.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_phase_diagram_smooth.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_phase_diagram_smooth.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_phase_diagram.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_phase_diagram.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_phase_slices.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_phase_slices.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_positive_region_evidence_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_positive_region_evidence_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_positive_tebd_pilot_audit_20260803.cpython-312.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_positive_tebd_pilot_audit_20260803.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_positive_tebd_pilot_audit_20260803.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_spin_gap_scaling.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_spin_gap_scaling.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_static_structure_factor.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_static_structure_factor.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_string_order_distance.cpython-313.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!scripts/__pycache__/plot_string_order_distance.cpython-39.pyc",
+      "action": "excluded"
+    },
+    {
+      "path": "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!CLAUDE.md",
+      "action": "excluded"
+    }
+  ],
+  "historical_moved_files": {
+    "found": 1814,
+    "expected": 1814
+  },
+  "manuscripts": [
+    {
+      "name": "pentamer-current-manuscript-20261026.pdf",
+      "bytes": 877755,
+      "sha256": "8b9c413bc6ce3b81d3805322f69b3e48ff8ab0be80a59f50f4bfd6597b0c8b12"
+    },
+    {
+      "name": "pentamer-prb-manuscript-20261026.pdf",
+      "bytes": 1336499,
+      "sha256": "579daa30e47c9050f75ec347cd9f1834adf891d85813378dbaca1876eb355943"
+    }
+  ]
+}

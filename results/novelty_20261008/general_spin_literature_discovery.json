@@ -1,0 +1,116 @@
+{
+  "queried_on": "2026-10-08",
+  "scope": "Discovery index only; entries are not all primary-text verified",
+  "searchTerm": "Have exact second-frequency-moment sum rules or finite-temperature no-go results been derived for cancellation between a staggered spin-dipole probe and a neighboring quadrupole-times-spin vector in isotropic Heisenberg chains with general spin?",
+  "papers": [
+    {
+      "title": "Two-spinon dynamic structure factor of the one-dimensional S=1/2 Heisenberg antiferromagnet",
+      "doi": "10.48550/arxiv.cond-mat/9606068",
+      "index_date": "2022-03-20T00:00:00Z"
+    },
+    {
+      "title": "Two-spinon dynamic structure factor of the one-dimensional s= Heisenberg antiferromagnet",
+      "doi": "10.1103/PHYSREVB.55.12510",
+      "index_date": "1997-05-01T00:00:00Z",
+      "urls": {
+        "Html": [
+          "https://link.aps.org/doi/10.1103/PhysRevB.55.12510",
+          "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.55.12510"
+        ],
+        "Pdf": [
+          "https://digitalcommons.uri.edu/cgi/viewcontent.cgi?article=1059&context=phys_facpubs",
+          "https://arxiv.org/pdf/cond-mat/9606068.pdf"
+        ]
+      }
+    },
+    {
+      "title": "Sum rules in the dynamics of quantum spin chains",
+      "doi": "10.1103/PHYSREVB.26.1311",
+      "index_date": "1982-08-01T00:00:00Z",
+      "urls": {
+        "Html": [
+          "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.26.1311",
+          "https://link.aps.org/doi/10.1103/PhysRevB.26.1311"
+        ],
+        "Pdf": [
+          "https://digitalcommons.uri.edu/cgi/viewcontent.cgi?article=1123&context=phys_facpubs"
+        ]
+      }
+    },
+    {
+      "title": "Revisiting the Exact Dynamical Structure Factor of the Heisenberg Antiferromagnetic Model",
+      "doi": null,
+      "index_date": "2014-02-16T00:00:00Z",
+      "urls": {
+        "Html": [
+          "https://arxiv.org/abs/1402.3855",
+          "http://ui.adsabs.harvard.edu/abs/2014arXiv1402.3855B/abstract"
+        ]
+      }
+    },
+    {
+      "title": "Sum rules for the frequency spectrum of linear magnetic chains",
+      "doi": "10.1103/PHYSREVB.10.128",
+      "index_date": "1974-07-01T00:00:00Z",
+      "urls": {
+        "Html": [
+          "https://link.aps.org/doi/10.1103/PhysRevB.10.128",
+          "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.10.128"
+        ],
+        "Others": [
+          "http://journals.aps.org/prb/abstract/10.1103/PhysRevB.10.128"
+        ]
+      }
+    },
+    {
+      "title": "Some exact results on the coupled Ising chains with general spin S",
+      "doi": "10.1080/09500838708228748",
+      "index_date": "1987-03-01T00:00:00Z",
+      "urls": {
+        "Html": [
+          "http://ui.adsabs.harvard.edu/abs/1987PMagL..55..153H/abstract"
+        ]
+      }
+    },
+    {
+      "title": "Exact results for a generalized spin-1/2 Ising-Heisenberg diamond chain with the second-neighbor interaction between nodal spins",
+      "doi": "10.48550/arxiv.1312.3439",
+      "index_date": "2022-03-10T00:00:00Z"
+    },
+    {
+      "title": "Spin diffusion in anisotropic Heisenberg chains: S≥1/2",
+      "doi": "10.1016/J.PHYSB.2012.07.016",
+      "index_date": "2012-11-01T00:00:00Z",
+      "urls": {
+        "Html": [
+          "http://ui.adsabs.harvard.edu/abs/2012PhyB..407.4274H/abstract",
+          "https://www.sciencedirect.com/science/article/abs/pii/S0921452612007016"
+        ],
+        "Others": [
+          "http://www.sciencedirect.com/science/article/pii/S0921452612007016"
+        ]
+      }
+    },
+    {
+      "title": "Calculation of correlation functions in the Heisenberg spin-1/2 antiferromagnetic model",
+      "doi": "10.1007/S10582-006-0026-5",
+      "index_date": "2005-11-01T00:00:00Z",
+      "urls": {
+        "Html": [
+          "https://link.springer.com/article/10.1007/s10582-006-0026-5",
+          "http://ui.adsabs.harvard.edu/abs/2005CzJPh..55.1461L/abstract"
+        ]
+      }
+    },
+    {
+      "title": "Exact results for a generalized spin-1/2 Ising-Heisenberg diamond chain with the second-neighbor interaction between nodal spins",
+      "doi": "10.1002/PSSB.201350393",
+      "index_date": "2013-12-12T00:00:00Z",
+      "urls": {
+        "Html": [
+          "https://arxiv.org/abs/1312.3439"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+failure = "周期尺寸 12 未通过预设检查，停止扩大"
+bulk_claim = false
+elapsed_seconds = 350.71600008010864
+all_gates_pass = false
+accepted_sizes = [6, 8]

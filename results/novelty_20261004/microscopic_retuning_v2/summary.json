@@ -1,0 +1,71 @@
+{
+  "all_pass": true,
+  "cases": [
+    {
+      "g": 0.0025,
+      "mode": "fixed",
+      "alpha": -0.7742918851774317,
+      "beta": 0.00041555386881135135,
+      "W_pi_over_beta2": 0.009537895182220603,
+      "prediction": 0.009388531020866167,
+      "relative_error": 0.015909215299227508,
+      "low_states": 43,
+      "gap": 2.144561783268273e-05,
+      "next_state": 0.16631905369051214,
+      "max_residual": 3.3263818025363753e-12,
+      "orthogonality_error": 7.554858394735761e-14,
+      "elapsed_seconds": 76.547009,
+      "pass": true
+    },
+    {
+      "g": 0.0025,
+      "mode": "retuned",
+      "alpha": -0.7738546478756969,
+      "beta": 0.00041555386881135135,
+      "W_pi_over_beta2": 0.0006825698820280945,
+      "prediction": 0.0006781393455386426,
+      "relative_error": 0.006533371818933098,
+      "low_states": 43,
+      "gap": 2.1446001602143383e-05,
+      "next_state": 0.1662679106854439,
+      "max_residual": 9.398451618966367e-13,
+      "orthogonality_error": 7.776020750066368e-14,
+      "elapsed_seconds": 149.71291200000002,
+      "pass": true
+    },
+    {
+      "g": 0.005,
+      "mode": "fixed",
+      "alpha": -0.7742918851774317,
+      "beta": 0.0008311077376227027,
+      "W_pi_over_beta2": 0.009689156549659038,
+      "prediction": 0.009388531020866167,
+      "relative_error": 0.032020507587899205,
+      "low_states": 43,
+      "gap": 4.2815871729828814e-05,
+      "next_state": 0.1664172572416005,
+      "max_residual": 4.644509264831921e-12,
+      "orthogonality_error": 5.489676131847474e-14,
+      "elapsed_seconds": 211.0051541,
+      "pass": true
+    },
+    {
+      "g": 0.005,
+      "mode": "retuned",
+      "alpha": -0.773417410573962,
+      "beta": 0.0008311077376227027,
+      "W_pi_over_beta2": 0.0006891829618884655,
+      "prediction": 0.0006781393455386426,
+      "relative_error": 0.016285172689767702,
+      "low_states": 43,
+      "gap": 4.281734557931571e-05,
+      "next_state": 0.16631492075348753,
+      "max_residual": 7.830127438041937e-13,
+      "orthogonality_error": 4.416246317441128e-14,
+      "elapsed_seconds": 272.0028463,
+      "pass": true
+    }
+  ],
+  "bulk_claim": false,
+  "elapsed_seconds": 272.0067105
+}

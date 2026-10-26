@@ -1,0 +1,15 @@
+{
+  "pdf_sha256": "8fc1461ccc55e15d35d5ef0d29bc836f138ed987288ac89ba0b9c7d5587ded4d",
+  "status": "passed for the stated visual scope; not scientific peer review",
+  "reviewer": "assistant visual inspection",
+  "page_count": 13,
+  "scope": "All-page contact sheet plus full-size pages 1, 4, 6, 7, 8, 13",
+  "observations": [
+    "Title, abstract, equations and table fit within the columns.",
+    "Thermal figures and captions do not overlap body text.",
+    "General-spin equations and appendix labels render legibly.",
+    "A single-line fourteenth reference page was removed by shortening repeated context, not deleting evidence.",
+    "Original full spectra remain in the appendix without added parameter footers."
+  ],
+  "limits": "This inspection does not replace author scientific approval or a full line-by-line proof audit."
+}

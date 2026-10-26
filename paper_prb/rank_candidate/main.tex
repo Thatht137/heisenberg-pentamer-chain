@@ -1,0 +1,65 @@
+\documentclass[aps,prb,reprint,amsmath,amssymb,superscriptaddress,longbibliography,nofootinbib,floatfix]{revtex4-2}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\graphicspath{{../../results/novelty_20261008/four_cell_window_audit/}{../../results/novelty_20261008/figures/}{../../results/novelty_20261004/rank_figures/}{../../results/novelty_20261004/rank_controls_figure/}{../../results/novelty_20261004/evidence_figures/}{../figures/}}
+\newcommand{\Dloc}{\Delta_{\mathrm{loc}}}
+\newcommand{\Wlow}{W_{\mathrm{low}}}
+\newcommand{\Cmin}{C_{\mathrm{min}}}
+\begin{document}
+\raggedbottom
+\title{Thermal stability of retuned interference zeros in a Heisenberg pentamer chain}
+\author{Author Name}
+\email{corresponding.author@example.edu}
+\affiliation{Department and Institution, City, Postal Code, Country}
+\date{\today}
+\begin{abstract}
+Destructive interference can suppress a spin spectrum at zero temperature,
+but thermal occupation introduces additional amplitudes that must be
+canceled together. We determine when exchange retuning can maintain this
+cancellation in a weakly coupled Heisenberg pentamer chain.
+For a local doublet on a uniform reflection-symmetric periodic chain,
+retuning cancels the entire first-order probe.
+The weight is of order $\beta^4$ or smaller as the intercell exchange
+$\beta$ tends to zero at fixed $T/J_{\rm eff}$.
+A local quartet instead generates a composite vector whose bond-spin
+channels require incompatible dipole corrections.
+At a specified interference root, an exact commutator moment proves a
+nonzero leading thermal response for every finite even ring with at
+least four cells and every $T/J_{\rm eff}>0$.
+The result survives independent first-order SU(2)-invariant exchange
+controls within each cell.
+The four-cell leading probe nevertheless annihilates the ground state;
+its first thermally activated lines occur at $2J_{\rm eff}$ and
+$7J_{\rm eff}$ with intensity ratio $9:8$.
+Complete low-band spectra of twenty microscopic spins reproduce these
+lines and resolve the crossover to a fourth-order ground-state background.
+Finite momentum acceptance adds form-factor weight whose variance survives
+window-optimized retuning.
+The local spin representation thus determines whether a tunable
+ground-state interference zero can suppress the entire thermal response
+within the weak-coupling control space.
+\end{abstract}
+\maketitle
+\input{introduction}
+\input{mechanism}
+\input{thermal}
+\input{discussion}
+\begin{acknowledgments}
+[Author, affiliation, funding, and acknowledgment details are retained for
+completion by the authors.]
+\end{acknowledgments}
+\section*{Data and code availability}
+Calculation scripts, numerical tables, and computational protocols are
+available in the accompanying project files. Public repository details
+will be supplied by the authors.
+\appendix
+\input{general_spin}
+\input{local_controls}
+\input{results}
+\input{numerics}
+\bibliography{references,rank_references}
+\end{document}

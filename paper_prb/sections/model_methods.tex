@@ -1,0 +1,122 @@
+\section{Model and observables}
+\label{sec:methods}
+
+\subsection{Microscopic chain and cell momentum}
+
+The chain contains $N$ complete five-site cells and $L=5N$ spin-$1/2$ sites,
+with Hamiltonian
+\begin{align}
+H={}&J_1\sum_n(\bm S_{n,2}\!\cdot\!\bm S_{n,3}
+ +\bm S_{n,3}\!\cdot\!\bm S_{n,4})\notag\\
+&+J_2\sum_n(\bm S_{n,1}\!\cdot\!\bm S_{n,2}
+ +\bm S_{n,4}\!\cdot\!\bm S_{n,5})\notag\\
+&+J_3\sum_n\bm S_{n,5}\!\cdot\!\bm S_{n+1,1}.
+\label{eq:hamiltonian}
+\end{align}
+We set $J_1=1$, $\hbar=1$, and physical-site spacing to one, and write
+$\alpha=J_2/J_1$ and $\beta=J_3/J_1>0$.
+Open chains terminate at complete-cell boundaries.
+The isolated-cell Hamiltonian is invariant under $a\mapsto6-a$.
+Its 32 states are resolved by total spin and reflection parity;
+transition weights are summed over complete multiplets, so they do not depend
+on the eigenvector basis chosen within a degenerate level.
+
+The distinction between physical momentum $q$ and cell momentum
+$Q=5q\pmod{2\pi}$ is central to this work.
+For example, $q=0.20\pi$, $0.60\pi$, and $\pi$ all correspond to $Q=\pi$,
+but their phases within a cell differ.
+They therefore need not have equal intensity even when they probe the same
+effective-chain excitation.
+Figure~\ref{fig:model} illustrates the cell and its positive-$\alpha$ projection.
+
+\begin{figure*}[t]
+  \centering
+  \includegraphics[width=0.94\textwidth]{fig1_model_projection.png}
+  \caption{Pentamer chain and isolated-cell structure.
+  The outer cell bonds have exchange $J_2$, the central bonds $J_1$, and
+  neighboring cells are connected by $J_3$.
+  The local levels and spin-$1/2$ projection shown here refer to positive
+  $\alpha=J_2/J_1$; the spin-$3/2$ projection for negative $\alpha$ is
+  developed in the text. All energies are in units of $J_1$.
+  Plotted levels come from numerical
+  diagonalization.}
+  \label{fig:model}
+\end{figure*}
+
+\subsection{Static and dynamical probes}
+\label{sec:diagnostics}
+
+We use distinct static and dynamical observables, with their boundary
+conventions stated explicitly.
+The static scans employ the connected central-window structure factor
+\begin{equation}
+ S_W^{zz}(q)=\frac{1}{M}\sum_{i,j\in W}e^{iq(j-i)}
+ [\langle S_i^zS_j^z\rangle-\langle S_i^z\rangle\langle S_j^z\rangle],
+ \label{eq:static}
+\end{equation}
+where $W$ removes $\lfloor L/10\rfloor$ sites from each end and $M=|W|$.
+For negative $\alpha$, $\qpeak$ maximizes this quantity on 401 momenta in
+$[0,\pi]$.
+Its local sharpness is
+\begin{equation}
+ R_L=1-\frac{S_W^{zz}(\qpeak-\delta)+S_W^{zz}(\qpeak+\delta)}
+ {2S_W^{zz}(\qpeak)},\quad \delta=\frac{2\pi}{M},
+ \label{eq:ratio}
+\end{equation}
+using the nearest sampled neighbors. At $0$ or $\pi$ the ratio is one-sided.
+The size flow $\Delta R=R_{80}-R_{60}$ is an operational measure of peak
+sharpening, not by itself a phase invariant.
+
+The full-momentum dynamical maps instead use every site, with no spatial window:
+\begin{equation}
+ O_q=\frac{1}{\sqrt L}\sum_{j=1}^Le^{iqj}
+ (S_j^z-\langle0|S_j^z|0\rangle),
+ \label{eq:momentum-source}
+\end{equation}
+\begin{equation}
+ S^{zz}(q,\omega)=\sum_m|\langle m|O_q|0\rangle|^2
+ \delta(\omega-E_m+E_0).
+ \label{eq:dsf}
+\end{equation}
+This normalization is also used in the two-cell exact-diagonalization test.
+It fixes the absolute spectral weight rather than just its momentum dependence.
+
+\subsection{Finite-chain calculations}
+\label{sec:convergence}
+\label{sec:dsf}
+
+Ground states are obtained by density-matrix renormalization group (DMRG) in
+fixed total-$S^z$ sectors, using matrix-product states
+(MPS)~\cite{white1992,schollwoeck2011}.
+The negative-$\alpha$ static scans use two distinct $S^z=0$ initial states and a
+separate $S^z=1$ calculation. Retained runs satisfy variance per site
+$\mathrm{Var}(H)/L\le5\times10^{-8}$, final truncation error
+$\le10^{-9}$, sector magnetization error $\le10^{-8}$, and
+$E_0(S^z=1)-E_0(S^z=0)\ge-10^{-8}$, with at most 64 sweeps.
+These are numerical screening criteria, not rigorous error bounds.
+Appendix~\ref{sec:krylov} examines a case where passing them did not ensure
+stability of an entropy fit against the local eigensolver setting.
+
+For the dynamics, real-time MPS evolution~\cite{vidal2004,paeckel2019} gives
+$C_q(t)=\langle b_q|e^{-i(H-E_0)t}|b_q\rangle$ for
+$|b_q\rangle=O_q|0\rangle$.
+The displayed estimator is
+\begin{equation}
+ S_T^{zz}(q,\omega)=\frac{1}{\pi}\operatorname{Re}
+ \int_0^Tdt\,e^{i\omega t}(1-t/T)C_q(t).
+ \label{eq:finite-time-dsf}
+\end{equation}
+The triangular time window, including the actual $t=0$ value, is part of the
+estimator. Its line kernel has full width at half maximum
+$5.56623/T$; sampling $\omega$ more finely does not improve this resolution.
+The two $L=40$ maps use $TJ_1=60$, second-order odd--even time evolution with
+$\Delta tJ_1=0.05$, maximum MPS bond dimension $\chi=192$, cutoff $10^{-10}$,
+and 41 independently evolved sources $q_m=2\pi m/40$.
+No Gaussian smoothing, momentum interpolation, reflection averaging, or
+spectral clipping is applied.
+The validation and display normalization are specified in
+Appendix~\ref{sec:spectral-control}.
+
+The same deterministic calculation routines supply the figures and the
+source-data tables. Exact diagonalization, projection identities, source-norm checks, and the
+parameter controls below are the recorded validation procedures.

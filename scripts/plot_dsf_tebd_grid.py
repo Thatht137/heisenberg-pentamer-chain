@@ -4,7 +4,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.colors import Normalize
-from scipy.ndimage import gaussian_filter
 
 plt.rcParams.update({
     "font.family": "serif",
@@ -18,7 +17,6 @@ plt.rcParams.update({
 ALPHAS = [1.0, -1.0]
 BETAS = [1.0, 0.7, 0.5, 0.4, 0.1]  # 从大到小，匹配文献 Fig. 6 演化方向
 VMAX = 1.0  # 与文献 0-1.1 接近
-SMOOTH_SIGMA = (3.0, 10.0)  # (sigma_q, sigma_omega) 像素：q 方向轻平滑保留色散，ω 方向重平滑模拟 broadening；标量或 0 也可
 
 fig, axes = plt.subplots(
     len(ALPHAS), len(BETAS),
@@ -42,15 +40,6 @@ for i, alpha in enumerate(ALPHAS):
         q_points, omega_points = spectrum.shape
         qvals = np.linspace(0, 2 * np.pi, q_points)
         omegavals = np.linspace(0, 3.0, omega_points)
-
-        # 强制 inversion symmetry: S(q) = S(2π-q)。
-        # 五聚体单胞基态是 S=1/2 doublet，开边界留边缘自由度 + TEBD 截断误差累积，
-        # 使 [π,2π] 半区有数值噪声。镜像平均消除不对称，保持全 [0,2π] 范围。
-        spectrum = 0.5 * (spectrum + spectrum[::-1, :])
-
-        # 频域高斯平滑（各向异性）：spectrum.shape = (q, ω)，sigma 同维度
-        if SMOOTH_SIGMA and (np.asarray(SMOOTH_SIGMA) > 0).any():
-            spectrum = gaussian_filter(spectrum, sigma=SMOOTH_SIGMA)
 
         last_im = ax.pcolormesh(
             qvals, omegavals, spectrum.T,
@@ -82,6 +71,6 @@ if last_im is not None:
     cbar = fig.colorbar(last_im, cax=cax)
     cbar.set_label(r"$S^{zz}(q,\omega)$ (mapped)")
 
-fig.savefig("figures/Sqw_tebd_grid_sym.pdf")
-fig.savefig("figures/Sqw_tebd_grid_sym.png", dpi=300)
-print("Saved figures/Sqw_tebd_grid_sym.{pdf,png}")
+fig.savefig("figures/Sqw_tebd_grid_raw.pdf")
+fig.savefig("figures/Sqw_tebd_grid_raw.png", dpi=300)
+print("Saved figures/Sqw_tebd_grid_raw.{pdf,png}")

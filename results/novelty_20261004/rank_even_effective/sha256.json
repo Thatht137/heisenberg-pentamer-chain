@@ -1,0 +1,9 @@
+{
+  "scripts\\submission_20261002\\check_even_rank_sources.py": "0b07b2ceec30d40f650721f9bcdb1b7abf2e93cba6d1449918fdb3c4256f2a0d",
+  "scripts\\submission_20261002\\probe_rank_geometry.py": "64b4987dc6c29578644c0261118fe89b0ebb5994d693e5e5ebee95a3f898b1d9",
+  "results\\novelty_20261004\\rank_geometry_probe\\summary.json": "d4d65b138b764dc8baf20b85561036b9f24ffe99876e2926f8d4d368362a63a2",
+  "results\\novelty_20261004\\rank_even_effective\\comparisons.csv": "76b65f6610ee66b70a1e54dd981d35b33de0953c180be1bea66313adacde0416",
+  "results\\novelty_20261004\\rank_even_effective\\local_probe_coefficients.csv": "5f036747ab6019a114c8d426dc25859c7a8f8e98c429530089afe040baec5df7",
+  "results\\novelty_20261004\\rank_even_effective\\protocol.json": "1a85fed5340188db65752b7c89f929e417012e16b72c16e3558859f5a564fb61",
+  "results\\novelty_20261004\\rank_even_effective\\summary.json": "7737f08e7c71f2a8c093b7605476192c80eb2580f3b1d04327c3c4adc759b5a7"
+}

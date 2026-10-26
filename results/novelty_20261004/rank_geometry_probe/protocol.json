@@ -1,0 +1,13 @@
+{
+  "exploratory": true,
+  "purpose": "avoid comparing exponents across different boundary conditions",
+  "cells": 3,
+  "boundary": "PBC",
+  "sector": "Sz=1/2; equal average of degenerate ground states",
+  "quartet_q_over_pi": 0.9333333333333333,
+  "doublet_q_over_pi": 0.5333333333333333,
+  "effective_q_mod_2pi": "2pi/3 for both",
+  "wall_limit_seconds": 60,
+  "threads": 1,
+  "scope": "odd ring is frustrated, not a bulk-chain extrapolation"
+}

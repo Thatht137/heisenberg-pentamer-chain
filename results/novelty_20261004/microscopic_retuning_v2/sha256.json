@@ -1,0 +1,10 @@
+{
+  "scripts\\submission_20261002\\validate_dark_retuning.py": "2c83321c6fe74f44660626a814f6adb21f7c98e4950760de36e55a34cbd126a2",
+  "scripts\\submission_20261002\\validate_dark_multicell.py": "e26a78bbbdfd150682c04ee63b19ff0367682b6ccfb5f35376bd05711c16633b",
+  "scripts\\submission_20261002\\dark_operator_expansion.py": "b67351f67524a26c7224423281bc34361190e9b2431226a9fd529a2220e27f0a",
+  "scripts\\submission_20261002\\local_projection_checks.py": "1470aab021ef1a9caeacc80a4e82f29cb30796379d2449aa0b9624537ea729ad",
+  "results\\novelty_20261004\\microscopic_retuning_v2\\comparisons.csv": "c7409efa452a6fb0ba94b4795512c04f05346b7618bfdde792ab554b7491cda9",
+  "results\\novelty_20261004\\microscopic_retuning_v2\\protocol.json": "eea0fb2390426e10713bc05b1c1b151a8cd740d68fe153967e73630dc8d3ecee",
+  "results\\novelty_20261004\\microscopic_retuning_v2\\spectral_lines.csv": "8798febb2c2dc930856abc4c1c67436f82ce9fb90fe8a09ccab28efcce5a9727",
+  "results\\novelty_20261004\\microscopic_retuning_v2\\summary.json": "bc0ecc3b5688ed0d79a2c7944c4d28b450b710eb3e44dcebc0053c8661d95d9b"
+}

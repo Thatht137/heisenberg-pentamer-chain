@@ -1,0 +1,24 @@
+[
+  {
+    "alpha": -0.5,
+    "L": 10,
+    "dimension": 252,
+    "energy": -2.6595692648865694,
+    "residual": 2.4601620924285917e-15,
+    "inversion_relative_rms": 1.6228023552354525e-15,
+    "q0_max": 0.0,
+    "min_spectrum": 0.0,
+    "tmax": 60.0
+  },
+  {
+    "alpha": 0.5,
+    "L": 10,
+    "dimension": 252,
+    "energy": -3.050881556876859,
+    "residual": 3.8684284628776296e-15,
+    "inversion_relative_rms": 1.130200758574907e-15,
+    "q0_max": 0.0,
+    "min_spectrum": 0.0,
+    "tmax": 60.0
+  }
+]

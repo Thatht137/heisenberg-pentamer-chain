@@ -1,0 +1,35 @@
+DRAFT FOR AUTHOR REVIEW - NOT SUBMITTED OR SENT
+
+[Submission date]
+
+Editors
+Physical Review B
+
+Dear Editors,
+
+Please consider our manuscript, "Local-spin projection and momentum-selective spectral weight in a Heisenberg pentamer chain," for publication as a Regular Article in Physical Review B.
+
+The manuscript examines how local composite spins determine the visibility of collective magnetic excitations in a spin-1/2 chain with a five-site unit cell. Changing the sign of the outer intra-cell exchange changes the isolated-cell ground multiplet from spin 1/2 to spin 3/2 in the range studied. The resulting redistribution of the projected local moments reverses the relative intensity of antiferromagnetic responses at physical momenta that correspond to the same effective-chain momentum.
+
+The central quantitative result is an absolute low-energy spectral-weight prediction for two weakly coupled pentamers, without fitting an intensity amplitude. Exact diagonalization tests both the projected singlet-triplet gap and the momentum-resolved weight. At six points with inter-cell exchange no larger than one percent of the local excitation gap, the relative L2 error of the weight vector is below 0.27%, and the gap error is below 0.56%. A separate reflection-parity analysis identifies why the lowest excited local doublet can be invisible to the staggered probe.
+
+Complete L=40 spectra and finite-size static correlations complement this controlled weak-coupling analysis. These calculations distinguish momentum-dependent visibility from changes in the underlying collective momentum. The manuscript explicitly separates the strong-coupling spectral comparison from the domain of the quantitative projection test; it does not claim a new thermodynamic phase or a complete phase diagram.
+
+We believe this model-specific connection between local multiplets, absolute spectral weight, and folded magnetic responses will interest readers working on low-dimensional quantum magnetism and dynamical spin correlations. The manuscript presents the numerical controls and the limitations of the finite-size and finite-time results.
+
+Thank you for your consideration.
+
+Sincerely,
+
+[Corresponding author]
+[Affiliation]
+[Email]
+
+AUTHOR CHECKS BEFORE SENDING - REMOVE THIS SECTION FROM THE SUBMITTED LETTER
+
+- Complete the date, author identity, affiliation, and contact details.
+- Have every author review and approve the final manuscript, figures, and submission choice; no such approval is asserted in this draft.
+- Confirm the actual prior-publication, preprint, and concurrent-submission status, and provide any declarations required by the submission system. This draft makes no unverified originality or exclusivity declaration.
+- Confirm permissions, funding and acknowledgment details, and data-access arrangements.
+- The source-data archive is currently local, not publicly deposited. Do not claim public availability or a repository identifier before an authorized deposit exists.
+- This letter has not been sent. Submission requires a separate author decision and authorization.

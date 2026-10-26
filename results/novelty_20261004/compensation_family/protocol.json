@@ -1,0 +1,22 @@
+{
+  "Q_over_pi": [
+    0.55,
+    1.0
+  ],
+  "points": 16,
+  "quartet_q": "(Q+4pi)/5",
+  "doublet_q": "(Q+2pi)/5",
+  "quartet_bracket": [
+    -2.0,
+    -0.0001
+  ],
+  "doublet_bracket": [
+    0.01,
+    4.0
+  ],
+  "root_abs_gate": 1e-10,
+  "local_operator_fit_gate": 1e-09,
+  "threads": 1,
+  "wall_limit_seconds": 60,
+  "scope": "local roots and link coefficients only, not a phase diagram or a many-body weight scan"
+}

@@ -1,0 +1,10 @@
+{
+  "scripts\\submission_20261002\\local_projection_checks.py": "1470aab021ef1a9caeacc80a4e82f29cb30796379d2449aa0b9624537ea729ad",
+  "scripts\\autoresearch_v5\\static_krylov_ed_reference.py": "172a00088fdbe0e06806a4b0d3da4b5d334f805d2205a91598cc262cab3e00cb",
+  "scripts\\autoresearch_v3\\project_doublet.py": "e2eda148142ef4cfd2e6286a31a30be75b1f0fed5fb36778c8d964b824777496",
+  "results\\submission_20261002\\local_projection_recheck_complete_20261004\\coupling_checks.csv": "4d62fa4349e26963774c2244429c22d0a905f6081b45ba59e2b960a482949691",
+  "results\\submission_20261002\\local_projection_recheck_complete_20261004\\folded_prediction.csv": "a61fe34d6f630e0c2348c308b70a9de301ab37b21ec5a161b7c6bb97fe2dbf5f",
+  "results\\submission_20261002\\local_projection_recheck_complete_20261004\\protocol.json": "ad131448173755c9e3c9a8e3e2f096c7a6e92a700d1016e2e77bccb5d3870680",
+  "results\\submission_20261002\\local_projection_recheck_complete_20261004\\q_resolved_weights.csv": "48781f4499306f48ce6efcc18e1d033ab2cc7415779cb9d41d5b9c9653eedd69",
+  "results\\submission_20261002\\local_projection_recheck_complete_20261004\\summary.json": "1990c290b00b5e02e3a1de5b6bfc384e309d9708ec747fb281e0a0521bfb5791"
+}

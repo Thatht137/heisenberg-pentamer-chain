@@ -1,0 +1,23 @@
+{
+  "L": 10,
+  "cells": 2,
+  "all_Sz_sectors": true,
+  "acceptance": "uniform normalized physical q interval [q0-delta,q0+delta]",
+  "integration": "exact sinc integral of microscopic site-response Gram matrix",
+  "alpha_policy": "fixed at the ideal central-q one-parameter retuning for each tau",
+  "half_widths_over_pi": [
+    0,
+    1e-06,
+    1e-05,
+    0.0001,
+    0.001,
+    0.005,
+    0.01
+  ],
+  "cutoff": "both initial and final energies below E0+Delta_root/2",
+  "physical_instrument_claim": false,
+  "image_smoothing": false,
+  "numerical_center_relative_gate": 1e-07,
+  "wall_limit_seconds": 60,
+  "do_not_require_physics_to_match_desired_outcome": true
+}

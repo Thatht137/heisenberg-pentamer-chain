@@ -1,0 +1,10 @@
+{
+  "scripts\\submission_20261002\\prove_general_spin_moment.py": "72114bea3754da6a62e6c30ab6e156ab9ba73f09656fa412b732879d454373c5",
+  "scripts\\submission_20261002\\prove_general_spin_obstruction.py": "32fe1f6c688000bc2982f126c279d21baaaa68639458f1cb3698af479f9392d3",
+  "scripts\\submission_20261002\\audit_four_cell_thermal_window.py": "6371765f1ebc960234ecd975fdf75595109cd752fa5acbdd2bb40e9a60e42c79",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\low_band_g0.0006250.npz": "3a9c83fa4f774e7b28b423ea3eeaaa40bd6fefe3865a9bb50a7643dc47cb317d",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\low_band_g0.0012500.npz": "9b49436190752b7c9a29f2576db7d4fe90f55535bda0a0ba3d76f1894aac1ff1",
+  "results\\novelty_20261008\\thermal_microscopic_four_cells\\low_band_g0.0025000.npz": "7af6f8a97efc9b531ef2ea7946f4ecba572f67b4e78d8b62bbbe618ee9c5f86e",
+  "results\\novelty_20261008\\general_spin_moment\\protocol.json": "95b48173af832cbe9ffa87c51679ef332bbadab4956726eb9f61b42318dc7f50",
+  "results\\novelty_20261008\\general_spin_moment\\summary.json": "7622a08a897082b972b418077fb419c300fee0850eb3b79db7620c16524593c0"
+}

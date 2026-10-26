@@ -1,0 +1,8 @@
+{
+  "scripts\\submission_20261002\\extend_dark_effective.py": "47967a345a28ec882ce88e74e2e4acd7548e926d5e2f1ae6f9cafff1d06024e1",
+  "scripts\\submission_20261002\\dark_operator_expansion.py": "b67351f67524a26c7224423281bc34361190e9b2431226a9fd529a2220e27f0a",
+  "scripts\\submission_20261002\\local_projection_checks.py": "1470aab021ef1a9caeacc80a4e82f29cb30796379d2449aa0b9624537ea729ad",
+  "results\\novelty_20261004\\effective_size_extension\\protocol.json": "e59032e18b01eb01cfd92f473f4eea2b0a24308649c8ba3ebdcb706c817b2c2b",
+  "results\\novelty_20261004\\effective_size_extension\\size_checks.csv": "3c164d5e183b13292d96876a63e8115d80bdde2400514204e5e2e693bedfc4f7",
+  "results\\novelty_20261004\\effective_size_extension\\summary.json": "87d5b69f592435d9b06c307317bb25ae9991d06ccfc21ba38ecdfdb1744c17b2"
+}

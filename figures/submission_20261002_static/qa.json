@@ -1,0 +1,563 @@
+{
+  "status": "rendered_for_visual_review",
+  "backend": "Python/matplotlib",
+  "figure_contract": {
+    "fig8": "Finite-size momentum reconstruction; operational criteria do not establish a thermodynamic phase boundary.",
+    "fig9": "The L80 entropy coefficient is solver sensitive; k8 controls do not replace a consistently controlled size sequence.",
+    "archetype": "quantitative grid",
+    "width_inches": 7.2,
+    "parameter_footer": false,
+    "interpolation": false,
+    "smoothing": false
+  },
+  "sources": {
+    "phase_decisions": {
+      "path": "results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/phase-diagram-v2/stage_c_practical_v2_r1_boundary_decision.json",
+      "sha256": "5d787205001615a835f3d09596028ecc531a1ff109249eb5e17ec5ca3b995912"
+    },
+    "entropy_fits": {
+      "path": "results/autoresearch_v5_20260920/static_krylov_impact_v2/entropy_fit_comparison.csv",
+      "sha256": "24af647e1f095fc2b0600ee7177775830326b16095f4e4d83f0b24300223bc72"
+    },
+    "finite_size_impact": {
+      "path": "results/autoresearch_v5_20260920/static_krylov_impact_v2/finite_size_impact.csv",
+      "sha256": "9c5f11766e419076c527716b58db93ab714f6dc02ed38c59ee22c6693823e081"
+    },
+    "historical_joint": {
+      "path": "results/autoresearch_v5_20260919/closeout_stage1_joint_v2/joint_size_evidence.csv",
+      "sha256": "4e5c19df79d4353e4ecd4dd60fa923365be8efc6a478e6448f8c7a7b6c20274d"
+    },
+    "impact_provenance": {
+      "path": "results/autoresearch_v5_20260920/static_krylov_impact_v2/source_provenance.json",
+      "sha256": "a7a8460df0ac64e4b63bb8ecc8f5aa7c3e8629a6581ca6ebfdc4766f83d99607"
+    }
+  },
+  "upstream_source_audit": [
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_comparison_20260920\\comparison.json",
+      "role": "comparison_audit",
+      "recorded_sha256": "511c326ab7d357f886892fc3417f0fbd3ebc7de06c11b0785ad8ae78259e97c3",
+      "current_sha256": "511c326ab7d357f886892fc3417f0fbd3ebc7de06c11b0785ad8ae78259e97c3",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\manifest.json",
+      "role": "baseline_manifest",
+      "recorded_sha256": "d66b5e222c95a34a381f4d24593270639492361a12a37ddc51ae592f84f2a18c",
+      "current_sha256": "d66b5e222c95a34a381f4d24593270639492361a12a37ddc51ae592f84f2a18c",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\baseline_inventory.json",
+      "role": "baseline_inventory",
+      "recorded_sha256": "f0b4475c01fc4493829e9a488fd0a227b234aa2dd7dedabe5b3cfe534e0a5141",
+      "current_sha256": "f0b4475c01fc4493829e9a488fd0a227b234aa2dd7dedabe5b3cfe534e0a5141",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\source_hashes.json",
+      "role": "baseline_source_hashes",
+      "recorded_sha256": "3a21b7df47586b1c83e9716bf5e0f28ffd60e5b52333b5b5b5bd5d38cafdef12",
+      "current_sha256": "3a21b7df47586b1c83e9716bf5e0f28ffd60e5b52333b5b5b5bd5d38cafdef12",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\gap_records.csv",
+      "role": "baseline_measurement",
+      "recorded_sha256": "b635f2e4fecc32bf8e1d6a8f2d0397eed1f7977d863d5bf84026e03cd173749b",
+      "current_sha256": "b635f2e4fecc32bf8e1d6a8f2d0397eed1f7977d863d5bf84026e03cd173749b",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\entropy_records.csv",
+      "role": "baseline_measurement",
+      "recorded_sha256": "ba32983a5e4f1aee0cdb5679e6592b5a5258689e17f7d8badf06ec83b4e0d29b",
+      "current_sha256": "ba32983a5e4f1aee0cdb5679e6592b5a5258689e17f7d8badf06ec83b4e0d29b",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\entropy_fits.csv",
+      "role": "baseline_measurement",
+      "recorded_sha256": "12fab54d57a5f33c013e76172932bc4eaf8dc34abd45a60b26bcb308ebecf9c4",
+      "current_sha256": "12fab54d57a5f33c013e76172932bc4eaf8dc34abd45a60b26bcb308ebecf9c4",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\bond_correlations.csv",
+      "role": "baseline_measurement",
+      "recorded_sha256": "1d6dc718d30312e6f940b4a0c0e60147cb33c51d93cbba6b924ab910e7f60044",
+      "current_sha256": "1d6dc718d30312e6f940b4a0c0e60147cb33c51d93cbba6b924ab910e7f60044",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\connected_quarter.csv",
+      "role": "baseline_measurement",
+      "recorded_sha256": "ba16a86601e4c31fd36fba6247fecebf16bfc3ea49351f12296131e3c69a7397",
+      "current_sha256": "ba16a86601e4c31fd36fba6247fecebf16bfc3ea49351f12296131e3c69a7397",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_baseline_v3\\dimer_rms.csv",
+      "role": "baseline_measurement",
+      "recorded_sha256": "3e5fde01142ccd8a472cf872fe8952c7d2f0275f3ba4bf1e8066da9003c2cbb6",
+      "current_sha256": "3e5fde01142ccd8a472cf872fe8952c7d2f0275f3ba4bf1e8066da9003c2cbb6",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260919\\static_krylov_controls_r2\\parameter-scan.run_spec.json",
+      "role": "candidate_run_spec",
+      "recorded_sha256": "e43ff718a237010ea9ef3c78200193072bffd1c6bc14b44b7a5cc36ff7815f77",
+      "current_sha256": "e43ff718a237010ea9ef3c78200193072bffd1c6bc14b44b7a5cc36ff7815f77",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\manifest.json",
+      "role": "candidate_parent_manifest",
+      "recorded_sha256": "93b3e2b67603b3f72ec6cdb24d86419219ffad332e916d7ca5d9553c37244754",
+      "current_sha256": "93b3e2b67603b3f72ec6cdb24d86419219ffad332e916d7ca5d9553c37244754",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\checksums.sha256",
+      "role": "candidate_parent_checksums",
+      "recorded_sha256": "0bcb2ee37e498e9f5b9f1aba690ec56b1fce8e856508165cc994279a6930c918",
+      "current_sha256": "0bcb2ee37e498e9f5b9f1aba690ec56b1fce8e856508165cc994279a6930c918",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_center\\manifest.json",
+      "role": "candidate_measurement",
+      "recorded_sha256": "6a653d6b066f01469a7f0375f5282a69b6ec18a1fac89c5143d25cabacd3561a",
+      "current_sha256": "6a653d6b066f01469a7f0375f5282a69b6ec18a1fac89c5143d25cabacd3561a",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_center\\metrics.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "d87cc9f8823b4f187441937f839904b8d4b19fd927e16b0c15e505aaaddce9fe",
+      "current_sha256": "d87cc9f8823b4f187441937f839904b8d4b19fd927e16b0c15e505aaaddce9fe",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\manifest.json",
+      "role": "baseline_raw_solver_diagnostic",
+      "recorded_sha256": "432daf64d832659acbf6d8d4d9f86ad620a9059f8a107910b0a8082251c8390a",
+      "current_sha256": "432daf64d832659acbf6d8d4d9f86ad620a9059f8a107910b0a8082251c8390a",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_center\\metrics.csv",
+      "role": "baseline_raw_solver_diagnostic",
+      "recorded_sha256": "bc04c996eb5fc7235a0d95e97d711fe89c9a0dfea628f9d4c5f589ef096018b3",
+      "current_sha256": "bc04c996eb5fc7235a0d95e97d711fe89c9a0dfea628f9d4c5f589ef096018b3",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_center\\entropy_profile_full.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "a961fefb242e63aef03f20a8e70f70f5ec2e3bd43014e57b519894cf317535fe",
+      "current_sha256": "a961fefb242e63aef03f20a8e70f70f5ec2e3bd43014e57b519894cf317535fe",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_center\\bond_correlations.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "70e2f0e4d47e835738272862af8a34a460d394a0d72654114c771d54caf59fdc",
+      "current_sha256": "70e2f0e4d47e835738272862af8a34a460d394a0d72654114c771d54caf59fdc",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_center\\bond_bond_connected.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "00292dc189a9d4413eed7d18e8e49d2663b9195633e2e2973ae1a90071f995f3",
+      "current_sha256": "00292dc189a9d4413eed7d18e8e49d2663b9195633e2e2973ae1a90071f995f3",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_ferro_j2\\manifest.json",
+      "role": "candidate_measurement",
+      "recorded_sha256": "1c0eaaaa3c6753f79387014fd74da7ac07590b4721e9b3c0fa3bee45a510be63",
+      "current_sha256": "1c0eaaaa3c6753f79387014fd74da7ac07590b4721e9b3c0fa3bee45a510be63",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_ferro_j2\\metrics.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "fbdc89ebc1253c62228aab067aa88c9dc7035946336e5e83a74dee4d4947f945",
+      "current_sha256": "fbdc89ebc1253c62228aab067aa88c9dc7035946336e5e83a74dee4d4947f945",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\manifest.json",
+      "role": "baseline_raw_solver_diagnostic",
+      "recorded_sha256": "45b8a960322b31f0015745c38a7c5f675f7d86f238bdba1d0bee4ab959038e6f",
+      "current_sha256": "45b8a960322b31f0015745c38a7c5f675f7d86f238bdba1d0bee4ab959038e6f",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01000-b02500-L080\\start_ferro_j2\\metrics.csv",
+      "role": "baseline_raw_solver_diagnostic",
+      "recorded_sha256": "bf9dfae63ea64f00ef78116e30e5244177737ee165c876cf07fa99afe5c2bb11",
+      "current_sha256": "bf9dfae63ea64f00ef78116e30e5244177737ee165c876cf07fa99afe5c2bb11",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_ferro_j2\\entropy_profile_full.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "a44c178bac27deb03ae56350fac3abedbd5c2561481c90a9bd6d83dcfecc0c3e",
+      "current_sha256": "a44c178bac27deb03ae56350fac3abedbd5c2561481c90a9bd6d83dcfecc0c3e",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_ferro_j2\\bond_correlations.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "d361ef84a63a3c2ac8fd17e5ba4361e7cd645e6eb4c8e2601762e16055ce3fca",
+      "current_sha256": "d361ef84a63a3c2ac8fd17e5ba4361e7cd645e6eb4c8e2601762e16055ce3fca",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01000-b02500-L080-k08\\start_ferro_j2\\bond_bond_connected.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "1ac689a831cb040280c4a79bee509ae91ecdb7cf42f4f0ce45601b154795d3c2",
+      "current_sha256": "1ac689a831cb040280c4a79bee509ae91ecdb7cf42f4f0ce45601b154795d3c2",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\manifest.json",
+      "role": "candidate_parent_manifest",
+      "recorded_sha256": "60a8c1bb43c8f089c744d7d615d72f945dea292b01ce4ea6b60df7cf7bf7477b",
+      "current_sha256": "60a8c1bb43c8f089c744d7d615d72f945dea292b01ce4ea6b60df7cf7bf7477b",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\checksums.sha256",
+      "role": "candidate_parent_checksums",
+      "recorded_sha256": "1576d59cdbf0d3d26b8433ac6e4b1e78e8eca2711e4ccd41cef8f2a76ea0f730",
+      "current_sha256": "1576d59cdbf0d3d26b8433ac6e4b1e78e8eca2711e4ccd41cef8f2a76ea0f730",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_center\\manifest.json",
+      "role": "candidate_measurement",
+      "recorded_sha256": "ea689844c42e8d18540176bd9195c25e1380a14016b9d01fd3b89af3487d60a6",
+      "current_sha256": "ea689844c42e8d18540176bd9195c25e1380a14016b9d01fd3b89af3487d60a6",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_center\\metrics.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "0db9680ef97b3c0b1d823b503765f20b416d25e6752828fb2f4cb420a6b3c42c",
+      "current_sha256": "0db9680ef97b3c0b1d823b503765f20b416d25e6752828fb2f4cb420a6b3c42c",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\manifest.json",
+      "role": "baseline_raw_solver_diagnostic",
+      "recorded_sha256": "f90cb3f17c76261aee761383d67e051ab86ed8fc9c22553bc3a84d0d83c4efd1",
+      "current_sha256": "f90cb3f17c76261aee761383d67e051ab86ed8fc9c22553bc3a84d0d83c4efd1",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_center\\metrics.csv",
+      "role": "baseline_raw_solver_diagnostic",
+      "recorded_sha256": "f464fabe2338e72e442316d317ca1fe557655ec35656269f8af4dac5fa2ec382",
+      "current_sha256": "f464fabe2338e72e442316d317ca1fe557655ec35656269f8af4dac5fa2ec382",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_center\\entropy_profile_full.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "4e681d64f425374b59ef30f2f6fa2262c3a21d6a17d678dbb170e87448e23148",
+      "current_sha256": "4e681d64f425374b59ef30f2f6fa2262c3a21d6a17d678dbb170e87448e23148",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_center\\bond_correlations.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "ecdb1c29e5dae6120f5653fa333a3e3876f9128f51bef90676925e980895de34",
+      "current_sha256": "ecdb1c29e5dae6120f5653fa333a3e3876f9128f51bef90676925e980895de34",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_center\\bond_bond_connected.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "594c2636c0c286dbae5c569df8fca8be1d51505b25d7c20e6af16e9ea9031eaa",
+      "current_sha256": "594c2636c0c286dbae5c569df8fca8be1d51505b25d7c20e6af16e9ea9031eaa",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_ferro_j2\\manifest.json",
+      "role": "candidate_measurement",
+      "recorded_sha256": "85ba7d94f8af0b2b88e330013c20291144982db9e4feb4aed697399640236dba",
+      "current_sha256": "85ba7d94f8af0b2b88e330013c20291144982db9e4feb4aed697399640236dba",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_ferro_j2\\metrics.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "578b4284b08f332fd7ed3699ae8c90e01eee8652e5853d69d1cf7696512c9950",
+      "current_sha256": "578b4284b08f332fd7ed3699ae8c90e01eee8652e5853d69d1cf7696512c9950",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\manifest.json",
+      "role": "baseline_raw_solver_diagnostic",
+      "recorded_sha256": "8ccec1632f1f319586843ec80e351a1d28fb2fd3c74359e86c78b5ce89705801",
+      "current_sha256": "8ccec1632f1f319586843ec80e351a1d28fb2fd3c74359e86c78b5ce89705801",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260913\\negative_phase_independent_pilot_fetch_20260914_2243\\negdiag-a01750-b02500-L080\\start_ferro_j2\\metrics.csv",
+      "role": "baseline_raw_solver_diagnostic",
+      "recorded_sha256": "9a6d6d89602c55b045fd59042f3da184b625af7ca0d6ff4c1eb6cb783f4416ce",
+      "current_sha256": "9a6d6d89602c55b045fd59042f3da184b625af7ca0d6ff4c1eb6cb783f4416ce",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_ferro_j2\\entropy_profile_full.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "28e0063fff8742e92db1377c1f5915382c5fff8cf5fcd6cc7f0f8f8414c76093",
+      "current_sha256": "28e0063fff8742e92db1377c1f5915382c5fff8cf5fcd6cc7f0f8f8414c76093",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_ferro_j2\\bond_correlations.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "4262ced40a3c8ff439ddbe09627ff81f1aac62cb62047dcbc8f61a83150c69e5",
+      "current_sha256": "4262ced40a3c8ff439ddbe09627ff81f1aac62cb62047dcbc8f61a83150c69e5",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260920\\static_krylov_controls_r2_fetch_0945\\cells\\negdiag-a01750-b02500-L080-k08\\start_ferro_j2\\bond_bond_connected.csv",
+      "role": "candidate_measurement",
+      "recorded_sha256": "171b69589d8e89e989cd102621bb524f999d2cf9f84b21c46be2c6bdc474a8e3",
+      "current_sha256": "171b69589d8e89e989cd102621bb524f999d2cf9f84b21c46be2c6bdc474a8e3",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260919\\closeout_stage1_joint_v2\\joint_size_evidence.csv",
+      "role": "stage1_joint_table",
+      "recorded_sha256": "4e5c19df79d4353e4ecd4dd60fa923365be8efc6a478e6448f8c7a7b6c20274d",
+      "current_sha256": "4e5c19df79d4353e4ecd4dd60fa923365be8efc6a478e6448f8c7a7b6c20274d",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260919\\closeout_stage1_joint_v2\\summary.json",
+      "role": "stage1_joint_summary",
+      "recorded_sha256": "4b904bd46eedbfc8c20c9a65898ad63903df3b22b5d161b39bfd2f8c7648baac",
+      "current_sha256": "4b904bd46eedbfc8c20c9a65898ad63903df3b22b5d161b39bfd2f8c7648baac",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260919\\closeout_stage1_joint_v2\\qa.json",
+      "role": "stage1_joint_qa",
+      "recorded_sha256": "c69379d922490edd3567d515b0dbe799292f4bf8b9069610f8f2021d1f9163a8",
+      "current_sha256": "c69379d922490edd3567d515b0dbe799292f4bf8b9069610f8f2021d1f9163a8",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260919\\closeout_stage1_reanalysis_v2\\entropy_fits.csv",
+      "role": "stage1_existing_entropy_fits",
+      "recorded_sha256": "f53850c59da5a0096c01d6dbdedf44fee154ac12fe321e98424edae89e3e4463",
+      "current_sha256": "f53850c59da5a0096c01d6dbdedf44fee154ac12fe321e98424edae89e3e4463",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "results\\autoresearch_v5_20260919\\static_krylov_controls_release_v2\\compatibility_terminal_snapshot_20260920_0945.json",
+      "role": "terminal_validation_receipt",
+      "recorded_sha256": "55de0d33e19778267617d1c46338bbb848c775b21776cf1c71c297f3b6921f31",
+      "current_sha256": "55de0d33e19778267617d1c46338bbb848c775b21776cf1c71c297f3b6921f31",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "scripts\\autoresearch_v5\\analyze_static_krylov_impact.py",
+      "role": "analysis_script",
+      "recorded_sha256": "d26365f19f0ab2edd9708f6607d370a2eca9ff36a027847d82483505ae9136f1",
+      "current_sha256": "d26365f19f0ab2edd9708f6607d370a2eca9ff36a027847d82483505ae9136f1",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "scripts\\autoresearch_v5\\analyze_negative_entropy_sizes.py",
+      "role": "existing_entropy_fit_helper",
+      "recorded_sha256": "9cd570108cb599088cacd9a09d86344fd02ca96087af31a0dd0f8bdd4652ee4a",
+      "current_sha256": "9cd570108cb599088cacd9a09d86344fd02ca96087af31a0dd0f8bdd4652ee4a",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "scripts\\autoresearch_v5\\audit_pilot_entropy_robustness.py",
+      "role": "existing_fit_backend",
+      "recorded_sha256": "b29946cbf50ee001dfbe97e6a6f94d70c82b6706e06f7e6834d04ea48f8ff774",
+      "current_sha256": "b29946cbf50ee001dfbe97e6a6f94d70c82b6706e06f7e6834d04ea48f8ff774",
+      "exists": true,
+      "matches": true
+    },
+    {
+      "path": "scripts\\autoresearch_v5\\static_krylov_candidate_adapter.py",
+      "role": "candidate_audit_adapter",
+      "recorded_sha256": "859ea850e016d9d077554950276311a0b756789661290b003c7df6507098850a",
+      "current_sha256": "b12b7984bf28dcb77726ce086c625fd7a49535d0729c5d455823b4c108eb6d89",
+      "exists": true,
+      "matches": false
+    }
+  ],
+  "upstream_provenance_caveat": "The current candidate-audit adapter code differs from its historical hash; archived measurement files match. No historical code equivalence is asserted.",
+  "exported_source_data": {
+    "fig8_candidate_criteria.csv": "499faf12f4b7088e3356df888c0ffbcdab77cc6c2d27542a833d068ae5b3f916",
+    "fig8_points.csv": "e39027d38bddec5a6ff7803efcec446962a61a8571f9666d2b7dc1f492b01cdb",
+    "fig9_historical_sizes.csv": "41abc7f876f7bfa1384d0f6957c37e90c195923671e73731e763fa69ad14c2cc",
+    "fig9_l80_solver_controls.csv": "b928c32a777bc8599059982a3106206900099af4e1eb7f9c894118c3bdeabe7c",
+    "projection_plotted_coupling_errors.csv": "29f25ac84375bad406dc41c11e2eb0f250253259a37cd1a88f71730677e4a5cc",
+    "projection_plotted_q_weights.csv": "bd4b2cd4e52d57197abd0eefd1f1d7cca17319a9a2e59a252da9752964fcee37",
+    "projection_source_coupling_checks.csv": "4d62fa4349e26963774c2244429c22d0a905f6081b45ba59e2b960a482949691",
+    "projection_source_folded_prediction.csv": "a61fe34d6f630e0c2348c308b70a9de301ab37b21ec5a161b7c6bb97fe2dbf5f",
+    "projection_source_q_resolved_weights.csv": "48781f4499306f48ce6efcc18e1d033ab2cc7415779cb9d41d5b9c9653eedd69",
+    "source_entropy_fits.csv": "24af647e1f095fc2b0600ee7177775830326b16095f4e4d83f0b24300223bc72",
+    "source_finite_size_impact.csv": "9c5f11766e419076c527716b58db93ab714f6dc02ed38c59ee22c6693823e081",
+    "source_historical_joint.csv": "4e5c19df79d4353e4ecd4dd60fa923365be8efc6a478e6448f8c7a7b6c20274d"
+  },
+  "source_data_changed": false,
+  "new_numerical_runs": false,
+  "script_sha256": "ce3de020e5d1eb464383df538ce26b3d725e7099538fe2ab7eea84d98eedf602",
+  "phase_points": 22,
+  "candidate_intervals": 8,
+  "joint_criterion_intervals": 0,
+  "entropy_historical_points": 6,
+  "entropy_solver_window_groups": 16,
+  "mixed_solver_size_lines": false,
+  "intervals_are_statistical_ci": false,
+  "cross_table_entropy_check_tolerance": 1e-12,
+  "fixed_window_controls": [
+    {
+      "alpha": -0.175,
+      "beta": 0.25,
+      "L": 80,
+      "krylov": 3,
+      "window": 0.2,
+      "period": 10,
+      "mean": 0.9165658764030935,
+      "min_start": 0.9009138460195611,
+      "max_start": 0.9322179067866257
+    },
+    {
+      "alpha": -0.175,
+      "beta": 0.25,
+      "L": 80,
+      "krylov": 8,
+      "window": 0.2,
+      "period": 10,
+      "mean": 0.9598967772411023,
+      "min_start": 0.9598967633009385,
+      "max_start": 0.9598967911812661
+    },
+    {
+      "alpha": -0.1,
+      "beta": 0.25,
+      "L": 80,
+      "krylov": 3,
+      "window": 0.2,
+      "period": 10,
+      "mean": 0.5331624817635778,
+      "min_start": 0.4841201939821016,
+      "max_start": 0.5822047695450542
+    },
+    {
+      "alpha": -0.1,
+      "beta": 0.25,
+      "L": 80,
+      "krylov": 8,
+      "window": 0.2,
+      "period": 10,
+      "mean": 0.932464737416972,
+      "min_start": 0.9324647204452523,
+      "max_start": 0.9324647543886917
+    }
+  ],
+  "exports": {
+    "fig8": {
+      "nonwhite_fraction": 0.16308205409356724,
+      "text_outside_canvas": [],
+      "outputs": {
+        "fig8_finite_size_reconstruction.pdf": {
+          "sha256": "5285904a5633eeb745d6bac6abdf9e012745039cbba25f84973dd97971d7cd6c",
+          "bytes": 63480
+        },
+        "fig8_finite_size_reconstruction.svg": {
+          "sha256": "7f6d56a80a34a427b363b05b5d6f55ca801e8dcb7b8e83f14948306f86945d38",
+          "bytes": 75501
+        },
+        "fig8_finite_size_reconstruction.png": {
+          "sha256": "196bf57fb054f2bef7de648c1947791a25eac7ff0ce4cb44b28f4886ac0b3b0c",
+          "bytes": 331983
+        }
+      }
+    },
+    "fig9": {
+      "nonwhite_fraction": 0.03327089424951267,
+      "text_outside_canvas": [],
+      "outputs": {
+        "fig9_entropy_solver_control.pdf": {
+          "sha256": "fde376c52dc1409c2b63ff82c219aa91ed674360f57cd279436f23a64dbda245",
+          "bytes": 48374
+        },
+        "fig9_entropy_solver_control.svg": {
+          "sha256": "03470dd2c9984939aec6fc80e3f0a61805f05762409c42a2f72eb1058cdda62b",
+          "bytes": 40826
+        },
+        "fig9_entropy_solver_control.png": {
+          "sha256": "fb6335421cf7f617b6559133c69b9e2f9024cbf022895740b3c99a0b375a2020",
+          "bytes": 90056
+        }
+      }
+    }
+  }
+}

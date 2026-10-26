@@ -1,0 +1,17 @@
+{
+  "scope": "fixed finite even N>=4; uniform nearest-neighbor PBC; R=(bY+uD)/sqrt(ell*N)",
+  "definition": "M2=d^(-N) Tr([h,R]^dagger [h,R]); two-sided dimensionless uniform-trace moment",
+  "minimization": "real u only; b fixed and nonzero",
+  "arithmetic": "Fraction tensor contractions and polynomial identities",
+  "matrix_checks_twice_spin": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "microscopic_check": "previous N4 fixed zero-T retuning only, not a microscopic moment-optimized trajectory",
+  "wall_limit_seconds": 60,
+  "new_eigensolves": false
+}

@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-08",
+  "pdf_sha256": "fc1bc0a7b606a80afba91ea8df0b181f570b74f895333f48e12052c924ef2c22",
+  "status": "passed within stated visual inspection scope",
+  "pages": 16,
+  "contact_sheet_pages_checked": "1-16",
+  "full_size_pages_checked": [3, 15],
+  "checks": [
+    "Exact a,b formulas fit the column without clipping or overlap.",
+    "Cross-reference now reads Appendix E, not E 0 a.",
+    "Highest-weight vector, local tensor coefficients and method text are legible.",
+    "No unexpected blank page, missing figure or apparent overlap in the full contact sheet."
+  ],
+  "limitations": "Not a new word-by-word review of every page or independent scientific peer review. Original plots are unchanged."
+}

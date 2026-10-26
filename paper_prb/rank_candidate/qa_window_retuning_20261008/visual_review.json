@@ -1,0 +1,11 @@
+{
+  "date": "2026-10-08",
+  "pdf_sha256": "273023594260444c177cb6a29cb1727eae7488f68f1e46a6af48bbf8d74dac2b",
+  "status": "passed for the stated visual scope; not scientific peer review",
+  "page_count": 16,
+  "contact_sheet_reviewed": true,
+  "individual_pages_reviewed": [1, 6, 7, 8, 16],
+  "scope": "New equation (30), window-retuning discussion, revised abstract and conclusion, figure-text boundaries and reference ending.",
+  "issues_found_in_scope": [],
+  "scientific_completion_claim": false
+}

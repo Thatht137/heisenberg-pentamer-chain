@@ -1,0 +1,120 @@
+\section{Discussion}
+\label{sec:discussion}
+
+\subsection{Internal spin structure and momentum-resolved weight}
+
+The projected response in Eq.~\eqref{eq:folded-response} separates two
+physical ingredients. The effective chain determines the collective spectrum
+at cell momentum $Q$, while the five-site spin distribution determines its
+visibility at physical momentum $q$ through $F(q)/5$.
+Consequently, a weak response at one replica need not indicate a missing
+collective mode. At negative $\alpha$, the near cancellation of the
+$q=\pi$ cell amplitude coexists with a strong amplitude at $q=0.6\pi$,
+although both momenta fold to $Q=\pi$.
+At positive $\alpha$ the same comparison favors $q=\pi$.
+The switch of the isolated cell from spin $1/2$ to spin $3/2$ changes this
+interference pattern as well as the scale of the inter-cell exchange.
+
+The two-cell calculation tests this statement without a phenomenological
+line shape or an intensity fit. At $\alpha=\pm0.5$ and
+$\beta/\Delta_{\mathrm{loc}}\le0.01$, the largest relative error of the
+41-momentum low-band weight vector is $0.27\%$, and that of the
+singlet--triplet gap is $0.56\%$.
+These checks validate the absolute projected weights for the specified
+finite system in the weak-coupling limit.
+For longer chains the same leading factor $F(q)/5$ multiplies the effective
+response, but the two-cell line spectrum and its integrated absolute
+weights cannot be substituted for those of an extended chain.
+
+This use of the cluster projection complements the trimer and tetramer
+studies, which compared numerical spectra with effective descriptions of
+propagating excitations~\cite{cheng2022trimer,li2026tetramer}.
+Here the quantitative comparison concerns the low-energy intensity associated
+with two different half-integer cell spins and their folded momentum
+replicas. It does not identify the high-energy bands of
+Fig.~\ref{fig:fullq} with unique particles.
+Indeed, the two plotted points have
+$\beta/\Delta_{\mathrm{loc}}=1.46$ and $3.96$ for positive and negative
+$\alpha$, respectively. The two-cell controls at these points already fail
+the separation required by the weak-coupling low-band construction.
+Their $L=40$ spectra therefore constitute a finite-coupling comparison,
+not an extrapolation of the absolute weak-coupling formula.
+
+\subsection{A different local limit near zero intra-cell exchange}
+
+The quartet projection for negative $\alpha$ and the reconstruction toward
+$q=\pi$ near $\alpha=0$ are not contradictory: the projection presumes that
+the isolated-cell gap is large compared with $\beta$.
+At fixed positive $\beta$ this condition fails as $\alpha$ approaches zero,
+and a different partition of the chain becomes appropriate.
+In the bulk at $\alpha=0$, sites 2--4 of each cell form a spin-$1/2$ trimer,
+while the bond joining site 5 to site 1 of the next cell forms a singlet
+dimer. Open boundaries additionally leave uncoupled end spins at this
+decoupled point.
+
+For $|\alpha|\ll\min(1,\beta)$ the trimer doublets interact through a virtual
+triplet of the intervening dimer. Each trimer endpoint projects onto
+$2\bm T/3$, and eliminating the dimer triplet yields
+\begin{equation}
+\Jeff=\frac{2\alpha^2}{9\beta}>0
+\label{eq:near-zero}
+\end{equation}
+in units of $J_1$.
+Thus both signs of sufficiently small $\alpha$ lead, at this order, to
+antiferromagnetically coupled trimer doublets.
+In an open chain, however, each unpaired end spin couples to its adjacent
+trimer already at first order, as
+$(2\alpha/3)\bm S_{\mathrm{edge}}\!\cdot\!\bm T$.
+This sign-dependent $O(\alpha)$ boundary term is larger than the bulk
+$O(\alpha^2/\beta)$ scale in the stated limit.
+Equation~\eqref{eq:near-zero} is therefore not a formula for the lowest
+sector gap of the complete open chain.
+Exact diagonalization of the eight-spin trimer--dimer--trimer cluster
+supports the coefficient and the $\alpha^2/\beta$ scaling in the
+asymptotic limit. The corresponding local-gap estimates at
+$(\alpha,\beta)=(-0.10,0.25)$ and $(-0.175,0.25)$ are already
+$36.1\%$ and $53.9\%$ below the leading prediction, respectively.
+Equation~\eqref{eq:near-zero} therefore explains the limiting mechanism
+and its small energy scale, not the finite-coupling location of the
+momentum reconstruction.
+
+The static scan compares these competing local descriptions in finite
+chains. Its dominant momentum changes from about $0.6\pi$ toward $\pi$,
+but the momentum change and the size trend of the peak sharpness do not
+select the same coupling intervals.
+A change in the strongest physical-momentum replica alone is not a
+thermodynamic phase criterion: it can reflect changes of matrix elements
+and short-distance correlations as well as changes of long-distance order.
+The data establish the finite-size reconstruction but do not determine
+whether any part of it becomes singular in the bulk limit.
+The small scale in Eq.~\eqref{eq:near-zero} also explains why a low absolute
+energy variance need not by itself control the entropy or a sector gap near
+this limit; the solver-sensitivity checks must be judged against the relevant
+low-energy scale.
+
+\subsection{What a spin probe can distinguish}
+
+There are two separate uses of interference in the present analysis.
+Within the cell ground multiplet, $F(q)$ predicts the relative low-energy
+weights of folded replicas. Between different isolated-cell multiplets,
+reflection parity can forbid a transition exactly.
+For the positive-$\alpha$ pentamer, the $q=\pi$ spin operator is even under
+reflection, so the lowest odd-parity excited doublet is dark and higher
+allowed sectors carry the local inelastic weight.
+Coupling the cells does not conserve the reflection of each cell
+independently. The isolated-cell dark state is therefore a weak-coupling
+selection rule to be followed under mixing, not an exact prohibition of an
+entire many-body band at arbitrary $\beta$.
+
+These distinctions suggest direct tests of a weakly coupled pentamer
+realization: compare low-energy intensities at momenta sharing the same
+$Q$, and compare the lowest local excitation energy with the first allowed
+single-spin signal. Quantitative comparison with a material additionally
+requires its positions, exchange constants, and scattering operator.
+For an SU(2)-invariant singlet the three Cartesian spin responses are equal,
+so $S^{zz}$ determines the spin-correlation tensor before the experimental
+form factors and polarization factors are applied.
+The common finite-time resolution of Fig.~\ref{fig:fullq},
+$0.09277J_1$, is broader than the separately calculated finite-chain gaps.
+The maps compare resolved intensity distributions; they do not resolve
+those gaps from zero or establish the asymptotic widths of spectral features.

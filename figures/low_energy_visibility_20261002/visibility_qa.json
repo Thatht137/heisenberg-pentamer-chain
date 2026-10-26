@@ -1,0 +1,54 @@
+{
+  "display_only": true,
+  "normalization": "asinh",
+  "vmin": 0,
+  "vmax": 6,
+  "linear_width": 0.02,
+  "shared_color_scale": true,
+  "display_saturation": false,
+  "smoothing": false,
+  "interpolation": false,
+  "inversion_averaging": false,
+  "spectral_resolution_improved": false,
+  "source_data_changed": false,
+  "records": [
+    {
+      "J2": 0.5,
+      "source": "D:/Project/1x5_Heisenberg_Pentamer/results/fullq_dsf_20261001/L40_positive/spectrum.csv",
+      "source_sha256": "6a642e74b05b76694f2b22e1518fd4da025024d9537d69bb4e44c569b1b41c6d",
+      "output_stem": "Sqw_L40_J2=0.5_J3=0.5_low_asinh",
+      "omega_range": [
+        0.0,
+        0.6
+      ],
+      "sampled_full_omega_range": [
+        0.0,
+        4.0
+      ],
+      "maximum": 5.696173613620203,
+      "median_excluding_conserved_endpoints": 0.03414927691849285,
+      "low_weight_fraction_of_sampled_range": 0.41758931653171066,
+      "window_fwhm": 0.09277049188333333,
+      "spectral_resolution_improved": false
+    },
+    {
+      "J2": -0.5,
+      "source": "D:/Project/1x5_Heisenberg_Pentamer/results/fullq_dsf_20261001/L40_negative_local/spectrum.csv",
+      "source_sha256": "66a2ea9e4a17e5bf86b3e489e456129f257a165fc6171a27d57adef59894e210",
+      "output_stem": "Sqw_L40_J2=-0.5_J3=0.5_low_asinh",
+      "omega_range": [
+        0.0,
+        0.6
+      ],
+      "sampled_full_omega_range": [
+        0.0,
+        4.0
+      ],
+      "maximum": 3.2878922867913705,
+      "median_excluding_conserved_endpoints": 0.09278574798839302,
+      "low_weight_fraction_of_sampled_range": 0.4347107398574502,
+      "window_fwhm": 0.09277049188333333,
+      "spectral_resolution_improved": false
+    }
+  ]
+}

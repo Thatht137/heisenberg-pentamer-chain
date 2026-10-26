@@ -1,0 +1,102 @@
+{
+  "id" : null,
+  "scope" : null,
+  "query" : "10.1103/PhysRevB.103.214422",
+  "appliedFilters" : null,
+  "sort" : null,
+  "configuration" : null,
+  "type" : "discover",
+  "_links" : {
+    "self" : {
+      "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=10.1103%252FPhysRevB.103.214422"
+    }
+  },
+  "_embedded" : {
+    "searchResult" : {
+      "_embedded" : {
+        "objects" : [ ]
+      },
+      "page" : {
+        "number" : 0,
+        "size" : 5,
+        "totalPages" : 0,
+        "totalElements" : 0
+      },
+      "_links" : {
+        "self" : {
+          "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/search/objects?query=10.1103%2FPhysRevB.103.214422&size=5"
+        }
+      }
+    },
+    "facets" : [ {
+      "name" : "author",
+      "facetType" : "text",
+      "facetLimit" : 5,
+      "minValue" : "Aall, Carlo",
+      "maxValue" : "Zywicki, Britta",
+      "openByDefault" : true,
+      "_links" : {
+        "self" : {
+          "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/facets/author?query=10.1103%2FPhysRevB.103.214422"
+        }
+      },
+      "_embedded" : {
+        "values" : [ ]
+      }
+    }, {
+      "name" : "subject",
+      "facetType" : "hierarchical",
+      "facetLimit" : 5,
+      "openByDefault" : false,
+      "_links" : {
+        "self" : {
+          "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/facets/subject?query=10.1103%2FPhysRevB.103.214422"
+        }
+      },
+      "_embedded" : {
+        "values" : [ ]
+      }
+    }, {
+      "name" : "dateIssued",
+      "facetType" : "date",
+      "facetLimit" : 5,
+      "minValue" : "1971-12-16",
+      "maxValue" : "2026-11-25",
+      "openByDefault" : false,
+      "_links" : {
+        "self" : {
+          "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/facets/dateIssued?query=10.1103%2FPhysRevB.103.214422"
+        }
+      },
+      "_embedded" : {
+        "values" : [ ]
+      }
+    }, {
+      "name" : "itemtype",
+      "facetType" : "text",
+      "facetLimit" : 10,
+      "openByDefault" : false,
+      "_links" : {
+        "self" : {
+          "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/facets/itemtype?query=10.1103%2FPhysRevB.103.214422"
+        }
+      },
+      "_embedded" : {
+        "values" : [ ]
+      }
+    }, {
+      "name" : "entityType",
+      "facetType" : "text",
+      "facetLimit" : 5,
+      "openByDefault" : false,
+      "_links" : {
+        "self" : {
+          "href" : "https://api-depositonce.tu-berlin.de/server/api/discover/facets/entityType?query=10.1103%2FPhysRevB.103.214422"
+        }
+      },
+      "_embedded" : {
+        "values" : [ ]
+      }
+    } ]
+  }
+}

@@ -1,0 +1,128 @@
+{
+  "display_only": true,
+  "source_data_changed": false,
+  "source_files_unchanged": true,
+  "smoothing": false,
+  "interpolation": false,
+  "inversion_averaging": false,
+  "out_of_range_clipping": false,
+  "shared_color_scale_within_each_mode": true,
+  "vmin": 0,
+  "vmax": 6.0,
+  "full_spectrum": true,
+  "display_q_range": [
+    0,
+    6.283185307179586
+  ],
+  "display_omega_range": [
+    0,
+    4
+  ],
+  "energy_axis": "linear",
+  "colorbar": true,
+  "inset": false,
+  "broken_axis": false,
+  "spectral_resolution_improved": false,
+  "script_sha256": "7e21a1f2ed37b58a292be6536036da27dc94eca2bd52ec7e1ec5034500efae13",
+  "style_script_sha256": "96ae83a779f5e588f007e953010753a4b82123bd030d478d63e3bee3e876d5e1",
+  "records": [
+    {
+      "J2": 0.5,
+      "J3": 0.5,
+      "L": 40,
+      "source_sha256": {
+        "spectrum.csv": "6a642e74b05b76694f2b22e1518fd4da025024d9537d69bb4e44c569b1b41c6d",
+        "q.csv": "58ea4efd807e260928e4523cbfcd97ac0b4f7e1fda8a1cfde41642aca4cf99a4",
+        "omega.csv": "63cde828e810c252bd70f8b4a56dcc153beb207c789db9d233082b5c83d74ece",
+        "run_metadata.toml": "e7e52a4616fb0ff688e6b21c7b0cdbb8c11cfa371743494efcf291315974f062"
+      },
+      "source_grid_shape": [
+        41,
+        801
+      ],
+      "inversion_relative_rms": 2.874563605570619e-06,
+      "window_fwhm": 0.09277049188333333,
+      "figures": [
+        {
+          "mode": "linear",
+          "stem": "Sqw_L40_J2=0.5_J3=0.5_full_linear",
+          "colorbar_ticks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "linear_width": null,
+          "mapping": "u=S/6"
+        },
+        {
+          "mode": "asinh",
+          "stem": "Sqw_L40_J2=0.5_J3=0.5_full_asinh",
+          "colorbar_ticks": [
+            0,
+            0.02,
+            0.1,
+            0.5,
+            1,
+            3,
+            6
+          ],
+          "linear_width": 0.1,
+          "mapping": "u=asinh(S/0.1)/asinh(6/0.1)"
+        }
+      ]
+    },
+    {
+      "J2": -0.5,
+      "J3": 0.5,
+      "L": 40,
+      "source_sha256": {
+        "spectrum.csv": "66a2ea9e4a17e5bf86b3e489e456129f257a165fc6171a27d57adef59894e210",
+        "q.csv": "58ea4efd807e260928e4523cbfcd97ac0b4f7e1fda8a1cfde41642aca4cf99a4",
+        "omega.csv": "63cde828e810c252bd70f8b4a56dcc153beb207c789db9d233082b5c83d74ece",
+        "run_metadata.toml": "8a42823c7000959cbdf16746d719b4d133027f48369f81c630813ca0ce50aefb"
+      },
+      "source_grid_shape": [
+        41,
+        801
+      ],
+      "inversion_relative_rms": 4.492150891823163e-06,
+      "window_fwhm": 0.09277049188333333,
+      "figures": [
+        {
+          "mode": "linear",
+          "stem": "Sqw_L40_J2=-0.5_J3=0.5_full_linear",
+          "colorbar_ticks": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "linear_width": null,
+          "mapping": "u=S/6"
+        },
+        {
+          "mode": "asinh",
+          "stem": "Sqw_L40_J2=-0.5_J3=0.5_full_asinh",
+          "colorbar_ticks": [
+            0,
+            0.02,
+            0.1,
+            0.5,
+            1,
+            3,
+            6
+          ],
+          "linear_width": 0.1,
+          "mapping": "u=asinh(S/0.1)/asinh(6/0.1)"
+        }
+      ]
+    }
+  ]
+}

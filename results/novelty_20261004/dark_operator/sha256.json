@@ -1,0 +1,9 @@
+{
+  "scripts\\submission_20261002\\dark_operator_expansion.py": "b67351f67524a26c7224423281bc34361190e9b2431226a9fd529a2220e27f0a",
+  "scripts\\submission_20261002\\local_projection_checks.py": "1470aab021ef1a9caeacc80a4e82f29cb30796379d2449aa0b9624537ea729ad",
+  "results\\novelty_20261004\\interference_zero_probe\\q_resolved_weights.csv": "8746613cf21bd5a5b29d08c492930f3407a0b6e7369b1eef8af864b6c99e4de9",
+  "results\\novelty_20261004\\dark_operator\\effective_chains.csv": "88da4123d29f17b0f4ec2eebaedd7ca97390c517e9f10d71c266baa009cf45c7",
+  "results\\novelty_20261004\\dark_operator\\effective_spectra.csv": "13ea5129988f97b6e522cd9f3cccd7ea5fbb055ea5b8134cb8525a41c74e847b",
+  "results\\novelty_20261004\\dark_operator\\protocol.json": "c6306addcac0f131c07ba3e8871796ebf6a6d868bf614d693669d7ab59d4bf45",
+  "results\\novelty_20261004\\dark_operator\\summary.json": "06298b66634a56431b1d19a99480a9eb8c632afbd5ee1f68af21ca361157934b"
+}

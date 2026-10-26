@@ -1,0 +1,12 @@
+{
+  "scripts\\submission_20261002\\probe_interference_zero.py": "c43887fd91aa0b5a24e1d9f098edd29c174989811537d54af53403b442d36b68",
+  "scripts\\submission_20261002\\local_projection_checks.py": "1470aab021ef1a9caeacc80a4e82f29cb30796379d2449aa0b9624537ea729ad",
+  "docs\\novelty_contract_20261004.md": "2fe68e29ff5223933684a5c27715c07fbbca88ad75d607558e82ab2acd03bdac",
+  "scripts\\autoresearch_v5\\static_krylov_ed_reference.py": "172a00088fdbe0e06806a4b0d3da4b5d334f805d2205a91598cc262cab3e00cb",
+  "scripts\\autoresearch_v3\\project_doublet.py": "e2eda148142ef4cfd2e6286a31a30be75b1f0fed5fb36778c8d964b824777496",
+  "results\\novelty_20261004\\interference_zero_probe\\cell_scan.csv": "bfd2bdc8ad9742cc48e1b5c92430ccf66ba0cbfc2e713c74b36ae859e22751ae",
+  "results\\novelty_20261004\\interference_zero_probe\\coupling_checks.csv": "c1c887aed95bcd51cfbf2ec8877afcc0bc1ef555caf38b1bdd1e57f2d419979a",
+  "results\\novelty_20261004\\interference_zero_probe\\protocol.json": "1ea0e02070e277a64e6ba986a740a4fd17365e82f928363ab1359251f74920aa",
+  "results\\novelty_20261004\\interference_zero_probe\\q_resolved_weights.csv": "8746613cf21bd5a5b29d08c492930f3407a0b6e7369b1eef8af864b6c99e4de9",
+  "results\\novelty_20261004\\interference_zero_probe\\summary.json": "a8af58604ff287985d2329a04e6f002cbd4844458785f410a67f593b10b597e2"
+}

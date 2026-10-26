@@ -1,0 +1,14 @@
+{
+  "pdf_sha256": "e46f325ed004de7c32c31b3a5780144c1bb8d845681557176e5f20f9ee9517c0",
+  "status": "passed for the stated visual scope; not scientific peer review",
+  "reviewer": "assistant visual inspection",
+  "page_count": 14,
+  "scope": "All-page contact sheet plus full-size pages 4, 8, 9, 14",
+  "observations": [
+    "The new finite-frequency bound fits the main-text column.",
+    "Moment inequalities and the locality proof render without overlaps.",
+    "The final reference page contains a normal two-column block, not an isolated overflow line.",
+    "Existing figures remain visible with captions outside the panels."
+  ],
+  "limits": "Visual inspection and numerical checks do not establish novelty or replace author scientific approval."
+}

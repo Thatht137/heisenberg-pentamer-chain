@@ -1,0 +1,68 @@
+{
+  "all_gates_pass": true,
+  "rows": [
+    {
+      "spin": 1.5,
+      "cells": 3,
+      "sector_dimension": 12,
+      "ground_count": 2,
+      "W_fixed_over_beta2": 0.5451162485701275,
+      "W_min_over_beta2": 0.14202788529047405,
+      "lambda_real": 1.3143521434200205,
+      "lambda_imag": 1.8311245377132332e-14,
+      "kappa": -9.459137099692695,
+      "eigen_residual": 2.8601232760460213e-16,
+      "mean_fixed_over_beta": 0.16538351278321828,
+      "mean_retuned_over_beta": 0.16538351278321828,
+      "n3_cross_check_error": 3.3306690738754696e-16
+    },
+    {
+      "spin": 1.5,
+      "cells": 6,
+      "sector_dimension": 580,
+      "ground_count": 1,
+      "W_fixed_over_beta2": 0.16980286213079743,
+      "W_min_over_beta2": 0.0664115915710436,
+      "lambda_real": 0.7737438599849312,
+      "lambda_imag": 2.3313033306836998e-14,
+      "kappa": -5.568484281996576,
+      "eigen_residual": 6.268901187875472e-15,
+      "mean_fixed_over_beta": 0.5571089168674691,
+      "mean_retuned_over_beta": 0.8671309829254362,
+      "n3_cross_check_error": null
+    },
+    {
+      "spin": 0.5,
+      "cells": 3,
+      "sector_dimension": 3,
+      "ground_count": 2,
+      "W_fixed_over_beta2": 0.0004740079295617231,
+      "W_min_over_beta2": 8.977391416551908e-33,
+      "lambda_real": 0.1192486389308142,
+      "lambda_imag": 4.716279450311945e-16,
+      "kappa": -0.1722970631615379,
+      "eigen_residual": 5.551115123125783e-17,
+      "mean_fixed_over_beta": 0.24418751867734015,
+      "mean_retuned_over_beta": null,
+      "n3_cross_check_error": 5.551115123125783e-17
+    },
+    {
+      "spin": 0.5,
+      "cells": 6,
+      "sector_dimension": 20,
+      "ground_count": 1,
+      "W_fixed_over_beta2": 0.0007369402211019255,
+      "W_min_over_beta2": 3.8480680579623763e-32,
+      "lambda_real": 0.11924863893081421,
+      "lambda_imag": 4.607876085750582e-16,
+      "kappa": -0.1722970631615379,
+      "eigen_residual": 6.895040295545699e-16,
+      "mean_fixed_over_beta": 0.29347687313982385,
+      "mean_retuned_over_beta": null,
+      "n3_cross_check_error": null
+    }
+  ],
+  "elapsed_seconds": 0.040213900000000025,
+  "same_ring_frustration_not_required_in_effective_model": true,
+  "microscopic_long_chain_claim": false
+}

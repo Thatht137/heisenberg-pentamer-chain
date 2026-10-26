@@ -1,0 +1,7 @@
+{
+  "scripts\\submission_20261002\\check_bond_spin_channels.py": "b14669306df764efc1e559073c2a6f987b575b614522280f20423234b5b35d23",
+  "scripts\\submission_20261002\\dark_operator_expansion.py": "b67351f67524a26c7224423281bc34361190e9b2431226a9fd529a2220e27f0a",
+  "results\\novelty_20261004\\bond_spin_channels_v2\\channels.csv": "7d1ce4ec03f2abeb7f5d9ed888ed3894a638a781084a6c9d5e3f445a21ae9727",
+  "results\\novelty_20261004\\bond_spin_channels_v2\\protocol.json": "91126acc31577451ce385f22ca42e07c2e10d795884dbbfb2c31d8691d153925",
+  "results\\novelty_20261004\\bond_spin_channels_v2\\summary.json": "b2b95fd11ccf661ea98353a1cc954cdf9c00d7febd6b2a4ad321b227e1b8fb7a"
+}

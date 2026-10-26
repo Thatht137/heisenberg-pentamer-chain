@@ -1,0 +1,93 @@
+{
+  "scope": "two-cell weak-coupling absolute low-energy spectral-weight prediction",
+  "cells": [
+    {
+      "alpha": 0.5,
+      "s": 0.4999999999999998,
+      "cell_energy": -1.4013878188660003,
+      "local_gap": 0.3423708244910528,
+      "c": [
+        0.6228390306071077,
+        -0.27735009811261346,
+        0.3090221350110086,
+        -0.27735009811261435,
+        0.6228390306071117
+      ],
+      "jeff_over_beta": 0.38792845804760406,
+      "checks": {
+        "local_projection_error": 1.6662743935947543e-15,
+        "endpoint_reflection_error": 3.9968028886505635e-15,
+        "coefficient_sum_error": 0.0,
+        "link_projection_error": 9.535951292266274e-16,
+        "absolute_weight_formula_error": 3.3306690738754696e-16,
+        "spin_casimir_error": 1.4895481171046113e-15
+      }
+    },
+    {
+      "alpha": -0.5,
+      "s": 1.5,
+      "cell_energy": -1.1854143466934886,
+      "local_gap": 0.12639735231854066,
+      "c": [
+        0.3313291220345556,
+        0.24224204139708083,
+        -0.14714232686327303,
+        0.24224204139708103,
+        0.33132912203455567
+      ],
+      "jeff_over_beta": 0.10977898710818947,
+      "checks": {
+        "local_projection_error": 3.611349241330021e-14,
+        "endpoint_reflection_error": 5.551115123125783e-17,
+        "coefficient_sum_error": 2.220446049250313e-16,
+        "link_projection_error": 5.236421623696301e-14,
+        "absolute_weight_formula_error": 1.1102230246251565e-16,
+        "spin_casimir_error": 4.3870303882210435e-15
+      }
+    }
+  ],
+  "runs": 12,
+  "cpu_threads": 1,
+  "elapsed_seconds": 0.18915769999999998,
+  "algebra_pass": true,
+  "all_numerical_checks_pass": true,
+  "all_predefined_weak_predictions_pass": true,
+  "outside_domain_results_are_diagnostic_only": true,
+  "protocol": {
+    "model": "two complete pentamers, J2-J1-J1-J2-J3-J2-J1-J1-J2, J1=1",
+    "L": 10,
+    "boundary": "OBC",
+    "alphas": [
+      0.5,
+      -0.5
+    ],
+    "g_values": [
+      0.0025,
+      0.005,
+      0.01,
+      0.02,
+      0.04
+    ],
+    "g_definition": "beta / isolated-cell multiplet gap",
+    "outside_domain_beta": 0.5,
+    "q_points": 41,
+    "normalization": "Oq=sum_j exp(i*q*j) Sz_j / sqrt(10), connected",
+    "prediction": "Wlow=F(q)*s*(s+1)*(1-cos(5q))/15, gap=beta*c1*c5",
+    "low_band": "0 < excitation energy < Delta_local/2; boundary fixed before solve",
+    "weak_domain_g_max": 0.01,
+    "tolerances": {
+      "algebra": 1e-10,
+      "ed_residual": 1e-11,
+      "sum_rule": 1e-11,
+      "inversion_relative": 1e-10,
+      "weak_gap_relative": 0.02,
+      "weak_weight_relative": 0.03
+    },
+    "resource_limit": "1 CPU; L<=10; complete run <=300 seconds",
+    "claims_excluded": [
+      "bulk limit",
+      "unique high-energy branch assignment",
+      "L40 convergence"
+    ]
+  }
+}

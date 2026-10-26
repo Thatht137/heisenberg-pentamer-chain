@@ -1,0 +1,35 @@
+{
+  "cases": [
+    [
+      1,
+      4
+    ],
+    [
+      1,
+      6
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "spin_encoding": "twice spin",
+  "wall_limit_seconds": 60,
+  "maximum_dimension": 4096,
+  "eigensolves": 0,
+  "assembly": "orthonormal Cartesian spin and quadrupole Kronecker products; no proof-module imports",
+  "observable": "full-chain uniform-trace second moment, ell=b=1",
+  "tolerance": "1e-11 absolute or relative, as specified in source"
+}

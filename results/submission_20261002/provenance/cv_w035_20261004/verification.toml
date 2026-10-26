@@ -1,0 +1,51 @@
+L = 40
+accepted_under_1e_minus5 = true
+julia_version = "1.11.5"
+omega = 0.35
+recomputed_intensity = 0.3680495733571375
+source_definition = "sum_j exp(i*q*j) Sz_j ground / sqrt(L); stored historical source"
+relative_residual_no_truncation = 5.079397070551115e-6
+peak_rss_bytes = 3813720064
+elapsed_seconds = 219.8180000782013
+blas_threads = 1
+new_correction_vector_solve = false
+no_truncation_residual_maxdim = 1989
+source_norm = 1.0137708407296315
+alpha = 0.23
+eta = 0.1
+beta = 0.5
+julia_threads = 1
+reported_relative_residual = 5.2922021892823315e-6
+no_truncation_apply_maxdim = 1525
+run_dir = "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260802\\round21_cv_triplet_warmstart\\cell-0002-L40-qpi-w025-w035"
+reported_intensity = 0.3680495733571379
+saved_solution_maxdim = 305
+script_sha256 = "191637a445105529a0a270ef1a4cd701cf77e53bede2b3387c3f1f3b2fa033ce"
+hamiltonian_sha256 = "dfa67842cf76c52b73dd7c86bb77c05c5c1faa98518fdff733dd3f79032a41fb"
+q_over_pi = 1.0
+solution_representation = "full complex correction vector; ((omega+E0+i*eta)I-H)x=b"
+norm_method = "explicit direct-sum residual; QR gauge; center-tensor Frobenius norm"
+
+[[truncation_checks]]
+cutoff = 1.0e-12
+relative_residual = 0.0001912359363761512
+sum_relative_error = 1.9166409889748874e-8
+apply_relative_error = 0.0001911976721172638
+maxdim = 600
+triangle_error_bound = 0.00019121683852715355
+actual_relative_error = 0.00019119767319552623
+elapsed_seconds = 67.64499998092651
+[[truncation_checks]]
+cutoff = 1.0e-16
+relative_residual = 4.724093249651203e-6
+sum_relative_error = 2.0751658964583987e-7
+apply_relative_error = 1.9227048854868983e-6
+maxdim = 600
+triangle_error_bound = 2.130221475132738e-6
+actual_relative_error = 1.929367211189356e-6
+elapsed_seconds = 64.12800002098083
+
+[input_sha256]
+"source_state.jld2" = "169995c657a55ce427eeda54e9a4aaf1802d97d6fe699426aeed186af31d245b"
+"ground_state.jld2" = "af42a5bf609d6189d273519c7a2c02b7ee7bba8bd0760f2a23ef0b50dacbaa54"
+"checkpoint_latest.jld2" = "556ab23dc499ae13a94d9d70ba6c00ee53b6fab077c3c445aecaad8f3830d58c"

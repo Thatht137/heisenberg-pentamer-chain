@@ -1,0 +1,49 @@
+{
+  "local": {
+    "alpha_exact": -0.7742918851774317,
+    "alpha_formula": "-(2+sqrt(7))/6",
+    "local_gap": 0.16622154752454055,
+    "jeff_over_beta": 0.10855197721304166,
+    "P_B_P_norm": 3.815760786470701e-16,
+    "linear_coefficient": -0.12123576954254475,
+    "quadrupole_coefficient": 0.1236117648014558,
+    "fit_relative_error": 4.4694844287485765e-15,
+    "left_right_reflection_error": 1.007092876714286e-14,
+    "hermiticity_error": 0.0
+  },
+  "two_cell_checks": [
+    {
+      "g": 0.00125,
+      "ed_W_over_beta2": 0.007952354608574491,
+      "relative_error": 0.002003005166237637
+    },
+    {
+      "g": 0.0025,
+      "ed_W_over_beta2": 0.007968249987704783,
+      "relative_error": 0.004005835578205996
+    },
+    {
+      "g": 0.005,
+      "ed_W_over_beta2": 0.008000036355745484,
+      "relative_error": 0.008010943230945644
+    },
+    {
+      "g": 0.01,
+      "ed_W_over_beta2": 0.008063589938542328,
+      "relative_error": 0.01601874520733859
+    },
+    {
+      "g": 0.02,
+      "ed_W_over_beta2": 0.008190607843590384,
+      "relative_error": 0.03202310226038585
+    },
+    {
+      "g": 0.04,
+      "ed_W_over_beta2": 0.008444186970425044,
+      "relative_error": 0.06397427391233834
+    }
+  ],
+  "elapsed_seconds": 0.4567452000000001,
+  "microscopic_multicell_validation": false,
+  "publication_novelty_established": false
+}

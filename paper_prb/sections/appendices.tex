@@ -1,0 +1,244 @@
+\section{Local selection rules and energy scales}
+\label{sec:local-details}
+
+Figure~\ref{fig:selection} collects the local projection and selection-rule
+data for positive $\alpha$.
+At $\alpha=0.14,0.23,0.33$, the endpoint projections give
+$\Jeff/\beta=0.440,0.432,0.419$, respectively.
+The lowest odd-parity excited doublet carries vanishing $q=\pi$ weight.
+Weights are summed over complete final multiplets and averaged over the
+initial ground multiplet; the $84\%$--$98\%$ quartet fractions quoted in the
+main text refer to the local inelastic response, excluding transitions
+within the ground multiplet.
+
+The low-energy effective spin-$1/2$ chain and these local excitations occupy
+different scales in the controlled limit.
+The effective two-spinon continuum has edges
+$\omega_{\mathrm L}(Q)=\pi\Jeff|\sin Q|/2$ and
+$\omega_{\mathrm U}(Q)=\pi\Jeff|\sin(Q/2)|$
+\cite{descloizeaux1962,caux2006fourspinon}.
+Equating its $Q=\pi$ upper edge to the lowest local quartet gap gives formal
+values $\beta=0.104,0.176,0.265$ at the three $\alpha$ values.
+Their ratios to the cell gap are already $g=1.11,1.14,1.18$.
+Such an equality lies outside a small-$g$ expansion and cannot serve as a
+controlled prediction of hybridization or of a spectral phase boundary.
+
+\begin{figure*}[t]
+ \centering
+ \includegraphics[width=0.92\textwidth]{fig5_selection_rules.png}
+ \caption{Local projection and selection rules for positive $\alpha$.
+ The endpoint coefficients determine the projected exchange, while
+ multiplet-resolved weights distinguish bright spin-$3/2$ channels from the
+ dark odd-parity doublet at $q=\pi$.
+ The connected points in the momentum-weight panel are the five evaluated
+ momenta, not a continuous-momentum calculation. No many-body continuum
+ boundary or high-energy band assignment is plotted.
+ }
+ \label{fig:selection}
+\end{figure*}
+
+\section{Positive-coupling entropy calibration}
+\label{sec:positive-regime}
+
+Entropy offers an independent check of the low-energy interpretation, but the
+finite-size slope must be distinguished from a bulk central charge.
+At $(\alpha,\beta)=(0.23,0.05)$ we compare the entropy at inter-cell cuts of
+$N=8,12,16,20,24$ pentamers ($L=40$--120) with a uniform spin-$1/2$
+Heisenberg chain of $N$ effective sites.
+The matching is in the number of effective spins, not the physical-site
+length. Ratios of the fitted logarithmic slopes are $1.0331$ for the complete
+size sequence and $1.0240$ for $N\ge12$; the matched $N=24$ profile gives
+$1.0275$ (Fig.~\ref{fig:entanglement}).
+The maximum relative entropy change between the tested MPS budgets is
+$2.40\times10^{-4}$.
+These calibrated values support consistency with the $c=1$ reference.
+The raw absolute logarithmic fits fail their fit-quality test and are not
+used as precise thermodynamic estimates.
+
+\begin{figure*}[t]
+ \centering
+ \includegraphics[width=0.94\textwidth]{fig4_entanglement.png}
+ \caption{Local-cut entanglement spectra and effective-chain calibration.
+ The upper two rows show the lowest relative entanglement levels at five
+ inequivalent cuts for $\alpha=0.14$ and $0.33$, both at $\beta=0.5$ and $L=80$.
+ The lower comparison is a separate data set at
+ $(\alpha,\beta)=(0.23,0.05)$: slopes for pentamer inter-cell cuts are divided
+ by those of a uniform spin-$1/2$ chain with the same number of effective
+ sites. The three estimators agree with the $c=1$ reference within $3.31\%$.
+ The cut spectra are not used as a stand-alone phase classification.
+ }
+ \label{fig:entanglement}
+\end{figure*}
+
+\section{Entropy sensitivity to the local eigensolver}
+\label{sec:krylov}
+\label{sec:saved-state}
+
+For a general open-chain profile, we fit
+\begin{equation}
+ S(b)=a_\nu+\frac{\ceff}{6}
+ \ln\left[\frac{2L}{\pi}\sin\left(\frac{\pi b}{L}\right)\right],
+ \label{eq:entropy}
+\end{equation}
+with bond-class intercepts $\nu=b\bmod10$ and central windows
+$fL\le b\le(1-f)L$, $f=0.10,0.15,0.20,0.25$
+\cite{calabrese2004}.
+The slope $\ceff$ is descriptive unless finite-size and solver controls
+support a central-charge interpretation.
+
+The historical $k=3$ sequence at $(\alpha,\beta)=(-0.10,0.25)$ gives
+mean coefficients $0.988,0.695,0.533$ at $L=40,60,80$ for $f=0.20$.
+Here $k$ is the local eigensolver's Krylov-subspace dimension, distinct from
+the MPS bond dimension $\chi$.
+Changing $k=3$ to $8$ at $L=80$ raises the last coefficient to $0.93246$;
+the two initial states then differ by only $3.39\times10^{-8}$.
+The neighboring $\alpha=-0.175$ control changes from $0.91657$ to $0.95990$.
+Figure~\ref{fig:negative-size} keeps these separate fixed-size controls
+distinct from the historical size sequence.
+
+At $\alpha=-0.10$, a further $k=8\to12$ control uses both initializations,
+64 sweeps, $\chi_{\max}=1200$, and cutoff $10^{-11}$.
+The variance per site is $1.9\times10^{-11}$ and the sector gap is
+$7.2772\times10^{-5}J_1$.
+Across 172 matched observables the changes are bounded by
+$7.5\times10^{-12}$ for the gap, $8.4\times10^{-8}$ for the dominant ratio,
+and $5.7\times10^{-8}$ for the entropy; $\qpeak=\pi$ is unchanged.
+The saved run records and comparison tables have been recovered from the
+project archive and checked against their historical checksums.
+The anomalously small entropy coefficient does not survive this solver test.
+Because the smaller historical sizes still use $k=3$, we do not join them
+to the new $L=80$ endpoint as a controlled finite-size extrapolation.
+
+\begin{figure*}[t]
+ \centering
+ \includegraphics[width=0.96\textwidth]{fig9_entropy_solver_control.pdf}
+ \caption{Entropy-coefficient sensitivity at $\beta=0.25$.
+ All fits use period-10 bond-class intercepts.
+ (a) Historical $k=3$ results at $L=40,60,80$.
+ Symbols average the two initial states at $f=0.20$; ranges cover both
+ initializations and all four windows.
+ (b,c) Separate $L=80$ comparisons of $k=3$ and $8$.
+ Symbols show initial-state means at each window and bars the corresponding
+ ranges; the two solver series are shifted horizontally by $\mp0.002$ for
+ visibility. The dotted line is a reference value, not a bulk central-charge
+ determination. Ranges describe deterministic sensitivity, not confidence
+ intervals. No $k=12$ values are plotted. The displayed values are taken from the numerical fit tables.}
+ \label{fig:negative-size}
+\end{figure*}
+
+\section{Spectral resolution and numerical controls}
+\label{sec:spectral-control}
+
+The ground-state energies used for the two production spectra are
+$E_0/J_1=-12.4925790712$ and $-11.4821383028$, with variance per site
+$5.55\times10^{-12}$ and $5.36\times10^{-12}$.
+The source norm is checked against the independently contracted equal-time
+connected correlations. Complete $L=10$ exact-diagonalization spectra,
+processed with the same finite-time estimator, agree with MPS spectra to
+relative $L_2$ errors $7.46\times10^{-5}$ and $3.59\times10^{-5}$.
+This is a direct small-system validation of the time-evolution and Fourier
+normalization, separate from the low-band projection benchmark.
+
+We perform single-variable checks at
+$q/\pi=0.2,0.6,1.0$ for both signs of $\alpha$, using the same saved ground
+states and $T=60/J_1$.
+First, $\chi$ is increased from 192 to 256 at fixed $\Delta t=0.05/J_1$;
+then $\Delta t$ is halved at fixed $\chi=256$.
+The latter comparison reuses the matching $q=\pi$ record from an earlier
+simultaneous refinement of both parameters.
+Table~\ref{tab:independent-controls} reports the maximum relative
+$L_2$ changes over the three momenta, with the refined spectrum as denominator.
+The low-frequency norm is restricted to $0\le\omega\le0.6J_1$.
+All 12 comparisons satisfy the criteria fixed before these calculations:
+full- and low-frequency changes below $3\%$ and $5\%$, main-peak shifts
+below $0.015J_1$, and relative norm drift below $1\%$.
+For each of the bands $[0,0.6]$, $[0.6,2.5]$, and $[2.5,4]$ in units of
+$J_1$, the weight criterion is
+$|W-W_{\rm ref}|\le\max(0.05|W_{\rm ref}|,0.001C_q(0))$.
+The largest observed relative band-weight change is $0.376\%$, the largest
+norm drift is $0.338\%$, and none of the sampled main peaks changes its
+frequency-grid index. These tests constrain the numerical sensitivity of
+selected finite-$L$, finite-$T$ spectra; they do not establish long-time,
+all-momentum, or thermodynamic convergence.
+
+\begin{table}[!htbp]
+ \caption{Independent numerical controls at $L=40$ and $T=60/J_1$.
+ Entries are maximum relative $L_2$ changes in percent over
+ $q/\pi=0.2,0.6,1.0$. The two columns use $[0,4]$ and $[0,0.6]$ frequency
+ intervals in units of $J_1$.}
+ \label{tab:independent-controls}
+ \begin{ruledtabular}
+ \begin{tabular}{rlrr}
+ $\alpha$ & Changed parameter & Full & Low\\
+ $+0.5$ & $\chi:192\to256$ & 0.0124 & 0.0126\\
+ $-0.5$ & $\chi:192\to256$ & 0.0407 & 0.0149\\
+ $+0.5$ & $J_1\Delta t:0.05\to0.025$ & 0.8100 & 0.8156\\
+ $-0.5$ & $J_1\Delta t:0.05\to0.025$ & 0.5280 & 0.5346\\
+ \end{tabular}
+ \end{ruledtabular}
+\end{table}
+
+The separately computed $L=40$ sector gaps use joint DMRG budgets
+$(\chi,\epsilon_{\mathrm{cut}})=(512,10^{-12})$ and $(768,10^{-13})$.
+Their changes are of order $10^{-12}J_1$, much smaller than the finite-time
+spectral width. Agreement of these two budgets does not make the gaps
+thermodynamic quantities or provide a rigorous error estimate.
+Similarly, the display step $\Delta\omega=0.005J_1$ does not reduce the
+$0.09277J_1$ window width; the heatmaps do not establish sub-linewidth gaps.
+
+For the two heatmaps a single global intensity map is used:
+$u(s)=\operatorname{asinh}(s/0.02)/\operatorname{asinh}(6/0.02)$ for
+$s=J_1S_T^{zz}\in[0,6]$.
+The same map is applied at all $q$ and $\omega$, without energy-dependent
+enhancement or rescaling of individual columns.
+This is a disclosed color normalization; the accompanying arrays retain
+the original linear intensities.
+It enhances finite-window sidelobes as well as genuine weak spectral weight,
+which is why band identification cannot rest on visual contrast alone.
+
+\subsection{How much weight lies outside the displayed frequency range?}
+
+The finite-time estimator spreads positive-energy lines across zero frequency.
+To quantify this effect without modifying the maps, we transform the saved
+$C_q(t)$ on a zero-padded discrete Fourier grid with $N_\omega=65536$.
+The complete discrete frequency period is
+$[-\pi/\Delta t,\pi/\Delta t)$.
+The identity $\sum_k S_T^{zz}(q,\omega_k)\Delta\omega=C_q(0)$ is an
+algebraic check of this transform, not an independent dynamical sum-rule test
+or a proof of infinite-frequency convergence.
+An independent contraction of the static connected correlations agrees with
+$C_q(0)$ within $5.60\times10^{-11}$ in relative error for nonzero sources.
+Direct quadrature on the original display grid reconstructs the saved
+spectra with relative error of order $10^{-15}$.
+
+Table~\ref{tab:window-weight} splits the signed spectral integral, normalized
+by $C_q(0)$, into negative frequencies, the displayed range, and positive
+frequencies above $4J_1$ within the discrete period.
+Half the zero-frequency node enters each side; the negative Nyquist node
+belongs to the negative side. No negative spectral values are clipped.
+Changing $N_\omega$ from 32768 to 65536 changes these fractions by at most
+$1.09\times10^{-4}$ over the nonzero-source momentum grid.
+This tests numerical quadrature of the same time record, not time resolution.
+At $\alpha=-0.5$, the $0.20\pi$ and $0.60\pi$ responses have approximately
+$28\%$ and $23\%$ of their weight below zero after window broadening.
+These are not physical negative-energy excitations; they demonstrate why
+the visible positive-frequency area cannot be identified with the complete
+static weight or repaired by stronger color enhancement.
+
+\begin{table}[!htbp]
+ \caption{Fractions of the finite-window spectrum, as percentages of $C_q(0)$.
+ The intervals refer to the discrete frequency period, with zero split equally
+ between the first two columns of weights.}
+ \label{tab:window-weight}
+ \begin{ruledtabular}
+ \begin{tabular}{rrrrr}
+ $\alpha$ & $q/\pi$ & $f_-$ & $f_{[0,4]}$ & $f_{>4}$\\
+ $+0.5$ & 0.2 & 1.158 & 98.684 & 0.158\\
+ $+0.5$ & 0.6 & 0.722 & 99.085 & 0.193\\
+ $+0.5$ & 1.0 & 5.683 & 94.168 & 0.149\\
+ $-0.5$ & 0.2 & 27.833 & 72.027 & 0.140\\
+ $-0.5$ & 0.6 & 22.807 & 77.041 & 0.152\\
+ $-0.5$ & 1.0 & 6.798 & 93.022 & 0.180\\
+ \end{tabular}
+ \end{ruledtabular}
+\end{table}

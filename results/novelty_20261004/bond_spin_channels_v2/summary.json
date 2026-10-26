@@ -1,0 +1,28 @@
+{
+  "all_checks_pass": true,
+  "identity_checks": [
+    {
+      "spin": 0.5,
+      "identity_residual": 0.0
+    },
+    {
+      "spin": 1.0,
+      "identity_residual": 0.0
+    },
+    {
+      "spin": 1.5,
+      "identity_residual": 0.0
+    },
+    {
+      "spin": 2.0,
+      "identity_residual": 0.0
+    }
+  ],
+  "quartet_composite_channel_coefficients": [
+    -2.0,
+    -0.5,
+    2.0
+  ],
+  "doublet_composite_coefficient": 0.0,
+  "ground_state_accessibility_not_assumed": true
+}

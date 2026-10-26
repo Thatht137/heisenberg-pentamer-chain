@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-08",
+  "purpose": "Screen closest work on cancellation, operator symmetry and local controls; not a systematic review or a priority certificate",
+  "available_sources": [
+    "web search with primary-source reading",
+    "SciSpace discovery"
+  ],
+  "unavailable_connectors": [
+    "dedicated CrossRef MCP",
+    "dedicated arXiv MCP",
+    "dedicated Scopus MCP"
+  ],
+  "scispace": {
+    "query": "Which theoretical studies of isotropic Heisenberg spin clusters or coupled-cluster spin chains analyze destructive-interference zeros of inelastic neutron scattering, thermally activated intensity at those zeros, or whether tuning local exchange parameters can cancel effective multispin scattering operators for all thermal transitions?",
+    "papers": [
+      {
+        "title": "Symmetry-Induced Universal Momentum-Transfer Dependencies for Inelastic Neutron Scattering on Anisotropic Spin Clusters",
+        "doi": "10.48550/arxiv.2105.04853",
+        "index_date": "2022-02-21T00:00:00Z",
+        "unique_id": "4yz2ec9tvtwn",
+        "fulltext_url": null
+      },
+      {
+        "title": "High-Nuclearity Magnetic Clusters: Generalized Spin Hamiltonian and Its Use for the Calculation of the Energy Levels, Bulk Magnetic Properties, and Inelastic Neutron Scattering Spectra.",
+        "doi": "10.1021/IC990915I",
+        "index_date": "1999-12-07T00:00:00Z",
+        "unique_id": "4857i93ot6",
+        "fulltext_url": null
+      },
+      {
+        "title": "Collinear antiferromagnetic phases of a frustrated spin-$\\frac{1}{2}$ $J_{1}$--$J_{2}$--$J_{1}^{\\perp}$ Heisenberg model on an $AA$-stacked bilayer honeycomb lattice",
+        "doi": "10.48550/arxiv.1805.01272",
+        "index_date": "2022-03-02T00:00:00Z",
+        "unique_id": "8e98v2th8qio",
+        "fulltext_url": null
+      },
+      {
+        "title": "Symmetry-induced universal momentum-transfer dependencies for inelastic neutron scattering on anisotropic spin clusters",
+        "doi": "10.1103/PHYSREVB.104.014416",
+        "index_date": "2021-06-10T00:00:00Z",
+        "unique_id": "5ds7sva23f",
+        "fulltext_url": "https://arxiv.org/pdf/2105.04853"
+      },
+      {
+        "title": "Distribution of exchange energy in a bond-alternating S = 1 quantum spin chain",
+        "doi": "10.1103/PHYSREVB.69.144417",
+        "index_date": "2004-04-16T00:00:00Z",
+        "unique_id": "qj7mk45io1",
+        "fulltext_url": "https://arxiv.org/pdf/cond-mat/0310741v1"
+      },
+      {
+        "title": "Dispersions of Many-Body Bethe strings",
+        "doi": "10.48550/arxiv.1909.00146",
+        "index_date": "2022-02-27T00:00:00Z",
+        "unique_id": "17ktpfvs9s48",
+        "fulltext_url": null
+      },
+      {
+        "title": "Dispersions of Many-Body Bethe strings",
+        "doi": "10.1038/S41567-020-0835-7",
+        "index_date": "2019-08-31T00:00:00Z",
+        "unique_id": "1k17f9wll5",
+        "fulltext_url": "https://arxiv.org/pdf/1909.00146.pdf"
+      },
+      {
+        "title": "Frustrated spin-$\\frac{1}{2}$ Heisenberg magnet on a square-lattice bilayer: High-order study of the quantum critical behavior of the $J_{1}$--$J_{2}$--$J_{1}^{\\perp}$ model",
+        "doi": "10.48550/arxiv.1905.03562",
+        "index_date": "2022-02-28T00:00:00Z",
+        "unique_id": "30jkqkscdj5a",
+        "fulltext_url": null
+      },
+      {
+        "title": "A systematic localized approximation scheme for the coupled-cluster treatment of quantum spin systems",
+        "doi": "10.1088/0953-8984/4/26/012",
+        "index_date": "1992-06-29T00:00:00Z",
+        "unique_id": "3bjzwaple6",
+        "fulltext_url": "https://iopscience.iop.org/article/10.1088/0953-8984/4/26/012/pdf"
+      },
+      {
+        "title": "Inelastic neutron scattering on a d1-d1-2 mixed-valence trimer cluster",
+        "doi": "10.1007/BF01299008",
+        "index_date": "1989-05-01T00:00:00Z",
+        "unique_id": "53q568gybd",
+        "fulltext_url": null
+      }
+    ],
+    "caution": "Index dates and abstracts are not authoritative. Duplicate preprint/journal records and irrelevant coupled-cluster-method papers were returned."
+  },
+  "primary_followup": [
+    {
+      "url": "https://arxiv.org/pdf/2105.04853",
+      "status": "read sections 1, 2, 4 and relevant reference entries; not all example tables",
+      "focus": "Equations 4, 11-14; Boltzmann weighting; multiplicity conditions for universal momentum dependence"
+    },
+    {
+      "url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.104.014416",
+      "status": "publisher metadata and abstract verified; article body requests authorization; no bypass",
+      "publication_date": "2021-07-14",
+      "note": "Different article from deferred PRB 103, 214422 (2021)"
+    },
+    {
+      "url": "https://www.nature.com/articles/s41535-021-00416-4",
+      "status": "read model, effective-coupling section, full/reduced BZ definitions and low-temperature methods",
+      "focus": "Equations 1-5 and 33-36; Figure 2 caption; T approaches 0 for numerical spectra"
+    },
+    {
+      "url": "https://arxiv.org/abs/1812.10155",
+      "status": "arXiv search abstract available; subsequent abstract/PDF opens returned cache miss; full-text comparison not completed"
+    },
+    {
+      "url": "https://scholars.unf.edu/en/publications/thermodynamics-and-spin-mapping-of-quantum-excitations-in-a-heise/",
+      "status": "author-institution publication metadata verified"
+    },
+    {
+      "url": "https://www.mdpi.com/2073-4352/9/2/93",
+      "status": "429; stopped, no retry or bypass"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7919739/",
+      "status": "browser CAPTCHA; stopped, no bypass"
+    }
+  ],
+  "deferred_by_user": [
+    "10.1103/PhysRevLett.107.037205",
+    "10.1103/PhysRevB.103.214422"
+  ],
+  "new_numerical_calculation": false
+}

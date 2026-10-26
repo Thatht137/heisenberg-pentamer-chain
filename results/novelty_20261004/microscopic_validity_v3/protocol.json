@@ -1,0 +1,50 @@
+{
+  "L": 20,
+  "boundary": "OBC",
+  "cases_g_seed_ncv": [
+    [
+      0.00125,
+      20261005,
+      140
+    ],
+    [
+      0.000625,
+      20261005,
+      140
+    ],
+    [
+      0.000625,
+      987654,
+      180
+    ],
+    [
+      0.02,
+      20261005,
+      140
+    ],
+    [
+      0.04,
+      20261005,
+      140
+    ]
+  ],
+  "eigenpairs": 45,
+  "alpha": "alpha_star+kappa*beta",
+  "kappa": 1.0521795954011597,
+  "g_definition": "beta/Delta(alpha_star)",
+  "low_band": "0<omega<Delta(alpha_star)/2",
+  "weak_line_error_gates": {
+    "0.00125": 0.03,
+    "0.000625": 0.02
+  },
+  "integrated_error_weak_gate": 0.02,
+  "repeat_line_vector_relative_gate": 0.001,
+  "numeric_eigen_residual_gate": 1e-09,
+  "low_levels_including_ground": 44,
+  "strong_g_points_are_diagnostic_only": true,
+  "eigensolver_tolerance": 1e-13,
+  "threads": 1,
+  "wall_limit_seconds": 1200,
+  "bulk_claim": false,
+  "purpose": "prospective linewise convergence and independent random-start repeat"
+}

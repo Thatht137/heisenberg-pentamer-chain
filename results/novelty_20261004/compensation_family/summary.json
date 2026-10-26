@@ -1,0 +1,10 @@
+{
+  "all_checks_pass": true,
+  "points": 32,
+  "min_quartet_quadrupole_coefficient": 0.12361176480145614,
+  "max_doublet_quadrupole_coefficient": 0.0,
+  "max_root_error": 1.8096635301390052e-14,
+  "min_local_gap": 0.04263380420423224,
+  "many_body_residual_claim": false,
+  "elapsed_seconds": 1.8476575
+}

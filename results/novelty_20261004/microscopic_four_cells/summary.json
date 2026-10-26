@@ -1,0 +1,44 @@
+{
+  "all_pass": false,
+  "cases": [
+    {
+      "g": 0.01,
+      "beta": 0.0016622154752454054,
+      "e0": -5.19599798577296,
+      "low_states": 43,
+      "gap": 8.53304462271609e-05,
+      "band_top": 0.002880824561719564,
+      "next_state": 0.1666157544239546,
+      "max_residual": 3.5950978256577898e-12,
+      "W_pi": 2.762231505934253e-08,
+      "W_pi_over_beta2": 0.009997362321077468,
+      "predicted_W_pi_over_beta2": 0.009388531020866167,
+      "relative_error": 0.06484840907040335,
+      "W_06pi": 0.5611065840106666,
+      "orthogonality_error": 3.692193030070664e-14,
+      "elapsed_seconds": 50.0633155,
+      "pass": false
+    },
+    {
+      "g": 0.02,
+      "beta": 0.003324430950490811,
+      "e0": -5.197673408731611,
+      "low_states": 43,
+      "gap": 0.00016945702310877664,
+      "band_top": 0.005774111554803341,
+      "next_state": 0.16702109373123353,
+      "max_residual": 4.678235256592939e-12,
+      "W_pi": 1.1755224901561326e-07,
+      "W_pi_over_beta2": 0.010636440343087054,
+      "predicted_W_pi_over_beta2": 0.009388531020866167,
+      "relative_error": 0.13291848527180528,
+      "W_06pi": 0.561265571764055,
+      "orthogonality_error": 3.5697877631960225e-14,
+      "elapsed_seconds": 102.94757949999999,
+      "pass": false
+    }
+  ],
+  "elapsed_seconds": 102.9506972,
+  "full_frequency_sum_rule_tested": false,
+  "bulk_claim": false
+}

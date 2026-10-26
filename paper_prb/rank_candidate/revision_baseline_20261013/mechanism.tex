@@ -1,0 +1,162 @@
+\section{What survives a retuned zero?}
+
+\subsection{Scalar and quadrupolar local factors}
+
+Let $P=\prod_n P_n$ and $R=(1-P)/(H_0-NE_5)$, where $E_5$ is the isolated
+ground-multiplet energy. At a root $A(q,\alpha_*)=0$, the leading effective
+probe is
+\begin{align}
+ (O_q)_{\mathrm{eff}}&=\beta K_q+O(\beta^2),\notag\\
+ K_q&=-P O_q R V P-P V R O_q P.
+ \label{eq:rank-probe}
+\end{align}
+The two terms must be evaluated separately when $O_q$ is non-Hermitian.
+They include virtual local excitations absent from the first-order
+Hamiltonian.
+
+A link can contribute only through an intermediate excitation on the cell
+acted on by the probe: the local probe cannot de-excite both cells of a link.
+For a Hermitian component of $B^z$, the relevant local tensor is
+\begin{equation}
+ M^{z\mu}=P_n(B^z R_n S_{\mathrm{end}}^\mu
+                   +S_{\mathrm{end}}^\mu R_n B^z)P_n.
+ \label{eq:rank-local-tensor}
+\end{equation}
+It is Hermitian and even under time reversal. Coupling two vectors permits
+ranks zero, one, and two, but a Hermitian rank-one tensor within a single
+spin irrep is odd under time reversal. Only the scalar and quadrupolar parts
+remain. The real and imaginary Hermitian components of $B(q)$ can be treated
+separately and recombined.
+
+Define
+\begin{equation}
+ Q_n^{z\mu}=\tfrac12\{T_n^z,T_n^\mu\}
+        -\tfrac13 s(s+1)\delta_{z\mu}I.
+\end{equation}
+On one orientation of a link the correction consequently has the form
+\begin{equation}
+ \delta B_n^z=a\,T_{n+1}^z
+       +b\sum_\mu Q_n^{z\mu}T_{n+1}^\mu,
+ \label{eq:rank-link}
+\end{equation}
+with a corresponding term for the opposite endpoint.
+The second term is a vector under simultaneous spin rotations. It does not
+represent a direct rank-two transition or a new particle.
+
+\subsection{Cancellation for a local doublet}
+
+In a single spin-$1/2$ irrep, $Q_n^{z\mu}=0$ identically. Equivalently every
+Hermitian local matrix is a linear combination of $I$ and $\bm T$; time
+reversal leaves only $I$ in Eq.~\eqref{eq:rank-local-tensor}.
+The entire first-order correction is thus a sum of neighboring one-spin
+operators. On a uniform periodic chain at a commensurate momentum, translation
+reduces this sum to $K_q=\gamma(q)D_Q$. Cell-centered reflection and real
+exchange give $a_R=a_L^*$ for the two link orientations. Consequently
+$\gamma=a_L e^{-iQ}+a_R e^{iQ}=2\operatorname{Re}(a_L e^{-iQ})$
+is real in the same phase convention as $A$.
+
+Suppose the local zero is simple, with
+$A'=\partial_\alpha A(q,\alpha_*)\ne0$. A physical exchange retuning
+$\alpha=\alpha_*+\kappa\beta$ gives
+\begin{equation}
+ (O_q)_{\mathrm{eff}}
+   =\beta[\gamma+\kappa A']D_Q+O(\beta^2).
+\end{equation}
+Choosing $\kappa=-\gamma/A'$ cancels this operator throughout the retained
+Hilbert space, not only on a selected transition. Hence
+\begin{equation}
+ \Wlow=O(\beta^4)\quad\text{or smaller}.
+ \label{eq:rank-doublet}
+\end{equation}
+The conclusion requires one isolated irrep without additional local
+multiplicity, SU(2) and time-reversal symmetry, bilinear links, and the
+periodic/reflection conditions just stated. It does not apply unchanged to
+open endpoints. Nor does it establish a nonzero fourth-order coefficient
+after arbitrary higher-order retuning.
+
+\subsection{Residual for a quartet}
+
+For $s=3/2$ the quadrupole in Eq.~\eqref{eq:rank-link} is nonzero, and a
+single retuning need not remove its source. Define $d=D_Q|G\rangle$ and
+$k=K_q|G\rangle$, with the entire ground subspace projected out.
+For degenerate ground states these vectors denote a direct sum, with norm
+averaged over the ensemble used in Eq.~\eqref{eq:rank-weight}.
+The leading weight after a real retuning is
+\begin{equation}
+ \Wlow=\beta^2\|k+\kappa A'd\|^2+O(\beta^3).
+\end{equation}
+Elementary least squares gives
+\begin{align}
+ \kappa_{\mathrm{opt}}
+   &=-\frac{\operatorname{Re}\langle d,k\rangle}{A'\|d\|^2},\\
+ \Cmin&=\|k\|^2-
+       \frac{[\operatorname{Re}\langle d,k\rangle]^2}{\|d\|^2}.
+ \label{eq:rank-minimum}
+\end{align}
+The overlap is real to numerical precision in the examples below.
+A nonzero $\Cmin$ measures the part that cannot be removed by the leading
+one-parameter retuning. The algebraic identity is standard; the physical
+question is whether the corrected source in this model is noncollinear with
+$d$. An allowed tensor alone does not settle that question.
+
+At $q=\pi$ the quartet branch provides a simple analytic example:
+\begin{align}
+ \alpha_*&=-\frac{2+\sqrt7}{6},\notag\\
+ c_1=c_5&=\frac{25+4\sqrt7}{108},\quad
+ c_2=c_4=\frac14,\notag\\
+ c_3&=\frac{1-2\sqrt7}{27}.
+ \label{eq:rank-exact-root}
+\end{align}
+These coefficients obey $c_1-c_2+c_3-c_4+c_5=0$.
+Here $\Dloc=0.16622155$, $c_1^2=0.10855198$, and
+$A'=0.10026088$. Exact local resolvent evaluation gives
+\begin{align}
+ a&=\frac{4500505-2595746\sqrt7}{19525536},\notag\\
+ b&=\frac{1082642\sqrt7-2261005}{4881384}>0.
+ \label{eq:exact-local-coefficients}
+\end{align}
+Thus $a=-0.12123577$ and $b=0.12361176$ in
+Eq.~\eqref{eq:rank-link}: the required composite coefficient is exactly
+nonzero, rather than a residual inferred from a numerical tensor fit.
+The construction is described in Appendix~\ref{app:exact-local-check}.
+
+\subsection{A bond-spin interpretation}
+
+The composite vector also has a direct interpretation in terms of neighboring
+total-spin channels. For two spin-$s$ sites, put
+$h_{ij}=\bm T_i\cdot\bm T_j$, $D_{ij}=T_i^z-T_j^z$, and
+$X_{ij}=\sum_\mu(Q_i^{z\mu}T_j^\mu-T_i^\mu Q_j^{z\mu})$.
+Expanding the quadrupoles gives the exact identity
+\begin{equation}
+ X_{ij}=\tfrac12\{h_{ij},D_{ij}\}+\tfrac13s(s+1)D_{ij}.
+ \label{eq:bond-identity}
+\end{equation}
+Within bond total spin $J$, $h_{ij}$ has eigenvalue
+$[J(J+1)-2s(s+1)]/2$. The exchange-odd vector $D_{ij}$ connects only
+adjacent bond-spin sectors. If $\Pi_J$ denotes their projector, then
+\begin{equation}
+ \Pi_J X_{ij}\Pi_{J-1}=
+ \left[\frac{J^2}{2}-\frac{2s(s+1)}{3}\right]
+ \Pi_J D_{ij}\Pi_{J-1}.
+ \label{eq:bond-channel}
+\end{equation}
+For a doublet there is only $J=1\leftrightarrow0$, and this coefficient
+vanishes. For a quartet, the $1\leftrightarrow0$, $2\leftrightarrow1$,
+and $3\leftrightarrow2$ coefficients are $-2,-1/2,2$.
+The link probe $-aD_{ij}+bX_{ij}$ therefore renormalizes these channels
+differently, whereas exchange retuning adds the same multiple of $D_{ij}$.
+One adjustment cannot set all three link-operator coefficients to zero.
+Whether those independent channels leave weight on a particular chain ground
+state still requires Eq.~\eqref{eq:rank-minimum}: interference between links
+and restricted ground-state matrix elements can remove the residual.
+
+The two types of zero are not confined to the single comparison in
+Table~\ref{tab:rank-roots}. Local diagonalization found simple roots at each
+of 16 sampled values of $Q/\pi$ from $0.55$ to $1$, using
+$q=(Q+4\pi)/5$ for the quartet and $q=(Q+2\pi)/5$ for the doublet
+[Fig.~\ref{fig:rank-controls}(a)]. All sampled local gaps were positive,
+with minimum $0.04263$. The quartet coefficient $b$ was nonzero throughout
+this sample, whereas the doublet quadrupole vanished identically.
+This local calculation identifies a family of candidate interference settings;
+it is neither a phase diagram nor evidence that the many-body residual is
+nonzero at every momentum in the interval.

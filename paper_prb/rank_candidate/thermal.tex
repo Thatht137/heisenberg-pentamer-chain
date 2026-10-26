@@ -1,0 +1,293 @@
+\section{Thermal stability of a retuned zero}
+\label{sec:thermal}
+
+\subsection{An operator zero and a ground-state zero}
+
+Temperature tests whether exchange retuning suppresses all low-energy
+transitions or only those accessible from the ground state.
+We keep $\tau=T/J_{\rm eff}$ fixed as
+$\beta\to0$, where $J_{\rm eff}=\beta c_1(\alpha_*)^2$ and $k_B=1$.
+Thus the thermal ensemble remains inside the local ground multiplets.
+Put $h=\sum_i\bm T_i\cdot\bm T_{i+1}$ and let $\epsilon_i$ be its
+dimensionless eigenvalues. For the Hermitian leading $Q=\pi$ probe,
+write $D=D_\pi$, $K=K_q$, and define
+\begin{align}
+ R_\kappa&=K+\kappa A'D,\notag\\
+ C_\kappa(\tau)&=\sum_{\epsilon_f>\epsilon_i}
+ p_i\left|\langle f|R_\kappa|i\rangle\right|^2,
+ \qquad p_i=\frac{e^{-\epsilon_i/\tau}}{Z}.
+ \label{eq:thermal-weight}
+\end{align}
+This coefficient describes transitions between distinct effective energy
+levels, with frequencies on the $J_{\rm eff}$ scale.
+At fixed finite size, choose $\eta>0$ smaller than
+the smallest nonzero level spacing of $h$, and let $W_{+,\eta}$ include
+only low-band transitions with $\omega>\eta J_{\rm eff}$. Then
+$W_{+,\eta}=\beta^2C_\kappa+O(\beta^3)$.
+We call this the regular positive-frequency response.
+Higher-order splittings within an equal-energy block instead produce
+quasielastic lines at $\omega=O(\beta^2)$, outside this leading coefficient.
+The minimum $C_{\min}(\tau)$ allows a separate real retuning at each
+temperature, including any temperature-dependent displacement of the zero.
+
+At any $\tau>0$ every state of a finite effective chain has positive
+Boltzmann weight. Nonnegativity of the summands and Hermiticity imply
+\begin{equation}
+ C_\kappa(\tau)=0\quad\Longleftrightarrow\quad[h,R_\kappa]=0.
+ \label{eq:thermal-criterion}
+\end{equation}
+Thus complete thermal cancellation requires the retuned probe to act
+only within equal-energy blocks. Equation~\eqref{eq:thermal-criterion}
+reduces the thermal question to an operator calculation.
+For a doublet, the stronger identity
+$K=\gamma D$ already proved above cancels $R_\kappa$ throughout the
+retained space. Consequently $W_+=O(\beta^4)$ or smaller at every fixed
+$\tau$ under the same periodic and reflection assumptions.
+
+\subsection{A representation-dependent obstruction}
+
+For the quartet root at $q=\pi$, define the unnormalized alternating spin
+$\widetilde D=\sum_i(-1)^iT_i^z$ and
+$Y=\sum_i(-1)^iX_{i,i+1}$, using Eq.~\eqref{eq:bond-identity}. Then
+\begin{equation}
+ R_\kappa=\frac{bY+(-2a+\kappa A')\widetilde D}{\sqrt{5N}}.
+ \label{eq:thermal-source}
+\end{equation}
+Both $\widetilde D$ and $Y$ are spin vectors with momentum $\pi$,
+odd under time reversal and even under the site-permutation reflection
+$i\mapsto-i$. For $Y$, reflection reverses the bond orientation and
+shifts its alternating sign, leaving their product unchanged.
+Their different bond-channel amplitudes, rather than different symmetry
+labels, control the cancellation. To test whether one dipole coefficient
+can remove every inelastic matrix element, we evaluate the squared
+commutator using a spectral moment~\cite{mueller1982sumrules}.
+Write $u=-2a+\kappa A'$ in Eq.~\eqref{eq:thermal-source}.
+For every finite even quartet chain with $N\ge4$, the uniformly traced,
+two-sided second frequency moment is
+\begin{align}
+ M_2(u)&=\frac{1}{4^N}\operatorname{Tr}[h,R]^\dagger[h,R]\notag\\
+ &=\frac{197}{16}b^2+\frac52(u+b)^2.
+ \label{eq:quartet-moment}
+\end{align}
+The positive first term survives every choice of $u$.
+Together with Eq.~\eqref{eq:thermal-criterion}, it proves
+$C_{\min}(\tau)>0$ at every $\tau>0$ for these finite chains.
+Even a ground state that can be made dark therefore acquires an
+irreducible leading thermal response.
+
+The proof uses orthogonality of local operator supports, so the same
+minimum applies at every finite even $N\ge4$.
+Appendix~\ref{app:general-moment} derives the spin-$s$ expression and
+shows how its minimum vanishes for a doublet.
+Here the uniform trace covers the retained effective space, corresponding
+to $J_{\rm eff}\ll T\ll\Dloc$ in the fixed-size weak-coupling limit.
+Combining its second and fourth moments also bounds a finite-frequency
+part of the quartet weight away from zero, uniformly in even $N$
+(Appendix~\ref{app:weight-bound}). This latter result takes the effective
+uniform-trace limit before increasing the chain length.
+
+\subsection{The accessible local-control space}
+
+Independent exchange controls within each cell leave this obstruction
+intact. At the quartet root $q=\pi$, any bounded
+SU(2)-invariant perturbation of order $\beta$ confined to an individual
+cell changes its projected vector probe only by a multiple of $T_i^z$.
+The isolated cell contains a single spin irrep; its projected scalar
+perturbation shifts all components equally. The leading uniform $h$ and
+the coefficient $b$ are therefore unchanged. Even independent local
+controls in every cell can only enlarge the leading probe to
+\begin{equation}
+ R_{\{u_i\}}=\frac{bY+\sum_i(-1)^iu_iT_i^z}{\sqrt{\ell N}},
+ \qquad u_i\in\mathbb R.
+ \label{eq:local-control-probe}
+\end{equation}
+Here $\ell=5$ fixes the normalization inherited from the microscopic probe.
+These controls preserve the local irrep and the leading intercell
+Hamiltonian; their changes to either $h$ or $b$ enter at higher order.
+
+Translation symmetry separates the $Q=\pi$ component, whose dipole
+coefficient is $\bar u=N^{-1}\sum_i u_i$, from all other operator momenta.
+Their thermal spectral weights add without interference. For either the
+positive-frequency weight or any fixed positive-frequency window,
+\begin{equation}
+ F(R_{\{u_i\}})=F(R_{\bar u})+
+ F(R_{\{u_i\}}-R_{\bar u})\ge F(R_{\bar u}).
+ \label{eq:local-control-projection}
+\end{equation}
+Here $F$ uses a Gibbs state of the uniform leading $h$, or its uniform
+trace. The minimum over all real $u_i$ therefore equals the uniform
+minimum. Spatial variation adds spectral weight at other momenta but
+cannot compensate the residual $Q=\pi$ response.
+Appendix~\ref{app:local-controls} gives the full proof.
+
+\section{Thermally activated response and microscopic spectra}
+
+\subsection{Exact activation from a dark four-cell ground state}
+
+The four-cell quartet ring makes the contrast explicit: the retuned
+leading probe annihilates its ground state, yet thermally occupied
+states scatter. Write $\bm A=\bm T_0+\bm T_2$ and
+$\bm B=\bm T_1+\bm T_3$, so that $h=\bm A\cdot\bm B$.
+Its ground state has $(j_A,j_B,J)=(3,3,0)$ and energy $-12$;
+the first excited multiplet is $(3,3,1)$ at $-11$.
+The zero-temperature optimum is $\lambda_0=-2a-3b$, with
+$\lambda=-\kappa A'$. The resulting source
+$b(Y+3\widetilde D)/\sqrt{20}$ annihilates the ground state exactly,
+although it does not commute with $h$.
+
+The first thermally occupied triplet opens two groups of transitions.
+Their final sectors are $(3,3,2)$ at $\omega/J_{\rm eff}=2$ and
+$(3,1,2),(1,3,2)$ at $\omega/J_{\rm eff}=7$.
+Summed over the three initial magnetic components, the squared matrix
+elements divided by $b^2$ are respectively $27/50$, $6/25$, and $6/25$.
+Consequently,
+\begin{equation}
+ C_{\min}(\tau)=\frac{51}{50}b^2e^{-1/\tau}
+                  +o(e^{-1/\tau}).
+ \label{eq:thermal-activation}
+\end{equation}
+The two groups have leading intensity ratio $9:8$. Reoptimizing the
+exchange at each temperature changes only higher activation orders.
+These four-cell lines identify the transitions that restore scattering
+when the first excited triplet becomes populated.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{thermal_evidence.pdf}
+\caption{Thermal response at retuned interference zeros.
+(a) Minimum leading positive-frequency coefficient in four- and six-cell
+effective periodic chains. The doublet zero follows from cancellation of
+the first-order operator. (b) Full microscopic two-cell weights
+at $T/J_{\rm eff}=1.6$, normalized separately to their values at
+$g=\beta/\Dloc=0.005$. Quartet and doublet slopes are $2.02549$ and
+$4.00189$.
+(c) Weights averaged over the uniform interval $q_0\pm\delta q$, relative
+to their ideal central-momentum values, at $g=0.005$ and
+$T/J_{\rm eff}=1.6$. The quartet and doublet central momenta are
+$\pi$ and $3\pi/5$, respectively. Exchange parameters remain on their
+central-momentum retuning trajectories. Both initial and final microscopic
+states lie below $E_0+\Dloc/2$, while the partition function includes
+the full spectrum. Lines connect computed points without smoothing.}
+\label{fig:thermal-evidence}
+\end{figure*}
+
+\subsection{Microscopic spectra and the low-temperature crossover}
+
+Full thermal traces on four- and six-cell effective chains give the
+contrast in Fig.~\ref{fig:thermal-evidence}(a). At $\tau=1.6$, the quartet
+minima are $0.00991078$ and $0.00968212$, respectively. For six cells the
+latter is about 22 times its zero-temperature value, even after
+temperature-dependent retuning.
+
+The microscopic coupling dependence tests the predicted distinction
+between second- and fourth-order weights.
+We diagonalized all 1024 states of two coupled pentamers, including both
+closing links and their corresponding effective exchange bonds.
+The quartet root is Eq.~\eqref{eq:rank-exact-root}; the doublet uses
+$q=3\pi/5$, $\alpha_*=1.09755143$, so both have $Q=\pi$.
+Over $g=0.005,0.01,0.02$, the weights at $\tau=1.6$ have logarithmic
+slopes $2.02549$ and $4.00189$ for the quartet and doublet, respectively
+[Fig.~\ref{fig:thermal-evidence}(b)]. The quartet coefficient approaches
+the effective prediction to within $1.18\%$ at the weakest coupling.
+Appendix~\ref{app:exact-local-check} reports the temperature dependence
+and finite-coupling errors.
+
+The twenty-spin periodic model resolves the predicted four-cell activation.
+We reconstructed its complete 256-state low band at
+$g=0.000625,0.00125,0.0025$, keeping the exchange on the leading
+zero-temperature trajectory $\kappa_0=1.28029750$.
+At the weakest coupling the first
+thermal gap is $1.000318J_{\rm eff}$; the two line-group centroids are
+$2.000592J_{\rm eff}$ and $7.000309J_{\rm eff}$. Their unweighted
+transition strengths, summed over the initial triplet and divided by
+$\beta^2b^2$, are $0.536037$ and $0.482098$, within $0.74\%$ of
+$27/50$ and $12/25$. Both approach their predictions as $g$ decreases
+[Fig.~\ref{fig:four-cell-activation}(b)].
+
+At finite coupling, a fourth-order ground-state background competes with
+the exponentially small thermal contribution. At $\tau=0.1$, the
+weakest-coupling weight exceeds the leading prediction by $25.9\%$;
+ground-state transitions account for $21.0\%$ of the microscopic total.
+This background scales as $\beta^{4.0015}$ over the three couplings and
+is included in Fig.~\ref{fig:four-cell-activation}(a).
+The response therefore crosses from thermal activation to a
+ground-state background as temperature decreases at fixed $\beta$.
+
+Higher-order splittings also produce quasielastic weight, amounting to
+$1.68\%$ of the total at $\tau=1.6$.
+The regular response with $\eta=0.05$ agrees with the effective
+prediction within $0.23\%$ at the weakest coupling for
+$\tau=0.2,0.4,1.6$. The resolved and unwindowed weights, together with
+cutoff and solver checks, are specified in
+Appendix~\ref{app:exact-local-check}.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{four_cell_activation.pdf}
+\caption{Direct four-cell microscopic check and low-temperature background.
+(a) Resolved thermal weight for twenty physical spins with periodic
+boundaries, $q=\pi$, fixed zero-temperature retuning, and
+$\omega>0.05J_{\rm eff}$. Both initial and final states are in the
+complete 256-state low band. The finite-coupling curves retain the
+ground-state background. The effective curve is the full leading thermal
+trace at the same retuning; the activation asymptote is
+$(51/50)b^2\exp(-J_{\rm eff}/T)$.
+(b) Strengths from the first thermally occupied triplet to the two predicted
+final-state groups, divided by $\beta^2b^2(27/50)$ and
+$\beta^2b^2(12/25)$, respectively. These strengths are summed over initial
+magnetic components before thermal weighting. Lines connect calculated
+points without smoothing.}
+\label{fig:four-cell-activation}
+\end{figure*}
+
+\subsection{Momentum acceptance and window retuning}
+
+A finite momentum interval samples nonzero form factors on either side
+of the interference root, adding weight to the central response.
+We averaged microscopic transition probabilities over a uniform window
+around each root, initially keeping the central retuning fixed. At
+$g=0.005,\tau=1.6$, a half-width $0.001\pi$ raises the quartet weight
+by $0.094\%$, but the doublet weight by a factor of approximately
+$2.93\times10^6$ [Fig.~\ref{fig:thermal-evidence}(c)].
+The local doublet form factor has $\partial_qA=1.69998$ at its root,
+whereas the quartet root at $q=\pi$ is stationary in momentum.
+A fixed window therefore adds an ordinary form-factor background that
+can overwhelm the doublet's very small fourth-order central signal.
+At this fixed width, the doublet weight becomes nearly independent of
+coupling, with logarithmic slope $0.00475$.
+
+Optimizing the exchange for the entire window reduces, but does not
+eliminate, this background. At the stationary quartet root, write
+$x=q-\pi$, $A_{qq}=\partial_q^2 A(\alpha_*,\pi)$, and let $B$ be the
+positive-frequency thermal weight of $D$. If $\kappa_0$ minimizes the
+central response, the remaining source is thermally orthogonal to $D$.
+The leading window-dependent dipole amplitude is
+$\beta A'(\kappa-\kappa_0)+A_{qq}x^2/2$.
+Retuning removes its mean, leaving the variance of $x^2$.
+For a uniform half-width $\delta q=\rho\sqrt{\beta}$, at fixed finite
+size and scaled temperature, this gives
+\begin{align}
+ \kappa_{\rm win}&=\kappa_0-\frac{A_{qq}\rho^2}{6A'}+o(1),\notag\\
+ \frac{\overline W^{\rm opt}_{+,\eta}}{\beta^2}
+ &\longrightarrow C_{\min}+\frac{A_{qq}^2B}{45}\rho^4.
+ \label{eq:window-retuning}
+\end{align}
+Keeping $\kappa_0$ fixed gives $1/20$ in place of $1/45$ in the
+background coefficient. Window retuning therefore leaves $4/9$ of this
+leading background, set by the variance of the form factor.
+In the ten-spin ring at $\tau=1.6$, the optimized microscopic
+coefficients for $\rho=0.25,0.5,1$ agree with this limit within
+$0.30\%$ at $g=0.00125$; deviations increase with coupling.
+
+The chosen doublet root has nonzero $A_q=\partial_q A$, so its leading
+window background is instead $A_q^2B(\delta q)^2/3$. Keeping it at
+the fourth-order scale requires $\delta q=O(\beta^2)$, whereas the
+stationary quartet root permits $O(\sqrt{\beta})$ at its quadratic
+scale. The different tolerances follow from the slope and curvature
+of these particular momentum zeros.
+In the two-cell doublet, further exchange optimization cancels the
+single low-band singlet--triplet amplitude to numerical precision.
+Its weight for $\delta q=\rho\beta^2$ then approaches
+$\beta^4 A_q^2B\rho^2/3$, within $0.055\%$ at the weakest tested coupling.
+Thus the fourth power can also arise from momentum acceptance, even
+when the central response has been suppressed further.

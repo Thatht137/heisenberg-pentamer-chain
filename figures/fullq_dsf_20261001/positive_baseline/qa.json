@@ -1,0 +1,110 @@
+{
+  "smoothing": false,
+  "spatial_interpolation": false,
+  "inversion_averaging": false,
+  "source_clipping": false,
+  "display_saturation_only": true,
+  "style": "user reference screenshot",
+  "results": [
+    {
+      "directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_positive",
+      "metadata": {
+        "tmax": 60.0,
+        "window_fwhm": 0.09277049188333333,
+        "itensors_version": "0.9.27",
+        "q_points": 41,
+        "dt": 0.05,
+        "energy": -12.492579071244704,
+        "L": 40,
+        "n_units": 8,
+        "cutoff": 1e-10,
+        "nsweeps": 20,
+        "julia_version": "1.11.5",
+        "variance_per_site": 5.550759851757903e-12,
+        "ground_seed_path": "",
+        "ground_additional_sweeps": 0,
+        "alpha": 0.5,
+        "dmrg_maxdim": 256,
+        "itensormps_version": "0.4.1",
+        "operator": "connected full momentum Sz / sqrt(L)",
+        "clipping": false,
+        "static_reflection_relative_rms": 3.1973825937832655e-08,
+        "beta": 0.5,
+        "ground_maxdim_used": 91,
+        "norm_monitor": "canonical center, full contraction checked every 200 steps",
+        "time_window": "triangular",
+        "tebd_maxdim": 192,
+        "inversion_averaging": false
+      },
+      "quality": {
+        "inversion_relative_rms": 2.874563605570619e-06,
+        "max_absolute_inversion_difference": 5.38391536086813e-06,
+        "negative_absolute_weight_fraction": -0.0,
+        "minimum_spectrum": 6.632247823570951e-35,
+        "maximum_spectrum": 5.696173613620203,
+        "maximum_relative_norm_drift": 0.0013994527159330683,
+        "maximum_norm_api_relative_error": 3.715799075173085e-15,
+        "maximum_relative_source_norm_error": 5.595734670016908e-11,
+        "q0_maximum": 8.036663030404018e-35,
+        "q0_pass": true,
+        "inversion_pass": true,
+        "baseline_pass": true
+      },
+      "refinement": null,
+      "time_resolution_check": [
+        {
+          "q_over_pi": 0.4,
+          "short_time": 30.0,
+          "short_window_maximum": 0.585,
+          "full_window_maximum": 0.55,
+          "maximum_location_drift": 0.03499999999999992,
+          "boundary_maximum": false,
+          "resolved_excitation_claim": false
+        },
+        {
+          "q_over_pi": 0.7,
+          "short_time": 30.0,
+          "short_window_maximum": 0.6,
+          "full_window_maximum": 0.6,
+          "maximum_location_drift": 0.0,
+          "boundary_maximum": true,
+          "resolved_excitation_claim": false
+        },
+        {
+          "q_over_pi": 1.0,
+          "short_time": 30.0,
+          "short_window_maximum": 0.07,
+          "full_window_maximum": 0.055,
+          "maximum_location_drift": 0.015000000000000006,
+          "boundary_maximum": false,
+          "resolved_excitation_claim": false
+        }
+      ],
+      "finite_chain_spin_gap": {
+        "gap_smaller_than_window_fwhm": true,
+        "energy_sz0": -12.492579071317346,
+        "variance_sz0": 5.520917056855979e-13,
+        "alpha": 0.5,
+        "L": 40,
+        "beta": 0.5,
+        "gap512": 0.05562244067674982,
+        "budget_drift": 6.441069899665308e-12,
+        "energy_sz1": -12.436956630634155,
+        "variance_sz1": 6.046718681318452e-13,
+        "window_fwhm_T60": 0.09277049188333333,
+        "gap768": 0.05562244068319089,
+        "method": "sector DMRG, joint bond-dimension and cutoff comparison",
+        "rigorous_error_bound": false,
+        "thermodynamic_extrapolation": false,
+        "gap_smaller_than_current_window_fwhm": true,
+        "source_sha256": "af6370ad9d42f3a2612dc0dc05ce2f06b42cb116fc09e9cb74557ecd5bc2bcdf"
+      },
+      "partial_environment_check": null,
+      "status": "symmetry_checked_draft",
+      "vmin": 0,
+      "vmax": 3.0,
+      "display_saturation_fraction": 0.0005480953685941354,
+      "spectrum_sha256": "6a642e74b05b76694f2b22e1518fd4da025024d9537d69bb4e44c569b1b41c6d"
+    }
+  ]
+}

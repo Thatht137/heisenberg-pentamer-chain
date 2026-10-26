@@ -1,0 +1,97 @@
+{
+  "date": "2026-10-08",
+  "status": "awaiting_verified_2021_fulltext_for_closest_prior_art_comparison",
+  "selected_topic": "Heisenberg 五聚体链中交换重调干涉零点的热稳定性",
+  "decision": "保留为专业理论论文候选；不宣称已证明全球首创、重大普适意义或最终投稿就绪。",
+  "user_requirements": {
+    "choose_topic_from_existing_results": "已有聚焦主题及解析、数值支撑。",
+    "additional_calculations_permitted": "已完成必要的有限系统验证和微观系数精确证明；本轮没有追加计算。",
+    "literature_comparison": "已完成多项原始来源对照，但 PRB 103, 214422 的全文仍缺失。",
+    "establish_novelty_or_major_significance": "尚未达到用户要求；不能以检索无命中或助手自评替代证据。"
+  },
+  "latest_request": {
+    "request": "自行设法获取两篇指定文献",
+    "PRL_107_037205": {
+      "status": "官方接受稿已下载并阅读全文",
+      "path": "results/novelty_20261008/Haraldsen_PRL107_037205_2011_accepted.pdf",
+      "source_url": "https://link.aps.org/accepted/10.1103/PhysRevLett.107.037205",
+      "sha256": "a1800bb2de9cb5194315dbfd71055d3437134c480e8c6bdba6312b20e269e8ef"
+    },
+    "PRB_103_214422": {
+      "status": "未取得全文",
+      "read_scope": "仅摘要及元数据",
+      "publisher_url": "https://journals.aps.org/prb/abstract/10.1103/PhysRevB.103.214422",
+      "current_access_observation": "本轮重查出版社页面仍标明 Authorization Required。",
+      "route_record": "results/novelty_20261008/closest_fulltext_retrieval.json",
+      "caveat": "既有公开来源检索失败不等于不存在合法副本；其他文章不能替代这篇全文。"
+    }
+  },
+  "additional_primary_source_comparisons": [
+    {
+      "doi": "10.1103/PRXQuantum.5.040330",
+      "title": "Symmetries as Ground States of Local Superoperators: Hydrodynamic Implications",
+      "authors": "Sanjay Moudgalya and Olexei I. Motrunich",
+      "year": 2024,
+      "url": "https://journals.aps.org/prxquantum/pdf/10.1103/PRXQuantum.5.040330",
+      "read_scope": "摘要、引言与第 II A-B 节；重点为 PDF 第 3 页式 (1)-(5)。未逐页核读全部 41 页。",
+      "source_content": "以 Hilbert-Schmidt 内积将算符视为向量，用正半定的 Liouvillian 平方和确定局域生成元的共同对易子空间。",
+      "our_inference": "正对易子范数与守恒性的关联不是本稿新方法。该文的逐生成元范数和不同于本稿整个哈密顿量的对易子范数；后者允许不同键贡献相消。不能据此省去整链证明，也不能据所读章节断言本稿具体最小谱矩公式已经存在。",
+      "local_pdf_downloaded_this_turn": false
+    },
+    {
+      "doi": "10.1038/ncomms5300",
+      "title": "Origin of slow magnetic relaxation in Kramers ions with non-uniaxial anisotropy",
+      "authors": "Silvia Gomez-Coca et al.",
+      "year": 2014,
+      "url": "https://zaguan.unizar.es/record/63276/files/texto_completo.pdf",
+      "source_type": "作者机构仓储中的论文全文",
+      "read_scope": "PDF 第 3 页模型式 (1)、第 3-4 页 Kramers 简并与自旋声子跃迁讨论、第 7 页 Discussion。未阅读全文及补充材料。",
+      "source_content": "时间反演偶的自旋声子算符在 Kramers 共轭双重态间的直接跃迁矩阵元为零；文中明确联系到 van Vleck cancellation。",
+      "our_inference": "局域 Kramers 双重态中的时间反演限制不是本稿新原理。但文献讨论声子弛豫，我们的完整磁散射探针为时间反演奇；只能比较局域偶中间张量的限制，不能把两个物理问题直接等同。",
+      "local_pdf_downloaded_this_turn": false
+    }
+  ],
+  "remaining_contribution_candidate": {
+    "question": "在规定微观模型附近，允许局域交换微调后，能否同时消除所有热初态的领先阶低带正频率响应？",
+    "supported_scope": "指定四重态根、弱胞间耦合、固定正 T/Jeff、有限偶数胞数 N>=4，以及文稿明确定义的一阶局域 SU(2) 控制空间。",
+    "evidence": [
+      "整链非抵消关系及可达控制空间分析",
+      "精确谱矩和有明确极限次序的均匀低带迹权重界",
+      "四胞基态相消与热激活的解析反例、二十微观自旋低带验证",
+      "单胞精确微观系数及非零系数证明"
+    ],
+    "not_claimed": [
+      "首次发现散射暗点、热激活或算符与个别跃迁相消的区别",
+      "任意各向异性、任意胞间控制或全阶非抵消定理",
+      "任意有限温度下原微观模型的热力学极限下界",
+      "双重态四阶响应必为不可消的强度下限",
+      "L=40 原整谱图证明新弱耦合定理",
+      "已确认全球首创或保证期刊录用"
+    ]
+  },
+  "continuation_boundary": {
+    "repeated_blocker": "PRB 103, 214422 全文缺失使最接近工作的逐式排重无法完成。",
+    "consecutive_goal_stages": [
+      "消光文献正文与补充材料复核",
+      "微观系数精确证明及论文整合",
+      "本次方法先例与选题价值复核"
+    ],
+    "why_not_more_calculation": "额外扫描、代数推导或排版不能证实未读全文是否已含等价结果；可不依赖该全文完成的现有主线验证已经完成。",
+    "needed_external_change": "取得该文的可验证合法全文，例如新的公开副本、有效机构访问或作者提供的稿件。",
+    "next_scientific_action": "逐项对照有效探针、可达物理控制空间、全热初态非抵消及等价谱矩；若已被覆盖，撤回相应原创性主张并重新判断剩余增量。",
+    "no_contact_or_purchase_sent": true,
+    "no_access_control_bypass": true,
+    "no_background_jobs_started": true
+  },
+  "artifact_check": {
+    "manifest": "paper_prb/rank_candidate/sha256_exact_local_20261008.json",
+    "entries_checked": 58,
+    "all_passed": true,
+    "manuscript": "paper_prb/rank_candidate/build/rank_manuscript.pdf",
+    "manuscript_sha256": "fc1bc0a7b606a80afba91ea8df0b181f570b74f895333f48e12052c924ef2c22",
+    "manuscript_changed_this_turn": false,
+    "figures_changed_this_turn": false,
+    "calculation_data_changed_this_turn": false,
+    "note": "此检查只确认文件一致性，不代替科学正确性或原创性判断。本检查点是现行清单之外的新记录，不修改旧清单。"
+  }
+}

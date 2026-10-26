@@ -1,0 +1,33 @@
+{
+  "scope": "uniform low-energy effective trace; even PBC N>=4; specified dipole-composite probe",
+  "cases": [
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "spin_encoding": "twice spin",
+  "wall_limit_seconds": 120,
+  "largest_dimension": 4096,
+  "eigensolves": "N=4 only, at most 256 states",
+  "test_type": "bounded checks of independently derived inequalities; not a finite-size fit",
+  "window": "epsilon_f-epsilon_i > sqrt(3*s*(s+1)/4)",
+  "formula": "C_window >= b^2*(4c-3)*(86c-27)/(3732480*ell)",
+  "not_claimed": [
+    "arbitrary finite-temperature floor",
+    "uniform microscopic weak-coupling expansion with N",
+    "experimental detectability"
+  ]
+}

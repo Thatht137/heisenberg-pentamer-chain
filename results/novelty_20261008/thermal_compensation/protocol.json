@@ -1,0 +1,22 @@
+{
+  "exploratory": true,
+  "cells": [
+    4,
+    6
+  ],
+  "spins": [
+    0.5,
+    1.5
+  ],
+  "boundary": "PBC",
+  "Q_over_pi": 1,
+  "temperature_unit": "Jeff=beta*c1(alpha_root)^2",
+  "temperature_scope": "fixed T/Jeff as beta tends to zero; T much less than local gap",
+  "observable": "positive-frequency low-band integrated weight divided by beta^2",
+  "all_Sz_sectors": true,
+  "exclude_all_degenerate_transitions_abs_tolerance": 1e-09,
+  "wall_limit_seconds": 300,
+  "threads": 1,
+  "solver": "existing project embedding plus scipy.linalg.eigh; no package migration",
+  "physics_outcome_not_an_acceptance_gate": true
+}

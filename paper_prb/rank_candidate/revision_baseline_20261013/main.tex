@@ -1,0 +1,64 @@
+\documentclass[aps,prb,reprint,amsmath,amssymb,superscriptaddress,longbibliography,nofootinbib,floatfix]{revtex4-2}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\graphicspath{{../../results/novelty_20261008/four_cell_window_audit/}{../../results/novelty_20261008/figures/}{../../results/novelty_20261004/rank_figures/}{../../results/novelty_20261004/rank_controls_figure/}{../../results/novelty_20261004/evidence_figures/}{../figures/}}
+\newcommand{\Dloc}{\Delta_{\mathrm{loc}}}
+\newcommand{\Wlow}{W_{\mathrm{low}}}
+\newcommand{\Cmin}{C_{\mathrm{min}}}
+\begin{document}
+\raggedbottom
+\title{Thermal stability of retuned interference zeros in a Heisenberg pentamer chain}
+\author{Author Name}
+\email{corresponding.author@example.edu}
+\affiliation{Department and Institution, City, Postal Code, Country}
+\date{\today}
+\begin{abstract}
+Can exchange tuning make a low-energy spin spectrum dark for every
+thermally occupied initial state? We address this question in a weakly
+coupled isotropic Heisenberg pentamer chain. For an isolated local
+doublet, the entire first-order probe can be canceled on a uniform
+reflection-symmetric periodic chain, leaving weight of order $\beta^4$
+or smaller at fixed $T/J_{\rm eff}$ as the intercell exchange $\beta$
+tends to zero. A local quartet instead produces dipole and composite
+vectors with the same symmetry labels but different dynamical
+matrix-element ratios. At the specified interference root, we prove
+that their leading positive-frequency thermal response cannot be
+canceled for any finite even periodic chain with at least four cells.
+The obstruction holds at every positive scaled temperature, even with
+independent first-order cell-local SU(2)-invariant exchange controls.
+An exact spin-dependent second moment quantifies it, and locality gives
+a size-independent finite-frequency weight bound in the effective
+uniform-trace limit. The leading probe nevertheless annihilates a
+four-cell ground state; its first thermal response has a calculable activation coefficient
+and line-weight ratio $9:8$. Complete low-band spectra of twenty
+microscopic spins verify these lines and expose a fourth-order
+background at low temperature. Finite momentum acceptance supplies a
+separate background. These results identify a limit on local exchange
+control of thermally activated scattering, rather than a new symmetry
+selection rule or a resolution-independent experimental diagnostic.
+\end{abstract}
+\maketitle
+\input{introduction}
+\input{mechanism}
+\input{thermal}
+\input{controls_summary}
+\input{discussion}
+\begin{acknowledgments}
+[Author, affiliation, funding, and acknowledgment details are retained for
+completion by the authors.]
+\end{acknowledgments}
+\section*{Data and code availability}
+The working project contains the calculation scripts, raw numerical tables,
+protocol records, and SHA-256 manifests used here. It has not been deposited in
+a public repository, and no accession identifier is claimed.
+\appendix
+\input{general_spin}
+\input{local_controls}
+\input{results}
+\input{numerics}
+\bibliography{references,rank_references}
+\end{document}

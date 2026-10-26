@@ -1,0 +1,11 @@
+{
+  "scripts\\submission_20261002\\plot_rank_evidence.py": "c7ea7b234da99acb01590dd6b6c12b8b3ddd7e7992130a56552b50d80aaac62f",
+  "results\\novelty_20261004\\same_ring_microscopic\\comparisons.csv": "0f06ceea15cc571c9e8b0e1dc5ad13299d5585e3822c48efb3b4bb4fa0125dca",
+  "results\\novelty_20261004\\same_ring_microscopic\\summary.json": "68e457b4c9f6a8d1b393da7b5886189e3834421e74b61dd258b2233f583da0f0",
+  "results\\novelty_20261004\\effective_size_extension\\size_checks.csv": "3c164d5e183b13292d96876a63e8115d80bdde2400514204e5e2e693bedfc4f7",
+  "results\\novelty_20261004\\microscopic_validity_v3\\summary.json": "2973c8771f6bc397976b16612784efde1284e357c9f6fbe2a48f2e709df09a42",
+  "results\\novelty_20261004\\effective_dmrg_refined\\results.toml": "e764ba07fdd7d018952a4eb87e5f6f47f725c3e6ba97a8645d6479869f91c216",
+  "results\\novelty_20261004\\rank_figures\\rank_compensation.pdf": "857ce7af22602a25238114acbdcc75b3ad8a60ebb90522bf0910b95b9aec2604",
+  "results\\novelty_20261004\\rank_figures\\rank_compensation.png": "0b8878a07d78a7ef78b8d696ed943f60885bfdf9e879ace539d8b7036f45373f",
+  "results\\novelty_20261004\\rank_figures\\rank_compensation.svg": "e45097312eb1045b919d3a1ac6369e4c74a5f26b36e924cd7d84998b1e559e02"
+}

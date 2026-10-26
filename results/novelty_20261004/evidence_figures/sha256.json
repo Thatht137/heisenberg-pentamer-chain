@@ -1,0 +1,13 @@
+{
+  "scripts\\submission_20261002\\plot_dark_evidence.py": "977e244b781fdb9276ccce67cff2db3c36ad2149a7b20fe4986312121b77ba23",
+  "results\\novelty_20261004\\microscopic_four_cells\\comparisons.csv": "96a460bee96205bdb6e0f3a9a49a80c8b4c3d561613281eb3d386a58deccd110",
+  "results\\novelty_20261004\\microscopic_retuning_v2\\comparisons.csv": "c7409efa452a6fb0ba94b4795512c04f05346b7618bfdde792ab554b7491cda9",
+  "results\\novelty_20261004\\microscopic_retuning_v2\\spectral_lines.csv": "8798febb2c2dc930856abc4c1c67436f82ce9fb90fe8a09ccab28efcce5a9727",
+  "results\\novelty_20261004\\effective_size_extension\\size_checks.csv": "3c164d5e183b13292d96876a63e8115d80bdde2400514204e5e2e693bedfc4f7",
+  "results\\novelty_20261004\\dark_operator\\effective_spectra.csv": "13ea5129988f97b6e522cd9f3cccd7ea5fbb055ea5b8134cb8525a41c74e847b",
+  "results\\novelty_20261004\\evidence_figures\\dark_probe_evidence.pdf": "65daf8128e9082669adb187cac7abfe04671fe3b8631e8edb5090542e4ccce0a",
+  "results\\novelty_20261004\\evidence_figures\\dark_probe_evidence.png": "e3ac218b9118e56d00527b12a3459fb09aca168f64a9d6008143b52165513547",
+  "results\\novelty_20261004\\evidence_figures\\dark_probe_evidence.svg": "9c3d15c8f1057848fa53071d699a402b24cb117006990f9c1264c181cd6b61f4",
+  "results\\novelty_20261004\\evidence_figures\\local_amplitude.csv": "d3100452488fb4c263eff4017e25b7775b2e2f78d9ecd5925d4aebcac936bd19",
+  "results\\novelty_20261004\\evidence_figures\\spectral_comparison.json": "4b63ddccaf4a08f5515b2abde65a7ab3ef8a16269266d501bbdeb25f93ccce3e"
+}

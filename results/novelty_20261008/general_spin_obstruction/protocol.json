@@ -1,0 +1,16 @@
+{
+  "scope": "h=sum T_i dot T_(i+1), R=(bY+uD)/sqrt(ell*N), finite even PBC N>=4",
+  "conditions": "one local spin-s irrep, b nonzero, only dipole-amplitude retuning",
+  "arithmetic": "Fraction polynomial identities plus direct unnormalized-basis matrices",
+  "symbolic_proof": "finite-difference identity for power sums, not polynomial fitting",
+  "direct_spin_checks": [
+    "1/2",
+    "1",
+    "3/2",
+    "2",
+    "5/2",
+    "3"
+  ],
+  "wall_limit_seconds": 60,
+  "new_microscopic_models_computed": false
+}

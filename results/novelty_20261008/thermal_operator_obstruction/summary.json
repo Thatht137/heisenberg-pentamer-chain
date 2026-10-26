@@ -1,0 +1,27 @@
+{
+  "all_gates_pass": true,
+  "exact_arithmetic": true,
+  "bond_Gram": {
+    "dd": "200",
+    "dx": "200",
+    "xx": "560"
+  },
+  "bond_minimum": "360",
+  "bond_commutators_have_zero_partial_traces": true,
+  "adjacent_cross_commutator_has_zero_all_two_site_partial_traces": true,
+  "N4_chain_Gram": {
+    "dd": "12800",
+    "dy": "12800",
+    "yy": "75840"
+  },
+  "N4_min_second_moment_over_b_squared": "197/16",
+  "all_even_N_ge4_lower_bound_over_b_squared": "9/2",
+  "theorem_scope": "leading effective spin-3/2 nearest-neighbor even PBC chain; Q=pi; b!=0",
+  "finite_T_conclusion": "for each finite even N>=4 and T/Jeff>0, no real retuning removes all positive-frequency weight",
+  "not_claimed": [
+    "uniform finite-T lower bound as N tends to infinity",
+    "finite-beta exact extinction",
+    "all momenta"
+  ],
+  "elapsed_seconds": 0.9621517999999999
+}

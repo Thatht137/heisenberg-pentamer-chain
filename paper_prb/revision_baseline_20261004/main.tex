@@ -1,0 +1,100 @@
+\documentclass[
+  aps,
+  prb,
+  reprint,
+  amsmath,
+  amssymb,
+  superscriptaddress,
+  longbibliography,
+  nofootinbib,
+  floatfix
+]{revtex4-2}
+
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{graphicx}
+\usepackage{bm}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+\graphicspath{{figures/}}
+
+% 放宽跨栏浮动图的排版限制。
+\setcounter{topnumber}{4}
+\setcounter{dbltopnumber}{4}
+\setcounter{totalnumber}{6}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\dbltopfraction}{0.9}
+\renewcommand{\bottomfraction}{0.5}
+\renewcommand{\textfraction}{0.07}
+\renewcommand{\floatpagefraction}{0.7}
+\renewcommand{\dblfloatpagefraction}{0.7}
+
+\newcommand{\Heff}{H_{\mathrm{eff}}}
+\newcommand{\Jeff}{J_{\mathrm{eff}}}
+\newcommand{\ceff}{c_{\mathrm{eff}}}
+\newcommand{\qpeak}{q_{\mathrm{peak}}}
+\newcommand{\Szz}{S^{zz}(q,\omega)}
+\newcommand{\avg}[1]{\left\langle #1\right\rangle}
+\newcommand{\pentamer}{pentamer}
+
+\begin{document}
+
+\title{Local multiplets, effective-chain dynamics, and finite-size momentum
+reconstruction in a spin-\texorpdfstring{$1/2$}{1/2} Heisenberg pentamer chain}
+
+\author{Author Name}
+\email{corresponding.author@example.edu}
+\affiliation{Department and Institution, City, Postal Code, Country}
+
+\date{\today}
+
+\begin{abstract}
+In chains of spin clusters, the symmetry of a single cluster can decide which
+excitations a scattering experiment sees.
+We establish this for the spin-$1/2$ Heisenberg chain with a five-site unit cell.
+Because the cell holds an odd number of spins, its ground state for positive
+couplings is not a singlet but a spin-$1/2$ doublet that is even under reflection.
+The inter-cell bond couples these doublets into an antiferromagnetic effective
+Heisenberg chain, with corrections quadratic in the inter-cell coupling, and
+entanglement, finite-size gaps, correlations, and a dominant $q=\pi$ response
+identify a $c=1$ critical chain at the couplings studied.
+Reflection parity makes the lowest excited doublet invisible to a $q=\pi$ spin
+probe, so spin-$3/2$ multiplets carry $84\%$--$98\%$ of the local inelastic
+weight.
+Complete connected real-time spectra at $J_2/J_1=\pm0.5$, $J_3/J_1=0.5$, and
+$L=40$ compare the low- and high-energy responses at a common finite-time
+resolution, without identifying individual bands with local multiplets.
+For negative intra-cell exchange the cell ground state becomes a spin-$3/2$
+quartet whose shape factor favors the $0.60\pi$ replica among the folded
+antiferromagnetic momenta, and finite chains move the dominant structure-factor
+momentum from $0.60\pi$ toward $\pi$.
+Because the momentum and finite-size-flow diagnostics of this reconstruction
+select different coupling intervals, the present data establish a finite-size
+reconstruction without resolving a separate thermodynamic phase.
+\end{abstract}
+
+\maketitle
+
+\input{sections/introduction}
+\input{sections/model_methods}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\begin{acknowledgments}
+[Add funding, computing resources, institutional support, and individual
+acknowledgments.]
+\end{acknowledgments}
+
+\section*{Data and code availability}
+The Hamiltonian construction, the DMRG and spectral drivers, the figure-generation
+scripts, and the numerical data underlying
+Figs.~\ref{fig:multiplets}--\ref{fig:negative-size} are available at
+[repository URL or archival DOI, release identifier].
+
+% 压缩参考文献条目间距。
+\setlength{\bibsep}{2.0pt plus 0.3ex}
+\bibliography{references}
+
+\end{document}

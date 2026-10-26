@@ -1,0 +1,16 @@
+first_sweeps = 24
+cells = [12, 16]
+maxdims_N12 = [512, 768]
+bond_energy_spread_gate = 1.0e-5
+weight_relative_change_gate = 0.01
+max_abs_local_sz_gate = 0.0001
+warm_sweeps = 16
+threads = 1
+energy_per_cell_change_gate = 1.0e-8
+source_checkpoint = "effective_periodic_dmrg/state_N12_D384.jld2"
+scalar_removal_identity_abs_gate = 1.0e-10
+scope = "PBC effective model refinement only; original failed batch retained; no bulk extrapolation"
+total_spin_squared_gate = 0.0001
+maxdims_N16 = [256, 512, 768]
+wall_limit_seconds = 1800.0
+variance_per_cell_gate = 1.0e-8

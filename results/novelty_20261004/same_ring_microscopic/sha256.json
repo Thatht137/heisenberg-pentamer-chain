@@ -1,0 +1,11 @@
+{
+  "scripts\\submission_20261002\\validate_rank_same_ring.py": "08ebe0b492cc8a28fe50b147fb51ce23efbe2fde215a9c26d56768d59ff54342",
+  "scripts\\submission_20261002\\validate_dark_multicell.py": "e26a78bbbdfd150682c04ee63b19ff0367682b6ccfb5f35376bd05711c16633b",
+  "scripts\\submission_20261002\\local_projection_checks.py": "1470aab021ef1a9caeacc80a4e82f29cb30796379d2449aa0b9624537ea729ad",
+  "results\\novelty_20261004\\rank_geometry_probe\\summary.json": "d4d65b138b764dc8baf20b85561036b9f24ffe99876e2926f8d4d368362a63a2",
+  "scripts\\autoresearch_v5\\analyze_negative_phase_independent_observables.py": "ab97d27176317a45b1d554a614fae5e6188ccfc814b81dfb629cb92e32145b93",
+  "results\\novelty_20261004\\same_ring_microscopic\\comparisons.csv": "0f06ceea15cc571c9e8b0e1dc5ad13299d5585e3822c48efb3b4bb4fa0125dca",
+  "results\\novelty_20261004\\same_ring_microscopic\\protocol.json": "3280d4f72dcf840d51e4efc29c45d2b564921120aba2df4baeadda9afba8325f",
+  "results\\novelty_20261004\\same_ring_microscopic\\spectral_lines.csv": "0a871b1c59d3fe345b64674973c47ca17ae5920159b6e80a95bb8ecda1d0d09e",
+  "results\\novelty_20261004\\same_ring_microscopic\\summary.json": "68e457b4c9f6a8d1b393da7b5886189e3834421e74b61dd258b2233f583da0f0"
+}

@@ -1,0 +1,20 @@
+{
+  "L": 20,
+  "cells": 4,
+  "boundary": "OBC",
+  "Sz": 0,
+  "sector_dim": 184756,
+  "eigenpairs": 45,
+  "alpha": -0.7742918851774317,
+  "g_values": [
+    0.01,
+    0.02
+  ],
+  "low_band": "0<omega<Delta_local/2",
+  "expected_band_states_including_ground": 44,
+  "ed_residual_max": 1e-09,
+  "operator_weight_relative_error_max": 0.05,
+  "threads": 1,
+  "wall_limit_seconds": 1200,
+  "scope": "finite microscopic 4-cell cross-check, not bulk result"
+}

@@ -1,0 +1,71 @@
+{
+  "L": 15,
+  "cells": 3,
+  "boundary": "PBC",
+  "total_sz": 0.5,
+  "g_values": [
+    0.005,
+    0.01,
+    0.02,
+    0.04
+  ],
+  "ground_state_average": "two degenerate Sz=1/2 ground states",
+  "elastic_part": "exclude the entire ground eigenspace, not only each diagonal expectation",
+  "low_window": "0<omega<Delta_local_at_root/2",
+  "hypothesis": "after linear retuning quartet O(beta^2), doublet O(beta^4) or smaller",
+  "first_three_quartet_slope_range": [
+    1.8,
+    2.2
+  ],
+  "first_three_doublet_slope_range": [
+    3.7,
+    4.3
+  ],
+  "quartet_smallest_coefficient_error_gate": 0.05,
+  "eigen_residual_gate": 1e-10,
+  "threads": 1,
+  "wall_limit_seconds": 600,
+  "scope": "same finite frustrated odd ring; not direct evidence for an infinite unfrustrated chain",
+  "cases": [
+    {
+      "spin": 1.5,
+      "cells": 3,
+      "boundary": "PBC",
+      "alpha": -0.38103454019107325,
+      "q_over_pi": 0.9333333333333333,
+      "target_sz": 0.5,
+      "ground_degeneracy_in_sector": 2,
+      "sector_dim": 12,
+      "local_gap": 0.10336638239615548,
+      "operator_fit_error": 1.2939633910760577e-13,
+      "W_fixed_over_beta2": 0.5451162485701279,
+      "W_min_over_beta2": 0.14202788529047422,
+      "W_D": 0.2333333333333333,
+      "lambda_real": 1.3143521434200205,
+      "lambda_imag": 1.856401936934609e-14,
+      "amplitude_derivative": 0.1389505331794716,
+      "kappa": -9.459137099692695,
+      "quadrupole_coefficient_abs": 0.46524165904792936
+    },
+    {
+      "spin": 0.5,
+      "cells": 3,
+      "boundary": "PBC",
+      "alpha": 1.4535291668426678,
+      "q_over_pi": 0.5333333333333333,
+      "target_sz": 0.5,
+      "ground_degeneracy_in_sector": 2,
+      "sector_dim": 3,
+      "local_gap": 1.1051169264056449,
+      "operator_fit_error": 7.681343796878003e-16,
+      "W_fixed_over_beta2": 0.0004740079295617231,
+      "W_min_over_beta2": 8.857773111412232e-33,
+      "W_D": 0.033333333333333354,
+      "lambda_real": 0.11924863893081414,
+      "lambda_imag": 4.732542482899224e-16,
+      "amplitude_derivative": 0.6921106880330984,
+      "kappa": -0.1722970631615378,
+      "quadrupole_coefficient_abs": 0.0
+    }
+  ]
+}

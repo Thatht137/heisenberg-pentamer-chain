@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "stage": "magnetization sector enumeration",
+  "error": "AttributeError: 'int' object has no attribute 'bit_count'",
+  "meaning": "Python runtime compatibility failure before any scientific result was produced.",
+  "remedy": "Use bin(state).count('1'); preserve this protocol directory and rerun in exact_pentamer_coefficients_v2."
+}

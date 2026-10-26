@@ -1,0 +1,1171 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "counts": {
+    "pass": 12,
+    "fail": 0,
+    "pending": 0
+  },
+  "expected_comparisons": 12,
+  "scope": "fixed L40 and T60, not thermodynamic convergence",
+  "plan_path": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\plan.json",
+  "plan_sha256": "1505e796732fffd30f77e8e8000fd526c8e5ce316ee344cc7013c0840993c55c",
+  "thresholds": {
+    "spectrum_relative_l2": 0.03,
+    "low_spectrum_relative_l2": 0.05,
+    "band_weight_relative": 0.05,
+    "band_absolute_floor_C0": 0.001,
+    "main_peak_shift_J1": 0.015,
+    "norm_drift": 0.01
+  },
+  "bands_J1": [
+    [
+      0,
+      0.6
+    ],
+    [
+      0.6,
+      2.5
+    ],
+    [
+      2.5,
+      4.0
+    ]
+  ],
+  "band_gate_formula": "abs(Wbase-Wref) <= max(band_weight_relative*abs(Wref), band_absolute_floor_C0*C0ref)",
+  "integrity_tolerances": {
+    "same_source_relative": 1e-07,
+    "origin": "Inherited from scripts/audit_fullq_dsf.py; not a new convergence threshold",
+    "grid_roundoff_absolute": 1e-12
+  },
+  "norm_api_error_role": "Reported diagnostic only; no new physical acceptance threshold",
+  "runtime_matching_required": true,
+  "thermodynamic_convergence_claim": false,
+  "long_time_convergence_claim": false,
+  "driver_and_seed_hashes_verified": true,
+  "raw_input_hash_role": "Read-time snapshots with before/after stability checks, not historical content-hash anchors",
+  "run_inputs": {
+    "positive_baseline": {
+      "directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_positive",
+      "sha256": {
+        "result.jld2": "3eb1d0ce3253cd510adec3be3ee063cd329f59fb7ededb176cd923ed898047f3",
+        "run_metadata.toml": "e7e52a4616fb0ff688e6b21c7b0cdbb8c11cfa371743494efcf291315974f062",
+        "q.csv": "58ea4efd807e260928e4523cbfcd97ac0b4f7e1fda8a1cfde41642aca4cf99a4",
+        "omega.csv": "63cde828e810c252bd70f8b4a56dcc153beb207c789db9d233082b5c83d74ece",
+        "spectrum.csv": "6a642e74b05b76694f2b22e1518fd4da025024d9537d69bb4e44c569b1b41c6d",
+        "metrics.csv": "ab2de61c2b3b7ba534c1ba15c4504e1484d38e79077ba6d0407f2b2a08602dfa",
+        "q005_correlation.csv": "e8a2ffccb475668689f706646b50ad3f9170872ebb8743f8bb8e0c1df8382c78",
+        "q013_correlation.csv": "e85f65d68e18208ff3ff96c310b7a8c22a6f9edc86e589b708f1c1bb4c927757",
+        "q021_correlation.csv": "07e7e4f5a62e04520eaa4796acc034561b042d3985393a4a5ba9c9c18df74acb"
+      },
+      "actual_q_points": 41,
+      "nominal_q_points": 41
+    },
+    "positive_old_check": {
+      "directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_positive_check",
+      "sha256": {
+        "result.jld2": "c3e008cd33435c6ea0a865fca5c78c807343b7654a2ca733c82a58de781f2533",
+        "run_metadata.toml": "b4a5561c196e92adb3fd9e5bafebe2a98b8bab0cb6a9dd13fcd2a24f999333ce",
+        "q.csv": "7eceff5f358b5681473b57d7b86b8cbbc99d49533950c27152d015ce43479a38",
+        "omega.csv": "63cde828e810c252bd70f8b4a56dcc153beb207c789db9d233082b5c83d74ece",
+        "spectrum.csv": "9f9bcbee90c866bf9ac0f891a1aa9a1384be28b6039f0320c960bd47f56fb06c",
+        "metrics.csv": "2bfb73489529fb1f19594c24d03000bc6396ff56898da31f3ef7939303a08367",
+        "q003_correlation.csv": "32773c0ef2d5f96d4b77415d279b6821b0d091bc735fb829ac598cd13ea1702a"
+      },
+      "actual_q_points": 5,
+      "nominal_q_points": 5
+    },
+    "positive_chi": {
+      "directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\positive_chi",
+      "sha256": {
+        "result.jld2": "43a821eeedacbd09c17e08b6b7b9398045c5180d3430a3a70eb3d19c913679fe",
+        "run_metadata.toml": "0388fa25a384310d4815cb83c815d732b9d8b03d6de2a6074264a1dcdcc52e28",
+        "q.csv": "38c366a817fa57cfe364357e643faef08339b95e6bbb303352a1e6251cdda6d3",
+        "omega.csv": "63cde828e810c252bd70f8b4a56dcc153beb207c789db9d233082b5c83d74ece",
+        "spectrum.csv": "44fbc6735f12923d1d9604e4e6d5a85115aa53145d56e8e3627957101b2a49db",
+        "metrics.csv": "4c8809cbd0f47ea00bf2b00c09b9ad823c3f72aa0451204c111075e187bd72c3",
+        "q001_correlation.csv": "543a207b2a563610629f65d13c2691834ab5a4597eaec707150008ab7461832d",
+        "q002_correlation.csv": "9dd50e3efbfdbaa41602780dc642e85d0d1a6de3b34189439914b59d9f8d0426",
+        "q003_correlation.csv": "43806727f119b93f9130da746ca2046fe2808d12fc8a93e9414f31bac696aeda"
+      },
+      "actual_q_points": 3,
+      "nominal_q_points": 3
+    },
+    "positive_dt": {
+      "directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\positive_dt",
+      "sha256": {
+        "result.jld2": "ce6105aae9a6a30f2bee57e51d938eaea6831aaffc7db72ae8ccc5c7e39d73a1",
+        "run_metadata.toml": "40b3431af218567148720928f7a6a569eb41301a68ffbd03ce7db90303b93c67",
+        "q.csv": "48104fe58dfa50a25ffcba83985196b738aaeaddc882936a6ec92cfb198fcf95",
+        "omega.csv": "63cde828e810c252bd70f8b4a56dcc153beb207c789db9d233082b5c83d74ece",
+        "spectrum.csv": "0604007ed8339245cbd3500b289e3ec3d657b25a3e9d26114933ff2182c0912b",
+        "metrics.csv": "104511f9589503faaba7fa63241a0b57865c142be98b53e3961ccd1858176419",
+        "q001_correlation.csv": "2f7494b1903e36bfbd4da9b47de3fa795c91581cc3b5b7f746cedb7ed49eeb7a",
+        "q002_correlation.csv": "9ed4915a777b4f774b25d4c820d1a563127777fdb871d7065f11859535dc80f3"
+      },
+      "actual_q_points": 2,
+      "nominal_q_points": 3
+    },
+    "negative_baseline": {
+      "directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_negative_local",
+      "sha256": {
+        "result.jld2": "d79ce46ef2b81a95bdf58946d205125db831bf5e7d0d6072d3b14145c74b4837",
+        "run_metadata.toml": "8a42823c7000959cbdf16746d719b4d133027f48369f81c630813ca0ce50aefb",
+        "q.csv": "58ea4efd807e260928e4523cbfcd97ac0b4f7e1fda8a1cfde41642aca4cf99a4",
+        "omega.csv": "63cde828e810c252bd70f8b4a56dcc153beb207c789db9d233082b5c83d74ece",
+        "spectrum.csv": "66a2ea9e4a17e5bf86b3e489e456129f257a165fc6171a27d57adef59894e210",
+        "metrics.csv": "e99bdc3661121d5eac4045a470ccec2726c613a6e4525ae92b9ab3334135007d",
+        "q005_correlation.csv": "76bc35c3d2dc816e0d0f0c54d8f92a509576174bcbad1866c70908cef25cea02",
+        "q013_correlation.csv": "1a94483c7248df1e6573b871baf9ff98c724105e0f5b37f0c37744b220af2e5a",
+        "q021_correlation.csv": "32624092357fe5d347dd5e04c799ba3f2c85d979704b4d3350b225d4913f940e"
+      },
+      "actual_q_points": 41,
+      "nominal_q_points": 41
+    },
+    "negative_old_check": {
+      "directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_negative_check_local",
+      "sha256": {
+        "result.jld2": "d50898c8a01f81800a5ee4ced8507dceed3066b7c2d7a5b6da20cc4c7cdd6b9f",
+        "run_metadata.toml": "c96cce64ea39e54833aab5be537506e0e56852a5edbb914e270200fb567e1ecf",
+        "q.csv": "7eceff5f358b5681473b57d7b86b8cbbc99d49533950c27152d015ce43479a38",
+        "omega.csv": "63cde828e810c252bd70f8b4a56dcc153beb207c789db9d233082b5c83d74ece",
+        "spectrum.csv": "db60312c0601dfcbd051be1058510a7af1f8b08c1fd30b3f757918b26b17d691",
+        "metrics.csv": "995335864240964549e80edce47211b454502994797276fdee617bfba1749e71",
+        "q003_correlation.csv": "062f519fb8e863e7141ece3d55632b0cbaf73d4998853104f4a497bc6a754ef2"
+      },
+      "actual_q_points": 5,
+      "nominal_q_points": 5
+    },
+    "negative_chi": {
+      "directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\negative_chi",
+      "sha256": {
+        "result.jld2": "05d9be0ea33f1660c24e8676f3aebb9434a3fbdb19788bafa057bb2a73532021",
+        "run_metadata.toml": "6b1188a0da7a8ce4163093b19456379790202c20a1bd92e1ae3e3d9094321fea",
+        "q.csv": "38c366a817fa57cfe364357e643faef08339b95e6bbb303352a1e6251cdda6d3",
+        "omega.csv": "63cde828e810c252bd70f8b4a56dcc153beb207c789db9d233082b5c83d74ece",
+        "spectrum.csv": "32088d052a0cd1c4a9ef681f94d11ac11428424f8cf1fcda53bed4fefa95ff59",
+        "metrics.csv": "3f0f4b827553e7530a986f0d0df1737a4ee6268f3877fdfc4e29904c45c6c290",
+        "q001_correlation.csv": "530eb7bf774400a0296b5795c9c678eacccacf5df24ae3aff7e21fbf51213c54",
+        "q002_correlation.csv": "c79511da641e564dec2f6501967d25ac47e7b7ef811f21af31e5d92de962f63c",
+        "q003_correlation.csv": "50cd4ccb892f608ed604e4d5f129351e1ebc8feb7668d3b7436c82c6be4a28b4"
+      },
+      "actual_q_points": 3,
+      "nominal_q_points": 3
+    },
+    "negative_dt": {
+      "directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\negative_dt",
+      "sha256": {
+        "result.jld2": "1932f577bc77527b9502ea66c423d0fdde20cd65ba93ea5bd8498451829cd93d",
+        "run_metadata.toml": "e1c5a5bcb3e83a097a17b1649b76043bd3ac616f2b72a48bc2010baf1e8b7a9b",
+        "q.csv": "48104fe58dfa50a25ffcba83985196b738aaeaddc882936a6ec92cfb198fcf95",
+        "omega.csv": "63cde828e810c252bd70f8b4a56dcc153beb207c789db9d233082b5c83d74ece",
+        "spectrum.csv": "8184a2b27550059f00d6e2ae128dbea20f832da616a8d76c184246d08eaf952e",
+        "metrics.csv": "c00474c4f4c2b35da27945d8046ce9a892f5ecfa2a462b4831c26fb80dc7b8ff",
+        "q001_correlation.csv": "927096a1a26c3beef8a0afe47376710c9c253d78b011240aaf43cc8072e0e0c0",
+        "q002_correlation.csv": "c181e13484812baa382c028be56c1dadbc2f749053d6704c7d6124a1404dde57"
+      },
+      "actual_q_points": 2,
+      "nominal_q_points": 3
+    }
+  },
+  "unavailable_runs": {},
+  "comparisons": [
+    {
+      "id": "positive_chi_q0.2",
+      "sign": "positive",
+      "knob": "chi",
+      "q_over_pi": 0.2,
+      "status": "pass",
+      "base_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_positive",
+      "reference_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\positive_chi",
+      "full_relative_l2": 1.3584025978337632e-05,
+      "low_relative_l2": 1.0391926611183539e-05,
+      "bands": [
+        {
+          "interval_J1": [
+            0,
+            0.6
+          ],
+          "base_weight": 0.043330522724940326,
+          "reference_weight": 0.04333054895830776,
+          "absolute_error": 2.6233367436678812e-08,
+          "relative_error": 6.054243038074663e-07,
+          "absolute_error_over_C0": 4.1317791554559674e-07,
+          "allowed_absolute_error": 0.002166527447915388,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            0.6,
+            2.5
+          ],
+          "base_weight": 0.01923019111306727,
+          "reference_weight": 0.019230166751312602,
+          "absolute_error": 2.4361754669133262e-08,
+          "relative_error": 1.2668509318813053e-06,
+          "absolute_error_over_C0": 3.836998447691483e-07,
+          "allowed_absolute_error": 0.0009615083375656302,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            2.5,
+            4.0
+          ],
+          "base_weight": 9.507693147894441e-05,
+          "reference_weight": 9.507741523124747e-05,
+          "absolute_error": 4.83752303053744e-10,
+          "relative_error": 5.08798332261306e-06,
+          "absolute_error_over_C0": 7.6191426319393e-09,
+          "allowed_absolute_error": 6.349169800626433e-05,
+          "passed": true
+        }
+      ],
+      "base_peak_J1": 0.53,
+      "reference_peak_J1": 0.53,
+      "main_peak_shift_J1": 0.0,
+      "maximum_norm_drift": 0.00030309245251671077,
+      "relative_source_weight_difference": 0.0,
+      "diagnostics": {
+        "base": {
+          "norm_drift": 0.00030309245251671077,
+          "source_relative_error": 5.3774388486656325e-11,
+          "norm_api_relative_error": 3.715799075173085e-15
+        },
+        "reference": {
+          "norm_drift": 0.00013582034554501468,
+          "source_relative_error": 5.3774388486656325e-11,
+          "norm_api_relative_error": 3.934375491359737e-15
+        }
+      },
+      "gates": {
+        "full_l2": true,
+        "low_l2": true,
+        "band_weights": true,
+        "peak_shift": true,
+        "norm_drift": true
+      },
+      "integrity_passed": true,
+      "parameter_change": {
+        "base_dt": 0.05,
+        "reference_dt": 0.05,
+        "base_chi": 192,
+        "reference_chi": 256
+      }
+    },
+    {
+      "id": "positive_chi_q0.6",
+      "sign": "positive",
+      "knob": "chi",
+      "q_over_pi": 0.6,
+      "status": "pass",
+      "base_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_positive",
+      "reference_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\positive_chi",
+      "full_relative_l2": 0.00012393283541518762,
+      "low_relative_l2": 0.0001259396892987114,
+      "bands": [
+        {
+          "interval_J1": [
+            0,
+            0.6
+          ],
+          "base_weight": 0.03627979333567169,
+          "reference_weight": 0.03627942086909819,
+          "absolute_error": 3.724665735005406e-07,
+          "relative_error": 1.0266607475473715e-05,
+          "absolute_error_over_C0": 1.6386835322450054e-06,
+          "allowed_absolute_error": 0.0018139710434549095,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            0.6,
+            2.5
+          ],
+          "base_weight": 0.1883144246026538,
+          "reference_weight": 0.1883147661366316,
+          "absolute_error": 3.415339777934623e-07,
+          "relative_error": 1.813633549828284e-06,
+          "absolute_error_over_C0": 1.5025941787269286e-06,
+          "allowed_absolute_error": 0.00941573830683158,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            2.5,
+            4.0
+          ],
+          "base_weight": 0.0006214203876392704,
+          "reference_weight": 0.0006214435582590926,
+          "absolute_error": 2.3170619822127092e-08,
+          "relative_error": 3.728515568982177e-05,
+          "absolute_error_over_C0": 1.0194018963254498e-07,
+          "allowed_absolute_error": 0.0002272962205156595,
+          "passed": true
+        }
+      ],
+      "base_peak_J1": 1.2,
+      "reference_peak_J1": 1.2,
+      "main_peak_shift_J1": 0.0,
+      "maximum_norm_drift": 0.0012304949534864937,
+      "relative_source_weight_difference": 0.0,
+      "diagnostics": {
+        "base": {
+          "norm_drift": 0.0012304949534864937,
+          "source_relative_error": 5.0489000854835486e-11,
+          "norm_api_relative_error": 2.9306858392271457e-15
+        },
+        "reference": {
+          "norm_drift": 0.0004923430481674584,
+          "source_relative_error": 5.0489000854835486e-11,
+          "norm_api_relative_error": 3.785469209001729e-15
+        }
+      },
+      "gates": {
+        "full_l2": true,
+        "low_l2": true,
+        "band_weights": true,
+        "peak_shift": true,
+        "norm_drift": true
+      },
+      "integrity_passed": true,
+      "parameter_change": {
+        "base_dt": 0.05,
+        "reference_dt": 0.05,
+        "base_chi": 192,
+        "reference_chi": 256
+      }
+    },
+    {
+      "id": "positive_chi_q1",
+      "sign": "positive",
+      "knob": "chi",
+      "q_over_pi": 1.0,
+      "status": "pass",
+      "base_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_positive",
+      "reference_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\positive_chi",
+      "full_relative_l2": 7.893752041218868e-05,
+      "low_relative_l2": 6.745001191702303e-05,
+      "bands": [
+        {
+          "interval_J1": [
+            0,
+            0.6
+          ],
+          "base_weight": 0.8730708358888213,
+          "reference_weight": 0.8730721682435114,
+          "absolute_error": 1.3323546901311545e-06,
+          "relative_error": 1.5260533305186554e-06,
+          "absolute_error_over_C0": 1.1377022782229828e-06,
+          "allowed_absolute_error": 0.043653608412175575,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            0.6,
+            2.5
+          ],
+          "base_weight": 0.22796339432860713,
+          "reference_weight": 0.22796136195827538,
+          "absolute_error": 2.0323703317504105e-06,
+          "relative_error": 8.915415815608273e-06,
+          "absolute_error_over_C0": 1.735448055800839e-06,
+          "allowed_absolute_error": 0.01139806809791377,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            2.5,
+            4.0
+          ],
+          "base_weight": 0.0016152375904765564,
+          "reference_weight": 0.0016153141050272725,
+          "absolute_error": 7.651455071616686e-08,
+          "relative_error": 4.7368218031424307e-05,
+          "absolute_error_over_C0": 6.533603950343125e-08,
+          "allowed_absolute_error": 0.0011710925745988714,
+          "passed": true
+        }
+      ],
+      "base_peak_J1": 0.055,
+      "reference_peak_J1": 0.055,
+      "main_peak_shift_J1": 0.0,
+      "maximum_norm_drift": 0.0005495272497250983,
+      "relative_source_weight_difference": 0.0,
+      "diagnostics": {
+        "base": {
+          "norm_drift": 0.0005495272497250983,
+          "source_relative_error": 5.179999205980536e-11,
+          "norm_api_relative_error": 3.4128838106753167e-15
+        },
+        "reference": {
+          "norm_drift": 0.0002353873935067891,
+          "source_relative_error": 5.179999205980536e-11,
+          "norm_api_relative_error": 2.0856512176349158e-15
+        }
+      },
+      "gates": {
+        "full_l2": true,
+        "low_l2": true,
+        "band_weights": true,
+        "peak_shift": true,
+        "norm_drift": true
+      },
+      "integrity_passed": true,
+      "parameter_change": {
+        "base_dt": 0.05,
+        "reference_dt": 0.05,
+        "base_chi": 192,
+        "reference_chi": 256
+      }
+    },
+    {
+      "id": "positive_dt_q0.2",
+      "sign": "positive",
+      "knob": "dt",
+      "q_over_pi": 0.2,
+      "status": "pass",
+      "base_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\positive_chi",
+      "reference_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\positive_dt",
+      "full_relative_l2": 0.005432245451372657,
+      "low_relative_l2": 0.005089924182406032,
+      "bands": [
+        {
+          "interval_J1": [
+            0,
+            0.6
+          ],
+          "base_weight": 0.04333054895830776,
+          "reference_weight": 0.0433983456719484,
+          "absolute_error": 6.779671364063461e-05,
+          "relative_error": 0.0015621958070271952,
+          "absolute_error_over_C0": 0.0010678043865505935,
+          "allowed_absolute_error": 0.00216991728359742,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            0.6,
+            2.5
+          ],
+          "base_weight": 0.019230166751312602,
+          "reference_weight": 0.019159683718558248,
+          "absolute_error": 7.048303275435444e-05,
+          "relative_error": 0.003678715880162673,
+          "absolute_error_over_C0": 0.001110114156143695,
+          "allowed_absolute_error": 0.0009579841859279124,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            2.5,
+            4.0
+          ],
+          "base_weight": 9.507741523124747e-05,
+          "reference_weight": 9.494080611454218e-05,
+          "absolute_error": 1.3660911670528974e-07,
+          "relative_error": 0.0014388872635068683,
+          "absolute_error_over_C0": 2.1516059736158165e-06,
+          "allowed_absolute_error": 6.349169800626433e-05,
+          "passed": true
+        }
+      ],
+      "base_peak_J1": 0.53,
+      "reference_peak_J1": 0.53,
+      "main_peak_shift_J1": 0.0,
+      "maximum_norm_drift": 0.00013582034554501468,
+      "relative_source_weight_difference": 0.0,
+      "diagnostics": {
+        "base": {
+          "norm_drift": 0.00013582034554501468,
+          "source_relative_error": 5.3774388486656325e-11,
+          "norm_api_relative_error": 3.934375491359737e-15
+        },
+        "reference": {
+          "norm_drift": 7.718824912488934e-05,
+          "source_relative_error": 5.3774388486656325e-11,
+          "norm_api_relative_error": 4.371528323733041e-15
+        }
+      },
+      "gates": {
+        "full_l2": true,
+        "low_l2": true,
+        "band_weights": true,
+        "peak_shift": true,
+        "norm_drift": true
+      },
+      "integrity_passed": true,
+      "parameter_change": {
+        "base_dt": 0.05,
+        "reference_dt": 0.025,
+        "base_chi": 256,
+        "reference_chi": 256
+      }
+    },
+    {
+      "id": "positive_dt_q0.6",
+      "sign": "positive",
+      "knob": "dt",
+      "q_over_pi": 0.6,
+      "status": "pass",
+      "base_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\positive_chi",
+      "reference_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\positive_dt",
+      "full_relative_l2": 0.004873434136080162,
+      "low_relative_l2": 0.005228527067603111,
+      "bands": [
+        {
+          "interval_J1": [
+            0,
+            0.6
+          ],
+          "base_weight": 0.03627942086909819,
+          "reference_weight": 0.036347020445578665,
+          "absolute_error": 6.759957648047599e-05,
+          "relative_error": 0.0018598381834816658,
+          "absolute_error_over_C0": 0.00029740739343186187,
+          "allowed_absolute_error": 0.0018173510222789333,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            0.6,
+            2.5
+          ],
+          "base_weight": 0.1883147661366316,
+          "reference_weight": 0.1882384633513223,
+          "absolute_error": 7.630278530929013e-05,
+          "relative_error": 0.00040535172222948415,
+          "absolute_error_over_C0": 0.00033569755421442775,
+          "allowed_absolute_error": 0.009411923167566116,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            2.5,
+            4.0
+          ],
+          "base_weight": 0.0006214435582590926,
+          "reference_weight": 0.0006206786147296094,
+          "absolute_error": 7.649435294831627e-07,
+          "relative_error": 0.0012324309414404435,
+          "absolute_error_over_C0": 3.3654036470459577e-06,
+          "allowed_absolute_error": 0.0002272962205156595,
+          "passed": true
+        }
+      ],
+      "base_peak_J1": 1.2,
+      "reference_peak_J1": 1.2,
+      "main_peak_shift_J1": 0.0,
+      "maximum_norm_drift": 0.0004923430481674584,
+      "relative_source_weight_difference": 0.0,
+      "diagnostics": {
+        "base": {
+          "norm_drift": 0.0004923430481674584,
+          "source_relative_error": 5.0489000854835486e-11,
+          "norm_api_relative_error": 3.785469209001729e-15
+        },
+        "reference": {
+          "norm_drift": 0.0002553420938117562,
+          "source_relative_error": 5.0489000854835486e-11,
+          "norm_api_relative_error": 3.174909659162741e-15
+        }
+      },
+      "gates": {
+        "full_l2": true,
+        "low_l2": true,
+        "band_weights": true,
+        "peak_shift": true,
+        "norm_drift": true
+      },
+      "integrity_passed": true,
+      "parameter_change": {
+        "base_dt": 0.05,
+        "reference_dt": 0.025,
+        "base_chi": 256,
+        "reference_chi": 256
+      }
+    },
+    {
+      "id": "positive_dt_q1",
+      "sign": "positive",
+      "knob": "dt",
+      "q_over_pi": 1.0,
+      "status": "pass",
+      "base_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\positive_chi",
+      "reference_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_positive_check",
+      "full_relative_l2": 0.00809977606009762,
+      "low_relative_l2": 0.008155573326723507,
+      "bands": [
+        {
+          "interval_J1": [
+            0,
+            0.6
+          ],
+          "base_weight": 0.8730721682435114,
+          "reference_weight": 0.8722030895150281,
+          "absolute_error": 0.0008690787284832968,
+          "relative_error": 0.0009964178514507802,
+          "absolute_error_over_C0": 0.0007421093322028603,
+          "allowed_absolute_error": 0.04361015447575141,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            0.6,
+            2.5
+          ],
+          "base_weight": 0.22796136195827538,
+          "reference_weight": 0.22781881125632752,
+          "absolute_error": 0.00014255070194785224,
+          "relative_error": 0.0006257196285141839,
+          "absolute_error_over_C0": 0.00012172453744459907,
+          "allowed_absolute_error": 0.011390940562816377,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            2.5,
+            4.0
+          ],
+          "base_weight": 0.0016153141050272725,
+          "reference_weight": 0.0016129098240248736,
+          "absolute_error": 2.4042810023989884e-06,
+          "relative_error": 0.0014906481234017897,
+          "absolute_error_over_C0": 2.0530238638243565e-06,
+          "allowed_absolute_error": 0.0011710925745988714,
+          "passed": true
+        }
+      ],
+      "base_peak_J1": 0.055,
+      "reference_peak_J1": 0.055,
+      "main_peak_shift_J1": 0.0,
+      "maximum_norm_drift": 0.0002353873935067891,
+      "relative_source_weight_difference": 0.0,
+      "diagnostics": {
+        "base": {
+          "norm_drift": 0.0002353873935067891,
+          "source_relative_error": 5.179999205980536e-11,
+          "norm_api_relative_error": 2.0856512176349158e-15
+        },
+        "reference": {
+          "norm_drift": 0.0001283395030952478,
+          "source_relative_error": 5.179999205980536e-11,
+          "norm_api_relative_error": 3.2232791545266877e-15
+        }
+      },
+      "gates": {
+        "full_l2": true,
+        "low_l2": true,
+        "band_weights": true,
+        "peak_shift": true,
+        "norm_drift": true
+      },
+      "integrity_passed": true,
+      "parameter_change": {
+        "base_dt": 0.05,
+        "reference_dt": 0.025,
+        "base_chi": 256,
+        "reference_chi": 256
+      }
+    },
+    {
+      "id": "negative_chi_q0.2",
+      "sign": "negative",
+      "knob": "chi",
+      "q_over_pi": 0.2,
+      "status": "pass",
+      "base_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_negative_local",
+      "reference_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\negative_chi",
+      "full_relative_l2": 1.5560508008264707e-05,
+      "low_relative_l2": 1.291314024526969e-05,
+      "bands": [
+        {
+          "interval_J1": [
+            0,
+            0.6
+          ],
+          "base_weight": 0.12329507071683132,
+          "reference_weight": 0.12329497131886774,
+          "absolute_error": 9.939796358215958e-08,
+          "relative_error": 8.06180191445884e-07,
+          "absolute_error_over_C0": 4.815138723305093e-07,
+          "allowed_absolute_error": 0.006164748565943387,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            0.6,
+            2.5
+          ],
+          "base_weight": 0.02516848298914384,
+          "reference_weight": 0.02516852022323594,
+          "absolute_error": 3.7234092101212646e-08,
+          "relative_error": 1.4793913893609684e-06,
+          "absolute_error_over_C0": 1.8037323124378036e-07,
+          "allowed_absolute_error": 0.0012584260111617972,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            2.5,
+            4.0
+          ],
+          "base_weight": 0.00020170314517473493,
+          "reference_weight": 0.0002017042727278044,
+          "absolute_error": 1.1275530694679e-09,
+          "relative_error": 5.590129818367848e-06,
+          "absolute_error_over_C0": 5.462208934379903e-09,
+          "allowed_absolute_error": 0.0002064280372672902,
+          "passed": true
+        }
+      ],
+      "base_peak_J1": 0.015,
+      "reference_peak_J1": 0.015,
+      "main_peak_shift_J1": 0.0,
+      "maximum_norm_drift": 0.0001650065333902503,
+      "relative_source_weight_difference": 0.0,
+      "diagnostics": {
+        "base": {
+          "norm_drift": 0.0001650065333902503,
+          "source_relative_error": 5.13345213242356e-11,
+          "norm_api_relative_error": 1.8823899299864022e-15
+        },
+        "reference": {
+          "norm_drift": 5.5775567877432904e-05,
+          "source_relative_error": 5.13345213242356e-11,
+          "norm_api_relative_error": 2.0168463535568593e-15
+        }
+      },
+      "gates": {
+        "full_l2": true,
+        "low_l2": true,
+        "band_weights": true,
+        "peak_shift": true,
+        "norm_drift": true
+      },
+      "integrity_passed": true,
+      "parameter_change": {
+        "base_dt": 0.05,
+        "reference_dt": 0.05,
+        "base_chi": 192,
+        "reference_chi": 256
+      }
+    },
+    {
+      "id": "negative_chi_q0.6",
+      "sign": "negative",
+      "knob": "chi",
+      "q_over_pi": 0.6,
+      "status": "pass",
+      "base_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_negative_local",
+      "reference_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\negative_chi",
+      "full_relative_l2": 6.570420156639517e-05,
+      "low_relative_l2": 4.522245056703287e-05,
+      "bands": [
+        {
+          "interval_J1": [
+            0,
+            0.6
+          ],
+          "base_weight": 0.30013648689722566,
+          "reference_weight": 0.3001357333698848,
+          "absolute_error": 7.535273408576515e-07,
+          "relative_error": 2.510621885628695e-06,
+          "absolute_error_over_C0": 1.2085089347075338e-06,
+          "allowed_absolute_error": 0.01500678666849424,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            0.6,
+            2.5
+          ],
+          "base_weight": 0.17926248771939965,
+          "reference_weight": 0.17926277739616453,
+          "absolute_error": 2.896767648807863e-07,
+          "relative_error": 1.6159337096546858e-06,
+          "absolute_error_over_C0": 4.645842818883684e-07,
+          "allowed_absolute_error": 0.008963138869808226,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            2.5,
+            4.0
+          ],
+          "base_weight": 0.0009262606529842753,
+          "reference_weight": 0.0009261698017924904,
+          "absolute_error": 9.085119178492418e-08,
+          "relative_error": 9.809345069240286e-05,
+          "absolute_error_over_C0": 1.4570735665137569e-07,
+          "allowed_absolute_error": 0.0006235182208561905,
+          "passed": true
+        }
+      ],
+      "base_peak_J1": 0.015,
+      "reference_peak_J1": 0.015,
+      "main_peak_shift_J1": 0.0,
+      "maximum_norm_drift": 0.000977302944030507,
+      "relative_source_weight_difference": 0.0,
+      "diagnostics": {
+        "base": {
+          "norm_drift": 0.000977302944030507,
+          "source_relative_error": 5.113607258473173e-11,
+          "norm_api_relative_error": 1.958636149254318e-15
+        },
+        "reference": {
+          "norm_drift": 0.00036295738686114085,
+          "source_relative_error": 5.113607258473173e-11,
+          "norm_api_relative_error": 2.670867476255888e-15
+        }
+      },
+      "gates": {
+        "full_l2": true,
+        "low_l2": true,
+        "band_weights": true,
+        "peak_shift": true,
+        "norm_drift": true
+      },
+      "integrity_passed": true,
+      "parameter_change": {
+        "base_dt": 0.05,
+        "reference_dt": 0.05,
+        "base_chi": 192,
+        "reference_chi": 256
+      }
+    },
+    {
+      "id": "negative_chi_q1",
+      "sign": "negative",
+      "knob": "chi",
+      "q_over_pi": 1.0,
+      "status": "pass",
+      "base_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_negative_local",
+      "reference_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\negative_chi",
+      "full_relative_l2": 0.00040701886736964793,
+      "low_relative_l2": 0.00014944504747063924,
+      "bands": [
+        {
+          "interval_J1": [
+            0,
+            0.6
+          ],
+          "base_weight": 0.10695452346756361,
+          "reference_weight": 0.10695241224956939,
+          "absolute_error": 2.1112179942189835e-06,
+          "relative_error": 1.9739788470525905e-05,
+          "absolute_error_over_C0": 5.05340447951137e-06,
+          "allowed_absolute_error": 0.00534762061247847,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            0.6,
+            2.5
+          ],
+          "base_weight": 0.28027727092888655,
+          "reference_weight": 0.2802791502580345,
+          "absolute_error": 1.8793291479690666e-06,
+          "relative_error": 6.7052049581244e-06,
+          "absolute_error_over_C0": 4.498356096257345e-06,
+          "allowed_absolute_error": 0.014013957512901727,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            2.5,
+            4.0
+          ],
+          "base_weight": 0.0013851521979260358,
+          "reference_weight": 0.0013848375508570309,
+          "absolute_error": 3.146470690048881e-07,
+          "relative_error": 0.00022720864899291855,
+          "absolute_error_over_C0": 7.531381943164227e-07,
+          "allowed_absolute_error": 0.0004177813200543812,
+          "passed": true
+        }
+      ],
+      "base_peak_J1": 1.445,
+      "reference_peak_J1": 1.445,
+      "main_peak_shift_J1": 0.0,
+      "maximum_norm_drift": 0.0033781305460376357,
+      "relative_source_weight_difference": 0.0,
+      "diagnostics": {
+        "base": {
+          "norm_drift": 0.0033781305460376357,
+          "source_relative_error": 5.170939478745809e-11,
+          "norm_api_relative_error": 5.31485239445671e-16
+        },
+        "reference": {
+          "norm_drift": 0.0013522822505361678,
+          "source_relative_error": 5.170939478745809e-11,
+          "norm_api_relative_error": 2.5245548873669376e-15
+        }
+      },
+      "gates": {
+        "full_l2": true,
+        "low_l2": true,
+        "band_weights": true,
+        "peak_shift": true,
+        "norm_drift": true
+      },
+      "integrity_passed": true,
+      "parameter_change": {
+        "base_dt": 0.05,
+        "reference_dt": 0.05,
+        "base_chi": 192,
+        "reference_chi": 256
+      }
+    },
+    {
+      "id": "negative_dt_q0.2",
+      "sign": "negative",
+      "knob": "dt",
+      "q_over_pi": 0.2,
+      "status": "pass",
+      "base_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\negative_chi",
+      "reference_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\negative_dt",
+      "full_relative_l2": 0.005280270549304263,
+      "low_relative_l2": 0.005293828106360796,
+      "bands": [
+        {
+          "interval_J1": [
+            0,
+            0.6
+          ],
+          "base_weight": 0.12329497131886774,
+          "reference_weight": 0.12283593826369614,
+          "absolute_error": 0.000459033055171601,
+          "relative_error": 0.0037369605480293473,
+          "absolute_error_over_C0": 0.0022236952947298967,
+          "allowed_absolute_error": 0.006141796913184807,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            0.6,
+            2.5
+          ],
+          "base_weight": 0.02516852022323594,
+          "reference_weight": 0.025132078897183465,
+          "absolute_error": 3.6441326052474854e-05,
+          "relative_error": 0.00144999250565614,
+          "absolute_error_over_C0": 0.00017653283214280315,
+          "allowed_absolute_error": 0.0012566039448591733,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            2.5,
+            4.0
+          ],
+          "base_weight": 0.0002017042727278044,
+          "reference_weight": 0.0002013943783628774,
+          "absolute_error": 3.0989436492699337e-07,
+          "relative_error": 0.0015387438688512843,
+          "absolute_error_over_C0": 1.5012222614204842e-06,
+          "allowed_absolute_error": 0.0002064280372672902,
+          "passed": true
+        }
+      ],
+      "base_peak_J1": 0.015,
+      "reference_peak_J1": 0.015,
+      "main_peak_shift_J1": 0.0,
+      "maximum_norm_drift": 5.5775567877432904e-05,
+      "relative_source_weight_difference": 0.0,
+      "diagnostics": {
+        "base": {
+          "norm_drift": 5.5775567877432904e-05,
+          "source_relative_error": 5.13345213242356e-11,
+          "norm_api_relative_error": 2.0168463535568593e-15
+        },
+        "reference": {
+          "norm_drift": 3.354956900013347e-05,
+          "source_relative_error": 5.13345213242356e-11,
+          "norm_api_relative_error": 2.420215624268231e-15
+        }
+      },
+      "gates": {
+        "full_l2": true,
+        "low_l2": true,
+        "band_weights": true,
+        "peak_shift": true,
+        "norm_drift": true
+      },
+      "integrity_passed": true,
+      "parameter_change": {
+        "base_dt": 0.05,
+        "reference_dt": 0.025,
+        "base_chi": 256,
+        "reference_chi": 256
+      }
+    },
+    {
+      "id": "negative_dt_q0.6",
+      "sign": "negative",
+      "knob": "dt",
+      "q_over_pi": 0.6,
+      "status": "pass",
+      "base_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\negative_chi",
+      "reference_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\negative_dt",
+      "full_relative_l2": 0.00525062542518831,
+      "low_relative_l2": 0.005345981691650895,
+      "bands": [
+        {
+          "interval_J1": [
+            0,
+            0.6
+          ],
+          "base_weight": 0.3001357333698848,
+          "reference_weight": 0.2990116296832656,
+          "absolute_error": 0.0011241036866191934,
+          "relative_error": 0.003759397879640748,
+          "absolute_error_over_C0": 0.001802840156099398,
+          "allowed_absolute_error": 0.014950581484163282,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            0.6,
+            2.5
+          ],
+          "base_weight": 0.17926277739616453,
+          "reference_weight": 0.17917788241549854,
+          "absolute_error": 8.489498066599488e-05,
+          "relative_error": 0.0004738027903975922,
+          "absolute_error_over_C0": 0.00013615477114593453,
+          "allowed_absolute_error": 0.008958894120774927,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            2.5,
+            4.0
+          ],
+          "base_weight": 0.0009261698017924904,
+          "reference_weight": 0.0009251256772562368,
+          "absolute_error": 1.044124536253555e-06,
+          "relative_error": 0.0011286299385292692,
+          "absolute_error_over_C0": 1.6745694052369546e-06,
+          "allowed_absolute_error": 0.0006235182208561905,
+          "passed": true
+        }
+      ],
+      "base_peak_J1": 0.015,
+      "reference_peak_J1": 0.015,
+      "main_peak_shift_J1": 0.0,
+      "maximum_norm_drift": 0.00036295738686114085,
+      "relative_source_weight_difference": 0.0,
+      "diagnostics": {
+        "base": {
+          "norm_drift": 0.00036295738686114085,
+          "source_relative_error": 5.113607258473173e-11,
+          "norm_api_relative_error": 2.670867476255888e-15
+        },
+        "reference": {
+          "norm_drift": 0.00019119022539111567,
+          "source_relative_error": 5.113607258473173e-11,
+          "norm_api_relative_error": 3.2050409715070654e-15
+        }
+      },
+      "gates": {
+        "full_l2": true,
+        "low_l2": true,
+        "band_weights": true,
+        "peak_shift": true,
+        "norm_drift": true
+      },
+      "integrity_passed": true,
+      "parameter_change": {
+        "base_dt": 0.05,
+        "reference_dt": 0.025,
+        "base_chi": 256,
+        "reference_chi": 256
+      }
+    },
+    {
+      "id": "negative_dt_q1",
+      "sign": "negative",
+      "knob": "dt",
+      "q_over_pi": 1.0,
+      "status": "pass",
+      "base_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\submission_20261002\\dsf_controls\\negative_chi",
+      "reference_directory": "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\fullq_dsf_20261001\\L40_negative_check_local",
+      "full_relative_l2": 0.0042603271677508475,
+      "low_relative_l2": 0.0050944976855771505,
+      "bands": [
+        {
+          "interval_J1": [
+            0,
+            0.6
+          ],
+          "base_weight": 0.10695241224956939,
+          "reference_weight": 0.1068347546552962,
+          "absolute_error": 0.00011765759427319333,
+          "relative_error": 0.0011013044832912022,
+          "absolute_error_over_C0": 0.00028162483247905445,
+          "allowed_absolute_error": 0.00534173773276481,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            0.6,
+            2.5
+          ],
+          "base_weight": 0.2802791502580345,
+          "reference_weight": 0.28015422322042255,
+          "absolute_error": 0.000124927037611966,
+          "relative_error": 0.0004459223786666769,
+          "absolute_error_over_C0": 0.00029902494825691266,
+          "allowed_absolute_error": 0.014007711161021128,
+          "passed": true
+        },
+        {
+          "interval_J1": [
+            2.5,
+            4.0
+          ],
+          "base_weight": 0.0013848375508570309,
+          "reference_weight": 0.0013834034325206357,
+          "absolute_error": 1.4341183363951807e-06,
+          "relative_error": 0.0010366595186063255,
+          "absolute_error_over_C0": 3.4327009551516243e-06,
+          "allowed_absolute_error": 0.0004177813200543812,
+          "passed": true
+        }
+      ],
+      "base_peak_J1": 1.445,
+      "reference_peak_J1": 1.445,
+      "main_peak_shift_J1": 0.0,
+      "maximum_norm_drift": 0.0013522822505361678,
+      "relative_source_weight_difference": 0.0,
+      "diagnostics": {
+        "base": {
+          "norm_drift": 0.0013522822505361678,
+          "source_relative_error": 5.170939478745809e-11,
+          "norm_api_relative_error": 2.5245548873669376e-15
+        },
+        "reference": {
+          "norm_drift": 0.0007206996144396167,
+          "source_relative_error": 5.170939478745809e-11,
+          "norm_api_relative_error": 1.3287130986141776e-15
+        }
+      },
+      "gates": {
+        "full_l2": true,
+        "low_l2": true,
+        "band_weights": true,
+        "peak_shift": true,
+        "norm_drift": true
+      },
+      "integrity_passed": true,
+      "parameter_change": {
+        "base_dt": 0.05,
+        "reference_dt": 0.025,
+        "base_chi": 256,
+        "reference_chi": 256
+      }
+    }
+  ],
+  "script_sha256": "c4d1a925abf2e0effca2b48133468f6d791fa0ee9e07eccc4c85d9fdb5ec40f8"
+}

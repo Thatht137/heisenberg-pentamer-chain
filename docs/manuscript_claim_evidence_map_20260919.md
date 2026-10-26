@@ -2,7 +2,6 @@
 
 > 用途：给 `docs/near_final_manuscript_draft_20260819.md` 做本地证据与引用缺口盘点。本文档只整理已经存在的本地记录，不替代 `paper/`，不把准备态写成服务器结果。
 >
-> 写作路由：research paper；`Introduction`、`Methods`、`Discussion`；英文正文、generic journal。`nature-writing` 所需 `_shared/core` 在本机缺失，本轮按请求使用已读取的静态 fallback fragments；没有安装或下载 skill 依赖。
 
 ## 1. 总体论点与范围锁定
 

@@ -1,0 +1,7 @@
+{
+  "passed": false,
+  "completed_gate": "rank-four exact eigenprojector",
+  "error": "subprocess.TimeoutExpired after 180 seconds",
+  "meaning": "Generic symbolic matrix expressions did not complete the resolvent/gap certificate within the imposed bound; no coefficient result is claimed.",
+  "remedy": "Use explicit QQ(sqrt(7)) DomainMatrix inversion and LU with exact LDL reconstruction; rerun in exact_pentamer_coefficients_v3."
+}

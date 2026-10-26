@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "trace_polynomial_identities": true,
+  "rank_pattern_contractions": {
+    "QTT": "20/3",
+    "TQT": "20",
+    "TTQ": "20/3"
+  },
+  "exact_spin_checks": [
+    {
+      "spin": "1/2",
+      "three_site_norm": "0",
+      "minimum_M2_times_ell_over_b2": "0"
+    },
+    {
+      "spin": "1",
+      "three_site_norm": "200/3",
+      "minimum_M2_times_ell_over_b2": "290/81"
+    },
+    {
+      "spin": "3/2",
+      "three_site_norm": "2500",
+      "minimum_M2_times_ell_over_b2": "985/16"
+    },
+    {
+      "spin": "2",
+      "three_site_norm": "35000",
+      "minimum_M2_times_ell_over_b2": "2282/5"
+    },
+    {
+      "spin": "5/2",
+      "three_site_norm": "857500/3",
+      "minimum_M2_times_ell_over_b2": "355495/162"
+    },
+    {
+      "spin": "3",
+      "three_site_norm": "1646400",
+      "minimum_M2_times_ell_over_b2": "8040"
+    }
+  ],
+  "minimum_u_over_b": "-(d^2-4)/12",
+  "M2_min": "b^2*s^2*(s+1)^2*(4*s*(s+1)-3)*(86*s*(s+1)-27)/(810*ell)",
+  "M2_full": "M2_min + (d^2-1)^2/(18*ell)*(u+b*(d^2-4)/12)^2",
+  "quartet_ell5_M2_min_over_b2": "197/16",
+  "quartet_zeroT_retuning_M2_over_b2": "837/16",
+  "microscopic_fixed_zeroT_retuning": [
+    {
+      "g": 0.000625,
+      "M2_over_beta2": 0.799679450132068,
+      "leading_prediction": 0.799328115535348,
+      "relative_error": 0.0004395373938330671
+    },
+    {
+      "g": 0.00125,
+      "M2_over_beta2": 0.8000322271272217,
+      "leading_prediction": 0.799328115535348,
+      "relative_error": 0.0008808793012391458
+    },
+    {
+      "g": 0.0025,
+      "M2_over_beta2": 0.8007421176159679,
+      "leading_prediction": 0.799328115535348,
+      "relative_error": 0.0017689882954672331
+    }
+  ],
+  "not_claimed": [
+    "thermal integrated-weight floor",
+    "arbitrary microscopic cluster",
+    "finite momentum acceptance robustness"
+  ],
+  "elapsed_seconds": 0.7509936
+}

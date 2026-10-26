@@ -1,0 +1,13 @@
+cells = [6, 12]
+complex_probe = true
+wavefunction_reuse = "All leading uniform spin-3/2 Hamiltonians differ only by positive c1(alpha)^2, so their ground-state vectors coincide"
+threads = 1
+N12_weight_relative_change_gate = 0.01
+real_retuning = true
+scope = "effective model at same roots as microscopic N3 test; not microscopic L=60 result"
+alpha = -0.38103454019107325
+wall_limit_seconds = 900
+overlap_imaginary_gate = 1.0e-8
+q_over_pi = 0.9333333333333333
+scalar_identity_abs_gate = 1.0e-9
+ed_N6_weight_relative_gate = 1.0e-5

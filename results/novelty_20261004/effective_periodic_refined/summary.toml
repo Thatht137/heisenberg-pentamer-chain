@@ -1,0 +1,5 @@
+failure = "周期尺寸 16 精化后仍未通过，停止扩大"
+bulk_claim = false
+elapsed_seconds = 1820.00200009346
+all_gates_pass = false
+accepted_sizes = [12]
