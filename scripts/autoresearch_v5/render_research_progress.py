@@ -1304,7 +1304,7 @@ def build_current(doc: dict[str, object], staged: dict[str, str], history_count:
             f"{last.get('completed_points', '?')} 点、Julia PID {last.get('julia_pid', '?')}，"
             f"CPU {last.get('cpu_percent', '?')}%，RSS {last.get('rss_gib', '?')} GiB，stderr 为空"
         )
-        run_note = "当前阻塞来自 Codex SSH 审批网关 503，不是 Julia 终态证据；不重启、不启动第二个 Julia、不下载。"
+        run_note = "SSH 连接检查返回 503；计算终态仍需依据运行输出核验。"
         current_eyebrow = "CURRENT VIEW · UPDATED 2026-08-06 18:09 CST · ROUND43 PHASE B ACCESS PENDING"
     elif round43_current.get("status") == "running":
         runtime = round43_current.get("runtime", {})
@@ -1386,7 +1386,7 @@ def build_current(doc: dict[str, object], staged: dict[str, str], history_count:
     elif schedule.get("latest_update", {}).get("automation_effective"):
         schedule_summary = "high-150 24 h 边界检查已更新：8 月 5 日 15:07 CST，automation id=round31-high-150"
     elif schedule:
-        schedule_summary = "已登记检查时间，但 Codex automation_update 未创建有效定时器"
+        schedule_summary = "已登记检查时间，定时监测尚未生效"
     else:
         schedule_summary = "未登记一次性检查安排"
     if str(negative_live.get("status", "")).endswith("_running"):
