@@ -1,7 +1,7 @@
 R4 终态只读 checksum 审计
 checked_at_cst=2026-08-10 18:22-18:25
-remote=wangjieren@39.96.207.180:6000
-remote_cell=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r4-a0250-L060/cells/nega-r4-a0250-b0500-L060
+remote=USER@server.example.org:6000
+remote_cell=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r4-a0250-L060/cells/nega-r4-a0250-b0500-L060
 
 remote_parent_sha256sum_c=pass
 remote_parent_checksums_sha256=417665f88b2212ebe6095603a0e88dc749f5b2999f35c8e93117d4f0917893de

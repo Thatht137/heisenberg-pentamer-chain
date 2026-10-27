@@ -1,8 +1,8 @@
 # Julia 环境审计记录
 
 > 审计日期：2026-07-29  
-> 本地项目：`D:\Project\1x5_Heisenberg_Pentamer`  
-> 服务器项目：`wangjieren@39.96.207.180:6000:/home/wangjieren/code/1x5_Heisenberg_Pentamer`  
+> 本地项目：`D:\research\1x5_Heisenberg_Pentamer`  
+> 服务器项目：`USER@server.example.org:6000:/home/USER/code/1x5_Heisenberg_Pentamer`  
 > 结论：锁定项目环境可离线计算；服务器不具备可靠的离线包管理能力，禁止远端安装或更新包。
 
 ## 1. 总体结论
@@ -41,7 +41,7 @@ Manifest.toml 37a53ffd73db57b9db9c4ce11f6265a9a41ac2035dc421b01f9a633d893ba12c
 服务器默认 juliaup 渠道为 `release`，实际版本为 `1.12.3+0.x64.linux.gnu`。`~/.juliaup/bin/julia` 是指向 `julialauncher` 的符号链接，生产运行器使用：
 
 ```text
-/home/wangjieren/.juliaup/bin/julia +release --startup-file=no --project=.
+/home/USER/.juliaup/bin/julia +release --startup-file=no --project=.
 ```
 
 服务器 depot 状态：

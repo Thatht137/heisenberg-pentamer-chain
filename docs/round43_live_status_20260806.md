@@ -1,20 +1,15 @@
-# Round43 实时状态与 bounded 交付
+# Round43 计算记录与 bounded 结果
 
 更新时间：2026-08-06 15:37 CST。范围固定为 `0<=alpha,beta<=1`，排除负 alpha 和参考 Fig.9；不修改 `paper/`。
 
-## 运行状态
+## 计算参数
 
 | 项目 | 值 |
 |---|---|
-| 服务器 | `wangjieren@39.96.207.180:6000` |
 | 任务 | `round43 q=pi CV`，阶段 B |
 | 参数 | `alpha=0.23`，`beta=0.5`，`L=40`，`eta=0.1` |
-| Julia | PID `448165`，4 threads，BLAS 1 thread |
 | 顺序 | 阶段 A 已完成；阶段 B 只计算 `omega=0.00` |
 | 精度 | `Ddmrg=320`，`Dcv=1200`，residual `<=1e-5` |
-| 启动 | 2026-08-06 09:28:35 CST |
-| 最近核验 | 15:37：CPU `106%`，RSS `0.93 GiB`，stderr 为空，启动快照 `4/5` |
-| 下一次检查 | 17:40 CST，一次性只读检查，automation `round43-phase-b` |
 
 阶段 A 于 12:35:55 CST 自然结束为 `partial 4/5`，elapsed `11239.812 s`。远端 `checksums.sha256` 全部通过；四点 residual 均为 `0.0`，因此满足阶段 B 启动门。
 

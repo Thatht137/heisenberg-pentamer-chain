@@ -1,6 +1,6 @@
 R5 partial handoff 远端 checksum 审计
 checked_at_cst=2026-08-10 20:48-20:50
-remote=wangjieren@39.96.207.180:6000
+remote=USER@server.example.org:6000
 
 cell=nega-r5-a0250-b0500-L080
 parent_sha256sum_c=pass

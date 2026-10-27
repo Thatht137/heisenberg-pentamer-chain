@@ -634,7 +634,7 @@ end
 在一维量子自旋系统中，某些拓扑有序相（如 Haldane 相）没有局域序参量，但存在隐藏的非局域序——弦序参量（string order parameter）：
 
 $$
-O_{\text{str}}(i, j) = -\left\langle \sigma^z_i \left(\prod_{k=i+1}^{j-1} \sigma^z_k \right) \sigma^z_j \right\rangle
+O_{\text{str}}(i, j) = -\left\langle S^z_i \left(\prod_{k=i+1}^{j-1} \sigma^z_k \right) S^z_j \right\rangle
 $$
 
 其中 $\sigma^z = 2S^z$（Pauli 矩阵）。物理含义：
@@ -742,27 +742,16 @@ $i$ 和 $j$ 之间的中间格点数。
 ```julia
     coeff = -(2.0)^N_mid
 ```
-**系数推导**：
-
-弦序参量定义中用的是 $\sigma^z = 2S^z$，所以：
+实现采用端点为 $S^z$、中间格点为 $2S^z$ 的归一化：
 
 $$
-O_{\text{str}}(i,j) = -\langle \sigma^z_i \prod_{k=i+1}^{j-1} \sigma^z_k \cdot \sigma^z_j \rangle = -\langle (2S^z_i) \prod_{k=i+1}^{j-1} (2S^z_k) \cdot (2S^z_j) \rangle
+O_{\mathrm{str}}(i,j)
+= -\left\langle S^z_i
+\prod_{k=i+1}^{j-1}(2S^z_k) S^z_j \right\rangle
+= -2^{j-i-1}\left\langle \prod_{k=i}^{j} S^z_k \right\rangle .
 $$
 
-$$
-= -(2)^{j-i+1} \langle S^z_i \prod_{k=i+1}^{j-1} S^z_k \cdot S^z_j \rangle
-$$
-
-但代码中 OpSum 里已经包含了端点的 $S^z_i$ 和 $S^z_j$（各贡献一个因子 1，不需要额外的 2），所以实际系数是 $-(2)^{N_{\text{mid}}}$（只有中间格点需要 $\sigma^z = 2S^z$ 的因子 2）。
-
-等等，让我重新看代码逻辑：OpSum 中从 $i$ 到 $j$ 的所有格点都放了 `"Sz"`，所以每个格点贡献的是 $S^z$（不是 $\sigma^z$）。要得到 $\sigma^z = 2S^z$ 的乘积，需要对每个格点乘 2。共 $(j-i+1)$ 个格点，但端点的 2 已经被吸收... 实际上代码的做法是：
-
-$$
-\text{val} = \text{coeff} \times \langle \psi | \prod_{k=i}^{j} S^z_k | \psi \rangle
-$$
-
-其中 $\text{coeff} = -(2)^{N_{\text{mid}}}$。总共 $j-i+1$ 个 $S^z$ 算符，乘以 $-(2)^{j-i-1}$，等效于 $-2^{j-i-1} \prod S^z_k$。这对应于弦序参量的一种特定归一化约定（Li 等文献）。
+中间格点数为 $N_{\mathrm{mid}}=j-i-1$，因此代码系数为 $-2^{N_{\mathrm{mid}}}$。
 
 ```julia
     os = OpSum()
@@ -1058,7 +1047,7 @@ function compute_dsf_spectrum(psi_gs, H, sites, E0::Real;
 ```
 每个线程：对固定的 $q$，遍历所有 $\omega$ 点计算 $S(q,\omega)$。返回 `(q点索引, 该行结果)`。
 
-注意：对同一个 $q$，不同 $\omega$ 之间是串行的。这是因为 `apply_Sq_operator` 对每个 $q$ 只需算一次（$|b\rangle$ 相同），但当前实现中每次都重新算了。这是一个可优化的点，但代码正确性没问题。
+对固定的 $q$，不同 $\omega$ 点串行计算。它们使用相同的 $|b\rangle$，当前实现会在每个频率点重新调用 `apply_Sq_operator`。
 
 ```julia
         for t in tasks
@@ -1110,6 +1099,6 @@ end
 
 1. **两层哈密顿量**：同一个物理模型有两种数值表示。ED 层用稠密矩阵（小体系精确），MPO 层用张量网络（大体系近似）。两者在小体系上给出一致结果，这是验证的基础。
 
-2. **渐进式验证**：脚本 01→02→03→04 是从简单到复杂的递进。每一步都建立在前一步验证通过的基础上。
+2. **计算入口**：脚本 01、02、03、04 分别对应单胞能谱、DMRG 基准、弦关联扫描和动力学结构因子。
 
 3. **关注点分离**：每个源文件负责一个独立的物理/数值功能，通过主模块统一导出。脚本只负责参数设置和结果保存，不包含核心算法。

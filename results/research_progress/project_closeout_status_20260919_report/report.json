@@ -139,7 +139,7 @@
           "kind": "table",
           "columns": ["检查项", "结果"],
           "rows": [
-            ["主机/账户", "c104-ysu；wangjieren"],
+            ["主机/账户", "compute-node；wangjieren"],
             ["精确 Julia 进程", "Julia PID=294507；命令 negative_static_cell.jl；--threads=8"],
             ["本轮终态检查", "09:48:44；supervisor completed；batch returncode=0；2 cells/4 child runs；无活动匹配进程"],
             ["project pythonbatch", "未观察到真实 Python 进程；唯一命中为检查 shell 自匹配，已排除"],

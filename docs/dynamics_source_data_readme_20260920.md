@@ -7,7 +7,7 @@
 
 本 README 对应 `results/research_progress/dynamics_source_data_audit_20260920.json`，记录 final-v2 的 q=π CV–TEBD Agreement 图源和 minimal full-q 三组 `dt`/`dt/2` 图源。所有路径均为本项目相对路径，SHA256 与字节数为本地实测值。
 
-这不是公开归档或 Data Availability 发布记录：当前没有 DOI、accession、仓库记录或 licence。它只完成本地来源闭合，不能替代提交时的公开数据包。
+本页说明动力学资料的来源对应关系；公开归档与文件清单见 https://github.com/Thatht137/heisenberg-pentamer-chain/releases/tag/archive-2026-10-26。
 
 ## final-v2 q=π CV–TEBD
 

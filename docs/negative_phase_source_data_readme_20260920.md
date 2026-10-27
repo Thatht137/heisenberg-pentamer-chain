@@ -58,4 +58,4 @@ stage_b_practical_v2_accepted_index_final.json (89)
 
 ## 可公开性与科学边界
 
-目前所有入口均为 local-only、未公开归档；拟议 public research repository 尚未选择。第三方 PDF/代码、SSH/PID/凭据、用户路径、环境 dump 和远端运维日志不进入公开数据集。Stage B 的 bounded 7 条从 boundary 排除；Stage C 的 29 条虽通过 Practical V2 数值验收，8 个 target 仍无双诊断，故不能宣称新相、相界或全域单相。`no_boundary` 只表示当前严格标准下未确认边界。
+公开归档及文件清单见 https://github.com/Thatht137/heisenberg-pentamer-chain/releases/tag/archive-2026-10-26。具体归档内容见公开文件清单。Stage B 的 bounded 7 条从 boundary 排除；Stage C 的 29 条虽通过 Practical V2 数值验收，8 个 target 仍无双诊断，故不能宣称新相、相界或全域单相。`no_boundary` 只表示当前严格标准下未确认边界。

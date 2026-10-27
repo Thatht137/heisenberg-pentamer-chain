@@ -20,7 +20,7 @@
             ],
             [
               "服务器",
-              "c104-ysu, Julia 1.12.3, 16 threads, nice=10"
+              "compute-node, Julia 1.12.3, 16 threads, nice=10"
             ],
             [
               "明确排除",
