@@ -1,6 +1,6 @@
 R2 远端只读 checksum 审计
-target: wangjieren@39.96.207.180:6000
-cell: /home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r2-a0350-L060/cells/nega-r2-a0350-b0500-L060
+target: USER@server.example.org:6000
+cell: /home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r2-a0350-L060/cells/nega-r2-a0350-b0500-L060
 result: PASS
 
 === parent ===

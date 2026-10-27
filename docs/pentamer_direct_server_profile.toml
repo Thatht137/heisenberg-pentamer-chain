@@ -1,17 +1,18 @@
+# 远端计算配置示例，请按实际环境填写。
 [identity]
 name = "pentamer-direct"
-purpose = "1x5 Heisenberg 五聚体链复现计算"
-maintainer = "wangjieren"
+purpose = "五聚体链远端计算配置示例"
+maintainer = "USER"
 
 [connection]
-repo_path_remote = "/home/wangjieren/code/1x5_Heisenberg_Pentamer"
+repo_path_remote = "/home/USER/code/1x5_Heisenberg_Pentamer"
 
 [connection.ssh]
-alias = "39.96.207.180"
-host = "39.96.207.180"
-user = "wangjieren"
-identity_file = "~/.ssh/id_ed25519"
-port = 6000
+alias = "server.example.org"
+host = "server.example.org"
+user = "USER"
+identity_file = "~/.ssh/compute_key"
+port = 22
 
 [scheduler]
 type = "none"
@@ -26,10 +27,10 @@ max_wall = "infinite"
 gpu = ""
 
 [filesystem]
-home = "/home/wangjieren"
-scratch = "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results"
-project = "/home/wangjieren/code/1x5_Heisenberg_Pentamer"
-quota = "无用户 quota；/home 探测时已使用 80%"
+home = "/home/USER"
+scratch = "/home/USER/code/1x5_Heisenberg_Pentamer/results"
+project = "/home/USER/code/1x5_Heisenberg_Pentamer"
+quota = "按实际配额填写"
 
 [network]
 internet_from_login = false
@@ -51,8 +52,8 @@ unusual_partitions = []
 
 [limits.paths]
 allowed_roots = [
-  "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results",
-  "/home/wangjieren/code/1x5_Heisenberg_Pentamer/data",
+  "/home/USER/code/1x5_Heisenberg_Pentamer/results",
+  "/home/USER/code/1x5_Heisenberg_Pentamer/data",
 ]
 
 [commands]

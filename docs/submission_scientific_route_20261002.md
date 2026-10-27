@@ -1,6 +1,6 @@
 # 最小投稿主线与定量验证
 
-建档：2026-10-02；计算与核对完成：2026-10-03（北京时间）。暂按 PRB Regular Article 准备，作者、单位、资助按用户要求保留占位。本文档确定科学路线并记录已完成的小系统验证，不表示已经投稿或保证录用。
+建档：2026-10-02；计算与核对完成：2026-10-03（北京时间）。本文档记录科学路线与已完成的小系统验证。
 
 ## 计算前固定的假设与判据
 
@@ -49,7 +49,7 @@
 
 适用域外对照同样重要：beta=0.5对应g=1.4604、3.9558，双胞gap相对一阶预测的偏差分别10.02%、84.23%，并且预定局域半隙以下的低带计数均不再成立。正alpha时首个双胞激发已高于固定积分上限，所以该窗中的W=0不能解释成真实激发消失；负alpha也有低带重排。它们明确禁止将弱耦合绝对权重公式直接套在两张生产热图上。
 
-复现：[脚本](D:/Project/1x5_Heisenberg_Pentamer/scripts/submission_20261002/local_projection_checks.py)、[计算前协议](D:/Project/1x5_Heisenberg_Pentamer/results/submission_20261002/local_projection/protocol.json)、[汇总](D:/Project/1x5_Heisenberg_Pentamer/results/submission_20261002/local_projection/summary.json)、[全部参数结果](D:/Project/1x5_Heisenberg_Pentamer/results/submission_20261002/local_projection/coupling_checks.csv)、[动量权重](D:/Project/1x5_Heisenberg_Pentamer/results/submission_20261002/local_projection/q_resolved_weights.csv)、[代码与数据哈希](D:/Project/1x5_Heisenberg_Pentamer/results/submission_20261002/local_projection/sha256.json)。
+复现：[脚本](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/scripts/submission_20261002/local_projection_checks.py)、[计算前协议](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/results/submission_20261002/local_projection/protocol.json)、[汇总](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/results/submission_20261002/local_projection/summary.json)、[全部参数结果](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/results/submission_20261002/local_projection/coupling_checks.csv)、[动量权重](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/results/submission_20261002/local_projection/q_resolved_weights.csv)、[代码与数据哈希](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/results/submission_20261002/local_projection/sha256.json)。
 
 ## 投稿门槛与表述边界
 
@@ -69,4 +69,3 @@ PRB要求凝聚态领域有实质且可靠的知识贡献，并未要求每篇�
 - 旧k3熵系数下降作为数值敏感性对照时，应标明历史设置并配受控端点；不能作为新相的主要证据图。
 - PRB Regular Articles无固定字数上限；正文与补充材料职责按信息对理解主结果是否必要来区分。当前个人信息先保留占位，实际提交前由作者补齐。[PRB作者指南](https://journals.aps.org/prb/authors)
 - 必须提供真实的数据/代码可得性声明。APS鼓励公开共享，公开仓库DOI并非对所有论文一律强制；不应把尚未建立的归档写成已公开。[APS数据声明指南](https://journals.aps.org/authors/data-availability-statements)
-- 本项目AI参与科研分析、代码与图文整合，超过轻度语言润色。最终稿须按真实使用情况记录工具、用途及作者核验方式；科研用途写入方法，图生成辅助按政策在图注披露。作者核验尚未发生的部分不能写成已经核验。[APS现行AI政策](https://journals.aps.org/authors/appropriate-use-ai-tools)

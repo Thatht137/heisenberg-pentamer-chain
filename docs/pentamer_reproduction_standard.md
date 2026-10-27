@@ -82,23 +82,6 @@ J_2(\mathbf S_{5n-4}\cdot\mathbf S_{5n-3}
 - 参数或算法精度不同：作为收敛序列的一部分保留，不覆盖旧文件。
 - 输出文件存在时默认跳过；只有明确设置 `FORCE_RECOMPUTE=1` 且任务清单说明原因时才允许覆盖逻辑，实际文件仍应写入新 run 目录。
 
-## 4. 技能路由
-
-技能只按本项目作用域管理，不从全局目录删除，以免影响其他项目。
-
-| 状态 | Skills | 用途 |
-|---|---|---|
-| 保留 | `solve`, `quantum-model`, `physics` | 模型和物理问题路由 |
-| 保留 | `method-ed`, `method-mps`, `using-itensors` | 单胞 ED、有限链 DMRG/TEBD |
-| 保留 | `parameter-scan`, `scaling-fit`, `cross-method-check`, `solvable` | 扫描、有限尺寸、独立验证和精确极限 |
-| 保留 | `setup-cluster`, `using-slurm`, `cluster-jobs`, `setup-julia`, `build-apptainer-image` | 服务器、资源护栏和离线环境后备方案 |
-| 保留 | `find-docs`, `report` | API 核对和结果报告 |
-| 本项目禁用 | `method-ltrg` | 当前任务不计算有限温热力学 |
-| 本项目禁用 | `using-mpskit` | 当前代码采用有限 OBC ITensorMPS，不采用无限 MPS |
-| 本项目禁用 | `using-xdiag` | 单五聚体已有自编 32×32 ED，不新增 XDiag 依赖 |
-
-若研究目标改变，必须先修改本表和方法理由，不能在任务中临时切换方法。
-
 ## 5. 计算方法原则
 
 ### 5.1 ED
@@ -330,11 +313,11 @@ Fig. 7 和 Fig. 9 的替换属于研究设计变更，必须由课题负责人�
 
 ## 10. 服务器执行标准
 
-服务器：`wangjieren@39.96.207.180:6000`，SSH 私钥为本机 `~/.ssh/id_ed25519`。公钥文件 `.pub` 不能作为客户端 `-i` 参数。
+服务器：`USER@server.example.org:6000`，SSH 私钥为本机 `~/.ssh/compute_key`。公钥文件 `.pub` 不能作为客户端 `-i` 参数。
 
 已探测环境：
 
-- 主机 `c104-ysu`，Ubuntu/Linux x86_64。
+- 主机 `compute-node`，Ubuntu/Linux x86_64。
 - 2 路 Intel Xeon E5-2673 v4，共 40 物理核、80 逻辑线程。
 - 内存 251 GiB；探测时约 245 GiB 可用。
 - `/home` 共 3.6 TiB、可用约 720 GiB、已使用 80%。

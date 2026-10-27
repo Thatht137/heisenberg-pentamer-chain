@@ -31,7 +31,7 @@
 ### 近零 α 机制入口
 
 `near_zero_alpha_oracle_v2` 的数值源为 `oracle_points.csv`、`spec.json`、`summary.json` 与 `checksums.sha256`。对应机制页面是 `results/autoresearch_v5_20260919/near_zero_alpha_mechanism_report_v2/report.html`（及其 `report.json`），内容把 `[1,1,alpha,beta,alpha,1,1]` 的局部构造、
-`Delta_8/alpha^2 -> 2/(9 beta)`、alpha=0 multiplet 和 11 gates 结构化呈现。该目录没有独立 PNG/SVG 机制图；本轮没有补画，也没有把别的旧图冒充为 v2 图。
+`Delta_8/alpha^2 -> 2/(9 beta)`、alpha=0 multiplet 和 11 gates 结构化呈现。该目录没有独立 PNG/SVG 机制图；
 
 这里必须保留一条误差口径：两个 finite-alpha control 的 `prediction_relative_error` 是相对 leading coefficient `2/(9 beta)` 的误差，**不是 L=80 误差**。2% gate 只作用于 42 个 nonzero grid rows；finite-alpha control 不套该 gate。局部 8-spin oracle 不能证明完整链的形状因子、相或全域单相。
 
@@ -68,6 +68,6 @@
 
 ## 可复核性与边界
 
-分析/验证入口和实测文件哈希在审计 JSON 的 `code_entrypoints`、`selected_files` 中列出。已有 checksums、manifest 和 source-hash registry 原样作为 provenance；本轮没有重新 hash 84 个原始大状态，没有远端操作，没有启动 Julia，没有重跑科学计算，也没有修改 `paper/` 或既有 receipt/manifest。
+分析/验证入口和实测文件哈希在审计 JSON 的 `code_entrypoints`、`selected_files` 中列出。已有 checksums、manifest 和 source-hash registry 原样作为 provenance；84 个原始大状态未在本清单中重新校验。
 
 该说明仅提供工作区内可追溯入口；尚未选择 public repository、license、DOI 或 accession。任何对外数据可用性声明都需要在另行确认访问路径、许可证、元数据和长期归档后再写。

@@ -35,10 +35,6 @@
 - TEBD 动力学：`scripts/05_tebd_pentamer.jl`
 - 频域变换与绘图：`scripts/06_ft_tebd_pentamer_mapped.jl`、`scripts/plot_dsf_tebd_grid.py`
 
-### 2.3 当前未提交改动
-
-当前工作区同时包含源代码修改、有限尺寸数据、纠缠数据和多组图。不要把它们一次性提交。应先按“数值方法”“数据”“绘图”“写作”拆分。
-
 ## 3. 白色区域的直接原因
 
 `scripts/plot_phase_diagram_dense.py` 主动设置了：
@@ -240,50 +236,6 @@ Markdown 适合快速修改、会议记录和 Git diff。
 ```
 
 不要从摘要开始，也不要先写长篇引言。
-
-## 9. Git 与 jj 的选择
-
-当前仓库已经使用 Git、存在远程分支和历史提交。对于第一次进行科研版本控制，建议先使用 Git，不要同时混用 Git 和 jj。
-
-原因：
-
-- 你需要先学会提交边界、分支和回退；
-- 学长更可能直接理解 Git 历史；
-- 当前工作区已有较多未提交文件，先整理比换工具更重要；
-- jj 虽已安装，但仓库尚未执行 `jj git init`。
-
-建议分支：
-
-```text
-analysis/string-order-distance
-analysis/edge-states
-analysis/entanglement-spectrum
-analysis/critical-scaling
-writing/results
-```
-
-每个提交只回答一个问题，例如：
-
-```text
-Add distance-resolved string correlator
-Add DMRG convergence diagnostics near alpha zero
-Add edge magnetization scan for candidate SPT phase
-Draft Results subsection for beta=0.5 cut
-```
-
-## 10. 当前工作区的首次整理
-
-先不要直接切分支或提交全部文件。建议：
-
-1. 备份当前工作目录；
-2. 用 `git diff --stat` 和 `git status --short` 分类；
-3. 源代码和脚本作为第一组；
-4. 小型 CSV 数据作为第二组；
-5. 论文最终图作为第三组；
-6. 临时 PNG、压缩包和服务器日志不进入 Git；
-7. 邮件草稿与论文内容分开管理。
-
-大型原始数据如果持续增长，应使用外部数据目录、对象存储或 Git LFS，而不是普通 Git。
 
 ## 11. 本周可执行清单
 

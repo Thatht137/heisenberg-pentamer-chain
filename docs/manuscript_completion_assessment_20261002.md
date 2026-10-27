@@ -1,6 +1,6 @@
 # 论文完善评估与最小补证据计划
 
-日期：2026-10-02。对象为当前 `paper_prb` 稿件及已选定的两张 L=40 完整谱图。本轮按 physics-autoresearch 做证据审计和图文整合；以下新增计算均为建议，尚未启动。
+日期：2026-10-02。对象为当前 `paper_prb` 稿件及已选定的两张 L=40 完整谱图。以下记录证据审计、图文一致性与尚需验证的计算条件。
 
 ## 当前能支持什么
 
@@ -9,7 +9,7 @@
 - 正负参数的反演相对 RMS 分别为 2.87e-6、4.49e-6；L=10 同离散积分 ED 对照的谱误差分别为 7.46e-5、3.59e-5。五个动量的 dt/2 与 chi 增大联合探针误差约为 0.79%、0.45%。这支持有限条件下的实现与稳定性，内部 accepted 不等于投稿所需的全部收敛。
 - 当前 FWHM 为 0.09277 J1，大于正负有限链自旋隙 0.05562 J1、0.001092 J1。两张图可以比较整体谱权分布，不能据此认定极低能峰已分开，也不能把有限链隙当作体相隙。
 
-来源：[完整谱协议](D:/Project/1x5_Heisenberg_Pentamer/docs/fullq_dsf_protocol_20261001.md)、[验收数据](D:/Project/1x5_Heisenberg_Pentamer/figures/fullq_dsf_20261001/qa.json)、[既有主张边界](D:/Project/1x5_Heisenberg_Pentamer/docs/manuscript_claim_evidence_map_20260919.md)。
+来源：[完整谱协议](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/docs/fullq_dsf_protocol_20261001.md)、[验收数据](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/figures/fullq_dsf_20261001/qa.json)、[既有主张边界](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/docs/manuscript_claim_evidence_map_20260919.md)。
 
 ## 五项优先补强
 
@@ -19,13 +19,13 @@
 
 本轮按既有来源清单复核：positive 20/20、dynamics 36/36、negative 12/12、closeout 42/48 文件存在且哈希匹配。缺失的是 k=12 控制的六个 fetch/finalize 终态原始文件，目前可见 closeout 状态摘要。这不等于计算没有完成，但投稿前需恢复原始文件、验证哈希并重做关键数值比对；恢复前不能把状态摘要当成完整独立复现。
 
-来源：[正区来源审计](D:/Project/1x5_Heisenberg_Pentamer/results/research_progress/positive_local_source_data_audit_20260920.json)、[动力学来源审计](D:/Project/1x5_Heisenberg_Pentamer/results/research_progress/dynamics_source_data_audit_20260920.json)、[负区来源审计](D:/Project/1x5_Heisenberg_Pentamer/results/research_progress/negative_phase_source_data_audit_20260920.json)、[收尾来源清单](D:/Project/1x5_Heisenberg_Pentamer/results/research_progress/closeout_mechanism_source_data_audit_20260920.json)、[状态摘要](D:/Project/1x5_Heisenberg_Pentamer/results/research_progress/project_closeout_status_20260919.json)。
+来源：[正区来源审计](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/results/research_progress/positive_local_source_data_audit_20260920.json)、[动力学来源审计](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/results/research_progress/dynamics_source_data_audit_20260920.json)、[负区来源审计](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/results/research_progress/negative_phase_source_data_audit_20260920.json)、[收尾来源清单](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/results/research_progress/closeout_mechanism_source_data_audit_20260920.json)、[状态摘要](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/results/research_progress/project_closeout_status_20260919.json)。
 
 ### 2. 复核历史 CV 的真实残差
 
 低频五点的 residual=0 是原始报告值，但实现先由大项相减得到 residual²，再截到非负，因此可能受相消影响。先使用保存的 correction-vector 解直接构造 Ax-b，检查其范数及 MPO/MPS 截断敏感性。若只存有最新频点的解，只能复核该点，其余需恢复或重算。历史十一点曲线仍可作有限协议下的比较，不应宣称它已严格认证新完整动量方案。
 
-来源：[残差缺口](D:/Project/1x5_Heisenberg_Pentamer/docs/dynamics_source_data_readme_20260920.md:22)、[残差实现](D:/Project/1x5_Heisenberg_Pentamer/scripts/autoresearch_v5/cv_dsf_resumable.jl:67)。
+来源：[残差缺口](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/docs/dynamics_source_data_readme_20260920.md#L22)、[残差实现](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/scripts/autoresearch_v5/cv_dsf_resumable.jl#L67)。
 
 ### 3. 对核心谱结构补时间、截断和尺寸证据
 
@@ -33,7 +33,7 @@
 
 可先用已有 C(q,t) 和静态源范数核对谱积分、谱矩与截窗敏感性。正频 0 至 4 J1 的有限区间积分不是完整和规则，必须说明负频泄漏、高频尾及离散积分范围。
 
-来源：[探针与误差](D:/Project/1x5_Heisenberg_Pentamer/figures/fullq_dsf_20261001/qa.json:54)、[色标与分辨率说明](D:/Project/1x5_Heisenberg_Pentamer/figures/fullq_visibility_clean_20261002/README.md)。
+来源：[探针与误差](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/figures/fullq_dsf_20261001/qa.json#L54)、[色标与分辨率说明](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/figures/fullq_visibility_clean_20261002/README.md)。
 
 ### 4. 补局域多重态与完整链谱支的定量连接
 
@@ -43,7 +43,7 @@
 
 已有三聚体研究用扰动理论、截断子空间谱与数值 DSF 对照识别局域支；四聚体研究也将 QRG/扰动色散与 DSF 进行定量比较。这给出本项目补强归属的可借鉴路线，不要求借用其准粒子名称或相标签。[三聚体原文](https://www.nature.com/articles/s41535-021-00416-4)、[四聚体原文](https://www.nature.com/articles/s41535-026-00855-x)。
 
-来源：[新谱算符](D:/Project/1x5_Heisenberg_Pentamer/scripts/compute_fullq_dsf.jl:47)、[折叠动量实际比较](D:/Project/1x5_Heisenberg_Pentamer/scripts/autoresearch_v5/analyze_negative_phase_independent_observables.py:332)。
+来源：[新谱算符](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/scripts/compute_fullq_dsf.jl#L47)、[折叠动量实际比较](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/scripts/autoresearch_v5/analyze_negative_phase_independent_observables.py#L332)。
 
 ### 5. 统一负区有限尺寸协议，收窄相与中央荷表述
 
@@ -51,7 +51,7 @@ L=40、60 仍有旧 k=3 数据，受控 L=80 使用 k=8/12；k 是 Krylov 维度
 
 正区“无内部边界”须限已采样正耦合内域，alpha=0、beta=0 解耦轴不能归入同一临界有效链结论；负区两个诊断不重合也不能证明热力学上必为 crossover。
 
-来源：[求解器影响与尺寸限制](D:/Project/1x5_Heisenberg_Pentamer/docs/manuscript_claim_evidence_map_20260919.md:39)、[旧与新设置审计](D:/Project/1x5_Heisenberg_Pentamer/docs/post_krylov_claim_audit_20260920.md)。
+来源：[求解器影响与尺寸限制](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/docs/manuscript_claim_evidence_map_20260919.md#L39)、[旧与新设置审计](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/docs/post_krylov_claim_audit_20260920.md)。
 
 ## 最小建议计算清单：均未启动
 
@@ -63,11 +63,11 @@ L=40、60 仍有旧 k=3 数据，受控 L=80 使用 k=8/12；k 是 Krylov 维度
 | D | alpha=-0.10、beta=0.25 优先补统一求解器的 L=40、60，并利用已有受控 L=80 | 纠正被 k 敏感性污染的尺寸趋势；若主张扩大到重构区，再补一个相邻参数作对照。 |
 | E | 仅在保留“确定谱支归属”时，增加少量弱 beta 点或局域通道投影 | 检查谱峰如何连接孤立胞激发并量化混合。若归属不稳定，保留描述性谱结构结论。 |
 
-计算前应依据现有小任务计时冻结资源和容差；本清单不代表已提交任务或无限算力授权。
+计算前应依据现有小任务计时冻结资源和容差；
 
 ## 无新计算即可完成的交付
 
-- 使用用户选定的两张无页脚整图，保留坐标和图内 J2/J3；asinh 映射、链长、时间窗与误差放在论文图注或独立 README，不加回图内。
+- 使用两张无页脚整图，保留坐标和图内 J2/J3；asinh 映射、链长、时间窗与误差放在论文图注或独立 README，不加回图内。
 - 将旧中心源谱与新完整动量谱分清；保留旧历史资料，不把旧验收指标挪用到新图。
 - 用现有数据整理主张、参数、归一化、误差、来源路径与哈希表，并完成整篇 PDF 的图号、引用和页面核对。
 - 作者、单位、通讯信息、资助、真实仓库/归档 DOI 及代码和数据 license 尚缺。须由真实记录补齐，不能制造公开存档或作者信息。

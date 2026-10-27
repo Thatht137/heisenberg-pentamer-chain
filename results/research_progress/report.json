@@ -2338,7 +2338,7 @@
             ],
             [
               "SSH 核验",
-              "pass at 2026-08-31T19:46:00+08:00; account=wangjieren; host=c104-ysu; project directory exists; active Julia=0"
+              "pass at 2026-08-31T19:46:00+08:00; account=wangjieren; host=compute-node; project directory exists; active Julia=0"
             ],
             [
               "进度安排",
@@ -2447,7 +2447,7 @@
             ],
             [
               "SSH 核验",
-              "pass at 2026-08-31T19:46:00+08:00; account=wangjieren; host=c104-ysu; project directory exists; active Julia=0"
+              "pass at 2026-08-31T19:46:00+08:00; account=wangjieren; host=compute-node; project directory exists; active Julia=0"
             ],
             [
               "进度安排",
@@ -2548,7 +2548,7 @@
             ],
             [
               "SSH 核验",
-              "pass at 2026-08-31T19:46:00+08:00; account=wangjieren; host=c104-ysu; project directory exists; active Julia=0"
+              "pass at 2026-08-31T19:46:00+08:00; account=wangjieren; host=compute-node; project directory exists; active Julia=0"
             ],
             [
               "进度安排",
@@ -2649,11 +2649,11 @@
             ],
             [
               "SSH 核验",
-              "pass at 2026-08-31T19:46:00+08:00; account=wangjieren; host=c104-ysu; project directory exists; active Julia=0"
+              "pass at 2026-08-31T19:46:00+08:00; account=wangjieren; host=compute-node; project directory exists; active Julia=0"
             ],
             [
               "进度安排",
-              "等待用户明确授权向 39.96.207.180 上传R15源码、运行配置和研究证据"
+              "等待用户明确授权向 server.example.org 上传R15源码、运行配置和研究证据"
             ]
           ]
         },
@@ -2742,7 +2742,7 @@
             ],
             [
               "SSH 核验",
-              "pass at 2026-08-31T19:46:00+08:00; account=wangjieren; host=c104-ysu; project directory exists; active Julia=0"
+              "pass at 2026-08-31T19:46:00+08:00; account=wangjieren; host=compute-node; project directory exists; active Julia=0"
             ],
             [
               "进度安排",
@@ -2835,11 +2835,11 @@
             ],
             [
               "SSH 核验",
-              "pass at 2026-08-31T19:46:00+08:00; account=wangjieren; host=c104-ysu; project directory exists; active Julia=0"
+              "pass at 2026-08-31T19:46:00+08:00; account=wangjieren; host=compute-node; project directory exists; active Julia=0"
             ],
             [
               "进度安排",
-              "等待用户明确授权向 39.96.207.180 上传源码、运行配置和研究数据"
+              "等待用户明确授权向 server.example.org 上传源码、运行配置和研究数据"
             ]
           ]
         },
@@ -2928,7 +2928,7 @@
             ],
             [
               "进度安排",
-              "等待用户明确授权向 39.96.207.180 上传源码、运行配置和研究数据"
+              "等待用户明确授权向 server.example.org 上传源码、运行配置和研究数据"
             ]
           ]
         },
@@ -3585,7 +3585,7 @@
           "pairs": [
             [
               "远端项目",
-              "/home/wangjieren/code/1x5_Heisenberg_Pentamer"
+              "/home/USER/code/1x5_Heisenberg_Pentamer"
             ],
             [
               "Julia / Manifest",
@@ -5064,7 +5064,7 @@
         {
           "kind": "verdict",
           "status": "warn",
-          "label": "Codex automation 服务未响应，未创建可用定时器",
+          "label": "",
           "why": "update 与 view 都超时；未写入 automation.toml，不能把计划时间误报为已经自动执行。"
         },
         {
@@ -5100,7 +5100,7 @@
           "kind": "note",
           "label": "运行纪律",
           "style": "pending",
-          "text": "若服务恢复，必须用 Codex automation_update 创建或更新上述一次性 heartbeat；在此之前不以脚本、轮询或手工写 TOML 替代。"
+          "text": ""
         },
         {
           "kind": "kv",
@@ -5177,7 +5177,7 @@
             ],
             [
               "远端输出",
-              "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260804/round41_qpi_cv_low005_smoke/cell-l40-qpi-low-005-highbudget"
+              "/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260804/round41_qpi_cv_low005_smoke/cell-l40-qpi-low-005-highbudget"
             ],
             [
               "本地记录",
@@ -5207,7 +5207,7 @@
     },
     {
       "title": "2026-08-04 本地 Python 回归：项目环境 50/50 通过",
-      "note": "本轮只做本地离线回归，不连接服务器、不下载依赖、不改变计算参数。",
+      "note": "",
       "blocks": [
         {
           "kind": "verdict",
@@ -5276,7 +5276,7 @@
           "kind": "note",
           "label": "解释器规则",
           "style": "info",
-          "text": "后续本地绘图和回归统一使用项目 .venv；Codex bundled Python 仅用于不依赖 matplotlib 的轻量审计。"
+          "text": ""
         }
       ]
     },
@@ -7697,7 +7697,7 @@
     },
     {
       "title": "2026-08-04 本地 Python 回归：项目环境 43/43 通过",
-      "note": "本轮只做本地离线回归，不连接服务器、不下载依赖、不改变计算参数。",
+      "note": "",
       "blocks": [
         {
           "kind": "verdict",
@@ -7761,7 +7761,7 @@
           "kind": "note",
           "label": "解释器规则",
           "style": "info",
-          "text": "后续本地绘图和回归统一使用项目 .venv；Codex bundled Python 仅用于不依赖 matplotlib 的轻量审计。"
+          "text": ""
         }
       ]
     },
@@ -8116,7 +8116,7 @@
           "kind": "verdict",
           "status": "warn",
           "label": "round31 状态暂不可观测",
-          "why": "39.96.207.180:6000 在连接层返回 Connection refused；不能把连接故障当作计算完成或失败。"
+          "why": "server.example.org:6000 在连接层返回 Connection refused；不能把连接故障当作计算完成或失败。"
         },
         {
           "kind": "table",
@@ -8128,7 +8128,7 @@
           "rows": [
             [
               "目标",
-              "wangjieren@39.96.207.180:6000",
+              "USER@server.example.org:6000",
               "保持原目录和顺序"
             ],
             [
@@ -8209,7 +8209,7 @@
             [
               "默认 depot",
               "EACCES",
-              "C:/Users/hh250/.julia 对当前沙箱只读"
+              "C:/Users/USER/.julia 对当前沙箱只读"
             ],
             [
               "远端影响",
@@ -8256,7 +8256,7 @@
           "kind": "verdict",
           "status": "warn",
           "label": "远端任务状态仍不可观测",
-          "why": "39.96.207.180:6000 在连接层返回 Connection refused，无法读取 overall_progress、status、progress 或 manifest。"
+          "why": "server.example.org:6000 在连接层返回 Connection refused，无法读取 overall_progress、status、progress 或 manifest。"
         },
         {
           "kind": "table",
@@ -8268,7 +8268,7 @@
           "rows": [
             [
               "目标",
-              "wangjieren@39.96.207.180:6000",
+              "USER@server.example.org:6000",
               "保持原顺序任务目录"
             ],
             [
@@ -8326,14 +8326,14 @@
           "kind": "verdict",
           "status": "good",
           "label": "私钥已确认存在",
-          "why": "C:/Users/hh250/.ssh/id_ed25519 可读取；后续 SSH 必须使用该私钥，不能使用 .pub 文件。"
+          "why": "C:/Users/USER/.ssh/id_ed25519 可读取；后续 SSH 必须使用该私钥，不能使用 .pub 文件。"
         },
         {
           "kind": "kv",
           "pairs": [
             [
               "私钥",
-              "~/.ssh/id_ed25519"
+              "~/.ssh/compute_key"
             ],
             [
               "文件大小",
@@ -9096,7 +9096,7 @@
           "kind": "list",
           "title": "必须遵守",
           "items": [
-            "客户端使用 ~/.ssh/id_ed25519 私钥，不使用 .pub 公钥文件作为 -i 参数。",
+            "客户端使用 ~/.ssh/compute_key 私钥，不使用 .pub 公钥文件作为 -i 参数。",
             "6000 返回 Connection refused 时不重启、不取消、不并行启动新 Julia。",
             "连接恢复后依次读取 status.json、progress.json、manifest.json，再执行 checksum、回传和 validate_cv_run.py。",
             "范围固定为 0<=alpha,beta<=1，负 alpha 和 Fig. 9 排除。"
@@ -9125,7 +9125,7 @@
           "kind": "verdict",
           "status": "warn",
           "label": "远端状态暂不可读取，不能判定终态",
-          "why": "39.96.207.180 可 ping，但 6000 端口返回 Connection refused；没有新的 status/manifest/checksum 证据。"
+          "why": "server.example.org 可 ping，但 6000 端口返回 Connection refused；没有新的 status/manifest/checksum 证据。"
         },
         {
           "kind": "table",
@@ -10052,7 +10052,7 @@
         {
           "kind": "code",
           "title": "启动命令与运行目录",
-          "text": "nohup bash /home/wangjieren/code/1x5_Heisenberg_Pentamer/scripts/run_qpi_tebd_maxdim96_remote_20260803.sh ...\n/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round28_qpi_maxdim96\nqpi-alpha023-maxdim096-dt00125-t30"
+          "text": "nohup bash /home/USER/code/1x5_Heisenberg_Pentamer/scripts/run_qpi_tebd_maxdim96_remote_20260803.sh ...\n/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round28_qpi_maxdim96\nqpi-alpha023-maxdim096-dt00125-t30"
         },
         {
           "kind": "kv",
@@ -10227,7 +10227,7 @@
         {
           "kind": "code",
           "title": "待确认的两步远端动作",
-          "text": "scp -P 6000 -i C:\\Users\\hh250\\.ssh\\id_ed25519 scripts/autoresearch_v5/run_qpi_tebd_maxdim96_remote.sh wangjieren@39.96.207.180:/home/wangjieren/code/1x5_Heisenberg_Pentamer/scripts/run_qpi_tebd_maxdim96_remote_20260803.sh\nssh -p 6000 -i C:\\Users\\hh250\\.ssh\\id_ed25519 wangjieren@39.96.207.180 bash /home/wangjieren/code/1x5_Heisenberg_Pentamer/scripts/run_qpi_tebd_maxdim96_remote_20260803.sh"
+          "text": "scp -P 6000 -i C:\\Users\\USER\\.ssh\\id_ed25519 scripts/autoresearch_v5/run_qpi_tebd_maxdim96_remote.sh USER@server.example.org:/home/USER/code/1x5_Heisenberg_Pentamer/scripts/run_qpi_tebd_maxdim96_remote_20260803.sh\nssh -p 6000 -i C:\\Users\\USER\\.ssh\\id_ed25519 USER@server.example.org bash /home/USER/code/1x5_Heisenberg_Pentamer/scripts/run_qpi_tebd_maxdim96_remote_20260803.sh"
         },
         {
           "kind": "kv",
@@ -10664,7 +10664,7 @@
         {
           "kind": "code",
           "title": "确认后的执行链",
-          "text": "scripts/autoresearch_v5/fetch_qpi_tebd_results.py --confirmed\nscripts/autoresearch_v5/run_qpi_tebd_local_handoff.py\nD:/program/Anaconda3_2025.06/python.exe scripts/autoresearch_v5/plot_qpi_tebd_production.py\npython scripts/autoresearch_v5/<terminal-report-updater>.py\npython C:/Users/hh250/.codex/skills/report/render_report.py results/research_progress"
+          "text": "scripts/autoresearch_v5/fetch_qpi_tebd_results.py --confirmed\nscripts/autoresearch_v5/run_qpi_tebd_local_handoff.py\nD:/program/Anaconda3_2025.06/python.exe scripts/autoresearch_v5/plot_qpi_tebd_production.py\npython scripts/autoresearch_v5/<terminal-report-updater>.py\n"
         },
         {
           "kind": "code",
@@ -10789,7 +10789,7 @@
             ],
             [
               "目标目录",
-              "/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round26_qpi_tebd_production",
+              "/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round26_qpi_tebd_production",
               "D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803\\round26_qpi_tebd_production；不存在"
             ]
           ],
@@ -10802,7 +10802,7 @@
         {
           "kind": "code",
           "title": "确认后执行的非覆盖式命令预览",
-          "text": "scp -P 6000 -i C:\\Users\\hh250\\.ssh\\id_ed25519 -r wangjieren@39.96.207.180:/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round26_qpi_tebd_production D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803"
+          "text": "scp -P 6000 -i C:\\Users\\USER\\.ssh\\id_ed25519 -r USER@server.example.org:/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260803/round26_qpi_tebd_production D:\\Project\\1x5_Heisenberg_Pentamer\\results\\autoresearch_v5_20260803"
         },
         {
           "kind": "note",
@@ -11118,7 +11118,7 @@
           "rows": [
             [
               "远端身份",
-              "wangjieren@39.96.207.180:6000；c104-ysu",
+              "USER@server.example.org:6000；compute-node",
               "账号与主机复核"
             ],
             [
@@ -13155,7 +13155,7 @@
           "kind": "list",
           "title": "本轮执行边界",
           "items": [
-            "服务器只读检查使用 wangjieren@39.96.207.180:6000；未安装包、未修改远端源文件、未取消 anchor。",
+            "服务器只读检查使用 USER@server.example.org:6000；未安装包、未修改远端源文件、未取消 anchor。",
             "当前 anchor 使用旧 runner，没有 progress.json；以 status.json、stdout.log、PID 和 CPU 活动作为心跳证据。",
             "可并行的安全工作限定为本机静态/轻量分析；新的服务器 Julia 计算等 anchor 结束并完成验收后再预览提交。",
             "所有后续参数继续限制在 0 <= alpha,beta <= 1，不计算负 alpha 和参考论文 Fig. 9。"
@@ -13176,7 +13176,7 @@
     },
     {
       "title": "最新成果",
-      "note": "当前最值得汇报的结论",
+      "note": "主要结果",
       "blocks": [
         {
           "kind": "verdict",
@@ -13276,7 +13276,7 @@
               "含 J2 后遗漏从 O(beta²) 推迟到 O(beta³)"
             ],
             [
-              "PR #244 相图扫描 Skill",
+              "相图扫描控制器",
               "已安装并用于 30-cell 首段；全部结果已回传",
               "controller/guard 已运行"
             ],
@@ -14476,7 +14476,7 @@
             ],
             [
               "远端目标",
-              "39.96.207.180:6000 · scripts/autoresearch_v5"
+              "server.example.org:6000 · scripts/autoresearch_v5"
             ],
             [
               "当前 anchor",
@@ -14547,7 +14547,7 @@
           "rows": [
             [
               "SSH/账户",
-              "39.96.207.180:6000 · wangjieren · c104-ysu",
+              "server.example.org:6000 · wangjieren · compute-node",
               "通过"
             ],
             [
@@ -15842,7 +15842,7 @@
           "rows": [
             [
               "目标",
-              "wangjieren@39.96.207.180:6000 (c104-ysu)",
+              "USER@server.example.org:6000 (compute-node)",
               "账户和主机已明确"
             ],
             [
@@ -16366,18 +16366,18 @@
       ]
     },
     {
-      "title": "PR #244 相图扫描 Skill",
-      "note": "2026-08-01 · Skill 已用于首段 30-cell 扫描；结果已回传",
+      "title": "相图扫描控制器",
+      "note": "2026-08-01 · 控制器已用于首段 30-cell 扫描；结果已回传",
       "blocks": [
         {
           "kind": "verdict",
           "status": "good",
-          "label": "phase-diagram Skill 已下载并用于首段扫描",
+          "label": "相图扫描控制器 已下载并用于首段扫描",
           "why": "PR #244 已合并；本地控制器流程通过，首段 30-cell 计算已在服务器启动。"
         },
         {
           "kind": "text",
-          "text": "这个 Skill 是一个有限尺寸 crossing 控制器：它在本地根据 dimensionless observable 的带误差符号差决定 coarse grid、统计量升级、二分细化和尺寸 promotion；真正的计算单元仍由 parameter-scan 生成，服务器只接收 compute entrypoint 与 run spec，manifest 回传后才在本地 collect 和验收。它不直接给 crossing 命名相，也不替代 Heisenberg 模型卡。"
+          "text": "该控制器 是一个有限尺寸 crossing 控制器：它在本地根据 dimensionless observable 的带误差符号差决定 coarse grid、统计量升级、二分细化和尺寸 promotion；真正的计算单元仍由 parameter-scan 生成，服务器只接收 compute entrypoint 与 run spec，manifest 回传后才在本地 collect 和验收。它不直接给 crossing 命名相，也不替代 Heisenberg 模型卡。"
         },
         {
           "kind": "table",
@@ -16389,7 +16389,7 @@
           "rows": [
             [
               "PR",
-              "Feature: add adaptive phase-diagram skill · #244 · merged",
+              "自适应相图扫描控制器",
               "确认"
             ],
             [
@@ -16398,13 +16398,13 @@
               "锁定"
             ],
             [
-              "Skill 路径",
-              "skills/phase-diagram → ~/.codex/skills/phase-diagram",
+              "控制器入口",
+              "",
               "已安装"
             ],
             [
               "内容",
-              "SKILL.md、references/contracts.md、scripts/phase_diagram.py",
+              "scripts/autoresearch_v5/phase_diagram_windows_controller.py",
               "完整"
             ],
             [
@@ -16433,7 +16433,7 @@
           "kind": "verdict",
           "status": "warn",
           "label": "上游控制器当前不能原生运行于 Windows",
-          "why": "phase_diagram.py 直接 import POSIX-only fcntl；本机使用临时兼容层完成流程 smoke test，未修改上游 Skill。"
+          "why": "phase_diagram.py 直接 import POSIX-only fcntl；本机使用临时兼容层完成流程 smoke test，未修改上游实现。"
         },
         {
           "kind": "heading",
@@ -16448,7 +16448,7 @@
             "beta 切片固定为 [0.10,0.50,0.90]；尺寸序列为 L=[40,60,80]，先完成 40/60 粗扫。",
             "dimensionless observable 固定为中心窗口 R(L)=1-S(pi-2pi/M)/S(pi)，误差来自 center/domain 双初态半差和截断下限。",
             "候选 cell 由 parameter-scan 生成；phase policy、state、report 和 observations 永远留在本地。",
-            "只有最终相邻尺寸对达到声明的 sigma 和 bracket width，才能汇报有限尺寸边界；不能仅凭热图颜色命名相。"
+            "只有最终相邻尺寸对达到声明的 sigma 和 bracket width，才能报告有限尺寸边界；不能仅凭热图颜色命名相。"
           ]
         },
         {
@@ -16460,7 +16460,7 @@
         {
           "kind": "code",
           "title": "已安装文件",
-          "text": "~/.codex/skills/phase-diagram/SKILL.md\n~/.codex/skills/phase-diagram/references/contracts.md\n~/.codex/skills/phase-diagram/scripts/phase_diagram.py\ndocs/phase_diagram_execution_plan.md"
+          "text": "docs/phase_diagram_execution_plan.md"
         },
         {
           "kind": "note",
@@ -16599,7 +16599,7 @@
         {
           "kind": "heading",
           "level": 3,
-          "text": "Skill 改进建议"
+          "text": "控制器问题记录"
         },
         {
           "kind": "list",
@@ -16849,12 +16849,12 @@
         },
         {
           "kind": "list",
-          "title": "本轮发现的 Skill 改进点",
+          "title": "控制器问题记录",
           "items": [
             "长批次下载使用通配符 scp 可能在部分文件完成后超时，应提供按 manifest 清单的断点传输。",
             "相图 controller 在第一个无 bracket slice 处提前 HUMAN_REQUIRED，未继续汇总后续 slice 的 inconclusive 证据。",
             "alpha=0 简并点的双初态半差可能是物理简并；应支持 degeneracy 标记，而不是只把它当作统计误差。",
-            "phase-diagram Skill 声明使用 uv，但本机没有 uv 且离线镜像不可下载；应随 Skill 提供可移植无依赖入口。"
+            "相图扫描控制器 声明使用 uv，但本机没有 uv 且离线镜像不可下载；应随控制器提供可移植无依赖入口。"
           ]
         },
         {
@@ -17073,7 +17073,7 @@
         },
         {
           "kind": "note",
-          "label": "验收与 Skill 改进记录",
+          "label": "验收与控制器记录",
           "style": "pending",
           "text": "发现 phase cell 验收器把第 1 个预热 sweep 的 discarded weight 当成最终门槛，导致 l80-cell-0015 在 32/64 sweeps 都被误拒绝；现已保留全 sweep 最大值并改用最终三个零噪声 sweep。另发现一次 scp 远端路径拼写错误、两次只读 SSH 审核超时，以及 Windows 默认 GBK 读取 UTF-8 report.json 的渲染问题；这些问题均未污染结果。"
         }
@@ -17210,7 +17210,7 @@
         },
         {
           "kind": "list",
-          "title": "本轮 Skill 改进记录",
+          "title": "控制器问题记录",
           "items": [
             "支持 edge_controls，避免 alpha=0 简并边界阻塞正区内部结论。",
             "无 bracket 时先汇总全部 beta slice，再决定是否需要用户升级。",
@@ -17440,7 +17440,7 @@
               "2026-07-31",
               "服务器只读预检",
               "直连服务器身份、资源、Julia、Manifest 与源文件哈希检查",
-              "c104-ysu；Julia 1.12.3；Manifest match；无既有 Julia 任务；待确认",
+              "compute-node；Julia 1.12.3；Manifest match；无既有 Julia 任务；待确认",
               "完成"
             ],
             [
@@ -17487,7 +17487,7 @@
             ],
             [
               "2026-08-02",
-              "截断验收 Skill 修正",
+              "截断验收规则修正",
               "区分预热 sweep 与最终零噪声 sweep 的 discarded weight",
               "l80-cell-0015 由误拒绝变为通过；全 sweep 最大值继续留档",
               "完成"
@@ -17800,13 +17800,13 @@
         {
           "kind": "code",
           "title": "主要入口",
-          "text": "docs/effective_chain_mechanism_20260729.md\ndocs/pentamer_reproduction_standard.md\ndocs/julia_environment_audit_20260729.md\nresults/autoresearch_v3_20260729/round2_effective_scan/analysis_final/summary.json\nresults/autoresearch_v3_20260729/round2_effective_scan/analysis_final/effective_comparison.csv\nresults/autoresearch_v3_20260729/round2_effective_scan/analysis_final/candidate_audit.csv\nresults/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/claim_summary.json\nresults/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/calibrated_estimators.csv\nresults/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/checksums.sha256\nresults/autoresearch_v4_20260730/round2_local_spectral_channels_v4/claim_summary.json\nresults/autoresearch_v4_20260730/round2_local_spectral_channels_v4/validation.json\nresults/autoresearch_v4_20260730/round2_local_spectral_channels_v4/checksums.sha256\nresults/autoresearch_v4_20260730/round2_local_spectral_channels_v4/run.json\nresults/autoresearch_v5_20260730/round1_cv_oracle/cross_method_check.json\nresults/autoresearch_v5_20260730/round1_cv_oracle/cross-method-check.csv\nresults/autoresearch_v5_20260730/round1_cv_oracle/cell-0001-cv-fix4/manifest.json\nresults/autoresearch_v5_20260730/round2_cv_cost_probe/analysis/convergence_summary.json\nresults/autoresearch_v5_20260730/round2_cv_cost_probe/analysis/convergence.csv\nresults/autoresearch_v5_20260730/round2_cv_cost_probe/analysis/analysis_checksums.sha256\nresults/autoresearch_v5_20260730/round2_cv_cost_probe/cell-0003-L20-cutoff14/manifest.json\nscripts/autoresearch_v3/analyze_effective_scan.py\nscripts/autoresearch_v3/analyze_entanglement_scaling.py\nscripts/autoresearch_v3/finalize_entanglement_claim.py\nscripts/autoresearch_v4/analyze_positive_local_spectral_channels.py\nscripts/autoresearch_v5/exact_dsf_oracle.py\nscripts/autoresearch_v5/cv_dsf_cell.jl\nscripts/autoresearch_v5/compare_cv_exact.py\nscripts/autoresearch_v5/analyze_cv_cost_probe.py\nscripts/autoresearch_v5/analyze_second_order_schrieffer_wolff.py\nscripts/autoresearch_v5/validate_three_cell_schrieffer_wolff.py\nresults/autoresearch_v5_20260731/round14_schrieffer_wolff/summary.json\nresults/autoresearch_v5_20260731/round15_three_cell_sw_validation/summary.json\nresults/autoresearch_v5_20260731/round16_second_paper_novelty_audit/literature_novelty_audit.json\n~/.codex/skills/phase-diagram/SKILL.md\n~/.codex/skills/phase-diagram/references/contracts.md\n~/.codex/skills/phase-diagram/scripts/phase_diagram.py\nscripts/autoresearch_v5/update_phase_diagram_skill_report.py\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/phase-policy.json\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/observations.json\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/state.json\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/report.json\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/parameter-scan.run_spec.json\nscripts/autoresearch_v5/phase_diagram_windows_controller.py\nscripts/autoresearch_v5/run_phase_structure_ratio_cell.py\nscripts/autoresearch_v5/make_phase_diagram_run_spec.py\nscripts/autoresearch_v5/update_phase_diagram_protocol_report.py\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_index.json\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/\nscripts/autoresearch_v5/materialize_phase_diagram_actions.py\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/positive_phase_guard.json\nscripts/autoresearch_v5/positive_phase_guard.py\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/server_upload_manifest.json\nscripts/autoresearch_v5/run_phase_structure_batch.py\nscripts/autoresearch_v5/make_phase_server_upload_manifest.py\nscripts/autoresearch_v5/upload_phase_bundle.ps1\nscripts/autoresearch_v5/update_phase_diagram_results_report.py\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/run.json\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/cells_failed/"
+          "text": "docs/effective_chain_mechanism_20260729.md\ndocs/pentamer_reproduction_standard.md\ndocs/julia_environment_audit_20260729.md\nresults/autoresearch_v3_20260729/round2_effective_scan/analysis_final/summary.json\nresults/autoresearch_v3_20260729/round2_effective_scan/analysis_final/effective_comparison.csv\nresults/autoresearch_v3_20260729/round2_effective_scan/analysis_final/candidate_audit.csv\nresults/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/claim_summary.json\nresults/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/calibrated_estimators.csv\nresults/autoresearch_v4_20260730/round1_entanglement_scaling/analysis/checksums.sha256\nresults/autoresearch_v4_20260730/round2_local_spectral_channels_v4/claim_summary.json\nresults/autoresearch_v4_20260730/round2_local_spectral_channels_v4/validation.json\nresults/autoresearch_v4_20260730/round2_local_spectral_channels_v4/checksums.sha256\nresults/autoresearch_v4_20260730/round2_local_spectral_channels_v4/run.json\nresults/autoresearch_v5_20260730/round1_cv_oracle/cross_method_check.json\nresults/autoresearch_v5_20260730/round1_cv_oracle/cross-method-check.csv\nresults/autoresearch_v5_20260730/round1_cv_oracle/cell-0001-cv-fix4/manifest.json\nresults/autoresearch_v5_20260730/round2_cv_cost_probe/analysis/convergence_summary.json\nresults/autoresearch_v5_20260730/round2_cv_cost_probe/analysis/convergence.csv\nresults/autoresearch_v5_20260730/round2_cv_cost_probe/analysis/analysis_checksums.sha256\nresults/autoresearch_v5_20260730/round2_cv_cost_probe/cell-0003-L20-cutoff14/manifest.json\nscripts/autoresearch_v3/analyze_effective_scan.py\nscripts/autoresearch_v3/analyze_entanglement_scaling.py\nscripts/autoresearch_v3/finalize_entanglement_claim.py\nscripts/autoresearch_v4/analyze_positive_local_spectral_channels.py\nscripts/autoresearch_v5/exact_dsf_oracle.py\nscripts/autoresearch_v5/cv_dsf_cell.jl\nscripts/autoresearch_v5/compare_cv_exact.py\nscripts/autoresearch_v5/analyze_cv_cost_probe.py\nscripts/autoresearch_v5/analyze_second_order_schrieffer_wolff.py\nscripts/autoresearch_v5/validate_three_cell_schrieffer_wolff.py\nresults/autoresearch_v5_20260731/round14_schrieffer_wolff/summary.json\nresults/autoresearch_v5_20260731/round15_three_cell_sw_validation/summary.json\nresults/autoresearch_v5_20260731/round16_second_paper_novelty_audit/literature_novelty_audit.json\nscripts/autoresearch_v5/update_phase_diagram_skill_report.py\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/phase-policy.json\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/observations.json\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/state.json\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/report.json\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/parameter-scan.run_spec.json\nscripts/autoresearch_v5/phase_diagram_windows_controller.py\nscripts/autoresearch_v5/run_phase_structure_ratio_cell.py\nscripts/autoresearch_v5/make_phase_diagram_run_spec.py\nscripts/autoresearch_v5/update_phase_diagram_protocol_report.py\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_index.json\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/action_specs/\nscripts/autoresearch_v5/materialize_phase_diagram_actions.py\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/phase-diagram/positive_phase_guard.json\nscripts/autoresearch_v5/positive_phase_guard.py\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/server_upload_manifest.json\nscripts/autoresearch_v5/run_phase_structure_batch.py\nscripts/autoresearch_v5/make_phase_server_upload_manifest.py\nscripts/autoresearch_v5/upload_phase_bundle.ps1\nscripts/autoresearch_v5/update_phase_diagram_results_report.py\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/run.json\nresults/autoresearch_v5_20260731/round17_phase_diagram_positive/cells_failed/"
         },
         {
           "kind": "note",
           "label": "结论边界",
           "style": "pending",
-          "text": "当前可以汇报低能机制、精确小系统验证、有限链 DMRG、matched-size oracle 校准后的 c=1 纠缠证据，以及局域多重态的动量选择定则；尚不能宣称已经完成热力学极限相图、未校准的精确中心荷外推、有限 beta 的正式谱线归属或生产级动力学谱。"
+          "text": "现有证据支持低能机制、精确小系统验证、有限链 DMRG、matched-size oracle 校准后的 c=1 纠缠证据，以及局域多重态的动量选择定则；尚不能宣称已经完成热力学极限相图、未校准的精确中心荷外推、有限 beta 的正式谱线归属或生产级动力学谱。"
         }
       ]
     }

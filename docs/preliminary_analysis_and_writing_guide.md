@@ -54,9 +54,9 @@ gapless SPT 命名和完整二维相图仍需服务器级验证。
 
 ## 还缺什么
 
-### 初步组会不需要等待
+### 现有证据可支持的分析
 
-- 当前证据已经足够制作组会图、写 Results 初稿和向学长汇报。
+- 当前证据可用于整理结果与图文对应关系。
 - 不需要继续追加本机 DMRG 才能开始写作。
 
 ### 服务器优先任务
@@ -119,118 +119,6 @@ Markdown 修改快、冲突少，适合 Git/JJ 协作。不要用 Word 作为唯
 把整篇论文写完并顺便重画所有图。
 ```
 
-## Git 入门流程
-
-### 第一次配置
-
-```powershell
-git config --global user.name "你的名字"
-git config --global user.email "你的邮箱"
-git status
-```
-
-### 每次开始工作
-
-```powershell
-git switch analysis/string-distance
-git pull --rebase
-git status
-```
-
-如果仓库暂时没有远程仓库，跳过 `git pull --rebase`。
-
-### 为一个写作任务创建分支
-
-```powershell
-git switch -c writing/negative-string-results
-```
-
-分支只做一个主题。计算代码、图和文字若属于同一证据，可以放在同一分支；
-无关修改不要混入。
-
-### 写作过程中的最小循环
-
-```powershell
-git status --short
-git diff
-git add paper/sections/results.tex
-git add figures/negative_string_continuation_b0.5.pdf
-git commit -m "Write negative-side string scaling result"
-```
-
-每个提交应当可以用一句话说明，并包含完整的小结论。不要把几十个无关文件一次
-提交为 `update`。
-
-### 与学长协作
-
-```powershell
-git push -u origin writing/negative-string-results
-```
-
-然后在 GitHub/GitLab/Gitee 创建 Pull Request 或 Merge Request，让学长逐行
-评论。修改后继续提交并推送，不要删除旧评论对应的历史。
-
-### 合并后继续
-
-```powershell
-git switch analysis/string-distance
-git pull --rebase
-git branch -d writing/negative-string-results
-```
-
-## JJ 入门流程
-
-JJ 适合频繁改写历史和并行写作，但它不替代远程托管平台。初学时推荐：
-
-1. 先用 Git 完成两到三个小任务，理解分支、提交和 PR。
-2. 再在同一个 Git 仓库中使用 JJ。
-3. 远程协作仍通过 GitHub/GitLab/Gitee 的 Git 分支和 PR 完成。
-
-初始化已有 Git 仓库：
-
-```powershell
-jj git init --colocate .
-jj status
-jj log
-```
-
-开始一个新修改：
-
-```powershell
-jj new -m "Draft negative string scaling result"
-```
-
-修改文件后直接查看：
-
-```powershell
-jj diff
-jj status
-```
-
-JJ 会自动跟踪工作区，不需要 `git add`。完成当前修改后：
-
-```powershell
-jj describe -m "Draft negative string scaling result"
-jj new
-```
-
-为准备推送的提交加书签：
-
-```powershell
-jj bookmark create writing/negative-string-results -r @-
-jj git push --bookmark writing/negative-string-results
-```
-
-初期不要在同一时刻混用 Git 命令改历史和 JJ 命令改历史。可以用 Git 查看和
-推送，但选择一种工具负责日常提交操作。
-
-## 推荐选择
-
-- 现在先用 Git：资料最多，学长更容易参与，PR 审稿流程直观。
-- Markdown 管理会议记录、任务和证据矩阵。
-- LaTeX 管理论文主稿、公式、图表编号和参考文献。
-- 等你完成第一版 Results 后，再尝试 colocated JJ。
-
 ## 下一次写作任务
 
 1. 创建 `paper/` 骨架。
@@ -238,4 +126,4 @@ jj git push --bookmark writing/negative-string-results
    `paper/sections/results.tex`。
 3. 建立 `paper/sections/model_methods.tex`，先写模型和数值参数。
 4. 建立 `paper/notes/claim_evidence.md`，复制并持续维护当前证据矩阵。
-5. 每完成一个小节提交一次，并通过 PR 请学长审阅。
+

@@ -15,8 +15,8 @@ DEFAULT_XDG_DATA_DIRS=/usr/local/share/:/usr/share/
 DIRSTACK=()
 EUID=1024
 GROUPS=()
-HOME=/home/wangjieren
-HOSTNAME=c104-ysu
+HOME=/home/USER
+HOSTNAME=compute-node
 HOSTTYPE=x86_64
 IFS=$' \t\n'
 LANG=zh_CN.UTF-8
@@ -27,11 +27,11 @@ MOTD_SHOWN=pam
 OPTERR=1
 OPTIND=1
 OSTYPE=linux-gnu
-PATH=/home/wangjieren/.juliaup/bin:/home/wangjieren/julia-1.10.5/bin:/home/wangjieren/julia-1.10.5/bin:/home/wangjieren/.local/bin:/home/wangjieren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+PATH=/home/USER/.juliaup/bin:/home/USER/julia-1.10.5/bin:/home/USER/julia-1.10.5/bin:/home/USER/.local/bin:/home/USER/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 PIPESTATUS=([0]="0")
 PPID=1255636
 PS4='+ '
-PWD=/home/wangjieren
+PWD=/home/USER
 SHELL=/bin/bash
 SHELLOPTS=braceexpand:hashall:interactive-comments
 SHLVL=2
@@ -45,18 +45,18 @@ XDG_RUNTIME_DIR=/run/user/1024
 XDG_SESSION_CLASS=user
 XDG_SESSION_ID=2027
 XDG_SESSION_TYPE=tty
-_=PATH=/home/wangjieren/.juliaup/bin:/home/wangjieren/julia-1.10.5/bin:/home/wangjieren/julia-1.10.5/bin:/home/wangjieren/.local/bin:/home/wangjieren/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+_=PATH=/home/USER/.juliaup/bin:/home/USER/julia-1.10.5/bin:/home/USER/julia-1.10.5/bin:/home/USER/.local/bin:/home/USER/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 snap_bin_path=/snap/bin
 snap_xdg_path=/var/lib/snapd/desktop
 === identity ===
-c104-ysu
+compute-node
 2026-09-19T20:46:08+08:00
 uid=1024(wangjieren) gid=1024(wangjieren) 组=1024(wangjieren)
 uid=1024 user=wangjieren
 === julia processes: exact account ===
 none
 === project pythonbatch processes ===
-1255636 1255635       00:00  0.0  0.0  3200  13064 Ss   bash            bash -c bash -lc set -u project=/home/wangjieren/code/1x5_Heisenberg_Pentamer uid=$(id -u) echo "=== identity ===" hostname date -Is 2>/dev/null || date id echo "uid=$uid user=$(id -un)" echo "=== julia processes: exact account ===" julia_pids=$(pgrep -u "$uid" -x julia 2>/dev/null || true) if [ -n "$julia_pids" ]; then   for pid in $julia_pids; do ps -o pid=,ppid=,etime=,pcpu=,pmem=,rss=,vsz=,stat=,comm=,args= -p "$pid"; done else   echo "none" fi echo "=== project pythonbatch processes ===" batch_pids=$(pgrep -u "$uid" -f pythonbatch 2>/dev/null || true) found_batch=0 for pid in $batch_pids; do   args=$(ps -o args= -p "$pid" 2>/dev/null || true)   case "$args" in     *"$project"*) ps -o pid=,ppid=,etime=,pcpu=,pmem=,rss=,vsz=,stat=,comm=,args= -p "$pid"; found_batch=1 ;;   esac done [ "$found_batch" -eq 1 ] || echo "none" echo "=== resources ===" free -h df -h "$project" nproc echo "=== julia executable and project files ===" for candidate in "$HOME/.juliaup/bin/julia" "/home/wangjieren/.juliaup/bin/julia" "/usr/local/bin/julia" "/usr/bin/julia"; do   if [ -e "$candidate" ]; then stat -c "path=%n mode=%A size=%s mtime=%y" "$candidate"; fi done command -v julia || echo "command_v_julia=missing" for f in "$project/Project.toml" "$project/Manifest.toml"; do   if [ -f "$f" ]; then stat -c "path=%n mode=%A size=%s mtime=%y" "$f"; else echo "missing=$f"; fi done echo "=== lock files and observed holders (read-only) ===" find "$project/results" -maxdepth 5 -type f \( -iname "*lock*" -o -name "batch.lock" \) -print 2>/dev/null | sort | while IFS= read -r f; do   [ -n "$f" ] || continue   stat -c "lock_path=%n mode=%A size=%s inode=%i mtime=%y" "$f" 2>/dev/null || true   inode=$(stat -c "%i" "$f" 2>/dev/null || echo "")   if [ -n "$inode" ]; then grep -E "[[:space:]]$inode[[:space:]]" /proc/locks 2>/dev/null || true; fi   if command -v fuser >/dev/null 2>&1; then fuser -v "$f" 2>&1 || true; fi done 
+1255636 1255635       00:00  0.0  0.0  3200  13064 Ss   bash            bash -c bash -lc set -u project=/home/USER/code/1x5_Heisenberg_Pentamer uid=$(id -u) echo "=== identity ===" hostname date -Is 2>/dev/null || date id echo "uid=$uid user=$(id -un)" echo "=== julia processes: exact account ===" julia_pids=$(pgrep -u "$uid" -x julia 2>/dev/null || true) if [ -n "$julia_pids" ]; then   for pid in $julia_pids; do ps -o pid=,ppid=,etime=,pcpu=,pmem=,rss=,vsz=,stat=,comm=,args= -p "$pid"; done else   echo "none" fi echo "=== project pythonbatch processes ===" batch_pids=$(pgrep -u "$uid" -f pythonbatch 2>/dev/null || true) found_batch=0 for pid in $batch_pids; do   args=$(ps -o args= -p "$pid" 2>/dev/null || true)   case "$args" in     *"$project"*) ps -o pid=,ppid=,etime=,pcpu=,pmem=,rss=,vsz=,stat=,comm=,args= -p "$pid"; found_batch=1 ;;   esac done [ "$found_batch" -eq 1 ] || echo "none" echo "=== resources ===" free -h df -h "$project" nproc echo "=== julia executable and project files ===" for candidate in "$HOME/.juliaup/bin/julia" "/home/USER/.juliaup/bin/julia" "/usr/local/bin/julia" "/usr/bin/julia"; do   if [ -e "$candidate" ]; then stat -c "path=%n mode=%A size=%s mtime=%y" "$candidate"; fi done command -v julia || echo "command_v_julia=missing" for f in "$project/Project.toml" "$project/Manifest.toml"; do   if [ -f "$f" ]; then stat -c "path=%n mode=%A size=%s mtime=%y" "$f"; else echo "missing=$f"; fi done echo "=== lock files and observed holders (read-only) ===" find "$project/results" -maxdepth 5 -type f \( -iname "*lock*" -o -name "batch.lock" \) -print 2>/dev/null | sort | while IFS= read -r f; do   [ -n "$f" ] || continue   stat -c "lock_path=%n mode=%A size=%s inode=%i mtime=%y" "$f" 2>/dev/null || true   inode=$(stat -c "%i" "$f" 2>/dev/null || echo "")   if [ -n "$inode" ]; then grep -E "[[:space:]]$inode[[:space:]]" /proc/locks 2>/dev/null || true; fi   if command -v fuser >/dev/null 2>&1; then fuser -v "$f" 2>&1 || true; fi done 
 === resources ===
                total        used        free      shared  buff/cache   available
 内存：      1.0Ti        15Gi       967Gi       372Mi        25Gi       987Gi
@@ -65,31 +65,31 @@ none
 /dev/sdb1       3.6T  3.2T  216G   94% /home
 80
 === julia executable and project files ===
-path=/home/wangjieren/.juliaup/bin/julia mode=lrwxrwxrwx size=43 mtime=2025-12-21 17:20:02.399530949 +0800
-path=/home/wangjieren/.juliaup/bin/julia mode=lrwxrwxrwx size=43 mtime=2025-12-21 17:20:02.399530949 +0800
+path=/home/USER/.juliaup/bin/julia mode=lrwxrwxrwx size=43 mtime=2025-12-21 17:20:02.399530949 +0800
+path=/home/USER/.juliaup/bin/julia mode=lrwxrwxrwx size=43 mtime=2025-12-21 17:20:02.399530949 +0800
 command_v_julia=missing
-path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/Project.toml mode=-rw-rw-r-- size=634 mtime=2026-08-03 22:53:45.387792052 +0800
-path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/Manifest.toml mode=-rw-rw-r-- size=30279 mtime=2026-08-03 22:53:45.799808863 +0800
+path=/home/USER/code/1x5_Heisenberg_Pentamer/Project.toml mode=-rw-rw-r-- size=634 mtime=2026-08-03 22:53:45.387792052 +0800
+path=/home/USER/code/1x5_Heisenberg_Pentamer/Manifest.toml mode=-rw-rw-r-- size=30279 mtime=2026-08-03 22:53:45.799808863 +0800
 === lock files and observed holders (read-only) ===
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260731/round17_phase_diagram_positive/batch.lock mode=-rw-rw-r-- size=0 inode=120724890 mtime=2026-07-31 21:04:33.289017946 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260731/round18b_phase_diagram_positive_L80_recovery/batch.lock mode=-rw-rw-r-- size=0 inode=120726637 mtime=2026-08-02 02:44:26.556577222 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260731/round18c_phase_diagram_positive_L80_retry0015/batch.lock mode=-rw-rw-r-- size=0 inode=120726789 mtime=2026-08-02 03:24:19.598935977 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260731/round18d_phase_diagram_positive_L80_retry0015_final/batch.lock mode=-rw-rw-r-- size=0 inode=120726833 mtime=2026-08-02 03:47:40.356502385 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260731/round18_phase_diagram_positive_L80/batch.lock mode=-rw-rw-r-- size=0 inode=120726198 mtime=2026-08-02 01:03:51.005409316 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/batch.lock mode=-rw-rw-r-- size=0 inode=120726880 mtime=2026-08-02 04:33:12.897897121 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/negative-phase-global.lock mode=-rw-rw-r-- size=0 inode=120730453 mtime=2026-09-08 14:45:25.935991377 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration/batch.lock mode=-rw-rw-r-- size=0 inode=120729838 mtime=2026-08-09 11:33:48.651896983 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r10-a0050-L040/batch.lock mode=-rw-rw-r-- size=0 inode=120730962 mtime=2026-08-11 10:01:04.137335031 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r11-a0050-L040/batch.lock mode=-rw-rw-r-- size=0 inode=120731012 mtime=2026-08-11 10:49:26.036096710 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r13-a0050-L060/batch.lock mode=-rw-rw-r-- size=0 inode=120731112 mtime=2026-08-11 13:45:32.581460709 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r15-a0050-L080/batch.lock mode=-rw-rw-r-- size=0 inode=120731212 mtime=2026-08-11 16:53:32.517482085 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r16-a0050-L080/batch.lock mode=-rw-rw-r-- size=0 inode=120731262 mtime=2026-08-11 18:29:45.738481329 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r1/batch.lock mode=-rw-rw-r-- size=0 inode=120729966 mtime=2026-08-09 18:24:44.937762236 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r2-a0350-L060/batch.lock mode=-rw-rw-r-- size=0 inode=120730405 mtime=2026-08-10 12:06:55.938976811 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r3-remaining13/batch.lock mode=-rw-rw-r-- size=0 inode=120730454 mtime=2026-08-10 13:36:44.238486393 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r4-a0250-L060/batch.lock mode=-rw-rw-r-- size=0 inode=120730582 mtime=2026-08-10 17:38:44.776198418 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r5-remaining10/batch.lock mode=-rw-rw-r-- size=0 inode=120730633 mtime=2026-08-10 18:44:02.890232198 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r6-a0100-L040/batch.lock mode=-rw-rw-r-- size=0 inode=120730722 mtime=2026-08-10 21:07:01.585102689 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r7-remaining8/batch.lock mode=-rw-rw-r-- size=0 inode=120730773 mtime=2026-08-10 22:06:33.632525968 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r8-a0100-L060/batch.lock mode=-rw-rw-r-- size=0 inode=120730823 mtime=2026-08-11 06:44:30.455838546 +0800
-lock_path=/home/wangjieren/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260913/negative-phase-independent-pilot.lock mode=-rw-rw-r-- size=0 inode=120738743 mtime=2026-09-15 07:46:17.636189287 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260731/round17_phase_diagram_positive/batch.lock mode=-rw-rw-r-- size=0 inode=120724890 mtime=2026-07-31 21:04:33.289017946 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260731/round18b_phase_diagram_positive_L80_recovery/batch.lock mode=-rw-rw-r-- size=0 inode=120726637 mtime=2026-08-02 02:44:26.556577222 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260731/round18c_phase_diagram_positive_L80_retry0015/batch.lock mode=-rw-rw-r-- size=0 inode=120726789 mtime=2026-08-02 03:24:19.598935977 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260731/round18d_phase_diagram_positive_L80_retry0015_final/batch.lock mode=-rw-rw-r-- size=0 inode=120726833 mtime=2026-08-02 03:47:40.356502385 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260731/round18_phase_diagram_positive_L80/batch.lock mode=-rw-rw-r-- size=0 inode=120726198 mtime=2026-08-02 01:03:51.005409316 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260802/round19_phase_diagram_positive_mesh/batch.lock mode=-rw-rw-r-- size=0 inode=120726880 mtime=2026-08-02 04:33:12.897897121 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/negative-phase-global.lock mode=-rw-rw-r-- size=0 inode=120730453 mtime=2026-09-08 14:45:25.935991377 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration/batch.lock mode=-rw-rw-r-- size=0 inode=120729838 mtime=2026-08-09 11:33:48.651896983 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r10-a0050-L040/batch.lock mode=-rw-rw-r-- size=0 inode=120730962 mtime=2026-08-11 10:01:04.137335031 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r11-a0050-L040/batch.lock mode=-rw-rw-r-- size=0 inode=120731012 mtime=2026-08-11 10:49:26.036096710 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r13-a0050-L060/batch.lock mode=-rw-rw-r-- size=0 inode=120731112 mtime=2026-08-11 13:45:32.581460709 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r15-a0050-L080/batch.lock mode=-rw-rw-r-- size=0 inode=120731212 mtime=2026-08-11 16:53:32.517482085 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r16-a0050-L080/batch.lock mode=-rw-rw-r-- size=0 inode=120731262 mtime=2026-08-11 18:29:45.738481329 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r1/batch.lock mode=-rw-rw-r-- size=0 inode=120729966 mtime=2026-08-09 18:24:44.937762236 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r2-a0350-L060/batch.lock mode=-rw-rw-r-- size=0 inode=120730405 mtime=2026-08-10 12:06:55.938976811 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r3-remaining13/batch.lock mode=-rw-rw-r-- size=0 inode=120730454 mtime=2026-08-10 13:36:44.238486393 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r4-a0250-L060/batch.lock mode=-rw-rw-r-- size=0 inode=120730582 mtime=2026-08-10 17:38:44.776198418 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r5-remaining10/batch.lock mode=-rw-rw-r-- size=0 inode=120730633 mtime=2026-08-10 18:44:02.890232198 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r6-a0100-L040/batch.lock mode=-rw-rw-r-- size=0 inode=120730722 mtime=2026-08-10 21:07:01.585102689 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r7-remaining8/batch.lock mode=-rw-rw-r-- size=0 inode=120730773 mtime=2026-08-10 22:06:33.632525968 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260809/round44_phase_diagram_full_alpha/stage-a-beta050-calibration-r8-a0100-L060/batch.lock mode=-rw-rw-r-- size=0 inode=120730823 mtime=2026-08-11 06:44:30.455838546 +0800
+lock_path=/home/USER/code/1x5_Heisenberg_Pentamer/results/autoresearch_v5_20260913/negative-phase-independent-pilot.lock mode=-rw-rw-r-- size=0 inode=120738743 mtime=2026-09-15 07:46:17.636189287 +0800

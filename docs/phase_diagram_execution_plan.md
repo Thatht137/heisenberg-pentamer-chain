@@ -340,49 +340,26 @@ scripts/plot_edge_magnetization.py
 alpha,beta,L,E0,E1,gap
 ```
 
-## 九、Git 提交顺序
+## 十、建议检查顺序
 
-不要把所有任务放在一个分支中。
-
-```text
-analysis/string-distance
-analysis/dmrg-convergence
-analysis/local-correlations
-analysis/entanglement-spectrum
-analysis/edge-states
-analysis/spin-gap
-writing/beta-half-results
-```
-
-每个分支只完成一个可验证任务。图、代码和对应小型数据放在同一主题提交中。
-
-当前工作区已有大量混合修改。正式开始新任务前，先整理当前结果为一个基线分支，不要继续在 `main` 上堆叠。
-
-## 十、第一周执行清单
-
-### 第 1 天
 
 - 整理 Git 工作区；
 - 确认现有数据备份；
 - 停止使用当前导数峰作为相边界结论。
 
-### 第 2–3 天
 
 - 实现 `O_str(distance,L)`；
 - 验证弦算符端点和相位约定；
 - 先跑 `alpha=-0.5,+0.5`。
 
-### 第 4 天
 
 - 跑 `alpha=±0.05,±0.1` 的多初态收敛检查；
 - 输出能量和观测量差异表。
 
-### 第 5 天
 
 - 计算代表点的键能和两点关联；
 - 初步判断负、正 `alpha` 两侧的局域结构。
 
-### 第 6–7 天
 
 - 计算纠缠谱和边缘磁化；
 - 更新 `docs/claim_evidence_matrix.md`；

@@ -1,6 +1,6 @@
 # 正区 C1–C6 本地源数据入口（2026-09-20）
 
-状态：`local-only`、family-level inventory；未上传公共仓库，未指定许可证或 DOI。本文件不修改 `paper/`，也不把历史图当作新计算。
+本文件提供 family-level 来源清单；公开归档见 https://github.com/Thatht137/heisenberg-pentamer-chain/releases/tag/archive-2026-10-26。
 
 ## 范围与计数
 
@@ -52,7 +52,7 @@
 3. C3 的二阶能量残差来自单独的两胞 ED 与 `analysis_final` effective-scan（不是 Fig.5 的 `projection_scan`）。`summary.json` 给出两胞 `1.9689–1.9915`、有限链 `N_units=8,12,16` 为 `1.9483–1.9495` 的拟合幂；这是有限尺寸/已测路径证据，不是任意强耦合误差界。
 4. C5 的 105 条记录是有限尺寸 `R` 网格。无 accepted crossing 只能表述为“当前有限尺寸证据未定义内部边界”，不能宣称正区全域单相或热力学无隙。
 5. C4 的校准比值范围为 `1.0240–1.0331`，支持 matched-size `c=1` 一致性；`claim_summary.gates.raw_log_fit_quality=false`，因此不能写成已测得热力学 central charge，也不能由此命名新相。
-6. 本清单只核对所列入口的文件字节、SHA、CSV 表头/行数和 JSON 结构；未重跑全部 validator，未验收完整 raw/checkpoint 归档。第三方参考 PDF/code、SSH/PID/凭据和用户路径不应进入公开数据包。
+6. 本清单只核对所列入口的文件字节、SHA、CSV 表头/行数和 JSON 结构；未重跑全部 validator，未验收完整 raw/checkpoint 归档。具体归档内容见公开文件清单。
 
 ## 公开交付状态
 

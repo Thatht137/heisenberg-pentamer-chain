@@ -23,7 +23,7 @@ bash scripts/run_negative_dsf_validation_server.sh 4
 在 Windows 项目目录运行：
 
 ```powershell
-cd D:\Project\1x5_Heisenberg_Pentamer
+cd D:\research\1x5_Heisenberg_Pentamer
 git status
 git push origin analysis/string-distance
 ```
@@ -56,7 +56,7 @@ git pull --rebase
 
 ```powershell
 scp -P 6000 -C -r `
-  D:\Project\1x5_Heisenberg_Pentamer `
+  D:\research\1x5_Heisenberg_Pentamer `
   用户名@服务器地址:/home/用户名/
 ```
 
@@ -220,7 +220,7 @@ ls -lh data/*L80_t30*.jld2
 
 ```powershell
 New-Item -ItemType Directory -Force `
-  D:\Project\1x5_Heisenberg_Pentamer\data\server_negative_dsf
+  D:\research\1x5_Heisenberg_Pentamer\data\server_negative_dsf
 ```
 
 下载结果：
@@ -228,7 +228,7 @@ New-Item -ItemType Directory -Force `
 ```powershell
 scp -P 6000 -C `
   用户名@服务器地址:/home/用户名/1x5_Heisenberg_Pentamer/data/*L80_t30*.jld2 `
-  D:\Project\1x5_Heisenberg_Pentamer\data\server_negative_dsf\
+  D:\research\1x5_Heisenberg_Pentamer\data\server_negative_dsf\
 ```
 
 下载日志：
@@ -236,7 +236,7 @@ scp -P 6000 -C `
 ```powershell
 scp -P 6000 -C -r `
   用户名@服务器地址:/home/用户名/1x5_Heisenberg_Pentamer/logs/negative_dsf_validation `
-  D:\Project\1x5_Heisenberg_Pentamer\logs\
+  D:\research\1x5_Heisenberg_Pentamer\logs\
 ```
 
 ## 八、服务器运行记录

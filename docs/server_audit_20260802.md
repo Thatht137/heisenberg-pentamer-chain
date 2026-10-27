@@ -1,10 +1,10 @@
 # 2026-08-02 服务器与任务审计
 
-审计对象：`wangjieren@39.96.207.180:6000`，主机 `c104-ysu`，项目目录 `/home/wangjieren/code/1x5_Heisenberg_Pentamer`。本次只读，不提交、不终止进程、不上传文件。
+审计对象：`USER@server.example.org:6000`，主机 `compute-node`，项目目录 `/home/USER/code/1x5_Heisenberg_Pentamer`。
 
 ## 通过项
 
-- SSH BatchMode 连接通过，账户为 `wangjieren`。
+- SSH BatchMode 连接通过，账户为 `USER`。
 - Julia `1.12.3` 可执行。
 - `using ITensors, ITensorMPS, KrylovKit` smoke test 输出 `ITENSOR_SMOKE_OK`。
 - 服务器 `Project.toml` SHA-256：`39e917d3ca9615132999b4ae6a9731e8b592454267e38b5779423e76a8d2dd7e`。
@@ -21,6 +21,6 @@
 - 因此明日的 L=40 warm-start / 跨进程恢复必须从一个新的唯一 run 目录开始，不能覆盖 `round3_cv_L40_probe`。
 - 服务器结果中已有正区 `round19_phase_diagram_positive_mesh`，但本次审计不重新下载或修改它。
 
-## 今日结论
+## 环境验证结论
 
-环境满足明日探针的前置条件，磁盘和内存均不是当前限制；主要操作风险是可恢复 CV run 尚未在服务器落地。下一步为新建独立 `round20_cv_resume_warmstart` 目录，先跑一个低频率、单点恢复 smoke，再扩展到三个相邻频率。仍不做负 `alpha`，不扩大相图，不提交 L=80 长作业。
+环境满足后续数值探针的前置条件，磁盘和内存均不是当前限制；主要操作风险是可恢复 CV run 尚未在服务器落地。下一步为新建独立 `round20_cv_resume_warmstart` 目录，先跑一个低频率、单点恢复 smoke，再扩展到三个相邻频率。仍不做负 `alpha`，不扩大相图，不提交 L=80 长作业。

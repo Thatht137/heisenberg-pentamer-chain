@@ -61,7 +61,7 @@
 
 ## 5. 引用 / P3 缺口清单
 
-当前 `paper/bibliography.bib` 仍只有 `li2026tetramer`（临时元数据）和 `descloizeaux1962` 两项；但 `mechanism_report` 已提供并核验 `docs/pentamer_bibliography_verified_20260919.bib` 与 `docs/pentamer_citation_audit_20260919.json`（12/12 verified）。本轮已把 12 个 scope-limited citation keys 接入本地 draft 的引言、方法、机制段和 verified reference ledger；`paper/` 级同步仍刻意未做。因此 P3 对本地 draft 为 `verified_and_integrated`，对最终 paper 为 `paper_sync_pending`。`.bib` 文件存在本身不等于引用已核验或已接入正文。
+当前 `paper/bibliography.bib` 仍只有 `li2026tetramer`（临时元数据）和 `descloizeaux1962` 两项；但 `mechanism_report` 已提供并核验 `docs/pentamer_bibliography_verified_20260919.bib` 与 `docs/pentamer_citation_audit_20260919.json`（12/12 verified）。本地 draft 的引言、方法、机制段及 verified reference ledger 已接入 12 个 scope-limited citation keys；`paper/` 级尚未同步。因此 P3 对本地 draft 为 `verified_and_integrated`，对最终 paper 为 `paper_sync_pending`。`.bib` 文件存在本身不等于引用已核验或已接入正文。
 
 | 文献角色 | 当前状态 | 可接受的下一步 |
 |---|---|---|

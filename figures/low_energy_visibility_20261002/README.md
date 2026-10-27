@@ -8,14 +8,14 @@
 ## J2=0.5
 0 至 0.6J1 占已采样 0 至 4J1 谱积分的 41.76%。
 该比例为等权动量网格加总后的有限频率区间积分，不是完整频率求和规则。
-[低能弱谱权图](D:/Project/1x5_Heisenberg_Pentamer/figures/low_energy_visibility_20261002/Sqw_L40_J2=0.5_J3=0.5_low_asinh.png)
+[低能弱谱权图](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/figures/low_energy_visibility_20261002/Sqw_L40_J2%3D0.5_J3%3D0.5_low_asinh.png)
 
 ## J2=-0.5
 0 至 0.6J1 占已采样 0 至 4J1 谱积分的 43.47%。
 该比例为等权动量网格加总后的有限频率区间积分，不是完整频率求和规则。
-[低能弱谱权图](D:/Project/1x5_Heisenberg_Pentamer/figures/low_energy_visibility_20261002/Sqw_L40_J2=-0.5_J3=0.5_low_asinh.png)
+[低能弱谱权图](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/figures/low_energy_visibility_20261002/Sqw_L40_J2%3D-0.5_J3%3D0.5_low_asinh.png)
 
-[原始谱线切片](D:/Project/1x5_Heisenberg_Pentamer/figures/low_energy_visibility_20261002/low_energy_raw_cuts.png)
+[原始谱线切片](https://github.com/Thatht137/heisenberg-pentamer-chain/blob/codex/archive-20261026/figures/low_energy_visibility_20261002/low_energy_raw_cuts.png)
 切片采用线性强度轴，实际频率点相连，不做拟合或平滑。
 
 当前 T=60 的三角时间窗 FWHM=0.09277J1。若需分辨更近的激发，应延长真实演化时间并检查截断与步长收敛。

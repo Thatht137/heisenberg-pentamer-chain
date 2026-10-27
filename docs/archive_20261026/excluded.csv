@@ -196,3 +196,6 @@ scripts/autoresearch_v3/__pycache__/,runtime-or-local-metadata
 scripts/autoresearch_v5/__pycache__/,runtime-or-local-metadata
 scripts/submission_20261002/__pycache__/,runtime-or-local-metadata
 tmp/,runtime-or-local-metadata
+docs/agent_execution_standard.md,internal-planning-or-instructions
+docs/git_guide.md,internal-planning-or-instructions
+docs/presentation_script.md,internal-planning-or-instructions
