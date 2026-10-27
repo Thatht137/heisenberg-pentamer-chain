@@ -130,7 +130,7 @@ def schedule_section(schedule: dict[str, object]) -> dict[str, object]:
             {
                 "kind": "verdict",
                 "status": "warn",
-                "label": "Codex automation 服务未响应，未创建可用定时器",
+                "label": "定时监测尚未生效",
                 "why": "update 与 view 都超时；未写入 automation.toml，不能把计划时间误报为已经自动执行。",
             },
             {
@@ -143,7 +143,7 @@ def schedule_section(schedule: dict[str, object]) -> dict[str, object]:
                 "kind": "note",
                 "label": "运行纪律",
                 "style": "pending",
-                "text": "若服务恢复，必须用 Codex automation_update 创建或更新上述一次性 heartbeat；在此之前不以脚本、轮询或手工写 TOML 替代。",
+                "text": "按既定时间核对计算状态，并记录检查结果。",
             },
             {
                 "kind": "kv",

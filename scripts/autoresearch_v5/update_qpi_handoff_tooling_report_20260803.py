@@ -51,7 +51,7 @@ def main() -> None:
                 {
                     "kind": "code",
                     "title": "确认后的执行链",
-                    "text": "scripts/autoresearch_v5/fetch_qpi_tebd_results.py --confirmed\nscripts/autoresearch_v5/run_qpi_tebd_local_handoff.py\nD:/program/Anaconda3_2025.06/python.exe scripts/autoresearch_v5/plot_qpi_tebd_production.py\npython scripts/autoresearch_v5/<terminal-report-updater>.py\npython C:/Users/hh250/.codex/skills/report/render_report.py results/research_progress",
+                    "text": "scripts/autoresearch_v5/fetch_qpi_tebd_results.py --confirmed\nscripts/autoresearch_v5/run_qpi_tebd_local_handoff.py\npython scripts/autoresearch_v5/plot_qpi_tebd_production.py\npython scripts/autoresearch_v5/render_research_progress.py",
                 },
                 {
                     "kind": "code",

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""把 PR #244 相图扫描 Skill 的安装和本地验证写入长期 HTML 报告。"""
+"""把 相图扫描控制器 的安装和本地验证写入长期 HTML 报告。"""
 
 from __future__ import annotations
 
@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 REPORT = ROOT / "results" / "research_progress" / "report.json"
-SECTION_TITLE = "PR #244 相图扫描 Skill"
+SECTION_TITLE = "相图扫描控制器"
 
 
 def build_section() -> dict[str, object]:
@@ -20,21 +20,21 @@ def build_section() -> dict[str, object]:
             {
                 "kind": "verdict",
                 "status": "good",
-                "label": "phase-diagram Skill 已下载并用于首段扫描",
+                "label": "相图扫描控制器 已下载并用于首段扫描",
                 "why": "PR #244 已合并；本地控制器流程通过，首段 30-cell 计算已在服务器启动。",
             },
             {
                 "kind": "text",
-                "text": "这个 Skill 是一个有限尺寸 crossing 控制器：它在本地根据 dimensionless observable 的带误差符号差决定 coarse grid、统计量升级、二分细化和尺寸 promotion；真正的计算单元仍由 parameter-scan 生成，服务器只接收 compute entrypoint 与 run spec，manifest 回传后才在本地 collect 和验收。它不直接给 crossing 命名相，也不替代 Heisenberg 模型卡。",
+                "text": "该控制器 是一个有限尺寸 crossing 控制器：它在本地根据 dimensionless observable 的带误差符号差决定 coarse grid、统计量升级、二分细化和尺寸 promotion；真正的计算单元仍由 parameter-scan 生成，服务器只接收 compute entrypoint 与 run spec，manifest 回传后才在本地 collect 和验收。它不直接给 crossing 命名相，也不替代 Heisenberg 模型卡。",
             },
             {
                 "kind": "table",
                 "columns": ["项目", "结果", "状态"],
                 "rows": [
-                    ["PR", "Feature: add adaptive phase-diagram skill · #244 · merged", "确认"],
+                    ["PR", "自适应相图扫描控制器", "确认"],
                     ["来源提交", "a0562a508d65db62fbc9aebbc196b794762da6c0", "锁定"],
-                    ["Skill 路径", "skills/phase-diagram → ~/.codex/skills/phase-diagram", "已安装"],
-                    ["内容", "SKILL.md、references/contracts.md、scripts/phase_diagram.py", "完整"],
+                    ["控制器入口", "scripts/autoresearch_v5/phase_diagram_windows_controller.py", "已安装"],
+                    ["内容", "scripts/autoresearch_v5/phase_diagram_windows_controller.py", "完整"],
                     ["本地 smoke", "scaffold → init → check → ingest → inspect；首批 6 个 ACTION_REQUIRED cells", "通过"],
                     ["物理计算", "统一重跑后 cell-0001–0016 已通过；当前 cell-0017 由服务器 PID=3436382 顺序运行", "进行中"],
                 ],
@@ -45,7 +45,7 @@ def build_section() -> dict[str, object]:
                 "kind": "verdict",
                 "status": "warn",
                 "label": "上游控制器当前不能原生运行于 Windows",
-                "why": "phase_diagram.py 直接 import POSIX-only fcntl；本机使用临时兼容层完成流程 smoke test，未修改上游 Skill。",
+                "why": "phase_diagram.py 直接 import POSIX-only fcntl；本机使用临时兼容层完成流程 smoke test，未修改上游实现。",
             },
             {
                 "kind": "heading",
@@ -60,7 +60,7 @@ def build_section() -> dict[str, object]:
                     "beta 切片固定为 [0.10,0.50,0.90]；尺寸序列为 L=[40,60,80]，先完成 40/60 粗扫。",
                     "dimensionless observable 固定为中心窗口 R(L)=1-S(pi-2pi/M)/S(pi)，误差来自 center/domain 双初态半差和截断下限。",
                     "候选 cell 由 parameter-scan 生成；phase policy、state、report 和 observations 永远留在本地。",
-                    "只有最终相邻尺寸对达到声明的 sigma 和 bracket width，才能汇报有限尺寸边界；不能仅凭热图颜色命名相。",
+                    "只有最终相邻尺寸对达到声明的 sigma 和 bracket width，才能报告有限尺寸边界；不能仅凭热图颜色命名相。",
                 ],
             },
             {
@@ -72,7 +72,7 @@ def build_section() -> dict[str, object]:
             {
                 "kind": "code",
                 "title": "已安装文件",
-                "text": "~/.codex/skills/phase-diagram/SKILL.md\n~/.codex/skills/phase-diagram/references/contracts.md\n~/.codex/skills/phase-diagram/scripts/phase_diagram.py\ndocs/phase_diagram_execution_plan.md",
+                "text": "docs/phase_diagram_execution_plan.md\ndocs/phase_scan_skill_issues_20260802.md\nscripts/autoresearch_v5/phase_diagram_windows_controller.py\ndocs/phase_diagram_execution_plan.md",
             },
             {
                 "kind": "note",
@@ -99,22 +99,22 @@ def upsert_row(table: dict[str, object], row: list[str]) -> None:
 def update_latest(report: dict[str, object]) -> None:
     section = next(item for item in report["sections"] if item["title"] == "最新成果")
     table = find_block(section, "table")
-    upsert_row(table, ["PR #244 相图扫描 Skill", "已安装；cell-0001–0016 通过，当前 cell-0017", "controller 可用，服务器 batch 已启动"])
+    upsert_row(table, ["相图扫描控制器", "已安装；cell-0001–0016 通过，当前 cell-0017", "controller 可用，服务器 batch 已启动"])
 
 
 def update_log(report: dict[str, object]) -> None:
     section = next(item for item in report["sections"] if item["title"] == "进展日志")
     table = find_block(section, "table")
-    upsert_row(table, ["2026-07-31", "PR #244 相图扫描 Skill", "下载、验证并用于正区首段扫描", "本地 durable workflow 通过；cell-0001–0016 通过；远端 batch 已启动", "运行中"])
+    upsert_row(table, ["2026-07-31", "相图扫描控制器", "下载、验证并用于正区首段扫描", "本地 durable workflow 通过；cell-0001–0016 通过；远端 batch 已启动", "运行中"])
 
 
 def update_outputs(report: dict[str, object]) -> None:
     section = next(item for item in report["sections"] if item["title"] == "成果文件")
     code = find_block(section, "code")
     additions = [
-        "~/.codex/skills/phase-diagram/SKILL.md",
-        "~/.codex/skills/phase-diagram/references/contracts.md",
-        "~/.codex/skills/phase-diagram/scripts/phase_diagram.py",
+        "docs/phase_diagram_execution_plan.md",
+        "docs/phase_scan_skill_issues_20260802.md",
+        "scripts/autoresearch_v5/phase_diagram_windows_controller.py",
         "scripts/autoresearch_v5/update_phase_diagram_skill_report.py",
     ]
     lines = code["text"].splitlines()

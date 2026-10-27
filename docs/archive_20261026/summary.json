@@ -1,12 +1,12 @@
 {
   "date": "2026-10-26",
   "file_count": 19520,
-  "uncompressed_bytes": 3946520233,
+  "uncompressed_bytes": 3946519709,
   "packages": [
     {
       "name": "pentamer-code-01-20261026.zip",
-      "bytes": 1853988,
-      "sha256": "eb7ef42da6e8d27241cd85c187e5d9c4efd19bfb6a6e0a6989dc7b7e31c370c7"
+      "bytes": 1853713,
+      "sha256": "259a35d35fcbe1964a162d277cb8d23169f4b94ea017e4836983913ee69d3e24"
     },
     {
       "name": "pentamer-data-01-20261026.zip",
@@ -3046,7 +3046,12 @@
       "results/research_progress/report.json",
       "results/research_progress/report_history.html",
       "results/submission_20261002/submission_package_release/source_data.zip",
-      "results/submission_20261002/submission_package_release/source_data/docs/submission_provenance_audit_20261004.md"
+      "results/submission_20261002/submission_package_release/source_data/docs/submission_provenance_audit_20261004.md",
+      "scripts/autoresearch_v5/render_research_progress.py",
+      "scripts/autoresearch_v5/update_phase_diagram_skill_report.py",
+      "scripts/autoresearch_v5/update_python_regression_report_20260804.py",
+      "scripts/autoresearch_v5/update_qpi_handoff_tooling_report_20260803.py",
+      "scripts/autoresearch_v5/update_round41_low005_submission_report_20260804.py"
     ],
     "excluded_files": [
       "docs/agent_execution_standard.md",
@@ -3101,6 +3106,13 @@
       "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!docs/negative_alpha_author_report_20260813/report.json",
       "_archive/submission_cleanup_20260923/root/Heisenberg_Pentamer_paper_delivery_20260922.zip!README.md"
     ],
-    "code_data_images_unchanged": true
+    "research_calculation_code_data_images_unchanged": true,
+    "report_template_text_updated": [
+      "scripts/autoresearch_v5/render_research_progress.py",
+      "scripts/autoresearch_v5/update_python_regression_report_20260804.py",
+      "scripts/autoresearch_v5/update_round41_low005_submission_report_20260804.py",
+      "scripts/autoresearch_v5/update_phase_diagram_skill_report.py",
+      "scripts/autoresearch_v5/update_qpi_handoff_tooling_report_20260803.py"
+    ]
   }
 }
